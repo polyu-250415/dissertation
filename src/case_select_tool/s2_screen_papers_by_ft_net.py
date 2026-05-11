@@ -10,7 +10,8 @@ class ScreenPapersFT(object):
         self.paper_screen_t3 = '../data/papers/midput/screening_by_abs_t3/'
         self.paper_screen_ft_t1 = '../data/papers/midput/screening_by_ft_t1/'
         self.Screening_papers_name_prefix = self.paper_screen_t3 + 'Screening_papers_by_'
-        pass
+        if not os.path.exists(self.paper_screen_ft_t1):
+            os.makedirs(self.paper_screen_ft_t1, exist_ok=True)
         pass
 
     def split_papers_by_batch(self, task, batch_num=3):
@@ -72,8 +73,6 @@ class ScreenPapersFT(object):
         print(f"After screening doctype: {len(df_combined)}")
 
         df_combined.to_csv(self.paper_screen_ft_t1 + f'papers_{task}_waitlist.csv', index=False)
-
-
 
 
 if __name__ == '__main__':

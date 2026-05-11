@@ -10,15 +10,20 @@ class ScreenPapersAuditor:
         self.paper_screen_t2 = '../data/papers/midput/screening_by_abs_t2/'
         self.paper_screen_t3 = '../data/papers/midput/screening_by_abs_t3/'
         self.Screening_papers_name_prefix = self.paper_screen_t3 + 'Screening_papers_by_'
+
+        if not os.path.exists(self.paper_screen_t3):
+            os.makedirs(self.paper_screen_t3, exist_ok=True)
         pass
 
 
     @staticmethod
     def hide_model_name(col_name):
-        col_name = col_name.replace('chatgpt', 'A')
-        col_name = col_name.replace('deepseek', 'B')
-        col_name = col_name.replace('gemini', 'C')
-        col_name = col_name.replace('qwen', 'D')
+        col_name = col_name.replace('qwen', 'A')
+        col_name = col_name.replace('ernie', 'B')
+        col_name = col_name.replace('deepseek', 'C')
+        col_name = col_name.replace('chatgpt', 'D')
+        col_name = col_name.replace('gemini', 'E')
+
         return col_name
 
     @staticmethod
@@ -36,7 +41,7 @@ class ScreenPapersAuditor:
 
     def split_papers_by_batch(self, task, batch_num=50):
 
-        df_paper = pd.read_csv(self.paper_screen_t3 + 'audit_materials.csv')
+        df_paper = pd.read_csv(self.paper_screen_t3 + f'audit_materials_{task}.csv')
         batches = np.array_split(df_paper, batch_num)
 
         # 5. 逐个写入 CSV
@@ -50,10 +55,10 @@ class ScreenPapersAuditor:
 
     def prepare_audit_materials(self,
                                 input_file,
-                                context_cols,
                                 opinion_clos,
-                                task,
-                                uuid_list):
+                                task='kr_flag',
+                                context_cols=['Title', 'Abstract'],
+                                uuid_list=[]):
 
         df = pd.read_csv(input_file)
 
@@ -91,41 +96,40 @@ class ScreenPapersAuditor:
         df_audit_paper.to_csv(self.paper_screen_t3 + f"papers_combined_auditing_{task}.csv", index=False)
         return df_audit_paper['uuid'].tolist()
 
+    def audit_kr_flag(self, input_file):
+
+        opinion_clos_dict = [
+            'deepseek_kr_flag',
+            'deepseek_kr_evidence',
+            'qwen_kr_flag',
+            'qwen_kr_evidence',
+            'ernie_kr_flag',
+            'ernie_kr_evidence']
+
+        screen_papers.prepare_audit_materials(input_file, opinion_clos_dict)
+
+        screen_papers.split_papers_by_batch('kr_flag', batch_num=3)
+        return screen_papers.combine_papers_by_batch('kr_flag', batch_num=3)
+
+    def audit_dt_flag(self, input_file, uuid_list):
+
+        opinion_clos_dict = [
+                'deepseek_kr_flag',
+                'deepseek_kr_evidence',
+                'qwen_kr_flag',
+                'qwen_kr_evidence',
+                'ernie_kr_flag',
+                'ernie_kr_evidence']
+
+        screen_papers.prepare_audit_materials(input_file, opinion_clos_dict, task='DT_flag', uuid_list=uuid_list)
+        screen_papers.split_papers_by_batch('DT_flag', batch_num=1)
+        screen_papers.combine_papers_by_batch('DT_flag', batch_num=1)
 
 
 if __name__ == '__main__':
     input_file = "../data/papers/midput/screening_by_abs_t2/papers_combined_auditing.csv"
     screen_papers = ScreenPapersAuditor()
 
-    context_cols = ['Title', 'Abstract']
-    opinion_clos_dict = [
-        'kr_flag_chatgpt',
-        'kr_evidence_chatgpt',
-        'kr_flag_deepseek',
-        'kr_evidence_deepseek',
-        'kr_flag_gemini',
-        'kr_evidence_gemini',
-        'kr_flag_qwen',
-        'kr_evidence_qwen']
+    uuid_list = screen_papers.audit_kr_flag(input_file)
 
-    task = 'kr_flag'
-    uuid_list = []
-    screen_papers.prepare_audit_materials(input_file, context_cols, opinion_clos_dict, task, uuid_list)
-    screen_papers.split_papers_by_batch(task, batch_num=3)
-    uuid_list = screen_papers.combine_papers_by_batch(task, batch_num=3)
-
-    opinion_clos_dict = [
-        'DT_flag_chatgpt',
-        'DT_evidence_chatgpt',
-        'DT_flag_deepseek',
-        'DT_evidence_deepseek',
-        'DT_flag_gemini',
-        'DT_evidence_gemini',
-        'DT_flag_qwen',
-        'DT_evidence_qwen']
-
-    task = 'DT_flag'
-
-    screen_papers.prepare_audit_materials(input_file, context_cols, opinion_clos_dict, task, uuid_list)
-    screen_papers.split_papers_by_batch(task, batch_num=1)
-    screen_papers.combine_papers_by_batch(task, batch_num=1)
+    #screen_papers.audit_dt_flag(input_file, uuid_list)

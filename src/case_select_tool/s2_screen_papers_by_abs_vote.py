@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 import ast
 from concurrent.futures import ThreadPoolExecutor
 
@@ -18,6 +19,11 @@ class ScreenPaperCraw:
         self.cmd = cmd
         self.count = count
         self.paper_screen_t1 = '../data/papers/midput/screening_by_abs_t1/'
+        self.paper_screen_t2 = '../data/papers/midput/screening_by_abs_t2/'
+        if not os.path.exists(self.paper_screen_t2):
+            os.makedirs(self.paper_screen_t2, exist_ok=True)
+        if not os.path.exists(self.paper_screen_t1):
+            os.makedirs(self.paper_screen_t1, exist_ok=True)
         pass
 
     def assess_relevance_by_deepseek(self):
@@ -84,11 +90,51 @@ class ScreenPaperCraw:
 
         return df
 
-    def select_papers_by_relevance(self):
-        input_file = "../data/papers/midput/semi_structured_papers.csv"
+    def label_papers_by_inclusion_criteria(self):
         input_deepseek_file = f"{self.paper_screen_t1}screening_by_abstract_deepseek.csv"
         input_qwen_file = f"{self.paper_screen_t1}screening_by_abstract_qwen.csv"
         input_ernie_file = f"{self.paper_screen_t1}screening_by_abstract_ernie.csv"
+        output_deepseek_file = f"{self.paper_screen_t1}screening_by_abstract_deepseek_ic.csv"
+        output_qwen_file = f"{self.paper_screen_t1}screening_by_abstract_qwen_ic.csv"
+        output_ernie_file = f"{self.paper_screen_t1}screening_by_abstract_ernie_ic.csv"
+
+        df_deepseek = pd.read_csv(input_deepseek_file)
+        df_qwen = pd.read_csv(input_qwen_file)
+        df_ernie = pd.read_csv(input_ernie_file)
+
+        deepseek_condition = (
+                (df_deepseek['kr_flag'] == 'Yes') &
+                (df_deepseek['DT_flag'] == 'Yes') &
+                (df_deepseek['Doc_type'].isin(['Case Study','case study', 'Empirical Study',"empirical study"]))
+        )
+        # 满足条件赋值为 1/True，不满足为 0/False（可自定义）
+        df_deepseek['ic_label'] = deepseek_condition
+        df_deepseek.to_csv(output_deepseek_file, index=False)
+
+        qwen_condition = (
+                (df_qwen['kr_flag'] == 'Yes') &
+                (df_qwen['DT_flag'] == 'Yes') &
+                (df_qwen['Doc_type'].isin(['Case Study','case study', 'Empirical Study',"empirical study"]))
+        )
+        # 满足条件赋值为 1/True，不满足为 0/False（可自定义）
+        df_qwen['ic_label'] = qwen_condition
+        df_qwen.to_csv(output_qwen_file, index=False)
+
+        ernie_condition = (
+                (df_qwen['kr_flag'] == 'Yes') &
+                (df_qwen['DT_flag'] == 'Yes') &
+                (df_qwen['Doc_type'].isin(['Case Study','case study', 'Empirical Study',"empirical study"]))
+        )
+        # 满足条件赋值为 1/True，不满足为 0/False（可自定义）
+        df_ernie['ic_label'] = ernie_condition
+        df_ernie.to_csv(output_ernie_file, index=False)
+
+
+    def select_papers_by_relevance(self):
+        input_file = "../data/papers/midput/semi_structured_papers.csv"
+        input_deepseek_file = f"{self.paper_screen_t1}screening_by_abstract_deepseek_ic.csv"
+        input_qwen_file = f"{self.paper_screen_t1}screening_by_abstract_qwen_ic.csv"
+        input_ernie_file = f"{self.paper_screen_t1}screening_by_abstract_ernie_ic.csv"
         output_file = f"{self.paper_screen_t1}screening_by_abstract"
 
         df_combined = pd.read_csv(input_file)[['uuid', 'Title', 'Abstract', 'DOI Link', 'Publication title']]
@@ -96,9 +142,9 @@ class ScreenPaperCraw:
         df_qwen = pd.read_csv(input_qwen_file)
         df_ernie = pd.read_csv(input_ernie_file)
 
-        df_deepseek = df_deepseek[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized"]]
-        df_qwen = df_qwen[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized"]]
-        df_ernie = df_ernie[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized"]]
+        df_deepseek = df_deepseek[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized", "ic_label"]]
+        df_qwen = df_qwen[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized", "ic_label"]]
+        df_ernie = df_ernie[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized", "ic_label"]]
 
         df_ernie = df_ernie.add_prefix('ernie_')
         df_ernie = df_ernie.rename(columns={'ernie_uuid': 'uuid'})  # 主键保留原名
@@ -137,17 +183,18 @@ class ScreenPaperCraw:
         df_combined = df_combined[base_cols + sorted_cols]
         df_combined.to_csv(f"{output_file}.csv", index=False)
 
-        cols = ["deepseek_kr_flag",
-                "qwen_kr_flag",
-                "ernie_kr_flag"]
-        filtered_df = df_combined[(df_combined[cols] == "Yes").sum(axis=1) >= 1]
+        cols = ["deepseek_ic_label",
+                "qwen_ic_label",
+                "ernie_ic_label"]
+        filtered_df = df_combined[(df_combined[cols] == True).sum(axis=1) >= 2]
+        audit_df = df_combined[(df_combined[cols] == True).sum(axis=1) >= 1]
 
-        cols = ["deepseek_DT_flag",
-                "qwen_DT_flag",
-                "ernie_DT_flag"]
-        filtered_df = filtered_df[(filtered_df[cols] == "Yes").sum(axis=1) >= 1]
+        # filtered_df.to_csv(f"{output_file}_filtering.csv", index=False)
 
-        filtered_df.to_csv(f"{output_file}_filtering.csv", index=False)
+        filtered_df.to_csv(self.paper_screen_t2 + f"papers_combined_screening.csv",   index=False)
+
+        audit_df = audit_df[~audit_df.apply(tuple, axis=1).isin(filtered_df.apply(tuple, axis=1))]
+        audit_df.to_csv(self.paper_screen_t2 + f"papers_combined_auditing.csv", index=False)
 
     def assess_relevance_parallel(obj):
         """
@@ -180,4 +227,5 @@ class ScreenPaperCraw:
 if __name__ == '__main__':
     obj = ScreenPaperCraw(cmd= 'Cmd_Screen_by_Abstract', count=10)
     # obj.assess_relevance_parallel()
+    obj.label_papers_by_inclusion_criteria()
     obj.select_papers_by_relevance()
