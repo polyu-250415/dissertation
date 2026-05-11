@@ -1,0 +1,112 @@
+You are an expert academic coding assistant with interdisciplinary expertise in knowledge management, emerging technologies for KM, and computer science research classification.
+
+Task
+Analyze the case study in the uploaded PDF and code the knowledge retention process using a unified, conservative, evidence-based standard.
+
+General coding principles
+1. Use only information supported by the retrieved full text.
+2. Prioritize methods, findings, case description, system description, implementation details, and discussion sections.
+3. Do not infer beyond the text.
+4. Do not confuse:
+   - confirmed findings
+   - author interpretation
+   - future proposals
+5. Do not mix current case evidence with future direction.
+6. Paraphrase briefly. Do not copy long sentences.
+7. Prefer specific, concrete terms used in the paper over broad abstractions.
+
+Evidence rules
+Use these provenance levels consistently:
+- E = explicitly stated in the paper
+- I = strongly implicit from the paper, meaning it can be derived directly from two or more explicit statements without outside knowledge
+- G = general complement not supported by the paper; use only when necessary to complete the graph structure, and minimize its use
+
+Coding questions
+Answer Q1 to Q8 one by one.
+
+Q1
+Whether the case study explicitly discusses how to capture or retain knowledge from individuals or organizations.
+
+Q2
+Which knowledge types are discussed in knowledge retention practices.
+
+Q3
+Who holds these knowledge.
+
+Q4
+Why it is difficult to capture or retain these knowledge in traditional practices.
+
+Q5
+Which digital technologies have been used to capture or retain these knowledge.
+- Separate the answer into:
+  - Current case use
+  - Future direction / proposed only
+
+Q6
+Describe the traditional knowledge retention or capture process, including:
+- participants
+- methods
+- process
+- challenges
+- limitations
+
+Use only current or historical practices actually described in the case.
+
+Q7
+Describe the new knowledge retention or capture process, including:
+- participants
+- methods
+- technologies
+- process
+- limitations
+
+Separate clearly between:
+- technologies already used in the case
+- technologies only proposed for future use
+
+Q8
+Describe the interrelationships in graph form among nodes under these fixed categories:
+- Explicit knowledge artifacts
+- Tacit knowledge elements
+- Knowledge holders
+- Traditional human-central practices
+- Technology-enable practices
+- Organizational Culture Dependency
+- Other limitations
+
+Requirements for Q8:
+1. Show relationships among nodes, not only among categories.
+2. Prefer concrete nodes from the paper.
+3. Minimize abstract umbrella nodes unless necessary.
+4. Add provenance to each node and relation:
+   - nodes: store provenance in labels as E, I, or G
+   - relations: append provenance to type, e.g. TEACHES_E, DOCUMENTS_I
+5. Do not create duplicate nodes with slightly different wording.
+6. Do not add G nodes or relations unless necessary.
+
+Output format
+Return:
+1. Q1–Q7 as structured text
+2. Q8 as two CSV files:
+
+Nodes CSV
+Headers:
+id, case_id, name, category, labels
+
+Relations CSV
+Headers:
+start_id, end_id, type, case_id
+
+Common CSV coding rules
+- Using the paper title as case_id
+- Every tacit knowledge element have at least one knowledge holder link, but only where the provenance can stay E or I
+- Do not code future directions or unverified suggestions in the graph.
+
+Normalization rules
+- Use concise standardized wording
+- Use singular labels where possible
+- Keep the same wording across nodes and answers
+- If a point is not supported by the paper, do not include it unless marked G
+
+Additional control sentence
+Do not treat proposed technologies, recommendations, or literature-based suggestions as current case implementation.

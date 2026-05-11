@@ -1,0 +1,5 @@
+deepseek_key = "sk-0021798633cc402880f809e83b285ede"
+gemini_key = "AIzaSyAGInUZQQPTEb2tkzfQFBu_UjVEFowRR2Y"
+qwen_key = "sk-79a72c98f88b4d49806fa01ff5afa16f"
+ernie_api_k = "bce-v3/ALTAK-LFizOLmcEQhdG10lsXSIf/f77068d62836d46d88c2e7ab5fcd532126d5fac8"
+kimi_key="sk-lsZEiJAUv2Q18S8u353YdZWY8VwwyJNuFngN0Hu7D6ciwpu1"
