@@ -1,0 +1,645 @@
+2026-05-14 16:11:04,781 - haystack.core.pipeline.base - DEBUG - Adding component 'converter' (<haystack.components.converters.pypdf.PyPDFToDocument object at 0x17ec72a60>
+
+Inputs:
+  - sources: list[Union[str, Path, ByteStream]]
+  - meta: Union[dict[str, Any], list[dict[str, Any]]]
+Outputs:
+  - documents: list[Document])
+2026-05-14 16:11:04,781 - haystack.core.pipeline.base - DEBUG - Adding component 'cleaner' (<haystack.components.preprocessors.document_cleaner.DocumentCleaner object at 0x17ec8c070>
+
+Inputs:
+  - documents: list[Document]
+Outputs:
+  - documents: list[Document])
+2026-05-14 16:11:04,781 - haystack.core.pipeline.base - DEBUG - Adding component 'splitter' (<haystack.components.preprocessors.document_splitter.DocumentSplitter object at 0x17ec8c1c0>
+
+Inputs:
+  - documents: list[Document]
+Outputs:
+  - documents: list[Document])
+2026-05-14 16:11:04,781 - haystack.core.pipeline.base - DEBUG - Adding component 'embedder' (<haystack_integrations.components.embedders.fastembed.fastembed_document_embedder.FastembedDocumentEmbedder object at 0x17ec8c370>
+
+Inputs:
+  - documents: list[Document]
+Outputs:
+  - documents: list[Document])
+2026-05-14 16:11:04,781 - haystack.core.pipeline.base - DEBUG - Adding component 'writer' (<haystack.components.writers.document_writer.DocumentWriter object at 0x17ec8c3d0>
+
+Inputs:
+  - documents: list[Document]
+  - policy: Optional[DuplicatePolicy]
+Outputs:
+  - documents_written: int)
+2026-05-14 16:11:04,781 - haystack.core.pipeline.base - DEBUG - Connecting 'converter.documents' to 'cleaner.documents'
+2026-05-14 16:11:04,781 - haystack.core.pipeline.base - DEBUG - Connecting 'cleaner.documents' to 'splitter.documents'
+2026-05-14 16:11:04,781 - haystack.core.pipeline.base - DEBUG - Connecting 'splitter.documents' to 'embedder.documents'
+2026-05-14 16:11:04,782 - haystack.core.pipeline.base - DEBUG - Connecting 'embedder.documents' to 'writer.documents'
+2026-05-14 16:11:04,782 - haystack.core.pipeline.base - DEBUG - Adding component 'text_embedder' (<haystack_integrations.components.embedders.fastembed.fastembed_text_embedder.FastembedTextEmbedder object at 0x17ec8c580>
+
+Inputs:
+  - text: str
+Outputs:
+  - embedding: list[float])
+2026-05-14 16:11:04,782 - haystack.core.pipeline.base - DEBUG - Adding component 'retriever' (<haystack.components.retrievers.in_memory.embedding_retriever.InMemoryEmbeddingRetriever object at 0x17ec8c730>
+
+Inputs:
+  - query_embedding: list[float]
+  - filters: Optional[dict[str, Any]]
+  - top_k: Optional[int]
+  - scale_score: Optional[bool]
+  - return_embedding: Optional[bool]
+Outputs:
+  - documents: list[Document])
+2026-05-14 16:11:04,782 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-14 16:11:04,782 - httpx - DEBUG - load_verify_locations cafile='/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/certifi/cacert.pem'
+2026-05-14 16:11:04,786 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-14 16:11:04,787 - httpx - DEBUG - load_verify_locations cafile='/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/certifi/cacert.pem'
+2026-05-14 16:11:04,790 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-14 16:11:04,790 - httpx - DEBUG - load_verify_locations cafile='/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/certifi/cacert.pem'
+2026-05-14 16:11:04,794 - haystack.core.pipeline.base - DEBUG - Adding component 'llm_deepseek' (<haystack.components.generators.openai.OpenAIGenerator object at 0x17ec8c9a0>
+
+Inputs:
+  - prompt: str
+  - system_prompt: Optional[str]
+  - streaming_callback: Union[Callable[], Callable[, Awaitable[]]]
+  - generation_kwargs: Optional[dict[str, Any]]
+Outputs:
+  - replies: list[str]
+  - meta: list[dict[str, Any]])
+2026-05-14 16:11:04,795 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-14 16:11:04,795 - httpx - DEBUG - load_verify_locations cafile='/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/certifi/cacert.pem'
+2026-05-14 16:11:04,799 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-14 16:11:04,799 - httpx - DEBUG - load_verify_locations cafile='/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/certifi/cacert.pem'
+2026-05-14 16:11:04,802 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-14 16:11:04,803 - httpx - DEBUG - load_verify_locations cafile='/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/certifi/cacert.pem'
+2026-05-14 16:11:04,806 - haystack.core.pipeline.base - DEBUG - Adding component 'llm_qwen' (<haystack.components.generators.openai.OpenAIGenerator object at 0x17ec9d310>
+
+Inputs:
+  - prompt: str
+  - system_prompt: Optional[str]
+  - streaming_callback: Union[Callable[], Callable[, Awaitable[]]]
+  - generation_kwargs: Optional[dict[str, Any]]
+Outputs:
+  - replies: list[str]
+  - meta: list[dict[str, Any]])
+2026-05-14 16:11:04,807 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-14 16:11:04,807 - httpx - DEBUG - load_verify_locations cafile='/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/certifi/cacert.pem'
+2026-05-14 16:11:04,811 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-14 16:11:04,811 - httpx - DEBUG - load_verify_locations cafile='/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/certifi/cacert.pem'
+2026-05-14 16:11:04,815 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-14 16:11:04,815 - httpx - DEBUG - load_verify_locations cafile='/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/certifi/cacert.pem'
+2026-05-14 16:11:04,819 - haystack.core.pipeline.base - DEBUG - Adding component 'final_ernie' (<haystack.components.generators.openai.OpenAIGenerator object at 0x17ec9df70>
+
+Inputs:
+  - prompt: str
+  - system_prompt: Optional[str]
+  - streaming_callback: Union[Callable[], Callable[, Awaitable[]]]
+  - generation_kwargs: Optional[dict[str, Any]]
+Outputs:
+  - replies: list[str]
+  - meta: list[dict[str, Any]])
+2026-05-14 16:11:04,820 - haystack.components.builders.prompt_builder - WARNING - PromptBuilder has 2 prompt variables, but `required_variables` is not set. By default, all prompt variables are treated as optional, which may lead to unintended behavior in multi-branch pipelines. To avoid unexpected execution, ensure that variables intended to be required are explicitly set in `required_variables`.
+2026-05-14 16:11:04,820 - haystack.core.pipeline.base - DEBUG - Adding component 'prompt_deepseek' (<haystack.components.builders.prompt_builder.PromptBuilder object at 0x17eca6820>
+
+Inputs:
+  - documents: Any
+  - query: Any
+  - template: Optional[str]
+  - template_variables: Optional[dict[str, Any]]
+Outputs:
+  - prompt: str)
+2026-05-14 16:11:04,821 - haystack.components.builders.prompt_builder - WARNING - PromptBuilder has 2 prompt variables, but `required_variables` is not set. By default, all prompt variables are treated as optional, which may lead to unintended behavior in multi-branch pipelines. To avoid unexpected execution, ensure that variables intended to be required are explicitly set in `required_variables`.
+2026-05-14 16:11:04,821 - haystack.core.pipeline.base - DEBUG - Adding component 'prompt_qwen' (<haystack.components.builders.prompt_builder.PromptBuilder object at 0x17ecbf610>
+
+Inputs:
+  - documents: Any
+  - query: Any
+  - template: Optional[str]
+  - template_variables: Optional[dict[str, Any]]
+Outputs:
+  - prompt: str)
+2026-05-14 16:11:04,822 - haystack.components.builders.prompt_builder - WARNING - PromptBuilder has 4 prompt variables, but `required_variables` is not set. By default, all prompt variables are treated as optional, which may lead to unintended behavior in multi-branch pipelines. To avoid unexpected execution, ensure that variables intended to be required are explicitly set in `required_variables`.
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Adding component 'synthesis_prompt' (<haystack.components.builders.prompt_builder.PromptBuilder object at 0x17ecc57f0>
+
+Inputs:
+  - query: Any
+  - answer_2: Any
+  - answer_1: Any
+  - documents: Any
+  - template: Optional[str]
+  - template_variables: Optional[dict[str, Any]]
+Outputs:
+  - prompt: str)
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Connecting 'text_embedder.embedding' to 'retriever.query_embedding'
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Connecting 'retriever.documents' to 'prompt_deepseek.documents'
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Connecting 'retriever.documents' to 'prompt_qwen.documents'
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Connecting 'retriever.documents' to 'synthesis_prompt.documents'
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Connecting 'prompt_deepseek.prompt' to 'llm_deepseek.prompt'
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Connecting 'prompt_qwen.prompt' to 'llm_qwen.prompt'
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Connecting 'llm_deepseek.replies' to 'synthesis_prompt.answer_1'
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Connecting 'llm_qwen.replies' to 'synthesis_prompt.answer_2'
+2026-05-14 16:11:04,822 - haystack.core.pipeline.base - DEBUG - Connecting 'synthesis_prompt.prompt' to 'final_ernie.prompt'
+2026-05-14 16:11:04,824 - haystack.core.pipeline.base - INFO - Warming up component splitter...
+2026-05-14 16:11:04,824 - haystack.core.pipeline.base - INFO - Warming up component embedder...
+2026-05-14 16:11:04,940 - haystack.core.pipeline.pipeline - INFO - Running component converter
+2026-05-14 16:11:05,419 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): eu.i.posthog.com:443
+2026-05-14 16:11:05,712 - haystack.core.pipeline.pipeline - INFO - Running component cleaner
+2026-05-14 16:11:05,714 - haystack.core.pipeline.pipeline - INFO - Running component splitter
+2026-05-14 16:11:05,721 - haystack.core.pipeline.pipeline - INFO - Running component embedder
+2026-05-14 16:11:07,099 - urllib3.connectionpool - DEBUG - https://eu.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+2026-05-14 16:11:19,075 - haystack.core.pipeline.pipeline - INFO - Running component writer
+2026-05-14 16:11:19,082 - haystack.core.pipeline.base - INFO - Warming up component text_embedder...
+2026-05-14 16:11:19,082 - haystack.core.pipeline.pipeline - INFO - Running component text_embedder
+2026-05-14 16:11:19,092 - haystack.core.pipeline.pipeline - INFO - Running component retriever
+2026-05-14 16:11:19,095 - haystack.core.pipeline.pipeline - INFO - Running component prompt_deepseek
+2026-05-14 16:11:19,095 - haystack.core.pipeline.pipeline - INFO - Running component prompt_qwen
+2026-05-14 16:11:19,096 - haystack.core.pipeline.pipeline - INFO - Running component llm_deepseek
+2026-05-14 16:11:19,344 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-bfed1c36-e0e4-42d9-b866-0d1d1d3a67ac', 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Context:  Through interactive feedback mechanisms and collabo-\nrative engagement with virtual instructors and peers, learners can refine their skills in a\nmanner that mirrors traditional modes of cultural transmission, reinforcing the authenticity\nand depth of cultural learning.\nIn addition to adaptive learning, the system leverages AI-driven feedback and conver-\nsational interactions to personalize the learning experience (Chheang et al., 2024; Chugh\net al., 2025). AI-powered virtual assistants analyze user performance, provide real-time\ncorrections, and offer tailored guidance based on individual learning progress. Through AI-\ndriven adaptive learning pathways, learners receive context-specific feedback, enhancing\ntheir understanding of Lanna Dance techniques, rhythm, and cultural expressions. This dy-\nnamic and responsive learning system enables personalized learning experiences, ensuring\nthat students progress at their own pace while maintaining engagement and motivation.\nBy situating learning within a digitally enriched and culturally meaningful environment,\nthis approach fosters both   predictions necessitates "cultural work" (2020: 48). Ethnographic description can effectively comprehend relationships in AI systems. McCarty (2019) articulates that artificial intelligence anthropology should prioritize an insider perspective of understanding, emphasizing the importance of human-machine resonance rather than solely symbolic representation (2019: 156). As humans adapt to increasingly sophisticated machines that aim to mimic rational decision-making, they must acknowledge that these tools do not possess inherent thought processes but facilitate learning. Traditional dances, folksongs, beliefs, and practices are taught by the elders and performers to the youth, and most children learn about folk stories from their grandparents through bedtime stories and family gatherings. Remembrance is also carried out extensively through digital media and communal archives; there is a digital shift from intergenerational storytelling to visual digital pedagogies. Much of   create immersive performances that offer\naudiences multisensory experiences, transcending traditional performance boundaries.\nFor example, the “Free ur head” project invites participants to partake in an impromptu,\nunrehearsed choreography using custom-developed real-time XR technology, fostering\ncommunal engagement through VR (La Biennale di Venezia, 2024). The integration of\nimmersive technologies in dance and performing arts has also raised important consid-\nerations regarding the balance between technological innovation and the preservation of\nhuman artistry. While these technologies offer new tools for creativity and engagement, it\nis essential to ensure that they complement rather than replace the expressive nuances of\nhuman performance. As the field continues to evolve, ongoing dialog among technologists,\nartists, and educators will be crucial in navigating the ethical and artistic implications of\nthese advancements.\n2.3. Metaverse Applications in Education and Cultural Contexts\nThe Metaverse, a virtual collective space integrating virtual and  \nQuestion: Face-to-face teaching is Traditional human-central practices\nAnswer:'}], 'model': 'deepseek-reasoner', 'stream': False}}
+2026-05-14 16:11:19,369 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepseek.com/v1/chat/completions
+2026-05-14 16:11:19,369 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=17890 local_address=None timeout=30.0 socket_options=None
+2026-05-14 16:11:19,369 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x30370e910>
+2026-05-14 16:11:19,370 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:11:19,370 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-14 16:11:19,370 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'CONNECT']>
+2026-05-14 16:11:19,370 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-14 16:11:19,370 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:11:19,370 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'Connection established', [])
+2026-05-14 16:11:19,370 - httpcore.proxy - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x17ec7c440> server_hostname='api.deepseek.com' timeout=30.0
+2026-05-14 16:11:19,449 - urllib3.connectionpool - DEBUG - https://eu.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+2026-05-14 16:11:20,562 - httpcore.proxy - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x17ecc8850>
+2026-05-14 16:11:20,562 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-14 16:11:20,563 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-14 16:11:20,563 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-14 16:11:20,563 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-14 16:11:20,563 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-14 16:11:20,824 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'openresty'), (b'Content-Type', b'application/json'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'd347addad201562700b34a16eab3f491'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Age', b'0'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 14 May 2026 08:11:20 GMT'), (b'EO-LOG-UUID', b'12559042817527680868'), (b'EO-Cache-Status', b'MISS')])
+2026-05-14 16:11:20,826 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:11:20,827 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-14 16:11:25,743 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-14 16:11:25,744 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-14 16:11:25,744 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-14 16:11:25,745 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepseek.com/v1/chat/completions "200 OK" Headers({'server': 'openresty', 'content-type': 'application/json', 'vary': 'origin, access-control-request-method, access-control-request-headers', 'access-control-allow-credentials': 'true', 'x-ds-trace-id': 'd347addad201562700b34a16eab3f491', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'age': '0', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'date': 'Thu, 14 May 2026 08:11:20 GMT', 'eo-log-uuid': '12559042817527680868', 'eo-cache-status': 'MISS'})
+2026-05-14 16:11:25,745 - openai._base_client - DEBUG - request_id: None
+2026-05-14 16:11:25,770 - haystack.core.pipeline.pipeline - INFO - Running component llm_qwen
+2026-05-14 16:11:25,771 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4c79873f-d390-4ff0-974b-0a628b03efc4', 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Context:  Through interactive feedback mechanisms and collabo-\nrative engagement with virtual instructors and peers, learners can refine their skills in a\nmanner that mirrors traditional modes of cultural transmission, reinforcing the authenticity\nand depth of cultural learning.\nIn addition to adaptive learning, the system leverages AI-driven feedback and conver-\nsational interactions to personalize the learning experience (Chheang et al., 2024; Chugh\net al., 2025). AI-powered virtual assistants analyze user performance, provide real-time\ncorrections, and offer tailored guidance based on individual learning progress. Through AI-\ndriven adaptive learning pathways, learners receive context-specific feedback, enhancing\ntheir understanding of Lanna Dance techniques, rhythm, and cultural expressions. This dy-\nnamic and responsive learning system enables personalized learning experiences, ensuring\nthat students progress at their own pace while maintaining engagement and motivation.\nBy situating learning within a digitally enriched and culturally meaningful environment,\nthis approach fosters both   predictions necessitates "cultural work" (2020: 48). Ethnographic description can effectively comprehend relationships in AI systems. McCarty (2019) articulates that artificial intelligence anthropology should prioritize an insider perspective of understanding, emphasizing the importance of human-machine resonance rather than solely symbolic representation (2019: 156). As humans adapt to increasingly sophisticated machines that aim to mimic rational decision-making, they must acknowledge that these tools do not possess inherent thought processes but facilitate learning. Traditional dances, folksongs, beliefs, and practices are taught by the elders and performers to the youth, and most children learn about folk stories from their grandparents through bedtime stories and family gatherings. Remembrance is also carried out extensively through digital media and communal archives; there is a digital shift from intergenerational storytelling to visual digital pedagogies. Much of   create immersive performances that offer\naudiences multisensory experiences, transcending traditional performance boundaries.\nFor example, the “Free ur head” project invites participants to partake in an impromptu,\nunrehearsed choreography using custom-developed real-time XR technology, fostering\ncommunal engagement through VR (La Biennale di Venezia, 2024). The integration of\nimmersive technologies in dance and performing arts has also raised important consid-\nerations regarding the balance between technological innovation and the preservation of\nhuman artistry. While these technologies offer new tools for creativity and engagement, it\nis essential to ensure that they complement rather than replace the expressive nuances of\nhuman performance. As the field continues to evolve, ongoing dialog among technologists,\nartists, and educators will be crucial in navigating the ethical and artistic implications of\nthese advancements.\n2.3. Metaverse Applications in Education and Cultural Contexts\nThe Metaverse, a virtual collective space integrating virtual and  \nQuestion: Face-to-face teaching is Traditional human-central practices\nAnswer:'}], 'model': 'qwen-max', 'stream': False}}
+2026-05-14 16:11:25,771 - openai._base_client - DEBUG - Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2026-05-14 16:11:25,771 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=17890 local_address=None timeout=30.0 socket_options=None
+2026-05-14 16:11:25,772 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x16d47e070>
+2026-05-14 16:11:25,772 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:11:25,772 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-14 16:11:25,772 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'CONNECT']>
+2026-05-14 16:11:25,772 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-14 16:11:25,772 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:11:25,772 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'Connection established', [])
+2026-05-14 16:11:25,772 - httpcore.proxy - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x17ec7c5c0> server_hostname='dashscope.aliyuncs.com' timeout=30.0
+2026-05-14 16:11:55,775 - httpcore.proxy - DEBUG - start_tls.failed exception=ConnectTimeout(timeout('_ssl.c:1130: The handshake operation timed out'))
+2026-05-14 16:11:55,776 - openai._base_client - DEBUG - Encountered httpx.TimeoutException
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 163, in start_tls
+    sock = ssl_context.wrap_socket(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 268, in handle_request
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/http_proxy.py", line 317, in handle_request
+    stream = stream.start_tls(**kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 1037, in request
+    response = self._send_request(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+2026-05-14 16:11:55,787 - openai._base_client - DEBUG - 5 retries left
+2026-05-14 16:11:55,790 - openai._base_client - INFO - Retrying request to /chat/completions in 0.398544 seconds
+2026-05-14 16:11:56,194 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4c79873f-d390-4ff0-974b-0a628b03efc4', 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Context:  Through interactive feedback mechanisms and collabo-\nrative engagement with virtual instructors and peers, learners can refine their skills in a\nmanner that mirrors traditional modes of cultural transmission, reinforcing the authenticity\nand depth of cultural learning.\nIn addition to adaptive learning, the system leverages AI-driven feedback and conver-\nsational interactions to personalize the learning experience (Chheang et al., 2024; Chugh\net al., 2025). AI-powered virtual assistants analyze user performance, provide real-time\ncorrections, and offer tailored guidance based on individual learning progress. Through AI-\ndriven adaptive learning pathways, learners receive context-specific feedback, enhancing\ntheir understanding of Lanna Dance techniques, rhythm, and cultural expressions. This dy-\nnamic and responsive learning system enables personalized learning experiences, ensuring\nthat students progress at their own pace while maintaining engagement and motivation.\nBy situating learning within a digitally enriched and culturally meaningful environment,\nthis approach fosters both   predictions necessitates "cultural work" (2020: 48). Ethnographic description can effectively comprehend relationships in AI systems. McCarty (2019) articulates that artificial intelligence anthropology should prioritize an insider perspective of understanding, emphasizing the importance of human-machine resonance rather than solely symbolic representation (2019: 156). As humans adapt to increasingly sophisticated machines that aim to mimic rational decision-making, they must acknowledge that these tools do not possess inherent thought processes but facilitate learning. Traditional dances, folksongs, beliefs, and practices are taught by the elders and performers to the youth, and most children learn about folk stories from their grandparents through bedtime stories and family gatherings. Remembrance is also carried out extensively through digital media and communal archives; there is a digital shift from intergenerational storytelling to visual digital pedagogies. Much of   create immersive performances that offer\naudiences multisensory experiences, transcending traditional performance boundaries.\nFor example, the “Free ur head” project invites participants to partake in an impromptu,\nunrehearsed choreography using custom-developed real-time XR technology, fostering\ncommunal engagement through VR (La Biennale di Venezia, 2024). The integration of\nimmersive technologies in dance and performing arts has also raised important consid-\nerations regarding the balance between technological innovation and the preservation of\nhuman artistry. While these technologies offer new tools for creativity and engagement, it\nis essential to ensure that they complement rather than replace the expressive nuances of\nhuman performance. As the field continues to evolve, ongoing dialog among technologists,\nartists, and educators will be crucial in navigating the ethical and artistic implications of\nthese advancements.\n2.3. Metaverse Applications in Education and Cultural Contexts\nThe Metaverse, a virtual collective space integrating virtual and  \nQuestion: Face-to-face teaching is Traditional human-central practices\nAnswer:'}], 'model': 'qwen-max', 'stream': False}}
+2026-05-14 16:11:56,196 - openai._base_client - DEBUG - Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2026-05-14 16:11:56,197 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=17890 local_address=None timeout=30.0 socket_options=None
+2026-05-14 16:11:56,198 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x16d45f040>
+2026-05-14 16:11:56,198 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:11:56,199 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-14 16:11:56,199 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'CONNECT']>
+2026-05-14 16:11:56,199 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-14 16:11:56,199 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:11:56,199 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'Connection established', [])
+2026-05-14 16:11:56,200 - httpcore.proxy - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x17ec7c5c0> server_hostname='dashscope.aliyuncs.com' timeout=30.0
+2026-05-14 16:12:26,203 - httpcore.proxy - DEBUG - start_tls.failed exception=ConnectTimeout(timeout('_ssl.c:1130: The handshake operation timed out'))
+2026-05-14 16:12:26,204 - openai._base_client - DEBUG - Encountered httpx.TimeoutException
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 163, in start_tls
+    sock = ssl_context.wrap_socket(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 268, in handle_request
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/http_proxy.py", line 317, in handle_request
+    stream = stream.start_tls(**kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 1037, in request
+    response = self._send_request(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+2026-05-14 16:12:26,206 - openai._base_client - DEBUG - 4 retries left
+2026-05-14 16:12:26,206 - openai._base_client - INFO - Retrying request to /chat/completions in 0.858753 seconds
+2026-05-14 16:12:27,070 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4c79873f-d390-4ff0-974b-0a628b03efc4', 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Context:  Through interactive feedback mechanisms and collabo-\nrative engagement with virtual instructors and peers, learners can refine their skills in a\nmanner that mirrors traditional modes of cultural transmission, reinforcing the authenticity\nand depth of cultural learning.\nIn addition to adaptive learning, the system leverages AI-driven feedback and conver-\nsational interactions to personalize the learning experience (Chheang et al., 2024; Chugh\net al., 2025). AI-powered virtual assistants analyze user performance, provide real-time\ncorrections, and offer tailored guidance based on individual learning progress. Through AI-\ndriven adaptive learning pathways, learners receive context-specific feedback, enhancing\ntheir understanding of Lanna Dance techniques, rhythm, and cultural expressions. This dy-\nnamic and responsive learning system enables personalized learning experiences, ensuring\nthat students progress at their own pace while maintaining engagement and motivation.\nBy situating learning within a digitally enriched and culturally meaningful environment,\nthis approach fosters both   predictions necessitates "cultural work" (2020: 48). Ethnographic description can effectively comprehend relationships in AI systems. McCarty (2019) articulates that artificial intelligence anthropology should prioritize an insider perspective of understanding, emphasizing the importance of human-machine resonance rather than solely symbolic representation (2019: 156). As humans adapt to increasingly sophisticated machines that aim to mimic rational decision-making, they must acknowledge that these tools do not possess inherent thought processes but facilitate learning. Traditional dances, folksongs, beliefs, and practices are taught by the elders and performers to the youth, and most children learn about folk stories from their grandparents through bedtime stories and family gatherings. Remembrance is also carried out extensively through digital media and communal archives; there is a digital shift from intergenerational storytelling to visual digital pedagogies. Much of   create immersive performances that offer\naudiences multisensory experiences, transcending traditional performance boundaries.\nFor example, the “Free ur head” project invites participants to partake in an impromptu,\nunrehearsed choreography using custom-developed real-time XR technology, fostering\ncommunal engagement through VR (La Biennale di Venezia, 2024). The integration of\nimmersive technologies in dance and performing arts has also raised important consid-\nerations regarding the balance between technological innovation and the preservation of\nhuman artistry. While these technologies offer new tools for creativity and engagement, it\nis essential to ensure that they complement rather than replace the expressive nuances of\nhuman performance. As the field continues to evolve, ongoing dialog among technologists,\nartists, and educators will be crucial in navigating the ethical and artistic implications of\nthese advancements.\n2.3. Metaverse Applications in Education and Cultural Contexts\nThe Metaverse, a virtual collective space integrating virtual and  \nQuestion: Face-to-face teaching is Traditional human-central practices\nAnswer:'}], 'model': 'qwen-max', 'stream': False}}
+2026-05-14 16:12:27,073 - openai._base_client - DEBUG - Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2026-05-14 16:12:27,073 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=17890 local_address=None timeout=30.0 socket_options=None
+2026-05-14 16:12:27,074 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x3035dae50>
+2026-05-14 16:12:27,074 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:12:27,075 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-14 16:12:27,075 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'CONNECT']>
+2026-05-14 16:12:27,075 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-14 16:12:27,075 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:12:27,075 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'Connection established', [])
+2026-05-14 16:12:27,075 - httpcore.proxy - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x17ec7c5c0> server_hostname='dashscope.aliyuncs.com' timeout=30.0
+2026-05-14 16:12:57,078 - httpcore.proxy - DEBUG - start_tls.failed exception=ConnectTimeout(timeout('_ssl.c:1130: The handshake operation timed out'))
+2026-05-14 16:12:57,079 - openai._base_client - DEBUG - Encountered httpx.TimeoutException
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 163, in start_tls
+    sock = ssl_context.wrap_socket(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 268, in handle_request
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/http_proxy.py", line 317, in handle_request
+    stream = stream.start_tls(**kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 1037, in request
+    response = self._send_request(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+2026-05-14 16:12:57,081 - openai._base_client - DEBUG - 3 retries left
+2026-05-14 16:12:57,081 - openai._base_client - INFO - Retrying request to /chat/completions in 1.662088 seconds
+2026-05-14 16:12:58,746 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4c79873f-d390-4ff0-974b-0a628b03efc4', 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Context:  Through interactive feedback mechanisms and collabo-\nrative engagement with virtual instructors and peers, learners can refine their skills in a\nmanner that mirrors traditional modes of cultural transmission, reinforcing the authenticity\nand depth of cultural learning.\nIn addition to adaptive learning, the system leverages AI-driven feedback and conver-\nsational interactions to personalize the learning experience (Chheang et al., 2024; Chugh\net al., 2025). AI-powered virtual assistants analyze user performance, provide real-time\ncorrections, and offer tailored guidance based on individual learning progress. Through AI-\ndriven adaptive learning pathways, learners receive context-specific feedback, enhancing\ntheir understanding of Lanna Dance techniques, rhythm, and cultural expressions. This dy-\nnamic and responsive learning system enables personalized learning experiences, ensuring\nthat students progress at their own pace while maintaining engagement and motivation.\nBy situating learning within a digitally enriched and culturally meaningful environment,\nthis approach fosters both   predictions necessitates "cultural work" (2020: 48). Ethnographic description can effectively comprehend relationships in AI systems. McCarty (2019) articulates that artificial intelligence anthropology should prioritize an insider perspective of understanding, emphasizing the importance of human-machine resonance rather than solely symbolic representation (2019: 156). As humans adapt to increasingly sophisticated machines that aim to mimic rational decision-making, they must acknowledge that these tools do not possess inherent thought processes but facilitate learning. Traditional dances, folksongs, beliefs, and practices are taught by the elders and performers to the youth, and most children learn about folk stories from their grandparents through bedtime stories and family gatherings. Remembrance is also carried out extensively through digital media and communal archives; there is a digital shift from intergenerational storytelling to visual digital pedagogies. Much of   create immersive performances that offer\naudiences multisensory experiences, transcending traditional performance boundaries.\nFor example, the “Free ur head” project invites participants to partake in an impromptu,\nunrehearsed choreography using custom-developed real-time XR technology, fostering\ncommunal engagement through VR (La Biennale di Venezia, 2024). The integration of\nimmersive technologies in dance and performing arts has also raised important consid-\nerations regarding the balance between technological innovation and the preservation of\nhuman artistry. While these technologies offer new tools for creativity and engagement, it\nis essential to ensure that they complement rather than replace the expressive nuances of\nhuman performance. As the field continues to evolve, ongoing dialog among technologists,\nartists, and educators will be crucial in navigating the ethical and artistic implications of\nthese advancements.\n2.3. Metaverse Applications in Education and Cultural Contexts\nThe Metaverse, a virtual collective space integrating virtual and  \nQuestion: Face-to-face teaching is Traditional human-central practices\nAnswer:'}], 'model': 'qwen-max', 'stream': False}}
+2026-05-14 16:12:58,748 - openai._base_client - DEBUG - Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2026-05-14 16:12:58,748 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=17890 local_address=None timeout=30.0 socket_options=None
+2026-05-14 16:12:58,749 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x16d45f790>
+2026-05-14 16:12:58,749 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:12:58,750 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-14 16:12:58,750 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'CONNECT']>
+2026-05-14 16:12:58,750 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-14 16:12:58,750 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:12:58,750 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'Connection established', [])
+2026-05-14 16:12:58,750 - httpcore.proxy - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x17ec7c5c0> server_hostname='dashscope.aliyuncs.com' timeout=30.0
+2026-05-14 16:13:28,753 - httpcore.proxy - DEBUG - start_tls.failed exception=ConnectTimeout(timeout('_ssl.c:1130: The handshake operation timed out'))
+2026-05-14 16:13:28,755 - openai._base_client - DEBUG - Encountered httpx.TimeoutException
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 163, in start_tls
+    sock = ssl_context.wrap_socket(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 268, in handle_request
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/http_proxy.py", line 317, in handle_request
+    stream = stream.start_tls(**kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 1037, in request
+    response = self._send_request(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+2026-05-14 16:13:28,758 - openai._base_client - DEBUG - 2 retries left
+2026-05-14 16:13:28,758 - openai._base_client - INFO - Retrying request to /chat/completions in 3.679923 seconds
+2026-05-14 16:13:32,441 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4c79873f-d390-4ff0-974b-0a628b03efc4', 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Context:  Through interactive feedback mechanisms and collabo-\nrative engagement with virtual instructors and peers, learners can refine their skills in a\nmanner that mirrors traditional modes of cultural transmission, reinforcing the authenticity\nand depth of cultural learning.\nIn addition to adaptive learning, the system leverages AI-driven feedback and conver-\nsational interactions to personalize the learning experience (Chheang et al., 2024; Chugh\net al., 2025). AI-powered virtual assistants analyze user performance, provide real-time\ncorrections, and offer tailored guidance based on individual learning progress. Through AI-\ndriven adaptive learning pathways, learners receive context-specific feedback, enhancing\ntheir understanding of Lanna Dance techniques, rhythm, and cultural expressions. This dy-\nnamic and responsive learning system enables personalized learning experiences, ensuring\nthat students progress at their own pace while maintaining engagement and motivation.\nBy situating learning within a digitally enriched and culturally meaningful environment,\nthis approach fosters both   predictions necessitates "cultural work" (2020: 48). Ethnographic description can effectively comprehend relationships in AI systems. McCarty (2019) articulates that artificial intelligence anthropology should prioritize an insider perspective of understanding, emphasizing the importance of human-machine resonance rather than solely symbolic representation (2019: 156). As humans adapt to increasingly sophisticated machines that aim to mimic rational decision-making, they must acknowledge that these tools do not possess inherent thought processes but facilitate learning. Traditional dances, folksongs, beliefs, and practices are taught by the elders and performers to the youth, and most children learn about folk stories from their grandparents through bedtime stories and family gatherings. Remembrance is also carried out extensively through digital media and communal archives; there is a digital shift from intergenerational storytelling to visual digital pedagogies. Much of   create immersive performances that offer\naudiences multisensory experiences, transcending traditional performance boundaries.\nFor example, the “Free ur head” project invites participants to partake in an impromptu,\nunrehearsed choreography using custom-developed real-time XR technology, fostering\ncommunal engagement through VR (La Biennale di Venezia, 2024). The integration of\nimmersive technologies in dance and performing arts has also raised important consid-\nerations regarding the balance between technological innovation and the preservation of\nhuman artistry. While these technologies offer new tools for creativity and engagement, it\nis essential to ensure that they complement rather than replace the expressive nuances of\nhuman performance. As the field continues to evolve, ongoing dialog among technologists,\nartists, and educators will be crucial in navigating the ethical and artistic implications of\nthese advancements.\n2.3. Metaverse Applications in Education and Cultural Contexts\nThe Metaverse, a virtual collective space integrating virtual and  \nQuestion: Face-to-face teaching is Traditional human-central practices\nAnswer:'}], 'model': 'qwen-max', 'stream': False}}
+2026-05-14 16:13:32,444 - openai._base_client - DEBUG - Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2026-05-14 16:13:32,445 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=17890 local_address=None timeout=30.0 socket_options=None
+2026-05-14 16:13:32,446 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x30370efa0>
+2026-05-14 16:13:32,446 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:13:32,446 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-14 16:13:32,446 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'CONNECT']>
+2026-05-14 16:13:32,446 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-14 16:13:32,447 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:13:32,447 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'Connection established', [])
+2026-05-14 16:13:32,447 - httpcore.proxy - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x17ec7c5c0> server_hostname='dashscope.aliyuncs.com' timeout=30.0
+2026-05-14 16:14:02,450 - httpcore.proxy - DEBUG - start_tls.failed exception=ConnectTimeout(timeout('_ssl.c:1130: The handshake operation timed out'))
+2026-05-14 16:14:02,452 - openai._base_client - DEBUG - Encountered httpx.TimeoutException
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 163, in start_tls
+    sock = ssl_context.wrap_socket(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 268, in handle_request
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/http_proxy.py", line 317, in handle_request
+    stream = stream.start_tls(**kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 1037, in request
+    response = self._send_request(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+2026-05-14 16:14:02,454 - openai._base_client - DEBUG - 1 retry left
+2026-05-14 16:14:02,454 - openai._base_client - INFO - Retrying request to /chat/completions in 6.430782 seconds
+2026-05-14 16:14:08,887 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4c79873f-d390-4ff0-974b-0a628b03efc4', 'security': {'bearer_auth': True}, 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Context:  Through interactive feedback mechanisms and collabo-\nrative engagement with virtual instructors and peers, learners can refine their skills in a\nmanner that mirrors traditional modes of cultural transmission, reinforcing the authenticity\nand depth of cultural learning.\nIn addition to adaptive learning, the system leverages AI-driven feedback and conver-\nsational interactions to personalize the learning experience (Chheang et al., 2024; Chugh\net al., 2025). AI-powered virtual assistants analyze user performance, provide real-time\ncorrections, and offer tailored guidance based on individual learning progress. Through AI-\ndriven adaptive learning pathways, learners receive context-specific feedback, enhancing\ntheir understanding of Lanna Dance techniques, rhythm, and cultural expressions. This dy-\nnamic and responsive learning system enables personalized learning experiences, ensuring\nthat students progress at their own pace while maintaining engagement and motivation.\nBy situating learning within a digitally enriched and culturally meaningful environment,\nthis approach fosters both   predictions necessitates "cultural work" (2020: 48). Ethnographic description can effectively comprehend relationships in AI systems. McCarty (2019) articulates that artificial intelligence anthropology should prioritize an insider perspective of understanding, emphasizing the importance of human-machine resonance rather than solely symbolic representation (2019: 156). As humans adapt to increasingly sophisticated machines that aim to mimic rational decision-making, they must acknowledge that these tools do not possess inherent thought processes but facilitate learning. Traditional dances, folksongs, beliefs, and practices are taught by the elders and performers to the youth, and most children learn about folk stories from their grandparents through bedtime stories and family gatherings. Remembrance is also carried out extensively through digital media and communal archives; there is a digital shift from intergenerational storytelling to visual digital pedagogies. Much of   create immersive performances that offer\naudiences multisensory experiences, transcending traditional performance boundaries.\nFor example, the “Free ur head” project invites participants to partake in an impromptu,\nunrehearsed choreography using custom-developed real-time XR technology, fostering\ncommunal engagement through VR (La Biennale di Venezia, 2024). The integration of\nimmersive technologies in dance and performing arts has also raised important consid-\nerations regarding the balance between technological innovation and the preservation of\nhuman artistry. While these technologies offer new tools for creativity and engagement, it\nis essential to ensure that they complement rather than replace the expressive nuances of\nhuman performance. As the field continues to evolve, ongoing dialog among technologists,\nartists, and educators will be crucial in navigating the ethical and artistic implications of\nthese advancements.\n2.3. Metaverse Applications in Education and Cultural Contexts\nThe Metaverse, a virtual collective space integrating virtual and  \nQuestion: Face-to-face teaching is Traditional human-central practices\nAnswer:'}], 'model': 'qwen-max', 'stream': False}}
+2026-05-14 16:14:08,890 - openai._base_client - DEBUG - Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2026-05-14 16:14:08,891 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=17890 local_address=None timeout=30.0 socket_options=None
+2026-05-14 16:14:08,892 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x30370e490>
+2026-05-14 16:14:08,893 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:14:08,893 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-14 16:14:08,893 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'CONNECT']>
+2026-05-14 16:14:08,894 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-14 16:14:08,894 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'CONNECT']>
+2026-05-14 16:14:08,894 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'Connection established', [])
+2026-05-14 16:14:08,895 - httpcore.proxy - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x17ec7c5c0> server_hostname='dashscope.aliyuncs.com' timeout=30.0
+2026-05-14 16:14:38,897 - httpcore.proxy - DEBUG - start_tls.failed exception=ConnectTimeout(timeout('_ssl.c:1130: The handshake operation timed out'))
+2026-05-14 16:14:38,898 - openai._base_client - DEBUG - Encountered httpx.TimeoutException
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 163, in start_tls
+    sock = ssl_context.wrap_socket(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1074, in _create
+    self.do_handshake()
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/ssl.py", line 1343, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 268, in handle_request
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_sync/http_proxy.py", line 317, in handle_request
+    stream = stream.start_tls(**kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 168, in start_tls
+    raise exc
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 1037, in request
+    response = self._send_request(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/openai/_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/meimei/software/anaconda3/envs/workframe/lib/python3.9/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: _ssl.c:1130: The handshake operation timed out
+2026-05-14 16:14:38,898 - openai._base_client - DEBUG - Raising timeout error
+2026-05-14 16:14:38,905 - haystack.core.pipeline.breakpoint - INFO - Pipeline snapshot saved to '/Users/meimei/.haystack/pipeline_snapshot/llm_qwen_0_2026_05_14_16_14_38.json'. You can use this file to debug or resume the pipeline.

@@ -3,10 +3,10 @@ import os
 import ast
 from concurrent.futures import ThreadPoolExecutor
 
-from src.case_select_tool.llm_mgmt.deepseek_api_interface import DeepSeekAPI
-from src.case_select_tool.llm_mgmt.qwen_api_interface import QwenAPI
-from src.case_select_tool.llm_mgmt.kimi_api_interface import KimiAPI
-from src.case_select_tool.llm_mgmt.ernie_api_interface import ErnieAPI
+from src.utils.llm_mgmt.deepseek_api_interface import DeepSeekAPI
+from src.utils.llm_mgmt.qwen_api_interface import QwenAPI
+from src.utils.llm_mgmt.kimi_api_interface import KimiAPI
+from src.utils.llm_mgmt.ernie_api_interface import ErnieAPI
 
 class ScreenPaperCraw:
 
@@ -105,7 +105,7 @@ class ScreenPaperCraw:
         deepseek_condition = (
                 (df_deepseek['kr_flag'] == 'Yes') &
                 (df_deepseek['DT_flag'] == 'Yes') &
-                (df_deepseek['Doc_type'].isin(['Case Study','case study', 'Empirical Study',"empirical study"]))
+                (df_deepseek['Doc_type'].isin(['Case Study','case_study', 'Empirical Study',"empirical study"]))
         )
         # 满足条件赋值为 1/True，不满足为 0/False（可自定义）
         df_deepseek['ic_label'] = deepseek_condition
@@ -114,16 +114,16 @@ class ScreenPaperCraw:
         qwen_condition = (
                 (df_qwen['kr_flag'] == 'Yes') &
                 (df_qwen['DT_flag'] == 'Yes') &
-                (df_qwen['Doc_type'].isin(['Case Study','case study', 'Empirical Study',"empirical study"]))
+                (df_qwen['Doc_type'].isin(['Case Study','case_study', 'Empirical Study',"empirical study"]))
         )
         # 满足条件赋值为 1/True，不满足为 0/False（可自定义）
         df_qwen['ic_label'] = qwen_condition
         df_qwen.to_csv(output_qwen_file, index=False)
 
         ernie_condition = (
-                (df_qwen['kr_flag'] == 'Yes') &
-                (df_qwen['DT_flag'] == 'Yes') &
-                (df_qwen['Doc_type'].isin(['Case Study','case study', 'Empirical Study',"empirical study"]))
+                (df_ernie['kr_flag'] == 'Yes') &
+                (df_ernie['DT_flag'] == 'Yes') &
+                (df_ernie['Doc_type'].isin(['Case Study','case_study', 'Empirical Study',"empirical study"]))
         )
         # 满足条件赋值为 1/True，不满足为 0/False（可自定义）
         df_ernie['ic_label'] = ernie_condition
@@ -142,33 +142,28 @@ class ScreenPaperCraw:
         df_qwen = pd.read_csv(input_qwen_file)
         df_ernie = pd.read_csv(input_ernie_file)
 
-        df_deepseek = df_deepseek[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized", "ic_label"]]
-        df_qwen = df_qwen[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized", "ic_label"]]
-        df_ernie = df_ernie[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized", "ic_label"]]
+        df_deepseek = df_deepseek[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized", "Doc_type","ic_label"]]
+        df_qwen = df_qwen[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized", "Doc_type","ic_label"]]
+        df_ernie = df_ernie[["uuid", "kr_flag", "kr_evidence", "TK_normalized", "DT_flag", "DT_evidence", "DT_normalized", "Doc_type","ic_label"]]
 
         df_ernie = df_ernie.add_prefix('ernie_')
-        df_ernie = df_ernie.rename(columns={'ernie_uuid': 'uuid'})  # 主键保留原名
+        df_ernie = df_ernie.rename(columns={'ernie_uuid': 'uuid'})
 
-        # 1. 给两个表的列统一添加前缀（排除主键Title）
         df_deepseek = df_deepseek.add_prefix('deepseek_')
-        df_deepseek = df_deepseek.rename(columns={'deepseek_uuid': 'uuid'})  # 主键保留原名
+        df_deepseek = df_deepseek.rename(columns={'deepseek_uuid': 'uuid'})
 
         df_qwen = df_qwen.add_prefix('qwen_')
         df_qwen = df_qwen.rename(columns={'qwen_uuid': 'uuid'})
 
-        # 2. 合并（和你原来逻辑一致）
         df_combined = pd.merge(df_combined, df_deepseek, on='uuid', how='left')
         df_combined = pd.merge(df_combined, df_qwen, on='uuid', how='left')
         df_combined = pd.merge(df_combined, df_ernie, on='uuid', how='left')
 
-        # 3. 【关键】列交叉排序：chatgpt_xxx 和 gemini_xxx 成对相邻
-        # 提取所有列名
         all_cols = df_combined.columns.tolist()
-        # 分离出非对比列（如Title、原有列）和对比列
         base_cols = [c for c in all_cols if not c.startswith(('ernie_', 'deepseek_', 'qwen_'))]
-        # 生成交叉排序的列
+
         sorted_cols = []
-        # 遍历所有deepseek开头的列，配对qwen列
+
         for col in [c for c in all_cols if c.startswith('ernie_')]:
             suffix = col.replace('ernie_', '')
             deepseek_col = f'deepseek_{suffix}'
@@ -191,10 +186,10 @@ class ScreenPaperCraw:
 
         # filtered_df.to_csv(f"{output_file}_filtering.csv", index=False)
 
-        filtered_df.to_csv(self.paper_screen_t2 + f"papers_combined_screening.csv",   index=False)
+        filtered_df.to_csv(self.paper_screen_t2 + f"waiting_for_accept_papers.csv",   index=False)
 
         audit_df = audit_df[~audit_df.apply(tuple, axis=1).isin(filtered_df.apply(tuple, axis=1))]
-        audit_df.to_csv(self.paper_screen_t2 + f"papers_combined_auditing.csv", index=False)
+        audit_df.to_csv(self.paper_screen_t2 + f"waiting_for_audit_papers.csv", index=False)
 
     def assess_relevance_parallel(obj):
         """

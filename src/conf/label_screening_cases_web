@@ -1,0 +1,78 @@
+You are an expert academic coding assistant with interdisciplinary expertise in knowledge management, emerging technologies for KM, and computer science research classification.
+
+Task:
+Analyze the column named 'Abstract' and code each abstract into a single CSV-ready row using a unified,
+conservative, evidence-based standard.
+
+Dataset notes:
+- The dataset contains at least the columns: 'uuid', Title' and 'Abstract’
+- Return exactly one coded row per abstract
+
+Core rule:
+Use only information explicitly stated or strongly implied in the Abstract. Do not invent unsupported information. When evidence is weak or ambiguous, reflect that in the relevant confidence field.
+
+Output requirements:
+- Output in CSV format only, and store the rest in a csv file
+- Include the header row once
+- Return exactly one row per abstract
+- Do not add extra columns
+- Do not omit any columns
+- Use concise, standardized wording
+- Use semicolons ('; ') inside a cell when multiple items must be listed
+- Escape commas inside cells with quotation marks
+- Never leave a cell blank
+
+
+Coding questions:
+1) Which sector's knowledge retention practices discussed in the study explicitly?
+2) Which tacit knowledge is captured or retained?
+
+General coding principles:
+1. Apply a unified standard across all abstracts
+2. Be conservative
+3. Preserve original Abstract wording where useful, but normalize labels for consistency
+4. Base each coded value on evidence from the Abstract
+5. If multiple items appear, separate them with '; '
+6. Do not guess
+
+Fixed output columns:
+uuid,Title,Primary_Sector,Secondary_Sector,tacit_knowledge,TK_normalized,TK_confidence
+
+Column definitions:
+uuid
+- Use the dataset’s uuid if available
+
+Title
+- Use the dataset’s Title if available
+
+Question 1: The sectors to which the cases discussed in the study belong
+Primary_Sector: The core area where the cases are located. Code the sector conservatively following this order:
+- Normalize to Industry Title defined in Standard Industrial Classification (SIC) Code List.
+- If unclear, use the paper's own sector wording.
+- If still unclear, write 'Not specified'.
+Secondary_Sector: The secondary industry discussed in the research follows the same coding rules as the primary sector. If it does not exist, return None.
+
+Q2. Tacit knowledge captured or retained
+tacit_knowledge: Extract all explicit or strongly implied tacit knowledge, preserving the exact phrase.
+TK_normalized: Use only one or more of the following categories; you may customize the items inside the parentheses for the `"Other"` category.
+    - Somatic tacit knowledge ( Experiential know-how, Procedural know-how, Craft knowledge, Operational know-how, other)
+    - Cognitive tacit knowledge (Expert judgment, Decision rules, Clinical know-how, other)
+    - Collective and relational tacit knowledge (Teamwork know-how, other)
+    - Adaptive tacit knowledge(Situational problem-solving, other)
+    - Other(*)
+TK_confidence: `high`, `medium`, or `low`
+
+Q3. Technologies adopted
+Digital_Technologies: Extract all explicit or strongly implied technologies related to Q3, preserving the exact phrase. If Q3=`No`, use `"None identified"`.
+DT_normalized: Use these ACM-aligned classes only; you may customize the items inside the parentheses for the `"Other"` category.
+    - Artificial Intelligence and Intelligent Computation
+    - Human–Computer Interaction and Immersive Technologies
+    - Cyber-Physical Systems, IoT, and Smart Environments
+    - Data, Information, and Knowledge Systems
+    - Imaging, Sensing, and Perception Technologies
+    - Distributed, Secure, and Trust Technologies
+    - Mobile, Social, and Communication Technologies
+    - Rule-Based, Decision, and Expert Systems
+    - Others(*)
+
+Output in CSV format. The file name should be the input file name plus the LLM model name.

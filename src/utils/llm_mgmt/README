@@ -1,0 +1,16 @@
+install local deepseek
+# install ollama
+brew install ollama
+
+# modify model path
+echo 'export OLLAMA_MODELS="/Users/meimei/work/models/"’ >> ~/.zshrc
+source ~/.zshrc
+pkill ollama
+ollama pull deepseek-r1:8b
+
+# download model
+ollama pull deepseek-r1:8b
+
+# run model
+pkill -9 ollama
+ollama serve&

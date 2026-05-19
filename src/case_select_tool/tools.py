@@ -2,9 +2,9 @@ import pandas as pd
 
 
 def compare_deepseek_results():
-    input_final = "/Users/meimei/work/coding/mei-factory/src/src/data/papers/backup/midput_04_05/paper_extraction_turn2/papers_combined_screening.csv"
+    input_final = "/Users/meimei/work/coding/mei-factory/src/src/data/papers/backup/midput_04_05/paper_extraction_turn2/waiting_for_accept_papers.csv"
 
-    input_mid = "../data/papers/midput/screening_by_abs_t2/papers_combined_screening.csv"
+    input_mid = "../data/papers/midput/screening_by_abs_t2/waiting_for_accept_papers.csv"
 
     df_final = pd.read_csv(input_final)
     df_mid = pd.read_csv(input_mid)

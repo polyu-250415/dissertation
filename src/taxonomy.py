@@ -47,6 +47,24 @@ class RetentionTaxonomy:
                   f"identify the knowledge retention activities discussed"
     }
 
+    tacit_enum = [
+        "Somatic tacit knowledge",
+        "Cognitive tacit knowledge",
+        "Collective and relational",
+        "Adaptive tacit knowledge"
+    ]
+
+    digital_enum = [
+        "Artificial Intelligence and Intelligent Computation",
+        "Human–Computer Interaction and Immersive Technologies",
+        "Cyber-Physical Systems, IoT, and Smart Environments",
+        "Data, Information, and Knowledge Systems",
+        "Imaging, Sensing, and Perception Technologies",
+        "Distributed, Secure, and Trust Technologies",
+        "Mobile, Social, and Communication Technologies",
+        "Rule-Based, Decision, and Expert Systems"
+    ]
+
 
 class CaptureTaxonomy:
     knowledge_capture_activities_taxonomy = [
@@ -66,6 +84,87 @@ class IndustryTaxonomy:
     """
     Reference Source: Viana, F. (2024). GLOBAL INDUSTRY CLASSIFICATION STANDARD (GICS®) METHODOLOGY.
     """
+    sic_dict = {
+        "0109": "Agriculture, Forestry, And Fishing (Agriculture, Forestry, And Fishing)",
+        "1014": "Mining (Mining)",
+        "15": "Construction (Building Construction—General Contractors And Operative Builders)",
+        "16": "Construction (Heavy Construction Other Than Building Construction—Contractors)",
+        "17": "Construction (Construction—Special Trade Contractors)",
+        "2039": "Manufacturing",
+        "20": "Manufacturing (Food And Kindred Products)",
+        "21": "Manufacturing (Tobacco Products)",
+        "22": "Manufacturing (Textile Mill Products)",
+        "23": "Manufacturing (Apparel And Other Finished Products Made From Fabrics And Similar Materials)",
+        "24": "Manufacturing (Lumber And Wood Products, Except Furniture)",
+        "25": "Manufacturing (Furniture And Fixtures)",
+        "26": "Manufacturing (Paper And Allied Products)",
+        "27": "Manufacturing (Printing, Publishing, And Allied Industries)",
+        "28": "Manufacturing (Chemicals And Allied Products)",
+        "29": "Manufacturing (Petroleum Refining And Related Industries)",
+        "30": "Manufacturing (Rubber And Miscellaneous Plastics Products)",
+        "31": "Manufacturing (Leather And Leather Products)",
+        "32": "Manufacturing (Stone, Clay, Glass, And Concrete Products)",
+        "33": "Manufacturing (Primary Metal Industries)",
+        "34": "Manufacturing (Fabricated Metal Products, Except Machinery And Transportation Equipment)",
+        "35": "Manufacturing (Industrial And Commercial Machinery And Computer Equipment)",
+        "36": "Manufacturing (Electronic And Other Electrical Equipment And Components, Except Computer Equipment)",
+        "37": "Manufacturing (Transportation Equipment)",
+        "38": "Manufacturing (Measuring, Analyzing, And Controlling Instruments; Photographic, Medical And Optical Goods; Watches And Clocks)",
+        "39": "Manufacturing (Miscellaneous Manufacturing Industries)",
+        "40": "Transportation, Communications, Electric, Gas, And Sanitary Services (Railroad Transportation)",
+        "41": "Transportation, Communications, Electric, Gas, And Sanitary Services (Local And Suburban Transit And Interurban Highway Passenger Transportation)",
+        "42": "Transportation, Communications, Electric, Gas, And Sanitary Services (Motor Freight Transportation And Warehousing)",
+        "43": "Transportation, Communications, Electric, Gas, And Sanitary Services (United States Postal Service)",
+        "44": "Transportation, Communications, Electric, Gas, And Sanitary Services (Water Transportation)",
+        "45": "Transportation, Communications, Electric, Gas, And Sanitary Services (Transportation By Air)",
+        "46": "Transportation, Communications, Electric, Gas, And Sanitary Services (Pipelines, Except Natural Gas)",
+        "47": "Transportation, Communications, Electric, Gas, And Sanitary Services (Transportation Services)",
+        "48": "Transportation, Communications, Electric, Gas, And Sanitary Services (Communications)",
+        "49": "Transportation, Communications, Electric, Gas, And Sanitary Services (Electric, Gas, And Sanitary Services)",
+        "50": "Wholesale Trade (Wholesale Trade—Durable Goods)",
+        "51": "Wholesale Trade (Wholesale Trade—Nondurable Goods)",
+        "52": "Retail Trade (Building Materials, Hardware, Garden Supply, And Mobile Home Dealers)",
+        "53": "Retail Trade (General Merchandise Stores)",
+        "54": "Retail Trade (Food Stores)",
+        "55": "Retail Trade (Automotive Dealers And Gasoline Service Stations)",
+        "56": "Retail Trade (Apparel And Accessory Stores)",
+        "57": "Retail Trade (Home Furniture, Furnishings, And Equipment Stores)",
+        "58": "Retail Trade (Eating And Drinking Places)",
+        "59": "Retail Trade (Miscellaneous Retail)",
+        "6067": "Finance, Insurance, And Real Estate",
+        "60": "Finance, Insurance, And Real Estate (Depository Institutions)",
+        "61": "Finance, Insurance, And Real Estate (Nondepository Credit Institutions)",
+        "62": "Finance, Insurance, And Real Estate (Security And Commodity Brokers, Dealers, Exchanges, And Services)",
+        "63": "Finance, Insurance, And Real Estate (Insurance Carriers)",
+        "64": "Finance, Insurance, And Real Estate (Insurance Agents, Brokers, And Service)",
+        "65": "Finance, Insurance, And Real Estate (Real Estate)",
+        "67": "Finance, Insurance, And Real Estate (Holding And Other Investment Offices)",
+        "70": "Services (Hotels, Rooming Houses, Camps, And Other Lodging Places)",
+        "72": "Services (Personal Services)",
+        "73": "Services (Business Services)",
+        "75": "Services (Automotive Repair, Services, And Parking)",
+        "76": "Services (Miscellaneous Repair Services)",
+        "78": "Services (Motion Pictures)",
+        "79": "Services (Amusement And Recreation Services)",
+        "80": "Services (Health Services)",
+        "81": "Services (Legal Services)",
+        "82": "Services (Educational Services)",
+        "83": "Services (Social Services)",
+        "84": "Services (Museums, Art Galleries, And Botanical And Zoological Gardens)",
+        "86": "Services (Membership Organizations)",
+        "87": "Services (Engineering, Accounting, Research, Management, And Related Services)",
+        "88": "Services (Private Households)",
+        "89": "Services (Miscellaneous Services)",
+        "9197": "Public Administration",
+        "91": "Public Administration (Executive, Legislative, And General Government, Except Finance)",
+        "92": "Public Administration (Justice, Public Order, And Safety)",
+        "93": "Public Administration (Public Finance, Taxation, And Monetary Policy)",
+        "94": "Public Administration (Administration Of Human Resource Programs)",
+        "95": "Public Administration (Administration Of Environmental Quality And Housing Programs)",
+        "96": "Public Administration (Administration Of General Economic Programs)",
+        "97": "Public Administration (National Security And International Affairs)",
+        "99": "Nonclassifiable Establishments (Nonclassifiable Establishments)"
+    }
 
     industry_taxonomy_gics = ["Energy",
                               "Materials",
@@ -93,9 +192,10 @@ class IndustryTaxonomy:
     """
     Reference Source: SIC Manual | Occupational Safety and Health Administration. (n.d.). Retrieved February 15, 2026, from https://www.osha.gov/data/sic-manual
     """
+
     industry_taxonomy_sci = [
         {
-            "division": "A. Division A: Agriculture, Forestry, And Fishing",
+            "division": "A: Agriculture, Forestry, And Fishing",
             "majorGroups": [
                 "Major Group 01: Agricultural Production Crops",
                 "Major Group 02: Agriculture production livestock and animal specialties",
@@ -105,7 +205,7 @@ class IndustryTaxonomy:
             ]
         },
         {
-            "division": "B. Division B: Mining",
+            "division": "B: Mining",
             "majorGroups": [
                 "Major Group 10: Metal Mining",
                 "Major Group 11: Gold and silver ores",
@@ -115,7 +215,7 @@ class IndustryTaxonomy:
             ]
         },
         {
-            "division": "C. Division C: Construction",
+            "division": "C: Construction",
             "majorGroups": [
                 "Major Group 15: Building Construction General Contractors And Operative Builders",
                 "Major Group 16: Heavy Construction Other Than Building Construction Contractors",
@@ -123,7 +223,7 @@ class IndustryTaxonomy:
             ]
         },
         {
-            "division": "D. Division D: Manufacturing",
+            "division": "D: Manufacturing",
             "majorGroups": [
                 "Major Group 20: Food And Kindred Products",
                 "Major Group 21: Tobacco Products",
@@ -148,7 +248,7 @@ class IndustryTaxonomy:
             ]
         },
         {
-            "division": "E. Division E: Transportation, Communications, Electric, Gas, And Sanitary Services",
+            "division": "E: Transportation, Communications, Electric, Gas, And Sanitary Services",
             "majorGroups": [
                 "Major Group 40: Railroad Transportation",
                 "Major Group 41: Local And Suburban Transit And Interurban Highway Passenger Transportation",
@@ -163,14 +263,14 @@ class IndustryTaxonomy:
             ]
         },
         {
-            "division": "F. Division F: Wholesale Trade",
+            "division": "F: Wholesale Trade",
             "majorGroups": [
                 "Major Group 50: Wholesale Trade-durable Goods",
                 "Major Group 51: Wholesale Trade-non-durable Goods"
             ]
         },
         {
-            "division": "G. Division G: Retail Trade",
+            "division": "G: Retail Trade",
             "majorGroups": [
                 "Major Group 52: Building Materials, Hardware, Garden Supply, And Mobile Home Dealers",
                 "Major Group 53: General Merchandise Stores",
@@ -183,7 +283,7 @@ class IndustryTaxonomy:
             ]
         },
         {
-            "division": "H. Division H: Finance, Insurance, And Real Estate",
+            "division": "H: Finance, Insurance, And Real Estate",
             "majorGroups": [
                 "Major Group 60: Depository Institutions",
                 "Major Group 61: Non-depository Credit Institutions",
@@ -195,7 +295,7 @@ class IndustryTaxonomy:
             ]
         },
         {
-            "division": "I. Division I: Services",
+            "division": "I: Services",
             "majorGroups": [
                 "Major Group 70: Hotels, Rooming Houses, Camps, And Other Lodging Places",
                 "Major Group 72: Personal Services",
@@ -216,7 +316,7 @@ class IndustryTaxonomy:
             ]
         },
         {
-            "division": "J. Division J: Public Administration",
+            "division": "J: Public Administration",
             "majorGroups": [
                 "Major Group 91: Executive, Legislative, And General Government, Except Finance",
                 "Major Group 92: Justice, Public Order, And Safety",
@@ -228,7 +328,7 @@ class IndustryTaxonomy:
             ]
         },
         {
-            "division": "K. Division K: Nonclassifiable Establishments",
+            "division": "K: Nonclassifiable Establishments",
             "majorGroups": [
                 "Major Group 99: Nonclassifiable Establishments"
             ]

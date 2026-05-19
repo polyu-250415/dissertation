@@ -62,8 +62,6 @@ def get_kimi_obj(final_prompt):
 
     return resp.choices[0].message.content
 
-
-
 ernie_client = OpenAI(
     base_url='https://qianfan.baidubce.com/v2',
     api_key= ernie_api_k

@@ -1,0 +1,238 @@
+Chatgpt and gemini show better performance
+
+>>>>>>>>>>>>>> Prompt
+
+You are an expert academic coding assistant with interdisciplinary expertise in knowledge management, emerging technologies for KM, and computer science research classification.
+
+Task
+Analyze the fields named `Title` and `Abstract` within each JSON object and code each entry into a single JSON object within a unified output JSON array, using a unified, conservative, evidence-based standard.
+
+Input dataset format:
+- The input will be a JSON array of objects.
+- Each object contains at least the fields: `uuid`, `Title`, `Abstract`.
+
+Input dataset:
+[{'uuid': '58951602-c83a-4a49-824a-c5a86575341f', 'Title': 'Illustrating The Intangible Cultural Heritage Of Santhals And Kuki: Pushing The Boundaries Of Knowledge Sharing In The Era Of Technology', 'Abstract': "By focusing on both Kuki and Santhal's intangible heritage, the paper offers holistic insights into how these communities navigate the transfer of their cultural knowledge, which further ensures that these traditions remain a dynamic force bridging all spheres of life. Through an anthropological perspective, the paper highlights the contextual understanding of the meaning-making process, a framework rooted in decolonization, and captures intangible practices with case studies related to festivals documented during the fieldwork among the Santhals and the Kukis. It attempts to reflect how cultural identity is constructed and reinforced through multisensory, performative expressions and how heritage, when intertwined with the digital revolution, offers immense possibilities to preserve heritage. As the body becomes dynamic, the focus shifts from the body as it intersects with the machine, substituting the role. Further, it discusses how digital tools from smartphones to virtual and augmented reality, GIS, and 3D Scanning facilitate both preservation and transformation of cultural knowledge, foregrounding community-led efforts to reclaim narrative agency and identity. The paper ultimately argues that effective knowledge sharing today necessitates a negotiated continuum between continuity and change where the body and the digital converge, that is ethically grounded and culturally situated. Ethical concerns surrounding digital representation and participation are addressed, alongside a call for immersive technology, culturally responsive approaches to preservation, including VR-based oral histories and blockchain-enabled tribal archives, and many more. It calls for an interdisciplinary and situated approach to digital heritage and anthropological knowledge production.  Copyright © 2025 Shrila Soren."}, {'uuid': 'b0f10ad6-9a79-4a02-b86f-6b7cc0c11040', 'Title': 'Developing Ethical Principle Awareness And Reasoning In A Cybersecurity Context: Enhancing User Understanding Using Ripple Down Rules', 'Abstract': "Cybersecurity breaches are often attributed to human behaviour, where individuals fail to integrate ethical principles in their decision-making. This empirical study investigates the effectiveness of the Ripple Down Rules (RDR) method, a knowledge acquisition and representation method, in enhancing ethical awareness and reasoning in cybersecurity contexts. The proposed approach combines rule-based reasoning, case-based learning, reflection, and situated cognition to bridge the gap between ethical knowledge and action by systematically connecting scenario elements to ethical principles. Participants, recruited from a cohort of first-year psychology students, were exposed to training incorporating five ethical principles—Beneficence, Non-Maleficence, Justice, Autonomy, and Explicability—applied to realistic cybersecurity scenarios. The study employed a randomised controlled design with two treatment and one control groups, using pre- and post-study assessments to evaluate improvements in ethical principle identification and reasoning. Participants rated RDR as a clear and helpful tool for understanding ethical reasoning, with sensibility and helpfulness scores ranging from moderate to high. Results demonstrate that RDR training significantly improved participants' ability to identify ethical principles compared to learning without RDR, particularly for principles like autonomy and explicability. However, challenges persisted in distinguishing overlapping principles, such as beneficence and non-maleficence. Implications and guidance for use of RDR for ethics training are discussed. © 2025 The Author(s)"}, {'uuid': '4d599183-0632-4616-b89f-68a9fa90eda0', 'Title': 'Unseen Seeds, Green Minds In The Digital Era: How Smes Foster Innovation Through Green Intellectual Capital, Ai, And Resource Commitment', 'Abstract': 'The rapid acceleration of digital transformation has profoundly reshaped societal operations, with Artificial Intelligence (AI) and the Metaverse emerging as key drivers of change. The strategic integration of tacit knowledge and advanced technologies is crucial for enhancing innovation performance and maintaining a competitive advantage in the global economy. This study explores how tacit knowledge sharing influences innovation performance (IP), with a focus on green intellectual capital (GIC), AI, and resource commitment (RC). To examine these relationships, a survey was conducted in three phases among small and medium-sized manufacturing firms in Canada and the UAE, collecting data from 317 UAE and 383 Canadian SMEs. The findings show that GIC plays a key role in linking tacit knowledge sharing to IP, while AI influences how tacit knowledge interacts with GIC, which consists of green human, relational, and structural capital. Additionally, RC strengthens the connection be-tween GIC and IP, reinforcing the importance of resource investment in sustainability and innovation. The originality of this study comes from exploring how AI influences the connection between tacit knowledge and GIC, as well as how RC impacts the link between GIC and IP. The study also recognizes its limitations and outlines areas for future research, encouraging further research into the role of knowledge and technology in driving innovation. © 2025 Elsevier Ltd.'}]
+
+- Return exactly one coded JSON object per input object, maintaining the original order.
+
+Coding questions:
+Answer the questions from Q1 to Q5 one by one.
+- Q1: What tacit knowledge is captured or retained from individuals or organizations
+- Q2: What technologies are adopted to capture or retain knowledge
+- Q3: The sectors to which the knowledge retention or capture practices discussed in the study belong
+
+Core rule:
+– Use only information explicitly stated or strongly implied in the `Abstract` field.
+– Do not invent unsupported information. When evidence is weak or ambiguous, reflect that in the relevant confidence field.
+
+General coding principles:
+1. Apply a unified standard across all abstracts
+2. Be conservative
+3. Preserve original Abstract wording where useful, but normalize labels for consistency
+4. Base each coded value on evidence from the Abstract
+5. If multiple items appear, join them with "; "
+6. Do not guess
+7. Never confuse the tenses of the viewpoints in the paper. For example, do not extract a viewpoint to be verified as a confirmed one, and vice versa.
+
+Q1 Coding rules:
+tacit_knowledge: Extract all the explicit or strongly implied domain tacit knowledge discussed in this study, retaining its complete expression. Do not use general conceptual descriptions such as "knowledge acquisition", "knowledge retention", or "tacit knowledge"; if no relevant knowledge is found, use the expression "unidentified".
+TK_normalized: Use only one or more of the following categories; you may customize the items inside the parentheses for the `"Other"` category.
+    - Somatic tacit knowledge (Experiential know-how, Procedural know-how, Craft knowledge, Operational know-how, other)
+    - Cognitive tacit knowledge (Expert judgment, Decision rules, Clinical know-how, other)
+    - Collective and relational tacit knowledge (Teamwork know-how, other)
+    - Adaptive tacit knowledge(Situational problem-solving, other)
+    - Other(*)
+TK_confidence: `high`, `medium`, or `low`
+
+Q2 Coding rules:
+Digital_Technologies: Extract all explicit or strongly implied technologies in this study, preserving the exact
+phrase. If `No`, use `"None identified"`.
+DT_normalized: Use these ACM-aligned classes only; you may customize the items inside the parentheses for the `"Other"` category.
+    - Artificial Intelligence and Intelligent Computation
+    - Human–Computer Interaction and Immersive Technologies
+    - Cyber-Physical Systems, IoT, and Smart Environments
+    - Data, Information, and Knowledge Systems
+    - Imaging, Sensing, and Perception Technologies
+    - Distributed, Secure, and Trust Technologies
+    - Mobile, Social, and Communication Technologies
+    - Rule-Based, Decision, and Expert Systems
+    - Others(*)
+
+Q3 Coding rules:
+Primary_Sector: The core area where the cases are located. Coding the sector conservatively following Standard Industrial Classification (SIC) Code List defined in https://www.osha.gov/data/sic-manual.
+Secondary_Sector: The secondary industry discussed in the research follows the same coding rules as the primary sector. If it does not exist, return None.
+
+Fixed output JSON structure:
+Each output object must contain exactly these keys in this order:
+{
+  "uuid": "string",
+  "Title": "string",
+  "tacit_knowledge": "string",
+  "TK_normalized": "string",
+  "TK_confidence": "string",
+  "Digital_Technologies": "string",
+  "DT_normalized": "string",
+  "Primary_Sector": "string",
+  "Secondary_Sector": "string"
+}
+uuid: Use the `uuid` value from the input object.
+Title: Use the `Title` value from the input object.
+
+Missing-value rules:
+- If nothing is identified for a field that expects a value, write: `"None identified"`
+- All values must be strings.
+
+
+Output instructions:
+- Return ONLY a valid JSON array containing one coded object per input object.
+- Do not wrap the output in markdown code blocks (e.g., ```json).
+- Do not include explanations, notes, or additional text outside the JSON array.
+
+>>>>>>>>>>>>>>>>Chatgpt
+[
+{
+"uuid": "58951602-c83a-4a49-824a-c5a86575341f",
+"Title": "Illustrating The Intangible Cultural Heritage Of Santhals And Kuki: Pushing The Boundaries Of Knowledge Sharing In The Era Of Technology",
+"tacit_knowledge": "intangible cultural heritage; cultural knowledge; multisensory, performative expressions; festivals documented during the fieldwork; oral histories",
+"TK_normalized": "Somatic tacit knowledge (Craft knowledge; Experiential know-how); Collective and relational tacit knowledge (other)",
+"TK_confidence": "high",
+"Digital_Technologies": "smartphones; virtual and augmented reality; GIS; 3D Scanning; immersive technology; VR-based oral histories; blockchain-enabled tribal archives",
+"DT_normalized": "Mobile, Social, and Communication Technologies; Human–Computer Interaction and Immersive Technologies; Data, Information, and Knowledge Systems; Imaging, Sensing, and Perception Technologies; Distributed, Secure, and Trust Technologies",
+"Primary_Sector": "Services—Museums, Art Galleries, and Botanical and Zoological Gardens",
+"Secondary_Sector": "Services—Educational Services"
+},
+{
+"uuid": "b0f10ad6-9a79-4a02-b86f-6b7cc0c11040",
+"Title": "Developing Ethical Principle Awareness And Reasoning In A Cybersecurity Context: Enhancing User Understanding Using Ripple Down Rules",
+"tacit_knowledge": "ethical awareness and reasoning in cybersecurity contexts; ethical principle identification; decision-making involving Beneficence, Non-Maleficence, Justice, Autonomy, and Explicability",
+"TK_normalized": "Cognitive tacit knowledge (Expert judgment; Decision rules)",
+"TK_confidence": "high",
+"Digital_Technologies": "Ripple Down Rules (RDR); rule-based reasoning; case-based learning",
+"DT_normalized": "Rule-Based, Decision, and Expert Systems",
+"Primary_Sector": "Services—Computer Programming, Data Processing, and Other Computer Related Services",
+"Secondary_Sector": "Services—Educational Services"
+},
+{
+"uuid": "4d599183-0632-4616-b89f-68a9fa90eda0",
+"Title": "Unseen Seeds, Green Minds In The Digital Era: How Smes Foster Innovation Through Green Intellectual Capital, Ai, And Resource Commitment",
+"tacit_knowledge": "tacit knowledge sharing; green human capital; green relational capital; green structural capital",
+"TK_normalized": "Collective and relational tacit knowledge (Teamwork know-how); Cognitive tacit knowledge (other)",
+"TK_confidence": "medium",
+"Digital_Technologies": "Artificial Intelligence (AI); the Metaverse",
+"DT_normalized": "Artificial Intelligence and Intelligent Computation; Human–Computer Interaction and Immersive Technologies",
+"Primary_Sector": "Manufacturing",
+"Secondary_Sector": "None identified"
+}
+]
+
+>>>>>>>>>>>>>>>gemini
+[
+{
+"uuid": "58951602-c83a-4a49-824a-c5a86575341f",
+"Title": "Illustrating The Intangible Cultural Heritage Of Santhals And Kuki: Pushing The Boundaries Of Knowledge Sharing In The Era Of Technology",
+"tacit_knowledge": "Kuki and Santhal's intangible heritage; cultural knowledge; intangible practices with case studies related to festivals; performative expressions; oral histories",
+"TK_normalized": "Somatic tacit knowledge (Craft knowledge); Other (Cultural and performing heritage)",
+"TK_confidence": "high",
+"Digital_Technologies": "digital tools; smartphones; virtual and augmented reality; GIS; 3D Scanning; immersive technology; VR-based oral histories; blockchain-enabled tribal archives",
+"DT_normalized": "Human–Computer Interaction and Immersive Technologies; Distributed, Secure, and Trust Technologies; Mobile, Social, and Communication Technologies; Imaging, Sensing, and Perception Technologies",
+"Primary_Sector": "Services (Museums, art galleries, botanical and zoological gardens - SIC 84)",
+"Secondary_Sector": "None identified"
+},
+{
+"uuid": "b0f10ad6-9a79-4a02-b86f-6b7cc0c11040",
+"Title": "Developing Ethical Principle Awareness And Reasoning In A Cybersecurity Context: Enhancing User Understanding Using Ripple Down Rules",
+"tacit_knowledge": "ethical principles in their decision-making; ethical awareness and reasoning in cybersecurity contexts; ethical principle identification and reasoning",
+"TK_normalized": "Cognitive tacit knowledge (Decision rules); Cognitive tacit knowledge (Expert judgment)",
+"TK_confidence": "high",
+"Digital_Technologies": "Ripple Down Rules (RDR) method; rule-based reasoning",
+"DT_normalized": "Rule-Based, Decision, and Expert Systems; Data, Information, and Knowledge Systems",
+"Primary_Sector": "Services (Educational Services - SIC 82)",
+"Secondary_Sector": "Services (Business Services, Computer Programming, Data Processing, etc. - SIC 73)"
+},
+{
+"uuid": "4d599183-0632-4616-b89f-68a9fa90eda0",
+"Title": "Unseen Seeds, Green Minds In The Digital Era: How Smes Foster Innovation Through Green Intellectual Capital, Ai, And Resource Commitment",
+"tacit_knowledge": "tacit knowledge sharing; green human, relational, and structural capital",
+"TK_normalized": "Collective and relational tacit knowledge (Teamwork know-how); Somatic tacit knowledge (Operational know-how)",
+"TK_confidence": "medium",
+"Digital_Technologies": "Artificial Intelligence (AI); Metaverse",
+"DT_normalized": "Artificial Intelligence and Intelligent Computation; Human–Computer Interaction and Immersive Technologies",
+"Primary_Sector": "Manufacturing (Small and medium-sized manufacturing firms - SIC 20-39)",
+"Secondary_Sector": "None identified"
+}
+]
+
+>>>>>>>>>>>>>>>Qwen
+[
+  {
+    "uuid": "58951602-c83a-4a49-824a-c5a86575341f",
+    "Title": "Illustrating The Intangible Cultural Heritage Of Santhals And Kuki: Pushing The Boundaries Of Knowledge Sharing In The Era Of Technology",
+    "tacit_knowledge": "intangible practices related to festivals; cultural knowledge transfer within Santhal and Kuki communities; multisensory, performative expressions for cultural identity construction",
+    "TK_normalized": "Somatic tacit knowledge (Experiential know-how)",
+    "TK_confidence": "high",
+    "Digital_Technologies": "smartphones; virtual and augmented reality; GIS; 3D Scanning; VR-based oral histories; blockchain-enabled tribal archives; immersive technology",
+    "DT_normalized": "Human–Computer Interaction and Immersive Technologies; Mobile, Social, and Communication Technologies; Imaging, Sensing, and Perception Technologies; Distributed, Secure, and Trust Technologies; Data, Information, and Knowledge Systems",
+    "Primary_Sector": "None identified",
+    "Secondary_Sector": "None identified"
+  },
+  {
+    "uuid": "b0f10ad6-9a79-4a02-b86f-6b7cc0c11040",
+    "Title": "Developing Ethical Principle Awareness And Reasoning In A Cybersecurity Context: Enhancing User Understanding Using Ripple Down Rules",
+    "tacit_knowledge": "ethical principle identification and reasoning in cybersecurity decision-making; integration of ethical principles (Beneficence, Non-Maleficence, Justice, Autonomy, Explicability) into cybersecurity scenario responses",
+    "TK_normalized": "Cognitive tacit knowledge (Decision rules)",
+    "TK_confidence": "high",
+    "Digital_Technologies": "Ripple Down Rules (RDR); rule-based reasoning",
+    "DT_normalized": "Rule-Based, Decision, and Expert Systems",
+    "Primary_Sector": "Computer Related Services",
+    "Secondary_Sector": "None identified"
+  },
+  {
+    "uuid": "4d599183-0632-4616-b89f-68a9fa90eda0",
+    "Title": "Unseen Seeds, Green Minds In The Digital Era: How Smes Foster Innovation Through Green Intellectual Capital, Ai, And Resource Commitment",
+    "tacit_knowledge": "unidentified",
+    "TK_normalized": "Other(unidentified)",
+    "TK_confidence": "low",
+    "Digital_Technologies": "Artificial Intelligence (AI)",
+    "DT_normalized": "Artificial Intelligence and Intelligent Computation",
+    "Primary_Sector": "Manufacturing",
+    "Secondary_Sector": "None identified"
+  }
+]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>Deepseek
+[
+{
+  "uuid": "58951602-c83a-4a49-824a-c5a86575341f",
+  "Title": "Illustrating The Intangible Cultural Heritage Of Santhals And Kuki: Pushing The Boundaries Of Knowledge Sharing In The Era Of Technology",
+  "tacit_knowledge": "Cultural knowledge transfer through multisensory performative expressions; embodied know-how",
+  "TK_normalized": "Somatic tacit knowledge (Procedural know-how); Collective and relational tacit knowledge (other)",
+  "TK_confidence": "high",
+  "Digital_Technologies": "smartphones; virtual reality; augmented reality; GIS; 3D scanning; blockchain",
+  "DT_normalized": "Human–Computer Interaction and Immersive Technologies; Imaging, Sensing, and Perception Technologies; Data, Information, and Knowledge Systems; Distributed, Secure, and Trust Technologies; Mobile, Social, and Communication Technologies",
+  "Primary_Sector": "None identified",
+  "Secondary_Sector": "None identified"
+},
+{
+  "uuid": "b0f10ad6-9a79-4a02-b86f-6b7cc0c11040",
+  "Title": "Developing Ethical Principle Awareness And Reasoning In A Cybersecurity Context: Enhancing User Understanding Using Ripple Down Rules",
+  "tacit_knowledge": "Ethical principle awareness and reasoning in cybersecurity decision-making; application of beneficence, non-maleficence, justice, autonomy, explicability",
+  "TK_normalized": "Cognitive tacit knowledge (Decision rules)",
+  "TK_confidence": "high",
+  "Digital_Technologies": "Ripple Down Rules (RDR) method",
+  "DT_normalized": "Rule-Based, Decision, and Expert Systems",
+  "Primary_Sector": "737 - Computer and Data Processing Services",
+  "Secondary_Sector": "None identified"
+},
+{
+  "uuid": "4d599183-0632-4616-b89f-68a9fa90eda0",
+  "Title": "Unseen Seeds, Green Minds In The Digital Era: How Smes Foster Innovation Through Green Intellectual Capital, Ai, And Resource Commitment",
+  "tacit_knowledge": "Green intellectual capital tacit knowledge including green human expertise, relational know-how, and structural capital",
+  "TK_normalized": "Cognitive tacit knowledge (Other - green expertise); Collective and relational tacit knowledge (Teamwork know-how)",
+  "TK_confidence": "medium",
+  "Digital_Technologies": "Artificial Intelligence; Metaverse",
+  "DT_normalized": "Artificial Intelligence and Intelligent Computation; Human–Computer Interaction and Immersive Technologies",
+  "Primary_Sector": "20-39 - Manufacturing",
+  "Secondary_Sector": "None identified"
+}
+]

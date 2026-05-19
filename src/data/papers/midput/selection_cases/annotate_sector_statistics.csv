@@ -1,0 +1,41 @@
+sic_desc,sic_id,count
+Construction (Construction—Special Trade Contractors),17,1
+"Transportation, Communications, Electric, Gas, And Sanitary Services (Local And Suburban Transit And Interurban Highway Passenger Transportation)",41,1
+"Transportation, Communications, Electric, Gas, And Sanitary Services (Transportation Services)",47,1
+Services (Legal Services),81,1
+Manufacturing (Apparel And Other Finished Products Made From Fabrics And Similar Materials),23,1
+"Finance, Insurance, And Real Estate (Depository Institutions)",60,1
+Public Administration (Administration Of General Economic Programs),96,1
+Manufacturing,2039,1
+SIC 0099,0099,1
+Services (Miscellaneous Services),89,1
+"Manufacturing (Fabricated Metal Products, Except Machinery And Transportation Equipment)",34,1
+"Services (Hotels, Rooming Houses, Camps, And Other Lodging Places)",70,2
+Public Administration (Administration Of Environmental Quality And Housing Programs),95,2
+"Transportation, Communications, Electric, Gas, And Sanitary Services (Motor Freight Transportation And Warehousing)",42,2
+Services (Social Services),83,2
+"Finance, Insurance, And Real Estate (Nondepository Credit Institutions)",61,2
+"Transportation, Communications, Electric, Gas, And Sanitary Services (Transportation By Air)",45,2
+Public Administration (National Security And International Affairs),97,2
+"Services (Museums, Art Galleries, And Botanical And Zoological Gardens)",84,3
+"Transportation, Communications, Electric, Gas, And Sanitary Services (Communications)",48,3
+"Transportation, Communications, Electric, Gas, And Sanitary Services (Electric, Gas, And Sanitary Services)",49,3
+"Public Administration (Executive, Legislative, And General Government, Except Finance)",91,3
+"Manufacturing (Electronic And Other Electrical Equipment And Components, Except Computer Equipment)",36,3
+Manufacturing (Food And Kindred Products),20,3
+Construction (Heavy Construction Other Than Building Construction—Contractors),16,3
+Manufacturing (Chemicals And Allied Products),28,3
+"Transportation, Communications, Electric, Gas, And Sanitary Services (Railroad Transportation)",40,3
+Manufacturing (Petroleum Refining And Related Industries),29,4
+"Public Administration (Justice, Public Order, And Safety)",92,4
+Services (Amusement And Recreation Services),79,5
+Manufacturing (Transportation Equipment),37,5
+Mining (Mining),1014,6
+"Agriculture, Forestry, And Fishing (Agriculture, Forestry, And Fishing)",0109,10
+Manufacturing (Miscellaneous Manufacturing Industries),39,12
+Construction (Building Construction—General Contractors And Operative Builders),15,16
+Manufacturing (Industrial And Commercial Machinery And Computer Equipment),35,26
+"Services (Engineering, Accounting, Research, Management, And Related Services)",87,44
+Services (Business Services),73,46
+Services (Health Services),80,56
+Services (Educational Services),82,166
