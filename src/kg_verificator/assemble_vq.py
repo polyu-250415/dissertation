@@ -2,236 +2,255 @@ import pandas as pd
 import os
 import random
 
+from src.utils.llm_mgmt.deepseek_local_api import chat_with_deepseek
+
 
 class AssembleVQ(object):
     def __init__(self):
-        self.kg_path = "../data/graph/case_study/cases"
+        self.kg_case_path = "../data/graph/case_study/cases/"
+        self.kg_rag_path = "../data/graph/case_study/rag_vq/"
+        self.node_template = """describe this entity <node: {{node}}, label: {{label}}> as a sentence without 
+        explanation. """
+        self.relation_template = """describe this relation <src_node: {{src_node}}, relation_type: {{relation_type}}, dst_node: {{dst_node}} > as a sentence without explanation."""
         pass
 
-    def assemble_entity_vq(self, id):
-        case_id_list = []
-        if len(id):
-            case_id_list.append(id)
+    @staticmethod
+    def get_random_except(key_array, exclude_key, default="you see"):
+        vals = [v for v in key_array if v != exclude_key]
+        return random.choice(vals) if vals else default
 
-        for case_id in case_id_list:
-            csv_path = os.path.join(self.kg_path, f"{case_id}_nodes.csv")
-            output_path = os.path.join(self.kg_path, f"{case_id}_nodes_vq.csv")
-            df = pd.read_csv(csv_path)
+    def assemble_entity_vq(self):
+        for root, dirs, files in os.walk(self.kg_case_path):
+            for file in files:
+                if not file.endswith("nodes.csv"):
+                    continue
 
-            # Define label mapping
-            label_map = {
-                'E': 'explicitly defined',
-                'I': 'implicitly defined'
-            }
+                csv_path = os.path.join(root, file)
+                output_path = os.path.join(self.kg_rag_path, file.replace("nodes","nodes_vq"))
+                df = pd.read_csv(csv_path)
 
-            # Store generated questions
-            questions = []
+                # Define label mapping
+                label_map = {
+                    'E': 'explicitly defined',
+                    'I': 'implicitly defined'
+                }
 
-            # Iterate through each row
-            for idx, row in df.iterrows():
-                name = str(row['name']).strip()
-                category = str(row['category']).strip()
-                label_code = str(row['labels']).strip().upper()
+                category_list = df['category'].unique().tolist()
 
-                # Get the English label description; keep original if not in mapping
-                label_desc = label_map.get(label_code, label_code)
+                # Store generated questions
+                questions = []
 
-                # Concatenate question in the specified format
-                positive_sample = f"{name} is {label_desc} as one {category}"
-                questions.append({
-                    'id': row['id'],
-                    'case_id': case_id,
-                    'group': idx,
-                    'question': positive_sample,
-                    'verification_label': 1
+                # Iterate through each row
+                for idx, row in df.iterrows():
+                    name = str(row['node_name']).strip()
+                    category = str(row['category']).strip()
+                    label_code = str(row['evidence_label']).strip().upper()
 
-                })
+                    # Get the English label description; keep original if not in mapping
+                    label_desc = label_map.get(label_code, label_code)
 
-                negative_sample = f"{name} isn't {label_desc} as one {category}"
-                questions.append({
-                    'id': row['id'],
-                    'case_id': case_id,
-                    'group': idx,
-                    'question': negative_sample,
-                    'verification_label': 0
-                })
+                    evidence_statement = row['evidence_statement']
+                    questions.append({
+                        'node_id': row['node_id'],
+                        'group': idx,
+                        'question': evidence_statement,
+                        'verification_label': 1
 
-            # Save to output CSV if path is provided
-            if output_path:
-                result_df = pd.DataFrame(questions)
-                result_df.to_csv(output_path, index=False)
-                print(f"\n✓ Generated {len(questions)} questions. Saved to: {output_path}")
+                    })
+
+                    positive_sample =  f"'{name}' is an instance of '{category}'"
+                    questions.append({
+                        'node_id': row['node_id'],
+                        'group': idx,
+                        'question': positive_sample,
+                        'verification_label': 1
+
+                    })
+
+                    fake_category = self.get_random_except(category_list, category)
+                    negative_sample = f"'{name}' is an instance of '{fake_category}'"
+                    questions.append({
+                        'node_id': row['node_id'],
+                        'group': idx,
+                        'question': negative_sample,
+                        'verification_label': 0
+                    })
+
+                # Save to output CSV if path is provided
+                if output_path:
+                    result_df = pd.DataFrame(questions)
+                    result_df.to_csv(output_path, index=False)
+                    print(f"\n✓ Generated {len(questions)} questions. Saved to: {output_path}")
 
         return
 
-    def choose_entity_samples(self, id, sample_path):
+    def choose_entity_samples(self):
 
-        case_id_list = []
-        if len(id):
-            case_id_list.append(id)
+        for root, dirs, files in os.walk(self.kg_rag_path):
 
-        all_selected = []
-        for case_id in case_id_list:
-            file_path = os.path.join(self.kg_path, f"{case_id}_nodes_vq.csv")
+            for file in files:
 
-            try:
-                # Read the CSV
-                df = pd.read_csv(file_path)
+                if not file.endswith("nodes_vq.csv"):
+                    continue
 
-                # Randomly select 1 row per GROUP (core logic)
-                selected = df.groupby('group', group_keys=False).apply(
-                    lambda group: group.sample(n=1)  # Direct random 1 row
-                ).reset_index(drop=True)
+                all_selected = []
+                try:
+                    df = pd.read_csv(os.path.join(root, file))
 
-                # Add a column to track which file the row came from (optional but useful)
-                selected["case_id"] = case_id
+                    # Randomly select 1 row per GROUP (core logic)
+                    selected = df.groupby('group', group_keys=False).apply(
+                        lambda group: group.sample(n=1)  # Direct random 1 row
+                    ).reset_index(drop=True)
 
-                # Save to combined list
-                all_selected.append(selected)
+                    # Save to combined list
+                    all_selected.append(selected)
 
-            except Exception as e:
-                print(f"❌ Failed to process {case_id}: {str(e)}")
+                except Exception as e:
+                    print(f"❌ Failed to process {file}: {str(e)}")
 
-        if all_selected:
-            final_df = pd.concat(all_selected, ignore_index=True)
+                sample_path = os.path.join(self.kg_rag_path, file.replace("nodes_vq", "nodes_vq_selected"))
 
-            # Save to one single CSV
-            final_df.to_csv(sample_path, index=False, encoding="utf-8")
+                if all_selected:
+                    final_df = pd.concat(all_selected, ignore_index=True)
 
-            # Print summary
-            print("\n" + "-" * 50)
-            print(f"🎉 DONE! Combined results saved to: {sample_path}")
-            print(f"Total rows selected: {len(final_df)}")
-            print(f"Total groups across all files: {final_df['group'].nunique()}")
-            print("\nPreview of final data:")
-            print(final_df.head())
-        else:
-            print("⚠️ No CSV files found or processed!")
+                    # Save to one single CSV
+                    final_df.to_csv(sample_path, index=False, encoding="utf-8")
 
-    def assemble_relation_vq(self, id):
-        """
-        Reads a source CSV (id, name, ...) and a relation CSV (start_id, end_id, type, case_id).
-        Looks up names for start_id and end_id, then assembles:
-        "{start_name} {type} {end_name}"
-        """
-        case_id_list = []
-        if len(id):
-            case_id_list.append(id)
+                    # Print summary
+                    print("\n" + "-" * 50)
+                    print(f"🎉 DONE! Combined results saved to: {file}")
+                    print(f"Total rows selected: {len(final_df)}")
+                    print(f"Total groups across all files: {final_df['group'].nunique()}")
+                    print("\nPreview of final data:")
+                    print(final_df.head())
+                else:
+                    print("⚠️ No CSV files found or processed!")
 
-        label_map = {
-            'E': 'explicitly defined',
-            'I': 'implicitly defined'
-        }
+    def assemble_relation_vq(self):
 
-        for case_id in case_id_list:
-            source_csv = os.path.join(self.kg_path, f"{case_id}_nodes.csv")
-            relation_csv = os.path.join(self.kg_path, f"{case_id}_relations.csv")
-            output_csv = os.path.join(self.kg_path, f"{case_id}_relations_vq.csv")
+        for root, dirs, files in os.walk(self.kg_case_path):
+            for file in files:
+                if not file.endswith("relations.csv"):
+                    continue
 
-            # ---------------- 1. Load Source & Build ID->Name Mapping ----------------
-            if not os.path.exists(source_csv):
-                raise FileNotFoundError(f"Source CSV not found: {source_csv}")
+                source_csv = os.path.join(root, file.replace("relations","nodes"))
+                relation_csv = os.path.join(self.kg_case_path, file)
+                output_csv = os.path.join(self.kg_rag_path, file.replace("relations","relations_vq"))
 
-            src = pd.read_csv(source_csv)
+                # ---------------- 1. Load Source & Build ID->Name Mapping ----------------
+                if not os.path.exists(source_csv):
+                    raise FileNotFoundError(f"Source CSV not found: {source_csv}")
 
-            # Create fast lookup dictionary: {id: name}
-            id_to_name = dict(zip(src['id'], src['name']))
+                src = pd.read_csv(source_csv)
 
-            # ---------------- 2. Load Relation CSV ----------------
-            if not os.path.exists(relation_csv):
-                raise FileNotFoundError(f"Relation CSV not found: {relation_csv}")
+                # Create fast lookup dictionary: {id: name}
+                id_to_name = dict(zip(src['node_id'], src['node_name']))
 
-            relation_map = {
-                'E': 'explicitly defined',
-                'I': 'implicitly defined'
-            }
+                # ---------------- 2. Load Relation CSV ----------------
+                if not os.path.exists(relation_csv):
+                    raise FileNotFoundError(f"Relation CSV not found: {relation_csv}")
 
-            df_rel = pd.read_csv(relation_csv)
+                df_rel = pd.read_csv(relation_csv)
 
-            questions = []
-            for idx, row in df_rel.iterrows():
-                src_name = id_to_name[row['start_id']]
-                dst_name = id_to_name[row['end_id']]
+                label_map = {
+                    'E': 'explicitly',
+                    'I': 'implicitly'
+                }
 
-                relation_desc = relation_map.get(row['type'], row['type'])
+                relation_type_array = df_rel['relation_type'].unique().tolist()
 
-                # Concatenate question in the specified format
-                positive_sample = f"{src_name} {relation_desc} {dst_name}"
-                questions.append({
-                    'start_id': row['start_id'],
-                    'end_id': row['end_id'],
-                    'relation_type': row['type'],
-                    'group': idx,
-                    'question': positive_sample,
-                    'verification_label': 1
-                })
+                questions = []
+                for idx, row in df_rel.iterrows():
+                    src_name = id_to_name[row['src_node_id']]
+                    dst_name = id_to_name[row['dst_node_id']]
+                    relation_type = row['relation_type']
+                    evidence_label = label_map[row['evidence_label']]
 
-                def get_random_except(exclude_key, default="isn't related to"):
-                    vals = [v for k, v in relation_map.items() if k != exclude_key]
-                    return random.choice(vals) if vals else default
+                    evidence_statement = row['evidence_statement']
+                    questions.append({
+                        'src_node_id': row['src_node_id'],
+                        'dst_node_id': row['dst_node_id'],
+                        'relation_type': row['relation_type'],
+                        'group': idx,
+                        'question': evidence_statement,
+                        'verification_label': 1
+                    })
 
-                relation_desc_random = get_random_except(row['type'])
-                negative_sample = f"{src_name} {relation_desc_random} {dst_name}"
-                questions.append({
-                    'start_id': row['start_id'],
-                    'end_id': row['end_id'],
-                    'relation_type': row['type'],
-                    'group': idx,
-                    'question': negative_sample,
-                    'verification_label': 0
-                })
+                    # Concatenate question in the specified format
+                    positive_sample = f"'{src_name}' {relation_type} '{dst_name}' {evidence_label}"
+                    questions.append({
+                        'src_node_id': row['src_node_id'],
+                        'dst_node_id': row['dst_node_id'],
+                        'relation_type': row['relation_type'],
+                        'group': idx,
+                        'question': positive_sample,
+                        'verification_label': 1
+                    })
 
-            result_df = pd.DataFrame(questions)
-            result_df.to_csv(output_csv, index=False)
+                    fake_relation = self.get_random_except(relation_type_array, row['relation_type'],
+                                                                  default= "isn't related to ")
+                    negative_sample = f"'{src_name}' {fake_relation} '{dst_name}' {evidence_label}"
+                    questions.append({
+                        'src_node_id': row['src_node_id'],
+                        'dst_node_id': row['dst_node_id'],
+                        'relation_type': row['relation_type'],
+                        'group': idx,
+                        'question': negative_sample,
+                        'verification_label': 0
+                    })
 
-    def choose_relation_samples(self, id, sample_path):
+                result_df = pd.DataFrame(questions)
+                result_df.to_csv(output_csv, index=False)
 
-        case_id_list = []
-        if len(id):
-            case_id_list.append(id)
+    def choose_relation_samples(self):
 
-        all_selected = []
-        for case_id in case_id_list:
-            file_path = os.path.join(self.kg_path, f"{case_id}_relations_vq.csv")
+        for root, dirs, files in os.walk(self.kg_rag_path):
 
-            try:
-                # Read the CSV
-                df = pd.read_csv(file_path)
+            for file in files:
 
-                # Randomly select 1 row per GROUP (core logic)
-                selected = df.groupby('group', group_keys=False).apply(
-                    lambda group: group.sample(n=1)  # Direct random 1 row
-                ).reset_index(drop=True)
+                if not file.endswith("relations_vq.csv"):
+                    continue
 
-                # Save to combined list
-                all_selected.append(selected)
+                file_path = os.path.join(self.kg_rag_path, file)
+                all_selected = []
+                try:
+                    # Read the CSV
+                    df = pd.read_csv(file_path)
 
-            except Exception as e:
-                print(f"❌ Failed to process {case_id}: {str(e)}")
+                    # Randomly select 1 row per GROUP (core logic)
+                    selected = df.groupby('group', group_keys=False).apply(
+                        lambda group: group.sample(n=1)  # Direct random 1 row
+                    ).reset_index(drop=True)
 
-        if all_selected:
-            final_df = pd.concat(all_selected, ignore_index=True)
+                    # Save to combined list
+                    all_selected.append(selected)
 
-            # Save to one single CSV
-            final_df.to_csv(sample_path, index=False, encoding="utf-8")
+                except Exception as e:
+                    print(f"❌ Failed to process {file}: {str(e)}")
 
-            # Print summary
-            print("\n" + "-" * 50)
-            print(f"🎉 DONE! Combined results saved to: {sample_path}")
-            print(f"Total rows selected: {len(final_df)}")
-            print(f"Total groups across all files: {final_df['group'].nunique()}")
-            print("\nPreview of final data:")
-            print(final_df.head())
-        else:
-            print("⚠️ No CSV files found or processed!")
+                sample_path = os.path.join(self.kg_rag_path, file.replace("relations_vq", "relations_vq_selected"))
+
+                if all_selected:
+                    final_df = pd.concat(all_selected, ignore_index=True)
+
+                    # Save to one single CSV
+                    final_df.to_csv(sample_path, index=False, encoding="utf-8")
+
+                    # Print summary
+                    print("\n" + "-" * 50)
+                    print(f"🎉 DONE! Combined results saved to: {sample_path}")
+                    print(f"Total rows selected: {len(final_df)}")
+                    print(f"Total groups across all files: {final_df['group'].nunique()}")
+                    print("\nPreview of final data:")
+                    print(final_df.head())
+                else:
+                    print("⚠️ No CSV files found or processed!")
 
 
 if __name__ == '__main__':
     vq=AssembleVQ()
-    sample_path = os.path.join(vq.kg_path, "entity_samples.csv")
-    vq.assemble_entity_vq("c003")
-    vq.choose_entity_samples("c003",sample_path)
+    vq.assemble_entity_vq()
+    vq.choose_entity_samples()
 
-    sample_path = os.path.join(vq.kg_path, "relation_samples.csv")
-    vq.assemble_relation_vq("c003")
-    vq.choose_relation_samples("c003",sample_path)
+    vq.assemble_relation_vq()
+    vq.choose_relation_samples()

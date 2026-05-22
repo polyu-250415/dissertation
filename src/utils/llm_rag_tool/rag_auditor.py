@@ -1,17 +1,16 @@
 import os
+import logging
+from pathlib import Path
+import pandas as pd
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 os.environ["OBJC_DISABLE_INITIALIZE_FORK_SAFETY"] = "YES"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-from pathlib import Path
-
-from haystack import Document
-from haystack import Pipeline
+from haystack import Document, Pipeline
 from haystack.document_stores.in_memory import InMemoryDocumentStore
 from haystack.components.converters import PyPDFToDocument
 from haystack.components.preprocessors import DocumentCleaner, DocumentSplitter
-from haystack.components.writers import DocumentWriter
 from haystack.components.retrievers.in_memory import InMemoryEmbeddingRetriever
 from haystack.components.builders import PromptBuilder
 from haystack.components.generators import OpenAIGenerator
@@ -19,9 +18,9 @@ from haystack.utils import Secret
 
 from haystack_integrations.components.embedders.fastembed import FastembedDocumentEmbedder, FastembedTextEmbedder
 
+# Assuming these are accessible imports from your local source tree
 from src.utils.llm_key import deepseek_key, qwen_key, ernie_api_k
 
-import logging
 
 class EnsembleRAG:
     def __init__(self, model_name: str = "BAAI/bge-small-en-v1.5", debug: bool = True):
@@ -38,7 +37,7 @@ class EnsembleRAG:
         self.model_name = model_name
         self.embedding_model_cache_path = "../../models/fastembed/bge-small-en-v1.5"
         self.indexing_pipeline = self._build_indexing_pipeline()
-        self.query_pipeline = self._build_query_pipeline()
+        self.query_pipeline = self._build_triplet_query_pipeline()
 
     def _build_indexing_pipeline(self) -> Pipeline:
         pipeline = Pipeline()
@@ -46,7 +45,7 @@ class EnsembleRAG:
         pipeline.add_component("cleaner", DocumentCleaner())
         pipeline.add_component("splitter", DocumentSplitter(split_by="word", split_length=128))
 
-        # FastEmbed Document Embedder (Much faster for PDF ingestion)
+        # FastEmbed Document Embedder
         pipeline.add_component("embedder", FastembedDocumentEmbedder(
             model=self.model_name,
             cache_dir=self.embedding_model_cache_path,
@@ -54,22 +53,20 @@ class EnsembleRAG:
             parallel=0
         ))
 
-        pipeline.add_component("writer", DocumentWriter(document_store=self.document_store))
-
-        pipeline.connect("converter", "cleaner")
-        pipeline.connect("cleaner", "splitter")
-        pipeline.connect("splitter", "embedder")
-        pipeline.connect("embedder", "writer")
+        # Explicitly connect with explicit sockets to prevent validation errors
+        pipeline.connect("converter.documents", "cleaner.documents")
+        pipeline.connect("cleaner.documents", "splitter.documents")
+        pipeline.connect("splitter.documents", "embedder.documents")
         return pipeline
 
-    def _build_query_pipeline(self) -> Pipeline:
-        rag_template = "Context: {% for doc in documents %} {{ doc.content }} {% endfor %}\nQuestion: {{ query }}\nAnswer:"
-        synthesis_template = """
-        User Question: {{ query }}
-        Context: {% for doc in documents %} {{ doc.content }} {% endfor %}
-        Answer from DeepSeek: {{ answer_1 }}
-        Answer from Qwen: {{ answer_2 }}
-        Final Synthesized Answer:"""
+    def _build_triplet_query_pipeline(self) -> Pipeline:
+        rag_template = """
+Context: {% for doc in documents %} {{ doc.content }} {% endfor %}
+
+Claim: {{ query }}
+
+Task: Act as a strict data auditor. Rate the confidence of the claim on a scale of 1-5, 1 means the lowest; 5 means 
+the highest. Only return the rate."""
 
         pipeline = Pipeline()
 
@@ -78,42 +75,20 @@ class EnsembleRAG:
                                                      cache_dir=self.embedding_model_cache_path,
                                                      local_files_only=True,
                                                      parallel=0))
-        pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=self.document_store, top_k=3))
+        pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=self.document_store, top_k=5))
 
-        # 2. Ensemble Layer
         pipeline.add_component("llm_deepseek", OpenAIGenerator(
             api_base_url="https://api.deepseek.com/v1",
             model="deepseek-reasoner",
             api_key=Secret.from_env_var("DEEPSEEK_API_KEY")
         ))
 
-        pipeline.add_component("llm_qwen", OpenAIGenerator(
-            api_base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-            model="qwen-max",
-            api_key=Secret.from_env_var("QWEN_API_KEY")
-        ))
-
-        # 3. Final Synthesis
-        pipeline.add_component("final_ernie", OpenAIGenerator(
-            api_base_url="https://qianfan.baidubce.com/v2",
-            model="ernie-4.0-turbo-128k",
-            api_key=Secret.from_env_var("ERNIE_API_KEY")
-        ))
-
         pipeline.add_component("prompt_deepseek", PromptBuilder(template=rag_template))
-        pipeline.add_component("prompt_qwen", PromptBuilder(template=rag_template))
-        pipeline.add_component("synthesis_prompt", PromptBuilder(template=synthesis_template))
 
-        # Connections
+        # Explicitly declare output and input slots to maintain stability in Haystack v2
         pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
         pipeline.connect("retriever.documents", "prompt_deepseek.documents")
-        pipeline.connect("retriever.documents", "prompt_qwen.documents")
-        pipeline.connect("retriever.documents", "synthesis_prompt.documents")
-        pipeline.connect("prompt_deepseek", "llm_deepseek")
-        pipeline.connect("prompt_qwen", "llm_qwen")
-        pipeline.connect("llm_deepseek.replies", "synthesis_prompt.answer_1")
-        pipeline.connect("llm_qwen.replies", "synthesis_prompt.answer_2")
-        pipeline.connect("synthesis_prompt", "final_ernie")
+        pipeline.connect("prompt_deepseek.prompt", "llm_deepseek.prompt")
 
         return pipeline
 
@@ -131,13 +106,16 @@ class EnsembleRAG:
             })
 
             docs_to_write = []
-            for doc in result["documents"]:
-                new_meta = {
+            # Extract out of the "embedder" component dictionary block
+            for doc in result["embedder"]["documents"]:
+                # Keep any existing metadata parsing extracted by PyPDF (e.g., page numbers)
+                new_meta = doc.meta.copy() if doc.meta else {}
+                new_meta.update({
                     "filename": pdf.name,
                     "file_path": str(pdf),
                     "file_type": "pdf",
                     "category": "education"
-                }
+                })
 
                 if custom_meta:
                     new_meta.update(custom_meta)
@@ -152,19 +130,16 @@ class EnsembleRAG:
             self.document_store.write_documents(docs_to_write)
 
     def ask(self, question: str, filters: dict = None):
-
         run_input = {
             "text_embedder": {"text": question},
-            "prompt_deepseek": {"query": question},
-            "prompt_qwen": {"query": question},
-            "synthesis_prompt": {"query": question}
+            "prompt_deepseek": {"query": question}
         }
 
         if filters:
             run_input["retriever"] = {"filters": filters}
 
         results = self.query_pipeline.run(run_input)
-        return results["final_ernie"]["replies"][0]
+        return results["llm_deepseek"]["replies"][0]
 
 
 if __name__ == '__main__':
@@ -175,15 +150,29 @@ if __name__ == '__main__':
 
     rag = EnsembleRAG()
 
-    custom_meta: dict = {
-        "call_id": "c003"
+    custom_meta_data: dict = {
+        "call_id": "c001"
     }
-    rag.ingest("./pdf", custom_meta)
 
-    question_list = [
-        "Face-to-face teaching is Traditional human-central practices"
-    ]
+    path = "../../data/graph/case_study/original_papers/construction"
 
-    for question in question_list:
-        response = rag.ask(question)
-        print(response)
+    # FIX: Pass the custom_meta dictionary explicitly here
+    rag.ingest(path, custom_meta=custom_meta_data)
+
+    # Simple mock framework for testing execution path if the CSV isn't found immediately
+    try:
+        df = pd.read_csv("../../data/graph/case_study/rag_vq/c001_nodes_vq.csv")
+        response_list = []
+        for _, row in df.iterrows():
+            try:
+                response = rag.ask(row['question'])
+                response_list.append(response)
+                print(f"Claim: {row['question']} \nLabel: {row['verification_label']}, \nResponse: {response}")
+            except Exception as e:
+                print(e)
+                response_list.append('exception')
+
+        df['assessment'] = response_list
+        df.to_csv("../../data/graph/case_study/rag_vq/c001_nodes_vq_result.csv", index=False)
+    except FileNotFoundError:
+        print("Metadata ingestion complete. CSV path not found, skipping evaluation loops.")

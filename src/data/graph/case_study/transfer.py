@@ -2,7 +2,15 @@ import os
 import pandas as pd
 from dashscope.tokenizers.tokenizer import current_path
 
-current_path = os.path.abspath('./') + '/cases'
+current_path = os.path.abspath('./') + '/cases/'
+
+def get_model_flag(file_name):
+    if "deepseek" in file_name:
+        return "M01"
+    elif "gemini" in file_name:
+        return "M02"
+    else:
+        return "M00"
 
 def transfer_nodes():
 
@@ -14,13 +22,14 @@ def transfer_nodes():
             if not file.endswith("nodes.csv"):
                 continue
 
+            model_flag = get_model_flag(file)
             file = os.path.join(root, file)
             df = pd.read_csv(file)
             df = df.astype(str)
-            df['id'] = df['case_title'].map(map_dict) + df['id']
+            df['node_id'] = df['case_title'].map(map_dict) + model_flag + df['node_id']
 
-            file_name = map_dict[df['case_title'].iloc[0]]
-            df.to_csv(f'{current_path}/{file_name}_nodes.csv', index=False)
+            file_name = file.split('/')[1]
+            df.to_csv(f'{current_path}{file_name}', index=False)
 
 
 def transfer_relations():
@@ -32,15 +41,59 @@ def transfer_relations():
             if not file.endswith("relations.csv"):
                 continue
 
+            model_flag = get_model_flag(file)
+
             file = os.path.join(root, file)
             df = pd.read_csv(file)
             df = df.astype(str)
-            df['start_id'] = df['case_title'].map(map_dict) + df['start_id']
-            df['end_id'] = df['case_title'].map(map_dict) + df['end_id']
+            df['src_node_id'] = df['case_title'].map(map_dict) + model_flag + df['src_node_id']
+            df['dst_node_id'] = df['case_title'].map(map_dict) + model_flag + df['dst_node_id']
 
-            file_name = map_dict[df['case_title'].iloc[0]]
-            df.to_csv(f'{current_path}/{file_name}_relations.csv', index=False)
+            file_name = file.split('/')[1]
+            df.to_csv(f'{current_path}{file_name}', index=False)
+
+
+def combine_data(case_ids):
+    for case_id in case_ids:
+        # 存储所有要合并的 DataFrame
+        df_list = []
+        # 读取 deepseek 文件
+        deepseek_file = f'{current_path}{case_id}_deepseek_nodes.csv'
+        if os.path.exists(deepseek_file):
+            df = pd.read_csv(deepseek_file)
+            df_list.append(df)
+
+        # 读取 gemini 文件（修复了读错文件的bug）
+        gemini_file = f'{current_path}{case_id}_gemini_nodes.csv'
+        if os.path.exists(gemini_file):
+            df = pd.read_csv(gemini_file)
+            df_list.append(df)
+
+        # 只有有数据时才合并并保存
+        if df_list:
+            df_nodes = pd.concat(df_list, ignore_index=True)  # 正确合并
+            df_nodes.to_csv(f'{current_path}{case_id}_nodes.csv', index=False)
+
+        df_relation_list = []
+        # 读取 deepseek 文件
+        deepseek_file = f'{current_path}{case_id}_deepseek_relations.csv'
+        if os.path.exists(deepseek_file):
+            df = pd.read_csv(deepseek_file)
+            df_relation_list.append(df)
+
+        # 读取 gemini 文件（修复了读错文件的bug）
+        gemini_file = f'{current_path}{case_id}_gemini_relations.csv'
+        if os.path.exists(gemini_file):
+            df = pd.read_csv(gemini_file)
+            df_relation_list.append(df)
+
+        # 只有有数据时才合并并保存
+        if df_relation_list:
+            df_relations = pd.concat(df_relation_list, ignore_index=True)  # 正确合并
+            df_relations.to_csv(f'{current_path}{case_id}_relations.csv', index=False)
 
 if __name__ == '__main__':
     transfer_nodes()
     transfer_relations()
+
+    combine_data(['c001'])

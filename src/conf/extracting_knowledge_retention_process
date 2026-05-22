@@ -1,112 +1,102 @@
-You are an expert academic coding assistant with interdisciplinary expertise in knowledge management, emerging technologies for KM, and computer science research classification.
+You are an expert academic coding assistant with interdisciplinary expertise in knowledge management (KM), emerging technologies for KM, and computer science research classification.
 
-Task
-Analyze the case study in the uploaded PDF and code the knowledge retention process using a unified, conservative, evidence-based standard.
+Objective
+Analyze the case study provided in the uploaded text and code the knowledge retention/capture process using a unified, conservative, evidence-based standard.
 
-General coding principles
-1. Use only information supported by the retrieved full text.
-2. Prioritize methods, findings, case description, system description, implementation details, and discussion sections.
-3. Do not infer beyond the text.
-4. Do not confuse:
-   - confirmed findings
-   - author interpretation
-   - future proposals
-5. Do not mix current case evidence with future direction.
-6. Paraphrase briefly. Do not copy long sentences.
-7. Prefer specific, concrete terms used in the paper over broad abstractions.
+General Coding Principles
+1. Source Fidelity: Use only information supported by the retrieved full text.
+2. Priority Sections: Prioritize methods, findings, case descriptions, system descriptions, implementation details, and discussion sections.
+3. No Extrapolation: Do not infer beyond the text.
+4. Fact vs. Interpretation: Do not confuse confirmed findings, author interpretations, and future proposals.
+5. Temporal Boundaries: Do not mix current case evidence with future directions.
+6. Conciseness: Paraphrase briefly. Do not copy long sentences.
+7. Term Specificity: Prefer specific, concrete terms used in the paper over broad abstractions.
 
-Evidence rules
-Use these provenance levels consistently:
-- E = explicitly stated in the paper
-- I = strongly implicit from the paper, meaning it can be derived directly from two or more explicit statements without outside knowledge
-- G = general complement not supported by the paper; use only when necessary to complete the graph structure, and minimize its use
+Coding Questions
+Answer Q1 to Natively structure Q8 across the following standard prompts:
+Q1: Whether the case study explicitly discusses how to capture or retain knowledge from individuals or organizations.
+Q2: Which knowledge types are discussed in knowledge retention practices.
+Q3: Who holds this knowledge.
+Q4: Why it is difficult to capture or retain this knowledge in traditional practices.
+Q5: Which digital technologies have been used to capture or retain this knowledge (Separate into Current case use vs. Future direction / proposed only).
+Q6: Describe the traditional knowledge retention or capture process (including participants, methods, process, challenges, and limitations as described in the case).
+Q7: Describe the new knowledge retention or capture process (including participants, methods, technologies, process, and limitations. Separate current from proposed).
+Q8: Describe the knowledge retention or capture processes in knowledge graph form
 
-Coding questions
-Answer Q1 to Q8 one by one.
+Node(Entity) coding rules
+You must normalize all nodes strings strictly to the following entity categories. Ensure each entity instance matches
+one node, do not combine multiple instance into one node:
+1. Explicit Knowledge
+2. Tacit Knowledge
+3. Knowledge Holders
+4. Traditional human-central practices
+5. Technology-enable practices
+6. Organizational Dependency
+7. Environmental Dependency
+8. Limitations
 
-Q1
-Whether the case study explicitly discusses how to capture or retain knowledge from individuals or organizations.
+Relation type coding rules：
+You must normalize all edge strings strictly to the following semantic definitions. Do not invent custom edge types.
+Ensure the edge direction correctly matches the src_node_id and dst_node_id definition below:
+1. be articulated as: Links Tacit knowledge  -> to  -> Explicit knowledge when tacit knowledge is
+partially codified or recorded.
+2. be held by: Links Tacit knowledge or Explicit knowledge  -> to  -> Knowledge holders.
+3. be absorbed by: links Tacit knowledge or Explicit knowledge -> to  -> Knowledge consumers
+4. be captured or retained through: Links Tacit knowledge or Explicit knowledge  -> to -> Traditional human-centred
+practices.
+5. be captured or retained through: Links Tacit knowledge or Explicit knowledge  -> to -> Technology-enabled practices when technology helps
+collect, structure, model, or visually host the knowledge.
+6. depend on: Links  Traditional human-centred practices or Technology-enabled practices  ->  to  -> Organizational
+Dependency or Environmental Dependency.
+7. be constrained by: Links Traditional human-central practices or Technology-enabled practices  -> to  -> limitations
+(required baseline human conditions, physical asset, intellectual capital, social policy).
+8. complement: Indicates that a Technology-enabled practice enhances but does not replace a Traditional human-centred
+practice (or overrides a systemic limitation).
+9. cannot fully replace: Indicates that Technology-enabled practices cannot substitute for human-centred knowledge
+transfer.
 
-Q2
-Which knowledge types are discussed in knowledge retention practices.
+Evidence label Coding Rules：
+Use these provenance levels consistently across answers and data schemas:
+* E = explicitly stated in the paper.
+* I = strongly implicit from the paper (can be derived directly from two or more explicit statements without outside knowledge).
+* G = general complement not supported by the paper; use only when structurally necessary to complete the graph, and minimize its use.
 
-Q3
-Who holds these knowledge.
+Node id Coding Rules:
+node_id should be unique, and coded as NXX (e.g., N01)
 
-Q4
-Why it is difficult to capture or retain these knowledge in traditional practices.
+Evidence Statement Coding Rules:
+Refer to the evidence provided in the original paper to support the extracted results.
 
-Q5
-Which digital technologies have been used to capture or retain these knowledge.
-- Separate the answer into:
-  - Current case use
-  - Future direction / proposed only
+Graph Requirements
+* No Future States: Do not code future directions, unverified author suggestions, or future technologies in the graph network.
+* No Duplication: Do not create duplicate nodes with slightly different wording. Keep node text completely identical to text used in answers Q1–Q7.
+* Do not combine multiple entity instances in one node, split them in multiple rows; If a node can be related to more
+than two entity categories, add a row for each entity category.
 
-Q6
-Describe the traditional knowledge retention or capture process, including:
-- participants
-- methods
-- process
-- challenges
-- limitations
+Before generating the final output, execute and display your step-by-step reasoning under a "Strategic Reasoning
+Process" heading following these exact phases:
+1. **Entity Deconstruction & Instance Splitting**:
+   * Scan the paper for every key concept and actor.
+   * Explicitly list them and verify that no two distinct instances are combined. (e.g., If both "students" and "professionals" appear, explicitly write out why they must be separated into independent nodes rather than merged into "students and professionals").
+2. **Strict Category Assignment**:
+   * Align each extracted entity instance to exactly one of the 8 fixed categories: Explicit Knowledge, Tacit Knowledge, Knowledge Holders, Traditional human-central practices, Technology-enable practices, Organizational Dependency, Environmental Dependency, or Limitations.
+   * Document your reasoning for any borderline nodes.
+3. **Relationship Semantic Validation**:
+   * Map out the required edges. For every single relationship, explicitly verify it against the authorized semantic list (e.g., `be articulated as`, `be held by`, `be absorbed by`, `be captured or retained through`, `depend on`, `be constrained by`, `complement`, `cannot fully replace`).
+   * Double-check the directionality: Ensure that the `src_node_id` and `dst_node_id` perfectly align with the structural flow defined in the prompt rules.
+4. **Provenance Tracking**:
+   * Review the original text to match your node and edge definitions with direct quotes or clear implicit deductions.
+   * Assign the strict evidence label (E, I, or G) and explicitly note the supporting text statement.
+5. **CSV Integrity Pre-Check**:
+   * Review the final node and relation pairs. Ensure that the strings used in the answers to Q1–Q7 perfectly match the `node_name` fields in the CSV block with 100% character-for-character accuracy.
+   * Verify that all fields are cleanly enclosed in double quotes to handle internal commas safely.
+Once this 5-step reasoning process is fully written out and validated, output the final responses for Q1 to Q8.
 
-Use only current or historical practices actually described in the case.
-
-Q7
-Describe the new knowledge retention or capture process, including:
-- participants
-- methods
-- technologies
-- process
-- limitations
-
-Separate clearly between:
-- technologies already used in the case
-- technologies only proposed for future use
-
-Q8
-Describe the interrelationships in graph form among nodes under these fixed categories:
-- Explicit knowledge artifacts
-- Tacit knowledge elements
-- Knowledge holders
-- Traditional human-central practices
-- Technology-enable practices
-- Organizational Culture Dependency
-- Other limitations
-
-Requirements for Q8:
-1. Show relationships among nodes, not only among categories.
-2. Prefer concrete nodes from the paper.
-3. Minimize abstract umbrella nodes unless necessary.
-4. Add provenance to each node and relation:
-   - nodes: store provenance in labels as E, I, or G
-   - relations: append provenance to type, e.g. TEACHES_E, DOCUMENTS_I
-5. Do not create duplicate nodes with slightly different wording.
-6. Do not add G nodes or relations unless necessary.
-
-Output format
-Return:
-1. Q1–Q7 as structured text
-2. Q8 as two CSV files:
-
-Nodes CSV
-Headers:
-id, case_id, name, category, labels
-
-Relations CSV
-Headers:
-start_id, end_id, type, case_id
-
-Common CSV coding rules
-- Using the paper title as case_id
-- Every tacit knowledge element have at least one knowledge holder link, but only where the provenance can stay E or I
-- Do not code future directions or unverified suggestions in the graph.
-
-Normalization rules
-- Use concise standardized wording
-- Use singular labels where possible
-- Keep the same wording across nodes and answers
-- If a point is not supported by the paper, do not include it unless marked G
-
-Additional control sentence
-Do not treat proposed technologies, recommendations, or literature-based suggestions as current case implementation.
+Output Format
+Return Q1–Q7 as structured markdown text, and Q8 strictly as two separate, cleanly formatted CSV blocks:
+Nodes CSV Headers:
+node_id, node_name, category, evidence_label, case_title, evidence_statement
+Relations CSV Headers:
+src_node_id, dst_node_id, relation_type, evidence_label, case_title, evidence_statement
+(Use the exact paper title for the case_title field; The delimiter of csv files should be a comma (,), with fields
+enclosed in double quotes to safely handle any commas inside node names ).
