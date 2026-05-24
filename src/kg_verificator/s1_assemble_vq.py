@@ -7,12 +7,8 @@ from src.utils.llm_mgmt.deepseek_local_api import chat_with_deepseek
 
 class AssembleVQ(object):
     def __init__(self):
-        self.kg_case_path = "../data/graph/case_study/cases/"
-        self.kg_rag_path = "../data/graph/case_study/rag_vq/"
-        self.node_template = """describe this entity <node: {{node}}, label: {{label}}> as a sentence without 
-        explanation. """
-        self.relation_template = """describe this relation <src_node: {{src_node}}, relation_type: {{relation_type}}, dst_node: {{dst_node}} > as a sentence without explanation."""
-        pass
+        self.kg_case_path = "../data/graph/case_study/case_3_unite/"
+        self.kg_rag_path = "../data/graph/case_study/case_4_v_kg/"
 
     @staticmethod
     def get_random_except(key_array, exclude_key, default="you see"):
@@ -67,14 +63,14 @@ class AssembleVQ(object):
 
                     })
 
-                    fake_category = self.get_random_except(category_list, category)
+                    """fake_category = self.get_random_except(category_list, category)
                     negative_sample = f"'{name}' is an instance of '{fake_category}'"
                     questions.append({
                         'node_id': row['node_id'],
                         'group': idx,
                         'question': negative_sample,
                         'verification_label': 0
-                    })
+                    })"""
 
                 # Save to output CSV if path is provided
                 if output_path:
@@ -250,7 +246,7 @@ class AssembleVQ(object):
 if __name__ == '__main__':
     vq=AssembleVQ()
     vq.assemble_entity_vq()
-    vq.choose_entity_samples()
+    #vq.choose_entity_samples()
 
     vq.assemble_relation_vq()
-    vq.choose_relation_samples()
+    #vq.choose_relation_samples()

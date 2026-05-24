@@ -348,7 +348,7 @@ class PreparePaper:
         """
         Standardizes a country string to a canonical name.
         Args:
-            country_str (str): The raw country string from the data.
+            country_str (str): The case_1_raw_kg country string from the data.
 
         Returns:
             str: The standardized country name.
@@ -359,7 +359,7 @@ class PreparePaper:
         # Normalize the string: remove extra spaces, convert to title case for easier matching
         normalized = re.sub(r'\s+', ' ', country_str.strip()).title()
 
-        # Handle specific cases for the United States
+        # Handle specific case_2_norm_id for the United States
         us_patterns = [
             r'^U\.?S\.?A?\.?$',
             r'^United\s+States.*',
@@ -373,7 +373,7 @@ class PreparePaper:
             if re.match(pattern, normalized, re.IGNORECASE):
                 return "United States"
 
-        # Handle specific cases for the United Kingdom
+        # Handle specific case_2_norm_id for the United Kingdom
         uk_patterns = [
             r'^U\.?K\.?$',
             r'^United\s+Kingdom.*',
@@ -392,7 +392,7 @@ class PreparePaper:
             if re.match(pattern, normalized, re.IGNORECASE):
                 return "United Kingdom"
 
-        # Handle specific cases for the Netherlands
+        # Handle specific case_2_norm_id for the Netherlands
         nl_patterns = [
             r'^Netherland[s]?$',
             r'^Nether\s+Lands$',

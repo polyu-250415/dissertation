@@ -1,13 +1,13 @@
 from neo4j import GraphDatabase
-from src.Dissertation.graphy_tools.create_nodes import read_nodes_from_csv, create_nodes_with_apoc, create_nodes_fallback
-from src.Dissertation.graphy_tools.create_relation import read_relations_from_csv,create_relationships
+from src.utils.graph_tools.create_nodes import read_nodes_from_csv, create_nodes_with_apoc, create_nodes_fallback
+from src.utils.graph_tools.create_relation import read_relations_from_csv,create_relationships
 
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "MyNewPass123!")
-CSV_DIR = '../../data/graph/case_study/'
+CSV_DIR = '../../data/graph/case_study/case_3_unite/'
 DATABASE = "kggen"
 
-case_id = 'c003'
+case_id = 'c006'
 
 def clear_whole_database(session):
     """

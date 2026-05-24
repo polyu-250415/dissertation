@@ -1,2 +1,5 @@
 /src/utils/llm_key.py
+/src/data
+/src/conf/bak
+/src/models
 .idea

@@ -3,9 +3,16 @@ import logging
 from pathlib import Path
 import pandas as pd
 
+# Assuming these are accessible imports from your local source tree
+from src.utils.llm_key import deepseek_key, qwen_key, ernie_api_k
+
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 os.environ["OBJC_DISABLE_INITIALIZE_FORK_SAFETY"] = "YES"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+os.environ["DEEPSEEK_API_KEY"] = deepseek_key
+os.environ["QWEN_API_KEY"] = qwen_key
+os.environ["ERNIE_API_KEY"] = ernie_api_k
 
 from haystack import Document, Pipeline
 from haystack.document_stores.in_memory import InMemoryDocumentStore
@@ -18,11 +25,8 @@ from haystack.utils import Secret
 
 from haystack_integrations.components.embedders.fastembed import FastembedDocumentEmbedder, FastembedTextEmbedder
 
-# Assuming these are accessible imports from your local source tree
-from src.utils.llm_key import deepseek_key, qwen_key, ernie_api_k
 
-
-class EnsembleRAG:
+class RAGAuditor:
     def __init__(self, model_name: str = "BAAI/bge-small-en-v1.5", debug: bool = True):
         if debug:
             logging.basicConfig(
@@ -35,7 +39,7 @@ class EnsembleRAG:
 
         self.document_store = InMemoryDocumentStore()
         self.model_name = model_name
-        self.embedding_model_cache_path = "../../models/fastembed/bge-small-en-v1.5"
+        self.embedding_model_cache_path = "/Users/meimei/work/coding/dissertation/src/models/fastembed/bge-small-en-v1.5"
         self.indexing_pipeline = self._build_indexing_pipeline()
         self.query_pipeline = self._build_triplet_query_pipeline()
 
@@ -95,6 +99,7 @@ the highest. Only return the rate."""
     def ingest(self, pdf_path: str, custom_meta: dict = None):
         path = Path(pdf_path)
         pdf_files = list(path.glob("*.pdf"))
+
         if not pdf_files:
             print(f"No PDFs found in {pdf_path}")
             return
@@ -129,43 +134,50 @@ the highest. Only return the rate."""
 
             self.document_store.write_documents(docs_to_write)
 
-    def ask(self, question: str, filters: dict = None):
-        run_input = {
-            "text_embedder": {"text": question},
-            "prompt_deepseek": {"query": question}
-        }
+    def ask(self, question_list: list, filters: dict = None):
 
-        if filters:
-            run_input["retriever"] = {"filters": filters}
+        resp_list = []
 
-        results = self.query_pipeline.run(run_input)
-        return results["llm_deepseek"]["replies"][0]
+        for question in question_list:
+            try:
+                run_input = {
+                    "text_embedder": {"text": question},
+                    "prompt_deepseek": {"query": question}
+                }
+
+                if filters:
+                    run_input["retriever"] = {"filters": filters}
+
+                results = self.query_pipeline.run(run_input)
+                resp_list.append(results["llm_deepseek"]["replies"][0])
+            except Exception as e:
+                resp_list.append("E")
+                print(e)
+
+        return resp_list
+
+
 
 
 if __name__ == '__main__':
-    # Set Keys
-    os.environ["DEEPSEEK_API_KEY"] = deepseek_key
-    os.environ["QWEN_API_KEY"] = qwen_key
-    os.environ["ERNIE_API_KEY"] = ernie_api_k
-
-    rag = EnsembleRAG()
+    obj = RAGAuditor()
 
     custom_meta_data: dict = {
         "call_id": "c001"
     }
 
-    path = "../../data/graph/case_study/original_papers/construction"
+    path = "../data/graph/case_study/original_papers/construction"
 
     # FIX: Pass the custom_meta dictionary explicitly here
-    rag.ingest(path, custom_meta=custom_meta_data)
+    obj.ingest(path, custom_meta=custom_meta_data)
 
     # Simple mock framework for testing execution path if the CSV isn't found immediately
     try:
-        df = pd.read_csv("../../data/graph/case_study/rag_vq/c001_nodes_vq.csv")
+        df = pd.read_csv("../../data/graph/case_study/case_4_v_kg/c001_nodes_vq.csv")
         response_list = []
         for _, row in df.iterrows():
             try:
-                response = rag.ask(row['question'])
+                response = obj.ask(row['question'])
                 response_list.append(response)
                 print(f"Claim: {row['question']} \nLabel: {row['verification_label']}, \nResponse: {response}")
             except Exception as e:
@@ -173,6 +185,8 @@ if __name__ == '__main__':
                 response_list.append('exception')
 
         df['assessment'] = response_list
-        df.to_csv("../../data/graph/case_study/rag_vq/c001_nodes_vq_result.csv", index=False)
+        df.to_csv("../../data/graph/case_study/case_4_v_kg/c001_nodes_vq_result.csv", index=False)
     except FileNotFoundError:
         print("Metadata ingestion complete. CSV path not found, skipping evaluation loops.")
+
+

@@ -4,7 +4,7 @@ from neo4j import GraphDatabase
 
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "MyNewPass123!")
-CSV_DIR = '../../data/graph/case_study/'
+CSV_DIR = '../../data/graph/case_study/case_6_rebuild_kg/'
 DATABASE = "kggen"
 
 
@@ -13,12 +13,12 @@ def create_relationships(tx, batch):
     query = """
     UNWIND $batch AS rel
     // 按 字符串ID 匹配节点（假设节点属性叫 id，你可以改成 node_id）
-    MATCH (a {id: rel.start_id})
-    MATCH (b {id: rel.end_id})
+    MATCH (a {node_id: rel.src_node_id})
+    MATCH (b {node_id: rel.dst_node_id})
     WHERE a IS NOT NULL AND b IS NOT NULL
 
     // 创建动态关系
-    CALL apoc.create.relationship(a, rel.type, {case_id: rel.case_id}, b)
+    CALL apoc.create.relationship(a, rel.relation_type, {case_title: rel.case_title}, b)
     YIELD rel AS r
 
     RETURN count(r) AS created
@@ -44,16 +44,16 @@ def read_relations_from_csv(endswith="relations.csv", path_dir=CSV_DIR):
                 reader = csv.DictReader(f)
                 for row in reader:
                     # 直接读取字符串，不用转 int！
-                    start_id = row["start_id"].strip()
-                    end_id = row["end_id"].strip()
-                    rel_type = row["type"].strip()
-                    case_id = row.get("case_id", "").strip()
+                    src_node_id = row["src_node_id"].strip()
+                    dst_node_id = row["dst_node_id"].strip()
+                    relation_type = row["relation_type"].strip()
+                    case_title = row.get("case_title", "").strip()
 
                     rels.append({
-                        "start_id": start_id,
-                        "end_id": end_id,
-                        "type": rel_type,
-                        "case_id": case_id
+                        "src_node_id": src_node_id,
+                        "dst_node_id": dst_node_id,
+                        "relation_type": relation_type,
+                        "case_title": case_title
                     })
 
     print(f"✅ 准备导入 {len(rels)} 条关系")
