@@ -66,7 +66,19 @@ class RetentionTaxonomy:
     ]
 
 
-class CaptureTaxonomy:
+class SectorKnowledgeGraph:
+
+    technology_enable_practice = [
+        "Artificial Intelligence and Intelligent Computation",
+        "Human–Computer Interaction and Immersive Technologies",
+        "Cyber-Physical Systems, IoT, and Smart Environments",
+        "Data, Information, and Knowledge Systems",
+        "Imaging, Sensing, and Perception Technologies",
+        "Distributed, Secure, and Trust Technologies",
+        "Mobile, Social, and Communication Technologies",
+        "Rule-Based, Decision, and Expert Systems"
+    ]
+
     knowledge_capture_activities_taxonomy = [
         "Job shadowing",
         "Job Rotation",
@@ -77,7 +89,9 @@ class CaptureTaxonomy:
         "Mentoring",
         "Storytelling",
         "After-Action Reviews",
-        "Communities of practice"]
+        "Communities of practice",
+        "Other"
+    ]
 
 class IndustryTaxonomy:
 
@@ -347,15 +361,3 @@ class IndustryTaxonomy:
     }
 
 
-class DigitalTechTaxonomy:
-    digital_technology_taxonomy = [
-        "AI",
-        "Big Data",
-        "Virtual Reality",
-        "Augment Reality",
-        "Digital Twins",
-    ]
-
-
-class NationsTaxonomy:
-    nations_taxonomy = []

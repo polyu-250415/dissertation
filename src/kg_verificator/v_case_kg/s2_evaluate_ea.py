@@ -7,8 +7,8 @@ from src.utils.llm_rag_tool.rag_auditor import RAGAuditor
 class EvaluateEA:
 
     def __init__(self):
-        self.pdf_path = "../data/graph/case_study/raw_pdf"
-        self.rag_ea_path = "../data/graph/case_study/case_5_v_ea/"
+        self.pdf_path = "../../data/graph/case_study/raw_pdf_m"
+        self.rag_ea_path = "../../data/graph/case_study/case_5_v_ea/"
         self.rag_auditor = RAGAuditor()
         pass
 
@@ -94,7 +94,7 @@ class EvaluateEA:
         valid_pairs = []
 
         for call_id in call_ids:
-            nodes_file = f'../data/graph/case_study/case_5_v_ea/{call_id}_nodes.csv'
+            nodes_file = f'{self.rag_ea_path}{call_id}_nodes.csv'
             src = pd.read_csv(nodes_file)
             # Create fast lookup dictionary: {id: name}
             id_to_name = dict(zip(src['node_id'], src['node_name']))
@@ -108,7 +108,6 @@ if __name__ == '__main__':
     obj = EvaluateEA()
 
 
-    call_ids = ['c001','c002','c003','c004','c005', 'c006']
-    #obj.evaluate_all_ea(call_ids)
-
+    call_ids = ['c002']
+    obj.evaluate_all_ea(call_ids)
     obj.find_all_redundant_nodes(call_ids)

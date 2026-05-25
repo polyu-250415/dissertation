@@ -30,8 +30,8 @@ def create_relationships(tx, batch):
 # ==================== 加载 CSV ====================
 
 def read_relations_from_csv(endswith="relations.csv", path_dir=CSV_DIR):
-    rels = []
 
+    rels = []
     for root, dirs, files in os.walk(path_dir):
         for file in files:
             if not file.endswith(endswith):

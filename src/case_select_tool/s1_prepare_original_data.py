@@ -348,7 +348,7 @@ class PreparePaper:
         """
         Standardizes a country string to a canonical name.
         Args:
-            country_str (str): The case_1_raw_kg country string from the data.
+            country_str (str): The case_1_raw_kg_m country string from the data.
 
         Returns:
             str: The standardized country name.

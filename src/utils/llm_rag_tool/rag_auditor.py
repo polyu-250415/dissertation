@@ -32,8 +32,8 @@ class RAGAuditor:
             logging.basicConfig(
                 level=logging.DEBUG,
                 format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                filename='haystack_debug.log',
-                filemode='w'
+                filename='/Users/meimei/work/coding/dissertation/src/log/haystack_debug.log',
+                filemode='a'
             )
             logging.getLogger("haystack").setLevel(logging.DEBUG)
 
@@ -163,17 +163,17 @@ if __name__ == '__main__':
     obj = RAGAuditor()
 
     custom_meta_data: dict = {
-        "call_id": "c001"
+        "call_id": "c002"
     }
 
-    path = "../data/graph/case_study/original_papers/construction"
+    path = "../../data/graph/case_study/raw_pdf_m/c002/"
 
     # FIX: Pass the custom_meta dictionary explicitly here
     obj.ingest(path, custom_meta=custom_meta_data)
 
     # Simple mock framework for testing execution path if the CSV isn't found immediately
     try:
-        df = pd.read_csv("../../data/graph/case_study/case_4_v_kg/c001_nodes_vq.csv")
+        df = pd.read_csv("../../data/graph/case_study/case_4_v_kg/c002_relations_vq.csv")
         response_list = []
         for _, row in df.iterrows():
             try:
@@ -185,7 +185,7 @@ if __name__ == '__main__':
                 response_list.append('exception')
 
         df['assessment'] = response_list
-        df.to_csv("../../data/graph/case_study/case_4_v_kg/c001_nodes_vq_result.csv", index=False)
+        df.to_csv("../../data/graph/case_study/case_4_v_kg/c002_relations_vq_evaluation.csv", index=False)
     except FileNotFoundError:
         print("Metadata ingestion complete. CSV path not found, skipping evaluation loops.")
 

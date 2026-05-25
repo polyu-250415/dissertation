@@ -29,26 +29,23 @@ You must extract all nodes as comprehensively as possible and normalize all node
 2. `Tacit Knowledge`: Specific uncodified skill, intuition, routine, or "know-how" held by an individual.
 3. `Knowledge Holder`: Specific role, expert, or team possessing all or part of the knowledge (e.g., "Senior Engineer", not "Engineers").
 4. `Knowledge Consumer`: Specific role or team receiving/absorbing the knowledge.
-5. `Traditional human-central practice`: Specific non-digital, human-driven mechanism for transfer (e.g., "Exit interview", "Shadowing session").
-6. `Technology-enable practice`: Specific software, hardware, or digital system actively used to host or capture knowledge (e.g., "Wiki page", "Knowledge graph").
-7. `Organizational Dependency`: Specific internal prerequisite or baseline condition required for the practice to
-succeed (e.g., "Corporate culture", "Dedicated training hours", "Management buy-in").
-8. `Environmental Dependency`: Specific external factor outside the organization's direct control required for the
-practice (e.g., "Industry regulation", "Physical location constraint", "Internet infrastructure").
-9. `Limitation`: Specific inherent vulnerability, shortcoming, or failure point of a practice itself (e.g., "Cognitive
-overload", "Data decay", "Loss of nuance").
+5. `Traditional Human-central Practice`: Specific non-digital, human-driven mechanism for transfer (e.g., "Exit interview", "Shadowing session").
+6. `Technology-enable Practice`: Specific software, hardware, or digital system actively used to host or capture knowledge (e.g., "Wiki page", "Knowledge graph").
+7. `Organizational Dependency`: Specific internal prerequisite or baseline condition required for the practice to  succeed (e.g., "Corporate culture", "Dedicated training hours", "Management buy-in").
+8. `Environmental Dependency`: Specific external factor outside the organization's direct control required for the practice (e.g., "Industry regulation", "Physical location constraint", "Internet infrastructure").
+9. `Limitation`: Specific inherent vulnerability, shortcoming, or failure point of a practice itself (e.g., "Cognitive overload", "Data decay", "Loss of nuance").
 
 Relation type coding rules：
 You must normalize all edge strings strictly to the following permitted semantic definitions. Ensure the edge direction strictly flows from `src_node_id` to `dst_node_id` using these exact singular terms:
 1. `be articulated as`: Links [Tacit Knowledge] -> to -> [Explicit Knowledge] (when tacit knowledge is partially codified or recorded).
 2. `be held by`: Links [Tacit Knowledge OR Explicit Knowledge] -> to -> [Knowledge Holder].
 3. `be absorbed by`: Links [Tacit Knowledge OR Explicit Knowledge] -> to -> [Knowledge Consumer].
-4. `be captured or retained through`: Links [Tacit Knowledge OR Explicit Knowledge] -> to -> [Traditional human-central practice].
-5. `be captured or retained through`: Links [Tacit Knowledge OR Explicit Knowledge] -> to -> [Technology-enable practice].
-6. `depend on`: Links [Traditional human-central practice OR Technology-enable practice] -> to -> [Organizational Dependency OR Environmental Dependency].
-7. `be constrained by`: Links [Traditional human-central practice OR Technology-enable practice] -> to -> [Limitation].
-8. `complement`: Links [Technology-enable practice] -> to -> [Traditional human-central practice] (Indicates that a digital practice enhances but does not replace a human practice).
-9. `cannot fully replace`: Links [Technology-enable practice] -> to -> [Traditional human-central practice].
+4. `participate in`: Links [Knowledge Holder OR Knowledge Consumer] -> to -> [Traditional Human-central practice OR Technology-enable Practice]
+5. `capture`: Links [Technology-enable Practice] -> to -> [Tacit Knowledge OR Explicit Knowledge].
+6. `depend on`: Links [Traditional Human-central Practice OR Technology-enable Practice] -> to -> [Organizational Dependency OR Environmental Dependency].
+7. `be constrained by`: Links [Traditional Human-central Practice OR Technology-enable Practice] -> to -> [Limitation].
+8. `complement`: Links [Technology-enable Practice] -> to -> [Traditional Human-central Practice] (Indicates that a digital practice enhances but does not replace a human Practice).
+9. `cannot fully replace`: Links [Technology-enable Practice] -> to -> [Traditional Human-central Practice].
 10. `be difficult to capture due to`: Links [Tacit Knowledge] -> to -> [Limitation].
 
 Evidence label Coding Rules：
@@ -61,7 +58,7 @@ Node id Coding Rules:
 node_id should be unique, and coded as NXX (e.g., N01)
 
 Evidence Statement Coding Rules:
-Refer to the evidence provided in the original paper to support the extracted results.
+Refer to the evidence provided in the original paper to support the extracted results. If you indicate the position of the evidence in the paper within the statement, you can only do so at the end of the statement.
 
 Graph Requirements:
 * No Future States: Do not code future directions, unverified author suggestions, or future technologies in the graph network.
@@ -73,7 +70,7 @@ Before generating the final output, execute and display your step-by-step reason
    * Scan the paper for every key concept and actor.
    * Explicitly list them and verify that no two distinct instances are combined. (e.g., If both "students" and "professionals" appear, explicitly write out why they must be separated into independent nodes rather than merged into "students and professionals").
 2. **Strict Category Assignment**:
-   * Align each extracted entity instance to exactly one of the 8 fixed categories: Explicit Knowledge, Tacit Knowledge, Knowledge Holders, Traditional human-central practices, Technology-enable practices, Organizational Dependency, Environmental Dependency, or Limitations.
+   * Align each extracted entity instance to exactly one of the 8 fixed categories: Explicit Knowledge, Tacit Knowledge,Knowledge Holders, Traditional Human-central Practices, Technology-enable Practices, Organizational Dependency, Environmental Dependency, or Limitations.
    * Document your reasoning for any borderline nodes.
 3. **Relationship Semantic Validation**:
    * Map out the required edges. For every single relationship, explicitly verify it against the authorized semantic list (e.g., `be articulated as`, `be held by`, `be absorbed by`, `be captured or retained through`, `depend on`, `be constrained by`, `complement`, `cannot fully replace`).

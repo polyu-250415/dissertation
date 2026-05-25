@@ -1,0 +1,88 @@
+Role & Objective
+You are an expert Ontologist and Knowledge Management (KM) researcher specializing in construction informatics and socio-technical design. Your task is to expand an existing categorical dataset of research nodes by developing a precise, academically grounded sub-taxonomy and mapping each individual node row to this new structure.
+
+Input Data Format
+You will be processing a CSV dataset containing research nodes. The input columns are:
+- node_id: Unique identifier (e.g., c001M01N01)
+- node_name: The specific entity, tool, practice, human agent, or constraint
+- category: One of 9 high-level structural categories
+
+High-Level Categories
+- Explicit Knowledge
+- Tacit Knowledge
+- Knowledge Holder
+- Knowledge Consumer
+- Traditional Human-central Practice
+- Technology-enable Practice
+- Organizational Dependency
+- Environmental Dependency
+- Limitation
+
+Taxonomy Guidelines & Tasks
+Task 1: General Category Sub-Taxonomy (Categories 1, 3, 4, 5, 7, 8)
+For all categories NOT explicitly restricted in Tasks 2-4 below, you must:
+1. Create a set of granular sub-categories based on established literature (e.g., Nonaka & Takeuchi's KM theory,
+Resource-Based View, and Contingency theory).
+2. CRITICAL CONSTRAINT: Every high-level category must contain at least 2, but strictly LESS THAN 6 active
+sub-categories (i.e., exactly 2, 3, or 4 sub-categories).
+3. Assign a structured alphanumeric ID using the parent category's initials (e.g., Explicit Knowledge -> EX01, EX02, EX03).
+
+Task 2: Tacit Knowledge Mapping
+When expanding the Tacit Knowledge category, you must strictly group nodes into predefined sub-categories. If the predefined sub-categories cannot match the nodes, you can expand the set of sub-categories, but strictly LESS THAN 6 active sub-categories in total.
+1. "Somatic Tacit Knowledge" (Code: TA01) — Encompasses experiential know-how, procedural competence, embodied craft knowledge, and direct site operational know-how.
+2. "Cognitive Tacit Knowledge" (Code: TA02) — Encompasses professional/expert judgment, specialized decision rules, mental models, and contextual/clinical know-how.
+3. "Collective and Relational Tacit Knowledge" (Code: TA03) — Encompasses collaborative/teamwork know-how, shared
+organizational memory, and social coordination.
+4. "Adaptive Tacit Knowledge" (Code: TA04) — Encompasses real-time situational problem-solving, cognitive flexibility, and live hazard adjustment capabilities.
+
+Task 3: Technology-Enable Practice Mapping
+When expanding the Technology-Enable Practice category, you must strictly group nodes into predefined sub-categories. If the predefined sub-categories cannot match the nodes, you can expand the set of sub-categories, but strictly LESS THAN 15 active sub-categories in total.
+1. "Artificial Intelligence and Intelligent Computation" (Code: TE01) — e.g., GenAI systems, LLMs, prompt engineering,
+semantic similarity algorithms.
+2. "Human–Computer Interaction and Immersive Technologies" (Code: TE02) — e.g., VR environments, AR scene overlays,
+digital displays, interactive dashboards, authoring tools like Unity3D.
+3. "Cyber-Physical Systems, IoT, and Smart Environments" (Code: TE03) — e.g., active/passive smart suits, wearable
+exoskeletons, automated feedback loops.
+4. "Data, Information, and Knowledge Systems" (Code: TE04) — e.g., BIM frameworks, SQL servers, vector databases,
+relational registries, digital knowledge graphs.
+5. "Imaging, Sensing, and Perception Technologies" (Code: TE05) — e.g., IMU telemetry sensors, 3D laser scanning, UAV
+oblique photography, wearable cameras.
+6. "Distributed, Secure, and Trust Technologies" (Code: TE06)
+7. "Mobile, Social, and Communication Technologies" (Code: TE07)
+8. "Rule-Based, Decision, and Expert Systems" (Code: TE08)
+
+Task 4: Limitation Mapping
+When expanding the Limitation category, you must strictly group nodes into predefined sub-categories. If the predefined sub-categories cannot match the nodes, you can expand the set of sub-categories, but strictly LESS THAN 10 active sub-categories in total.
+1. "Human, Cognitive & Knowledge Retention Limitations" (Code: LI01) — Maps limits regarding Ebbinghaus's memory decay
+curves, lack of user motivation/engagement, training sample selection biases, and corporate amnesia via staff turnover.
+2. "Technical, System & Data Limitations" (Code: LI02) — Maps system bottlenecks, technical latencies, lack of haptic
+feedback hardware, data format fragmentation, software extraction constraints (non-OCR), and statistically insignificant experimental outcomes.
+3. "Cost, Resource & Structural Limitations" (Code: LI03) — Maps high financial costs, technology deployment resource
+limits, rigid uncustomized structural frameworks, and the complete absence of organizational continuous improvement loops.
+
+Before generating the final output, execute and display your step-by-step reasoning under a "Strategic Reasoning Process" heading following these exact phases:
+Phase 1: Theoretical Foundation & Base Taxonomy Derivation
+- Document the academic literature and KM frameworks (e.g., Nonaka's SECI model, Resource-Based View, Contingency Theory) used to formalize the sub-taxonomies for the general categories (Categories 1, 3, 4, 5, 7, 8).
+- Explicitly define the semantic boundaries, operational scope, and unique alphanumeric identifier prefix (e.g., EX, KH, KC, TR, OD, ED) for every newly created sub-category.
+Phase 2: Structural Boundary & Cardinality Audit
+- Enumerate and count the exact number of sub-categories active within *each* of the 9 high-level parent categories.
+- Cross-reference these counts against the mathematical constraints established in the guidelines:
+  * Categories 1, 3, 4, 5, 7, 8 must satisfy: 2 <= count < 6
+  * Category 2 (Tacit) must satisfy: count < 6
+  * Category 6 (Tech-Enable) must satisfy: count < 15
+  * Category 9 (Limitation) must satisfy: count < 10
+- Provide an explicit "Pass/Fail" statement confirming structural compliance before mapping data rows.
+Phase 3: Edge-Case Resolution & Intersection Handling
+- Identify any ambiguous nodes that naturally span or intersect multiple sub-category domains (e.g., a node representing "Industry safety regulations" which might theoretically fit under either Explicit Knowledge or Environmental Dependency).
+- Formulate and explicitly state a deterministic domain-tiebreaking rule based on construction informatics principles to cleanly assign the node to a single, optimal sub-category without ambiguity.
+Phase 4: Alphanumeric Mapping & Code-String Synthesis
+- Synthesize the final structural combinations by verifying that each mapped node's parent `category` directly matches the alphabetical prefix of its assigned `sub_category_id`.
+- Ensure that the text string in the final `sub_category` column perfectly corresponds to the formalized taxonomy definitions from Phase 1, removing any syntactic drift or formatting discrepancies.
+Phase 5: CSV Integrity Pre-Check**:
+- Verify that all fields are cleanly enclosed in double quotes to handle internal commas safely.
+Once this 5-step reasoning process is fully written out and validated, output the final responses.
+
+Output Format
+Following the CoT log, output the final result as a cleanly formatted csv file. The output data rows must include the two newly appended columns: sub_category_id and sub_category.
+
+CRITICAL FORMATTING CONSTRAINT: The output csv file must follow standard CSV conventions: fields must be separated by commas (,), and fields containing embedded commas, quotes, or special characters in the node_name or sub_category columns MUST be enclosed in double quotes (" ") to ensure downstream system parsing safety. The file name should be the input file name plus the LLM model name.

@@ -10,14 +10,14 @@ class AssembleEAVQ:
     def __init__(self):
         self.model_name = 'BAAI/bge-small-en-v1.5'
         self.embedder = None
-        self.path = '../data/graph/case_study/case_5_v_ea/'
+        self.path = '../../data/graph/case_study/case_5_v_ea/'
         pass
 
     def init_embedder(self):
         self.embedder = FastembedTextEmbedder(model=self.model_name,
-                                         cache_dir="/Users/meimei/work/coding/dissertation/src/models/fastembed/bge-small-en-v1.5",
-                                         local_files_only=True,
-                                         parallel=0)
+                                        cache_dir="/Users/meimei/work/coding/dissertation/src/models/fastembed/bge-small-en-v1.5",
+                                              local_files_only=True,
+                                              parallel=0)
 
     @staticmethod
     def cosine_similarity(vec_a, vec_b):
@@ -177,9 +177,9 @@ class AssembleEAVQ:
     def assemble_ea_vq(self, call_idx):
 
         for call_id in call_idx:
-            nodes_file = f'../data/graph/case_study/case_5_v_ea/{call_id}_nodes.csv'
-            similarity_file = f'../data/graph/case_study/case_5_v_ea/{call_id}_nodes_similarity.csv'
-            relations_file = f'../data/graph/case_study/case_5_v_ea/{call_id}_relations.csv'
+            nodes_file = f'../../data/graph/case_study/case_5_v_ea/{call_id}_nodes.csv'
+            similarity_file = f'../../data/graph/case_study/case_5_v_ea/{call_id}_nodes_similarity.csv'
+            relations_file = f'../../data/graph/case_study/case_5_v_ea/{call_id}_relations.csv'
 
             src = pd.read_csv(nodes_file)
 
@@ -198,10 +198,12 @@ class AssembleEAVQ:
                 res = self.validate_pair(id_to_name, pair, by_node, triple_set)
                 results.extend(res)
 
-            pd.DataFrame(results).to_csv(f'../data/graph/case_study/case_5_v_ea/{call_id}_ea_vq.csv', index=False)
+            pd.DataFrame(results).to_csv(f'{self.path}/{call_id}_ea_vq.csv', index=False)
 
 if __name__ == '__main__':
     obj = AssembleEAVQ()
 
     call_ids = ['c002']
+    obj.init_embedder()
+    obj.find_best_pairs(call_ids)
     obj.assemble_ea_vq(call_ids)

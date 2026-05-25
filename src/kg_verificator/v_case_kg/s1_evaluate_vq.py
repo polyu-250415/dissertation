@@ -8,8 +8,8 @@ from src.utils.llm_rag_tool.rag_auditor import RAGAuditor
 class EvaluateVQ:
 
     def __init__(self):
-        self.pdf_path = "../data/graph/case_study/raw_pdf"
-        self.vq_path = "../data/graph/case_study/case_4_v_kg"
+        self.pdf_path = "../../data/graph/case_study/raw_pdf_m"
+        self.vq_path = "../../data/graph/case_study/case_4_v_kg"
         self.rag_auditor = RAGAuditor()
         pass
 
@@ -87,5 +87,5 @@ class EvaluateVQ:
 if __name__ == '__main__':
     obj = EvaluateVQ()
 
-    call_ids = ['c005', 'c006']
+    call_ids = ['c002']
     obj.evaluate_all_vq(call_ids)

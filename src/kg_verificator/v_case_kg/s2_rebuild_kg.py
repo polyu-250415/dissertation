@@ -4,8 +4,8 @@ import pandas as pd
 class RebuildKG():
 
     def __init__(self):
-        self.rag_ea_path = "../data/graph/case_study/case_5_v_ea/"
-        self.rebuild_kg_path = "../data/graph/case_study/case_6_rebuild_kg/"
+        self.rag_ea_path = "../../data/graph/case_study/case_5_v_ea/"
+        self.rebuild_kg_path = "../../data/graph/case_study/case_6_rebuild_kg/"
         pass
 
     def normalize_entities(self, redundant_id_dict, call_id):
@@ -59,5 +59,5 @@ class RebuildKG():
 
 if __name__ == '__main__':
     obj = RebuildKG()
-    call_ids = ['c001', 'c002', 'c003', 'c004', 'c005', 'c006']
+    call_ids = ['c002']
     obj.rebuild_all_kg(call_ids)

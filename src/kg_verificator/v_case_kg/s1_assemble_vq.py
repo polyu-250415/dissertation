@@ -7,8 +7,8 @@ from src.utils.llm_mgmt.deepseek_local_api import chat_with_deepseek
 
 class AssembleVQ(object):
     def __init__(self):
-        self.kg_case_path = "../data/graph/case_study/case_3_unite/"
-        self.kg_rag_path = "../data/graph/case_study/case_4_v_kg/"
+        self.kg_case_path = "../../data/graph/case_study/case_3_unite/"
+        self.kg_rag_path = "../../data/graph/case_study/case_4_v_kg/"
 
     @staticmethod
     def get_random_except(key_array, exclude_key, default="you see"):
@@ -49,6 +49,7 @@ class AssembleVQ(object):
                     questions.append({
                         'node_id': row['node_id'],
                         'group': idx,
+                        'sample_type': 'evidence',
                         'question': evidence_statement,
                         'verification_label': 1
 
@@ -58,6 +59,7 @@ class AssembleVQ(object):
                     questions.append({
                         'node_id': row['node_id'],
                         'group': idx,
+                        'sample_type': 'assemble',
                         'question': positive_sample,
                         'verification_label': 1
 
@@ -68,6 +70,7 @@ class AssembleVQ(object):
                     questions.append({
                         'node_id': row['node_id'],
                         'group': idx,
+                        'sample_type': 'assemble',
                         'question': negative_sample,
                         'verification_label': 0
                     })"""
@@ -168,32 +171,35 @@ class AssembleVQ(object):
                         'dst_node_id': row['dst_node_id'],
                         'relation_type': row['relation_type'],
                         'group': idx,
+                        'sample_type':'evidence',
                         'question': evidence_statement,
                         'verification_label': 1
                     })
 
                     # Concatenate question in the specified format
-                    positive_sample = f"'{src_name}' {relation_type} '{dst_name}' {evidence_label}"
+                    positive_sample = f"'{src_name}' {relation_type} '{dst_name}'"
                     questions.append({
                         'src_node_id': row['src_node_id'],
                         'dst_node_id': row['dst_node_id'],
                         'relation_type': row['relation_type'],
                         'group': idx,
+                        'sample_type': 'assemble',
                         'question': positive_sample,
                         'verification_label': 1
                     })
 
-                    fake_relation = self.get_random_except(relation_type_array, row['relation_type'],
+                    """fake_relation = self.get_random_except(relation_type_array, row['relation_type'],
                                                                   default= "isn't related to ")
-                    negative_sample = f"'{src_name}' {fake_relation} '{dst_name}' {evidence_label}"
+                    negative_sample = f"'{src_name}' {fake_relation} '{dst_name}'"
                     questions.append({
                         'src_node_id': row['src_node_id'],
                         'dst_node_id': row['dst_node_id'],
                         'relation_type': row['relation_type'],
                         'group': idx,
+                        'sample_type': 'assemble',
                         'question': negative_sample,
                         'verification_label': 0
-                    })
+                    })"""
 
                 result_df = pd.DataFrame(questions)
                 result_df.to_csv(output_csv, index=False)

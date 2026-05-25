@@ -18,7 +18,7 @@ def transfer_nodes():
     df_map = pd.read_csv('../../../conf/case_id_map')
     map_dict = dict(zip(df_map['case_title'], df_map['node_id_prex']))
 
-    for root, dirs, files in os.walk('case_1_raw_kg'):
+    for root, dirs, files in os.walk('case_1_raw_kg_m'):
         for file in files:
             print(f"Processing {file}")
             try:
@@ -41,7 +41,7 @@ def transfer_relations():
     df_map = pd.read_csv('../../../conf/case_id_map')
     map_dict = dict(zip(df_map['case_title'], df_map['node_id_prex']))
 
-    for root, dirs, files in os.walk('case_1_raw_kg'):
+    for root, dirs, files in os.walk('case_1_raw_kg_m'):
         for file in files:
             try:
                 print(f"Processing {file}")
@@ -66,16 +66,16 @@ def combine_data(case_ids):
     for case_id in case_ids:
         # 存储所有要合并的 DataFrame
         df_list = []
-        # 读取 deepseek 文件
-        deepseek_file = f'{norm_path}{case_id}_deepseek_nodes.csv'
-        if os.path.exists(deepseek_file):
-            df = pd.read_csv(deepseek_file)
-            df_list.append(df)
-
         # 读取 gemini 文件（修复了读错文件的bug）
         gemini_file = f'{norm_path}{case_id}_gemini_nodes.csv'
         if os.path.exists(gemini_file):
             df = pd.read_csv(gemini_file)
+            df_list.append(df)
+
+        # 读取 deepseek 文件
+        deepseek_file = f'{norm_path}{case_id}_deepseek_nodes.csv'
+        if os.path.exists(deepseek_file):
+            df = pd.read_csv(deepseek_file)
             df_list.append(df)
 
         # 只有有数据时才合并并保存
@@ -84,16 +84,16 @@ def combine_data(case_ids):
             df_nodes.to_csv(f'{combination_path}{case_id}_nodes.csv', index=False)
 
         df_relation_list = []
-        # 读取 deepseek 文件
-        deepseek_file = f'{norm_path}{case_id}_deepseek_relations.csv'
-        if os.path.exists(deepseek_file):
-            df = pd.read_csv(deepseek_file)
-            df_relation_list.append(df)
-
         # 读取 gemini 文件（修复了读错文件的bug）
         gemini_file = f'{norm_path}{case_id}_gemini_relations.csv'
         if os.path.exists(gemini_file):
             df = pd.read_csv(gemini_file)
+            df_relation_list.append(df)
+
+        # 读取 deepseek 文件
+        deepseek_file = f'{norm_path}{case_id}_deepseek_relations.csv'
+        if os.path.exists(deepseek_file):
+            df = pd.read_csv(deepseek_file)
             df_relation_list.append(df)
 
         # 只有有数据时才合并并保存
@@ -105,4 +105,4 @@ if __name__ == '__main__':
     transfer_nodes()
     transfer_relations()
 
-    combine_data(['c005','c006'])
+    combine_data(['c002'])
