@@ -1,5 +1,6 @@
 import csv
 import os
+import pandas as pd
 from neo4j import GraphDatabase
 
 URI = "bolt://localhost:7687"
@@ -18,7 +19,7 @@ def create_relationships(tx, batch):
     WHERE a IS NOT NULL AND b IS NOT NULL
 
     // 创建动态关系
-    CALL apoc.create.relationship(a, rel.relation_type, {case_title: rel.case_title}, b)
+    CALL apoc.create.relationship(a, rel.relation_type, rel.properties, b)
     YIELD rel AS r
 
     RETURN count(r) AS created
@@ -40,21 +41,26 @@ def read_relations_from_csv(endswith="relations.csv", path_dir=CSV_DIR):
             file_path = os.path.join(root, file)
             print("📂 读取文件:", file_path)
 
-            with open(file_path, 'r', encoding='utf-8') as f:
-                reader = csv.DictReader(f)
-                for row in reader:
-                    # 直接读取字符串，不用转 int！
-                    src_node_id = row["src_node_id"].strip()
-                    dst_node_id = row["dst_node_id"].strip()
-                    relation_type = row["relation_type"].strip()
-                    case_title = row.get("case_title", "").strip()
+            df = pd.read_csv(file_path)
+            df = df.astype(str)
 
-                    rels.append({
-                        "src_node_id": src_node_id,
-                        "dst_node_id": dst_node_id,
-                        "relation_type": relation_type,
-                        "case_title": case_title
-                    })
+            for index, item in df.iterrows():
+
+                # 直接读取字符串，不用转 int！
+                src_node_id = item["src_node_id"]
+                dst_node_id = item["dst_node_id"]
+                relation_type = item["relation_type"]
+                props = {}
+                for prop_title in item.keys():
+                    if item[prop_title] != 'nan' and prop_title not in ['src_node_id', 'dst_node_id', 'relation_type']:
+                            props[prop_title] = item[prop_title]
+
+                rels.append({
+                    "src_node_id": src_node_id,
+                    "dst_node_id": dst_node_id,
+                    "relation_type": relation_type,
+                    "properties": props
+                })
 
     print(f"✅ 准备导入 {len(rels)} 条关系")
     return rels

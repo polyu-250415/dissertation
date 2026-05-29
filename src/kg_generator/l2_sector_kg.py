@@ -2,6 +2,8 @@ import pandas as pd
 import os
 
 from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_files
+from src.utils.graph_tools.create_paper_graph_by_id import clear_whole_database
+
 
 class SectorKG:
     def __init__(self):
@@ -15,12 +17,12 @@ class SectorKG:
         if not os.path.exists(self.norm_nodes_path):
             os.makedirs(self.norm_nodes_path, exist_ok=True)
 
-    def concat_cases_by_sector(self, sector_id, call_ids):
+    def concat_cases_by_sector(self, sector_id, case_ids):
         df_nodes = pd.DataFrame()
         df_edges = pd.DataFrame()
-        for call_id in call_ids:
-            node_file = self.rebuild_kg_path + f'{call_id}_nodes.csv'
-            edge_file = self.rebuild_kg_path + f'{call_id}_relations.csv'
+        for case_id in case_ids:
+            node_file = self.rebuild_kg_path + f'{case_id}_nodes.csv'
+            edge_file = self.rebuild_kg_path + f'{case_id}_relations.csv'
             df_nodes = pd.concat([df_nodes, pd.read_csv(node_file)])
             df_edges = pd.concat([df_edges, pd.read_csv(edge_file)])
 
@@ -28,11 +30,11 @@ class SectorKG:
         df_edges.to_csv(self.sector_raw_path + f'{sector_id}_relations.csv', index=False)
 
     def conceptualize_nodes_by_model(self):
-        # prompt: sector_l2_conceptualizing_kg
+        # prompt: sector_l1_conceptualizing_kg
         pass
 
     def build_mid_nodes(self, sector_id):
-        src_file = self.sector_raw_path + f'{sector_id}_nodes_Gemini.csv'
+        src_file = self.sector_raw_path + f'{sector_id}_nodes_gemini.csv'
         mid_l1_node_file = self.norm_nodes_path + f'{sector_id}_l1_nodes.csv'
         mid_l2_node_file = self.norm_nodes_path + f'{sector_id}_l2_nodes.csv'
         mid_relation_file = self.norm_nodes_path + f'{sector_id}_l12_relations.csv'
@@ -78,6 +80,7 @@ class SectorKG:
 
         layer2_df = layer2_data.copy()
         layer2_df.columns = list(layer2_mapping.values())
+        layer2_df = layer2_df.drop_duplicates(subset='node_id')
         print(f"Layer 2 nodes generated: {len(layer2_df)} nodes")
 
         # Step 4: Create Child-Parent Relationships
@@ -206,7 +209,8 @@ class SectorKG:
         print("\nRelation type distribution:")
         print(l2_relations["relation_type"].value_counts())
 
-    def create_sector_kg(self):
+    def create_sector_kg(self, clean_flag=False):
+
         path_dir = self.norm_nodes_path
         file_path = [
             's001_l1_nodes.csv',
@@ -214,12 +218,38 @@ class SectorKG:
             's001_l12_relations.csv',
             's001_l2_relations.csv',
         ]
-        create_kg_by_files(file_path, path_dir=path_dir)
+        create_kg_by_files(file_path, path_dir=path_dir, clean_flag=clean_flag)
+
+    def complement_l1_relations(self):
+
+        path_dir = self.sector_raw_path
+        file_path = [
+            's001_relations.csv',
+        ]
+        create_kg_by_files(file_path, path_dir=path_dir, clean_flag=False)
 
 
 
 if __name__ == '__main__':
     obj = SectorKG()
-    """obj.build_mid_nodes('s001')
-    obj.build_l2_relations('s001')"""
-    obj.create_sector_kg()
+    sector_ids = ['s001']
+    case_ids = ['c001', 'c002', 'c003', 'c004', 'c005', 'c006']
+    start = 1
+    end = 3
+    for turn in range(start, end + 1):
+        if turn == 1:
+            for sector_id in sector_ids:
+                obj.concat_cases_by_sector(sector_id, case_ids)
+
+        if turn == 2:
+            for sector_id in sector_ids:
+                obj.build_mid_nodes(sector_id)
+                obj.build_l2_relations(sector_id)
+
+        if turn == 3:
+            for sector_id in sector_ids:
+                obj.create_sector_kg(clean_flag=True)
+
+        if turn == 4:
+            for case_id in case_ids:
+                obj.complement_l1_relations()

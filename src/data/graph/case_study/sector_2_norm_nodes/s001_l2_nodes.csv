@@ -1,0 +1,28 @@
+node_id,node_name,category,evidence_label,case_title
+s001M02EX02,Internal Manuals & Project Documentation,Explicit Knowledge,I,construction
+s001M02TA04,Adaptive Tacit Knowledge,Tacit Knowledge,I,construction
+s001M02TA02,Cognitive Tacit Knowledge,Tacit Knowledge,I,construction
+s001M02KH01,Direct Operational & Trade Practitioners,Knowledge Holder,I,construction
+s001M02KH03,Academic & Training Cohorts,Knowledge Holder,I,construction
+s001M02TR01,Analog Instruction & Pedagogical Methods,Traditional Human-central Practice,I,construction
+s001M02TE02,Human–Computer Interaction and Immersive Technologies,Technology-enable Practice,I,construction
+s001M02ED01,Statutory Legal Mandates,Environmental Dependency,I,construction
+s001M02LI01,"Human, Cognitive & Knowledge Retention Limitations",Limitation,I,construction
+s001M02EX01,Regulatory Codes & Standards,Explicit Knowledge,I,construction
+s001M02TE04,"Data, Information, and Knowledge Systems",Technology-enable Practice,I,construction
+s001M02TE05,"Imaging, Sensing, and Perception Technologies",Digital Technology,I,construction
+s001M02OD03,Physical Footprints & Spatial Infrastructure,Organizational Dependency,I,construction
+s001M02OD02,Operational Administration & Resource Allocation,Organizational Dependency,I,construction
+s001M02OD01,Institutional Governance & Compliance Clearances,Organizational Dependency,I,construction
+s001M02LI03,"Cost, Resource & Structural Limitations",Limitation,I,construction
+s001M02LI02,"Technical, System & Data Limitations",Limitation,I,construction
+s001M02TA01,Somatic Tacit Knowledge,Tacit Knowledge,I,construction
+s001M02TR03,Traditional Site Operations & Field Measurement,Traditional Human-central Practice,I,construction
+s001M02ED03,Regional Physical Infrastructure,Environmental Dependency,I,construction
+s001M02EX03,Engineering Metrics & Physical Indices,Explicit Knowledge,I,construction
+s001M02TE08,"Rule-Based, Decision, and Expert Systems",Technology-enable Practice,I,construction
+s001M02KH02,Technical Experts & Evaluators,Knowledge Holder,I,construction
+s001M02TR02,Offline Management Workflows & Administration,Traditional Human-central Practice,I,construction
+s001M02TE01,Artificial Intelligence and Intelligent Computation,Technology-enable Practice,I,construction
+s001M02ED02,Market Dynamics & Industry Context,Environmental Dependency,I,construction
+s001M02TE03,"Cyber-Physical Systems, IoT, and Smart Environments",Technology-enable Practice,I,construction

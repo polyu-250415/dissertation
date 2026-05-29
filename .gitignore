@@ -1,5 +1,10 @@
 /src/utils/llm_key.py
-/src/data
+/src/data/graph/case_study/case_2_norm_id
+/src/data/graph/case_study/case_3_unite
+/src/data/graph/case_study/case_4_v_kg
+/src/data/graph/case_study/case_5_v_ea
+/src/data/graph/case_study/raw_pdf_m
+/src/data/papers/midput
 /src/conf/bak
 /src/models
 .idea

@@ -21,7 +21,7 @@ def clear_whole_database(session):
     session.run(query)
     print("✅ 数据库已清空！")
 
-def create_kg_by_case(case_id, path_dir=CSV_DIR, mid_seg='',):
+def create_kg_by_case(case_id, path_dir=CSV_DIR, mid_seg='', clear_flag = True):
     print("📥 Reading nodes from CSV...")
     try:
         nodes = read_nodes_from_csv(endswith=f'{case_id}{mid_seg}_nodes.csv', path_dir=path_dir)
@@ -36,8 +36,8 @@ def create_kg_by_case(case_id, path_dir=CSV_DIR, mid_seg='',):
 
     driver = GraphDatabase.driver(URI, auth=AUTH)
     with driver.session(database='kggen') as session:
-
-        clear_whole_database(session)
+        if clear_flag:
+            clear_whole_database(session)
 
         try:
             # Test APOC availability
@@ -61,7 +61,7 @@ def create_kg_by_case(case_id, path_dir=CSV_DIR, mid_seg='',):
         print(f"\n🎉 导入完成！成功关系：{total_created}")
     driver.close()
 
-def create_kg_by_files(files, path_dir=CSV_DIR):
+def create_kg_by_files(files, path_dir=CSV_DIR, clean_flag=False):
     print("📥 Reading nodes from CSV...")
 
     nodes_array = []
@@ -91,7 +91,8 @@ def create_kg_by_files(files, path_dir=CSV_DIR):
     driver = GraphDatabase.driver(URI, auth=AUTH)
     with driver.session(database='kggen') as session:
 
-        clear_whole_database(session)
+        if clean_flag:
+            clear_whole_database(session)
 
         try:
             # Test APOC availability

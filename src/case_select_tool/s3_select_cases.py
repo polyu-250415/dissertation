@@ -3,6 +3,7 @@ import itertools, os
 import ast
 
 from src.taxonomy import RetentionTaxonomy
+from collections import defaultdict
 
 
 class SelectCases:
@@ -19,7 +20,8 @@ class SelectCases:
     def safe_parse_list(value):
         try:
             return ast.literal_eval(str(value))
-        except:
+        except Exception as e:
+            print(e)
             return []
 
     def load_and_filter_cases(self, input_file, target_sector_code):
@@ -29,10 +31,11 @@ class SelectCases:
         df["digital_list"] = df["digital_taxonomy"].apply(self.safe_parse_list)
         df["sector_list"] = df["sector_taxonomy"].apply(self.safe_parse_list)
 
-        mask = df["sector_list"].apply(lambda s: target_sector_code in s)
+        mask = df["sector_list"].apply(lambda s: len(s) == 1 and s[0] == target_sector_code)
         df_filtered = df[mask].copy()
 
         cases = []
+        combo_count = defaultdict(int)
         for _, row in df_filtered.iterrows():
             uuid = row["uuid"]
             title = row["Title"]
@@ -56,7 +59,7 @@ class SelectCases:
 
             # 清洗后为空，跳过整个case
             if not valid_tacit or not valid_digital:
-                print(f"❌ Drop this record | UUID: {uuid}")
+                # print(f"❌ Drop this record | UUID: {uuid}")
                 continue
 
             cases.append({
@@ -66,7 +69,23 @@ class SelectCases:
                 "digital_taxonomy": valid_digital
             })
 
-        print(f"\n✅ Valid case number: {len(cases)}")
+            for t in valid_tacit:
+                for d in valid_digital:
+                    combo_count[(t, d)] += 1
+
+        print("\n" + "=" * 60)
+        print(f"📊 SIC: {target_sector_code} tacit × digital 组合数量统计")
+        print("=" * 60)
+        if combo_count:
+            for (tacit_val, digital_val), count in sorted(combo_count.items()):
+                print(f"✅ {tacit_val:20} × {digital_val:20} : {count:2} 次")
+        else:
+            print("❌ 无任何有效组合")
+        print("=" * 60 + "\n")
+        # ================================================================
+
+        # print(f"\n✅ Valid case number: {len(cases)}")
+
         return cases
 
 
@@ -93,7 +112,7 @@ class SelectCases:
             # 去重
             unique = list({c["uuid"]: c for c in candidates_sorted}.values())
             # 选2个
-            final[comb] = unique[:2]
+            final[comb] = unique[:3]
 
         return final
 
@@ -112,7 +131,7 @@ class SelectCases:
             case_list = []
             for comb in self.all_combination:
                 for case in final_result[comb]:
-                    print(f'Sector : {sector}\n Combination: {comb}:\n {case}')
+                    # print(f'Sector : {sector}\n Combination: {comb}:\n {case}')
                     case_list.append(case)
 
             df = pd.DataFrame(case_list)
@@ -124,5 +143,5 @@ class SelectCases:
 if __name__ == "__main__":
     obj = SelectCases()
 
-    sector_list = ['82', '80', '73', '87', '35', '15']
+    sector_list = ['82', '80', '73', '87', '2039', '15']
     obj.select_case_by_sector(sector_list)

@@ -1,0 +1,11 @@
+src_node_id,dst_node_id,relation_type,evidence_label,case_title,evidence_statement,evidence_location
+"N02","N03","be_held_by","E","Immersive VR Simulation for Hazard Identification in Construction Safety","Frontline site workers intrinsically hold vital hazard identification skills.","Section 2.3"
+"N01","N04","be_held_by","E","Immersive VR Simulation for Hazard Identification in Construction Safety","Written manuals and regulatory files are managed and held by safety managers.","Section 3.1"
+"N03","N05","participate_in","E","Immersive VR Simulation for Hazard Identification in Construction Safety","Frontline workers participate in legacy text manual self-study routines.","Section 2.2"
+"N03","N06","participate_in","E","Immersive VR Simulation for Hazard Identification in Construction Safety","Workers actively participate in the newly introduced VR simulation environment.","Section 4.3"
+"N02","N06","be_captured_by","E","Immersive VR Simulation for Hazard Identification in Construction Safety","Spatial choices and intuitive safety actions are captured by the digital application framework.","Section 4.4"
+"N06","N07","adopt","E","Immersive VR Simulation for Hazard Identification in Construction Safety","The immersive software application adopts a high-resolution virtual reality (VR) headset.","Section 4.2"
+"N06","N05","complement","I","Immersive VR Simulation for Hazard Identification in Construction Safety","The digital simulation acts to enhance and complement existing text materials rather than fully erasing them.","Section 5.3"
+"N06","N08","depend_on","I","Immersive VR Simulation for Hazard Identification in Construction Safety","Sustaining the digital interactive platform depends on management providing dedicated training hours.","Section 5.1"
+"N05","N09","be_constrained_by","E","Immersive VR Simulation for Hazard Identification in Construction Safety","Legacy text review systems are constrained by the rapid human forgetting curve.","Section 2.4"
+"N06","N09","mitigate","E","Immersive VR Simulation for Hazard Identification in Construction Safety","Active sensory immersion works to mitigate the forgetting curve by locking knowledge into practice.","Section 4.6"

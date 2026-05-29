@@ -1,27 +1,25 @@
 from pathlib import Path
 
 import pandas as pd
-from src.utils.llm_rag_tool.rag_auditor import RAGAuditor
+from src.utils.rag_tool.llm_rag_auditor import RAGAuditor
 
 
 class EvaluateEA:
 
-    def __init__(self):
-        self.pdf_path = "../../data/graph/case_study/raw_pdf_m"
-        self.rag_ea_path = "../../data/graph/case_study/case_5_v_ea/"
+    def __init__(self,data_base_path='../../data/graph/case_study/'):
+        self.pdf_path = f"{data_base_path}/raw_pdf_m"
+        self.rag_ea_path = f"{data_base_path}/case_5_v_ea/"
         self.rag_auditor = RAGAuditor()
+        self.accept_threshold = 0.9
         pass
 
-    def build_vector_db(self):
+    def build_vector_db(self, case_ids):
 
-        root = Path(self.pdf_path)
-        sub_dirs = [f for f in root.iterdir() if f.is_dir()]
-
-        for d in sub_dirs:
+        for case_id in case_ids:
             custom_meta_data: dict = {
-                "call_id": d.name
+                "case_id": case_id
             }
-            self.rag_auditor.ingest(self.pdf_path + "/" + d.name,
+            self.rag_auditor.ingest(self.pdf_path + "/" +case_id,
                                     custom_meta=custom_meta_data)
 
     @staticmethod
@@ -38,36 +36,37 @@ class EvaluateEA:
                 result.append(0)
         return result
 
-    def evaluate_ea(self, call_id):
+    def evaluate_ea(self, case_id):
 
-        filters = {"field": "meta.call_id", "operator": "==", "value": call_id}
+        filters = {"field": "meta.case_id", "operator": "==", "value": case_id}
 
         # process nodes
-        node_vq_path = self.rag_ea_path + "/" + call_id + '_ea_vq.csv'
+        node_vq_path = self.rag_ea_path + "/" + case_id + '_ea_vq.csv'
         df_node = pd.read_csv(node_vq_path)
-        question_list = df_node["question"].values.tolist()
+
+        question_list = df_node[['sample_type', 'question']].to_dict(orient='records')
 
         resp_list = self.rag_auditor.ask(question_list, filters=filters)
         df_node['rag_rate'] = resp_list
         try:
-            evaluation_label_list = [1 if (v == 1 and e >= 3) or (v == 0 and e < 3) else 0
+            evaluation_label_list = [1 if (v == 1 and e >= 4) or (v == 0 and e < 3) else 0
                                      for v, e in zip(df_node['verification_label'].tolist(), self.convert_to_valid_int(resp_list))]
             df_node['evaluation_label'] = evaluation_label_list
-            df_node.to_csv(self.rag_ea_path + "/" + call_id + '_ea_vq_evaluation.csv', index=False)
+            df_node.to_csv(self.rag_ea_path + "/" + case_id + '_ea_vq_evaluation.csv', index=False)
         except Exception as e:
-            df_node.to_csv(self.rag_ea_path + "/" + call_id + '_ea_vq_evaluation_tmp.csv', index=False)
+            df_node.to_csv(self.rag_ea_path + "/" + case_id + '_ea_vq_evaluation_tmp.csv', index=False)
             print(e)
 
 
-    def evaluate_all_ea(self, call_ids):
+    def evaluate_all_ea(self, case_ids):
 
-        self.build_vector_db()
+        self.build_vector_db(case_ids)
 
-        for call_id in call_ids:
-            self.evaluate_ea(call_id)
+        for case_id in case_ids:
+            self.evaluate_ea(case_id)
 
     @staticmethod
-    def find_redundant_nodes(id_to_name, csv_path: str):
+    def find_redundant_nodes_from_ds_evaluation(id_to_name, csv_path: str):
         """
         Reads a CSV file, groups by (src_node_id, dst_node_id), and returns
         the list of pairs where every row in the group has evaluation_label == 1.
@@ -90,24 +89,45 @@ class EvaluateEA:
                                    })
         return valid_pairs
 
-    def find_all_redundant_nodes(self, call_ids):
+    def find_redundant_nodes_from_accepted_threshold(self,id_to_name, csv_path: str):
+        """
+        Reads a CSV file, groups by (src_node_id, dst_node_id), and returns
+        the list of pairs where every row in the group has evaluation_label == 1.
+        """
+        df = pd.read_csv(csv_path)
+        df_filter = df[df['similarity_score'] >= self.accept_threshold]
+
+        valid_pairs = []
+        for _, row in df_filter.iterrows():
+
+            valid_pairs.append({
+                    'node_id': row['node_id_2'],
+                    'node_name': id_to_name[row['node_id_2']],
+                    'new_node_id':row['node_id_1'],
+                    'new_node_name': id_to_name[row['node_id_1']]
+                                   })
+        return valid_pairs
+
+    def find_all_redundant_nodes(self, case_ids):
         valid_pairs = []
 
-        for call_id in call_ids:
-            nodes_file = f'{self.rag_ea_path}{call_id}_nodes.csv'
+        for case_id in case_ids:
+            # step1. build dict {"node_id":"node_name"}
+            nodes_file = f'{self.rag_ea_path}{case_id}_nodes.csv'
             src = pd.read_csv(nodes_file)
-            # Create fast lookup dictionary: {id: name}
             id_to_name = dict(zip(src['node_id'], src['node_name']))
-            csv_path = self.rag_ea_path + "/" + call_id + "_ea_vq_evaluation.csv"
 
-            valid_pairs.extend(self.find_redundant_nodes(id_to_name, csv_path))
+            similarity_csv_path = self.rag_ea_path + "/" + case_id + "_nodes_similarity.csv"
+            valid_pairs.extend(self.find_redundant_nodes_from_accepted_threshold(id_to_name, similarity_csv_path))
+
+            csv_path = self.rag_ea_path + "/" + case_id + "_ea_vq_evaluation.csv"
+            valid_pairs.extend(self.find_redundant_nodes_from_ds_evaluation(id_to_name, csv_path))
 
         pd.DataFrame(valid_pairs).to_csv(self.rag_ea_path + "/" + 'redundant_pairs.csv', index=False)
 
 if __name__ == '__main__':
     obj = EvaluateEA()
 
-
-    call_ids = ['c002']
-    obj.evaluate_all_ea(call_ids)
-    obj.find_all_redundant_nodes(call_ids)
+    case_ids = ['c002']
+    obj.evaluate_all_ea(case_ids)
+    obj.find_all_redundant_nodes(case_ids)
