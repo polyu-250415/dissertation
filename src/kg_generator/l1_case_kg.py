@@ -7,9 +7,7 @@ from src.kg_verificator.v_case_kg.s2_evaluate_ea import EvaluateEA
 from src.kg_verificator.v_case_kg.s2_rebuild_kg import RebuildKG
 from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_case
 
-from src.kg_generator.l0_preparing import (transfer_nodes, transfer_relations, combine_data, delete_isolated_nodes,
-                                           data_path,norm_path,combination_path)
-from src.utils.op_files import clear_directory
+from src.kg_generator.l0_preparing import (transfer_nodes, transfer_relations, combine_data, delete_isolated_nodes)
 
 
 class CaseKG:
@@ -26,11 +24,11 @@ class CaseKG:
 
 if __name__ == '__main__':
 
-    start = 1
+    start = 3
     end = 3
     obj = CaseKG()
 
-    case_ids = ['c103','c104','c105','c106','c107','c108','c109']
+    case_ids = ['c109']
     for turn in range(start,end + 1):
         if turn == 1:
             transfer_nodes(case_ids)
@@ -54,8 +52,8 @@ if __name__ == '__main__':
 
         if turn == 3:
             obj = AssembleEAVQ(data_base_path="../data/graph/case_study/")
-            obj.init_embedder()
-            obj.find_best_pairs(case_ids)
+            """obj.init_embedder()
+            obj.find_best_pairs(case_ids)"""
             obj.assemble_ea_vq(case_ids)
 
             obj = EvaluateEA(data_base_path="../data/graph/case_study/")

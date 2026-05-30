@@ -19,6 +19,7 @@ class AssembleEAVQ:
             "be_absorbed_by": "is absorbed by",
             "be_captured_by": "is captured by",
             "be_transferred_by": "is transferred by",
+            "be_derived_from": "is derived from",
             "participate_in": "participant in",
             "depend_on": "depend on",
             "evaluate": "evaluate",

@@ -5,7 +5,7 @@ from src.utils.llm_key import deepseek_key
 from langchain_deepseek import ChatDeepSeek
 from langchain.prompts import PromptTemplate
 
-# 方式1：环境变量设置（推荐）
+
 os.environ["DEEPSEEK_API_KEY"] = deepseek_key
 
 class KGRAGAuditor:
@@ -69,15 +69,15 @@ class KGRAGAuditor:
 
         # 4. 自然语言提问
         response = self.chain.run(question)
-        print(response)
+        return response
 
 
 if __name__ == '__main__':
     obj = KGRAGAuditor()
     questions = [
-        "What’s the knowledge retention mechanism of these technology-enabled practices? the type to introduce "
-        "mechanism should include relation types covering knowledge holder, tacit knowledge, limitation, "
-        "organizational dependency, resource dependency"
+        "What are the knowledge retention mechanisms for these technology-driven practices? The introduction of the retention mechanisms covers the relationships among knowledge holders, tacit knowledge, constraints, organizational dependence, and resource dependence."
     ]
     for question in questions:
-        obj.query(question)
+        rsp = obj.query(question)
+        # rsp = obj.build_customized_chain().run(question)
+        print(rsp)

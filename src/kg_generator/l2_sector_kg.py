@@ -229,7 +229,6 @@ class SectorKG:
         create_kg_by_files(file_path, path_dir=path_dir, clean_flag=False)
 
 
-
 if __name__ == '__main__':
     obj = SectorKG()
     sector_ids = ['s001']
