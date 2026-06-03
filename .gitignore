@@ -4,8 +4,8 @@
 /src/data/graph/case_study/case_4_v_kg
 /src/data/graph/case_study/case_5_v_ea
 /src/data/graph/case_study/raw_pdf_m
-/src/data/papers/midput
-/src/conf/bak
-/src/models
-/src/log
+/src/data/papers/midput/
+/src/conf/bak/
+/src/models/
+/src/log/
 .idea
