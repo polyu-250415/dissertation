@@ -6,13 +6,14 @@ from src.kg_verificator.v_case_kg.s2_assemble_ea_vq import AssembleEAVQ
 from src.kg_verificator.v_case_kg.s2_evaluate_ea import EvaluateEA
 from src.kg_verificator.v_case_kg.s2_rebuild_kg import RebuildKG
 from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_case
+from src.kg_generator.l1_case_measure import calculate_kg_verification
 
 from src.kg_generator.l0_preparing import (transfer_nodes, transfer_relations, combine_data, delete_isolated_nodes)
 
 
 class CaseKG:
     def __init__(self):
-        self.rebuild_kg_path = "../data/graph/case_study/case_6_rebuild_kg/"
+        self.rebuild_kg_path = "../data/graph/case_study/case_6_v_ds/"
 
     def build_case_kg(self,case_id, clear_flag=False):
         create_kg_by_case(case_id, path_dir=self.rebuild_kg_path, clear_flag=clear_flag)
@@ -25,45 +26,55 @@ class CaseKG:
 if __name__ == '__main__':
 
     start = 3
-    end = 3
+    end = 5
     obj = CaseKG()
 
-    case_ids = ['c109']
+    sector_id = 's001'
+
+    case_ids = {
+        "s001": ['c001', 'c002', 'c003', 'c004', 'c005', 'c006', 'c007'],
+        "s002": ['c101', 'c102', 'c103', 'c104', 'c105', 'c106', 'c107', 'c108', 'c109'],
+        "s003": ['c201', 'c202', 'c203', 'c204', 'c205', 'c206', 'c207', 'c208', 'c209', 'c210', 'c211'],
+    }
+
     for turn in range(start,end + 1):
         if turn == 1:
-            transfer_nodes(case_ids)
-            transfer_relations(case_ids)
-            combine_data(case_ids)
-            delete_isolated_nodes(case_ids)
+            transfer_nodes(case_ids[sector_id])
+            transfer_relations(case_ids[sector_id])
+            combine_data(case_ids[sector_id])
+            delete_isolated_nodes(case_ids[sector_id])
 
             vs = VerifySchema(data_base_path="../data/graph/case_study/")
-            vs.validate_schema(case_ids)
+            vs.validate_schema(case_ids[sector_id])
 
         if turn ==2:
             vq = AssembleVQ(data_base_path="../data/graph/case_study/")
-            vq.assemble_entity_vq(case_ids)
-            vq.assemble_relation_vq(case_ids)
+            vq.assemble_entity_vq(case_ids[sector_id])
+            vq.assemble_relation_vq(case_ids[sector_id])
 
             obj = EvaluateVQ(data_base_path="../data/graph/case_study/")
-            obj.evaluate_all_vq(case_ids)
+            obj.evaluate_all_vq(case_ids[sector_id])
 
             obj = AlignRwN(data_base_path="../data/graph/case_study/")
-            obj.screen_nodes(case_ids)
+            obj.screen_nodes(case_ids[sector_id])
 
         if turn == 3:
-            obj = AssembleEAVQ(data_base_path="../data/graph/case_study/")
-            """obj.init_embedder()
-            obj.find_best_pairs(case_ids)"""
-            obj.assemble_ea_vq(case_ids)
+            """obj = AssembleEAVQ(data_base_path="../data/graph/case_study/")
+            obj.init_embedder()
+            obj.find_best_pairs(case_ids[sector_id])
+            obj.assemble_ea_vq(case_ids[sector_id])"""
 
             obj = EvaluateEA(data_base_path="../data/graph/case_study/")
-            obj.evaluate_all_ea(case_ids)
-            obj.find_all_redundant_nodes(case_ids)
+            #obj.evaluate_all_ea(case_ids[sector_id])
+            obj.find_all_redundant_nodes(case_ids[sector_id])
 
             obj = RebuildKG(data_base_path="../data/graph/case_study/")
-            obj.rebuild_all_kg(case_ids)
+            obj.rebuild_all_kg(case_ids[sector_id])
 
         if turn == 4:
             obj = CaseKG()
-            for case_id in case_ids:
+            for case_id in case_ids[sector_id]:
                 obj.build_case_kg(case_id)
+
+        if turn == 5:
+            calculate_kg_verification([sector_id])

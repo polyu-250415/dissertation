@@ -5,7 +5,7 @@ from neo4j import GraphDatabase
 
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "MyNewPass123!")
-CSV_DIR = '../../data/graph/case_study/case_6_rebuild_kg/'
+CSV_DIR = '../../data/graph/case_study/case_6_v_ds/'
 DATABASE = "kggen"
 
 

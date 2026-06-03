@@ -1,0 +1,37 @@
+ID,Object,Question
+DS01Q01,Explicit knowledge,"Which uncodified skills, intuitions, or behavioral routines are described?"
+DS01Q02,Tacit knowledge,Which knowledge holders are described in relation to tacit knowledge?
+DS01Q03,Knowledge Holder,Which human‑driven knowledge retention practices are described?
+DS01Q04,Traditional Human-centred Practices,Which traditional human-centred practices are discussed?
+DS01Q05,Technology-enabled Practice,Which technology‑enabled practices have been adaptted?
+DS01Q06,Digital Technology,which emerging technologies have been adopted  by technology‑enabled practices?
+DS01Q07,Organizational Dependency,Which internal prerequisites are stated as necessary for the success of knowledge retention practices?
+DS01Q08,Environment Dependency,Which external factors beyond organizational control affect the implementation of knowledge retention practices?
+DS01Q09,Limitation,Which inherent vulnerabilities or failure points of knowledge retention practices are acknowledged?
+DS01Q10,be_derived_from,Which specific knowledge holder currently possesses tacit knowledge?
+DS01Q11,translate_into,"Which written rules, metrics, or guidelines are successfully put into individual knowledge or skills?"
+DS01Q12,be_held_by,Which tacit knowledge is held by a knowledge holder?
+DS01Q13,be_absorbed_by,Through which exact practice (traditional or technology‑enabled) is tacit knowledge distributed to and absorbed by learners?
+DS01Q14,be_captured_by,which tacit knowledge is captured by technology-enable practices?
+DS01Q15,be_transferred_by,Which tacit behaviors or routines are actively transferred via technology‑enabled practices?
+DS01Q16,participate_in,Which knowledge holders actively take part in knowledge retention practices?
+DS01Q17,depend_on,which digital technologes or knowledge technology-enable practices depend on?
+DS01Q18,evaluate,which technology-enable practices are used to evaluate  a participant's skill or compliance level?
+DS01Q19,adopt,Which digital technologies form the foundation of technology‑enabled practices?
+DS01Q20,be_constrained_by,Which constraints limit the assessment or measurement of tacit knowledge acquisition in digital technology practices?
+DS01Q21,resolve,"Which limitations are completely resolved by technology‑enabled practices, and what evidence supports this?"
+DS01Q22,mitigate,Which limitations are mitigated (but not eliminated) by technology‑enabled practices?
+DS01Q23,complement,In what ways do technology‑enabled practices complement (enhance or patch) traditional practices without replacing them?
+DS01Q24,cannot_fully_replace,"Which aspects of technology‑enabled practices prevent them from fully replacing traditional practices, considering relations among knowledge holders, tacit knowledge, digital technology, organizational dependency, resource dependency, and limitations?"
+DS01Q25,be_difficult_to_capture_due_to,"What's the mechanism of each traditional human-central practice? introduce this from relations among knowledge holders, tacit knowledge, organizational dependency, resource dependency, and limitation perspectives."
+DS02Q01,,"What's the mechanism of each technology-enable practice? introduce this from relations among knowledge holders, tacit knowledge, digital technology, organizational dependency, resource dependency, and limitation perspectives."
+DS02Q02,,"What's the mechanism of each traditional human-central practice? introduce this from relations among knowledge holders, tacit knowledge, organizational dependency, resource dependency, and limitation perspectives."
+DS03Q01,,Which tangible organizational asset is required for the technology-enabled practices?
+DS03Q02,,Which external environment condition is required for the technology-enabled practices?
+DS04Q01,,What organizational culture influence the effectiveness of the technology-enabled practices?
+DS04Q02,,Does the organization adopt incentive or reward measures to encourage knowledge holders to actively participate in knowledge retention activities?
+DS04Q03,,Does the organization foster interpersonal trust and a psychological safety climate to encourage knowledge holders to actively participate in knowledge retention practices?
+DS04Q04,,"Does the organization cultivate intrinsic identity, cultural knowledge-sharing values, and institutional governance/ethics clearances to encourage knowledge holders to actively participate in knowledge retention activities?"
+DS05Q01,,"What inherent vulnerability, shortcoming, or failure point of  the traditional human-central practices?"
+DS05Q02,,"What inherent vulnerability, shortcoming, or failure point of  the technology-enabled practices?"
+DS05Q03,,Which limitations the technology-enabled practices resolve or at least mitigate the traditional human-central practices have faced?

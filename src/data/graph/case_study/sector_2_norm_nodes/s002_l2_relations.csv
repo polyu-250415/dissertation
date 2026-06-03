@@ -1,0 +1,114 @@
+src_node_id,dst_node_id,relation_type,src_l1_node_id,dst_l1_node_id,evidence_label,case_title,evidence_statement
+s002M02EX01,s002M02KH01,be_held_by,c101M01N05,c101M01N01,E,SIC 80 - Services (Health Services),Standardized 6-10 min lecture scripts were developed by board-certified pediatric surgeons.
+s002M02KH01,s002M02TP01,participate_in,c101M01N01,c101M01N09,E,SIC 80 - Services (Health Services),All AI-generated visual elements underwent board-certified pediatric surgeon review.
+s002M02KH02,s002M02TP01,participate_in,c101M01N02,c101M01N09,E,SIC 80 - Services (Health Services),Medical students and pediatric surgery residents viewed standardized lecture videos on five core pediatric surgery topics.
+s002M02TP01,s002M02TE01,adopt,c101M01N09,c101M01N10,E,SIC 80 - Services (Health Services),AI background replacement using FLUX.1-Fill (inpainting) and FLUX.1-dev (development) models
+s002M02TP01,s002M02TE02,adopt,c101M01N09,c101M01N12,E,SIC 80 - Services (Health Services),"AI enhancement used FLUX.1-Fill and FLUX.1-dev models via ComfyUI, an open-source workflow interface"
+s002M02TP01,s002M02TA02,evaluate,c101M01N09,c101M01N06,E,SIC 80 - Services (Health Services),Primary outcomes were perceived educational clarity (five-point Likert scale) and knowledge acquisition assessed by a 40-item multiple-choice examination.
+s002M02TA02,s002M02KH02,be_absorbed_by,c101M01N06,c101M01N03,E,SIC 80 - Services (Health Services),"Among junior residents (n=20), AI-enhanced videos showed higher clarity and knowledge"
+s002M02TR07,s002M02LI01,be_constrained_by,c101M01N08,c101M01N19,E,SIC 80 - Services (Health Services),Pediatric surgery training is challenged by declining clinical exposure and limited access to high-quality educational resources.
+s002M02TP01,s002M02LI03,resolve,c101M01N09,c101M01N20,E,SIC 80 - Services (Health Services),Locally deployed AI production reduced per-video costs by 72-94% compared with traditional studio production.
+s002M02TP01,s002M02LI02,resolve,c101M01N09,c101M01N21,E,SIC 80 - Services (Health Services),The approach eliminates green screen infrastructure and its technical challenges.
+s002M02TP01,s002M02TR07,complement,c101M01N09,c101M01N08,E,SIC 80 - Services (Health Services),"Al has the potential to be a powerful adjunct to surgical education if deployed thoughtfully and ethically, complementing rather than replacing the vital educator-learner relationship"
+s002M02TP01,s002M02TR07,cannot_fully_replace,c101M01N09,c101M01N08,E,SIC 80 - Services (Health Services),Al cannot replace the critical role of educators and must be used as complementary tool with robust governance frameworks.
+s002M02TP01,s002M02OD05,depend_on,c101M01N09,c101M01N16,I,SIC 80 - Services (Health Services),This trade-off favors AI enhancement when faculty time is institutionally subsidized
+s002M02TP01,s002M02ED02,depend_on,c101M01N09,c101M01N18,E,SIC 80 - Services (Health Services),"This approach represents a practical, scalable strategy for enhancing pediatric surgery education, particularly in resource-limited settings."
+s002M02TP01,s002M02LI01,be_constrained_by,c101M01N09,c101M01N22,E,SIC 80 - Services (Health Services),"Second, outcomes were assessed immediately after video viewing; therefore, long-term knowledge retention and transfer to clinical performance were not evaluated."
+s002M02EX01,s002M02TP02,be_transferred_by,c101M02N01,c101M02N16,E,SIC 80 - Services (Health Services),Identical scripts and narration were used in both groups; the intervention differed only by AI-based background enhancement.
+s002M02EX02,s002M02KH01,be_held_by,c101M02N02,c101M01N01,E,SIC 80 - Services (Health Services),Expert-curated illustrations were overlaid; source expertise not explicitly stated but implicit from content development.
+s002M02EX02,s002M02TP02,be_transferred_by,c101M02N02,c101M02N16,E,SIC 80 - Services (Health Services),Illustration overlay (0.5-1 h per video) in DaVinci Resolve as part of AI-enhanced workflow.
+s002M02EX02,s002M02KH02,be_absorbed_by,c101M02N04,c101M01N02,E,SIC 80 - Services (Health Services),Medical students in AI-enhanced group scored 7.3 percentage points higher than standard group.
+s002M02TA03,s002M02KH02,be_absorbed_by,c101M02N09,c101M01N02,E,SIC 80 - Services (Health Services),87.5% of AI-enhanced group would recommend vs. 63.3% of standard group.
+s002M02KH01,s002M02TR05,participate_in,c101M01N01,c101M02N13,I,SIC 80 - Services (Health Services),Board-certified surgeons develop content for traditional studio videos.
+s002M02KH01,s002M02TP02,participate_in,c101M01N01,c101M02N16,E,SIC 80 - Services (Health Services),Board-certified pediatric surgeons reviewed AI-generated visual elements.
+s002M02KH02,s002M02TP02,participate_in,c101M02N12,c101M02N16,E,SIC 80 - Services (Health Services),Junior residents (PGY 1-2) included in AI-enhanced group.
+s002M02TR05,s002M02LI03,be_constrained_by,c101M02N13,c101M01N20,E,SIC 80 - Services (Health Services),"Professional studio production costs $2,000-8,500 per video."
+s002M02TR03,s002M02LI02,be_constrained_by,c101M02N14,c101M01N21,E,SIC 80 - Services (Health Services),"Green screen has uneven lighting, color spill, shadows, six-foot separation, wardrobe restrictions, extensive post-production."
+s002M02TP02,s002M02TE02,adopt,c101M02N16,c101M01N12,E,SIC 80 - Services (Health Services),"AI enhancement used ComfyUI, an open-source workflow interface."
+s002M02TP02,s002M02TE01,adopt,c101M02N16,c101M01N10,E,SIC 80 - Services (Health Services),AI background replacement using FLUX.1-Fill and FLUX.1-dev models.
+s002M02TP02,s002M02EX02,evaluate,c101M02N16,c101M02N03,E,SIC 80 - Services (Health Services),Knowledge assessed immediately after viewing AI-enhanced videos.
+s002M02TP02,s002M02TA02,evaluate,c101M02N16,c101M01N07,E,SIC 80 - Services (Health Services),Clarity scores measured for AI-enhanced videos.
+s002M02TP02,s002M02TA03,evaluate,c101M02N16,c101M02N09,E,SIC 80 - Services (Health Services),Willingness to recommend measured for AI-enhanced videos.
+s002M02TP02,s002M02OD05,depend_on,c101M02N16,c101M01N16,I,SIC 80 - Services (Health Services),This tradeoff favors AI enhancement when faculty time is institutionally subsidized.
+s002M02TP02,s002M02ED02,depend_on,c101M02N16,c101M01N18,E,SIC 80 - Services (Health Services),Particularly relevant for resource-limited settings where traditional infrastructure is unavailable.
+s002M02TP02,s002M02LI03,mitigate,c101M02N16,c101M01N20,E,SIC 80 - Services (Health Services),AI-enhanced approach reduces per-video costs by 72-94%.
+s002M02TP02,s002M02LI02,mitigate,c101M02N16,c101M01N21,E,SIC 80 - Services (Health Services),AI eliminates green screen infrastructure and its technical challenges.
+s002M02TP02,s002M02LI01,be_constrained_by,c101M02N16,c101M01N22,E,SIC 80 - Services (Health Services),Long-term knowledge retention and transfer to clinical performance were not evaluated.
+s002M02TA01,s002M02KH01,be_held_by,c102M01N03,c102M01N06,E,SIC 80 - Services (Health Services),...relying on the oral teaching of the dissemination of the way requires a large number of professional teachers.
+s002M02EX01,s002M02TR03,be_transferred_by,c102M01N01,c102M01N07,E,SIC 80 - Services (Health Services),The comparison system used non-interactive instructional materials consisting of static images and text.
+s002M02TA01,s002M02LI02,be_difficult_to_capture_due_to,c102M01N03,c102M01N15,E,SIC 80 - Services (Health Services),"Traditional exercise rehabilitation methods often have problems such as a single form of intervention, high repetitiveness, and lagging feedback."
+s002M02KH02,s002M02TR03,participate_in,c102M01N05,c102M01N07,E,SIC 80 - Services (Health Services),Two cohorts of participants were recruited to compare... randomized into experimental and control groups.
+s002M02TR03,s002M02LI01,be_constrained_by,c102M01N07,c102M01N12,E,SIC 80 - Services (Health Services),Traditional rehabilitation approaches often suffer from low adherence due to their monotony.
+s002M02TR03,s002M02LI03,be_constrained_by,c102M01N07,c102M01N14,E,SIC 80 - Services (Health Services),"The traditional rehabilitation treatment often has the defects such as boring, high treatment cost."
+s002M02TP01,s002M02TE05,adopt,c102M01N08,c102M01N09,E,SIC 80 - Services (Health Services),The TWJB system adopts a three-phase structure... somatosensory interaction is realized using the Kinect V2.
+s002M02TP01,s002M02EX01,adopt,c102M01N08,c102M01N01,E,SIC 80 - Services (Health Services),...this paper also organizes and constructs a movement animation data repository containing the eight styles of movements.
+s002M02TP01,s002M02EX02,adopt,c102M01N08,c102M01N11,E,SIC 80 - Services (Health Services),...the motion recognition module applies Dynamic Time Warping (DTW) to match the real-time motion sequence.
+s002M02TP01,s002M02TA01,evaluate,c102M01N08,c102M01N03,E,SIC 80 - Services (Health Services),The system captures and evaluates user performance in real time...
+s002M02TP01,s002M02LI01,mitigate,c102M01N08,c102M01N12,E,SIC 80 - Services (Health Services),The improvement of embodied cognition and operation fluency suggests that immersive somatosensory interaction can effectively stimulate users... overcoming the training burnout.
+s002M02TP01,s002M02TR03,complement,c102M01N08,c102M01N07,I,SIC 80 - Services (Health Services),"The system bridges cultural content and digital interventions, modernizing standard traditional physical assets through computer graphics."
+s002M02TA01,s002M02KH02,be_held_by,c102M02N08,c102M02N12,E,SIC 80 - Services (Health Services),Patients in the TWJB group developed embodied cognition through the system.
+s002M02TA04,s002M02KH02,be_held_by,c102M02N09,c102M02N12,I,SIC 80 - Services (Health Services),"Patients improved motor coordination skills (BBS, Tinetti, 10MWT improvements)."
+s002M02TA02,s002M02KH02,be_held_by,c102M02N10,c102M02N12,I,SIC 80 - Services (Health Services),Self-perception of accuracy is enhanced in users receiving synchronized feedback.
+s002M02EX01,s002M02KH02,be_absorbed_by,c102M02N01,c102M02N12,E,SIC 80 - Services (Health Services),"Baduanjin knowledge score was 7.8 (TWJB) vs 5.6 (control), p<0.001."
+s002M02TA01,s002M02TP01,be_captured_by,c102M02N08,c102M02N23,I,SIC 80 - Services (Health Services),Embodied cognition is developed via real-time motion capture and feedback.
+s002M02TA04,s002M02TP01,be_captured_by,c102M02N09,c102M02N23,E,SIC 80 - Services (Health Services),User motion data are captured using Kinect V2; DTW matches real-time sequence with reference templates.
+s002M02TA02,s002M02TP01,be_captured_by,c102M02N10,c102M02N23,I,SIC 80 - Services (Health Services),System provides visual comparison and accuracy feedback to enhance self-perception.
+s002M02EX01,s002M02TR07,be_transferred_by,c102M02N01,c102M02N17,E,SIC 80 - Services (Health Services),"Current dissemination forms include oral teaching, books, audio-visual video."
+s002M02EX01,s002M02TR08,be_transferred_by,c102M02N01,c102M02N21,E,SIC 80 - Services (Health Services),Pre-recorded video demonstrations provide visual guidance but lack interactivity.
+s002M02EX01,s002M02TP01,be_transferred_by,c102M02N01,c102M02N22,E,SIC 80 - Services (Health Services),TWJB transfers movement instructions via avatar guidance and real-time feedback.
+s002M02EX02,s002M02TP01,be_transferred_by,c102M02N04,c102M02N25,E,SIC 80 - Services (Health Services),Knowledge quiz tests understanding; correct answers rewarded.
+s002M02KH02,s002M02TR07,participate_in,c102M02N12,c102M02N17,I,SIC 80 - Services (Health Services),Control group patients used traditional UI-based system (analogous to passive methods).
+s002M02KH01,s002M02TR07,participate_in,c102M01N06,c102M02N17,E,SIC 80 - Services (Health Services),Oral teaching requires professional teachers as participants.
+s002M02TR07,s002M02OD07,depend_on,c102M02N17,c102M02N36,E,SIC 80 - Services (Health Services),Oral teaching requires a large number of professional teachers and scientific training system.
+s002M02TP01,s002M02TE08,adopt,c102M02N23,c102M02N30,E,SIC 80 - Services (Health Services),Motion recognition uses DTW algorithm.
+s002M02TP01,s002M02EX01,evaluate,c102M02N24,c102M02N02,I,SIC 80 - Services (Health Services),Cards are evaluated as collected; users are tested on card content in quiz.
+s002M02TP01,s002M02EX02,evaluate,c102M02N25,c102M02N04,E,SIC 80 - Services (Health Services),Knowledge quiz tests users' understanding of Baduanjin-related questions.
+s002M02EX01,s002M02TA01,translate_into,c102M02N01,c102M02N08,I,SIC 80 - Services (Health Services),Explicit movement instructions are internalized into embodied skill through practice and feedback.
+s002M02TP01,s002M02LI03,mitigate,c102M02N22,c102M02N41,I,SIC 80 - Services (Health Services),Virtual NPC reduces dependence on scarce professional teachers.
+s002M02TR07,s002M02LI03,be_constrained_by,c102M02N17,c102M02N41,E,SIC 80 - Services (Health Services),Oral teaching constrained by scarcity of professional teachers.
+s002M02TR08,s002M02LI01,be_constrained_by,c102M02N19,c102M02N40,E,SIC 80 - Services (Health Services),Video watching is passive.
+s002M02TA01,s002M02LI01,be_difficult_to_capture_due_to,c102M02N08,c102M02N38,E,SIC 80 - Services (Health Services),Monotony and boredom make it difficult to develop embodied cognition.
+s002M02TA02,s002M02LI02,be_difficult_to_capture_due_to,c102M02N10,c102M02N39,E,SIC 80 - Services (Health Services),"Without real-time feedback, self-perception of accuracy cannot be developed."
+s002M02TP01,s002M02LI03,be_constrained_by,c102M02N22,c102M02N43,E,SIC 80 - Services (Health Services),The short training period (25 min per session) limits assessment of long-term retention.
+s002M02TP01,s002M02LI02,be_constrained_by,c102M02N22,c102M02N45,E,SIC 80 - Services (Health Services),"Action recognition uses traditional DTW, not deep learning, limiting accuracy and sensitivity."
+s002M02TA01,s002M02KH02,be_absorbed_by,c103M01N05,c103M01N11,E,SIC 80 - Services (Health Services),Knowledge improved from 57% pretraining to 77% to 76.6% (6M)
+s002M02TA01,s002M02TP01,be_transferred_by,c103M01N05,c103M01N15,E,SIC 80 - Services (Health Services),"For the practical part, one team at a time (trainer/trainee) entered the cleanroom with the training pharmacist. Using an adapted version of the Peyton approach"
+s002M02TP01,s002M02TE04,adopt,c103M01N14,c103M01N18,E,SIC 80 - Services (Health Services),Learning Designer®'s free online software was used to help build the training program.
+s002M02TP01,s002M02ED01,depend_on,c103M01N15,c103M01N22,E,SIC 80 - Services (Health Services),These skills are particularly important when preparing cytotoxic drugs in cleanrooms because the standards of quality expected in Good Manufacturing Practices must be ensured.
+s002M02TP01,s002M02LI01,resolve,c103M01N15,c103M01N25,E,SIC 80 - Services (Health Services),This highly appreciated training program efficiently improved knowledge retention out to six months.
+s002M02EX02,s002M02KH02,be_held_by,c103M02N06,c103M02N15,E,SIC 80 - Services (Health Services),The questionnaire on robot knowledge was answered by operators.
+s002M02EX01,s002M02KH02,be_held_by,c103M01N02,c103M02N15,E,SIC 80 - Services (Health Services),Operators needed to know criteria for using the robot.
+s002M02TP01,s002M02OD07,depend_on,c103M01N14,c103M02N33,E,SIC 80 - Services (Health Services),Training is needed because maintaining adequate numbers of appropriately trained staff is difficult.
+s002M02TP01,s002M02OD06,depend_on,c103M01N14,c103M02N34,E,SIC 80 - Services (Health Services),The program was designed to be a standardized training program.
+s002M02TR07,s002M02LI02,be_constrained_by,c103M01N13,c103M01N23,E,SIC 80 - Services (Health Services),Conventional training did not overcome complex technical use.
+s002M02TA02,s002M02TR07,be_transferred_by,c104M01N02,c104M01N07,E,SIC 80 - Services (Health Services),"Verbal education was conducted by trained medical staff according to a unified education outline, including disease knowledge."
+s002M02TA02,s002M02TP01,be_transferred_by,c104M01N02,c104M01N08,E,SIC 80 - Services (Health Services),"Medical professionals then formulated personalized education content, synthesized the voice using doctor voice cloning."
+s002M02TP02,s002M02LI01,resolve,c104M01N10,c104M01N18,E,SIC 80 - Services (Health Services),"Compared with traditional manual evaluation, Al-assisted assessment may offer advantages in efficiency, scalability, and consistency."
+s002M02TP02,s002M02ED04,depend_on,c104M01N10,c104M01N15,E,SIC 80 - Services (Health Services),Phase 2 re-evaluated the same recordings by uploading the original audio directly to the ChatGPT web interface (WAV/MP3).
+s002M02TP02,s002M02LI02,be_constrained_by,c104M01N10,c104M01N20,E,SIC 80 - Services (Health Services),"Assessment outcomes may still be influenced by prompt design, model architecture, and algorithmic biases."
+s002M02TP02,s002M02TR07,cannot_fully_replace,c104M01N10,c104M01N07,E,SIC 80 - Services (Health Services),"Therefore, Al-assisted evaluation should be considered a complementary tool rather than a replacement for expert assessment."
+s002M02TP02,s002M02TR03,complement,c104M01N10,c104M02N09,E,SIC 80 - Services (Health Services),"AI‑assisted evaluation should be considered a complementary tool rather than a replacement for expert assessment, and its use should be accompanied by appropriate human oversight."
+s002M02TP02,s002M02TR03,cannot_fully_replace,c104M01N10,c104M02N09,E,SIC 80 - Services (Health Services),AI‑assisted evaluation should be considered a complementary tool rather than a replacement for expert assessment.
+s002M02TP01,s002M02ED03,depend_on,c104M02N10,c104M02N26,E,SIC 80 - Services (Health Services),Participants were hospitalized patients in a tertiary hospital.
+s002M02TP02,s002M02OD06,depend_on,c104M01N10,c104M02N22,E,SIC 80 - Services (Health Services),Ethics committee approval was obtained for the trial (which includes the evaluation).
+s002M02EX01,s002M02TA02,translate_into,c105M01N02,c105M01N03,E,SIC 80 - Services (Health Services),Acquisition of knowledge and the rapid possibility of its implementation into the work environment seemed to contribute to the confidence of some participants.
+s002M02EX01,s002M02TA03,translate_into,c105M02N03,c105M02N09,E,SIC 80 - Services (Health Services),the part with the health education was the most impressive for me
+s002M02EX01,s002M02TA04,translate_into,c105M02N03,c105M02N10,E,SIC 80 - Services (Health Services),my expectations during the training really helped me gain more confidence in...
+s002M02TA03,s002M02KH02,be_held_by,c105M02N09,c105M02N13,E,SIC 80 - Services (Health Services),All participants reported a positive impact of the PEAK-PT on their profession
+s002M02TA04,s002M02KH02,be_absorbed_by,c105M02N10,c105M02N14,E,SIC 80 - Services (Health Services),four (25%) out of the 16 clinically practicing participants reported having used learnings
+s002M02TA03,s002M02TP01,be_transferred_by,c105M02N09,c105M01N07,E,SIC 80 - Services (Health Services),the part with the health education was the most impressive for me
+s002M02TA04,s002M02TP01,be_transferred_by,c105M02N10,c105M01N07,E,SIC 80 - Services (Health Services),my expectations during the training really helped me gain more confidence
+s002M02TP01,s002M02TE07,adopt,c105M01N07,c105M02N20,I,SIC 80 - Services (Health Services),It also teaches clinicians how to deliver care via video conferencing
+s002M02TA04,s002M02LI01,be_difficult_to_capture_due_to,c105M02N10,c105M01N12,E,SIC 80 - Services (Health Services),only 25% of participants who were clinically practicing applied the learnings from the PEAK-PT to their working routine
+s002M02TR06,s002M02TA02,evaluate,c106M01N12,c106M01N03,E,SIC 80 - Services (Health Services),"Session (2), dedicated to charades on games and digital platforms, informed the thinking and knowledge...Older adults showed analogical thinking"
+s002M02TP01,s002M02ED04,depend_on,c106M01N15,c106M01N20,E,SIC 80 - Services (Health Services),"allow players to play without an internet connection, as the internet can be unstable;"
+s002M02TR06,s002M02LI01,be_constrained_by,c106M01N12,c106M01N26,E,SIC 80 - Services (Health Services),"Third, a convenience sample was used. Thus, caution must be applied when extrapolating"
+s002M02TR01,s002M02LI03,be_constrained_by,c107M02N17,c107M02N34,E,SIC 80 - Services (Health Services),Cadaver resources are scarce.
+s002M02TR01,s002M02LI02,be_constrained_by,c107M02N17,c107M02N36,E,SIC 80 - Services (Health Services),"Due to opacity of lung parenchyma, it is difficult to teach sublobar structures."
+s002M02TP01,s002M02LI02,mitigate,c107M02N20,c107M02N36,I,SIC 80 - Services (Health Services),"The 3DP model omitted lung parenchyma, avoiding issues like glare and refraction errors; allowed clear visualization of vessels."
+s002M02TP01,s002M02TE03,adopt,c107M02N20,c107M02N23,E,SIC 80 - Services (Health Services),The 3DP model was produced using 3D printing technology.
+s002M02EX01,s002M02KH01,be_absorbed_by,c108M01N01,c108M01N03,E,SIC 80 - Services (Health Services),The participants' average score increased from 59.97% in the initial assessment to 84.05% in the final assessment.
+s002M02TP01,s002M02OD04,depend_on,c108M01N06,c108M01N09,E,SIC 80 - Services (Health Services),The alignment of the MOOC with the participants professional roles... likely contributed to higher enrollment and completion rates.
+s002M02TA04,s002M02KH01,be_held_by,c108M02N09,c108M01N03,I,SIC 80 - Services (Health Services),A master's degree equips nurses with the ability to manage complex situations such as empowering patients to self‑manage chronic conditions
+s002M02TP02,s002M02EX01,evaluate,c108M02N20,c108M01N01,E,SIC 80 - Services (Health Services),Knowledge retention was assessed by comparing the mean scores before and after the course
+s002M02TP02,s002M02EX02,adopt,c108M02N20,c108M02N02,E,SIC 80 - Services (Health Services),The level of knowledge was assessed using 29 multiple‑choice questions

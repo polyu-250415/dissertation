@@ -1,0 +1,1001 @@
+node_id,node_name,category,evidence_label,case_title,evidence_count,evidence_statement
+s001M02ED01,Macro-Regulatory & Jurisdictional Frameworks,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c001M01N11 | Industry health and safety regulations: The training objectives of the immersive VR training system were developed based on two guidelines: Occupational Safety and Health Administration (OSHA) Trenching and Excavation Safety and WorkSafe Excavation Safety.
+c003M01N13 | Australian Industrial Standard: Training content was based on an Australian industrial standard
+c003M02N19 | Industry safety regulations (Australian code of practice): Training content was based on an Australian industrial standard—Preventing Falls in Housing Construction—Code of Practice [69].
+c006M02N14 | Peruvian OHS regulations (Law N° 29783, G-050): initial risk factor (RF - CS) based on exposure, probability and severity indexes granted by the Peruvian Law N° 29783 on Occupational Safety and Health Management; key performance indicators (KPI) of the Peruvian OHS standard G-050"
+s001M02ED02,Market Dynamics & Industry Baselines,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c006M01N23 | Developing countries context: In developing countries, conventional methods are employed to identify risks and prevent accidents due to limited familiarity"
+s001M02ED03,Physical Site Conditions & Spatial Configuration,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c003M02N18 | Resemblance to actual construction site: ensuring the virtual environment's resemblance to the actual site and task were the most important factors in ensuring effective knowledge retention by the trainees.
+c005M02N28 | Construction site physical environment: We visited actual work sites... we were present at each worker's worksite.
+c007M01N15 | Cleanroom constraints: These skills are particularly important when preparing cytotoxic drugs in cleanrooms because the standards of quality expected in Good Manufacturing Practices must be ensured."
+s001M02ED04,Socio-Technical Utilities & Infrastructure Access,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,c002M01N19 | Rural internet infrastructure: point cloud data transmission failure rate in rural areas is as high as 18.7% (vs 2.3% in the urban cores).
+s001M02EX01,Codified Engineering Standards & Safety Regulations,Explicit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),21,"c001M02N01 | OSHA Trenching and Excavation Safety guidelines: The training objectives were developed based on two guidelines: Occupational Safety and Health Administration (OSHA) Trenching and Excavation Safety
+c001M02N02 | WorkSafe Excavation Safety guidelines: The training objectives were developed based on two guidelines: WorkSafe Excavation Safety
+c001M02N03 | Health and safety manual: Control group received training via an excavation health and safety manual
+c001M02N04 | Seven critical hazards list: Seven critical hazards were selected as the training objectives: absence of safety officer, absence of soil protection, objects near edges, absence of safe access/egress, workers close to utilities, absence of barriers/signage, workers in unsafe zone
+c002M01N03 | Technical Standard for Digitalization of Historical Buildings (2021): A graded protection framework is proposed based on Technical Standards for Historical Building Digitization (2021).
+c002M01N04 | Digital Protection Standard for Intangible Cultural Heritage (2023): A dynamic narrative system is proposed under the standard of Digital Protection of Intangible Cultural Heritage (2023).
+c003M01N01 | Preventing Falls in Housing Construction-Code of Practice: Training content was based on an Australian industrial standard-Preventing Falls in Housing Construction-Code of Practice
+c003M02N02 | Safety training content (fall risks and protections): The safety training aimed to educate the trainees on the different fall risks in housing construction by demonstrating different fall risks and fall protections.
+c004M01N08 | Requests for Proposals (RFPs): Data were collected through semi-structured interviews with bid personnel and analysis of historical proposals and Requests for Proposals.
+c004M02N02 | RFPs: RFPs are uploaded, and key requirements are extracted. Used as input queries for semantic retrieval.
+c005M01N05 | evaluation charts (OWAS method, RULA, REBA, HOHSRAM): Therefore, creating a safe environment is important, and evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized.
+c006M01N09 | IPERC: This spreadsheet has tools such as IPERC (Hazard Identification, Risk Evaluation and Controls)
+c006M01N10 | Residual Risk Management (RR): Residual Risk Management (RR), Requests for Information on Previously Taken Controls (RFI), Lessons Learned (LA)
+c006M01N11 | Requests for Information (RFI): Requests for Information on Previously Taken Controls (RFI)
+c006M01N12 | Lessons Learned (LA): Lessons Learned (LA) and a search engine that allows filtering elements
+c006M01N13 | Peruvian Law N° 29783: indexes granted by the Peruvian Law N° 29783 on Occupational Safety and Health Management
+c006M02N19 | Hazard identification and risk evaluation (IPERC) data: This spreadsheet has tools such as IPERC (Hazard Identification, Risk Evaluation and Controls); the tool generates data on hazards, properties, risk factors
+c006M02N20 | Lessons learned records: Lessons Learned (LA) tool within the Excel application
+c006M02N21 | Residual risk management data: Residual Risk Management (RR) tool
+c006M02N22 | RFI data (Requests for Information on Previously Taken Controls): Requests for Information on Previously Taken Controls (RFI)
+c007M01N02 | Criteria for using the robot: For Knowing the criteria for using the robot, teams guessed whether certain compounds could be used with the robot.
+c007M01N03 | Real-life production errors handling: incorporating six problematic, real-life situations. Each problem was presented with four potential answers"
+s001M02EX02,System Configurations & Functional Parameters,Explicit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),13,"c002M02N01 | 3D point cloud model: millimeter-level point cloud modeling
+c002M02N03 | LOD400 modeling precision: LOD400 modeling precision is adopted for projects in the central urban districts
+c002M02N05 | GIS spatial distribution map: the scattered 3D models are aggregated into spatial distribution maps
+c004M01N07 | Historical bid documents: A dedicated domain-specific database was created, containing 13 historical bid documents
+c004M01N09 | Predefined requirements: GPT-4o LLM is used in extracting predefined requirements from the uploaded RFP
+c004M02N03 | methodology sections: The methodology section of proposals was selected as proof-of-concept. Top K methodology sections are used as contextual samples for few-shot prompting.
+c005M01N07 | lumbar load estimation algorithm: First, the lumbar load estimation algorithm based on the posture change of the wearable sensor used in this research is explained.
+c006M01N01 | 2D drawings in DWG format: All the 2D drawings in DWG format of the 9-story building were collected.
+c006M01N02 | List of activities in Excel: the list of activities was made in Excel
+c006M01N03 | Schedule in Microsoft Project: scheduling activities in the Microsoft Project tool
+c006M01N04 | 3D modeling of architecture, structure and sanitary facilities: a 3D modeling of architecture, structure and sanitary facilities was developed
+c007M01N01 | Theoretical manufacturing steps: The process's 16 steps were printed on cards that had to be put back into the right order.
+c007M02N01 | 16 steps of robot process: the process's 16 steps were printed on cards that had to be put back into the right order."
+s001M02EX03,Structured Knowledge Metrics & Performance Benchmarks,Explicit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c001M01N01 | Excavation safety knowledge: This knowledge test included ten multiple-choice questions covering the seven critical hazards identified in Section 3.3.
+c001M01N14 | Interactive questioning strategy: This study adopted questioning as the instructional method for the immersive VR training system... Questions can stimulate thinking and enhance engagement
+c002M02N02 | Historical knowledge retention rate 58%: improves historical knowledge retention rate by 58%
+c005M01N06 | physical performance assessment index evaluation equation: An evaluation equation (1) for physical performance was developed from eight items adding age to the seven items of physical strength test.
+c005M02N01 | Physical strength test scores: Physical strength measurements included seven events: two-step, seated stepping, functional reach, one-leg standing with eyes closed, grip strength, foot grip strength and plank
+c005M02N02 | Questionnaire responses (LBP history, work posture, etc.): The questionnaire collects personal information such as height, weight, age, physical gender, type of work, duration of work, working hours per week, main working posture (upright, downward, squatting, sitting), maximum weight to be handled, current LBP or LBP history, frequency of LBP in the last 6 months, how much exercise they do per week, and duration of exercise.
+c005M02N03 | Lumbar load values (F_hour, W_hour): The lumbar load F_l is the combined force of two compression forces... estimated load per hour Ŵ_hour = F_hour[N] / (height[cm] × weight[kg])
+c005M02N04 | Physical performance assessment index (E-hat): An evaluation equation (1) for physical performance was developed from eight items adding age to the seven items of physical strength test. A physical performance assessment index was constructed by setting a coefficient with a perfect score of 200 points for each item experimentally.
+c006M02N23 | OHS performance indexes (IFm, IGm, IFa, IGa, IA): key performance indicators (KPI) of the Peruvian OHS standard G-050 such as Monthly Frequency Index (IFm), Monthly Severity Index (IGm), Accumulated Frequency Index (IFa), Accumulated Severity Index (IGa), Accidentability Index (IA)"
+s001M02KH01,Operational & Executive Workforce (Human Agents),Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),25,"c001M01N04 | Construction professionals: The participants consisted of 28 university students and 12 professionals from the construction sector.
+c001M01N05 | University students: The participants consisted of 28 university students and 12 professionals from the construction sector.
+c001M02N13 | Construction workers: The target population for excavation safety training
+c002M01N02 | Traditional Artisans: Bulgaria's digital authorization system for intangible cultural heritage (ICH) skills raised traditional artisans income by 40%.
+c002M01N06 | Visitors: Digital technology can improve visitors' immersion in virtual experience (the VR stay rate has been increased by 40%).
+c002M02N10 | Indigenous people of Shanchengxiang: return rate of indigenous people is generally below 30%
+c003M01N05 | Engineering Students: A cohort of 60 trainees enrolled in construction safety and risk management at Monash University were employed
+c003M02N10 | Trainers (researchers): The safety team prepared an immersive environment for demonstration of concepts using Unity3D... The authors used Unity3D.
+c004M01N01 | Lead Tender Administrator (LTA): At Alpha, the lead tender administrator (LTA) participated
+c004M01N03 | Assistant Tender Administrator 2 (ATA2): ATA2 Engineering tenders
+c004M01N04 | Bid Manager (BM): In the Beta case, the primary participant was the Bid Manager (BM)
+c004M01N05 | Bid Administrator 1 (BA1): BA1, 1, 2 years
+c004M01N06 | Bid Administrator 2 (BA2): BA2, 1, 3 years
+c004M01N30 | Research team: Ground truth labels for the requirements extraction module were generated through manual annotation of the RFPs by the research team
+c004M02N12 | Bid Manager (Beta): The Bid Manager (BM) at Beta participated in interviews, has 17 years of experience, and relies on intuition.
+c004M02N14 | bid preparation team: The bid preparation team includes bid managers, coordinators, and administrators. They review AI-generated drafts.
+c004M02N15 | experts (evaluators): Five experts with extensive professional experience in construction procurement and bid preparation evaluated AI-generated proposals.
+c004M02N16 | management: Management makes final bid/no-bid decisions based on extracted requirements.
+c005M01N01 | construction workers: We have tested the physical performance of construction workers, conducted questionnaires on back pain, and also measured their physical workload using wearable sensors.
+c005M02N12 | Workers with LBP history: There were 111 subjects with LBP... For those with LBP, α = -0.504 and β = 110.11
+c006M01N17 | Staff in companies: Valuable information on incidents, accidents and best practices is lost as staff changes in companies
+c007M01N07 | Trainer: with the best scores placed in the trainer group and the lower scores in the trainee group.
+c007M01N08 | Trainee: Each trainer was randomly paired with a trainee to constitute teams.
+c007M01N09 | Training pharmacist: The trainer was a pharmacist who specialized in using the robot.
+c007M02N09 | operators (pharmacy technicians): operators (context of pharmacy technicians)
+c007M02N11 | trainee operators: trainee (repeatedly used to designate learners)"
+s001M02LI01,"Human, Cognitive & Knowledge Retention Limitations",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),27,"c001M01N12 | Knowledge decay over time: Newly acquired knowledge is vulnerable because forgetting always occurs, as demonstrated by Ebbinghaus's forgetting curve.
+c001M01N13 | Knowledge-to-practice gap: Their results suggest that physical therapy graduates do not use newly acquired knowledge to inform their practice... knowing more does not necessarily mean behaving more safely
+c001M02N35 | Forgetting curve (Ebbinghaus): Newly acquired knowledge is vulnerable because forgetting always occurs, as demonstrated by Ebbinghaus's forgetting curve
+c001M02N36 | Poor knowledge retention in traditional training: For the Manual group, significant difference between post-training and retention (p=0.030)
+c001M02N39 | Lack of long-term practical performance measurement: Whether VR improves long-term practical performance is yet to be investigated
+c002M01N23 | Excessive commercialization / loss of cultural context: excessive commercial operation would decrease the number of EEG positive signals by 40%.
+c002M02N26 | Living heritage transmission crisis (indigenous return rate <30%): return rate of indigenous people is generally below 30% and intangible cultural heritage skills are at risk of interruption
+c003M01N15 | Forgetting Curve: most students would have forgotten about 80% of the content in a week's time
+c003M02N20 | Forgetting curve (80% forgotten in a week): most students would have forgotten about 80% of the content in a week's time [72].
+c003M02N22 | Insufficient absorption of information: lack engagement, which results in the insufficient absorption of information by construction workers, which ultimately does not translate to long-term information retention.
+c004M02N38 | knowledge loss due to staff turnover: Risk of knowledge loss, particularly in firms with high staff turnover.
+c004M02N40 | customization challenge: Bids require customization; method statements need context-aware judgment, making full automation without expert input less practical.
+c005M01N16 | high risk of injury and death: The risk of injury and death in the construction industry relative to the number of workers is 1.6 times higher than in all industries, and the risk of death is 4.5 times higher.
+c005M01N20 | weakening core, reduced flexibility and balance due to aging: This age group has less muscle weakness and more confidence in their physical strength compared to younger generations, but they have reduced flexibility and balance and may not be aware of their weakening core.
+c005M01N21 | low back pain (LBP) syndromes: Consequently, they are more prone to developing low back pain (LBP) syndromes from overexertion at work.
+c005M02N31 | Lack of correlation between workload and assistive technologies: As there is no correlation between the workload and the assistive technologies, it is unclear who the target audience is and what approaches can be taken to introduce such technologies.
+c005M02N32 | Individual compatibility variability of assistive suits: It found that 'It's compatibility with the individual is greater than the type of work / It doesn't have a uniform effect on everyone'.
+c006M01N24 | Staff changes in companies: Valuable information on incidents, accidents and best practices is lost as staff changes in companies
+c006M01N26 | Lack of knowledge retention and lessons learned: The lack of retention of OHS knowledge and lessons learned represents a major obstacle
+c006M02N15 | Loss of OHS knowledge due to staff turnover: valuable information on incidents, accidents and best practices is lost as staff changes in companies
+c006M02N16 | Lack of retention of OHS knowledge and lessons learned: the lack of retention of OHS knowledge and lessons learned represents a major obstacle to continuous improvement in construction safety
+c007M01N16 | Forgetting curve for motivation and self-efficacy: Motivation was evaluated on a scale from 0 to 100 and increased... however, it decreased to 70.4 at six months
+c007M02N38 | did not assess application over time: how they applied the competencies learned during their training was not assessed over time
+c007M02N40 | drop in motivation: drops in motivation (traditional context)
+c007M02N41 | disparities in knowledge: disparities in operators knowledge
+c007M02N42 | insufficient training: insufficient training caused a drop in motivation and disparities
+c007M02N43 | knowledge decay at 6 months (motivation and self-efficacy): decrease in motivation and self‑efficacy over time suggests that regular refresher sessions are necessary"
+s001M02LI02,"Technical, System & Data Limitations",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),21,"c002M01N21 | Rural data transmission failure and low interoperability: county-level projects is restricted to LOD200 models... data interoperability rate is below 30%.
+c002M01N22 | Fragmented scenarios (lack of wartime life recreation): 85% of digital exhibitions only passively show building exterior... but lack recreation of wartime life.
+c002M01N24 | Lack of multi-sensory haptic and olfactory feedback: visitors are unable to feel shockwaves or scorched earth smells at Bombing site.
+c002M02N24 | Urban-rural digital divide (data interoperability <30%): data interoperability rate is below 30%
+c002M02N25 | Fragmented user experience (2.7 sec wait, 5% haptic devices): visitors need to wait for an average of 2.7 seconds ... only 5% of venues provide haptic devices
+c003M02N23 | Cumbersome physical movement for AR interaction: the virtual visualizations were super-imposed onto a physical space and moving around them in a physical space was cumbersome for the participants.
+c004M01N27 | Fragmentation of bid-related data: A major barrier identified is the fragmentation of bid-related data across disparate systems
+c004M01N28 | Absence of integrated Optical Character Recognition (OCR): due to the absence of integrated Optical Character Recognition (OCR) capabilities
+c004M01N29 | Decreased accuracy for scanned or image-based documents: accuracy decreases for scanned or image-based documents, as no Optical Character Recognition (OCR) is integrated
+c004M02N36 | fragmented information storage: Data fragmentation, information scattered across different departments or databases.
+c004M02N39 | inconsistency across bids: Inconsistent documentation across bids due to manual processes.
+c004M02N41 | no OCR for scanned documents: The current extraction process only supports PDF documents; accuracy decreases for scanned or image-based documents as no OCR is integrated.
+c004M02N42 | small dataset size (13 documents): The dataset contains 13 historical bid documents; although limited, it provided sufficient diversity for PoC testing.
+c005M02N29 | No significant difference in E-hat between LBP groups (p=0.158): The result of the one-sided T-test showed that p = 0.158 and no significant difference was found in the evaluation of physical performance according to the presence or absence of LBP.
+c005M02N30 | No significant difference in lumbar load between LBP groups (p=0.167): A one-sided T-test showed that the P value was 0.167 and no significant difference as a group could be confirmed.
+c006M01N25 | Information gathered is lost over time: it is often observed that the information gathered is lost over time, hindering continuous improvement.
+c006M02N18 | No centralized database for OHS knowledge: The paper repeatedly contrasts the proposed SQL server with the absence of a centralized repository; the lack is implied as a limitation of traditional methods
+c007M01N17 | Machine downtime and breakdowns: our PharmaHelp robot was little used during the six months post-training because of a breakdown
+c007M01N18 | Small sample size: The present study's limitations include its small sample size (14 operators),
+c007M02N36 | small sample size (14 operators): small sample size (14 operators)
+c007M02N37 | low number of questions (10): low number of questions (10) used to survey their knowledge"
+s001M02LI03,"Cost, Resource & Structural Limitations",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c001M02N37 | Only questioning as instructional method: This study uses only questioning as the instructional method for the proposed VR training system
+c001M02N38 | Only explicit knowledge delivered: The VR training system only delivers explicit knowledge to participants
+c002M01N20 | High modeling cost using advanced methods: cost of modeling per building is 3-5 times higher than traditional methods.
+c004M02N37 | manual inefficiencies: Manual, labour-intensive, time-pressured processes; repetitive drafting; inconsistent formatting.
+c005M01N17 | one-item production basis: The application of robots on construction sites is a cherished desire for the construction industry where one-item production is the basis.
+c005M01N18 | heavy, large, and expensive construction robots: Many of the construction robots that have been presented are 'heavy, large and expensive', can only be used under certain ideal environments and have not been widely deployed.
+c005M01N19 | incompatibility with uniform assistive technology introduction: It was found that introducing assistive technologies uniformly is difficult. It found that 'It's compatibility with the individual is greater than the type of work'.
+c005M02N33 | Difficulty of uniform technology introduction: It was found that introducing assistive technologies uniformly is difficult.
+c007M02N39 | time to develop (>100 hours): probable total of more than 100 hours"
+s001M02OD04,Intrinsic Identity & Cultural Knowledge-Sharing Values,Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c004M01N26 | Organizational maturity: This suggests that organizational maturity and information systems readiness significantly influence a firm's automation readiness
+c004M02N35 | digital infrastructure maturity: Firms differ in digital maturity, staffing models, and resource availability, affecting automation readiness.
+c006M01N22 | Safety culture: establishing a safety culture depends on the organization"
+s001M02OD05,Operational Resource Allocation & Dedicated Timeline Provisions,Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c001M02N28 | Physical space (3m x 3m square): The movement area in the real world was confined to a 3m x 3m square
+c001M02N29 | Availability of VR equipment: The study required Oculus Quest headsets and controllers
+c001M02N30 | Dedicated training time: Participants had time limits for assessments (e.g., 10 min for practical performance)
+c003M01N12 | Task Customization: designing customized training relevant to specific tasks being performed on-site is important
+c004M01N25 | Investment in digital infrastructure: firms must invest in digital infrastructure to support these systems
+c004M02N33 | centralized data system (absence): The lack of a centralized data system means information is often scattered. Overcoming this requires integrated data management systems.
+c005M02N26 | Worksite access permission: We were present at each worker's worksite and recorded video footage of the work situation.
+c007M01N13 | Dedicated training hours: Trainer/ trainee teams participated in 2-hour training sessions with three games and a debriefing.
+c007M02N31 | work schedule of the unit: teams of trainer/trainee constituted according to the work schedule"
+s001M02OD06,"Institutional Governance, Standards Compliance & Ethics Clearances",Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c001M02N31 | Massey University Research Ethics Committee approval: Massey University Research Ethics Committee granted ethics approval (Southern A, Application 18/21)
+c002M02N04 | Digital Protection of Intangible Cultural Heritage (2023) standard: under the standard of Digital Protection of Intangible Cultural Heritage (2023)
+c002M02N22 | Technical Standards for Historical Building Digitization (2021): graded protection framework is proposed based on Technical Standards for Historical Building Digitization (2021) [2]
+c004M01N24 | Centralized data management: suggesting that investment in integrated digital infrastructure and centralized data management will be critical for scaling automation
+c007M01N14 | PhD thesis framework: This was possible as the work was performed as part of a PhD thesis, with the doctoral student involved in 100% of the project.
+c007M02N34 | Good Manufacturing Practices standards: standards of quality expected in Good Manufacturing Practices"
+s001M02TA01,Somatic Tacit Knowledge,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),12,"c002M01N01 | Traditional craftsmanship skills: The craftsmanship process such as wooden construction and rammed earth technology are recorded in sequence.
+c002M02N06 | Traditional wooden construction craftsmanship: craftsmanship process such as wooden construction ... are recorded in sequence
+c002M02N07 | Rammed earth technology skills: craftsmanship process such as ... rammed earth technology are recorded in sequence
+c003M01N03 | Safe Construction Practice: effectiveness of these safety training sessions on the knowledge acquisition... which ultimately translates into safe construction practice
+c003M02N06 | Safe working practices application: This knowledge acquisition can then help improve construction workers' safety performance and reduce workplace incidents.
+c005M01N02 | physical abilities and skills: One is to know the physical abilities and skills of each worker.
+c005M01N03 | work content and physical burden: The other is to quantify the work content and physical burden of each worker.
+c005M01N04 | lumbar load: In this study, a lumbar load measuring device with multiple IMU sensors was used to measure workload.
+c005M02N09 | Work posture and movement patterns: It is important to measure the posture... a lumbar load measuring device with multiple IMU sensors was used to measure workload. To collect workload data... we recorded video footage of the work situation using a wearable camera.
+c005M02N10 | Manual handling techniques (hand load): The hand load of seven subjects were estimated in Fig.10 based on the video recording... The manual load is estimated based on the video of the working posture.
+c007M01N04 | Robot operation and competency: helping them acquiring the competencies to manage the robot (goal 2).
+c007M02N05 | skill to use robot: self‑efficacy in using it, because it is technically complex to use"
+s001M02TA02,Cognitive Tacit Knowledge,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),14,"c001M01N03 | Self-efficacy belief: Self-efficacy is an instrument to indicate an individual's belief in their capability to perform tasks or gain attainments
+c002M01N05 | Historical knowledge and cognition of wartime life: The dynamic narrative technology triggered events by timelines... which improved the understanding of history by more than 50%.
+c002M02N08 | Wartime life experiential knowledge: most cases only use static pictures ... instead of scenically reproduce the noise of a group refuge and kerosene lamp lighting
+c003M02N07 | Motivation to transfer knowledge: Motivation was found to be the more effective factor for safety performance practice on the job.
+c004M01N10 | Bid manager's intuition: Beta's reliance on the bid manager's intuition
+c004M01N11 | Contextual judgment: The findings reaffirm the need for human oversight in activities involving contextual judgment
+c004M01N12 | Strategic decision-making: The integration of automated systems would also allow firms to focus more on strategic decision-making
+c004M02N07 | contextual judgment for method statements: Method statements require context-aware judgment and understanding of nuanced project risks, making full automation less practical without expert input.
+c004M02N08 | expertise for interpreting complex specifications: Human expertise in interpreting complex project specifications and ensuring the bid meets all client expectations remains critical.
+c006M01N06 | Initial risk management: risk management was carried out from an early stage of the project
+c006M01N08 | Residual risk management: oriented to OHS management based on the PtD initiative and processes, such as hazard identification, initial risk management, risk mitigation and residual risk management.
+c007M01N05 | Self-efficacy belief: their robot knowledge was assessed on a 0-24-scale, motivation and self-efficacy in using it on 0-to-100 scales.
+c007M01N06 | Motivation to use the robot: Complex technical use, downtime periods, and insufficient training caused a drop in motivation
+c007M02N06 | self-efficacy in using robot: self‑efficacy in their ability to use the robot"
+s001M02TA04,Adaptive Tacit Knowledge,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c001M01N02 | Real-time hazard identification performance: The pilot study's results suggest that the VR training system is effective in improving participants' practical performance when dealing with excavation hazards.
+c001M02N08 | Hazard identification skill: Participants were assessed on their ability to identify hazards in excavation sites
+c001M02N10 | Hazard response skill: Participants were assessed on their ability to respond to hazards
+c003M01N02 | Hazard Identification Performance: measurable improvements in hazard identification and risk assessment among construction workers
+c003M02N05 | Hazard identification ability: The enhanced ability of construction workers to understand and recognize hazards is fundamental for a high safety performance.
+c006M01N05 | Hazard identification: BIM enables precise identification of hazards and risks during the design stages
+c006M01N07 | Risk mitigation: The study's results demonstrate effective risk mitigation"
+s001M02TE01,Artificial Intelligence and Intelligent Computation,Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c004M01N21 | OpenAI GPT-4o LLM: OpenAI's GPT-4o, a proprietary LLM developed to generate coherent and useful text... was employed
+c004M01N22 | OpenAI text-embedding-ada-002: Text chunks were converted into dense vector embeddings using OpenAI's text-embedding-ada-002
+c004M02N27 | GPT-4o LLM: OpenAI's GPT-4o, a proprietary LLM, used for requirements extraction and proposal generation due to its reasoning capabilities and robustness in technical writing."
+s001M02TE02,Human–Computer Interaction and Immersive Technologies,Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),17,"c001M01N08 | Head Mounted Displays (Oculus Quest): The training solution presented in this work was an immersive VR application deployed on one of the most popular standalone HMDs: Oculus quest.
+c001M01N09 | Unity game engine: The virtual environments were modelled and rendered using Unity (version 2019.1.10f1).
+c001M01N10 | Wireless controllers: The office scenario offered tutorials for participants to learn and practice interaction and navigation using Oculus Quest's wireless controllers in VR.
+c001M01N15 | Direct selection user interface mode: The results show that direct selection mode UI performed better than indirect selection mode
+c001M02N23 | Terrain plugin: A Unity plugin called Terrain was used to create site terrains
+c001M02N24 | Snaps Art HD - Construction Site asset: Snaps Art HD- Construction Site was used to develop the construction scenarios
+c001M02N27 | Virtual menu (grab, view, measure, tag): Participants could activate a virtual menu that allowed for four types of actions: grab, view a safety file, measure distances, tag hazards
+c002M01N17 | Unity3D Engine: The historical cognition of visitors increased by 53% after the QR code animation triggered by Unity3D engine.
+c002M01N18 | NetEase Yaotai Architecture: Based on the NetEase Yaotai architecture, a co-creation module of 'Red Journey' is constructed.
+c003M01N09 | Virtual Reality Head-Mounted Display (VR-HMD): VR visualizations with a VR head-mounted display (VR-HMD) were used by Li et al. to train workers
+c003M01N10 | Augmented Reality (AR) Device: For visualization of safety training in XR realm, two head-mounted displays (HMD) were used... Microsoft Hololens 2 was used for AR training
+c003M01N11 | Unity3D: authors used Unity3D to prepare immersive visualizations for XR-based training
+c003M02N14 | Microsoft Hololens 2 (AR HMD): Microsoft Hololens 2 was used for AR training.
+c003M02N15 | Samsung Odyssey VR headset (VR HMD): Samsung Odyssey VR headset was used for VR training.
+c003M02N16 | Unity3D game engine: the authors used Unity3D. Fall risks and their protections were modelled as per the code of practice. Animations were created.
+c004M02N31 | Streamlit: Lightweight graphical interface built with Streamlit for user interaction.
+c006M02N12 | PowerApps: In PowerApps, an application was created"
+s001M02TE03,"Cyber-Physical Systems, IoT, and Smart Environments",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c005M02N22 | Smartsuit hardware: Smartsuit ... which is based on logical and scientific evidence, among the numerous passive assistance suits (Fig. 5). Quoted from Smart Support Inc."
+s001M02TE04,"Data, Information, and Knowledge Systems",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),14,"c003M02N17 | Building Information Models (BIM): Increased adoption of Construction 4.0 standards has enabled the use of immersive building information models (BIM). Two different construction models were used—one representing the construction of a free-standing house and the other representing a low-rise housing building.
+c004M01N23 | LangChain framework: The pipeline was orchestrated through the LangChain framework
+c004M02N29 | Pinecone vector database: A vector database used to store embeddings and enable cosine similarity search. Chosen for scalability and real-time high-dimensional vector handling.
+c004M02N32 | PDF format: All documents were stored in PDF format to reflect standard consulting practices.
+c005M01N15 | dedicated web application: In addition, a dedicated web application (Fig.6) has been developed separately for the purpose of streamlining questionnaires and is used to tabulate and analyse the data.
+c006M01N14 | SQL server on Microsoft Azure platform: a relational table (SQL) data server has been developed on the Microsoft Azure platform.
+c006M02N08 | Microsoft Excel: an application was developed in Microsoft Excel
+c006M02N09 | Navisworks: export the file to an .nwc format for 4D simulation in Navisworks
+c006M02N10 | Microsoft Azure: a relational table (SQL) data server has been developed on the Microsoft Azure platform
+c006M02N11 | SQL server: relational table (SQL) data server
+c006M02N13 | Autodesk Revit: 3D modeling of architecture, structure and sanitary facilities was developed using Autodesk's Revit software
+c007M01N12 | ICT tools: Learning Designer free online software was used to help build the training program... mind map representing the training program's goals... was created on Framindmap
+c007M02N27 | Framindmap software: Framindmap (online software)
+c007M02N28 | Learning Designer software: Learning Designer's free online software"
+s001M02TE05,"Imaging, Sensing, and Perception Technologies",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M02N26 | Motion tracking system: Thanks to the motion tracking system and sensors embedded in Oculus Quest, navigation in virtual environments was similar to walking
+c002M01N15 | 3D Laser Scanning Technology: Based on 3D laser scanning, VR (Virtual Reality) and big data, we collect architectural data.
+c002M02N18 | FARO Focus S350 laser scanner: FARO Focus S350 realizes millimeter-level point cloud modeling
+c002M02N20 | Tobii Pro eye tracker: Tobii Pro eye tracker ... quantify the distribution of visitor's attention
+c002M02N21 | Emotiv EEG device: Emotiv EEG device, the emotion of visitors in VR scenario are quantified
+c005M01N13 | multiple IMU sensors: In this study, a lumbar load measuring device with multiple IMU sensors was used to measure workload.
+c005M01N14 | wearable camera: We were present at each worker's worksite and recorded video footage of the work situation using a wearable camera.
+c005M02N24 | Lumbar load measuring device: A lumbar load measuring device with multiple IMU sensors was used to measure workload."
+s001M02TE08,"Rule-Based, Decision, and Expert Systems",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,c007M02N30 | PharmaHelp robot: PharmaHelp robot system used during practical part
+s001M02TP01,Immersive Interactive Training & Safety Simulation,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),14,"c001M01N07 | Immersive VR training system: This study proposes an immersive VR training system for excavation safety and hazard identification.
+c001M02N19 | Practical performance assessment in VR: Participants' practical performance was assessed in VR before and immediately after training
+c002M01N13 | VR Exhibition Hall / Metaverse Scenario (NetEase Yaotai): Based on the NetEase Yaotai architecture, a co-creation module of 'Red Journey' is constructed.
+c002M01N14 | AR Scene Overlay / Guided Tour (Unity3D): A digital twin system realizes the real-time monitoring of visitors and AR virtual tour.
+c002M02N14 | Digital twin platform (Unity3D): digital twin system realizes the real-time monitoring of visitors and AR virtual tour
+c002M02N15 | Dynamic narrative system: dynamic narrative system reconstructs historical scene such as bombing scene with temporal-space information
+c003M01N07 | VR Training: A Samsung Odyssey VR headset was used to demonstrate the VR-based safety training
+c003M01N08 | AR Training: for demonstrating the interactive AR-based training, Microsoft Hololens2 was used
+c003M02N12 | AR-based safety training (Microsoft Hololens 2): Microsoft Hololens 2 was used for AR training. The interactive animations were demonstrated using a projector screen in real time.
+c003M02N13 | VR-based safety training (Samsung Odyssey VR headset): Samsung Odyssey VR headset was used for VR training. The visualizations were shown in real-time to the cohort of students on the projector screen.
+c005M01N12 | Smartsuit fitting and training session: From 2020, we began by holding multiple passive assistive suit fitting events to help many people understand the benefits of assistive suits.
+c006M01N20 | 4D simulation in Navisworks: export the file to an .nwc format for 4D simulation in Navisworks.
+c007M01N11 | Game-based training program: We created a short, playful, standardized, gamed-based training program to address this, and evaluated its impact.
+c007M02N26 | knowledge evaluation survey (pre/post/6M): survey of 10 questions scored from 0‑24 examined operators' knowledge"
+s001M02TP02,Real-time System Monitoring & Physiological Tracking,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c002M01N10 | 3D Laser Scanning (FARO Focus S350 / Leica RTC360): FARO Focus S350 realizes millimeter-level point cloud modeling... average error margin <0.5%.
+c002M01N11 | Drone Oblique Photography: Drone Oblique Photography Images acquired from the air with 50-150m height cover multi-angle views.
+c002M02N13 | 3D laser scanning data acquisition: 3D laser scanning ... realizes millimeter-level point cloud modeling
+c002M02N27 | Multimodal interaction testing (eye tracking + EEG): Tobii Pro eye tracker and Emotiv EEG device, the distribution of visitor's attention and the emotion of visitors in VR scenario are quantified
+c005M01N10 | physical strength measurement at site office: The physical strength measurements included seven events: two-step, seated stepping, functional reach, one-leg standing with eyes closed, grip strength, foot grip strength and plank (Fig. 3).
+c005M01N11 | workload measurement using wearable sensors and video: The workload is estimated by combining the posture information obtained from the wearable sensor and the hand weight obtained from the captured video.
+c005M02N17 | Physical performance assessment (7-event battery): The physical strength measurements included seven events: two-step, seated stepping, functional reach, one-leg standing with eyes closed, grip strength, foot grip strength and plank (Fig. 3).
+c005M02N19 | Video recording of work posture: We were present at each worker's worksite and recorded video footage of the work situation using a wearable camera (Fig. 4).
+c006M01N15 | Application created in PowerApps: In PowerApps, an application was created to visualize the information of the previous phases
+c006M02N07 | PowerApps monitoring dashboard: In PowerApps, an application was created to visualize the information of the previous phases during the execution of the project in order to monitor and control the OHS management"
+s001M02TP03,Digital Information Modeling & Semantic Engineering,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),18,"c001M02N18 | Knowledge test via Google Forms: The knowledge test was administered to both groups before, immediately after and four weeks after training via Google Forms
+c002M01N12 | Interactive Knowledge Graph: Then, an interactive knowledge graph is constructed to digitalize the recording of craftsmanship process.
+c002M02N28 | Graded protection framework: graded protection framework is proposed based on Technical Standards for Historical Building Digitization (2021)
+c004M01N16 | Document intelligence & information extraction module: Component: document intelligence & information extraction module. The user uploads a new RFP document
+c004M01N17 | Bid retrieval & similarity matching engine: Component: bid retrieval & similarity matching engine. The extracted requirements are encoded as vector embeddings
+c004M01N18 | Generative bid composition module: Component: generative bid composition module. Based on the retrieved proposals and the extracted requirements, GPT-4o generates a draft
+c004M01N19 | Pinecone vector database: Embeddings were stored in a Pinecone vector database, enabling semantic similarity searches using cosine similarity
+c004M01N20 | Streamlit web-application interface: The graphical interface was built with Streamlit web-application
+c004M02N22 | GenAI-based bid preparation system: A proof-of-concept GenAI framework that automates key components of bid proposal development, integrating LLMs, vector-based semantic retrieval, and structured bid repositories.
+c004M02N23 | semantic retrieval from Pinecone: Pinecone vector database enables semantic similarity searches using cosine similarity to retrieve the closest past bids.
+c004M02N24 | requirements extraction module (GPT-4o): GPT-4o extracts predefined requirements from uploaded RFPs, including project title, scope, deadlines, evaluation criteria, etc.
+c004M02N25 | proposal generation module (methodology section): GPT-4o generates a draft methodology section based on extracted requirements and retrieved similar proposals using few-shot prompting.
+c004M02N26 | human-in-the-loop review interface: A lightweight graphical interface built with Streamlit allows users to input new RFPs and review AI-generated drafts. Human oversight is incorporated for quality.
+c005M02N20 | Dedicated web application for questionnaire: A dedicated web application (Fig.6) has been developed separately for the purpose of streamlining questionnaires and is used to tabulate and analyse the data.
+c006M01N19 | Ultra Safety Design (USD) methodology: This paper introduces a novel methodology called Ultra Safety Design (USD)
+c006M01N21 | Application developed in Microsoft Excel: an application was developed in Microsoft Excel oriented to OHS management
+c006M02N04 | Excel-based OHS management application (IPERC, RR, RFI, LA): an application was developed in Microsoft Excel oriented to OHS management based on the PtD initiative and processes, such as hazard identification, initial risk management, risk mitigation and residual risk management. This spreadsheet has tools such as IPERC, Residual Risk Management (RR), Requests for Information on Previously Taken Controls (RFI), Lessons Learned (LA)
+c006M02N06 | SQL server on Azure for knowledge storage: a relational table (SQL) data server has been developed on the Microsoft Azure platform. This server will be populated with data from an application created in Microsoft Excel during Phase 3. By storing the information from previous phases, it will be readily available in real-time without the need for physical storage hardware."
+s001M02TR02,Job Rotation,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c005M01N09 | task allocation based on age: As a result, the building work acquired in this study revealed that task allocation based on age was not conducted."
+s001M02TR03,Deliberate Practice,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M01N06 | Health and safety manual self-study: A control group received training via a traditional training method, in this case an excavation health and safety manual.
+c002M01N07 | Paper-based Surveying: 1st (1930s) Paper-based Surveying, 2D Planar, 5-8% error rate.
+c002M01N08 | Total Station Surveying: 2nd (1980s) Total Station + Film Photography, 2-3% error rate.
+c003M01N06 | Traditional Training: The traditional mode of training was presented using an overhead projector
+c003M02N11 | Conventional overhead projector training: The traditional safety training was prepared using Microsoft PowerPoint, and presented using an overhead projector.
+c004M01N15 | Manual annotation of RFPs: Ground truth labels for the requirements extraction module were generated through manual annotation of the RFPs by the research team
+c005M01N08 | traditional evaluation chart analysis: Evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized. Based on this result, the development of assistive technology suitable for work is required.
+c005M02N15 | OWAS/RULA/REBA observation-based assessment: Evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized."
+s001M02TR04,Knowledge Cafés,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c004M02N18 | kick-off meetings: A kick-off meeting aligns roles, timelines, and responsibilities in bid preparation."
+s001M02TR05,Knowledge Harvesting Workshops,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c004M01N13 | Legacy manual bid preparation: Construction bid preparation remains predominantly manual, labour-intensive, and time-pressured
+c004M02N17 | manual drafting of methodology sections: Manual drafting is time-consuming and error-prone. The methodology section typically carries the highest evaluation weight.
+c004M02N21 | cross-referencing previous proposals manually: Cross-referencing with previous proposals is a manual activity to ensure consistency and reuse effective content.
+c006M01N18 | Traditional methods for hazard identification, risk assessment and accident prevention: only traditional methods for hazard identification, risk assessment and accident prevention are applied in the design phase"
+s001M02TR07,Mentoring,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c007M01N10 | Conventional training format: These sessions were conducted following a conventional format consisting of trainees reading the recommended procedures, being shown the processes, and then repeating them"
+s001M02TR08,Storytelling,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c002M01N09 | Traditional exhibition methods / physical display: Compared with traditional exhibition, VR exhibition hall extended average stay time for 22 minutes.
+c002M02N12 | Static photographic exhibition: most cases only use static pictures to show Bombing site"
+s001M02TR09,After-Action Reviews,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c004M01N14 | Human-in-the-loop review: A human-in-the-loop review was incorporated to ensure quality
+c004M02N19 | internal reviews (managers/QA/legal): Proposals undergo internal reviews involving managers, quality assurance staff, and legal teams.
+c004M02N20 | post-bid reviews: Post-bid review is conducted to gather feedback, assess lessons learned, and improve future submissions."
+s002M02ED01,Macro-Regulatory & Jurisdictional Frameworks,Environmental Dependency,G,SIC 80 - Services (Health Services),1,c103M01N22 | Good Manufacturing Practices Standards: the standards of quality expected in Good Manufacturing Practices must be ensured.
+s002M02ED02,Market Dynamics & Industry Baselines,Environmental Dependency,G,SIC 80 - Services (Health Services),3,"c101M01N18 | Resource-limited settings: This approach represents a practical, scalable strategy for enhancing pediatric surgery education, particularly in resource-limited settings.
+c104M02N28 | Mandarin medical context: iFlytek automatic speech recognition (Mandarin medical context; no manual correction).
+c105M02N28 | 4-week time limit (free version): The training is offered for free (limited access for 4 weeks, no completion certificate)"
+s002M02ED03,Physical Site Conditions & Spatial Configuration,Environmental Dependency,G,SIC 80 - Services (Health Services),5,"c103M02N38 | Cleanroom environment: One team at a time entered the cleanroom with the training pharmacist.
+c103M02N39 | Physical constraints of isolator: The repetitiveness and awkward postures associated with chemotherapy preparation within an isolator put operators at risk of musculoskeletal disorders.
+c104M02N26 | Hospital inpatient setting: The study participants were patients hospitalized in a tertiary hospital from May 2025 to July 2025 who needed to receive medical education.
+c109M02N14 | Community-based elderly centers: recruited from 10 local daily elderly centers
+c109M02N16 | Portability of the set-up: portability of the set-up"
+s002M02ED04,Socio-Technical Utilities & Infrastructure Access,Environmental Dependency,G,SIC 80 - Services (Health Services),5,"c104M01N15 | WAV/MP3 audio format specifications: Phase 2 evaluated original audio directly uploaded to the ChatGPT web interface in WAV/MP3 16-kHz sampling rate.
+c106M01N20 | Internet Infrastructure: allow players to play without an internet connection, as the internet can be unstable
+c108M01N10 | Internet access: In recent years, the number of MOOCs has grown exponentially, in line with the increase in the number of people with access to the internet.
+c108M02N32 | Access to mobile devices: Ease of access to communication and information devices by nurses
+c109M02N15 | Availability of mobile devices: accessibility of the AR headset, prevalence of mobile devices"
+s002M02EX01,"Codified Guidelines, Standards & Blueprints",Explicit Knowledge,G,SIC 80 - Services (Health Services),25,"c101M01N05 | Standardized lecture scripts: Standardized 6-10 min lecture scripts were developed by board-certified pediatric surgeons.
+c101M02N01 | Pediatric surgery lecture scripts: Standardized 6-10 min lecture scripts were developed by board-certified pediatric surgeons.
+c102M01N01 | Standard Baduanjin routine definitions: A movement animation data repository containing the eight styles of movements realizes the unified mapping of standard movement keyframes.
+c102M02N01 | Baduanjin movement instructions: The system organizes a movement animation data repository containing the eight styles of movements, realizing unified mapping of standard movement keyframes, movement semantics and voice commands
+c102M02N02 | Cultural historical background: Each card presents historical context, intangible cultural heritage (ICH) knowledge, and the corresponding rehabilitative effect
+c102M02N03 | Health benefits and rehabilitative effects: Each card presents... the corresponding rehabilitative effect. For example, after performing the 'Drumming and Cursing Cao' movement, the card highlights its role in promoting blood circulation and strengthening the arms
+c102M02N06 | Movement semantics and voice commands mapping: Unified mapping of standard movement keyframes, movement semantics and voice commands
+c103M01N01 | Robot Knowledge / Process Steps: For Knowing the manufacturing steps, cards with the steps were placed in the correct order.
+c103M01N02 | Criteria for Robot Use / Compound Specificities: For Knowing the criteria for using the robot, teams guessed whether certain compounds could be used with the robot.
+c103M01N03 | Production Error Protocols: For Knowing how to handle production errors, the answer to each error (taken from real-life issues) was selected from four options.
+c103M01N04 | Institutional Internal Procedures: participants read the institution's internal procedures about working with the robot
+c104M01N01 | Standardized written education materials: Traditional methods of patient education primarily rely on verbal explanations and standardized written materials.
+c104M02N01 | Standardized health education content: The traditional education group received the hospital's current standardized patient education, including verbal education by medical staff and standardized written education materials.
+c104M02N02 | Personalized health education content: Medical professionals then formulated personalized education content based on standard education content and the patient's specific situation.
+c105M01N01 | Clinical practice guidelines: Clinical practice guidelines recommend physical exercise, patient education, and body weight control as core management options for people with KOA.
+c105M01N02 | Knowledge about KOA management: The course includes content about OA, pain management, strengthening exercise and physical activity.
+c105M02N03 | PEAK-PT course content: The PEAK-PT e-learning course includes content about OA, pain management, strengthening exercise and physical activity (Jorge et al. 2021)
+c105M02N05 | Exercise prescription protocols: Specific components of the PEAK-PT programme (patient education, strength exercises and physical activity plan)
+c106M01N10 | DigComp 2.2 Framework: a self-administered questionnaire based on...three key areas of the DigComp 2.2 framework
+c107M01N01 | Thoracic surgery knowledge: The test focused on thoracic surgery knowledge including fill-in-the-blank, image recognition, and multiple-choice questions.
+c107M01N02 | Foundational medical and clinical knowledge: Inclusion criteria included completion of basic medical courses like Human Anatomy and Physiology and clinical courses like Surgery.
+c107M02N01 | Anatomical knowledge: The course covered lung anatomy, specifically segmental and subsegmental divisions.
+c107M02N02 | Safe margin knowledge: The course covered knowledge of safe margins for early-stage lung cancer.
+c108M01N01 | Knowledge of COPD self-management: This study aimed to evaluate the effectiveness of m-learning in nurses' knowledge retention of chronic obstructive pulmonary disease self-management.
+c108M02N04 | GOLD guidelines: The development of the MOOC was supported by the theme of self‑management of COPD, considering…the Global Initiative for Chronic Obstructive Lung Disease (GOLD)
+c109M01N01 | Knowledge of visual symptoms of age-related eye diseases: The tests consisted of questions related to the symptoms of the four eye diseases included in the study."
+s002M02EX02,Curated Digital Reference Media & Assessment Metrics,Explicit Knowledge,G,SIC 80 - Services (Health Services),15,"c101M02N02 | Expert-curated illustrations: Overlay of expert-curated illustrations using DaVinci Resolve.
+c101M02N03 | 40-item multiple-choice examination: Knowledge acquisition assessed by a 40-item multiple-choice examination.
+c101M02N04 | Knowledge acquisition scores (%): Mean scores were 76.8% (SD 9.2) AI-enhanced versus 69.5% (SD 10.4) standard.
+c102M01N02 | Historical and rehabilitative knowledge cards: The system constructs a rehabilitation interaction process centered on knowledge card feedback... describing historical background and rehabilitative effects.
+c102M01N11 | Dynamic Time Warping algorithm rules: The motion recognition module applies Dynamic Time Warping (DTW) to match the real-time motion sequence.
+c102M02N04 | Quiz questions and answers: A knowledge quiz session allows users to answer Baduanjin-related questions to test and reinforce their understanding
+c102M02N05 | Standardized Baduanjin animation asset library: A complete Baduanjin animation asset library was constructed based on authoritative movement references. Each of the eight traditional routines was analyzed and segmented into semantically meaningful keyframes
+c102M02N07 | DTW distance thresholds and scoring metrics: D_min ≤ δ1 ⇒ Good; δ1 < D_min ≤ δ2 ⇒ Pass; D_min > δ2 ⇒ Fail. Score = α·(1−D̂)+β·QuizAcc+γ·NPCInteract
+c103M02N05 | Video about robot: Participants watched a video about the robot at least one week before the training program.
+c103M02N06 | Questionnaire on robot knowledge: This survey of 10 questions scored from 0-24 examined operators' knowledge about the robot itself and our hospital's process for using it.
+c106M01N11 | Technology Acceptance Model: a self-administered questionnaire based on the technology acceptance model
+c107M02N07 | CT scan images: Lung CT scan images were imported into Mimics 23.0 software in DICOM format for initial 3D reconstruction.
+c107M02N08 | STL file: The generated STL file of the 3DV model was then imported into Voxel Dance Additive 3.0 preprocessing software.
+c108M02N02 | Multiple-choice assessment items: The level of knowledge was assessed using a set of items, including 29 multiple‑choice questions
+c108M02N03 | True/false assessment items: 24 true or false statements, on the clinical area of COPD"
+s002M02KH01,Domain Experts & Clinical Validated Agents,Knowledge Holder,G,SIC 80 - Services (Health Services),17,"c101M01N01 | Board-certified pediatric surgeons: Standardized 6-10 min lecture scripts were developed by board-certified pediatric surgeons.
+c102M01N06 | Professional teachers: Relying on the oral teaching of the dissemination of the way requires a large number of professional teachers.
+c102M02N14 | Virtual instructor (Liu Miaozhen): The accompanying avatar 'Liu Miaozhen' is a virtual character with a dual identity, not only as an experienced Baduanjin non-legacy culture inheritor, but also as the user's movement guide
+c103M01N10 | Trainers (Expert ICT Operators): Operators were classified as trainers or trainees according to their knowledge about Information and Communication Technologies.
+c103M01N12 | Pharmacist Specialized in Using the Robot: The trainer was a pharmacist who specialized in using the robot.
+c103M02N16 | Trainers: Operators with best ICT scores (min=9, max=12, mean=10.22) were designated as trainers.
+c104M01N03 | Medical staff: Traditional methods of patient education primarily involve verbal explanations by health care providers.
+c104M01N05 | Attending physician: The physician voice cloning education group received patient education through cloning of the attending physician's voice.
+c104M01N06 | Senior nursing experts: Both workflows were benchmarked against consensus ratings from 3 senior nursing experts using the same rubric.
+c104M02N04 | Medical staff (trained): Verbal education was conducted by trained medical staff according to a unified education outline.
+c104M02N07 | Research team: Independent researchers generated the allocation sequence and managed the envelopes.
+c108M01N03 | Nurses with a master's degree: Nurses with a master's degree exhibited a higher level of basic knowledge than those with a bachelor's degree.
+c108M01N18 | Specialist nurses: ...19.6% were specialist nurses.
+c108M01N19 | Nurse managers: ...1.2% were nurse managers.
+c108M02N16 | Content development experts: The assessment items were determined by the experts who developed the contents of the training program
+c109M01N04 | Workshop instructor: Enabling the workshop instructor to apply simulated visual defects to their devices using the control panel interface.
+c109M02N04 | Tertiary educators of ophthalmology: questions were designed by tertiary educators of ophthalmology"
+s002M02KH02,Active Learners & Trainees,Knowledge Holder,G,SIC 80 - Services (Health Services),19,"c101M01N02 | Clinical medical students (years 3-5): Eligible participants included clinical medical students (years 3-5)
+c101M01N03 | Junior residents (PGY 1-2): with smaller proportions of junior residents PGY 1-2 (n=20, 8.3%)
+c101M01N04 | Senior residents (PGY >=3): and senior residents PGY >=3 (n=10, 4.2%).
+c101M02N12 | Pediatric surgery residents (PGY 1-2): Junior residents PGY 1-2 comprised 8.3% (n=20) of participants.
+c102M01N05 | Healthy adult volunteers: ...and 48 healthy adult volunteers randomized into experimental and control groups.
+c102M02N12 | Patients with mild physical coordination disorders: The participant pool included 30 adult patients with mild physical coordination disorders (randomized into experimental and control groups of 15)
+c103M01N11 | Trainees (Resistant/Functional ICT Operators): The question-naire made it possible to identify those resistant operators who would need more support
+c103M02N15 | Operators: Participants (n = 14) were operators who prepare chemotherapy.
+c103M02N17 | Trainees: Operators with lower scores (min=0, max=8, mean=5.11) were designated as trainees.
+c104M01N04 | Patients: In this prospective randomized controlled trial, 180 hospitalized patients requiring standardized health education were recruited.
+c105M01N04 | Physical therapists: Physical therapists report reduced confidence and skills in delivering evidence-based knee osteoarthritis care.
+c105M02N13 | Study participants (N=20): A total of 20 physical therapists (7 men and 13 women, mean (SD) age of 33.2 (6.95) years) participated in the study
+c105M02N14 | Clinically practicing participants: four (25%) out of the 16 clinically practicing participants reported having used learnings from the PEAK-PT
+c106M01N01 | Older Adults: A mixed-methods approach was applied...involving 18 participants aged between 63 and 81
+c107M01N06 | Clinical interns: A total of 62 clinical interns were randomly assigned into two groups.
+c108M01N04 | Nurses with a bachelor's degree: In this study, 74.4% of the nurses held a bachelor's degree in nursing.
+c108M01N17 | General nurses: In this study, 66.1% were general nurses.
+c108M02N15 | Participant nurses (N=168): This study included 168 nurses from the medicine department of a hospital in northern Portugal
+c109M01N03 | Elderly participants: A total of 377 participants aged 60 to 94 were involved in the study."
+s002M02LI01,"Human, Cognitive & Knowledge Retention Limitations",Limitation,G,SIC 80 - Services (Health Services),36,"c101M01N19 | Declining clinical exposure: Pediatric surgery education faces significant challenges in contemporary medical training. General surgery residents complete only 33.8 designated pediatric cases
+c101M01N22 | Lack of long-term retention assessment: Second, outcomes were assessed immediately after video viewing; therefore, long-term knowledge retention and transfer to clinical performance were not evaluated.
+c102M01N12 | Monotony and high repetitiveness: Traditional rehabilitation approaches often suffer from low adherence due to their monotony and high repetitiveness.
+c102M02N37 | Low patient compliance: Traditional exercise rehabilitation methods often have problems such as... leading to insufficient patient compliance and thus affecting the rehabilitation effect
+c102M02N38 | Boredom due to monotony: Traditional exercise rehabilitation methods often have problems such as a single form of intervention, high repetitiveness... the practice method of traditional Baduanjin is single and lacks of interest, which makes people easily feel boring
+c102M02N40 | Passive learning: In the comparison system, users passively receive Baduanjin-related knowledge by reading a scrolling user interface or a book with automatic page-turning
+c102M02N44 | Small sample size (study limitation): The relatively limited sample size of subjects
+c103M01N25 | Variability in Operators' Knowledge: A problem was identified (step 1) the variability in operators' knowledge about the PharmaHelp® robot
+c103M01N27 | Motivation and Self-efficacy Decay over Time: The decrease in motivation and self-efficacy over time suggests that regular refresher sessions are necessary
+c103M02N41 | Insufficient training: Complex technical use, downtime periods, and insufficient training caused a drop in motivation and disparities in operators knowledge.
+c103M02N43 | Drop in motivation: Complex technical use and periods of machine downtime caused drops in motivation.
+c103M02N46 | Forgetting curve: Motivation and self-efficacy decreased at six months (p>0.1 compared to pretraining). The decrease suggests regular refresher sessions are necessary.
+c103M02N47 | Small sample size (n=14): The present study's limitations include its small sample size (14 operators).
+c103M02N49 | No assessment of applied competencies over time: How they applied the competencies learned during their training was not assessed over time.
+c104M01N17 | Lack of interactivity and personalization: Traditional patient education often lacks personalization and engagement, limiting knowledge acquisition.
+c104M01N18 | Inter-rater variability of human raters: Traditional outcome assessments often rely on human raters, which introduces inter-rater variability and resource burdens.
+c105M01N09 | Language barriers: the translation into Brazilian Portuguese benefited participants that faced difficulties in keeping up-to-date with scientific evidence due to language barriers.
+c105M01N12 | Knowledge-to-practice gap: findings also indicate that only 25% of participants who were clinically practicing applied the learnings from the PEAK-PT to their working routine.
+c105M02N33 | Reduced confidence in traditional KOA management: Physical therapists also reported reduced confidence in knowledge and clinical skills for appropriate KOA management
+c106M01N21 | Age-related Cognitive Impairments: can present further challenges when dealing with age-related cognitive impairments
+c106M01N22 | Fine Motor Skill Impairments: despite the observed impairments in fine motor skills
+c106M01N23 | Low Familiarity with Digital Technologies: all participants have shown great difficulties and low familiarity with using digital technologies
+c106M01N24 | Time-sensitive Challenges: do not use time-sensitive challenges, as it can cause frustration
+c106M01N26 | Convenience Sample: Third, a convenience sample was used. Thus, caution must be applied when extrapolating
+c107M02N38 | Need for mental reconstruction of 3D information from 2D screen: Even 3DV digital models require students to mentally construct the 3D information of tissues from interacting with a 2D screen.
+c108M01N13 | Decrease in human resources: The decrease in human resources and their turnover and the increase in workload in health institutions are obstacles to nurses' continuing training.
+c108M01N14 | High drop-out rates in standard MOOCs: In a study with 9 million students, only 5% to 18% of participants completed the course.
+c108M01N15 | Absence of a control group: The first limitation concerns the study's methodology, mainly because of the absence of a control group.
+c108M01N16 | Single-institution restriction: Since the sample was restricted to one medicine department in a single hospital institution, it hindered the generalizability of the results.
+c108M02N34 | Single hospital department: The sample was restricted to one medicine department in a single hospital institution
+c108M02N35 | Limited generalizability: It hindered the generalizability of the results
+c108M02N37 | No longitudinal follow-up: Future studies should focus on the longitudinal monitoring of the sample
+c108M02N42 | Turnover: The decrease in human resources and their turnover
+c109M01N11 | Declined cognitive ability: Declined cognitive ability as a result of aging might be the reason that older participants might find it harder to retain and process the new information.
+c109M01N12 | Lack of a control group: First, our study lacked a control group. Despite the large effect size, uncertainties remain over whether the AR intervention is more effective.
+c109M02N19 | Low health literacy: participants with a higher education level might have a higher health literacy"
+s002M02LI02,"Technical, System & Data Limitations",Limitation,G,SIC 80 - Services (Health Services),19,"c101M01N21 | Green screen technical challenges: Green screen chroma keying presents substantial technical challenges: uneven lighting causing shadows and hot spots, color spill requiring extensive correction
+c102M01N15 | Lack of real-time interactive feedback: Traditional exercise rehabilitation methods often have problems such as a single form of intervention and lagging feedback.
+c102M02N39 | Lagging feedback: Traditional exercise rehabilitation methods often have problems such as... lagging feedback
+c102M02N45 | Action recognition not using deep learning: The action recognition algorithm is still based on traditional skeleton matching, and deep learning models have not yet been introduced to improve recognition accuracy and feedback sensitivity
+c103M01N23 | Complex Technical Use: Complex technical use, downtime periods, and insufficient training caused a drop in motivation and disparities in operators' knowledge.
+c103M01N24 | Periods of Machine Downtime: The decrease in motivation and self-efficacy over time suggests that regular refresher sessions are necessary; however, it should be noted that our PharmaHelp® robot was little used during the six months post-training because of a breakdown
+c103M02N48 | Low number of questions (10): The low number of questions (10) used to survey their knowledge.
+c104M01N19 | Potential misinterpretation of specialized terminology: Voice-based delivery systems may misinterpret medication names or specialized terminology.
+c104M01N20 | Algorithmic biases and prompt design dependencies: Assessment outcomes may still be influenced by prompt design, model architecture, and algorithmic biases.
+c104M02N39 | ChatGPT not fully objective evaluator: ChatGPT should not be regarded as a fully objective evaluator. Assessment outcomes may still be influenced by prompt design, model architecture, and algorithmic biases.
+c106M01N25 | Positive Bias in Questionnaire: First, the applied questionnaire has a positive bias in its questions.
+c107M02N36 | Opacity of lung parenchyma: Due to the opacity of lung parenchyma, it is difficult to teach sublobar structures within the lungs.
+c107M02N37 | Lack of three-dimensionality in 2D images: 2D images and anatomical atlases lack three-dimensionality, making it harder to understand the spatial relationships.
+c107M02N39 | Lack of haptic feedback in 3DV: Table 1: 3DV group has no haptic feedback.
+c107M02N42 | Technical complexity of 3DP: ...technical complexity of 3DP are limiting factors.
+c107M02N43 | Lack of interactivity in 3DP model: Table 1: 3DP group has no magnification/reduction, no display/hide features.
+c108M02N38 | Inability to attribute gains solely to intervention: Prevented attributing knowledge gains to the developed intervention
+c109M01N10 | Lack of first-hand perception of symptoms: However, these approaches lack the first-hand perception of symptoms of disorders, hence hindering their effectiveness.
+c109M02N21 | Potential cyber-sickness: potential cyber-sickness"
+s002M02LI03,"Cost, Resource & Structural Limitations",Limitation,G,SIC 80 - Services (Health Services),20,"c101M01N20 | High cost of professional studio production: High-quality video production typically requires professional studios with substantial costs
+c102M01N13 | Scarcity of professional training resources: However, these resources are currently very scarce, which makes it difficult to popularize.
+c102M01N14 | High treatment cost: The traditional rehabilitation treatment often has the defects such as boring, high treatment cost.
+c102M02N41 | Scarcity of professional teachers: Relying on the oral teaching... requires a large number of professional teachers and scientific training system. However, these resources are currently very scarce
+c102M02N43 | Short training period (study limitation): The relatively limited sample size of subjects and the short training period are not yet sufficient to assess the sustained effect of the system in long-term intervention
+c103M02N50 | Time-consuming preparation (>100 hours): The time spent preparing and setting up the training sessions ... probable total of more than 100 hours.
+c104M02N29 | Limited time for traditional education: Traditional methods of patient education ... are constrained by limited time.
+c105M01N10 | Absence of a completion certificate: One participant reported the absence of a completion certificate with the free course as a barrier.
+c105M01N11 | Limited timeframe (4 weeks): Some participants mentioned the time required to complete the course (4 weeks) as a barrier.
+c105M02N30 | Lack of formal recognition (no certificate): One participant reported the absence of a completion certificate with the free course as a barrier
+c107M02N34 | Scarce cadaver resources: Cadaver resources are scarce.
+c107M02N35 | Complex preservation and handling of cadavers: ...preservation and handling are complex.
+c107M02N40 | High cost of 3DP: ...the cost of the 3DP model used is approximately 1500...
+c107M02N41 | Production time of 3DP: ...production time... are limiting factors.
+c107M02N44 | Convenience disadvantage of 3DP: The 3DV group excelled in convenience (P<0.001).
+c108M01N11 | Time constraints: Mobile learning offers a flexible alternative... overcoming barriers such as time constraints and financial burden.
+c108M01N12 | Financial burden: ...barriers to accessing lifelong learning, such as the need to balance family and professional life and the associated financial burden.
+c108M02N36 | Single intervention (COPD only): The study was limited only to one intervention related to COPD self‑management
+c108M02N41 | Workload: The increase in workload in health institutions are obstacles to nurses' continuing training
+c109M02N22 | One-off intervention: current study was a one-off intervention"
+s002M02OD03,"Targeted Motivation, Rewards & Extrinsic Incentives",Organizational Dependency,G,SIC 80 - Services (Health Services),1,"c105M02N25 | Free access to course: The fact that it's free, you know, I found extremely interesting"
+s002M02OD04,Intrinsic Identity & Cultural Knowledge-Sharing Values,Organizational Dependency,G,SIC 80 - Services (Health Services),1,c108M01N09 | Alignment with professional roles: The alignment of the MOOC with the participants professional roles... likely contributed to higher enrollment and completion rates.
+s002M02OD05,Operational Resource Allocation & Dedicated Timeline Provisions,Organizational Dependency,G,SIC 80 - Services (Health Services),6,"c101M01N16 | Institutionally subsidized faculty time: This trade-off favors AI enhancement when faculty time is institutionally subsidized
+c101M01N17 | Consumer-grade laptop hardware: reducing computational requirements to enable operation on consumer-grade laptop (Lenovo Legion 5 Pro with 6GB VRAM).
+c103M01N21 | Pairwise Operator Work Schedule Alignment: Training took place during the afternoon with teams of trainer/trainee constituted according to the work schedule of the unit.
+c103M02N36 | PhD thesis time availability: This was possible as the work was performed as part of a PhD thesis, with the doctoral student involved in 100% of the project.
+c104M02N21 | Dedicated research assistants: Patients listened to the voice-cloned education content through headphones or speakers under the guidance of research assistants.
+c104M02N24 | Staff training on AI system: System development, intervention standardization, and staff training were completed in December 2024 and January 2025."
+s002M02OD06,"Institutional Governance, Standards Compliance & Ethics Clearances",Organizational Dependency,G,SIC 80 - Services (Health Services),9,"c103M02N34 | Standardized training program: We decided to create a short, standardized, sustainable operator training program.
+c104M01N14 | Informed consent for voice cloning: The use of voice cloning technology was explicitly covered in the consent form, providing separate written authorization.
+c104M02N19 | Hospital's standardized education materials: The traditional education group received the hospital's current standardized patient education, including verbal education by medical staff and standardized written education materials.
+c104M02N22 | Ethics committee approval: The clinical trial protocol was reviewed and approved by the Ethics Committee of The First Hospital of Lanzhou University (approval number: LDYYLL-2025-805).
+c104M02N23 | Informed consent from participants: All participants received detailed verbal and written information regarding the study purpose, procedures, potential risks, and expected benefits and provided written informed consent prior to enrollment.
+c105M02N26 | Portuguese language availability: The recent translation of the PEAK e-learning course into Portuguese (PEAK-PT) has broadened its access to Portuguese-speaking clinicians
+c107M02N31 | Ethics committee approval: The study was approved by the Ethics Committee of Hebei University Affiliated Hospital (HDFYLL-KY-2024-134).
+c108M02N29 | Institutional continuous training programs: Certified and integrated into the in‑service training programs of health institutions
+c108M02N30 | Ethical approval and informed consent: Ethical approval was granted by the Ethics Committee…All participants received an informed consent form"
+s002M02OD07,Expert Participation Frameworks & Succession Structures,Organizational Dependency,G,SIC 80 - Services (Health Services),6,"c102M02N36 | Availability of professional teachers and scientific training system: Relying on the oral teaching... requires a large number of professional teachers and scientific training system. However, these resources are currently very scarce
+c103M02N33 | Adequate numbers of appropriately trained staff: As the number of preparations increases, difficulties maintaining adequate numbers of appropriately trained staff may appear.
+c104M02N20 | Trained medical staff availability: Verbal education was conducted by trained medical staff according to a unified education outline.
+c104M02N25 | Personalized content formulation by medical professionals: Medical professionals then formulated personalized education content based on standard education content and the patient's specific situation.
+c107M02N29 | Completion of basic medical courses: Inclusion criteria were completion of basic medical courses (such as Human Anatomy and Physiology)...
+c107M02N30 | Completion of clinical courses: ...and certain clinical courses (such as Internal Medicine and Surgery)..."
+s002M02TA01,Somatic Tacit Knowledge,Tacit Knowledge,G,SIC 80 - Services (Health Services),15,"c102M01N03 | Baduanjin physical coordination skill: Limb coordination disorder affects people's ability to perform daily activities... Baduanjin has auxiliary therapeutic effects on cardiorespiratory and musculoskeletal rehabilitation.
+c102M02N08 | Embodied cognition of correct movement execution: The TWJB system effectively enhances users' self-perception of movement accuracy and execution initiative through virtualized body synchronized feedback
+c103M01N05 | Hands-on Robot Management Competency: developing operators' understanding of the process and helping them acquiring the competencies to manage the robot.
+c103M01N06 | Dose-banding Preparation Skill: The team, thus, underwent a dose-banding exercise
+c103M01N07 | Individualized Preparation Skill: and an individualized preparation exercise
+c103M02N10 | Know-how to manage robot: The general goal was 'helping them acquiring the competencies to manage the robot'.
+c103M02N11 | Ability to reconstitute powder: Operators experienced the difference between reconstituting a powder and using liquid chemotherapy.
+c103M02N12 | Ability to use liquid chemotherapy: Operators experienced the difference between reconstituting a powder and using liquid chemotherapy.
+c103M02N14 | Spatial awareness of carousel and rack placement: The questionnaire asks: 'I can place my syringes anywhere on the carousel. True or False?' and similarly for vials/bags.
+c104M01N02a | Treatment adherence behaviors: Secondary outcomes included knowledge retention, education satisfaction, and treatment adherence.
+c105M01N06 | Hands-on contact: approaching the patient without the need for a direct [hands-on] contact with the physiotherapist
+c105M02N08 | Telehealth delivery skills: in relation to telehealth, it was what impacted me the most, because I had never had that experience, right?
+c106M01N07 | Mouse Skills: These sessions aimed to improve participants' mouse skills...precise mouse movements
+c106M01N08 | Keyboard Skills: This session aimed to enhance participants' keyboard skills
+c107M02N11 | Surgical skills for thoracoscopic sublobar resection: The study evaluates the educational efficacy of a 3DP lung cancer model in teaching thoracoscopic sublobar resection.
+c109M02N02 | First-hand perception of visual symptoms: first-hand perception of symptoms of disorders"
+s002M02TA02,Cognitive Tacit Knowledge,Tacit Knowledge,G,SIC 80 - Services (Health Services),21,"c101M01N06 | Knowledge acquisition: Primary outcomes were perceived educational clarity and knowledge acquisition assessed by a 40-item multiple-choice examination.
+c101M01N07 | Perceived educational clarity: Primary outcomes were perceived educational clarity (five-point Likert scale) and knowledge acquisition
+c101M02N06 | Confidence in understanding: Confidence in understanding (component of clarity scale) was significantly higher in AI-enhanced group (4.49 vs. 3.93).
+c101M02N07 | Visual comfort: Secondary outcome: visual comfort (mean 4.48 vs. 3.91; p<0.001).
+c101M02N08 | Perceived professionalism: Secondary outcome: perceived professionalism (mean 4.51 vs. 3.89; p<0.001).
+c102M02N10 | Self-perception of movement accuracy: Enhances users' self-perception of movement accuracy
+c103M01N08 | Self-efficacy Belief in Robot Use: Before, after the training, and at 6 months (6M), their robot knowledge was assessed on a 0-24-scale, motivation and self-efficacy in using it on 0-to-100 scales.
+c103M01N09 | Operator Motivation: Complex technical use, downtime periods, and insufficient training caused a drop in motivation
+c103M02N08 | Motivation to use robot: Motivation was assessed on a 0-to-100 scale before, after, and at 6 months.
+c104M01N02 | Disease knowledge and precautions: Verbal education included disease knowledge, treatment plans, precautions, and lifestyle guidance.
+c105M01N03 | Clinical confidence to prescribe physical exercise and health education: Participants reported that the course increased their safety and confidence to prescribe physical exercise and health education.
+c106M01N03 | Analogical Thinking towards Concepts: Older adults showed analogical thinking towards concepts like database and file.
+c106M01N04 | Digital Competence in Information and Data Literacy: acquisition of new digital competences in the dimensions of information and data literacy
+c106M01N06 | Digital Competence in Safety: competences in the dimensions of...safety; and maintaining one's health
+c106M01N09 | Spatial Orientation Ability: evaluating their spatial orientation ability.
+c107M01N03 | Understanding of vascular spatial relationships: The 3DP group demonstrated superiority in the ease of knowledge acquisition and understanding of vascular spatial relationships.
+c107M01N04 | Sub-lobectomy strategies: The multiple-choice questions addressed deeper understanding of safe margins, variant vascular anatomy, and sub-lobectomy strategies.
+c107M01N05 | Spatial cognition and comprehensive analytical skills: Highly realistic 3D models in more challenging clinical scenarios may help students develop a deeper spatial cognition.
+c107M02N10 | Spatial understanding of anatomical structures: The 3DP model significantly improved comprehension of complex anatomical relationships.
+c107M02N12 | Ability to identify lung segment range influenced by safety margin: Questionnaire assessed 'Identification of the lung segment range affected by the safety margin'.
+c107M02N13 | Ability to distinguish vessels/bronchi to resect or preserve: The model addressed teaching challenges associated with identifying which vessels and bronchi to resect or preserve during sublobar resection."
+s002M02TA03,Collective and Relational Tacit Knowledge,Tacit Knowledge,G,SIC 80 - Services (Health Services),4,"c101M02N09 | Willingness to recommend format: Willingness to recommend: 87.5% AI-enhanced vs. 63.3% standard.
+c105M02N09 | Knowledge transmission capability: the part with the health education was the most impressive for me
+c106M01N05 | Digital Competence in Communication and Collaboration: competences in the dimensions of...communication and collaboration
+c109M01N02 | Empathy towards visually impaired patients' daily challenges: Beyond knowledge acquisition, the AR intervention was found effective in cultivating a high level of empathy."
+s002M02TA04,Adaptive Tacit Knowledge,Tacit Knowledge,G,SIC 80 - Services (Health Services),5,"c102M02N09 | Real-time motion coordination skill: System captures and evaluates user performance in real time... helping users to focus their corrections
+c102M02N11 | Situational awareness during training: The user avatar captures the user's skeletal motion data... and mimics the user's movements in real time, which is displayed in the virtual environment
+c105M02N10 | Ability to translate knowledge to practice: my expectations during the training really helped gain more confidence in...
+c108M01N02 | Clinical decision-making: In module 13, each participant was able to practice clinical decision-making through four clinical scenarios.
+c108M02N09 | Complex situation management skills: The second study cycle facilitates…equips nurses with the ability to manage complex situations, such as empowering patients to self‑manage chronic conditions"
+s002M02TE01,Artificial Intelligence and Intelligent Computation,Digital Technology,G,SIC 80 - Services (Health Services),7,"c101M01N10 | FLUX.1-Fill: AI background replacement using FLUX.1-Fill (inpainting) and FLUX.1-dev (development) models
+c101M01N11 | FLUX.1-dev: AI background replacement using FLUX.1-Fill (inpainting) and FLUX.1-dev (development) models
+c101M01N13 | GGUF Q8 quantization: with models loaded using GGUF Q8 quantization reducing computational requirements
+c101M01N15 | Adobe Podcast's free web-based enhancement tool: with professional quality achieved through Adobe Podcast's free web-based enhancement tool.
+c104M01N11 | Voice cloning technology: Voice cloning technology uses deep learning algorithms to synthesize natural-sounding speech from limited voice samples.
+c104M01N12 | Resemble.ai: Resemble.ai voice cloning technology was used to generate the voice model.
+c104M01N13 | ChatGPT-4: The compliance rate was assessed using ChatGPT-4 as an automated evaluation tool to quantify semantic similarity.
+c104M02N16 | iFlytek automatic speech recognition: Phase 1 (verbatim-matching workflow) used iFlytek automatic speech recognition (Mandarin medical context; no manual correction)."
+s002M02TE02,Human–Computer Interaction and Immersive Technologies,Digital Technology,G,SIC 80 - Services (Health Services),23,"c101M01N12 | ComfyUI: AI enhancement used FLUX.1-Fill and FLUX.1-dev models via ComfyUI, an open-source workflow interface
+c101M01N14 | DaVinci Resolve: All video assembly occurred in DaVinci Resolve. This frame-based approach provided precise control
+c102M01N10 | Cascadeur software: All motion sequences are manually created as 3D keyframe animations using Cascadeur.
+c102M02N29 | Unity3D: Strong compatibility with Unity3D
+c102M02N33 | Final IK (inverse kinematics rig): The user avatar is animated using an IK rig (Final IK)
+c102M02N34 | RT-Voice SDK: RT-Voice SDK is used to vocalize joint-specific guidance, synchronized with visual cues at 60 fps and an 80 ms response latency
+c102M02N35 | Cascadeur: The animation sequences were produced using Cascadeur, a physics-based keyframe animation tool that supports inverse kinematics (IK), center-of-mass alignment, and trajectory prediction
+c103M01N19 | Framindmap Software: a mind map representing the training program's goals and the process for using the robot was created on Framindmap®.
+c104M02N17 | Headphones/speakers: Patients listened to the voice-cloned education content through headphones or speakers under the guidance of research assistants.
+c105M02N22 | Infographics: The reports were positive regarding the videos, infographics, texts, and exercise platform
+c105M02N23 | Videos: A technical team specialising in Brazilian Portuguese orthographically revised the material and dubbed the videos
+c106M01N17 | Digital Games: digital games can foster new opportunities to encourage active and healthy ageing
+c106M01N18 | Mouse: encouraging the use of ICT through the computer and its peripherals (i.e., mouse...)
+c106M01N19 | Keyboard: encouraging the use of ICT through the computer and its peripherals (i.e.,...keyboard)
+c107M02N22 | 3D visualization (3DV) software/model: The 3DV model, which included bronchi, pulmonary arteries, pulmonary veins, tumors, lung lobes, and segments, was reconstructed from CT scan images.
+c107M02N25 | 3-matic 15.0 software: ...followed by post-processing using 3-matic 15.0 software (Materialise, Belgium).
+c108M01N08 | Gamification features: The course completion rate was 93.45%, reflecting significant engagement attributed to gamification and clinically relevant content.
+c108M02N24 | Gamification: Significant engagement attributed to gamification and clinically relevant content
+c109M01N08 | Optical see-through (OST) display technology: The OST display technology allows users to see through the virtual images and maintain their vision of the real environment.
+c109M01N09 | Head-mounted display (HMD): A head-mounted display (HMD) is adopted, with each smartphone mounted on a commercially available AR headset.
+c109M02N08 | AR mobile application: AR mobile application
+c109M02N12 | Remote-control function: remote-control function of the application
+c109M02N13 | AR headset: commercially available AR headset"
+s002M02TE03,"Cyber-Physical Systems, IoT, and Smart Environments",Digital Technology,G,SIC 80 - Services (Health Services),2,"c107M02N23 | 3D printing (3DP) technology: 3D printing (3DP), also known as additive manufacturing, is a technique that creates 3D objects by layering materials.
+c107M02N27 | J501Pro 3D printer: ...data was sent to a J501Pro 3D printer (Zhuhai Sailner 3D Technology, China) to produce the transparent, hollow 3DP model."
+s002M02TE04,"Data, Information, and Knowledge Systems",Digital Technology,G,SIC 80 - Services (Health Services),7,"c103M01N18 | Learning Designer Online Software: Learning Designer®'s free online software was used to help build the training program.
+c103M02N32 | Online survey (ICT usage): A 2-minute survey (Appendix 3) was created to learn about operators' usage of technologies.
+c105M01N08 | FutureLearn platform: Currently, the training is offered for free or at a cost at the Future Learn platform.
+c105M02N21 | Asynchronous learning platform: The PEAK programme is an online course with asynchronous learning aiming to train physical therapists
+c105M02N24 | Exercise platform: The reports were positive regarding the videos, infographics, texts, and exercise platform
+c107M02N24 | Mimics 23.0 software: Lung CT scan images were imported into Mimics 23.0 software (Materialise, Belgium) in DICOM format for initial 3D reconstruction.
+c107M02N26 | Voxel Dance Additive 3.0 software: The generated STL file ... was then imported into Voxel Dance Additive 3.0 preprocessing software (Voxel Dance, China) for model inspection and repair."
+s002M02TE05,"Imaging, Sensing, and Perception Technologies",Digital Technology,G,SIC 80 - Services (Health Services),2,"c102M01N09 | Kinect V2 sensor: The system employs the Kinect V2... selected due to its stable 25-joint tracking at 30 Hz.
+c102M02N31 | Skeletal tracking (25 joints): Microsoft Kinect V2 sensor... tracks 25 skeletal joints at a frame rate of 30Hz"
+s002M02TE07,"Mobile, Social, and Communication Technologies",Digital Technology,G,SIC 80 - Services (Health Services),5,"c103M02N31 | DailyMotion video: Participants watched a video about the robot, at least 1 week before the training program. (Link: Hôpitaux Universitaires de Genève. Préparations automatisées de chimiothérapies, https://www.dailymotion.com/video/x2ys7u8)
+c105M02N20 | Video conferencing: Individual semi-structured interviews were conducted via video conference (Google Meets)
+c108M02N22 | m-learning: m‑learning has emerged as a new opportunity to promote nurses' access to digital education
+c108M02N26 | Mobile devices: Mobile devices, such as smartphones and mobile internet networks
+c109M02N11 | Smartphone: smartphones"
+s002M02TE08,"Rule-Based, Decision, and Expert Systems",Digital Technology,G,SIC 80 - Services (Health Services),2,"c102M02N30 | Dynamic Time Warping (DTW) algorithm: The motion recognition module applies Dynamic Time Warping (DTW) to match the real-time motion sequence P with predefined reference templates Q
+c102M02N32 | Double exponential smoothing filter: A double exponential smoothing filter is applied to each joint trajectory to mitigate sensor noise and reduce temporal jitter"
+s002M02TP01,Interactive Virtual Simulators & Gamified Learning Workshops,Technology-enable Practice,G,SIC 80 - Services (Health Services),22,"c101M01N09 | Locally deployed AI-enhanced video-based learning: To evaluate the educational impact and cost efficiency of locally deployed AI-enhanced lecture videos compared with standard faculty-recorded videos
+c102M01N08 | The Wonderful Journey Based on Baduanjin (TWJB) system: This study presents The Wonderful Journey Based on Baduanjin (TWJB), a gamified virtual rehabilitation system that integrates somatosensory interaction.
+c102M02N22 | TWJB system (gamified virtual rehabilitation system): The Wonderful Journey Based on Budaunjin (TWJB), a gamified virtual rehabilitation system that integrates somatosensory interaction with the traditional Chinese exercise Budaunjin
+c102M02N23 | Real-time motion capture and feedback module: The system captures and evaluates user performance in real time, offering visual comparison with Liu Miaozhen's demonstration and auditory feedback to ensure movement accuracy
+c102M02N24 | Gamified knowledge cards collection: Each time the user completes the correct movement, a virtual card will be collected, and these cards not only provide relevant knowledge, but also motivate the user to continue
+c102M02N25 | Knowledge quiz game: A knowledge quiz session allows users to answer Baduanjin-related questions to test and reinforce their understanding. Correct answers are rewarded with extra points and virtual prizes
+c103M01N14 | Game-based Theoretical Training Sessions: We created a short, playful, standardized, gamed-based training program to address this, and evaluated its impact.
+c103M01N15 | Practical Training via Adapted Peyton Approach: Using an adapted version of the Peyton approach, the trainer became the trainee, and the trainee became the trainer
+c103M02N23 | Card ordering game: For 'Knowing the manufacturing steps,' cards with the steps were placed in the correct order.
+c103M02N24 | Pokémon-like card game: Fake Pokémon like cards presenting a compound and its specificities were used. One team picked a card and read out the information; the other team guessed whether the compound could be used with the robot.
+c103M02N25 | Who Wants to Be a Millionaire? game: We created a game inspired by the TV show 'Who Wants to Be a Millionaire?' incorporating six problematic real-life situations. Each problem had four potential answers.
+c104M01N08 | AI-assisted education using physician voice cloning: Participants were randomly assigned to receive Al-assisted education using physician voice cloning.
+c104M02N10 | Physician voice cloning education practice: The physician voice cloning education group (intervention group 1) received patient education through cloning of the attending physician's voice.
+c105M01N07 | PEAK-PT e-learning course: The Portuguese adaptation (PEAK-PT) has not been evaluated yet. This study explored the facilitators and barriers reported by physical therapists after completing the PEAK-PT e-learning course.
+c106M01N15 | 10 Exploratory Digital Game-Related Sessions: Through 10 exploratory digital gaming-related sessions...participants were introduced to game-related strategies
+c106M01N16 | miOne Online Community: therefore, participants had to access/join the miOne online community
+c107M01N10 | 3D visualization digital model interactive training: The 3DV group learned with a 3D visualization model, interacting with the digital model on a computer.
+c107M01N11 | 3D printing physical model interactive training: The 3DP group used a 3DP model featuring transparent, hollow sublobar boundaries and safe margin, with no lung parenchyma.
+c107M02N20 | 3DV model teaching: The 3DV group learned with a 3D visualization model, interacting with the digital model on a computer.
+c108M01N06 | Ecare-COPD MOOC: This study included a training program available in MOOC format, called self-management of COPD (Ecare-COPD).
+c108M02N19 | Virtual clinical simulation (Body Interact module): Module 13…each participant was able to practice clinical decision‑making through four clinical scenarios using the Body Interact virtual patient simulator
+c109M01N06 | AR-based health education workshop: This study aims to assess the effectiveness of educating the elderly about common age-related eye disorders through a novel AR-based health education workshop.
+c109M01N07 | AR mobile application: The AR mobile application, which was developed by the authors, adopts the optical see-through (OST) display technology."
+s002M02TP02,"Automated Assessment, Validation & Digital Preprocessing Practices",Technology-enable Practice,G,SIC 80 - Services (Health Services),9,"c101M02N16 | AI-enhanced video production workflow: AI processing performed on still frames: masking, inpainting using FLUX models, frame assembly in DaVinci Resolve.
+c101M02N17 | Standard video editing (DaVinci Resolve): Basic editing including trimming silences, removing pauses, color adjustment, and overlay of illustrations using DaVinci Resolve.
+c103M01N16 | Preparatory Work and Digital Mind Map Introduction: For the introduction, a mind map representing the training program's goals and the process for using the robot was created on Framindmap®.
+c103M02N27 | Preparatory work (video + procedures reading): Participants read the institution's internal procedures about working with the robot and watched a video about the robot, at least 1 week before the training program.
+c103M02N28 | Mind map introduction (Framindmap): A mind map representing the training program's goals and the process for using the robot was created on Framindmap.
+c104M01N10 | ChatGPT-based automated evaluation: The primary outcome was education content compliance, evaluated using ChatGPT-4 with validated prompts.
+c104M02N13 | iFlytek ASR transcription practice (validation): Phase 1 (verbatim-matching workflow) used iFlytek automatic speech recognition (Mandarin medical context; no manual correction) to transcribe each participant's recitation.
+c105M02N18 | Semi-structured interviews: Individual semi-structured interviews were conducted via video conference (Google Meets)
+c108M02N20 | Knowledge pre- and post-test assessment: Knowledge assessment was performed through an initial knowledge assessment…at the end of each module"
+s002M02TR01,Job Shadowing,Traditional Human-central Practice,G,SIC 80 - Services (Health Services),2,"c107M01N08 | Traditional clinical teaching relying on cadaver dissection: Traditional clinical teaching has typically relied on cadaver dissection or 2D imaging.
+c107M02N17 | Cadaver dissection: Traditional clinical teaching has typically relied on cadaver dissection."
+s002M02TR03,Deliberate Practice,Traditional Human-central Practice,G,SIC 80 - Services (Health Services),10,"c101M02N14 | Green screen chroma keying: Green screen requires even lighting, six-foot separation, wardrobe restrictions, and extensive post-production color matching.
+c101M02N15 | Textbook-based learning: Secondary outcome: perceived improvement compared with textbook-based learning (84.2% AI-enhanced vs. 59.2% standard).
+c102M01N07 | Traditional text and graphic training methods: The comparison system used non-interactive instructional materials consisting of static images and text.
+c102M02N20 | Static UI prompts (comparison system): The comparison system used non-interactive instructional materials consisting of static images and text
+c104M02N09 | Standardized written materials self-study: Written education materials were standardized education manuals compiled by the hospital that patients could take back to the ward or home to read.
+c105M02N16 | Self-study from English materials: both in Portuguese, as I was looking for something in Portuguese, even though my English is good
+c107M01N09 | Traditional clinical teaching relying on 2D imaging: Traditional clinical teaching has typically relied on cadaver dissection or 2D imaging.
+c107M02N18 | 2D imaging study: Traditional clinical teaching has typically relied on 2D imaging.
+c107M02N19 | Anatomical atlases study: Traditional methods include anatomical atlases.
+c109M01N05 | Pamphlets: The mainstream pedagogical methods involve utilizing pamphlets and governmental promotions to raise general awareness."
+s002M02TR05,Knowledge Harvesting Workshops,Traditional Human-central Practice,G,SIC 80 - Services (Health Services),1,"c101M02N13 | Professional studio video production: Traditional studio production includes rental ($500-2,000), equipment ($1,000-5,000), and videographer services ($500-1,500)."
+s002M02TR06,Critical Incident Technique,Traditional Human-central Practice,G,SIC 80 - Services (Health Services),1,"c106M01N12 | Field Notes: Field notes were used to collect data, without requiring input from participants"
+s002M02TR07,Mentoring,Traditional Human-central Practice,G,SIC 80 - Services (Health Services),6,"c101M01N08 | Traditional surgical residency training: Pediatric surgery training is challenged by declining clinical exposure and limited access to high-quality educational resources.
+c102M02N17 | Oral teaching: Current dissemination forms include: oral teaching, books and literature, audio-visual video, art performance
+c103M01N13 | Conventional Format Training: These sessions were conducted following a conventional format consisting of trainees reading the recommended procedures, being shown the processes, and then repeating them themselves.
+c104M01N07 | Verbal education by medical staff: Verbal education was conducted by trained medical staff according to a unified education outline.
+c108M01N05 | Face-to-face training: MOOCs have been perceived as an innovative method enabling useful and effective online learning compared to face-to-face training.
+c108M02N17 | Face-to-face continuing education: Traditional teaching models [are] often complemented by e‑learning…in‑class barriers"
+s002M02TR08,Storytelling,Traditional Human-central Practice,G,SIC 80 - Services (Health Services),3,"c102M02N19 | Audio-visual video watching: Books and literature, audio-visual video
+c102M02N21 | Pre-recorded video demonstrations: Video-based instruction could provide more dynamic guidance, but it was excluded from the control group because it lacks real-time feedback and interactivity
+c109M02N06 | Governmental promotions: governmental promotions"
+s002M02TR10,Communities of Practice,Traditional Human-central Practice,G,SIC 80 - Services (Health Services),1,"c106M01N14 | Peer-to-peer Support: with the help of their peers, the ease of use of the mouse increased exponentially-cf. Figure 2."
+s003M02ED01,Macro-Regulatory & Jurisdictional Frameworks,Environmental Dependency,G,SIC 20-39 - Manufacturing,5,"c204M01N18 | Sanctions: The case study focuses on localizing a six-speed automatic transmission to reduce import dependency amid sanctions.
+c204M01N19 | Confidential OEM Contract: Grounded in a confidential OEM contract, the study offers a replicable framework.
+c206M01N14 | Brazilian legislation requirement: Specifically, training in regulatory norms, a legal requirement in Brazil
+c206M02N23 | Regulatory requirement for NR-35 training: Training in regulatory norms is a legal requirement in Brazil.
+c211M01N13 | Regulatory pressures: External factors as market competition, regulatory pressures and sustainability mandate influences adoption timings."
+s003M02ED02,Market Dynamics & Industry Baselines,Environmental Dependency,G,SIC 20-39 - Manufacturing,3,"c203M01N18 | Environmental uncertainty: Finally, given that businesses operate in increasingly uncertain environments, our findings confirm that SCKDP play a crucial role in enabling firms to develop CE capabilities through DT.
+c203M01N19 | Heterogeneity of supply chain members: This difficulty is often rooted in the heterogeneity of supply chain members, including differences in bargaining power, firm size, technological maturity and cultural factors
+c209M01N24 | Competitive markets: Exposure of ideas on public platforms is risky, particularly in competitive markets."
+s003M02ED03,Physical Site Conditions & Spatial Configuration,Environmental Dependency,G,SIC 20-39 - Manufacturing,5,"c207M01N17 | Warm Production Hall Environment: Further observations were that the production hall is very warm
+c207M01N18 | Dusty Environment: there is a lot of dust
+c207M01N19 | High Ambient Noise Environment: and there is a lot of ambient noise.
+c208M01N19 | Enclosing environment: The perceptual knowledge originates from the enclosing environment. It commonly includes all the information retrieved from sensors
+c208M02N13 | Real-world environment with physical objects: The robot explores the environment and analyzes the objects he finds on his way."
+s003M02EX01,Structured Technical Artifacts & Code,Explicit Knowledge,G,SIC 20-39 - Manufacturing,19,"c201M01N03 | Standards-compliant BPMN 2.0 XML: A xml block containing the complete, standards-compliant BPMN 2.0 XML for the process diagram.
+c201M01N04 | Overlay objects array JSON: A json block containing an array of overlay objects for adding comments to the diagram.
+c201M02N38 | BPMN 2.0 schema: Prompt-engineering techniques ensure the LLM's output conforms to the BPMN 2.0 schema
+c203M01N04 | CE metrics: Embed CE metrics into performance dashboards to align operational goals with sustainability outcomes for fostering information dissemination activities.
+c204M01N06 | Knowledge Investment (KI) Metric: KI captures the level of innovation intensity and is measured as capitalized R&D expenditures.
+c204M01N07 | Absorptive Capacity (AC) Function: AC reflects the efficiency of organizational learning and is modeled as an evolving function.
+c204M01N08 | Coordination Cost (CC) Index: CC captures transactional and organizational frictions that diminish distributable value.
+c204M01N09 | Knowledge Level (KL) Index: Knowledge level was constructed as a weighted composite index normalized to [0, 1].
+c204M01N10 | Knowledge Complementarity (KC) Threshold: Synergy benefits dominate up to a certain KC level, after which coordination inefficiencies outweigh shared knowledge advantages.
+c205M01N01 | Multi-source heterogeneous quality data: The data layer includes the integration of multi-source heterogeneous data such as text data, table data and image data
+c205M01N02 | Aerospace quality knowledge subset (QS1): obtain the knowledge subset (QS1) related to user needs. Knowledge subsets provide basic data for subsequent personalized recommendations.
+c207M01N05 | 3D CAD Model: The company already used a CAD model for the product that is being developed; this CAD model is a 3D model that can be important in unity to visualize the product
+c208M01N01 | General Knowledge Base (GKB): One of the key-elements of the framework is the General Knowledge Base, alternatively named GKB. It plays a central role since the other modules are built upon it
+c208M01N02 | Local Knowledge Base (LKB): Each artificial system is provided with its own local knowledge base (LKB), which keeps the reference with the general knowledge base, but it is free to evolve on its own
+c208M01N03 | WordNet: with general concepts and multimedia representations (in our case WordNet and ImageNet).
+c208M01N04 | ImageNet: Besides, visual features extracted from images contained in ImageNet have been imported in the General Knowledge Base.
+c208M01N05 | Ontologies: Another common approach to knowledge acquisition in intelligent systems relies on semantics-based techniques, such as production rules and ontologies.
+c208M02N04 | Semantic concepts (WordNet synsets): WordNet is a dictionary containing lexical-semantic connections between abstract concepts. The fundamental unit is a synset, i.e., a set of terms having the same meaning.
+c210M02N03 | Knowledge graph of aviation equipment quality issues: integrate quality issue triplets and construct a knowledge graph of aviation equipment quality issues."
+s003M02EX02,Documented Process Narratives & Media,Explicit Knowledge,G,SIC 20-39 - Manufacturing,37,"c201M01N02 | Informal maintenance process narrative: The user initiated the conversation by describing the entire reactive maintenance process in a single, detailed message.
+c201M02N02 | Paper purchase request form: The technician fills out a paper purchase request form and leaves it on the procurement manager's desk
+c201M02N05 | AS-IS BPMN diagram: The system processed this text and generated the initial 'AS-IS' BPMN diagram
+c201M02N39 | Natural language process description: The user initiated the conversation by describing the entire reactive maintenance process in a single, detailed message
+c202M01N07 | Book manual: the paper group utilized a book manual as an assistance tool.
+c202M01N08 | Identical 10 multiple-choice questions knowledge test: each test question had 10 multiple-choice questions worth a total of 10 points
+c202M02N01 | IoT circuit assembly knowledge: The knowledge test encompassed the topics IoT. Each test question had 10 multiple-choice questions worth a total of 10 points.
+c202M02N03 | MAR application instructions: The MAR application visualizes IoT circuit assembly steps, provides 3D models of circuit components, and enables user interaction.
+c203M01N03 | Sustainability performance indicators: Building interfirm platforms that enable data interoperability, common standards and real-time sharing of sustainability performance indicators.
+c205M02N02 | Technical Standard: The system pushes 'quality standards' and 'technical specifications' to users.
+c205M02N03 | Operation Guide: System automatically pushes 'related operation guides' based on task rules.
+c205M02N04 | Experimental Data Reference: System pushes 'corresponding experimental data reference' when a measurement parameter is missing.
+c205M02N05 | Statistics of Failure Cases: System pushes 'statistics of similar failure cases' to supplement incomplete data.
+c205M02N08 | Keyword Extraction Result: Keyword extraction identifies 'representative and general words' from domain texts.
+c205M02N09 | Summary Statistic: Summary statistics 'identify representative themes and core content' from literature.
+c206M01N01 | Regulatory standards (NR-35): Training in regulatory standards using immersive virtualization aiming at improving student knowledge retention
+c206M01N02 | National standards, dissertations, and articles: Theoretical Reference: use of literature through research on similar methods already applied in immersive training
+c207M01N03 | 2D Construction Drawings: reading and interpreting construction drawings, in which a 3D object is displayed in a 2D image.
+c207M01N04 | Digital Step-by-Step Instructions: The instructions are step-by-step descriptions of the work that needs to be done.
+c207M02N05 | Written instructions (transcribed): Step‑by‑step text generated from expert narration via speech recognition.
+c209M01N01 | Market knowledge: Firms engage external inputs to inform early-stage decision-making and identify market opportunities.
+c209M01N02 | Likes/Dislikes/Preferences: Social media helps identify unmet needs and uncover user preferences such as likes and dislikes.
+c209M01N03 | New ideas: Firms institutionalise mechanisms to capture ideas through internal platforms and external sources.
+c209M01N04 | Product concepts: Submissions ranging from product concepts to design are reviewed internally.
+c209M01N05 | Codified disclosure protocols: Secondary sources emphasised codified disclosure protocols and internal governance mechanisms.
+c209M02N01 | Idea submissions: Submissions ranging from product concepts to design and packaging suggestions are systematically collected
+c209M02N02 | Customer feedback: reviews, comments, feedback, and discussions on social media about our product
+c209M02N03 | User-generated content: the creation and exchange of user-generated content (UGC)
+c209M02N05 | Design suggestions: design and packaging suggestions
+c209M02N06 | Feature refinements: tweaks ... camera resolution, screen refresh rates
+c209M02N07 | Breakthrough ideas: breakthrough ideas
+c210M01N01 | Aviation equipment quality case studies: Both the military and industrial departments have carried out quality problem collection and analysis work and compiled a set of quality case studies.
+c210M01N02 | Quality problem zeroing report: Organize the quality problem zeroing report of aviation equipment and form a set of aviation equipment quality case studies as data input
+c210M01N03 | Technical closure reports: Using quality issue technical closure reports and management closure reports as inputs, extract information such as problem occurrence phenomena...
+c210M01N04 | Management closure reports: Using quality issue technical closure reports and management closure reports as inputs,
+c210M02N01 | Quality problem case set: Both the military and industrial departments have carried out quality problem collection and analysis work and compiled a set of quality case studies.
+c211M01N05 | Circular economy mandates: setting up the guidelines for organizations to prepare for extended producer responsibility, following carbon reducing norms and circular economy mandates.
+c211M02N01 | past decisions: knowledge warehouse helps to assess past decisions, identify lacunas"
+s003M02KH01,Domain Experts & Operational Practitioners,Knowledge Holder,G,SIC 20-39 - Manufacturing,36,"c201M01N07 | Assembly line operator: The process begins when an operator verbally reports a machine fault to a supervisor.
+c201M01N08 | Maintenance supervisor: He finds the maintenance supervisor and verbally explains the problem.
+c201M01N09 | Technician: The supervisor grabs the nearest available technician... and sends them to investigate.
+c201M01N10 | Procurement manager: The technician fills out a paper purchase request form and leaves it on the procurement manager's desk.
+c202M01N04 | Instructors: Instructors demonstrated how to assembly the IoT circuit
+c203M01N05 | CEOs: The research team then emailed invitations to 495 qualified managers (e.g. CEOs, operations managers)
+c203M01N06 | Operations managers: The research team then emailed invitations to 495 qualified managers (e.g. CEOs, operations managers)
+c203M01N07 | Supply chain managers: allowing only respondents from manufacturing firms based in France who held managerial positions (e.g. CEOs, supply chain managers)
+c203M01N08 | Supply chain partners: The CE business model implementation demands changes in processes, an intensive flow of information and materials among different supply chain tiers and different ways of collaborating with suppliers and consumers.
+c203M02N07 | Firms: The unit of analysis is the firm; 'firm as the unit of analysis' (p.8)
+c203M02N09 | Managers (CEOs, operations managers): 'upper and middle managers working at firms' (p.8), 'CEOs, operations managers' (p.8)
+c204M01N04 | Mega Motor: The model is empirically validated using data from Mega Motor and domestic suppliers.
+c205M01N06 | Engineers: help engineers quickly acquire relevant knowledge in complex situations
+c205M01N07 | Experts: The expert competence model provides in-depth support for a specific task or problem
+c205M02N12 | Expert: The 'expert ability model' evaluates 'expert's comprehensive competence level and domain knowledge ability'.
+c206M01N05 | Instructor: technical knowledge of regulatory standards on the part of the instructor is essential
+c206M01N06 | Production sectors collaborators: Employees from the production and maintenance sectors participated in immersive interactions
+c206M01N07 | Maintenance sectors collaborators: The environment was chosen by the company because it is most used by the operational team for process maneuvers, with the greatest need for skilled labor
+c206M02N08 | Production sector employees: Employees from the production sectors participated in immersive interactions.
+c206M02N09 | Maintenance sector employees: Employees from the maintenance sectors participated in immersive interactions.
+c207M01N06 | Expert: a follow-up session is held with at least one respondent from the company who has a lot of expertise in the previously chosen process, usually an experienced employee.
+c208M01N07 | Humanoid robot Pepper: The platform used to test our work is the humanoid robot Pepper. It has 20 degrees of freedom. It is designed to be fully interactive
+c209M01N08 | Product Innovation Managers: Data comprise 47 semi-structured interviews with innovation managers.
+c209M01N09 | Product Research Specialists: Specialists involved in early product research activities were interviewed.
+c209M01N10 | Product Insights Developers: Managers responsible for consumer and market insights participated in the study.
+c209M01N11 | R&D experts: External ideas submitted through platforms are evaluated by our R&D experts.
+c209M01N16 | Industry analysts: Analysts review ideas from different angles.
+c209M02N11 | R&D managers: senior R&D managers with approximately 20 years of experience
+c209M02N15 | Innovation Managers: After our experts have reviewed... all subsequent interactions... handled internally
+c209M02N17 | External innovators: We engage with innovators... through our internal social media platforms
+c209M02N18 | Tech suppliers: We engage with... tech suppliers
+c209M02N19 | Product designers: We engage with... product designers
+c210M01N06 | Frontline designers: resulting in difficulties in timely feedback of knowledge to the development end and inability for frontline designers to obtain it in a timely manner.
+c210M02N04 | Military and industrial departments: Both the military and industrial departments have carried out quality problem collection and analysis work and compiled a set of quality case studies.
+c210M02N05 | Aviation equipment designers: frontline designers cannot obtain it in a timely manner.
+c211M01N01 | Supply chain professionals: The research conducted in-depth interviews of 40 respondents. All the experts had relevant qualifications and vast experience in supply chain domain.
+c211M02N07 | expert: All the experts had relevant qualifications and vast experience in supply chain domain"
+s003M02KH02,Users & Software Evaluators,Knowledge Holder,G,SIC 20-39 - Manufacturing,12,"c201M02N13 | User (domain expert): The user initiated the conversation by describing the entire reactive maintenance process
+c202M01N01 | Degree students: They were Degree students (36 participants)
+c202M01N03 | PhD students: and PhD (two participants).
+c202M02N07 | Participants: 40 participants, including 22 females 18 males, consisting of Degree students (36), Master (2), and PhD (2).
+c202M02N08 | MAR group participants: 20 participants in the MAR group (10 male, 10 female).
+c202M02N09 | Paper group participants: 20 participants in the paper group (8 male, 12 female).
+c205M02N11 | User: System analyzes 'user's operation records and historical behavior data' to build portraits.
+c206M02N10 | Administrative sector employees: Some people in the administrative and management sector were also trained.
+c207M02N07 | Newer employees: Less experienced workers who need to acquire knowledge.
+c208M01N08 | Human user: Robots need to be autonomous enough to accomplish tasks cooperatively with human users, who may not have a-priori technical skills.
+c211M01N17 | Students: The study also provides implications for academicians which will help them in preparing the students for upcoming technological trends
+c211M02N08 | employee: Using immersive virtual environment, metaverse helps to ignite sparks among employees to upgrade their knowledge"
+s003M02LI01,"Human, Cognitive & Knowledge Retention Limitations",Limitation,G,SIC 20-39 - Manufacturing,20,"c201M01N19 | Difficulty of articulation: Tacit knowledge the unwritten, experience-based insights people carry in their heads is notoriously difficult to articulate.
+c201M01N20 | Loss of critical know-how upon staff departure: When veteran staff retire or switch jobs, this undocumented expertise departs with them, risking operational disruption.
+c201M02N35 | Reliance on user to describe process upfront: The current workflow requires the user to describe the process in detail upfront. A more advanced, agentic version ... could build the model through a more natural, back-and-forth conversation
+c201M02N37 | Polanyi's tacit knowledge articulation difficulty: Tacit knowledge—the unwritten, experience-based insights people carry in their heads—is notoriously difficult to articulate, as Polanyi famously noted
+c202M01N20 | Cognitive overload due to extraneous elements: In learning environments, extraneous elements often cause cognitive overload
+c202M01N24 | Repeated use of shuffled questions potential bias: validity of the 10-question knowledge test is acknowledged as a limitation, particularly due to repeated use of shuffled questions.
+c202M02N18 | Lack of spatial visualization: Paper group participants commented ... no clear position indicator on the physical IoT circuit component, unlike the MAR method. Identifying appropriate hole positions ... requires significant cognitive effort.
+c202M02N19 | Attention switching cost: The paper approach required participants to switch their attention between the task at hand and reading instructions.
+c205M02N42 | Gap between User Expression and Standard Terms: Word similarity recall 'can effectively bridge the gap between user expressions and standard terms in the knowledge base'.
+c206M01N15 | Dispersion and distraction (cell phone use and conversations): The use of cell phones, messages, conversations, movements, among other factors, certainly affect the student's concentration
+c206M01N16 | Risk of training accidents (level drop): Exposing the student at a certain time can already be considered a risk factor,
+c206M01N18 | Low knowledge retention: aiming at improving student knowledge retention compared to traditional online models
+c207M01N20 | Underestimation of Expertise: However, experts tend to underestimate their own expertise, which can lead them to overlook sharing crucial information when giving their instructions
+c207M01N22 | Task Disruption Errors: A cognitive complexity that is also mentioned is switching between tasks, and in particular returning to the process after it has been disrupted. Both companies A and C mentioned that this sometimes leads to errors in the product.
+c207M02N19 | Cognitive load (working memory limits): Limited capacity of working memory; instruction should minimise mental effort.
+c207M02N20 | Difficulty interpreting 2D drawings: Mental rotation required to understand 3D objects from 2D images, leading to errors.
+c210M02N20 | Insufficient knowledge sharing: insufficient knowledge sharing
+c211M01N16 | Lack of knowledge: Similarly, Tura et al. (2019) underlined lack of knowledge as one of the barrier in implementing circular economy practices
+c211M02N24 | lack of knowledge/experience/skills: lack of knowledge, experience and skills ... hampers the effective implementation of CSCM
+c211M02N27 | response bias: self-reported questionnaire, which includes individuals' perceptions and experiences, are susceptible to response or social desirability biasness"
+s003M02LI02,"Technical, System & Data Limitations",Limitation,G,SIC 20-39 - Manufacturing,34,"c201M01N23 | Absence of structured data capture for analysis: Furthermore, the absence of data capture prevents valuable analysis of machine reliability and failure patterns.
+c201M01N24 | Significant system latency from verbose XML: For the complex maintenance scenario, the total time to generate... was over 12 minutes... delay is largely attributable to the verbosity of the BPMN XML format.
+c201M01N25 | Inconsistent or malformed XML generation: experiments showed that while cheaper, Gemini Flash often produced incorrectly formatted XML that failed to render.
+c201M02N31 | High latency due to verbose BPMN XML generation: The total time ... was over 12 minutes ... generation took up to 10 minutes for a single, complex output
+c201M02N32 | Non-deterministic LLM outputs: A core characteristic of LLMs is that their output is inherently stochastic, not deterministic. The same input prompt can produce slightly different results
+c201M02N36 | No formal evaluation of TO-BE model quality: The current study lacks a formal evaluation of its quality. Future work should involve subjecting the AI-suggested process improvements to review by lean manufacturing experts
+c202M01N19 | Lack of clear position indicator on physical component: since there was no clear position indicator on the physical IoT circuit component, unlike the MAR method.
+c202M01N21 | Jittery visualization of holes on board: MAR still has jittery imagery of holes on board after several pins are connected
+c202M01N23 | Slight delays in animation after button click: such as slight delays in the animation after each button click.
+c202M02N20 | Jittery visualization: Participants also complain about the jittery visualization that affects the 3D model alignment with the breadboard, which impacts their judgment about the component assemble position.
+c202M02N21 | Inability to detect assembly errors: Participants also mentioned that 'we were unable to realize our mistakes during the assembly task, which led us to be unsuccessful in building the circuit in which the LED lamp was not lit up.'
+c203M02N16 | Information dissemination non‑mediation: 'no significant indirect relationship through information dissemination activities' (p.12)
+c204M01N22 | Computational Overhead: The implementation of the proposed scheduling and coordination mechanisms entails energy consumption and computational overhead.
+c205M02N37 | Incomplete Data: Users face 'incomplete data, missing measurement parameters or incomplete historical records'.
+c205M02N38 | Missing Measurement Parameters: Explicitly listed as a problem users face.
+c205M02N39 | Incomplete Historical Records: Explicitly listed as a problem.
+c205M02N40 | Data Blank: Method 'identifies the data blank or incomplete information area'.
+c205M02N41 | Information Blind Area: Caused by incomplete data, leading to 'judgment errors or delayed decision‑making'.
+c206M01N17 | Sensation of vertigo: Another 35% reported that they felt a certain type of vertigo, in different degrees
+c207M01N23 | Lack of Automated Performance Feedback: the employee felt insecure due to the lack of feedback on the performance, resulting in the need of expert guidance.
+c207M01N24 | Heavy Computer Unit Discomfort: However, the Magic Leap was described as uncomfortable, because the computer unit attached to it was experienced as heavy.
+c207M01N25 | Small Text Size: As for the text, it was mentioned that it is small and difficult to read.
+c207M01N26 | Static Spot Projection Constraint: Now the instructions are projected on a static spot, which means the employee has to look at the specific spot to see the instructions.
+c207M02N21 | AR glasses uncomfortable (heavy): Physical discomfort from the weight of the Magic Leap 2 headset.
+c208M01N20 | Monolithic view of knowledge / rigidity: One of the major concerns regarding ontologies is that they reflect a fundamentally monolithic view of knowledge [30], i.e., they are too rigid and cannot easily manage exceptions
+c208M01N21 | Centralized knowledge base query degradation: Secondly, having a single centralized knowledge base would adversely affect its performance, when querying and retrieving information when the size of knowledge increases significantly.
+c208M01N22 | Limited robot hardware capacity: Indeed, current humanoid robots come with very limited hardware compared to the software requirements of sophisticated machine learning algorithms.
+c208M01N23 | Inaccurate or low-quality onboard sensors: In addition, the sensors on board mainstream platforms are often inaccurate and/or not of high quality.
+c208M02N14 | Fixed size and flatness of traditional SOM: Given their unsupervised nature, self-organizing maps provide... strong limitations due to the intrinsic constraints related to the fixed size of the map and the flatness of the structure.
+c208M02N15 | Hardware constraints of humanoid robots: Current humanoid robots come with very limited hardware compared to the software requirements of sophisticated machine learning algorithms.
+c209M01N26 | Unstructured external data data-validity concerns: External social media role in early ideation is limited by confidentiality and data-validity concerns.
+c209M02N35 | Data quality concerns: concerns regarding confidentiality, intellectual property, and data quality
+c210M01N17 | Inconvenient information retrieval: making it difficult to accurately locate key information when searching for related faults, which makes it difficult to retrieve relevant information
+c211M01N15 | Data governance challenges: metaverse applications helps in acknowledgement of the risks of intellectual property leakage or data governance challenges"
+s003M02LI03,"Cost, Resource & Structural Limitations",Limitation,G,SIC 20-39 - Manufacturing,14,"c201M01N22 | Complete lack of operational visibility: The lack of a formalized, digitally-tracked system leads to poor visibility for production managers.
+c201M02N27 | Inefficiency of manual communication and paper-based steps: The existing workflow is almost entirely reactive and relies on informal, manual communication ... a series of inefficient steps
+c203M02N14 | Lack of direct DT‑CE link: H1 rejected: 'no association is found with CE capabilities (0.154; p > 0.1)' (p.12)
+c203M02N15 | Interorganisational boundaries: 'interorganizational boundaries' (p.6), 'heterogeneity of supply chain members' (p.19)
+c204M01N20 | Incentive Misalignments: Alliances underperform or fail due to incentive misalignments, especially when contributions to joint knowledge creation are difficult to observe.
+c204M01N21 | Hierarchical Biases: Traditional models like Nash and Stackelberg falter due to static assumptions and hierarchical biases toward dominant firms.
+c204M01N23 | Operational Redundancy: When complementarity exceeds 0.8, profits decline due to duplicated R&D efforts and rising coordination costs.
+c205M02N43 | Traditional Methods Difficult to Meet Demand: 'Traditional knowledge management methods have been difficult to meet the growing demand' due to complexity and data volume.""
+c208M02N16 | Manual data collection requirement: We eventually collected 1477 samples... The number of images per synset in the knowledge base is limited due to size constraints. Therefore, we collected further images from the service google images by using an automated Python script. We also manually checked inconsistencies.
+c209M01N25 | Risk of intellectual property leakage: Concerns over intellectual property leakage were consistently associated with external platforms.
+c209M02N33 | Confidentiality risks: risk of imitation
+c209M02N36 | Ad hoc usage: interviewees often described social media engagement as ad hoc, flexible, and exploratory
+c210M01N16 | Low efficiency in analyzing and disposing of quality issues: low efficiency in analyzing and disposing of quality issues
+c210M01N19 | Repeatedly sort out and extract knowledge: it is necessary to repeatedly sort out and extract knowledge of quality problems, which is time-consuming and laborious"
+s003M02OD01,Interpersonal Trust & Psychological Safety Climate,Organizational Dependency,G,SIC 20-39 - Manufacturing,1,"c204M01N16 | Trust and Relational Deepening: Cooperation levels escalate over time, reflecting trust and relational deepening which amplifies added value."
+s003M02OD02,Strategic Leadership Advocacy & Technical Championship,Organizational Dependency,G,SIC 20-39 - Manufacturing,2,"c203M01N17 | Embedding knowledge development as a core function: Through a managerial lens, our findings highlight the need to embed knowledge development as a core function in digital transformation roadmaps.
+c206M02N21 | Integration of technical and digitization expertise: Maximization of learning occurs through the combination of technical knowledge and use of technological resources; knowledge in digitization and programming is required."
+s003M02OD04,Intrinsic Identity & Cultural Knowledge-Sharing Values,Organizational Dependency,G,SIC 20-39 - Manufacturing,3,"c203M01N16 | Absorptive capacity of supply chain actors: It suggests that the transformative potential of digitalization in the CE context is contingent upon the absorptive capacity of supply chain actors.
+c203M02N13 | Corporate culture / sustainability mindset: 'absence of a deeply embedded sustainability mindset' as a barrier (p.19)
+c209M01N22 | Absorptive capacity: High absorptive capacity enables firms to filter and recombine unstructured social signals."
+s003M02OD05,Operational Resource Allocation & Dedicated Timeline Provisions,Organizational Dependency,G,SIC 20-39 - Manufacturing,8,"c201M01N26 | Pay-per-use API budget: The only direct operational cost is the pay-per-use API for the intelligence layer.
+c202M01N17 | High computational power of devices: The higher computational power of devices will enhance the performance of the AR tracking.
+c204M01N17 | Digital Maturity: Operational overhead may limit the model's immediate deployment in firms with low digital maturity.
+c209M01N23 | Digital maturity: Digital maturity provides the technological and analytical infrastructure required.
+c210M02N17 | Labeled training data: use entity and relationship tagging functions to manually label the uploaded quality issue files with custom entities and relationships as the training set for model training.
+c211M01N11 | Firms' preparedness toward information technologies: Moreover, firms' preparedness toward information technologies, employee skills impact decision-making
+c211M02N20 | organizational readiness: Organizational readiness and external environmental conditions play significant role
+c211M02N21 | IT infrastructure: IT infrastructure, employee skills impact decision-making"
+s003M02OD06,"Institutional Governance, Standards Compliance & Ethics Clearances",Organizational Dependency,G,SIC 20-39 - Manufacturing,5,"c206M01N13 | Understanding of machine operations and operator interactions: understanding in detail the operation of the machine and interactions with the operator
+c207M01N16 | Personal Protective Equipment Regulations: When it comes to requirements for the technology, it is often stated that any technology should not get in the way of safety. Companies B, D and E emphasize that safety glasses are already worn, which in company D involves welding glasses.
+c209M02N29 | Confidentiality requirements: High (protected via NDA or internal policies)
+c209M02N30 | IP protection protocols: Internal disclosure guidelines defined restricted sharing zones
+c209M02N31 | Governance mechanisms: access controls, NDAs, and formal governance mechanisms"
+s003M02OD07,Expert Participation Frameworks & Succession Structures,Organizational Dependency,G,SIC 20-39 - Manufacturing,2,"c201M02N26 | Presence of experienced staff: SMEs rely on agile, experience-based workflows ... when veteran staff retire or switch jobs, this undocumented expertise departs
+c206M02N20 | Instructor's technical knowledge of regulatory standards: Technical knowledge of regulatory standards on the part of the instructor is essential for the method."
+s003M02TA01,Somatic Tacit Knowledge,Tacit Knowledge,G,SIC 20-39 - Manufacturing,9,"c201M01N01 | Tacit experience-based know-how: Small and medium-sized enterprises (SMEs) still depend heavily on tacit, experience-based know-how that rarely makes its way into formal documentation.
+c201M02N01 | Informal reactive maintenance process knowledge: The existing workflow is almost entirely reactive and relies on informal, manual communication ... an assembly line operator hears a strange noise ... verbally explains the problem ... technician inspects ... checks physical spare parts inventory ... fills out a paper purchase request
+c202M02N04 | Assembly skill with reduced errors: The MAR group (0.5 error rate) made fewer errors than the paper group (1.35 error rate). The MAR group showed a significant reduction in errors (Z=-3.480, p=0.001).
+c203M01N01 | Supply chain process familiarity: Achieved memory describes the amount of knowledge, familiarity, and experience a firm possesses regarding the supply chain process.
+c203M02N18 | Supply chain experience: 'experience a firm possesses regarding the supply chain process' (p.6)
+c204M01N02 | Proprietary Know-How: Central to these alliances is knowledge sharing through which partner firms exchange proprietary know-how.
+c207M01N01 | Tacit Expert Work Sequences: Observations show that both experts perform certain tasks in a different order, adhering to their own expertise. They also indicated that they perform some steps differently than described in the instructions.
+c207M01N02 | Systematic Measurement Processes: beginners sometimes make fewer errors because they perform the measurement processes more systematically than experts.
+c211M02N05 | know-how: KBV underscores competitive advantage from creation, sharing, integration and application of both explicit and tacit knowledge"
+s003M02TA02,Cognitive Tacit Knowledge,Tacit Knowledge,G,SIC 20-39 - Manufacturing,17,"c202M01N06 | Knowledge of component arrangement and connectivity: IoT circuit assembly tasks can be complex for learners due to the perception of component arrangement and connectivity
+c202M02N05 | Spatial positioning skill: AR aids in information integration by associating virtual objects with real-world objects. The 3D model animation guides the user to follow the assembly positioning.
+c202M02N06 | Recall of assembly steps: Both groups were able to retain the knowledge which is from immediate post-test to delayed post-test. No statistically significant change (MAR p=0.886, paper p=0.914).
+c203M02N03 | Circular economy capabilities: 'CE capabilities refer to the ability of a firm to allocate a bundle of resources to implement CE practices in its business processes effectively.' (p.5)
+c204M01N01 | Technical Expertise: Firms exchange technical expertise and proprietary know-how to cocreate value.
+c205M01N04 | Experience in handling historical similar faults and case analysis: provide engineers with experience in handling historical similar faults and case analysis
+c205M01N05 | Expert domain knowledge ability: evaluating the expert's comprehensive competence level and domain knowledge ability
+c206M01N04 | Technical knowledge of regulatory norms: The great differential of the proposed method is to reconcile the technical knowledge of the instructor with the possibility of practical simulations
+c206M02N03 | Understanding of applied content: Question 8 asks: 'Compared to online platforms... do you think immersive virtualization provided a greater understanding of the applied content?',
+c207M02N01 | Expert knowledge (specialist expertise): Experts possess specialist expertise that is difficult to codify.
+c207M02N02 | Mental rotation skill: Interpreting 3D objects from 2D construction drawings requires mental rotation.
+c209M01N06 | Early user signals: External platforms are primarily used to surface early user signals and refine market understanding.
+c209M02N09 | Expert judgment: Our R&D experts evaluate... only those with potential for further development
+c211M01N02 | Tacit knowledge from experts: Blending tacit knowledge from experts with AI in immersive platforms
+c211M01N03 | Contextual knowledge: Thus, knowledge warehouse helps to assess past decisions, identify lacunas, helping to assess tacit and contextual knowledge rather than analyzing only explicit data.
+c211M02N03 | tacit and contextual knowledge: helping to assess tacit and contextual knowledge rather than analyzing only explicit data
+c211M02N04 | intuition: Blending tacit knowledge from experts with AI in immersive platforms (Table 2)"
+s003M02TA03,Collective and Relational Tacit Knowledge,Tacit Knowledge,G,SIC 20-39 - Manufacturing,5,"c203M01N02 | Shared consensus on common circular economy goals: Shared meaning refers to the achievement of a consensus regarding the understanding of information among firms and their members and supply chains.
+c203M02N01 | Achieved memory: 'Achieved memory (AM) refers to the amount of knowledge, familiarity, and experience a firm possesses regarding the supply chain process.' (p.6)
+c203M02N02 | Shared meaning: Shared meaning refers to the achievement of a consensus regarding the understanding of information among firms and their members and supply chains. (p.6)
+c204M01N03 | Intellectual Capital: Partner firms exchange intellectual capital to accelerate innovation.
+c209M01N07 | Expert-driven collaboration: Internal platforms enable secure, expert-driven collaboration under tighter governance conditions."
+s003M02TA04,Adaptive Tacit Knowledge,Tacit Knowledge,G,SIC 20-39 - Manufacturing,4,"c206M01N03 | Safe behavioral response in working at heights: makes it possible to present the worker with the dangers and risks present in a given situation, making it possible, through actions, procedures and attitudes, to act preventively
+c206M02N04 | Assertiveness in high-risk situations: Question 10: 'Do you believe that immersive training contributes to greater assertiveness and understanding in working at heights and in confined spaces?',
+c206M02N05 | Hazard identification performance: The paper cites Souto & Albuquerque (2015) stating safety innovation focuses on whether the worker can perceive risks of the environment.
+c209M02N10 | Situational awareness: understand where the markets and consumers for our products are"
+s003M02TE01,Artificial Intelligence and Intelligent Computation,Digital Technology,G,SIC 20-39 - Manufacturing,21,"c201M01N15 | Google Gemini 2.5 Pro API: Powered by Gemini 2.5 Pro... The system's core logic is powered by Google's Gemini 2.5 Pro API.
+c201M02N20 | Gemini 2.5 Pro model: Powered by Gemini 2.5 Pro ... state-of-the-art LLM as the reasoning engine
+c203M01N14 | Artificial intelligence (AI): Industry 4.0 (I4.0) technologies, including, digital technologies (DT) such as, big data analytics (BDA), internet of things (IoT) and artificial intelligence (AI)
+c205M02N26 | Natural Language Processing: 'Natural language processing technology' is used for text extraction and transformation.""
+c205M02N27 | Deep Learning: Deep learning algorithms are 'combined with user portrait, context information modeling' for personalized recommendation.
+c205M02N28 | Word Embedding Model: 'Word embedding model' is used to calculate similarity scores between query and knowledge base terms.""
+c205M02N29 | Image Recognition Technology: 'Image recognition technology' transforms visual information into structured knowledge.""
+c205M02N32 | TextRank Algorithm: TextRank is a 'statistics‑based' method for keyword extraction.
+c205M02N33 | TF-IDF: TF‑IDF is used as a statistics‑based method for keyword extraction.
+c205M02N34 | Topic Model (LDA): 'Topic models (such as LDA)' are used for summary statistics.""
+c205M02N35 | Cluster Analysis: 'Cluster analysis' is used to classify and summarize different types of knowledge.""
+c205M02N36 | Mixed-connection Neural Network: The fuzzy matching push section mentions a 'quality prediction model based on mixed‑connection neural networks'.
+c207M01N14 | Python Library whisper_timestamped: Using the Python programming language, a transcription can be obtained from the video that has been created. The Python library 'whisper_timestamped' is used for this.
+c207M02N14 | Whisper model: Speech recognition model used to transcribe video instructions.
+c208M01N14 | Growing Hierarchical Self-Organizing Maps (GHSOM): It makes use of growing hierarchical self-organizing maps (GHSOM) which have been first presented in [45, 46].
+c208M01N16 | Genetic algorithm: Moreover, a genetic algorithm has been developed for the fine tuning of parameters tau1 and tau2 in the GHSOM architecture.
+c208M01N18 | IBM Watson Speech Recognition engine: by replacing the Speech Recognition engine, with a more sophisticated one, by using a service for speech recognition, known as IBM Watson.
+c209M01N21 | Sentiment monitoring tools: Annual Report noted deployment of AI-assisted sentiment monitoring tools.
+c210M01N10 | BERT-BILSTM-CRF model: This article adopts the BERT-BILSTM-CRF model for entity recognition of quality problem elements.
+c210M01N11 | BERT model relation classifier: The relationship classification network architecture is shown in Figure 4 and consists of three parts: semantic encoding layer, feature extraction layer, and classification layer.
+c211M01N10 | Artificial Intelligence: Blending tacit knowledge from experts with AI in immersive platforms"
+s003M02TE02,Human–Computer Interaction and Immersive Technologies,Digital Technology,G,SIC 20-39 - Manufacturing,15,"c201M01N16 | Gradio open-source Python framework: The user interface is built with Gradio, an open-source Python framework that enables the rapid development of web-based UIs.
+c201M01N17 | bpmn-js JavaScript toolkit: Process diagrams are rendered in the browser using bpmn-js, a powerful, open-source JavaScript toolkit for BPMN 2.0.
+c202M01N11 | iPad Pro: an iPad Pro was chosen for its high computational power and large screen
+c202M01N12 | Vuforia Engine: marker-based AR application was developed using the Vuforia Engine
+c202M01N14 | 3D animated models: leveraging the signaling principle through 3D animated models
+c202M02N16 | MAR application software: The MAR application ... user interface in AR was developed to control the IoT components.
+c206M01N11 | Virtual reality software: Programming in Virtual Reality software. All movements equal to the real thing for total immersion
+c206M01N12 | Immersive virtualization glasses: Did you feel vertigo while using immersive virtualization glasses?
+c206M02N18 | Joysticks: Manual controls (joysticks) are used to operate the system.
+c207M01N12 | Vuzix M400: The prototype that was made for capturing knowledge used the Vuzix m400.
+c207M01N13 | Magic Leap 2: For instruction, the second option mentioned in the introduction was chosen, an AR solution with a complete set of glasses, in this case the Magic Leap 2.
+c207M01N15 | Unity: The instructions were further implemented with the Unity program. A CAD model of the plastic product was integrated into Unity
+c211M01N08 | Metaverse: Metaverse technology considered to be a sophisticated integration of the physical and virtual ecosystem which is empowered by virtual reality (VR), augmented reality (AR), DT and blockchain
+c211M02N17 | virtual reality (VR): empowered by virtual reality (VR), augmented reality (AR), DT and blockchain
+c211M02N19 | avatar: avatar-based stakeholder collaboration"
+s003M02TE03,"Cyber-Physical Systems, IoT, and Smart Environments",Digital Technology,G,SIC 20-39 - Manufacturing,4,"c202M01N16 | NodeMCU ESP8266 microcontroller board: the NodeMCU ESP8266 selected for the IoT assembly task
+c203M01N13 | Internet of things (IoT): Industry 4.0 (I4.0) technologies, including, digital technologies (DT) such as, big data analytics (BDA), internet of things (IoT) and artificial intelligence (AI)
+c211M01N09 | Digital twins: DT considered to be a prominent tool to drive the metaverse concept in the circular supply chain practices.
+c211M02N16 | digital twin (DT): DT considered to be a prominent tool to drive the metaverse concept"
+s003M02TE04,"Data, Information, and Knowledge Systems",Digital Technology,G,SIC 20-39 - Manufacturing,12,"c202M01N15 | Web server: with the commands signal sent via a web server.
+c203M01N12 | Big data analytics (BDA): Industry 4.0 (I4.0) technologies, including, digital technologies (DT) such as, big data analytics (BDA), internet of things (IoT) and artificial intelligence (AI)
+c203M02N04 | Digital technologies (IoT, AI, BDA, blockchain): 'Digital technologies, including IoT, blockchain, AI and BDA, are widely recognized as critical enablers of the CE implementation.' (p.5)
+c205M02N30 | Graph Database: Data layer includes integration of multi‑source data 'organized and stored in the form of relational database and graph database'.
+c205M02N31 | Relational Database: Same as above – both relational and graph databases are used.
+c208M02N10 | WordNet: WordNet is a dictionary containing lexical-semantic connections between abstract concepts.
+c208M02N11 | ImageNet: ...visual features extracted from images contained in ImageNet have been imported in the General Knowledge Base.
+c210M01N12 | Mongo database: The system uses the Mongo database... Mongo database is used for storing structured data
+c210M01N13 | Jena TDB: Jena TDB is used for storing knowledge graph triplet data
+c210M01N14 | ES search engine: the ES retrieval engine is used for segmenting and indexing quality problem case information
+c210M01N15 | Redis: Redis stores login user tokens and training task information.
+c210M02N12 | Knowledge graph: Knowledge graph technology can organize complex information in the real world in a structured manner through entities, relationships, and attributes."
+s003M02TE05,"Imaging, Sensing, and Perception Technologies",Digital Technology,G,SIC 20-39 - Manufacturing,3,"c202M01N13 | QR code AR marker: A QR code served as the AR marker, placed on the breadboard
+c206M01N10 | Laser scanning equipment: Laser scanning equipment captures the details of the environment
+c206M02N19 | Point clouds: Point clouds represent the environment obtained through laser scanning."
+s003M02TE06,"Distributed, Secure, and Trust Technologies",Digital Technology,G,SIC 20-39 - Manufacturing,1,"c203M01N15 | Blockchain: Although some conceptual frameworks suggest that technologies such as AI, BDA, IoT and blockchain can enhance knowledge transformation"
+s003M02TE07,"Mobile, Social, and Communication Technologies",Digital Technology,G,SIC 20-39 - Manufacturing,1,"c209M01N20 | Social media analytics tools: Firms began to extract value through more formalised, analytics-supported processes."
+s003M02TE08,"Rule-Based, Decision, and Expert Systems",Digital Technology,G,SIC 20-39 - Manufacturing,2,"c204M01N15 | Fuzzy TOPSIS Technique: Knowledge level was constructed as a weighted composite index normalized to [0, 1], calculated using the Fuzzy TOPSIS technique.
+c208M01N17 | Ordered-Weighted Averaging (OWA) operators: For the combination function to take place, Ordered-Weighted averaging (OWA) operators have been used [48]."
+s003M02TP01,Automated Process Documentation & Synthesis,Technology-enable Practice,G,SIC 20-39 - Manufacturing,37,"c201M01N13 | LLM-driven conversational process documentation assistant: This paper introduces a large-language-model (LLM)-driven conversational assistant that captures such knowledge on the shop floor.
+c201M01N14 | Gemini Flash evaluation experiment: During testing, an alternative model, Gemini 2.5 Flash, was considered as a more cost-effective option.
+c201M02N19 | Interactive modeling session: The evaluation was conducted through an interactive dialogue between a user and the chatbot, as illustrated in Figure 3
+c203M01N10 | Structured knowledge management systems: firms should invest in structured knowledge management systems that support both knowledge acquisition and memory retention.
+c203M01N11 | Interfirm platforms: Specifically, building interfirm platforms that enable data interoperability, common standards and real-time sharing of sustainability performance indicators
+c203M02N05 | Knowledge acquisition activities: DT are positively associated with knowledge acquisition activities (H2b supported, p.12). 'Knowledge acquisition refers to the process of gathering useful information.' (p.6)
+c203M02N06 | Information dissemination activities: 'Information dissemination is the sharing of information gathered internally, within organizational areas and activities, through formal and informal channels.' (p.6)
+c203M02N17 | DT‑enabled knowledge storage: DT are positively associated with achieved memory (H2a, p.12), implying use of DT to store and retain knowledge.
+c204M01N13 | Hybrid Cooperative Game-Theoretic Framework: This study introduces a hybrid game-theoretic framework utilizing the Shapley value's axiomatic fairness to allocate profits by marginal contributions.
+c204M01N14 | Monte Carlo Simulations: This framework employs Monte Carlo simulations to deliver statistically reliable contribution estimates.
+c205M01N09 | Aerospace quality knowledge graph-based proactive service system: design and implement a proactive service mechanism for aerospace quality knowledge based on knowledge graph
+c205M02N13 | Knowledge Graph: A 'structured knowledge graph' is constructed to organize quality management information.
+c205M02N14 | Scenario-based Rule Push: 'Scenario‑based rule push' provides accurate knowledge push through pre‑defined rules and scene matching.""
+c205M02N15 | Word Similarity-based Recall: 'Word similarity‑based knowledge item recall' calculates semantic similarity between user query and knowledge base items.""
+c205M02N16 | Fuzzy Matching Push: 'Scenario‑based Fuzzy Matching Push' is listed as a method (though the paragraph contains a prediction model example).""
+c205M02N17 | Incomplete Data Information Push: 'Incomplete data information push' identifies data blanks and pushes supplementary knowledge.""
+c205M02N18 | Deep Learning based Proactive Service Algorithm: The 'knowledge proactive service algorithm based on deep learning' integrates user behavior and job demand to output personalized services.
+c205M02N19 | User Portrait: 'User portrait of aerospace quality knowledge' accurately depicts behavior characteristics and needs.""
+c205M02N20 | Context Information Modeling: 'Context information modeling' abstracts time, place, task, environment to support targeted recommendations.
+c205M02N22 | Expert Ability Model: 'Expert ability model' evaluates expert competence to provide in‑depth support for specific tasks.""
+c205M02N24 | Keyword Extraction: 'Keyword extraction' identifies representative words from domain texts using NLP.""
+c205M02N25 | Summary Statistics: 'Summary statistics' simplifies and summarizes knowledge through statistical analysis and aggregation.""
+c207M01N10 | Whisper-based Audio Transcription System: The prototype with Whisper-based audio transcription performed well to convert video instructions to written instructions.
+c208M01N10 | Unsupervised low-level perception-based technique: we discuss here the refined development of the unsupervised low-level approach for constructing and conceptualizing the knowledge based on perception,
+c208M01N11 | Supervised high-level semantics-based technique: its combination with the supervised high-level approach for constructing and conceptualizing the knowledge based on semantic,
+c208M01N12 | Combined approach via OWA operators: Hence, we present a combined approach based on semantics and machine learning techniques for improving robots cognitive capabilities.
+c208M01N13 | Ontology matching and merging activity: First, the ontological model has been provided with the ability of being extensible through ontology matching and merging activities.
+c208M02N06 | Combined approach (BU+TD with OWA): The idea is to have a more robust final classification by a voting-based decision which takes into account both supervised and unsupervised approaches results.
+c208M02N07 | GHSOM bottom-up learning: The GHSOM artificial neural-network model tackle the aforementioned issues with a hierarchical architecture of growing self-organizing maps.
+c209M01N18 | Internal social media platforms: Internal corporate platforms play complementary roles in integrating knowledge.
+c209M01N19 | External social media platforms: External platforms allow for broader, less structured engagement with the public.
+c209M02N26 | Social listening tools: monitoring and mining user data
+c209M02N27 | Analytics tools: basic analytics tools (e.g. sentiment analysis, keyword clustering) can structure external data
+c210M01N08 | Quality problem expert knowledge system software: integrate relevant functions to build a quality problem expert knowledge system software, achieving quality problem knowledge extraction and information sharing.
+c210M01N09 | Knowledge graph of aviation equipment quality issues: integrate quality issue triplets and construct a knowledge graph of aviation equipment quality issues
+c211M01N06 | Digital repositories: Metaverse facilitate in adopting revolutionary method for storing and retaining knowledge by innovative way of handling data and information, digital repositories.
+c211M02N13 | knowledge warehouse: knowledge warehouse helps to assess past decisions, identify lacunas"
+s003M02TP02,Immersive Training & Spatial Simulation,Technology-enable Practice,G,SIC 20-39 - Manufacturing,9,"c202M01N10 | Mobile Augmented Reality (MAR) application training: In this regard, this study developed a MAR framework and application to facilitate IoT assembly training.
+c202M02N11 | MAR application assembly training: The MAR application learning intervention was conducted. AR displayed assembly steps to aid participants in constructing the Arduino-based IoT circuit.
+c206M01N09 | Immersive virtualization training method: propose a method of training in regulatory standards using immersive virtualization, aiming at improving student knowledge retention
+c207M01N11 | Interactive 3D CAD Instruction Prototyping: The experimental setup incorporates 3D elements, adding an extra dimension to the instructions for enhanced understanding. Visualizations are projected onto the 3D CAD model using arrows and animations
+c211M01N07 | Avatar-based supply chain collaborations: avatar-based supply chain collaborations help the students understand the impact of interdependencies on supply chain performance.
+c211M02N09 | digital twin experimentation: Digital twin experimentation to simulate product recovery models
+c211M02N10 | virtual training module: Virtual training modules on disassembly, reuse and eco-design
+c211M02N11 | immersive avatar collaboration: Immersive avatar-based collaboration across supply chain actors
+c211M02N12 | simulated environment: Metaverse simulated environment helped me in comprehensive understanding"
+s003M02TR03,Deliberate Practice,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,7,"c201M02N15 | Manual spare parts inventory check by technician: They walk back to the workshop to check the physical spare parts inventory
+c201M02N17 | Handwritten sign placement on machine: They return to the machine and leave a handwritten 'Awaiting Part' sign on it
+c202M01N09 | Traditional paper-based manual training: We compare the MAR application, which incorporates the signaling principle, with a traditional paper-based manual.
+c202M02N10 | Paper manual assembly training: Participants were required to read the paper manual as part of the traditional learning intervention. While assembling, they repeatedly referred to the paper manual.
+c206M01N08 | Traditional online platforms training (ZOOM/TEAMS): The teams of workers in the production and maintenance sectors have already gone through the mandatory training process in regulatory standard 35 (NR-35) in 2022 in the traditional online model
+c206M02N12 | Face-to-face practical training: Face-to-face training was severely impacted by the COVID-19 pandemic.
+c207M01N09 | Paper-based Work Instructions: At companies C, D, E and F, a physical or printed version of the drawing is often used"
+s003M02TR04,Knowledge Cafés,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,3,"c203M01N09 | Fragmented departmental communication: the construct focuses on interdepartmental information sharing within firms. However, the connection between I4.0 technologies and CE capabilities may depend more heavily on information exchange at the supply chain level.
+c203M02N10 | Interdepartmental information sharing: 'the construct [information dissemination activities] focuses on interdepartmental information sharing within firms' (p.15)
+c208M01N09 | Human-Robot Interaction: This phase can also involve the interaction with humans, who can trigger new requests and/or validate inferences made by the robot."
+s003M02TR05,Knowledge Harvesting Workshops,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,6,"c204M01N11 | Nash Bargaining Model: Conventional models such as Nash bargaining fail to analyze dynamic, knowledge-driven contributions.
+c204M01N12 | Stackelberg Model: Stackelberg leadership models have been widely applied to study power dynamics but rely on sequential dominance assumptions.
+c205M01N08 | Traditional knowledge management methods: the traditional knowledge management methods have been difficult to meet the growing demand
+c209M01N17 | Traditional internal R&D mechanisms: Social media represents a digital infrastructure complementing traditional internal R&D mechanisms.
+c209M02N23 | Knowledge-sharing workshops: knowledge-sharing workshops
+c210M01N07 | Traditional step-by-step document distribution: Currently, they mainly rely on single channels such as confidential information to be distributed step by step"
+s003M02TR07,Mentoring,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,1,"c207M01N08 | Cognitive Apprenticeship: Traditionally, workplace instruction relied on 'cognitive apprenticeship', where a master directly teaches an apprentice the skills needed to fulfill their tasks"
+s003M02TR08,Storytelling,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,1,c201M02N14 | Verbal fault reporting from operator to supervisor: He shuts it down and walks over to the maintenance workshop to report it. He finds the maintenance supervisor and verbally explains the problem
+s003M02TR09,After-Action Reviews,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,1,"c201M01N12 | Reactive and untracked equipment maintenance process: The chosen case study focuses on a common and inefficient process for managing unplanned equipment downtime... almost entirely reactive and relies on informal, manual communication."

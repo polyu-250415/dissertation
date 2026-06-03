@@ -1,0 +1,35 @@
+ID,Validation Question
+DS01Q01,"Which uncodified skills, intuitions or behavioral routines are described?"
+DS01Q02,Which specific roles experts or teams are identified as possessing knowledge?
+DS01Q03,What human-driven knowledge retention practices are described?
+DS01Q04,Which digital systems or tools are explicitly used to capture knowledge?
+DS01Q05,What emerging technologies underpin the technology-enable practices?
+DS01Q06,What internal prerequisites are stated as necessary for practice success?
+DS01Q07,What external factors outside organizational control affect implementation?
+DS01Q08,What inherent vulnerabilities or failure points of practices are acknowledged?
+DS01Q09,Which specific knowledge holder currently possesses tacit knowledge?
+DS01Q10,which knowledge holder demonstrably gained tacit knowledge?
+DS01Q11,Which tacit knowledge is partially codified by knowledge holder into structured artifacts?
+DS01Q12,Through which exact practice (traditional or technology-enable) is tacit knowledge distributed to learners?
+DS01Q13,Which knowledge holders actively take part in knowledge retention practices?
+DS01Q14,Which tacit behaviors or routines are actively tracked/monitored within Technology-enable Practice?
+DS01Q15,What organizational or environmental Dependencies must exist for knowledge retention practices to succeed?
+DS01Q16,What inherent limitations directly hinder the effectiveness of knowledge retention practices?
+DS01Q17,Why is tacit knowledge particularly challenging to codify or store? (Map to specific Limitation)
+DS01Q18,Which digital technologies form the foundation of technology-enable practices?
+DS01Q19,How does knowledge retention practices assess or measure whether participants have acquired tacit knowledge?
+DS01Q20,Does technology-enable practices completely resolve limitation? What evidence supports this?
+DS01Q21,Does technology-enable practice lower or control limitation without eliminating it?
+DS01Q22,How does technology-enable practices enhance or patch traditional practice without replacing it?
+DS01Q23,What evidence shows that technology-enable practice  still relies on human baselines or that Traditional Practice remains legally/operationally mandatory?
+DS02Q01,"What are the knowledge retention mechanisms for these technology-enable practices? The introduction of the retention mechanisms covers the relations among knowledge holders, tacit knowledge, digital technology, organizational dependency, resource dependency, and limitation."
+DS02Q02,"What are the knowledge retention mechanisms for these human-central practices? The introduction of the retention mechanisms covers the relations among knowledge holders, tacit knowledge, organizational dependency, resource dependency, and limitation."
+DS03Q01,Which tangible organizational asset is required for the technology-enabled practices?
+DS03Q02,Which external environment condition is required for the technology-enabled practices?
+DS04Q01,What organizational culture influence the effectiveness of the technology-enabled practices? 
+DS04Q02,Does the organization adopt incentive or reward measures to encourage knowledge holders to actively participate in knowledge retention activities?
+DS04Q03,Does the organization foster interpersonal trust and a psychological safety climate to encourage knowledge holders to actively participate in knowledge retention practices?
+DS04Q04,"Does the organization cultivate intrinsic identity, cultural knowledge-sharing values, and institutional governance/ethics clearances to encourage knowledge holders to actively participate in knowledge retention activities?"
+DS05Q01,"What inherent vulnerability, shortcoming, or failure point of  the traditional human-central practices?"
+DS05Q02,"What inherent vulnerability, shortcoming, or failure point of  the technology-enabled practices?"
+DS05Q03,Which limitations the technology-enabled practices resolve or at least mitigate the traditional human-central practices have faced?

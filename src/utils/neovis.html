@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neo4j 完整节点名称可视化</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/neovis.js@2.1.0/dist/neovis.min.js"></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        #viz { width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="viz"></div>
+    <script>
+        const config = {
+            container_id: "viz",
+            server_url: "neo4j://localhost:7687",
+            server_user: "neo4j",
+            server_password: "MyNewPass123!",
+            database: "kggen",
+
+            initial_cypher: "MATCH (n)-[r]->(m) RETURN n,r,m LIMIT 200",
+
+            labels: {
+                "Node": {
+                    caption: "name",
+                    font: {
+                        size: 12,
+                        wrap: true,
+                        wrapWidth: 120
+                    },
+                    size: 50,
+                    color: "#4e91fd"
+                }
+            },
+            default_label_color: "#4e91fd",
+            default_relationship_color: "#999",
+
+            arrows: true,
+            hierarchical: false
+        };
+
+        const vis = new NeoVis.default(config);
+        vis.render();
+    </script>
+</body>
+</html>

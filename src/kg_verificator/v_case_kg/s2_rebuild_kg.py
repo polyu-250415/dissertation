@@ -5,7 +5,7 @@ class RebuildKG():
 
     def __init__(self, data_base_path="../../data/graph/case_study/"):
         self.rag_ea_path = f"{data_base_path}case_5_v_ea/"
-        self.rebuild_kg_path = f"{data_base_path}case_6_rebuild_kg/"
+        self.rebuild_kg_path = f"{data_base_path}case_6_v_ds/"
         pass
 
     def normalize_entities(self, redundant_id_dict, case_id):
@@ -57,5 +57,5 @@ class RebuildKG():
 
 if __name__ == '__main__':
     obj = RebuildKG()
-    case_ids = ['c002']
+    case_ids = ['c001', 'c002', 'c003', 'c004', 'c005', 'c006', 'c007']
     obj.rebuild_all_kg(case_ids)

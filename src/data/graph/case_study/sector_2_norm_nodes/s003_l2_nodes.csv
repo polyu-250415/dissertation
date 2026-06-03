@@ -1,0 +1,368 @@
+node_id,node_name,category,evidence_label,case_title,evidence_count,evidence_statement
+s003M02ED01,Macro-Regulatory & Jurisdictional Frameworks,Environmental Dependency,G,SIC 20-39 - Manufacturing,5,"c204M01N18 | Sanctions: The case study focuses on localizing a six-speed automatic transmission to reduce import dependency amid sanctions.
+c204M01N19 | Confidential OEM Contract: Grounded in a confidential OEM contract, the study offers a replicable framework.
+c206M01N14 | Brazilian legislation requirement: Specifically, training in regulatory norms, a legal requirement in Brazil
+c206M02N23 | Regulatory requirement for NR-35 training: Training in regulatory norms is a legal requirement in Brazil.
+c211M01N13 | Regulatory pressures: External factors as market competition, regulatory pressures and sustainability mandate influences adoption timings."
+s003M02ED02,Market Dynamics & Industry Baselines,Environmental Dependency,G,SIC 20-39 - Manufacturing,3,"c203M01N18 | Environmental uncertainty: Finally, given that businesses operate in increasingly uncertain environments, our findings confirm that SCKDP play a crucial role in enabling firms to develop CE capabilities through DT.
+c203M01N19 | Heterogeneity of supply chain members: This difficulty is often rooted in the heterogeneity of supply chain members, including differences in bargaining power, firm size, technological maturity and cultural factors
+c209M01N24 | Competitive markets: Exposure of ideas on public platforms is risky, particularly in competitive markets."
+s003M02ED03,Physical Site Conditions & Spatial Configuration,Environmental Dependency,G,SIC 20-39 - Manufacturing,5,"c207M01N17 | Warm Production Hall Environment: Further observations were that the production hall is very warm
+c207M01N18 | Dusty Environment: there is a lot of dust
+c207M01N19 | High Ambient Noise Environment: and there is a lot of ambient noise.
+c208M01N19 | Enclosing environment: The perceptual knowledge originates from the enclosing environment. It commonly includes all the information retrieved from sensors
+c208M02N13 | Real-world environment with physical objects: The robot explores the environment and analyzes the objects he finds on his way."
+s003M02EX01,Structured Technical Artifacts & Code,Explicit Knowledge,G,SIC 20-39 - Manufacturing,19,"c201M01N03 | Standards-compliant BPMN 2.0 XML: A xml block containing the complete, standards-compliant BPMN 2.0 XML for the process diagram.
+c201M01N04 | Overlay objects array JSON: A json block containing an array of overlay objects for adding comments to the diagram.
+c201M02N38 | BPMN 2.0 schema: Prompt-engineering techniques ensure the LLM's output conforms to the BPMN 2.0 schema
+c203M01N04 | CE metrics: Embed CE metrics into performance dashboards to align operational goals with sustainability outcomes for fostering information dissemination activities.
+c204M01N06 | Knowledge Investment (KI) Metric: KI captures the level of innovation intensity and is measured as capitalized R&D expenditures.
+c204M01N07 | Absorptive Capacity (AC) Function: AC reflects the efficiency of organizational learning and is modeled as an evolving function.
+c204M01N08 | Coordination Cost (CC) Index: CC captures transactional and organizational frictions that diminish distributable value.
+c204M01N09 | Knowledge Level (KL) Index: Knowledge level was constructed as a weighted composite index normalized to [0, 1].
+c204M01N10 | Knowledge Complementarity (KC) Threshold: Synergy benefits dominate up to a certain KC level, after which coordination inefficiencies outweigh shared knowledge advantages.
+c205M01N01 | Multi-source heterogeneous quality data: The data layer includes the integration of multi-source heterogeneous data such as text data, table data and image data
+c205M01N02 | Aerospace quality knowledge subset (QS1): obtain the knowledge subset (QS1) related to user needs. Knowledge subsets provide basic data for subsequent personalized recommendations.
+c207M01N05 | 3D CAD Model: The company already used a CAD model for the product that is being developed; this CAD model is a 3D model that can be important in unity to visualize the product
+c208M01N01 | General Knowledge Base (GKB): One of the key-elements of the framework is the General Knowledge Base, alternatively named GKB. It plays a central role since the other modules are built upon it
+c208M01N02 | Local Knowledge Base (LKB): Each artificial system is provided with its own local knowledge base (LKB), which keeps the reference with the general knowledge base, but it is free to evolve on its own
+c208M01N03 | WordNet: with general concepts and multimedia representations (in our case WordNet and ImageNet).
+c208M01N04 | ImageNet: Besides, visual features extracted from images contained in ImageNet have been imported in the General Knowledge Base.
+c208M01N05 | Ontologies: Another common approach to knowledge acquisition in intelligent systems relies on semantics-based techniques, such as production rules and ontologies.
+c208M02N04 | Semantic concepts (WordNet synsets): WordNet is a dictionary containing lexical-semantic connections between abstract concepts. The fundamental unit is a synset, i.e., a set of terms having the same meaning.
+c210M02N03 | Knowledge graph of aviation equipment quality issues: integrate quality issue triplets and construct a knowledge graph of aviation equipment quality issues."
+s003M02EX02,Documented Process Narratives & Media,Explicit Knowledge,G,SIC 20-39 - Manufacturing,37,"c201M01N02 | Informal maintenance process narrative: The user initiated the conversation by describing the entire reactive maintenance process in a single, detailed message.
+c201M02N02 | Paper purchase request form: The technician fills out a paper purchase request form and leaves it on the procurement manager's desk
+c201M02N05 | AS-IS BPMN diagram: The system processed this text and generated the initial 'AS-IS' BPMN diagram
+c201M02N39 | Natural language process description: The user initiated the conversation by describing the entire reactive maintenance process in a single, detailed message
+c202M01N07 | Book manual: the paper group utilized a book manual as an assistance tool.
+c202M01N08 | Identical 10 multiple-choice questions knowledge test: each test question had 10 multiple-choice questions worth a total of 10 points
+c202M02N01 | IoT circuit assembly knowledge: The knowledge test encompassed the topics IoT. Each test question had 10 multiple-choice questions worth a total of 10 points.
+c202M02N03 | MAR application instructions: The MAR application visualizes IoT circuit assembly steps, provides 3D models of circuit components, and enables user interaction.
+c203M01N03 | Sustainability performance indicators: Building interfirm platforms that enable data interoperability, common standards and real-time sharing of sustainability performance indicators.
+c205M02N02 | Technical Standard: The system pushes 'quality standards' and 'technical specifications' to users.
+c205M02N03 | Operation Guide: System automatically pushes 'related operation guides' based on task rules.
+c205M02N04 | Experimental Data Reference: System pushes 'corresponding experimental data reference' when a measurement parameter is missing.
+c205M02N05 | Statistics of Failure Cases: System pushes 'statistics of similar failure cases' to supplement incomplete data.
+c205M02N08 | Keyword Extraction Result: Keyword extraction identifies 'representative and general words' from domain texts.
+c205M02N09 | Summary Statistic: Summary statistics 'identify representative themes and core content' from literature.
+c206M01N01 | Regulatory standards (NR-35): Training in regulatory standards using immersive virtualization aiming at improving student knowledge retention
+c206M01N02 | National standards, dissertations, and articles: Theoretical Reference: use of literature through research on similar methods already applied in immersive training
+c207M01N03 | 2D Construction Drawings: reading and interpreting construction drawings, in which a 3D object is displayed in a 2D image.
+c207M01N04 | Digital Step-by-Step Instructions: The instructions are step-by-step descriptions of the work that needs to be done.
+c207M02N05 | Written instructions (transcribed): Step‑by‑step text generated from expert narration via speech recognition.
+c209M01N01 | Market knowledge: Firms engage external inputs to inform early-stage decision-making and identify market opportunities.
+c209M01N02 | Likes/Dislikes/Preferences: Social media helps identify unmet needs and uncover user preferences such as likes and dislikes.
+c209M01N03 | New ideas: Firms institutionalise mechanisms to capture ideas through internal platforms and external sources.
+c209M01N04 | Product concepts: Submissions ranging from product concepts to design are reviewed internally.
+c209M01N05 | Codified disclosure protocols: Secondary sources emphasised codified disclosure protocols and internal governance mechanisms.
+c209M02N01 | Idea submissions: Submissions ranging from product concepts to design and packaging suggestions are systematically collected
+c209M02N02 | Customer feedback: reviews, comments, feedback, and discussions on social media about our product
+c209M02N03 | User-generated content: the creation and exchange of user-generated content (UGC)
+c209M02N05 | Design suggestions: design and packaging suggestions
+c209M02N06 | Feature refinements: tweaks ... camera resolution, screen refresh rates
+c209M02N07 | Breakthrough ideas: breakthrough ideas
+c210M01N01 | Aviation equipment quality case studies: Both the military and industrial departments have carried out quality problem collection and analysis work and compiled a set of quality case studies.
+c210M01N02 | Quality problem zeroing report: Organize the quality problem zeroing report of aviation equipment and form a set of aviation equipment quality case studies as data input
+c210M01N03 | Technical closure reports: Using quality issue technical closure reports and management closure reports as inputs, extract information such as problem occurrence phenomena...
+c210M01N04 | Management closure reports: Using quality issue technical closure reports and management closure reports as inputs,
+c210M02N01 | Quality problem case set: Both the military and industrial departments have carried out quality problem collection and analysis work and compiled a set of quality case studies.
+c211M01N05 | Circular economy mandates: setting up the guidelines for organizations to prepare for extended producer responsibility, following carbon reducing norms and circular economy mandates.
+c211M02N01 | past decisions: knowledge warehouse helps to assess past decisions, identify lacunas"
+s003M02KH01,Domain Experts & Operational Practitioners,Knowledge Holder,G,SIC 20-39 - Manufacturing,36,"c201M01N07 | Assembly line operator: The process begins when an operator verbally reports a machine fault to a supervisor.
+c201M01N08 | Maintenance supervisor: He finds the maintenance supervisor and verbally explains the problem.
+c201M01N09 | Technician: The supervisor grabs the nearest available technician... and sends them to investigate.
+c201M01N10 | Procurement manager: The technician fills out a paper purchase request form and leaves it on the procurement manager's desk.
+c202M01N04 | Instructors: Instructors demonstrated how to assembly the IoT circuit
+c203M01N05 | CEOs: The research team then emailed invitations to 495 qualified managers (e.g. CEOs, operations managers)
+c203M01N06 | Operations managers: The research team then emailed invitations to 495 qualified managers (e.g. CEOs, operations managers)
+c203M01N07 | Supply chain managers: allowing only respondents from manufacturing firms based in France who held managerial positions (e.g. CEOs, supply chain managers)
+c203M01N08 | Supply chain partners: The CE business model implementation demands changes in processes, an intensive flow of information and materials among different supply chain tiers and different ways of collaborating with suppliers and consumers.
+c203M02N07 | Firms: The unit of analysis is the firm; 'firm as the unit of analysis' (p.8)
+c203M02N09 | Managers (CEOs, operations managers): 'upper and middle managers working at firms' (p.8), 'CEOs, operations managers' (p.8)
+c204M01N04 | Mega Motor: The model is empirically validated using data from Mega Motor and domestic suppliers.
+c205M01N06 | Engineers: help engineers quickly acquire relevant knowledge in complex situations
+c205M01N07 | Experts: The expert competence model provides in-depth support for a specific task or problem
+c205M02N12 | Expert: The 'expert ability model' evaluates 'expert's comprehensive competence level and domain knowledge ability'.
+c206M01N05 | Instructor: technical knowledge of regulatory standards on the part of the instructor is essential
+c206M01N06 | Production sectors collaborators: Employees from the production and maintenance sectors participated in immersive interactions
+c206M01N07 | Maintenance sectors collaborators: The environment was chosen by the company because it is most used by the operational team for process maneuvers, with the greatest need for skilled labor
+c206M02N08 | Production sector employees: Employees from the production sectors participated in immersive interactions.
+c206M02N09 | Maintenance sector employees: Employees from the maintenance sectors participated in immersive interactions.
+c207M01N06 | Expert: a follow-up session is held with at least one respondent from the company who has a lot of expertise in the previously chosen process, usually an experienced employee.
+c208M01N07 | Humanoid robot Pepper: The platform used to test our work is the humanoid robot Pepper. It has 20 degrees of freedom. It is designed to be fully interactive
+c209M01N08 | Product Innovation Managers: Data comprise 47 semi-structured interviews with innovation managers.
+c209M01N09 | Product Research Specialists: Specialists involved in early product research activities were interviewed.
+c209M01N10 | Product Insights Developers: Managers responsible for consumer and market insights participated in the study.
+c209M01N11 | R&D experts: External ideas submitted through platforms are evaluated by our R&D experts.
+c209M01N16 | Industry analysts: Analysts review ideas from different angles.
+c209M02N11 | R&D managers: senior R&D managers with approximately 20 years of experience
+c209M02N15 | Innovation Managers: After our experts have reviewed... all subsequent interactions... handled internally
+c209M02N17 | External innovators: We engage with innovators... through our internal social media platforms
+c209M02N18 | Tech suppliers: We engage with... tech suppliers
+c209M02N19 | Product designers: We engage with... product designers
+c210M01N06 | Frontline designers: resulting in difficulties in timely feedback of knowledge to the development end and inability for frontline designers to obtain it in a timely manner.
+c210M02N04 | Military and industrial departments: Both the military and industrial departments have carried out quality problem collection and analysis work and compiled a set of quality case studies.
+c210M02N05 | Aviation equipment designers: frontline designers cannot obtain it in a timely manner.
+c211M01N01 | Supply chain professionals: The research conducted in-depth interviews of 40 respondents. All the experts had relevant qualifications and vast experience in supply chain domain.
+c211M02N07 | expert: All the experts had relevant qualifications and vast experience in supply chain domain"
+s003M02KH02,Users & Software Evaluators,Knowledge Holder,G,SIC 20-39 - Manufacturing,12,"c201M02N13 | User (domain expert): The user initiated the conversation by describing the entire reactive maintenance process
+c202M01N01 | Degree students: They were Degree students (36 participants)
+c202M01N03 | PhD students: and PhD (two participants).
+c202M02N07 | Participants: 40 participants, including 22 females 18 males, consisting of Degree students (36), Master (2), and PhD (2).
+c202M02N08 | MAR group participants: 20 participants in the MAR group (10 male, 10 female).
+c202M02N09 | Paper group participants: 20 participants in the paper group (8 male, 12 female).
+c205M02N11 | User: System analyzes 'user's operation records and historical behavior data' to build portraits.
+c206M02N10 | Administrative sector employees: Some people in the administrative and management sector were also trained.
+c207M02N07 | Newer employees: Less experienced workers who need to acquire knowledge.
+c208M01N08 | Human user: Robots need to be autonomous enough to accomplish tasks cooperatively with human users, who may not have a-priori technical skills.
+c211M01N17 | Students: The study also provides implications for academicians which will help them in preparing the students for upcoming technological trends
+c211M02N08 | employee: Using immersive virtual environment, metaverse helps to ignite sparks among employees to upgrade their knowledge"
+s003M02LI01,"Human, Cognitive & Knowledge Retention Limitations",Limitation,G,SIC 20-39 - Manufacturing,20,"c201M01N19 | Difficulty of articulation: Tacit knowledge the unwritten, experience-based insights people carry in their heads is notoriously difficult to articulate.
+c201M01N20 | Loss of critical know-how upon staff departure: When veteran staff retire or switch jobs, this undocumented expertise departs with them, risking operational disruption.
+c201M02N35 | Reliance on user to describe process upfront: The current workflow requires the user to describe the process in detail upfront. A more advanced, agentic version ... could build the model through a more natural, back-and-forth conversation
+c201M02N37 | Polanyi's tacit knowledge articulation difficulty: Tacit knowledge—the unwritten, experience-based insights people carry in their heads—is notoriously difficult to articulate, as Polanyi famously noted
+c202M01N20 | Cognitive overload due to extraneous elements: In learning environments, extraneous elements often cause cognitive overload
+c202M01N24 | Repeated use of shuffled questions potential bias: validity of the 10-question knowledge test is acknowledged as a limitation, particularly due to repeated use of shuffled questions.
+c202M02N18 | Lack of spatial visualization: Paper group participants commented ... no clear position indicator on the physical IoT circuit component, unlike the MAR method. Identifying appropriate hole positions ... requires significant cognitive effort.
+c202M02N19 | Attention switching cost: The paper approach required participants to switch their attention between the task at hand and reading instructions.
+c205M02N42 | Gap between User Expression and Standard Terms: Word similarity recall 'can effectively bridge the gap between user expressions and standard terms in the knowledge base'.
+c206M01N15 | Dispersion and distraction (cell phone use and conversations): The use of cell phones, messages, conversations, movements, among other factors, certainly affect the student's concentration
+c206M01N16 | Risk of training accidents (level drop): Exposing the student at a certain time can already be considered a risk factor,
+c206M01N18 | Low knowledge retention: aiming at improving student knowledge retention compared to traditional online models
+c207M01N20 | Underestimation of Expertise: However, experts tend to underestimate their own expertise, which can lead them to overlook sharing crucial information when giving their instructions
+c207M01N22 | Task Disruption Errors: A cognitive complexity that is also mentioned is switching between tasks, and in particular returning to the process after it has been disrupted. Both companies A and C mentioned that this sometimes leads to errors in the product.
+c207M02N19 | Cognitive load (working memory limits): Limited capacity of working memory; instruction should minimise mental effort.
+c207M02N20 | Difficulty interpreting 2D drawings: Mental rotation required to understand 3D objects from 2D images, leading to errors.
+c210M02N20 | Insufficient knowledge sharing: insufficient knowledge sharing
+c211M01N16 | Lack of knowledge: Similarly, Tura et al. (2019) underlined lack of knowledge as one of the barrier in implementing circular economy practices
+c211M02N24 | lack of knowledge/experience/skills: lack of knowledge, experience and skills ... hampers the effective implementation of CSCM
+c211M02N27 | response bias: self-reported questionnaire, which includes individuals' perceptions and experiences, are susceptible to response or social desirability biasness"
+s003M02LI02,"Technical, System & Data Limitations",Limitation,G,SIC 20-39 - Manufacturing,34,"c201M01N23 | Absence of structured data capture for analysis: Furthermore, the absence of data capture prevents valuable analysis of machine reliability and failure patterns.
+c201M01N24 | Significant system latency from verbose XML: For the complex maintenance scenario, the total time to generate... was over 12 minutes... delay is largely attributable to the verbosity of the BPMN XML format.
+c201M01N25 | Inconsistent or malformed XML generation: experiments showed that while cheaper, Gemini Flash often produced incorrectly formatted XML that failed to render.
+c201M02N31 | High latency due to verbose BPMN XML generation: The total time ... was over 12 minutes ... generation took up to 10 minutes for a single, complex output
+c201M02N32 | Non-deterministic LLM outputs: A core characteristic of LLMs is that their output is inherently stochastic, not deterministic. The same input prompt can produce slightly different results
+c201M02N36 | No formal evaluation of TO-BE model quality: The current study lacks a formal evaluation of its quality. Future work should involve subjecting the AI-suggested process improvements to review by lean manufacturing experts
+c202M01N19 | Lack of clear position indicator on physical component: since there was no clear position indicator on the physical IoT circuit component, unlike the MAR method.
+c202M01N21 | Jittery visualization of holes on board: MAR still has jittery imagery of holes on board after several pins are connected
+c202M01N23 | Slight delays in animation after button click: such as slight delays in the animation after each button click.
+c202M02N20 | Jittery visualization: Participants also complain about the jittery visualization that affects the 3D model alignment with the breadboard, which impacts their judgment about the component assemble position.
+c202M02N21 | Inability to detect assembly errors: Participants also mentioned that 'we were unable to realize our mistakes during the assembly task, which led us to be unsuccessful in building the circuit in which the LED lamp was not lit up.'
+c203M02N16 | Information dissemination non‑mediation: 'no significant indirect relationship through information dissemination activities' (p.12)
+c204M01N22 | Computational Overhead: The implementation of the proposed scheduling and coordination mechanisms entails energy consumption and computational overhead.
+c205M02N37 | Incomplete Data: Users face 'incomplete data, missing measurement parameters or incomplete historical records'.
+c205M02N38 | Missing Measurement Parameters: Explicitly listed as a problem users face.
+c205M02N39 | Incomplete Historical Records: Explicitly listed as a problem.
+c205M02N40 | Data Blank: Method 'identifies the data blank or incomplete information area'.
+c205M02N41 | Information Blind Area: Caused by incomplete data, leading to 'judgment errors or delayed decision‑making'.
+c206M01N17 | Sensation of vertigo: Another 35% reported that they felt a certain type of vertigo, in different degrees
+c207M01N23 | Lack of Automated Performance Feedback: the employee felt insecure due to the lack of feedback on the performance, resulting in the need of expert guidance.
+c207M01N24 | Heavy Computer Unit Discomfort: However, the Magic Leap was described as uncomfortable, because the computer unit attached to it was experienced as heavy.
+c207M01N25 | Small Text Size: As for the text, it was mentioned that it is small and difficult to read.
+c207M01N26 | Static Spot Projection Constraint: Now the instructions are projected on a static spot, which means the employee has to look at the specific spot to see the instructions.
+c207M02N21 | AR glasses uncomfortable (heavy): Physical discomfort from the weight of the Magic Leap 2 headset.
+c208M01N20 | Monolithic view of knowledge / rigidity: One of the major concerns regarding ontologies is that they reflect a fundamentally monolithic view of knowledge [30], i.e., they are too rigid and cannot easily manage exceptions
+c208M01N21 | Centralized knowledge base query degradation: Secondly, having a single centralized knowledge base would adversely affect its performance, when querying and retrieving information when the size of knowledge increases significantly.
+c208M01N22 | Limited robot hardware capacity: Indeed, current humanoid robots come with very limited hardware compared to the software requirements of sophisticated machine learning algorithms.
+c208M01N23 | Inaccurate or low-quality onboard sensors: In addition, the sensors on board mainstream platforms are often inaccurate and/or not of high quality.
+c208M02N14 | Fixed size and flatness of traditional SOM: Given their unsupervised nature, self-organizing maps provide... strong limitations due to the intrinsic constraints related to the fixed size of the map and the flatness of the structure.
+c208M02N15 | Hardware constraints of humanoid robots: Current humanoid robots come with very limited hardware compared to the software requirements of sophisticated machine learning algorithms.
+c209M01N26 | Unstructured external data data-validity concerns: External social media role in early ideation is limited by confidentiality and data-validity concerns.
+c209M02N35 | Data quality concerns: concerns regarding confidentiality, intellectual property, and data quality
+c210M01N17 | Inconvenient information retrieval: making it difficult to accurately locate key information when searching for related faults, which makes it difficult to retrieve relevant information
+c211M01N15 | Data governance challenges: metaverse applications helps in acknowledgement of the risks of intellectual property leakage or data governance challenges"
+s003M02LI03,"Cost, Resource & Structural Limitations",Limitation,G,SIC 20-39 - Manufacturing,14,"c201M01N22 | Complete lack of operational visibility: The lack of a formalized, digitally-tracked system leads to poor visibility for production managers.
+c201M02N27 | Inefficiency of manual communication and paper-based steps: The existing workflow is almost entirely reactive and relies on informal, manual communication ... a series of inefficient steps
+c203M02N14 | Lack of direct DT‑CE link: H1 rejected: 'no association is found with CE capabilities (0.154; p > 0.1)' (p.12)
+c203M02N15 | Interorganisational boundaries: 'interorganizational boundaries' (p.6), 'heterogeneity of supply chain members' (p.19)
+c204M01N20 | Incentive Misalignments: Alliances underperform or fail due to incentive misalignments, especially when contributions to joint knowledge creation are difficult to observe.
+c204M01N21 | Hierarchical Biases: Traditional models like Nash and Stackelberg falter due to static assumptions and hierarchical biases toward dominant firms.
+c204M01N23 | Operational Redundancy: When complementarity exceeds 0.8, profits decline due to duplicated R&D efforts and rising coordination costs.
+c205M02N43 | Traditional Methods Difficult to Meet Demand: 'Traditional knowledge management methods have been difficult to meet the growing demand' due to complexity and data volume.""
+c208M02N16 | Manual data collection requirement: We eventually collected 1477 samples... The number of images per synset in the knowledge base is limited due to size constraints. Therefore, we collected further images from the service google images by using an automated Python script. We also manually checked inconsistencies.
+c209M01N25 | Risk of intellectual property leakage: Concerns over intellectual property leakage were consistently associated with external platforms.
+c209M02N33 | Confidentiality risks: risk of imitation
+c209M02N36 | Ad hoc usage: interviewees often described social media engagement as ad hoc, flexible, and exploratory
+c210M01N16 | Low efficiency in analyzing and disposing of quality issues: low efficiency in analyzing and disposing of quality issues
+c210M01N19 | Repeatedly sort out and extract knowledge: it is necessary to repeatedly sort out and extract knowledge of quality problems, which is time-consuming and laborious"
+s003M02OD01,Interpersonal Trust & Psychological Safety Climate,Organizational Dependency,G,SIC 20-39 - Manufacturing,1,"c204M01N16 | Trust and Relational Deepening: Cooperation levels escalate over time, reflecting trust and relational deepening which amplifies added value."
+s003M02OD02,Strategic Leadership Advocacy & Technical Championship,Organizational Dependency,G,SIC 20-39 - Manufacturing,2,"c203M01N17 | Embedding knowledge development as a core function: Through a managerial lens, our findings highlight the need to embed knowledge development as a core function in digital transformation roadmaps.
+c206M02N21 | Integration of technical and digitization expertise: Maximization of learning occurs through the combination of technical knowledge and use of technological resources; knowledge in digitization and programming is required."
+s003M02OD04,Intrinsic Identity & Cultural Knowledge-Sharing Values,Organizational Dependency,G,SIC 20-39 - Manufacturing,3,"c203M01N16 | Absorptive capacity of supply chain actors: It suggests that the transformative potential of digitalization in the CE context is contingent upon the absorptive capacity of supply chain actors.
+c203M02N13 | Corporate culture / sustainability mindset: 'absence of a deeply embedded sustainability mindset' as a barrier (p.19)
+c209M01N22 | Absorptive capacity: High absorptive capacity enables firms to filter and recombine unstructured social signals."
+s003M02OD05,Operational Resource Allocation & Dedicated Timeline Provisions,Organizational Dependency,G,SIC 20-39 - Manufacturing,8,"c201M01N26 | Pay-per-use API budget: The only direct operational cost is the pay-per-use API for the intelligence layer.
+c202M01N17 | High computational power of devices: The higher computational power of devices will enhance the performance of the AR tracking.
+c204M01N17 | Digital Maturity: Operational overhead may limit the model's immediate deployment in firms with low digital maturity.
+c209M01N23 | Digital maturity: Digital maturity provides the technological and analytical infrastructure required.
+c210M02N17 | Labeled training data: use entity and relationship tagging functions to manually label the uploaded quality issue files with custom entities and relationships as the training set for model training.
+c211M01N11 | Firms' preparedness toward information technologies: Moreover, firms' preparedness toward information technologies, employee skills impact decision-making
+c211M02N20 | organizational readiness: Organizational readiness and external environmental conditions play significant role
+c211M02N21 | IT infrastructure: IT infrastructure, employee skills impact decision-making"
+s003M02OD06,"Institutional Governance, Standards Compliance & Ethics Clearances",Organizational Dependency,G,SIC 20-39 - Manufacturing,5,"c206M01N13 | Understanding of machine operations and operator interactions: understanding in detail the operation of the machine and interactions with the operator
+c207M01N16 | Personal Protective Equipment Regulations: When it comes to requirements for the technology, it is often stated that any technology should not get in the way of safety. Companies B, D and E emphasize that safety glasses are already worn, which in company D involves welding glasses.
+c209M02N29 | Confidentiality requirements: High (protected via NDA or internal policies)
+c209M02N30 | IP protection protocols: Internal disclosure guidelines defined restricted sharing zones
+c209M02N31 | Governance mechanisms: access controls, NDAs, and formal governance mechanisms"
+s003M02OD07,Expert Participation Frameworks & Succession Structures,Organizational Dependency,G,SIC 20-39 - Manufacturing,2,"c201M02N26 | Presence of experienced staff: SMEs rely on agile, experience-based workflows ... when veteran staff retire or switch jobs, this undocumented expertise departs
+c206M02N20 | Instructor's technical knowledge of regulatory standards: Technical knowledge of regulatory standards on the part of the instructor is essential for the method."
+s003M02TA01,Somatic Tacit Knowledge,Tacit Knowledge,G,SIC 20-39 - Manufacturing,9,"c201M01N01 | Tacit experience-based know-how: Small and medium-sized enterprises (SMEs) still depend heavily on tacit, experience-based know-how that rarely makes its way into formal documentation.
+c201M02N01 | Informal reactive maintenance process knowledge: The existing workflow is almost entirely reactive and relies on informal, manual communication ... an assembly line operator hears a strange noise ... verbally explains the problem ... technician inspects ... checks physical spare parts inventory ... fills out a paper purchase request
+c202M02N04 | Assembly skill with reduced errors: The MAR group (0.5 error rate) made fewer errors than the paper group (1.35 error rate). The MAR group showed a significant reduction in errors (Z=-3.480, p=0.001).
+c203M01N01 | Supply chain process familiarity: Achieved memory describes the amount of knowledge, familiarity, and experience a firm possesses regarding the supply chain process.
+c203M02N18 | Supply chain experience: 'experience a firm possesses regarding the supply chain process' (p.6)
+c204M01N02 | Proprietary Know-How: Central to these alliances is knowledge sharing through which partner firms exchange proprietary know-how.
+c207M01N01 | Tacit Expert Work Sequences: Observations show that both experts perform certain tasks in a different order, adhering to their own expertise. They also indicated that they perform some steps differently than described in the instructions.
+c207M01N02 | Systematic Measurement Processes: beginners sometimes make fewer errors because they perform the measurement processes more systematically than experts.
+c211M02N05 | know-how: KBV underscores competitive advantage from creation, sharing, integration and application of both explicit and tacit knowledge"
+s003M02TA02,Cognitive Tacit Knowledge,Tacit Knowledge,G,SIC 20-39 - Manufacturing,17,"c202M01N06 | Knowledge of component arrangement and connectivity: IoT circuit assembly tasks can be complex for learners due to the perception of component arrangement and connectivity
+c202M02N05 | Spatial positioning skill: AR aids in information integration by associating virtual objects with real-world objects. The 3D model animation guides the user to follow the assembly positioning.
+c202M02N06 | Recall of assembly steps: Both groups were able to retain the knowledge which is from immediate post-test to delayed post-test. No statistically significant change (MAR p=0.886, paper p=0.914).
+c203M02N03 | Circular economy capabilities: 'CE capabilities refer to the ability of a firm to allocate a bundle of resources to implement CE practices in its business processes effectively.' (p.5)
+c204M01N01 | Technical Expertise: Firms exchange technical expertise and proprietary know-how to cocreate value.
+c205M01N04 | Experience in handling historical similar faults and case analysis: provide engineers with experience in handling historical similar faults and case analysis
+c205M01N05 | Expert domain knowledge ability: evaluating the expert's comprehensive competence level and domain knowledge ability
+c206M01N04 | Technical knowledge of regulatory norms: The great differential of the proposed method is to reconcile the technical knowledge of the instructor with the possibility of practical simulations
+c206M02N03 | Understanding of applied content: Question 8 asks: 'Compared to online platforms... do you think immersive virtualization provided a greater understanding of the applied content?',
+c207M02N01 | Expert knowledge (specialist expertise): Experts possess specialist expertise that is difficult to codify.
+c207M02N02 | Mental rotation skill: Interpreting 3D objects from 2D construction drawings requires mental rotation.
+c209M01N06 | Early user signals: External platforms are primarily used to surface early user signals and refine market understanding.
+c209M02N09 | Expert judgment: Our R&D experts evaluate... only those with potential for further development
+c211M01N02 | Tacit knowledge from experts: Blending tacit knowledge from experts with AI in immersive platforms
+c211M01N03 | Contextual knowledge: Thus, knowledge warehouse helps to assess past decisions, identify lacunas, helping to assess tacit and contextual knowledge rather than analyzing only explicit data.
+c211M02N03 | tacit and contextual knowledge: helping to assess tacit and contextual knowledge rather than analyzing only explicit data
+c211M02N04 | intuition: Blending tacit knowledge from experts with AI in immersive platforms (Table 2)"
+s003M02TA03,Collective and Relational Tacit Knowledge,Tacit Knowledge,G,SIC 20-39 - Manufacturing,5,"c203M01N02 | Shared consensus on common circular economy goals: Shared meaning refers to the achievement of a consensus regarding the understanding of information among firms and their members and supply chains.
+c203M02N01 | Achieved memory: 'Achieved memory (AM) refers to the amount of knowledge, familiarity, and experience a firm possesses regarding the supply chain process.' (p.6)
+c203M02N02 | Shared meaning: Shared meaning refers to the achievement of a consensus regarding the understanding of information among firms and their members and supply chains. (p.6)
+c204M01N03 | Intellectual Capital: Partner firms exchange intellectual capital to accelerate innovation.
+c209M01N07 | Expert-driven collaboration: Internal platforms enable secure, expert-driven collaboration under tighter governance conditions."
+s003M02TA04,Adaptive Tacit Knowledge,Tacit Knowledge,G,SIC 20-39 - Manufacturing,4,"c206M01N03 | Safe behavioral response in working at heights: makes it possible to present the worker with the dangers and risks present in a given situation, making it possible, through actions, procedures and attitudes, to act preventively
+c206M02N04 | Assertiveness in high-risk situations: Question 10: 'Do you believe that immersive training contributes to greater assertiveness and understanding in working at heights and in confined spaces?',
+c206M02N05 | Hazard identification performance: The paper cites Souto & Albuquerque (2015) stating safety innovation focuses on whether the worker can perceive risks of the environment.
+c209M02N10 | Situational awareness: understand where the markets and consumers for our products are"
+s003M02TE01,Artificial Intelligence and Intelligent Computation,Digital Technology,G,SIC 20-39 - Manufacturing,21,"c201M01N15 | Google Gemini 2.5 Pro API: Powered by Gemini 2.5 Pro... The system's core logic is powered by Google's Gemini 2.5 Pro API.
+c201M02N20 | Gemini 2.5 Pro model: Powered by Gemini 2.5 Pro ... state-of-the-art LLM as the reasoning engine
+c203M01N14 | Artificial intelligence (AI): Industry 4.0 (I4.0) technologies, including, digital technologies (DT) such as, big data analytics (BDA), internet of things (IoT) and artificial intelligence (AI)
+c205M02N26 | Natural Language Processing: 'Natural language processing technology' is used for text extraction and transformation.""
+c205M02N27 | Deep Learning: Deep learning algorithms are 'combined with user portrait, context information modeling' for personalized recommendation.
+c205M02N28 | Word Embedding Model: 'Word embedding model' is used to calculate similarity scores between query and knowledge base terms.""
+c205M02N29 | Image Recognition Technology: 'Image recognition technology' transforms visual information into structured knowledge.""
+c205M02N32 | TextRank Algorithm: TextRank is a 'statistics‑based' method for keyword extraction.
+c205M02N33 | TF-IDF: TF‑IDF is used as a statistics‑based method for keyword extraction.
+c205M02N34 | Topic Model (LDA): 'Topic models (such as LDA)' are used for summary statistics.""
+c205M02N35 | Cluster Analysis: 'Cluster analysis' is used to classify and summarize different types of knowledge.""
+c205M02N36 | Mixed-connection Neural Network: The fuzzy matching push section mentions a 'quality prediction model based on mixed‑connection neural networks'.
+c207M01N14 | Python Library whisper_timestamped: Using the Python programming language, a transcription can be obtained from the video that has been created. The Python library 'whisper_timestamped' is used for this.
+c207M02N14 | Whisper model: Speech recognition model used to transcribe video instructions.
+c208M01N14 | Growing Hierarchical Self-Organizing Maps (GHSOM): It makes use of growing hierarchical self-organizing maps (GHSOM) which have been first presented in [45, 46].
+c208M01N16 | Genetic algorithm: Moreover, a genetic algorithm has been developed for the fine tuning of parameters tau1 and tau2 in the GHSOM architecture.
+c208M01N18 | IBM Watson Speech Recognition engine: by replacing the Speech Recognition engine, with a more sophisticated one, by using a service for speech recognition, known as IBM Watson.
+c209M01N21 | Sentiment monitoring tools: Annual Report noted deployment of AI-assisted sentiment monitoring tools.
+c210M01N10 | BERT-BILSTM-CRF model: This article adopts the BERT-BILSTM-CRF model for entity recognition of quality problem elements.
+c210M01N11 | BERT model relation classifier: The relationship classification network architecture is shown in Figure 4 and consists of three parts: semantic encoding layer, feature extraction layer, and classification layer.
+c211M01N10 | Artificial Intelligence: Blending tacit knowledge from experts with AI in immersive platforms"
+s003M02TE02,Human–Computer Interaction and Immersive Technologies,Digital Technology,G,SIC 20-39 - Manufacturing,15,"c201M01N16 | Gradio open-source Python framework: The user interface is built with Gradio, an open-source Python framework that enables the rapid development of web-based UIs.
+c201M01N17 | bpmn-js JavaScript toolkit: Process diagrams are rendered in the browser using bpmn-js, a powerful, open-source JavaScript toolkit for BPMN 2.0.
+c202M01N11 | iPad Pro: an iPad Pro was chosen for its high computational power and large screen
+c202M01N12 | Vuforia Engine: marker-based AR application was developed using the Vuforia Engine
+c202M01N14 | 3D animated models: leveraging the signaling principle through 3D animated models
+c202M02N16 | MAR application software: The MAR application ... user interface in AR was developed to control the IoT components.
+c206M01N11 | Virtual reality software: Programming in Virtual Reality software. All movements equal to the real thing for total immersion
+c206M01N12 | Immersive virtualization glasses: Did you feel vertigo while using immersive virtualization glasses?
+c206M02N18 | Joysticks: Manual controls (joysticks) are used to operate the system.
+c207M01N12 | Vuzix M400: The prototype that was made for capturing knowledge used the Vuzix m400.
+c207M01N13 | Magic Leap 2: For instruction, the second option mentioned in the introduction was chosen, an AR solution with a complete set of glasses, in this case the Magic Leap 2.
+c207M01N15 | Unity: The instructions were further implemented with the Unity program. A CAD model of the plastic product was integrated into Unity
+c211M01N08 | Metaverse: Metaverse technology considered to be a sophisticated integration of the physical and virtual ecosystem which is empowered by virtual reality (VR), augmented reality (AR), DT and blockchain
+c211M02N17 | virtual reality (VR): empowered by virtual reality (VR), augmented reality (AR), DT and blockchain
+c211M02N19 | avatar: avatar-based stakeholder collaboration"
+s003M02TE03,"Cyber-Physical Systems, IoT, and Smart Environments",Digital Technology,G,SIC 20-39 - Manufacturing,4,"c202M01N16 | NodeMCU ESP8266 microcontroller board: the NodeMCU ESP8266 selected for the IoT assembly task
+c203M01N13 | Internet of things (IoT): Industry 4.0 (I4.0) technologies, including, digital technologies (DT) such as, big data analytics (BDA), internet of things (IoT) and artificial intelligence (AI)
+c211M01N09 | Digital twins: DT considered to be a prominent tool to drive the metaverse concept in the circular supply chain practices.
+c211M02N16 | digital twin (DT): DT considered to be a prominent tool to drive the metaverse concept"
+s003M02TE04,"Data, Information, and Knowledge Systems",Digital Technology,G,SIC 20-39 - Manufacturing,12,"c202M01N15 | Web server: with the commands signal sent via a web server.
+c203M01N12 | Big data analytics (BDA): Industry 4.0 (I4.0) technologies, including, digital technologies (DT) such as, big data analytics (BDA), internet of things (IoT) and artificial intelligence (AI)
+c203M02N04 | Digital technologies (IoT, AI, BDA, blockchain): 'Digital technologies, including IoT, blockchain, AI and BDA, are widely recognized as critical enablers of the CE implementation.' (p.5)
+c205M02N30 | Graph Database: Data layer includes integration of multi‑source data 'organized and stored in the form of relational database and graph database'.
+c205M02N31 | Relational Database: Same as above – both relational and graph databases are used.
+c208M02N10 | WordNet: WordNet is a dictionary containing lexical-semantic connections between abstract concepts.
+c208M02N11 | ImageNet: ...visual features extracted from images contained in ImageNet have been imported in the General Knowledge Base.
+c210M01N12 | Mongo database: The system uses the Mongo database... Mongo database is used for storing structured data
+c210M01N13 | Jena TDB: Jena TDB is used for storing knowledge graph triplet data
+c210M01N14 | ES search engine: the ES retrieval engine is used for segmenting and indexing quality problem case information
+c210M01N15 | Redis: Redis stores login user tokens and training task information.
+c210M02N12 | Knowledge graph: Knowledge graph technology can organize complex information in the real world in a structured manner through entities, relationships, and attributes."
+s003M02TE05,"Imaging, Sensing, and Perception Technologies",Digital Technology,G,SIC 20-39 - Manufacturing,3,"c202M01N13 | QR code AR marker: A QR code served as the AR marker, placed on the breadboard
+c206M01N10 | Laser scanning equipment: Laser scanning equipment captures the details of the environment
+c206M02N19 | Point clouds: Point clouds represent the environment obtained through laser scanning."
+s003M02TE06,"Distributed, Secure, and Trust Technologies",Digital Technology,G,SIC 20-39 - Manufacturing,1,"c203M01N15 | Blockchain: Although some conceptual frameworks suggest that technologies such as AI, BDA, IoT and blockchain can enhance knowledge transformation"
+s003M02TE07,"Mobile, Social, and Communication Technologies",Digital Technology,G,SIC 20-39 - Manufacturing,1,"c209M01N20 | Social media analytics tools: Firms began to extract value through more formalised, analytics-supported processes."
+s003M02TE08,"Rule-Based, Decision, and Expert Systems",Digital Technology,G,SIC 20-39 - Manufacturing,2,"c204M01N15 | Fuzzy TOPSIS Technique: Knowledge level was constructed as a weighted composite index normalized to [0, 1], calculated using the Fuzzy TOPSIS technique.
+c208M01N17 | Ordered-Weighted Averaging (OWA) operators: For the combination function to take place, Ordered-Weighted averaging (OWA) operators have been used [48]."
+s003M02TP01,Automated Process Documentation & Synthesis,Technology-enable Practice,G,SIC 20-39 - Manufacturing,37,"c201M01N13 | LLM-driven conversational process documentation assistant: This paper introduces a large-language-model (LLM)-driven conversational assistant that captures such knowledge on the shop floor.
+c201M01N14 | Gemini Flash evaluation experiment: During testing, an alternative model, Gemini 2.5 Flash, was considered as a more cost-effective option.
+c201M02N19 | Interactive modeling session: The evaluation was conducted through an interactive dialogue between a user and the chatbot, as illustrated in Figure 3
+c203M01N10 | Structured knowledge management systems: firms should invest in structured knowledge management systems that support both knowledge acquisition and memory retention.
+c203M01N11 | Interfirm platforms: Specifically, building interfirm platforms that enable data interoperability, common standards and real-time sharing of sustainability performance indicators
+c203M02N05 | Knowledge acquisition activities: DT are positively associated with knowledge acquisition activities (H2b supported, p.12). 'Knowledge acquisition refers to the process of gathering useful information.' (p.6)
+c203M02N06 | Information dissemination activities: 'Information dissemination is the sharing of information gathered internally, within organizational areas and activities, through formal and informal channels.' (p.6)
+c203M02N17 | DT‑enabled knowledge storage: DT are positively associated with achieved memory (H2a, p.12), implying use of DT to store and retain knowledge.
+c204M01N13 | Hybrid Cooperative Game-Theoretic Framework: This study introduces a hybrid game-theoretic framework utilizing the Shapley value's axiomatic fairness to allocate profits by marginal contributions.
+c204M01N14 | Monte Carlo Simulations: This framework employs Monte Carlo simulations to deliver statistically reliable contribution estimates.
+c205M01N09 | Aerospace quality knowledge graph-based proactive service system: design and implement a proactive service mechanism for aerospace quality knowledge based on knowledge graph
+c205M02N13 | Knowledge Graph: A 'structured knowledge graph' is constructed to organize quality management information.
+c205M02N14 | Scenario-based Rule Push: 'Scenario‑based rule push' provides accurate knowledge push through pre‑defined rules and scene matching.""
+c205M02N15 | Word Similarity-based Recall: 'Word similarity‑based knowledge item recall' calculates semantic similarity between user query and knowledge base items.""
+c205M02N16 | Fuzzy Matching Push: 'Scenario‑based Fuzzy Matching Push' is listed as a method (though the paragraph contains a prediction model example).""
+c205M02N17 | Incomplete Data Information Push: 'Incomplete data information push' identifies data blanks and pushes supplementary knowledge.""
+c205M02N18 | Deep Learning based Proactive Service Algorithm: The 'knowledge proactive service algorithm based on deep learning' integrates user behavior and job demand to output personalized services.
+c205M02N19 | User Portrait: 'User portrait of aerospace quality knowledge' accurately depicts behavior characteristics and needs.""
+c205M02N20 | Context Information Modeling: 'Context information modeling' abstracts time, place, task, environment to support targeted recommendations.
+c205M02N22 | Expert Ability Model: 'Expert ability model' evaluates expert competence to provide in‑depth support for specific tasks.""
+c205M02N24 | Keyword Extraction: 'Keyword extraction' identifies representative words from domain texts using NLP.""
+c205M02N25 | Summary Statistics: 'Summary statistics' simplifies and summarizes knowledge through statistical analysis and aggregation.""
+c207M01N10 | Whisper-based Audio Transcription System: The prototype with Whisper-based audio transcription performed well to convert video instructions to written instructions.
+c208M01N10 | Unsupervised low-level perception-based technique: we discuss here the refined development of the unsupervised low-level approach for constructing and conceptualizing the knowledge based on perception,
+c208M01N11 | Supervised high-level semantics-based technique: its combination with the supervised high-level approach for constructing and conceptualizing the knowledge based on semantic,
+c208M01N12 | Combined approach via OWA operators: Hence, we present a combined approach based on semantics and machine learning techniques for improving robots cognitive capabilities.
+c208M01N13 | Ontology matching and merging activity: First, the ontological model has been provided with the ability of being extensible through ontology matching and merging activities.
+c208M02N06 | Combined approach (BU+TD with OWA): The idea is to have a more robust final classification by a voting-based decision which takes into account both supervised and unsupervised approaches results.
+c208M02N07 | GHSOM bottom-up learning: The GHSOM artificial neural-network model tackle the aforementioned issues with a hierarchical architecture of growing self-organizing maps.
+c209M01N18 | Internal social media platforms: Internal corporate platforms play complementary roles in integrating knowledge.
+c209M01N19 | External social media platforms: External platforms allow for broader, less structured engagement with the public.
+c209M02N26 | Social listening tools: monitoring and mining user data
+c209M02N27 | Analytics tools: basic analytics tools (e.g. sentiment analysis, keyword clustering) can structure external data
+c210M01N08 | Quality problem expert knowledge system software: integrate relevant functions to build a quality problem expert knowledge system software, achieving quality problem knowledge extraction and information sharing.
+c210M01N09 | Knowledge graph of aviation equipment quality issues: integrate quality issue triplets and construct a knowledge graph of aviation equipment quality issues
+c211M01N06 | Digital repositories: Metaverse facilitate in adopting revolutionary method for storing and retaining knowledge by innovative way of handling data and information, digital repositories.
+c211M02N13 | knowledge warehouse: knowledge warehouse helps to assess past decisions, identify lacunas"
+s003M02TP02,Immersive Training & Spatial Simulation,Technology-enable Practice,G,SIC 20-39 - Manufacturing,9,"c202M01N10 | Mobile Augmented Reality (MAR) application training: In this regard, this study developed a MAR framework and application to facilitate IoT assembly training.
+c202M02N11 | MAR application assembly training: The MAR application learning intervention was conducted. AR displayed assembly steps to aid participants in constructing the Arduino-based IoT circuit.
+c206M01N09 | Immersive virtualization training method: propose a method of training in regulatory standards using immersive virtualization, aiming at improving student knowledge retention
+c207M01N11 | Interactive 3D CAD Instruction Prototyping: The experimental setup incorporates 3D elements, adding an extra dimension to the instructions for enhanced understanding. Visualizations are projected onto the 3D CAD model using arrows and animations
+c211M01N07 | Avatar-based supply chain collaborations: avatar-based supply chain collaborations help the students understand the impact of interdependencies on supply chain performance.
+c211M02N09 | digital twin experimentation: Digital twin experimentation to simulate product recovery models
+c211M02N10 | virtual training module: Virtual training modules on disassembly, reuse and eco-design
+c211M02N11 | immersive avatar collaboration: Immersive avatar-based collaboration across supply chain actors
+c211M02N12 | simulated environment: Metaverse simulated environment helped me in comprehensive understanding"
+s003M02TR03,Deliberate Practice,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,7,"c201M02N15 | Manual spare parts inventory check by technician: They walk back to the workshop to check the physical spare parts inventory
+c201M02N17 | Handwritten sign placement on machine: They return to the machine and leave a handwritten 'Awaiting Part' sign on it
+c202M01N09 | Traditional paper-based manual training: We compare the MAR application, which incorporates the signaling principle, with a traditional paper-based manual.
+c202M02N10 | Paper manual assembly training: Participants were required to read the paper manual as part of the traditional learning intervention. While assembling, they repeatedly referred to the paper manual.
+c206M01N08 | Traditional online platforms training (ZOOM/TEAMS): The teams of workers in the production and maintenance sectors have already gone through the mandatory training process in regulatory standard 35 (NR-35) in 2022 in the traditional online model
+c206M02N12 | Face-to-face practical training: Face-to-face training was severely impacted by the COVID-19 pandemic.
+c207M01N09 | Paper-based Work Instructions: At companies C, D, E and F, a physical or printed version of the drawing is often used"
+s003M02TR04,Knowledge Cafés,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,3,"c203M01N09 | Fragmented departmental communication: the construct focuses on interdepartmental information sharing within firms. However, the connection between I4.0 technologies and CE capabilities may depend more heavily on information exchange at the supply chain level.
+c203M02N10 | Interdepartmental information sharing: 'the construct [information dissemination activities] focuses on interdepartmental information sharing within firms' (p.15)
+c208M01N09 | Human-Robot Interaction: This phase can also involve the interaction with humans, who can trigger new requests and/or validate inferences made by the robot."
+s003M02TR05,Knowledge Harvesting Workshops,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,6,"c204M01N11 | Nash Bargaining Model: Conventional models such as Nash bargaining fail to analyze dynamic, knowledge-driven contributions.
+c204M01N12 | Stackelberg Model: Stackelberg leadership models have been widely applied to study power dynamics but rely on sequential dominance assumptions.
+c205M01N08 | Traditional knowledge management methods: the traditional knowledge management methods have been difficult to meet the growing demand
+c209M01N17 | Traditional internal R&D mechanisms: Social media represents a digital infrastructure complementing traditional internal R&D mechanisms.
+c209M02N23 | Knowledge-sharing workshops: knowledge-sharing workshops
+c210M01N07 | Traditional step-by-step document distribution: Currently, they mainly rely on single channels such as confidential information to be distributed step by step"
+s003M02TR07,Mentoring,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,1,"c207M01N08 | Cognitive Apprenticeship: Traditionally, workplace instruction relied on 'cognitive apprenticeship', where a master directly teaches an apprentice the skills needed to fulfill their tasks"
+s003M02TR08,Storytelling,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,1,c201M02N14 | Verbal fault reporting from operator to supervisor: He shuts it down and walks over to the maintenance workshop to report it. He finds the maintenance supervisor and verbally explains the problem
+s003M02TR09,After-Action Reviews,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,1,"c201M01N12 | Reactive and untracked equipment maintenance process: The chosen case study focuses on a common and inefficient process for managing unplanned equipment downtime... almost entirely reactive and relies on informal, manual communication."

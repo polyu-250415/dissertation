@@ -1,0 +1,62 @@
+src_node_id,dst_node_id,relation_type,evidence_label,case_title,evidence_statement,evidence_location
+c004M01N10,c004M01N04,be_held_by,E,A generative AI model for automating construction bid preparation,Beta's reliance on the bid manager's intuition,"PAGE 18, Source 617"
+c004M01N11,c004M01N01,be_held_by,I,A generative AI model for automating construction bid preparation,The findings reaffirm the need for human oversight in activities involving contextual judgment,"PAGE 19, Source 629"
+c004M01N11,c004M01N04,be_held_by,I,A generative AI model for automating construction bid preparation,The findings reaffirm the need for human oversight in activities involving contextual judgment,"PAGE 19, Source 629"
+c004M01N12,c004M01N04,be_held_by,I,A generative AI model for automating construction bid preparation,The integration of automated systems would also allow firms to focus more on strategic decision-making,"PAGE 17, Source 581"
+c004M01N01,c004M01N13,participate_in,E,A generative AI model for automating construction bid preparation,"At Alpha, the lead tender administrator (LTA) participated","PAGE 5, Source 153"
+c004M01N03,c004M01N13,participate_in,I,A generative AI model for automating construction bid preparation,ATA2 Engineering tenders,"PAGE 9, Source 272"
+c004M01N04,c004M01N13,participate_in,E,A generative AI model for automating construction bid preparation,"In the Beta case, the primary participant was the Bid Manager (BM)","PAGE 9, Source 274"
+c004M01N01,c004M01N14,participate_in,I,A generative AI model for automating construction bid preparation,A human-in-the-loop review was incorporated to ensure quality,"PAGE 7, Source 242"
+c004M01N04,c004M01N14,participate_in,I,A generative AI model for automating construction bid preparation,A human-in-the-loop review was incorporated to ensure quality,"PAGE 7, Source 242"
+c004M01N30,c004M01N15,participate_in,E,A generative AI model for automating construction bid preparation,Ground truth labels for the requirements extraction module were generated through manual annotation of the RFPs by the research team,"PAGE 14, Source 511"
+c004M01N15,c004M01N09,evaluate,E,A generative AI model for automating construction bid preparation,Ground truth labels for the requirements extraction module were generated through manual annotation of the RFPs by the research team,"PAGE 14, Source 511"
+c004M01N16,c004M01N21,adopt,E,A generative AI model for automating construction bid preparation,GPT-4o LLM is used in extracting predefined requirements from the uploaded RFP,"PAGE 11, Source 389"
+c004M01N17,c004M01N22,adopt,E,A generative AI model for automating construction bid preparation,The extracted requirements are encoded as vector embeddings... using OpenAI's text-embedding-ada-002,"PAGE 13, Source 454"
+c004M01N18,c004M01N21,adopt,E,A generative AI model for automating construction bid preparation,OpenAI's GPT-4o LLM is used to automatically compose a coherent and contextually appropriate bid narrative,"PAGE 12, Source 432"
+c004M01N18,c004M01N23,adopt,E,A generative AI model for automating construction bid preparation,The pipeline was orchestrated through the LangChain framework,"PAGE 8, Source 250"
+c004M01N13,c004M01N27,be_constrained_by,E,A generative AI model for automating construction bid preparation,"often constrained by fragmented information, inconsistent documentation","PAGE 2, Source 27"
+c004M01N16,c004M01N28,be_constrained_by,E,A generative AI model for automating construction bid preparation,"First, the current extraction process only supports PDF documents; accuracy decreases for scanned or image-based documents, as no Optical Character Recognition (OCR) is integrated","PAGE 16, Source 557-558"
+c004M01N16,c004M01N29,be_constrained_by,E,A generative AI model for automating construction bid preparation,"accuracy decreases for scanned or image-based documents, as no Optical Character Recognition (OCR) is integrated","PAGE 16, Source 558"
+c004M01N17,c004M01N27,mitigate,E,A generative AI model for automating construction bid preparation,This component mitigates knowledge loss by surfacing prior bids most relevant to new RFP requirements,"PAGE 7, Source 229"
+c004M01N18,c004M01N14,cannot_fully_replace,E,A generative AI model for automating construction bid preparation,"While human oversight remains essential for contextual refinement, the system shows strong potential","PAGE 14, Source 505"
+c004M01N18,c004M01N13,complement,E,A generative AI model for automating construction bid preparation,"The AI-generated sections demonstrated near-human quality while being produced in seconds, compared to several hours of manual drafting","PAGE 17, Source 583"
+c004M01N13,c004M01N24,depend_on,E,A generative AI model for automating construction bid preparation,suggesting that investment in integrated digital infrastructure and centralized data management will be critical for scaling automation,"PAGE 19, Source 630"
+c004M01N13,c004M01N25,depend_on,E,A generative AI model for automating construction bid preparation,firms must invest in digital infrastructure to support these systems,"PAGE 17, Source 600"
+c004M01N16,c004M01N26,depend_on,E,A generative AI model for automating construction bid preparation,This suggests that organizational maturity and information systems readiness significantly influence a firm's automation readiness,"PAGE 18, Source 618"
+c004M01N17,c004M01N26,depend_on,E,A generative AI model for automating construction bid preparation,This suggests that organizational maturity and information systems readiness significantly influence a firm's automation readiness,"PAGE 18, Source 618"
+c004M01N18,c004M01N26,depend_on,E,A generative AI model for automating construction bid preparation,This suggests that organizational maturity and information systems readiness significantly influence a firm's automation readiness,"PAGE 18, Source 618"
+c004M01N08,c004M01N16,be_transferred_by,E,A generative AI model for automating construction bid preparation,The user uploads a new RFP document (PDF format) into the system. GPT-4o extracts predefined requirements,"PAGE 13, Source 450-451"
+c004M01N07,c004M01N17,be_transferred_by,E,A generative AI model for automating construction bid preparation,The extracted requirements are encoded as vector embeddings and queried against the historical bid proposal database,"PAGE 454, Source 454"
+c004M01N09,c004M01N18,be_transferred_by,E,A generative AI model for automating construction bid preparation,"Based on the retrieved proposals and the extracted requirements, GPT-4o generates a draft","PAGE 14, Source 479"
+c004M01N09,c004M01N08,be_derived_from,E,A generative AI model for automating construction bid preparation,GPT-4o LLM is used in extracting predefined requirements from the uploaded RFP,"PAGE 11, Source 389"
+c004M01N07,c004M02N14,be_held_by,E,A generative AI model for automating construction bid preparation,Historical bid documents were stored and used by the bid preparation team.,Page 6
+c004M02N02,c004M02N14,be_held_by,E,A generative AI model for automating construction bid preparation,RFPs are uploaded by bid personnel for requirements extraction.,Page 11
+c004M02N03,c004M02N14,be_held_by,E,A generative AI model for automating construction bid preparation,Methodology sections from past proposals are stored and retrieved for few-shot prompting.,Page 11
+c004M01N10,c004M02N12,be_held_by,E,A generative AI model for automating construction bid preparation,"The Bid Manager (Beta) relies on intuition, contrasting with Alpha's structured data handling.",Pages 17-18
+c004M02N08,c004M02N14,be_held_by,E,A generative AI model for automating construction bid preparation,Human expertise in interpreting complex specifications remains critical.,Page 17
+c004M01N07,c004M02N23,be_transferred_by,E,A generative AI model for automating construction bid preparation,Historical bid proposals are transferred via semantic retrieval to surface relevant matches for new RFPs.,Page 6
+c004M02N02,c004M02N24,be_transferred_by,E,A generative AI model for automating construction bid preparation,RFPs are processed by the requirements extraction module.,Page 11
+c004M02N16,c004M02N22,participate_in,I,A generative AI model for automating construction bid preparation,Management reviews extracted requirements to make final bid/no-bid decisions.,Page 11
+c004M02N22,c004M02N27,adopt,E,A generative AI model for automating construction bid preparation,The GenAI system adopts GPT-4o LLM for extraction and generation.,Page 6
+c004M02N22,c004M01N22,adopt,E,A generative AI model for automating construction bid preparation,The system adopts OpenAI text-embedding-ada-002 for creating embeddings.,Page 6
+c004M02N22,c004M02N29,adopt,E,A generative AI model for automating construction bid preparation,The system adopts Pinecone vector database for semantic retrieval.,Page 6
+c004M02N22,c004M01N23,adopt,E,A generative AI model for automating construction bid preparation,The system adopts LangChain for orchestration.,Page 7
+c004M02N22,c004M02N31,adopt,E,A generative AI model for automating construction bid preparation,The system adopts Streamlit for the graphical interface.,Page 7
+c004M02N22,c004M02N32,adopt,E,A generative AI model for automating construction bid preparation,The system adopts PDF format for document storage.,Pages 6-7
+c004M02N23,c004M02N29,adopt,E,A generative AI model for automating construction bid preparation,Semantic retrieval uses Pinecone vector database.,Page 6
+c004M02N24,c004M02N27,adopt,E,A generative AI model for automating construction bid preparation,Requirements extraction uses GPT-4o LLM.,Page 7
+c004M02N25,c004M02N27,adopt,E,A generative AI model for automating construction bid preparation,Proposal generation uses GPT-4o LLM.,Page 11
+c004M02N26,c004M02N31,adopt,E,A generative AI model for automating construction bid preparation,Human-in-the-loop interface built with Streamlit.,Page 7
+c004M02N23,c004M02N38,mitigate,E,A generative AI model for automating construction bid preparation,This component (semantic retrieval) mitigates knowledge loss by surfacing prior bids most relevant to new RFP requirements.,Page 6
+c004M02N22,c004M02N17,complement,E,A generative AI model for automating construction bid preparation,The GenAI system complements manual drafting; human-in-the-loop review ensures quality.,"Page 7, 17"
+c004M02N17,c004M02N36,be_constrained_by,E,A generative AI model for automating construction bid preparation,Manual drafting is constrained by fragmented information storage.,"Page 5, 17"
+c004M02N17,c004M02N37,be_constrained_by,E,A generative AI model for automating construction bid preparation,Manual drafting is time-consuming and repetitive.,"Page 1, 5"
+c004M02N17,c004M02N39,be_constrained_by,E,A generative AI model for automating construction bid preparation,Manual drafting leads to inconsistent documentation.,Page 2
+c004M02N21,c004M02N36,be_constrained_by,E,A generative AI model for automating construction bid preparation,Manual cross-referencing suffers from fragmented information.,"Page 9, 17"
+c004M02N21,c004M02N37,be_constrained_by,E,A generative AI model for automating construction bid preparation,Manual cross-referencing is inefficient.,Page 9
+c004M02N22,c004M02N33,depend_on,E,A generative AI model for automating construction bid preparation,The GenAI system depends on centralized data systems; absence is a challenge.,Page 17
+c004M02N22,c004M02N35,depend_on,I,A generative AI model for automating construction bid preparation,Automation success depends on digital infrastructure maturity.,Page 18
+c004M02N07,c004M02N40,be_difficult_to_capture_due_to,E,A generative AI model for automating construction bid preparation,Contextual judgment is difficult to capture due to customization challenges and need for expert input.,Page 17
+c004M01N10,c004M02N40,be_difficult_to_capture_due_to,I,A generative AI model for automating construction bid preparation,Bid manager's intuition is difficult to capture due to customization and reliance on tacit experience.,Page 17-18
+c004M02N24,c004M02N41,be_constrained_by,E,A generative AI model for automating construction bid preparation,Requirements extraction module is constrained by lack of OCR for scanned documents.,Page 15
+c004M02N24,c004M02N42,be_constrained_by,E,A generative AI model for automating construction bid preparation,Requirements extraction trained on small dataset (13 documents).,Page 6

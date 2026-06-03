@@ -234,26 +234,31 @@ Your output:"""
 
         return resp_list
 
+    def query_related_docs(self, question):
+        docs = []
+        run_input = {
+            "text_embedder": {"text": question}
+        }
+
+        if filters:
+            run_input["retriever"] = {"filters": filters}
+        results = self._build_retrieval_pipeline().run(run_input)
+
+        for doc in results["retriever"]["documents"]:
+            if doc.score > 0.5:
+                docs.append(doc.content.replace("\n", " "))
+
+        context = "\n".join(docs)
+
+        return context
+
     def ask_by_local_llm(self, question_list:list[dict], filters: dict = None):
 
         resp_list = []
 
         for item in question_list:
-            docs = []
             try:
-                run_input = {
-                    "text_embedder": {"text": item['question']}
-                }
-
-                if filters:
-                    run_input["retriever"] = {"filters": filters}
-                results = self._build_retrieval_pipeline().run(run_input)
-
-                for doc in results["retriever"]["documents"]:
-                    if doc.score > 0.5:
-                        docs.append(doc.content.replace("\n", " "))
-
-                context = "\n".join(docs)
+                context = self.query_related_docs(item['question'])
 
                 prompt_template = {
                     "assemble":
@@ -316,12 +321,12 @@ if __name__ == '__main__':
         "case_id": case_id
     }
 
-    path = "../../data/graph/case_study/raw_pdf_m/c002/"
+    path = "../../data/graph/case_study/raw_pdf_m/c001/"
 
     # FIX: Pass the custom_meta dictionary explicitly here
     obj.ingest(path, custom_meta=custom_meta_data)
 
-    df_nodes = pd.read_csv("./just.csv")
+    df_nodes = pd.read_csv("../../data/graph/case_study/case_6_v_ds/c001_ds_rag.csv")
 
     question_list = df_nodes[['sample_type', 'question']].to_dict(orient='records')
     filters = {"field": "meta.case_id", "operator": "==", "value": case_id}

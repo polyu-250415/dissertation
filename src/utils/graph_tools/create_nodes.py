@@ -7,7 +7,7 @@ import re
 # === CONFIG ===
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "MyNewPass123!")
-CSV_DIR = "../../data/graph/case_study/case_6_rebuild_kg"
+CSV_DIR = "../../data/graph/case_study/case_6_v_ds"
 
 def read_nodes_from_csv(endswith='nodes.csv', path_dir=CSV_DIR):
     nodes = []
