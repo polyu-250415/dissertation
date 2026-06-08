@@ -1,12 +1,12 @@
 import pandas as pd
 import os
 
-from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_case
+from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_files
 
 class CrossSectorKg:
 
     def __init__(self):
-        self.sector_norm_path = "../data/graph/case_study/sector_2_norm_nodes/"
+        self.sector_norm_path = "../data/graph/case_study/sector_3_norm_nodes/"
         self.cross_sector_raw_path = "../data/graph/case_study/cross_sector_raw_m/"
 
         if not os.path.exists(self.cross_sector_raw_path):
@@ -41,7 +41,7 @@ class CrossSectorKg:
 
 if __name__ == '__main__':
     obj = CrossSectorKg()
-    sector_ids = ['s001', 's002', 's003']
+    sector_ids = ['s003']
     obj.concat_cases_by_sector(sector_ids)
 
     obj.create_sector_kg(clean_flag=True)

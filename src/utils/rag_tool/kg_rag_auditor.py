@@ -18,8 +18,6 @@ class KGRAGAuditor:
         self.llm = ChatDeepSeek(
             model="deepseek-chat",  # 通用对话模型
             temperature=0,
-            # max_tokens=2048,  # 可选
-            # api_key="你的 DeepSeek API Key"  # 也可以直接写在这里
         )
 
         # 1. 连接 Neo4j
@@ -35,6 +33,9 @@ class KGRAGAuditor:
             verbose=True,
             allow_dangerous_requests=True
         )
+
+    def refresh_kg_schema(self):
+        self.graph.refresh_schema()
 
     def build_customized_chain(self):
 
@@ -79,7 +80,7 @@ class KGRAGAuditor:
         {{"answer":"[your answer here]", "evidence":"[all triples found in context as supporting evidence]"}}
 
         Rules:
-        1. answer: Concise English summary, keep it short.
+        1. answer: Concise English summary, keep it short. If there is no answer, return 'Not Mentioned' directly
         2. evidence: List ALL TRIPLES (subject, predicate, object) from context.
         3. DO NOT make up information.
         4. Return ONLY JSON, nothing else.
@@ -103,7 +104,7 @@ class KGRAGAuditor:
             graph=self.graph,
             verbose=True,
             allow_dangerous_requests=True,
-            cypher_prompt=CYPHER_PROMPT_EN,
+            # cypher_prompt=CYPHER_PROMPT_EN,
             qa_prompt=QA_PROMPT_EN
         )
 
@@ -117,9 +118,11 @@ if __name__ == '__main__':
     obj = KGRAGAuditor()
 
     questions = [
-        "What's the mechanism of each technology-enable practice? introduce this from relations among knowledge holders, tacit knowledge, digital technology, organizational dependency, resource dependency, and limitation perspectives",
-        "Which uncodified skills, intuitions or behavioral routines are described?",
-        "What evidence shows that technology-enable practice  still relies on human baselines or that Traditional Practice remains legally/operationally mandatory?"
+        "Whether organization dependency like incentive or reward was used to encourage knowledge holders to "
+        "actively participate in "
+        "technology-enable practices?",
+        "Whether organization dependency like trust or safety was used to encourage knowledge holders to "
+        "actively participate in technology-enable practices?"
     ]
 
     df =pd.read_csv('question.csv')

@@ -1,0 +1,32 @@
+ID,Object,Question,c001,c002,c003,c004,c005,c006,c007,c101,c102,c103,c104,c105,c106,c107,c108,c109,c201,c202,c203,c204,c205,c206,c207,c208,c209,c210,c211
+DS01Q01,Tacit knowledge,Which tacit knowledge is described?,1,1,0,1,0,1,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,0,1,1,1
+DS01Q02,Knowledge Holder,Which knowledge holders are described?,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+DS01Q03,Traditional Human-centred Practices,Which traditional human-centred practices are described?,0,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,0,1,1,0,1,1,0
+DS01Q04,Technology-enabled Practice,Which technology‑enabled practices have been described?,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+DS01Q05,Digital Technology,which emerging technologies have been described?,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+DS01Q06,Organizational Dependency,Which internal prerequisites are stated as necessary for technology-enable practices?,1,0,1,1,1,0,1,1,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,1,0,1
+DS01Q07,Environment Dependency,Which external factors affect the implementation of technology-enable practices?,0,1,0,0,1,1,1,1,0,1,1,1,1,0,1,1,0,0,1,1,0,1,1,1,0,0,0
+DS01Q08,Limitation,Which limitations are been described,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+DS01Q09,be_held_by,Which tacit knowledge knowledge holders hold?,1,1,1,1,1,0,1,0,1,1,0,1,0,0,0,1,1,0,1,1,0,1,1,0,1,0,1
+DS01Q10,be_absorbed_by,which tacit knowledge knowledge holders absorb?,1,1,1,0,1,0,1,0,1,0,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1
+DS01Q11,be_captured_by,which tacit knowledge is captured by technology-enable practices?,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,1,0,0,1,0,1
+DS01Q12,be_transferred_by,"Which uncodified skills, intuitions, or behavioral routines  are actively transferred via technology‑enabled practices?",1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,1,0,1,0,0,1,0,0,0,1,0,1
+DS01Q13,participate_in,Which knowledge holders actively take part in knowledge retention practices?,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,0,0,0,1,1,1,0,0,1
+DS01Q14,depend_on,which organization or environment conditions technology-enable practices depend on?,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,0,1,1,1,1,0,1
+DS01Q15,evaluate,which tacit knowledge technology-enable practices evaluate?,1,1,1,0,0,0,0,1,1,0,1,1,0,0,1,1,1,1,0,0,0,1,0,0,0,0,1
+DS01Q16,adopt,Which digital technologies technology‑enabled practices adopt?,0,0,0,0,0,1,0,0,1,0,0,1,1,1,0,1,0,0,1,1,1,0,1,0,0,1,1
+DS01Q17,be_constrained_by,Which limitations technology-enable practices are constrained by?,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1
+DS01Q18,resolve,"Which limitations technology‑enabled practices resolve, and what evidence supports this?",1,1,1,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,0,1,1,1,0,1,0,0,0
+DS01Q19,mitigate,Which limitations technology‑enabled practices mitigate?,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+DS01Q20,complement,Which traditional human-central practices  technology‑enabled practices complement?,1,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,1,0
+DS01Q21,cannot_fully_replace,Which traditional human-central practice technology-enable practice cannot replace fully?,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+DS01Q22,be_difficult_to_capture_due_to,Which limitations make tacit knowledge difficult to capture?,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,1,0
+DS02Q01,RQ1: What emerging technologies are adopted and how they support tacit knowledge capture and retention?,"What's the mechanism of each technology-enable practice? introduce this from relations among knowledge holders, tacit knowledge, digital technology, organizational dependency, resource dependency, and limitation perspectives.",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,1,1
+DS02Q02,RQ1: What emerging technologies are adopted and how they support tacit knowledge capture and retention?,"What's the mechanism of each traditional human-central practice? introduce this from relations among knowledge holders, tacit knowledge, organizational dependency, resource dependency, and limitation perspectives.",0,1,1,1,1,0,1,0,1,1,1,0,1,0,0,1,1,0,1,0,0,0,0,0,0,1,0
+DS03Q01,"RQ2: What resources and capabilities are required, such as data input, expert participation, technical infrastructure, and organizational resources?",Which tangible organizational asset is required for the technology-enabled practices?,1,1,0,0,1,0,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1
+DS03Q02,"RQ2: What resources and capabilities are required, such as data input, expert participation, technical infrastructure, and organizational resources?",Which external environment condition is required for the technology-enabled practices?,1,1,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,1
+DS04Q01,"RQ3: How organizational culture influence effectiveness, such as culture, trust, leadership support, motivation, and expert participation?",Whether organization dependency like incentive or reward was used to encourage knowledge holders to actively participate in technology-enable practices?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DS04Q02,"RQ3: How organizational culture influence effectiveness, such as culture, trust, leadership support, motivation, and expert participation?",Whether organization dependency like trust or safety climate was used to encourage knowledge holders to actively participate in technology-enable practices?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DS05Q01,"What inherent vulnerability, shortcoming, or failure points the knowledge retention practices face?","What inherent vulnerability, shortcoming, or failure point of  the traditional human-central practices?",1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0
+DS05Q02,"What inherent vulnerability, shortcoming, or failure points the knowledge retention practices face?","What inherent vulnerability, shortcoming, or failure point of  the technology-enabled practices?",1,1,1,1,0,1,1,1,1,0,1,1,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+DS05Q03,"What inherent vulnerability, shortcoming, or failure points the knowledge retention practices face?",Which limitations the technology-enabled practices resolve or at least mitigate the traditional human-central practices have faced?,0,0,0,0,0,0,0,0,1,0,1,0,0,1,1,1,0,1,0,0,0,0,0,1,0,0,0

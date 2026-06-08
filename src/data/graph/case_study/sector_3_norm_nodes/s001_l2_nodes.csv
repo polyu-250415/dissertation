@@ -1,0 +1,338 @@
+node_id,node_name,category,evidence_label,case_title,evidence_count,evidence_statement
+s001M02ED01,Macro-Regulatory & Jurisdictional Frameworks,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c001M01N11 | Industry health and safety regulations: The training objectives of the immersive VR training system were developed based on two guidelines: Occupational Safety and Health Administration (OSHA) Trenching and Excavation Safety and WorkSafe Excavation Safety.
+c003M01N13 | Australian Industrial Standard: Training content was based on an Australian industrial standard
+c003M02N19 | Industry safety regulations (Australian code of practice): Training content was based on an Australian industrial standard—Preventing Falls in Housing Construction—Code of Practice [69].
+c006M02N14 | Peruvian OHS regulations (Law N° 29783, G-050): ""initial risk factor (RF - CS) based on exposure, probability and severity indexes granted by the Peruvian Law N° 29783 on Occupational Safety and Health Management""; ""key performance indicators (KPI) of the Peruvian OHS standard G-050"""
+s001M02ED02,Market Dynamics & Industry Baselines,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c006M01N23 | Developing countries context: In developing countries, conventional methods are employed to identify risks and prevent accidents due to limited familiarity"
+s001M02ED03,Physical Site Conditions & Spatial Configuration,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c003M02N18 | Resemblance to actual construction site: ensuring the virtual environment's resemblance to the actual site and task were the most important factors in ensuring effective knowledge retention by the trainees.
+c005M02N28 | Construction site physical environment: We visited actual work sites... we were present at each worker's worksite.
+c007M01N15 | Cleanroom constraints: These skills are particularly important when preparing cytotoxic drugs in cleanrooms because the standards of quality expected in Good Manufacturing Practices must be ensured."
+s001M02ED04,Socio-Technical Utilities & Infrastructure Access,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,c002M01N19 | Rural internet infrastructure: point cloud data transmission failure rate in rural areas is as high as 18.7% (vs 2.3% in the urban cores).
+s001M02EK01,Regulatory Standards & Guidelines,Explicit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c001M02N01 | OSHA Trenching and Excavation Safety guidelines: The training objectives were developed based on two guidelines: Occupational Safety and Health Administration (OSHA) Trenching and Excavation Safety
+c001M02N02 | WorkSafe Excavation Safety guidelines: The training objectives were developed based on two guidelines: WorkSafe Excavation Safety
+c002M01N03 | Technical Standard for Digitalization of Historical Buildings (2021): A graded protection framework is proposed based on Technical Standards for Historical Building Digitization (2021).
+c002M01N04 | Digital Protection Standard for Intangible Cultural Heritage (2023): A dynamic narrative system is proposed under the standard of Digital Protection of Intangible Cultural Heritage (2023).
+c003M01N01 | Preventing Falls in Housing Construction-Code of Practice: Training content was based on an Australian industrial standard-Preventing Falls in Housing Construction-Code of Practice
+c006M01N13 | Peruvian Law N° 29783: indexes granted by the Peruvian Law N° 29783 on Occupational Safety and Health Management
+c001M02N01 | OSHA Trenching and Excavation Safety guidelines: The training objectives were developed based on two guidelines: Occupational Safety and Health Administration (OSHA) Trenching and Excavation Safety
+c001M02N02 | WorkSafe Excavation Safety guidelines: The training objectives were developed based on two guidelines: WorkSafe Excavation Safety
+c001M02N03 | Health and safety manual: Control group received training via an excavation health and safety manual
+c001M02N04 | Seven critical hazards list: Seven critical hazards were selected as the training objectives: absence of safety officer, absence of soil protection, objects near edges, absence of safe access/egress, workers close to utilities, absence of barriers/signage, workers in unsafe zone
+c002M01N03 | Technical Standard for Digitalization of Historical Buildings (2021): A graded protection framework is proposed based on Technical Standards for Historical Building Digitization (2021).
+c002M01N04 | Digital Protection Standard for Intangible Cultural Heritage (2023): A dynamic narrative system is proposed under the standard of Digital Protection of Intangible Cultural Heritage (2023).
+c003M01N01 | Preventing Falls in Housing Construction-Code of Practice: Training content was based on an Australian industrial standard-Preventing Falls in Housing Construction-Code of Practice
+c003M02N02 | Safety training content (fall risks and protections): The safety training aimed to educate the trainees on the different fall risks in housing construction by demonstrating different fall risks and fall protections.
+c006M01N13 | Peruvian Law N° 29783: indexes granted by the Peruvian Law N° 29783 on Occupational Safety and Health Management"
+s001M02EK02,Technical Models & Project Documentation,Explicit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c002M02N01 | 3D point cloud model: millimeter-level point cloud modeling
+c002M02N03 | LOD400 modeling precision: LOD400 modeling precision is adopted for projects in the central urban districts
+c002M02N05 | GIS spatial distribution map: the scattered 3D models are aggregated into spatial distribution maps
+c006M01N01 | 2D drawings in DWG format: All the 2D drawings in DWG format of the 9-story building were collected.
+c006M01N02 | List of activities in Excel: the list of activities was made in Excel
+c006M01N03 | Schedule in Microsoft Project: scheduling activities in the Microsoft Project tool
+c006M01N04 | 3D modeling of architecture, structure and sanitary facilities: a 3D modeling of architecture, structure and sanitary facilities was developed
+c007M01N01 | Theoretical manufacturing steps: The process's 16 steps were printed on cards that had to be put back into the right order.
+c007M02N01 | 16 steps of robot process: ""the process's 16 steps were printed on cards that had to be put back into the right order.""
+c002M02N01 | 3D point cloud model: millimeter-level point cloud modeling
+c002M02N03 | LOD400 modeling precision: LOD400 modeling precision is adopted for projects in the central urban districts
+c002M02N05 | GIS spatial distribution map: the scattered 3D models are aggregated into spatial distribution maps
+c006M01N01 | 2D drawings in DWG format: All the 2D drawings in DWG format of the 9-story building were collected.
+c006M01N04 | 3D modeling of architecture, structure and sanitary facilities: a 3D modeling of architecture, structure and sanitary facilities was developed"
+s001M02EK03,"Analytical Methods, Algorithms & Metrics",Explicit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),22,"c002M02N02 | Historical knowledge retention rate 58%: improves historical knowledge retention rate by 58%
+c005M01N05 | evaluation charts (OWAS method, RULA, REBA, HOHSRAM): Therefore, creating a safe environment is important, and evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized.
+c005M01N06 | physical performance assessment index evaluation equation: An evaluation equation (1) for physical performance was developed from eight items adding age to the seven items of physical strength test.
+c005M01N07 | lumbar load estimation algorithm: First, the lumbar load estimation algorithm based on the posture change of the wearable sensor used in this research is explained.
+c005M02N01 | Physical strength test scores: Physical strength measurements included seven events: two-step, seated stepping, functional reach, one-leg standing with eyes closed, grip strength, foot grip strength and plank
+c005M02N02 | Questionnaire responses (LBP history, work posture, etc.): The questionnaire collects personal information such as height, weight, age, physical gender, type of work, duration of work, working hours per week, main working posture (upright, downward, squatting, sitting), maximum weight to be handled, current LBP or LBP history, frequency of LBP in the last 6 months, how much exercise they do per week, and duration of exercise.
+c005M02N03 | Lumbar load values (F_hour, W_hour): The lumbar load F_l is the combined force of two compression forces... estimated load per hour Ŵ_hour = F_hour[N] / (height[cm] × weight[kg])
+c005M02N04 | Physical performance assessment index (E-hat): An evaluation equation (1) for physical performance was developed from eight items adding age to the seven items of physical strength test. A physical performance assessment index was constructed by setting a coefficient with a perfect score of 200 points for each item experimentally.
+c006M02N23 | OHS performance indexes (IFm, IGm, IFa, IGa, IA): ""key performance indicators (KPI) of the Peruvian OHS standard G-050 such as Monthly Frequency Index (IFm), Monthly Severity Index (IGm), Accumulated Frequency Index (IFa), Accumulated Severity Index (IGa), Accidentability Index (IA)""
+c004M01N07 | Historical bid documents: A dedicated domain-specific database was created, containing 13 historical bid documents
+c004M01N08 | Requests for Proposals (RFPs): Data were collected through semi-structured interviews with bid personnel and analysis of historical proposals and Requests for Proposals.
+c004M01N09 | Predefined requirements: GPT-4o LLM is used in extracting predefined requirements from the uploaded RFP
+c004M02N02 | RFPs: RFPs are uploaded, and key requirements are extracted. Used as input queries for semantic retrieval.
+c004M02N03 | methodology sections: The methodology section of proposals was selected as proof-of-concept. Top K methodology sections are used as contextual samples for few-shot prompting.
+c006M01N02 | List of activities in Excel: the list of activities was made in Excel
+c006M01N03 | Schedule in Microsoft Project: scheduling activities in the Microsoft Project tool
+c006M01N11 | Requests for Information (RFI): Requests for Information on Previously Taken Controls (RFI)
+c006M01N12 | Lessons Learned (LA): Lessons Learned (LA) and a search engine that allows filtering elements
+c006M02N20 | Lessons learned records: ""Lessons Learned (LA)"" tool within the Excel application
+c006M02N22 | RFI data (Requests for Information on Previously Taken Controls): ""Requests for Information on Previously Taken Controls (RFI)""
+c007M01N01 | Theoretical manufacturing steps: The process's 16 steps were printed on cards that had to be put back into the right order.
+c007M02N01 | 16 steps of robot process: ""the process's 16 steps were printed on cards that had to be put back into the right order."""
+s001M02EK04,Operational Procedures & Records,Explicit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),29,"c001M01N01 | Excavation safety knowledge: This knowledge test included ten multiple-choice questions covering the seven critical hazards identified in Section 3.3.
+c001M01N14 | Interactive questioning strategy: This study adopted questioning as the instructional method for the immersive VR training system... Questions can stimulate thinking and enhance engagement
+c001M02N03 | Health and safety manual: Control group received training via an excavation health and safety manual
+c001M02N04 | Seven critical hazards list: Seven critical hazards were selected as the training objectives: absence of safety officer, absence of soil protection, objects near edges, absence of safe access/egress, workers close to utilities, absence of barriers/signage, workers in unsafe zone
+c003M02N02 | Safety training content (fall risks and protections): The safety training aimed to educate the trainees on the different fall risks in housing construction by demonstrating different fall risks and fall protections.
+c004M01N07 | Historical bid documents: A dedicated domain-specific database was created, containing 13 historical bid documents
+c004M01N08 | Requests for Proposals (RFPs): Data were collected through semi-structured interviews with bid personnel and analysis of historical proposals and Requests for Proposals.
+c004M01N09 | Predefined requirements: GPT-4o LLM is used in extracting predefined requirements from the uploaded RFP
+c004M02N02 | RFPs: RFPs are uploaded, and key requirements are extracted. Used as input queries for semantic retrieval.
+c004M02N03 | methodology sections: The methodology section of proposals was selected as proof-of-concept. Top K methodology sections are used as contextual samples for few-shot prompting.
+c006M01N09 | IPERC: This spreadsheet has tools such as IPERC (Hazard Identification, Risk Evaluation and Controls)
+c006M01N10 | Residual Risk Management (RR): Residual Risk Management (RR), Requests for Information on Previously Taken Controls (RFI), Lessons Learned (LA)
+c006M01N11 | Requests for Information (RFI): Requests for Information on Previously Taken Controls (RFI)
+c006M01N12 | Lessons Learned (LA): Lessons Learned (LA) and a search engine that allows filtering elements
+c006M02N19 | Hazard identification and risk evaluation (IPERC) data: ""This spreadsheet has tools such as IPERC (Hazard Identification, Risk Evaluation and Controls)""; the tool generates data on hazards, properties, risk factors
+c006M02N20 | Lessons learned records: ""Lessons Learned (LA)"" tool within the Excel application
+c006M02N21 | Residual risk management data: ""Residual Risk Management (RR)"" tool
+c006M02N22 | RFI data (Requests for Information on Previously Taken Controls): ""Requests for Information on Previously Taken Controls (RFI)""
+c007M01N02 | Criteria for using the robot: For Knowing the criteria for using the robot, teams guessed whether certain compounds could be used with the robot.
+c007M01N03 | Real-life production errors handling: incorporating six problematic, real-life situations. Each problem was presented with four potential answers
+c001M01N01 | Excavation safety knowledge: This knowledge test included ten multiple-choice questions covering the seven critical hazards identified in Section 3.3.
+c001M01N14 | Interactive questioning strategy: This study adopted questioning as the instructional method for the immersive VR training system... Questions can stimulate thinking and enhance engagement
+c002M02N02 | Historical knowledge retention rate 58%: improves historical knowledge retention rate by 58%
+c005M01N05 | evaluation charts (OWAS method, RULA, REBA, HOHSRAM): Therefore, creating a safe environment is important, and evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized.
+c005M01N06 | physical performance assessment index evaluation equation: An evaluation equation (1) for physical performance was developed from eight items adding age to the seven items of physical strength test.
+c005M01N07 | lumbar load estimation algorithm: First, the lumbar load estimation algorithm based on the posture change of the wearable sensor used in this research is explained.
+c005M02N01 | Physical strength test scores: Physical strength measurements included seven events: two-step, seated stepping, functional reach, one-leg standing with eyes closed, grip strength, foot grip strength and plank
+c005M02N02 | Questionnaire responses (LBP history, work posture, etc.): The questionnaire collects personal information such as height, weight, age, physical gender, type of work, duration of work, working hours per week, main working posture (upright, downward, squatting, sitting), maximum weight to be handled, current LBP or LBP history, frequency of LBP in the last 6 months, how much exercise they do per week, and duration of exercise.
+c005M02N03 | Lumbar load values (F_hour, W_hour): The lumbar load F_l is the combined force of two compression forces... estimated load per hour Ŵ_hour = F_hour[N] / (height[cm] × weight[kg])
+c005M02N04 | Physical performance assessment index (E-hat): An evaluation equation (1) for physical performance was developed from eight items adding age to the seven items of physical strength test. A physical performance assessment index was constructed by setting a coefficient with a perfect score of 200 points for each item experimentally.
+c006M01N09 | IPERC: This spreadsheet has tools such as IPERC (Hazard Identification, Risk Evaluation and Controls)
+c006M01N10 | Residual Risk Management (RR): Residual Risk Management (RR), Requests for Information on Previously Taken Controls (RFI), Lessons Learned (LA)
+c006M02N19 | Hazard identification and risk evaluation (IPERC) data: ""This spreadsheet has tools such as IPERC (Hazard Identification, Risk Evaluation and Controls)""; the tool generates data on hazards, properties, risk factors
+c006M02N21 | Residual risk management data: ""Residual Risk Management (RR)"" tool
+c006M02N23 | OHS performance indexes (IFm, IGm, IFa, IGa, IA): ""key performance indicators (KPI) of the Peruvian OHS standard G-050 such as Monthly Frequency Index (IFm), Monthly Severity Index (IGm), Accumulated Frequency Index (IFa), Accumulated Severity Index (IGa), Accidentability Index (IA)""
+c007M01N02 | Criteria for using the robot: For Knowing the criteria for using the robot, teams guessed whether certain compounds could be used with the robot.
+c007M01N03 | Real-life production errors handling: incorporating six problematic, real-life situations. Each problem was presented with four potential answers"
+s001M02KH01,Frontline & Operational Knowledge Holders,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c001M02N13 | Construction workers: The target population for excavation safety training
+c002M01N02 | Traditional Artisans: Bulgaria's digital authorization system for intangible cultural heritage (ICH) skills raised traditional artisans income by 40%.
+c002M02N10 | Indigenous people of Shanchengxiang: return rate of indigenous people is generally below 30%
+c005M01N01 | construction workers: We have tested the physical performance of construction workers, conducted questionnaires on back pain, and also measured their physical workload using wearable sensors.
+c005M02N12 | Workers with LBP history: There were 111 subjects with LBP... For those with LBP, α = -0.504 and β = 110.11
+c006M01N17 | Staff in companies: Valuable information on incidents, accidents and best practices is lost as staff changes in companies
+c007M02N09 | operators (pharmacy technicians): ""operators"" (context of pharmacy technicians)"
+s001M02KH02,Professional & Strategic Knowledge Holders,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),12,"c001M01N04 | Construction professionals: The participants consisted of 28 university students and 12 professionals from the construction sector.
+c004M01N01 | Lead Tender Administrator (LTA): At Alpha, the lead tender administrator (LTA) participated
+c004M01N03 | Assistant Tender Administrator 2 (ATA2): ATA2 Engineering tenders
+c004M01N04 | Bid Manager (BM): In the Beta case, the primary participant was the Bid Manager (BM)
+c004M01N05 | Bid Administrator 1 (BA1): BA1, 1, 2 years
+c004M01N06 | Bid Administrator 2 (BA2): BA2, 1, 3 years
+c004M02N12 | Bid Manager (Beta): The Bid Manager (BM) at Beta participated in interviews, has 17 years of experience, and relies on intuition.
+c004M02N14 | bid preparation team: The bid preparation team includes bid managers, coordinators, and administrators. They review AI-generated drafts.
+c004M02N15 | experts (evaluators): Five experts with extensive professional experience in construction procurement and bid preparation evaluated AI-generated proposals.
+c004M02N16 | management: Management makes final bid/no-bid decisions based on extracted requirements.
+c007M01N07 | Trainer: with the best scores placed in the trainer group and the lower scores in the trainee group.
+c007M01N09 | Training pharmacist: The trainer was a pharmacist who specialized in using the robot."
+s001M02KH03,"Academic, Learner, & Research Knowledge Holders",Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c001M01N05 | University students: The participants consisted of 28 university students and 12 professionals from the construction sector.
+c002M01N06 | Visitors: Digital technology can improve visitors' immersion in virtual experience (the VR stay rate has been increased by 40%).
+c003M01N05 | Engineering Students: A cohort of 60 trainees enrolled in construction safety and risk management at Monash University were employed
+c003M02N10 | Trainers (researchers): The safety team prepared an immersive environment for demonstration of concepts using Unity3D... The authors used Unity3D.
+c004M01N30 | Research team: Ground truth labels for the requirements extraction module were generated through manual annotation of the RFPs by the research team
+c007M01N08 | Trainee: Each trainer was randomly paired with a trainee to constitute teams.
+c007M02N11 | trainee operators: ""trainee"" (repeatedly used to designate learners)"
+s001M02LI01,Individual Cognitive & Memory Decay,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c001M01N12 | Knowledge decay over time: Newly acquired knowledge is vulnerable because forgetting always occurs, as demonstrated by Ebbinghaus's forgetting curve.
+c001M02N35 | Forgetting curve (Ebbinghaus): Newly acquired knowledge is vulnerable because forgetting always occurs, as demonstrated by Ebbinghaus's forgetting curve
+c001M02N36 | Poor knowledge retention in traditional training: For the Manual group, significant difference between post-training and retention (p=0.030)
+c003M01N15 | Forgetting Curve: most students would have forgotten about 80% of the content in a week's time
+c003M02N20 | Forgetting curve (80% forgotten in a week): most students would have forgotten about 80% of the content in a week's time [72]."
+s001M02LI02,Pedagogical Design & Instructional Shortcomings,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M01N13 | Knowledge-to-practice gap: Their results suggest that physical therapy graduates do not use newly acquired knowledge to inform their practice... knowing more does not necessarily mean behaving more safely
+c001M02N37 | Only questioning as instructional method: This study uses only questioning as the instructional method for the proposed VR training system
+c001M02N38 | Only explicit knowledge delivered: The VR training system only delivers explicit knowledge to participants
+c001M02N39 | Lack of long-term practical performance measurement: Whether VR improves long-term practical performance is yet to be investigated
+c002M01N22 | Fragmented scenarios (lack of wartime life recreation): 85% of digital exhibitions only passively show building exterior... but lack recreation of wartime life.
+c003M02N22 | Insufficient absorption of information: lack engagement, which results in the insufficient absorption of information by construction workers, which ultimately does not translate to long-term information retention.
+c007M02N38 | did not assess application over time: ""how they applied the competencies learned during their training was not assessed over time""
+c007M02N42 | insufficient training: ""insufficient training caused a drop in motivation and disparities"""
+s001M02LI03,"Software, Algorithmic & Data Interoperability Barriers",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c002M02N24 | Urban-rural digital divide (data interoperability <30%): data interoperability rate is below 30%
+c004M01N27 | Fragmentation of bid-related data: A major barrier identified is the fragmentation of bid-related data across disparate systems
+c004M01N28 | Absence of integrated Optical Character Recognition (OCR): due to the absence of integrated Optical Character Recognition (OCR) capabilities
+c004M01N29 | Decreased accuracy for scanned or image-based documents: accuracy decreases for scanned or image-based documents, as no Optical Character Recognition (OCR) is integrated
+c004M02N36 | fragmented information storage: Data fragmentation, information scattered across different departments or databases.
+c004M02N39 | inconsistency across bids: Inconsistent documentation across bids due to manual processes.
+c004M02N40 | customization challenge: Bids require customization; method statements need context-aware judgment, making full automation without expert input less practical.
+c004M02N41 | no OCR for scanned documents: The current extraction process only supports PDF documents; accuracy decreases for scanned or image-based documents as no OCR is integrated."
+s001M02LI04,"Hardware, Sensor & Infrastructure Constraints",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c002M01N21 | Rural data transmission failure and low interoperability: county-level projects is restricted to LOD200 models... data interoperability rate is below 30%.
+c002M01N24 | Lack of multi-sensory haptic and olfactory feedback: visitors are unable to feel shockwaves or scorched earth smells at Bombing site.
+c002M02N25 | Fragmented user experience (2.7 sec wait, 5% haptic devices): visitors need to wait for an average of 2.7 seconds ... only 5% of venues provide haptic devices
+c007M01N17 | Machine downtime and breakdowns: our PharmaHelp robot was little used during the six months post-training because of a breakdown"
+s001M02LI05,Financial & Capital Deployment Constraints,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c002M01N20 | High modeling cost using advanced methods: cost of modeling per building is 3-5 times higher than traditional methods.
+c005M01N18 | heavy, large, and expensive construction robots: Many of the construction robots that have been presented are 'heavy, large and expensive', can only be used under certain ideal environments and have not been widely deployed."
+s001M02LI06,"Time, Scheduling & Workload Commitments",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c004M02N37 | manual inefficiencies: Manual, labour-intensive, time-pressured processes; repetitive drafting; inconsistent formatting.
+c007M02N39 | time to develop (>100 hours): ""probable total of more than 100 hours"""
+s001M02LI07,Empirical Sample & Dataset Vulnerabilities,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c004M02N42 | small dataset size (13 documents): The dataset contains 13 historical bid documents; although limited, it provided sufficient diversity for PoC testing.
+c007M01N18 | Small sample size: The present study's limitations include its small sample size (14 operators)
+c007M02N36 | small sample size (14 operators): ""small sample size (14 operators)"""
+s001M02LI08,Research Design & Validation Flaws,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c005M02N29 | No significant difference in E-hat between LBP groups (p=0.158): The result of the one-sided T-test showed that p = 0.158 and no significant difference was found in the evaluation of physical performance according to the presence or absence of LBP.
+c005M02N30 | No significant difference in lumbar load between LBP groups (p=0.167): A one-sided T-test showed that the P value was 0.167 and no significant difference as a group could be confirmed.
+c005M02N31 | Lack of correlation between workload and assistive technologies: As there is no correlation between the workload and the assistive technologies, it is unclear who the target audience is and what approaches can be taken to introduce such technologies.
+c007M02N37 | low number of questions (10): ""low number of questions (10) used to survey their knowledge"""
+s001M02LI09,"Ergonomic, Physical Strain & Safety Risks",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c003M02N23 | Cumbersome physical movement for AR interaction: the virtual visualizations were super-imposed onto a physical space and moving around them in a physical space was cumbersome for the participants.
+c005M01N16 | high risk of injury and death: The risk of injury and death in the construction industry relative to the number of workers is 1.6 times higher than in all industries, and the risk of death is 4.5 times higher."
+s001M02LI10,Human Physiological & Demographical Deterioration,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c005M01N20 | weakening core, reduced flexibility and balance due to aging: This age group has less muscle weakness and more confidence in their physical strength compared to younger generations, but they have reduced flexibility and balance and may not be aware of their weakening core.
+c005M01N21 | low back pain (LBP) syndromes: Consequently, they are more prone to developing low back pain (LBP) syndromes from overexertion at work."
+s001M02LI11,Socio-Organizational Resistance & Cultural Drift,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c002M01N23 | Excessive commercialization / loss of cultural context: excessive commercial operation would decrease the number of EEG positive signals by 40%.
+c002M02N26 | Living heritage transmission crisis (indigenous return rate <30%): return rate of indigenous people is generally below 30% and intangible cultural heritage skills are at risk of interruption
+c007M01N16 | Forgetting curve for motivation and self-efficacy: Motivation was evaluated on a scale from 0 to 100 and increased... however, it decreased to 70.4 at six months
+c007M02N40 | drop in motivation: ""drops in motivation"" (traditional context)
+c007M02N41 | disparities in knowledge: ""disparities in operators knowledge""
+c007M02N43 | knowledge decay at 6 months (motivation and self-efficacy): ""decrease in motivation and self‑efficacy over time suggests that regular refresher sessions are necessary"""
+s001M02LI12,Institutional Amnesia & Governance Vulnerabilities,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c004M02N38 | knowledge loss due to staff turnover: Risk of knowledge loss, particularly in firms with high staff turnover.
+c006M01N24 | Staff changes in companies: Valuable information on incidents, accidents and best practices is lost as staff changes in companies
+c006M01N25 | Information gathered is lost over time: it is often observed that the information gathered is lost over time, hindering continuous improvement.
+c006M01N26 | Lack of knowledge retention and lessons learned: The lack of retention of OHS knowledge and lessons learned represents a major obstacle
+c006M02N15 | Loss of OHS knowledge due to staff turnover: ""valuable information on incidents, accidents and best practices is lost as staff changes in companies""
+c006M02N16 | Lack of retention of OHS knowledge and lessons learned: ""the lack of retention of OHS knowledge and lessons learned represents a major obstacle to continuous improvement in construction safety""
+c006M02N18 | No centralized database for OHS knowledge: The paper repeatedly contrasts the proposed SQL server with the absence of a centralized repository; the lack is implied as a limitation of traditional methods"
+s001M02LI13,Limitation(*),Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c005M01N17 | one-item production basis: The application of robots on construction sites is a cherished desire for the construction industry where one-item production is the basis.
+c005M01N19 | incompatibility with uniform assistive technology introduction: It was found that introducing assistive technologies uniformly is difficult. It found that 'It's compatibility with the individual is greater than the type of work'.
+c005M02N32 | Individual compatibility variability of assistive suits: It found that 'It's compatibility with the individual is greater than the type of work / It doesn't have a uniform effect on everyone'.
+c005M02N33 | Difficulty of uniform technology introduction: It was found that introducing assistive technologies uniformly is difficult."
+s001M02OD01,Interpersonal Trust & Psychological Safety Climate,Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,c006M01N22 | Safety culture: establishing a safety culture depends on the organization
+s001M02OD05,Operational Resource Allocation & Dedicated Timeline Provisions,Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c001M02N28 | Physical space (3m x 3m square): The movement area in the real world was confined to a 3m x 3m square
+c001M02N29 | Availability of VR equipment: The study required Oculus Quest headsets and controllers
+c001M02N30 | Dedicated training time: Participants had time limits for assessments (e.g., 10 min for practical performance)
+c003M01N12 | Task Customization: designing customized training relevant to specific tasks being performed on-site is important
+c004M01N25 | Investment in digital infrastructure: firms must invest in digital infrastructure to support these systems
+c004M02N35 | digital infrastructure maturity: Firms differ in digital maturity, staffing models, and resource availability, affecting automation readiness.
+c007M01N13 | Dedicated training hours: Trainer/ trainee teams participated in 2-hour training sessions with three games and a debriefing.
+c007M01N14 | PhD thesis framework: This was possible as the work was performed as part of a PhD thesis, with the doctoral student involved in 100% of the project.
+c007M02N31 | work schedule of the unit: ""teams of trainer/trainee constituted according to the work schedule"""
+s001M02OD06,"Institutional Governance, Standards Compliance & Ethics Clearances",Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M02N31 | Massey University Research Ethics Committee approval: Massey University Research Ethics Committee granted ethics approval (Southern A, Application 18/21)
+c002M02N04 | Digital Protection of Intangible Cultural Heritage (2023) standard: under the standard of Digital Protection of Intangible Cultural Heritage (2023)
+c002M02N22 | Technical Standards for Historical Building Digitization (2021): graded protection framework is proposed based on Technical Standards for Historical Building Digitization (2021) [2]
+c004M01N24 | Centralized data management: suggesting that investment in integrated digital infrastructure and centralized data management will be critical for scaling automation
+c004M01N26 | Organizational maturity: This suggests that organizational maturity and information systems readiness significantly influence a firm's automation readiness
+c004M02N33 | centralized data system (absence): The lack of a centralized data system means information is often scattered. Overcoming this requires integrated data management systems.
+c005M02N26 | Worksite access permission: We were present at each worker's worksite and recorded video footage of the work situation.
+c007M02N34 | Good Manufacturing Practices standards: ""standards of quality expected in Good Manufacturing Practices"""
+s001M02TE01,Artificial Intelligence and Computational Intelligence,Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c004M01N21 | OpenAI GPT-4o LLM: OpenAI's GPT-4o, a proprietary LLM developed to generate coherent and useful text... was employed
+c004M01N22 | OpenAI text-embedding-ada-002: Text chunks were converted into dense vector embeddings using OpenAI's text-embedding-ada-002
+c004M01N23 | LangChain framework: The pipeline was orchestrated through the LangChain framework
+c004M02N27 | GPT-4o LLM: OpenAI's GPT-4o, a proprietary LLM, used for requirements extraction and proposal generation due to its reasoning capabilities and robustness in technical writing."
+s001M02TE02,Human–Computer Interaction and Immersive Technologies,Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),16,"c001M01N08 | Head Mounted Displays (Oculus Quest): The training solution presented in this work was an immersive VR application deployed on one of the most popular standalone HMDs: Oculus quest.
+c001M01N09 | Unity game engine: The virtual environments were modelled and rendered using Unity (version 2019.1.10f1).
+c001M01N10 | Wireless controllers: The office scenario offered tutorials for participants to learn and practice interaction and navigation using Oculus Quest's wireless controllers in VR.
+c001M01N15 | Direct selection user interface mode: The results show that direct selection mode UI performed better than indirect selection mode
+c001M02N23 | Terrain plugin: A Unity plugin called Terrain was used to create site terrains
+c001M02N24 | Snaps Art HD - Construction Site asset: Snaps Art HD- Construction Site was used to develop the construction scenarios
+c001M02N26 | Motion tracking system: Thanks to the motion tracking system and sensors embedded in Oculus Quest, navigation in virtual environments was similar to walking
+c001M02N27 | Virtual menu (grab, view, measure, tag): Participants could activate a virtual menu that allowed for four types of actions: grab, view a safety file, measure distances, tag hazards
+c002M01N17 | Unity3D Engine: The historical cognition of visitors increased by 53% after the QR code animation triggered by Unity3D engine.
+c002M01N18 | NetEase Yaotai Architecture: Based on the NetEase Yaotai architecture, a co-creation module of 'Red Journey' is constructed.
+c003M01N09 | Virtual Reality Head-Mounted Display (VR-HMD): VR visualizations with a VR head-mounted display (VR-HMD) were used by Li et al. to train workers
+c003M01N10 | Augmented Reality (AR) Device: For visualization of safety training in XR realm, two head-mounted displays (HMD) were used... Microsoft Hololens 2 was used for AR training
+c003M01N11 | Unity3D: authors used Unity3D to prepare immersive visualizations for XR-based training
+c003M02N14 | Microsoft Hololens 2 (AR HMD): Microsoft Hololens 2 was used for AR training.
+c003M02N15 | Samsung Odyssey VR headset (VR HMD): Samsung Odyssey VR headset was used for VR training.
+c003M02N16 | Unity3D game engine: the authors used Unity3D. Fall risks and their protections were modelled as per the code of practice. Animations were created."
+s001M02TE03,"Cyber-Physical Systems, IoT, and Smart Environments",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c005M02N22 | Smartsuit hardware: Smartsuit ... which is based on logical and scientific evidence, among the numerous passive assistance suits (Fig. 5). Quoted from Smart Support Inc.
+c007M02N30 | PharmaHelp robot: ""PharmaHelp robot system"" used during practical part"
+s001M02TE04,Information Systems and Data Management,Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c003M02N17 | Building Information Models (BIM): Increased adoption of Construction 4.0 standards has enabled the use of immersive building information models (BIM). Two different construction models were used—one representing the construction of a free-standing house and the other representing a low-rise housing building.
+c004M02N29 | Pinecone vector database: A vector database used to store embeddings and enable cosine similarity search. Chosen for scalability and real-time high-dimensional vector handling.
+c004M02N32 | PDF format: All documents were stored in PDF format to reflect standard consulting practices.
+c006M01N14 | SQL server on Microsoft Azure platform: a relational table (SQL) data server has been developed on the Microsoft Azure platform.
+c006M02N08 | Microsoft Excel: ""an application was developed in Microsoft Excel""
+c006M02N09 | Navisworks: ""export the file to an .nwc format for 4D simulation in Navisworks""
+c006M02N10 | Microsoft Azure: ""a relational table (SQL) data server has been developed on the Microsoft Azure platform""
+c006M02N11 | SQL server: ""relational table (SQL) data server""
+c006M02N13 | Autodesk Revit: ""3D modeling of architecture, structure and sanitary facilities was developed using Autodesk's Revit software"""
+s001M02TE05,"Computer Vision, Sensing, and Perception",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c002M01N15 | 3D Laser Scanning Technology: Based on 3D laser scanning, VR (Virtual Reality) and big data, we collect architectural data.
+c002M02N18 | FARO Focus S350 laser scanner: FARO Focus S350 realizes millimeter-level point cloud modeling
+c002M02N20 | Tobii Pro eye tracker: Tobii Pro eye tracker ... quantify the distribution of visitor's attention
+c002M02N21 | Emotiv EEG device: Emotiv EEG device, the emotion of visitors in VR scenario are quantified
+c005M01N13 | multiple IMU sensors: In this study, a lumbar load measuring device with multiple IMU sensors was used to measure workload.
+c005M01N14 | wearable camera: We were present at each worker's worksite and recorded video footage of the work situation using a wearable camera.
+c005M02N24 | Lumbar load measuring device: A lumbar load measuring device with multiple IMU sensors was used to measure workload."
+s001M02TE07,"Mobile, Social and Communication Technologies",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c004M02N31 | Streamlit: Lightweight graphical interface built with Streamlit for user interaction.
+c005M01N15 | dedicated web application: In addition, a dedicated web application (Fig.6) has been developed separately for the purpose of streamlining questionnaires and is used to tabulate and analyse the data.
+c006M02N12 | PowerApps: ""In PowerApps, an application was created""
+c007M01N12 | ICT tools: Learning Designer free online software was used to help build the training program... mind map representing the training program's goals... was created on Framindmap
+c007M02N27 | Framindmap software: ""Framindmap"" (online software)
+c007M02N28 | Learning Designer software: ""Learning Designer's free online software"""
+s001M02THR03,Deliberate Practice,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),17,"c001M01N06 | Health and safety manual self-study: A control group received training via a traditional training method, in this case an excavation health and safety manual.
+c002M01N07 | Paper-based Surveying: 1st (1930s) Paper-based Surveying, 2D Planar, 5-8% error rate.
+c002M01N08 | Total Station Surveying: 2nd (1980s) Total Station + Film Photography, 2-3% error rate.
+c002M01N09 | Traditional exhibition methods / physical display: Compared with traditional exhibition, VR exhibition hall extended average stay time for 22 minutes.
+c002M02N12 | Static photographic exhibition: most cases only use static pictures to show Bombing site
+c003M01N06 | Traditional Training: The traditional mode of training was presented using an overhead projector
+c003M02N11 | Conventional overhead projector training: The traditional safety training was prepared using Microsoft PowerPoint, and presented using an overhead projector.
+c004M01N13 | Legacy manual bid preparation: Construction bid preparation remains predominantly manual, labour-intensive, and time-pressured
+c004M01N14 | Human-in-the-loop review: A human-in-the-loop review was incorporated to ensure quality
+c004M01N15 | Manual annotation of RFPs: Ground truth labels for the requirements extraction module were generated through manual annotation of the RFPs by the research team
+c004M02N17 | manual drafting of methodology sections: Manual drafting is time-consuming and error-prone. The methodology section typically carries the highest evaluation weight.
+c004M02N21 | cross-referencing previous proposals manually: Cross-referencing with previous proposals is a manual activity to ensure consistency and reuse effective content.
+c005M01N08 | traditional evaluation chart analysis: Evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized. Based on this result, the development of assistive technology suitable for work is required.
+c005M01N09 | task allocation based on age: As a result, the building work acquired in this study revealed that task allocation based on age was not conducted.
+c005M02N15 | OWAS/RULA/REBA observation-based assessment: Evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized.
+c006M01N18 | Traditional methods for hazard identification, risk assessment and accident prevention: only traditional methods for hazard identification, risk assessment and accident prevention are applied in the design phase
+c007M01N10 | Conventional training format: These sessions were conducted following a conventional format consisting of trainees reading the recommended procedures, being shown the processes, and then repeating them"
+s001M02THR04,Knowledge Cafés,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c004M02N18 | kick-off meetings: A kick-off meeting aligns roles, timelines, and responsibilities in bid preparation."
+s001M02THR09,After-Action Reviews,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c004M02N19 | internal reviews (managers/QA/legal): Proposals undergo internal reviews involving managers, quality assurance staff, and legal teams.
+c004M02N20 | post-bid reviews: Post-bid review is conducted to gather feedback, assess lessons learned, and improve future submissions."
+s001M02TK01,Somatic experiential know-how,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c002M02N08 | Wartime life experiential knowledge: most cases only use static pictures ... instead of scenically reproduce the noise of a group refuge and kerosene lamp lighting
+c005M01N03 | work content and physical burden: The other is to quantify the work content and physical burden of each worker."
+s001M02TK02,Somatic procedural know-how,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c003M01N03 | Safe Construction Practice: effectiveness of these safety training sessions on the knowledge acquisition... which ultimately translates into safe construction practice
+c003M02N06 | Safe working practices application: This knowledge acquisition can then help improve construction workers' safety performance and reduce workplace incidents.
+c005M01N02 | physical abilities and skills: One is to know the physical abilities and skills of each worker.
+c005M02N09 | Work posture and movement patterns: It is important to measure the posture... a lumbar load measuring device with multiple IMU sensors was used to measure workload. To collect workload data... we recorded video footage of the work situation using a wearable camera.
+c005M02N10 | Manual handling techniques (hand load): The hand load of seven subjects were estimated in Fig.10 based on the video recording... The manual load is estimated based on the video of the working posture."
+s001M02TK03,Somatic craft knowledge,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c002M01N01 | Traditional craftsmanship skills: The craftsmanship process such as wooden construction and rammed earth technology are recorded in sequence.
+c002M02N06 | Traditional wooden construction craftsmanship: craftsmanship process such as wooden construction ... are recorded in sequence
+c002M02N07 | Rammed earth technology skills: craftsmanship process such as ... rammed earth technology are recorded in sequence"
+s001M02TK04,Somatic operational know-how,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c007M01N04 | Robot operation and competency: helping them acquiring the competencies to manage the robot (goal 2).
+c007M02N05 | skill to use robot: ""self‑efficacy in using it, because it is technically complex to use"""
+s001M02TK05,Somatic others,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c005M01N04 | lumbar load: In this study, a lumbar load measuring device with multiple IMU sensors was used to measure workload."
+s001M02TK06,Cognitive expert judgment,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c004M01N10 | Bid manager's intuition: Beta's reliance on the bid manager's intuition
+c004M01N11 | Contextual judgment: The findings reaffirm the need for human oversight in activities involving contextual judgment
+c004M01N12 | Strategic decision-making: The integration of automated systems would also allow firms to focus more on strategic decision-making
+c004M02N07 | contextual judgment for method statements: Method statements require context-aware judgment and understanding of nuanced project risks, making full automation less practical without expert input.
+c004M02N08 | expertise for interpreting complex specifications: Human expertise in interpreting complex project specifications and ensuring the bid meets all client expectations remains critical.
+c006M01N06 | Initial risk management: risk management was carried out from an early stage of the project"
+s001M02TK09,Cognitive situational problem-solving,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M01N02 | Real-time hazard identification performance: The pilot study's results suggest that the VR training system is effective in improving participants' practical performance when dealing with excavation hazards.
+c001M02N08 | Hazard identification skill: Participants were assessed on their ability to identify hazards in excavation sites
+c001M02N10 | Hazard response skill: Participants were assessed on their ability to respond to hazards
+c003M01N02 | Hazard Identification Performance: measurable improvements in hazard identification and risk assessment among construction workers
+c003M02N05 | Hazard identification ability: The enhanced ability of construction workers to understand and recognize hazards is fundamental for a high safety performance.
+c006M01N05 | Hazard identification: BIM enables precise identification of hazards and risks during the design stages
+c006M01N07 | Risk mitigation: The study's results demonstrate effective risk mitigation
+c006M01N08 | Residual risk management: oriented to OHS management based on the PtD initiative and processes, such as hazard identification, initial risk management, risk mitigation and residual risk management."
+s001M02TK10,Cognitive others,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c001M01N03 | Self-efficacy belief: Self-efficacy is an instrument to indicate an individual's belief in their capability to perform tasks or gain attainments
+c002M01N05 | Historical knowledge and cognition of wartime life: The dynamic narrative technology triggered events by timelines... which improved the understanding of history by more than 50%.
+c003M02N07 | Motivation to transfer knowledge: Motivation was found to be the more effective factor for safety performance practice on the job.
+c007M01N05 | Self-efficacy belief: their robot knowledge was assessed on a 0-24-scale, motivation and self-efficacy in using it on 0-to-100 scales.
+c007M01N06 | Motivation to use the robot: Complex technical use, downtime periods, and insufficient training caused a drop in motivation
+c007M02N06 | self-efficacy in using robot: ""self‑efficacy in their ability to use the robot"""
+s001M02TP01,Immersive Virtual Training Environments,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c001M01N07 | Immersive VR training system: This study proposes an immersive VR training system for excavation safety and hazard identification.
+c002M01N13 | VR Exhibition Hall / Metaverse Scenario (NetEase Yaotai): Based on the NetEase Yaotai architecture, a co-creation module of 'Red Journey' is constructed.
+c003M01N07 | VR Training: A Samsung Odyssey VR headset was used to demonstrate the VR-based safety training
+c003M02N13 | VR-based safety training (Samsung Odyssey VR headset): Samsung Odyssey VR headset was used for VR training. The visualizations were shown in real-time to the cohort of students on the projector screen."
+s001M02TP02,Experiential & Cognitive Skill Evaluation,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c001M02N18 | Knowledge test via Google Forms: The knowledge test was administered to both groups before, immediately after and four weeks after training via Google Forms
+c001M02N19 | Practical performance assessment in VR: Participants' practical performance was assessed in VR before and immediately after training
+c002M02N27 | Multimodal interaction testing (eye tracking + EEG): Tobii Pro eye tracker and Emotiv EEG device, the distribution of visitor's attention and the emotion of visitors in VR scenario are quantified
+c007M02N26 | knowledge evaluation survey (pre/post/6M): ""survey of 10 questions scored from 0‑24 examined operators' knowledge"""
+s001M02TP03,Real-Time Assistive Integration & Guidance,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c002M01N14 | AR Scene Overlay / Guided Tour (Unity3D): A digital twin system realizes the real-time monitoring of visitors and AR virtual tour.
+c003M01N08 | AR Training: for demonstrating the interactive AR-based training, Microsoft Hololens2 was used
+c003M02N12 | AR-based safety training (Microsoft Hololens 2): Microsoft Hololens 2 was used for AR training. The interactive animations were demonstrated using a projector screen in real time.
+c005M01N12 | Smartsuit fitting and training session: From 2020, we began by holding multiple passive assistive suit fitting events to help many people understand the benefits of assistive suits."
+s001M02TP04,Spatial & Reality Capture Codification,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c002M01N10 | 3D Laser Scanning (FARO Focus S350 / Leica RTC360): FARO Focus S350 realizes millimeter-level point cloud modeling... average error margin <0.5%.
+c002M01N11 | Drone Oblique Photography: Drone Oblique Photography Images acquired from the air with 50-150m height cover multi-angle views.
+c002M02N13 | 3D laser scanning data acquisition: 3D laser scanning ... realizes millimeter-level point cloud modeling"
+s001M02TP05,Intelligent Semantic & Rule Codification,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),10,"c002M01N12 | Interactive Knowledge Graph: Then, an interactive knowledge graph is constructed to digitalize the recording of craftsmanship process.
+c002M02N28 | Graded protection framework: graded protection framework is proposed based on Technical Standards for Historical Building Digitization (2021)
+c004M01N16 | Document intelligence & information extraction module: Component: document intelligence & information extraction module. The user uploads a new RFP document
+c004M01N17 | Bid retrieval & similarity matching engine: Component: bid retrieval & similarity matching engine. The extracted requirements are encoded as vector embeddings
+c004M01N18 | Generative bid composition module: Component: generative bid composition module. Based on the retrieved proposals and the extracted requirements, GPT-4o generates a draft
+c004M02N22 | GenAI-based bid preparation system: A proof-of-concept GenAI framework that automates key components of bid proposal development, integrating LLMs, vector-based semantic retrieval, and structured bid repositories.
+c004M02N23 | semantic retrieval from Pinecone: Pinecone vector database enables semantic similarity searches using cosine similarity to retrieve the closest past bids.
+c004M02N24 | requirements extraction module (GPT-4o): GPT-4o extracts predefined requirements from uploaded RFPs, including project title, scope, deadlines, evaluation criteria, etc.
+c004M02N25 | proposal generation module (methodology section): GPT-4o generates a draft methodology section based on extracted requirements and retrieved similar proposals using few-shot prompting.
+c006M01N19 | Ultra Safety Design (USD) methodology: This paper introduces a novel methodology called Ultra Safety Design (USD)"
+s001M02TP06,Relational Knowledge Storage & Management Systems,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c004M01N19 | Pinecone vector database: Embeddings were stored in a Pinecone vector database, enabling semantic similarity searches using cosine similarity
+c006M02N06 | SQL server on Azure for knowledge storage: ""a relational table (SQL) data server has been developed on the Microsoft Azure platform. This server will be populated with data from an application created in Microsoft Excel during Phase 3. By storing the information from previous phases, it will be readily available in real-time without the need for physical storage hardware."""
+s001M02TP07,Digital Operations Monitoring & User Interfaces,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c002M02N14 | Digital twin platform (Unity3D): digital twin system realizes the real-time monitoring of visitors and AR virtual tour
+c004M01N20 | Streamlit web-application interface: The graphical interface was built with Streamlit web-application
+c004M02N26 | human-in-the-loop review interface: A lightweight graphical interface built with Streamlit allows users to input new RFPs and review AI-generated drafts. Human oversight is incorporated for quality.
+c005M02N20 | Dedicated web application for questionnaire: A dedicated web application (Fig.6) has been developed separately for the purpose of streamlining questionnaires and is used to tabulate and analyse the data.
+c006M01N15 | Application created in PowerApps: In PowerApps, an application was created to visualize the information of the previous phases
+c006M01N21 | Application developed in Microsoft Excel: an application was developed in Microsoft Excel oriented to OHS management
+c006M02N04 | Excel-based OHS management application (IPERC, RR, RFI, LA): ""an application was developed in Microsoft Excel oriented to OHS management based on the PtD initiative and processes, such as hazard identification, initial risk management, risk mitigation and residual risk management. This spreadsheet has tools such as IPERC, Residual Risk Management (RR), Requests for Information on Previously Taken Controls (RFI), Lessons Learned (LA)""
+c006M02N07 | PowerApps monitoring dashboard: ""In PowerApps, an application was created to visualize the information of the previous phases during the execution of the project in order to monitor and control the OHS management"""
+s001M02TP08,Quantitative Field & Behavioral Codification,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c005M01N10 | physical strength measurement at site office: The physical strength measurements included seven events: two-step, seated stepping, functional reach, one-leg standing with eyes closed, grip strength, foot grip strength and plank (Fig. 3).
+c005M01N11 | workload measurement using wearable sensors and video: The workload is estimated by combining the posture information obtained from the wearable sensor and the hand weight obtained from the captured video.
+c005M02N17 | Physical performance assessment (7-event battery): The physical strength measurements included seven events: two-step, seated stepping, functional reach, one-leg standing with eyes closed, grip strength, foot grip strength and plank (Fig. 3).
+c005M02N19 | Video recording of work posture: We were present at each worker's worksite and recorded video footage of the work situation using a wearable camera (Fig. 4)."
+s001M02TP09,Asynchronous E-Learning & Digital Media Learning,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,c002M02N15 | Dynamic narrative system: dynamic narrative system reconstructs historical scene such as bombing scene with temporal-space information
+s001M02TP10,Gamified Training & Serious Games,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c007M01N11 | Game-based training program: We created a short, playful, standardized, gamed-based training program to address this, and evaluated its impact."
+s001M02TP12,Advanced Computational & Algorithmic Simulation Frameworks,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,c006M01N20 | 4D simulation in Navisworks: export the file to an .nwc format for 4D simulation in Navisworks.

@@ -7,8 +7,9 @@ from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_files
 class SectorKG:
     def __init__(self):
         self.rebuild_kg_path = "../data/graph/case_study/case_6_v_ds/"
-        self.sector_raw_path = "../data/graph/case_study/sector_1_raw_m/"
-        self.norm_nodes_path = "../data/graph/case_study/sector_2_norm_nodes/"
+        self.sector_raw_path = "../data/graph/case_study/sector_1_raw/"
+        self.annotate_nodes_path = "../data/graph/case_study/sector_2_annotate_m/"
+        self.norm_nodes_path = "../data/graph/case_study/sector_3_norm_nodes/"
 
         if not os.path.exists(self.sector_raw_path):
             os.makedirs(self.sector_raw_path, exist_ok=True)
@@ -20,6 +21,18 @@ class SectorKG:
             "s001":"SIC 15 - Construction (Building Construction—General Contractors And Operative Builders)",
             "s002":"SIC 80 - Services (Health Services)",
             "s003":"SIC 20-39 - Manufacturing"
+        }
+
+        self.category_file_flag = {
+            "Explicit Knowledge":"ek",
+            "Technology-enable Practice":"tp",
+            "Knowledge Holder":"kh",
+            "Limitation":"li",
+            "Digital Technology":"dt",
+            "Traditional Human-central Practice":"thp",
+            "Tacit Knowledge":"tk",
+            "Organizational Dependency":"od",
+            "Environmental Dependency":"ed"
         }
 
     def concat_cases_by_sector(self, sector_id, case_ids):
@@ -34,8 +47,39 @@ class SectorKG:
         df_nodes.to_csv(self.sector_raw_path + f'{sector_id}_nodes.csv', index=False)
         df_edges.to_csv(self.sector_raw_path + f'{sector_id}_relations.csv', index=False)
 
+    def split_nodes_by_label(self, sector_id):
+
+        input_file = self.sector_raw_path + f'{sector_id}_nodes.csv'
+        df = pd.read_csv(input_file)
+        for category, group in df.groupby("category", dropna=False):
+            output_file = self.sector_raw_path + f'{sector_id}_{self.category_file_flag[category]}_nodes.csv'
+            group.to_csv(output_file, index=False, encoding="utf-8")
+
+        print("Split completed successfully!")
+
+    def combine_nodes_by_sector(self, sector_id):
+
+        df_nodes = pd.DataFrame()
+        for root, dirs, files in os.walk(self.annotate_nodes_path):
+            for file in files:
+                if (not file.startswith(sector_id)
+                        or ("nodes" not in file)
+                        or ("expand" not in file)):
+                    continue
+
+                file = os.path.join(root, file)
+                df = pd.read_csv(file)
+                df = df.astype(str)
+                df_nodes = pd.concat([df_nodes, df])
+
+        df_nodes.to_csv(self.annotate_nodes_path + f'{sector_id}_nodes.csv', index=False)
+
+    def combine_normalized_splits(self, sector_ids):
+        for sector_id in sector_ids:
+            self.combine_nodes_by_sector(sector_id)
+
     def build_mid_nodes(self, sector_id):
-        src_file = self.sector_raw_path + f'{sector_id}_nodes_gemini.csv'
+        src_file = self.annotate_nodes_path + f'{sector_id}_nodes.csv'
         mid_l1_node_file = self.norm_nodes_path + f'{sector_id}_l1_nodes.csv'
         mid_l2_node_file = self.norm_nodes_path + f'{sector_id}_l2_nodes.csv'
         mid_relation_file = self.norm_nodes_path + f'{sector_id}_l12_relations.csv'
@@ -256,17 +300,19 @@ if __name__ == '__main__':
     }
 
     obj = SectorKG()
-    sector_ids = ['s001','s002','s003']
+    sector_ids = ['s002']
 
-    start = 2
-    end = 3
+    start = 1
+    end = 4
     for turn in range(start, end + 1):
         if turn == 1:
             for sector_id in sector_ids:
                 obj.concat_cases_by_sector(sector_id, case_ids[sector_id])
+                obj.split_nodes_by_label(sector_id)
 
         if turn == 2:
             for sector_id in sector_ids:
+                obj.combine_normalized_splits(sector_ids)
                 obj.build_mid_nodes(sector_id)
                 obj.build_l2_relations(sector_id)
 

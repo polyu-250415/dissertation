@@ -1,8 +1,0 @@
-case_id,Initial_deepseek_nodes,Initial_deepseek_relations,Initial_gemini_nodes,Initial_gemini_relations,r1_nodes,r1_relations,r2_nodes,r2_relations,r3_nodes,r3_relations,node_accepted_rate,relation_accepted_rate
-c001,39,46,15,30,48,74,47,63,37,56,0.69,0.74
-c002,28,25,24,32,52,56,51,48,45,48,0.87,0.84
-c003,23,39,16,27,36,62,32,38,30,38,0.77,0.58
-c004,42,43,30,36,65,69,64,61,60,61,0.83,0.77
-c005,33,40,21,25,49,64,47,55,41,52,0.76,0.8
-c006,23,27,26,30,48,54,46,38,43,37,0.88,0.65
-c007,43,38,18,37,44,75,42,63,37,62,0.61,0.83

@@ -20,7 +20,7 @@ def get_model_flag(model):
 
 def transfer_nodes(case_ids):
 
-    df_map = pd.read_csv('../conf/case_id_map')
+    df_map = pd.read_csv('../conf/coding_schema/case_id_map')
     map_dict = dict(zip(df_map['node_id_prex'], df_map['case_title']))
 
     for case_id in case_ids:
@@ -44,7 +44,7 @@ def transfer_nodes(case_ids):
 
 
 def transfer_relations(case_ids):
-    df_map = pd.read_csv('../conf/case_id_map')
+    df_map = pd.read_csv('../conf/coding_schema/case_id_map')
     map_dict = dict(zip(df_map['node_id_prex'], df_map['case_title']))
 
     for case_id in case_ids:

@@ -26,10 +26,10 @@ class CaseKG:
 if __name__ == '__main__':
 
     start = 3
-    end = 5
+    end = 3
     obj = CaseKG()
 
-    sector_id = 's001'
+    sector_id = 's002'
 
     case_ids = {
         "s001": ['c001', 'c002', 'c003', 'c004', 'c005', 'c006', 'c007'],
@@ -59,22 +59,23 @@ if __name__ == '__main__':
             obj.screen_nodes(case_ids[sector_id])
 
         if turn == 3:
-            """obj = AssembleEAVQ(data_base_path="../data/graph/case_study/")
+            obj = AssembleEAVQ(data_base_path="../data/graph/case_study/")
             obj.init_embedder()
             obj.find_best_pairs(case_ids[sector_id])
-            obj.assemble_ea_vq(case_ids[sector_id])"""
+            obj.assemble_ea_vq(case_ids[sector_id])
 
+        if turn == 4:
             obj = EvaluateEA(data_base_path="../data/graph/case_study/")
-            #obj.evaluate_all_ea(case_ids[sector_id])
+            obj.evaluate_all_ea(case_ids[sector_id])
             obj.find_all_redundant_nodes(case_ids[sector_id])
 
             obj = RebuildKG(data_base_path="../data/graph/case_study/")
             obj.rebuild_all_kg(case_ids[sector_id])
 
-        if turn == 4:
+        if turn == 5:
             obj = CaseKG()
             for case_id in case_ids[sector_id]:
                 obj.build_case_kg(case_id)
 
-        if turn == 5:
+        if turn == 6:
             calculate_kg_verification([sector_id])

@@ -1,0 +1,34 @@
+You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies for KM, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from a range of cases, and code a conceptual framework for knowledge retention driven by emerging technologies to answer research questions.
+
+***Input Data***
+- the knowledge graph including a node csv file and a relation csv file
+
+***CRITICAL REMINDER***
+When answering these questions, you must NOT rely solely on the text in the node_name column. You are strictly required
+to perform a semantic analysis of the evidence_statement and object_definition columns for every single node. Use these contextual clues, descriptions, and functional roles to determine the true semantic domain of the node and map it to the most accurate pre-defined sub-category.
+
+***Research questions***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices? (Focus: knowledge retention practice → emerging technology → enabling mechanism).
+RQ2. What resources and capabilities are required to apply emerging technologies in tacit knowledge retention practices? (Focus: data input, expert participation, user capability, technical infrastructure, tangible resource, and external environment).
+RQ3. How do organization culture influence the effectiveness of emerging technology-enabled tacit knowledge retention? (Focus: organizational culture, trust, psychological safety, leadership support, motivation).
+
+RQ2: Required Resources & Capabilities Coding:
+The layout of this section is recommended as follows:
+introduce in 20 words
+Required Resources & Capabilities
+
+General Rules:
+You should conduct coding from the following two perspectives.
+1. Digital-Era Specific Dependencies
+This perspective highlights the unique technological infrastructure, specific computational competencies, and dynamic user capabilities required to deploy advanced digital tools.
+2. Classic Industry & Institutional Dependence
+This perspective highlights the permanent, traditional organizational structures, physical assets, and regulatory architectures that remain indispensable for operational continuity.
+
+Required Resources & Capabilities Coding
+1. The subheadings should be consistent with the category of organization dependency or environment dependency or
+limitations. If more than two categories are combined into one subheading, a new name can be added.
+2. You should cite cases to support your viewpoints and suggest associating multiple cases for each practice to support your viewpoints. The format for citing evidence should be (Node ID: XXX - Parent ID: XXX).
+3. You should explain the mechanism by combining case evidence, remembering not to merely list all case evidence.

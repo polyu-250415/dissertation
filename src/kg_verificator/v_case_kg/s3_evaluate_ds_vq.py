@@ -6,13 +6,13 @@ from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_case
 class EvaluateDSVQ:
     def __init__(self,
                  data_base_path='../../data/graph/case_study/',
-                 conf_path = '../../conf/'):
+                 conf_path = '../../conf/coding_schema/'):
         self.kg_rag_auditor = KGRAGAuditor()
         self.v_ds_path = f"{data_base_path}case_6_v_ds"
         self.final_kg_path = f"{data_base_path}/case_7_final_kg"
         self.kg_rag_auditor = KGRAGAuditor()
         self.rag_auditor = RAGAuditor()
-        self.v_ds_template = f"{conf_path}case_s3_downstream_task.csv"
+        self.v_ds_template = f"{conf_path}coding_schema.xlsx"
         self.pdf_path = f"{data_base_path}/raw_pdf_m"
 
     def build_vector_db(self, case_ids):
@@ -35,19 +35,22 @@ class EvaluateDSVQ:
                 return rsp_j
             except Exception as e:
                 print(e)
+                return {"answer": "Exception", "evidence": ""}
 
-        return {"answer": "E", "evidence": ""}
+        return {"answer": "Not Mention", "evidence": ""}
 
     def do_ds_rag(self, case_id):
 
         # build KG
         create_kg_by_case(case_id, path_dir = self.v_ds_path)
+        self.kg_rag_auditor.refresh_kg_schema()
 
         # build VQ
-        df_question = pd.read_csv(self.v_ds_template)
+        df_question = pd.read_excel(self.v_ds_template, sheet_name="downstream_task").dropna(how="all")
         answer_list = []
         evidence_list = []
         for question in df_question['Question']:
+            print(f"Question from {case_id}: {question}")
             rsp = self.query_with_retry(question)
             answer_list.append(rsp['answer'])
             evidence_list.append(rsp['evidence'])
@@ -80,22 +83,16 @@ class EvaluateDSVQ:
 
         input_file = f"{self.v_ds_path}/{case_id}_ds_rag.csv"
 
-        df_rag = pd.read_csv(input_file)
-
-        df_rag['sample_type'] = "evidence"
-        df_rag['question'] = "question:" + df_rag['Question'] + "\n answer:" + df_rag['Answer']
-        question_list = df_rag[['sample_type', 'question']].to_dict(orient='records')
-
-        resp_list = self.rag_auditor.ask(question_list)
-        df_rag['rag_rate'] = resp_list
-
         try:
-            evaluation_label_list = [1 if r >= 4 else 0
-                                     for r in self.convert_to_valid_int(resp_list)]
-            df_rag['evaluation_label'] = evaluation_label_list
+            df_rag = pd.read_csv(input_file)
+            question_list = df_rag['Question'].to_list()
+
+            filters = {"field": "meta.case_id", "operator": "==", "value": case_id}
+            resp_list = self.rag_auditor.query(question_list, filters)
+            df_rag['rag_rate'] = resp_list
+
             df_rag.to_csv(self.v_ds_path + "/" + case_id + '_ds_rag_evaluation.csv', index=False)
         except Exception as e:
-            df_rag.to_csv(self.v_ds_path + "/" + case_id + '_ds_rag_evaluation_tmp.csv', index=False)
             print(e)
 
     def evaluate_all_ds_rag(self, case_ids):
@@ -108,7 +105,7 @@ class EvaluateDSVQ:
 if __name__ == '__main__':
     obj = EvaluateDSVQ()
 
-    # case_ids = ['c001', 'c002', 'c003', 'c004', 'c005', 'c006', 'c007']
-    case_ids = ['c001']
+    case_ids = ['c101', 'c102', 'c103', 'c104', 'c105', 'c106', 'c107','c108', 'c109','c201', 'c202', 'c203', 'c204',
+                'c205','c206','c207','c208','c209','c210','c211']
     obj.do_all_ds_rag(case_ids)
     #obj.evaluate_all_ds_rag(case_ids)

@@ -21,4 +21,4 @@ if __name__ == '__main__':
     mid_seg = '_gemini'
     #mid_seg = '_deepseek'
     for id in range(1, 2):
-        obj.build_case_kg_test(f"c00{id}", path, "", clear_flag=True)
+        obj.build_case_kg_test(f"c10{id}", path, "", clear_flag=True)

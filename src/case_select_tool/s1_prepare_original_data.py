@@ -274,7 +274,7 @@ class PreparePaper:
             '../data/papers/midput/WoS-selected-fields.csv',
             '../data/papers/midput/PubMed-selected-fields.csv',
         ]
-        self.uuid_file_path = "../conf/uuid.csv"
+        self.uuid_file_path = "../conf/case_selection/uuid.csv"
         self.output_dir = "../data/papers/midput/"
         self.unique_column = 'Title'
         self.fill_value = 'Empty'

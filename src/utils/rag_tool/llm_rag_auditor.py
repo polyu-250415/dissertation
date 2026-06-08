@@ -152,6 +152,42 @@ Your output:"""
 
         return pipeline
 
+    def _build_query_pipeline(self) -> Pipeline:
+            rag_template = """
+    Context: {% for doc in documents %} {{ doc.content }} {% endfor %}
+
+    Question: {{ query }}
+
+    Task:
+    Given the context, answer the above question.If there is no answer in the context, you just need return "Not 
+    Mentioned".
+
+    Your output:"""
+
+            pipeline = Pipeline()
+
+            pipeline.add_component("text_embedder",
+                                   FastembedTextEmbedder(model=self.model_name,
+                                                         cache_dir=self.embedding_model_cache_path,
+                                                         local_files_only=True,
+                                                         parallel=0))
+            pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=self.document_store, top_k=3))
+
+            pipeline.add_component("llm_deepseek", OpenAIGenerator(
+                api_base_url="https://api.deepseek.com/v1",
+                model="deepseek-reasoner",
+                api_key=Secret.from_env_var("DEEPSEEK_API_KEY")
+            ))
+
+            pipeline.add_component("prompt_deepseek", PromptBuilder(template=rag_template))
+
+            # Explicitly declare output and input slots to maintain stability in Haystack v2
+            pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
+            pipeline.connect("retriever.documents", "prompt_deepseek.documents")
+            pipeline.connect("prompt_deepseek.prompt", "llm_deepseek.prompt")
+
+            return pipeline
+
     def _build_retrieval_pipeline(self, top_k = 5) -> Pipeline:
 
             pipeline = Pipeline()
@@ -206,6 +242,28 @@ Your output:"""
                 docs_to_write.append(new_doc)
 
             self.document_store.write_documents(docs_to_write)
+
+
+    def query(self, question_list, filters: dict = None):
+        resp_list = []
+        for question in question_list:
+            try:
+                run_input = {
+                    "text_embedder": {"text": question},
+                    "prompt_deepseek": {"query": question}
+                }
+
+                if filters:
+                    run_input["retriever"] = {"filters": filters}
+
+                results = self._build_query_pipeline().run(run_input)
+
+                resp_list.append(results["llm_deepseek"]["replies"][0])
+
+            except Exception as e:
+                print(e)
+                resp_list.append("E")
+        return resp_list
 
     def ask(self, question_list:list[dict], filters: dict = None):
 
@@ -316,7 +374,7 @@ f"""
 if __name__ == '__main__':
     obj = RAGAuditor()
 
-    case_id = "c002"
+    case_id = "c001"
     custom_meta_data: dict = {
         "case_id": case_id
     }
@@ -325,6 +383,7 @@ if __name__ == '__main__':
 
     # FIX: Pass the custom_meta dictionary explicitly here
     obj.ingest(path, custom_meta=custom_meta_data)
+    """
 
     df_nodes = pd.read_csv("../../data/graph/case_study/case_6_v_ds/c001_ds_rag.csv")
 
@@ -340,5 +399,17 @@ if __name__ == '__main__':
 
     except FileNotFoundError:
         print("Metadata ingestion complete. CSV path not found, skipping evaluation loops.")
+    """
+    filters = {"field": "meta.case_id", "operator": "==", "value": case_id}
+    question_list = [
+        "Which tacit knowledge is described?",
+        "What organizational culture influence the effectiveness of the technology-enabled practices?",
+        "Does the organization adopt incentive or reward measures to encourage knowledge holders to actively "
+        "participate in technology-enable practices?",
+        "Does the organization adopt interpersonal trust and a psychological safety climate to encourage knowledge holders to actively participate in technology-enable practices?"
+        "Does the organization cultivate intrinsic identity, cultural knowledge-sharing values, and institutional governance/ethics clearances to encourage knowledge holders to actively participate in technology-enable practices?"
+    ]
+    for question in question_list:
+        obj.query(question)
 
 

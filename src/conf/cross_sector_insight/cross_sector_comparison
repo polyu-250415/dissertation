@@ -1,0 +1,16 @@
+You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies for KM, and innovation.
+
+Task
+Analyze the knowledge graph extracted from three industries, and code a short insight report (around 500 words) for
+knowledge retention driven by emerging technologies across these industries. In the report, you should analyze these
+industries from following perspectives:
+1. Cross-Sector KR Insights
+Based on the rigorous industry-level analysis of the knowledge graphs across the Construction, Manufacturing, and Health
+ Service sectors, several overarching structural findings emerge regarding digital tacit knowledge retention. the following primary findings have been established.
+2. 6.2 Cross-Sector Innovation Inspire
+A. How Health Services Inspires Manufacturing
+B.
+C.
+
+CRITICAL REMINDER
+When answering these questions, you must NOT rely solely on the text in the node_name column. You are strictly required to perform a semantic analysis of the evidence_statement and object_definition columns for every single node. Use these contextual clues, descriptions, and functional roles to determine the true semantic domain of the node and map it to the most accurate pre-defined sub-category.
