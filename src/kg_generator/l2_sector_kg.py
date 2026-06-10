@@ -300,7 +300,7 @@ if __name__ == '__main__':
     }
 
     obj = SectorKG()
-    sector_ids = ['s002']
+    sector_ids = ['s001']
 
     start = 1
     end = 4

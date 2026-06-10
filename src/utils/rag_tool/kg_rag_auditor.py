@@ -118,11 +118,7 @@ if __name__ == '__main__':
     obj = KGRAGAuditor()
 
     questions = [
-        "Whether organization dependency like incentive or reward was used to encourage knowledge holders to "
-        "actively participate in "
-        "technology-enable practices?",
-        "Whether organization dependency like trust or safety was used to encourage knowledge holders to "
-        "actively participate in technology-enable practices?"
+        "how many Immersive Virtual Training Environments(hMTP)?, what limitations they face?",
     ]
 
     df =pd.read_csv('question.csv')
