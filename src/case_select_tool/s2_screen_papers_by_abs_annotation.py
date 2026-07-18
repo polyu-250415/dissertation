@@ -338,7 +338,7 @@ If any check fails during your internal processing, correct it instantly before 
 
 
 if __name__ == '__main__':
-    obj = ScreenPapersAnnotation(count=3, max_count=0)
-    # obj.annotate_parallel()
-    # obj.merge_csv_files()
-    # obj.validate_annotation()
+    obj = ScreenPapersAnnotation(count=10, max_count=30)
+    obj.annotate_parallel()
+    obj.merge_csv_files()
+    obj.validate_annotation()

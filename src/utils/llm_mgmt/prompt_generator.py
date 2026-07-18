@@ -2,69 +2,66 @@ class LiteratureReviewPrompt:
     def __init__(self, body=[]):
         self.prompt_template = {
             "Cmd_Screen_by_Abstract": f"""
-You are an expert academic coding assistant with interdisciplinary expertise in knowledge management, emerging technologies for KM, and computer science research classification.
+You are an expert academic coding assistant with interdisciplinary expertise in knowledge management emerging technologies for KM, and computer science research classification.
 
-Task
+### Task
 Analyze the fields named `Title` and `Abstract` within each JSON object and code each entry into a single JSON object within a unified output JSON array, using a unified, conservative, evidence-based standard.
 
-Input dataset format:
+### Input dataset format:
 - The input will be a JSON array of objects.
 - Each object contains at least the fields: `uuid`, `Title`, `Abstract`.
 
-Input dataset:
+### Input dataset:
 {body}
 
-- Return exactly one coded JSON object per input object, maintaining the original order.
+---
 
-Coding questions:
+### Core Coding Rules & Principles
+1. **Strict Evidence:** Use only information explicitly stated or strongly implied in the `Abstract` field. Do not invent unsupported information. If evidence is weak or ambiguous, reflect that in the confidence field or use missing-value defaults.
+2. **Conservative Approach:** Do not guess. Do not confuse the tenses or viewpoints of the paper (e.g., do not extract a hypothesis/viewpoint to be verified as a confirmed factual result).
+3. **Consistency:** Apply a unified standard across all abstracts. Preserve original wording where useful, but normalize categories exactly as specified.
+4. **Formatting Multiple Items:** If multiple discrete items appear within a single string field, join them with "; ".
+
+---
+
+### Coding questions:
 Answer the questions from Q1 to Q5 one by one.
-- Q1: Whether the study explicitly discusses how to capture or retain knowledge from individuals or organizations
-- Q2: If the answer to Q1 is yes, what tacit knowledge is captured or retained from individuals or organizations; If the answer to Q1 is no, return "None identified"
-- Q3: Whether digital technologies are explicitly used to capture or retain tacit knowledge which marked in Q2
-- Q4: If the answer to Q3 is yes, what technologies are adopted to capture or retain knowledge; If the answer to Q3 is no, return "None identified"
-- Q5: What's the document type of this paper
+- Q1: Whether the study explicitly discusses or strongly implied how to capture or retain knowledge from individuals or organization environment.
+- Q2: If the answer to Q1 is yes, which tacit knowledge is captured or retained from individuals or organizations; If the answer to Q1 is no, return "None identified".
+- Q3: Whether digital technologies are explicitly used to capture or retain tacit knowledge which marked in Q2.
+- Q4: If the answer to Q3 is yes, what technologies are adopted to capture or retain knowledge; If the answer to Q3 is no, return "None identified".
+- Q5: What's the article type.
 
-Core rule:
-– Use only information explicitly stated or strongly implied in the `Abstract` field.
-– Do not invent unsupported information. When evidence is weak or ambiguous, reflect that in the relevant confidence field.
-– Follow the coding question order. If the answer to Q1 is `No`, fill the remaining fields according to the missing-value rules and proceed to the next object.
+---
 
-General coding principles:
-1. Apply a unified standard across all abstracts
-2. Be conservative
-3. Preserve original Abstract wording where useful, but normalize labels for consistency
-4. Base each coded value on evidence from the Abstract
-5. If multiple items appear, join them with "; "
-6. Do not guess
-7. Never confuse the tenses of the viewpoints in the paper. For example, do not extract a viewpoint to be verified as a confirmed one, and vice versa.
+### Specific Domain Coding Rules
+### Q1 Coding rules:
+- kr_flag: `Yes` or `No`
+    - `Yes` only when the abstract clearly discusses preserving, capturing, retaining, or preventing loss of knowledge from individuals，group and organization environment.
+    - `No` when the abstract was about knowledge management without clear retention/capture. For example, employees learn from existing documents.
+- kr_evidence: Raw evidence from the original abstract supporting the kr_flag. Whether "Yes" or "No", you should explain your view.
+- kr_confidence: `high`, `medium`, or `low`
 
-Q1 Coding rules:
-kr_flag: `Yes` or `No`
-- `Yes` only when the abstract clearly discusses preserving, capturing, retaining, transferring, or preventing loss of knowledge from individuals，group and organization environment.
-- `No` when the abstract was about knowledge management without clear retention/capture. For example, employees learn from existing documents.
-kr_evidence: Exact or closely paraphrased evidence from the original abstract supporting the kr_flag. Whether "Yes" or "No", you should explain your view.
-kr_confidence: `high`, `medium`, or `low`
+### Q2 Coding rules:
+- `tacit_knowledge`: The tacit knowledge, retaining the original description from the study. Do not use generic conceptual descriptions like "knowledge acquisition" or "tacit knowledge". If no specific knowledge is found, do not return this object in tacit_knowledge_array.
+- `TK_normalized`: Must be exactly ONE of the following categories (you may customize the specific sub-type inside the parentheses for the "Other" category if needed):
+    - Relational Tacit Knowledge: knowledge that could be made explicit in principle but remains unstated because of social contingencies—secrecy, lack of communication effort, asymmetric trust, unequal access, or practical cost of documentation. (e.g., Trade secrets held by craft workers or industrial technicians, never written into standard  operating manuals;Workplace unspoken norms: knowing when not to raise sensitive requests to supervisors;Warehouse veterans’ mental map of shelf layouts—never catalogued formally, only passed verbally on demand;Confidential negotiation tactics kept hidden from competitors.)
+    - Somatic Tacit Knowledge: Knowledge that is embedded in human bodily and neurophysiological capacities (e.g., A cyclist's skill in keeping balance while riding a bicycle; Surgeon’s fine motor tension control during suturing; Musicians’ subtle hand pressure for tone; Pilots’ bodily sensory anticipation of aircraft stall before instrument alerts.)
+    - Collective Tacit Knowledge: Knowledge that belongs not to individual bodies or isolated minds but to social collectivities, embedded in shared cultural, linguistic and communal practice, cannot be fully unpacked into context-free written rules independent of social immersion. (e.g., Traffic social conventions like knowing how to make eye contact with drivers at busy junctions in just the way necessary to assure a safe passage and not to invite an unwanted response;Scientific community unspoken standards for judging valid experimental evidence; Sports team synchronized nonverbal coordination (pit crew, football line coordination)
+- `TK_confidence`: Must be exactly "high", "medium", or "low".
 
-Q2 Coding rules:
-tacit_knowledge: Extract all explicit or strongly implied tacit knowledge related to Q1, preserving the exact phrase. If Q1=`No`, use `"None identified"`.
-TK_normalized: Use only one or more of the following categories; you may customize the items inside the parentheses for the `"Other"` category.
-    - Somatic tacit knowledge ( Experiential know-how, Procedural know-how, Craft knowledge, Operational know-how, other)
-    - Cognitive tacit knowledge (Expert judgment, Decision rules, Clinical know-how, other)
-    - Collective and relational tacit knowledge (Teamwork know-how, other)
-    - Adaptive tacit knowledge(Situational problem-solving, other)
-    - Other(*)
-TK_confidence: `high`, `medium`, or `low`
+### Q3 Coding rules:
+- `DT_flag`: `Yes` or `No`
+    - `Yes` only when one or more digital technologies were clearly used to preserve, capture, archive, transfer, or retain knowledge.
+    - `No` when digital technology was not used or discussed to preserve, capture, archive, transfer, or retain knowledge.
+- `DT_evidence`: Raw evidence from the original abstract supporting the DT_flag. Whether "Yes" or "No", you should explain your view.
+- `DT_confidence`: `high`, `medium`, or `low`
 
-Q3 Coding rules:
-DT_flag: `Yes` or `No`
-- `Yes` only when one or more digital technologies were clearly used to preserve, capture, archive, transfer, or retain knowledge.
-- `No` when digital technology was not used or discussed to preserve, capture, archive, transfer, or retain knowledge.
-DT_evidence: Exact or closely paraphrased evidence from the original abstract supporting the DT_flag. Whether "Yes" or "No", you should explain your view.
-DT_confidence: `high`, `medium`, or `low`
-
-Q4 Coding rules:
-Digital_Technologies: Extract all explicit or strongly implied technologies related to Q3, preserving the exact phrase. If Q3=`No`, use `"None identified"`.
-DT_normalized: Use these ACM-aligned classes only; you may customize the items inside the parentheses for the `"Other"` category.
+### Q4 Coding rules:
+- `Digital_Technologies`: Extract all explicit or strongly implied technologies related to Q3, preserving the exact 
+phrase. If Q3=`No`, use `"None identified"`.
+- `DT_normalized`: Use these ACM-aligned classes only; you may customize the items inside the parentheses for the 
+`"Other"` category.
     - Artificial Intelligence and Intelligent Computation
     - Human–Computer Interaction and Immersive Technologies
     - Cyber-Physical Systems, IoT, and Smart Environments
@@ -74,51 +71,70 @@ DT_normalized: Use these ACM-aligned classes only; you may customize the items i
     - Mobile, Social, and Communication Technologies
     - Rule-Based, Decision, and Expert Systems
     - Others(*)
+- `DT_confidence`: `high`, `medium`, or `low`
 
-Q5 coding rules:
-Doc_type: Use only one of the following categories;you may customize the items inside the parentheses for the `"Other"` category.
-    - Literature review 
-    - Empirical Study
-    - Case Study
-    - Conceptual Paper
-    - Other(*)
-Doc_type_confidence: `high`, `medium`, or `low`
+### Q5 coding rules:
+- `article_type`: Use only one of the following categories;you may customize the items inside the parentheses for the 
+`Other` category.
+    - Literature review: Synthesizes existing literature; no new data and no new framework proposed.
+    - Empirical Study: Collects/analyzes primary or secondary data for statistical/generalizable analysis (e.g., surveys, experiments, archival data).
+    - Case Study: Collects/analyzes primary/secondary data focusing on one or several specific cases for deep contextual insight.
+    - Conceptual Framework: Proposes a new theoretical framework/propositions, but does NOT collect or analyze any new data.
+    - Other(*): For papers that do not fit the above.
+- `article_type_evidence`: Raw evidence from the original abstract supporting the article_type. you should cite the 
+raw content from the abstract to support your view.
+- `article_type_confidence`: `high`, `medium`, or `low`
 
-Fixed output JSON structure:
-Each output object must contain exactly these keys in this order:
-{{
-  "uuid": "string",
-  "kr_flag": "string",
-  "kr_evidence": "string",
-  "kr_confidence": "string",
-  "tacit_knowledge": "string",
-  "TK_normalized": "string",
-  "TK_confidence": "string",
-  "DT_flag": "string",
-  "DT_evidence": "string",
-  "DT_confidence": "string",
-  "Digital_Technologies": "string",
-  "DT_normalized": "string",
-  "Doc_type": "string",
-  "Doc_type_confidence": "string"
-}}
-uuid: Use the `uuid` value from the input object.
+Strict classification order for `article_type`:
+1. Check data evidence (fieldwork/interviews/case studies/surveys/observations).
+2. If data exists → Case Study (specific cases) or Empirical Study (broad/statistical).
+3. If no data → Conceptual Framework (new framework) or Literature Review (synthesis only).
+WARNING: Theoretical keywords (argues/calls for/framework) NEVER override data keywords (fieldwork/case studies).
 
-Missing-value rules:
+---
+
+### Missing-value rules:
 - If nothing is identified for a field that expects a value, write: `"None identified"`
 - Use `"Yes"` or `"No"` only where the field explicitly requires a Yes/No flag.
 - All values must be strings.
 
-Decision rules for difficult cases:
-- If the Abstract discusses knowledge sharing, learning, or KM systems but not clearly retention, do not automatically code it as a retention practice.
-- If a technology is mentioned but not clearly linked to capture or retention, code cautiously and lower confidence.
-- If retention is implied but not explicit, code conservatively.
-- If no defensible evidence exists, write `"None identified"`.
+---
 
-Output instructions:
-- Return ONLY a valid JSON array containing one coded object per input object.
-- Do not wrap the output in markdown code blocks (e.g., ```json).
-- Do not include explanations, notes, or additional text outside the JSON array.
+### Critical Self-Correction & Verification Step
+Before generating the final JSON object for each paper, you must perform a silent, internal compliance check to ensure strict alignment with the coding rules. Verify the following:
+1. **Evidence Check:** Did I extract a hypothesis, future goal, or unverified viewpoint as a confirmed factual result? If yes, remove it or lower the confidence to 'low'.
+2. **Q2 Format Validation:** Is the `tacit_knowledge` just a generic tacit knowledge term (e.g., "knowledge acquisition", "tacit knowledge", etc), rewrite it to specific tacit knowledge strictly aligning with the statement in the study.
+3. **Q2 Taxonomy Match:** Is `tacit_knowledge_normalized` an exact string match for one of the 4 allowed macro-categories? (Ensure the output is the category names).
+4. **Q4 Taxonomy Match:** Is `digital_technology_normalized` an exact string match for one of the 9 allowed ACM classes?
+5. **Q5 Article Type Match:** Is `article_type` consistent with the abstract? If no, revise it.
+
+If any check fails during your internal processing, correct it instantly before writing the output.
+
+---
+
+Fixed Output Schema
+Return exactly one coded JSON object per input object, maintaining the original order. The output must strictly follow this JSON schema structure:
+[
+    {{
+      "uuid": "string",
+      "kr_flag": "string",
+      "kr_evidence": "string",
+      "kr_confidence": "string",
+      "tacit_knowledge": "string",
+      "TK_normalized": "string",
+      "TK_confidence": "string",
+      "DT_flag": "string",
+      "DT_evidence": "string",
+      "DT_confidence": "string",
+      "Digital_Technologies": "string",
+      "DT_normalized": "string",
+      "article_type": "string",
+      "article_type_evidence": "string",
+      "article_type_confidence": "string"
+    }}
+]
+
+IMPORTANT: Output only the raw JSON array. Do NOT include any markdown formatting, code fences, or explanations.
 """,
         "cmd_annotate_by_abstract": f"""
 You are an expert academic coding assistant with interdisciplinary expertise in knowledge management (KM), emerging technologies for KM, and computer science research classification.
@@ -145,19 +161,15 @@ Analyze the fields named `Title` and `Abstract` within each JSON object in the i
 
 ### Specific Domain Coding Rules
 
-#### Q1: Tacit Knowledge Extraction (`tacit_knowledge_array`)
-Extract all explicit or strongly implied domain tacit knowledge objects in this study. If none are present, return an empty array `[]`. Each object in the array must contain:
+#### Tacit Knowledge Extraction (`tacit_knowledge_array`)
 - `tacit_knowledge`: The tacit knowledge, retaining the original description from the study. Do not use generic conceptual descriptions like "knowledge acquisition" or "tacit knowledge". If no specific knowledge is found, do not return this object in tacit_knowledge_array.
 - `tacit_knowledge_normalized`: Must be exactly ONE of the following categories (you may customize the specific sub-type inside the parentheses for the "Other" category if needed):
-  - "Somatic tacit knowledge (Experiential know-how, Procedural know-how, Craft knowledge, Operational know-how, other)"
-  - "Cognitive tacit knowledge (Expert judgment, Decision rules, Clinical know-how, other)"
-  - "Collective and relational tacit knowledge (Teamwork know-how, other)"
-  - "Adaptive tacit knowledge (Situational problem-solving, other)"
-  - "Other(*)"
+    - Relational Tacit Knowledge: knowledge that could be made explicit in principle but remains unstated because of social contingencies—secrecy, lack of communication effort, asymmetric trust, unequal access, or practical cost of documentation. (e.g., Trade secrets held by craft workers or industrial technicians, never written into standard  operating manuals;Workplace unspoken norms: knowing when not to raise sensitive requests to supervisors;Warehouse veterans’ mental map of shelf layouts—never catalogued formally, only passed verbally on demand;Confidential negotiation tactics kept hidden from competitors.)
+    - Somatic Tacit Knowledge: Knowledge that is embedded in human bodily and neurophysiological capacities (e.g., A cyclist's skill in keeping balance while riding a bicycle; Surgeon’s fine motor tension control during suturing; Musicians’ subtle hand pressure for tone; Pilots’ bodily sensory anticipation of aircraft stall before instrument alerts.)
+    - Collective Tacit Knowledge: Knowledge that belongs not to individual bodies or isolated minds but to social collectivities, embedded in shared cultural, linguistic and communal practice, cannot be fully unpacked into context-free written rules independent of social immersion. (e.g., Traffic social conventions like knowing how to make eye contact with drivers at busy junctions in just the way necessary to assure a safe passage and not to invite an unwanted response;Scientific community unspoken standards for judging valid experimental evidence; Sports team synchronized nonverbal coordination (pit crew, football line coordination)
 - `tacit_knowledge_confidence`: Must be exactly "high", "medium", or "low".
 
-#### Q2: Digital Technology Extraction (`digital_technology_array`)
-Extract all explicit or strongly implied technologies in this study. If none are present, return an empty array `[]`. Each object in the array must contain:
+#### Digital Technology Extraction (`digital_technology_array`)
 - `digital_technology`: The exact phrase/name of the technology used in the text.
 - `digital_technology_normalized`: Must be exactly ONE of the following ACM-aligned classes (you may customize the items inside the parentheses for the "Others" category if needed):
   - "Artificial Intelligence and Intelligent Computation"
@@ -170,7 +182,7 @@ Extract all explicit or strongly implied technologies in this study. If none are
   - "Rule-Based, Decision, and Expert Systems"
   - "Others(*)"
 
-#### Q3: Sector Classification (`sector`)
+#### Sector Classification (`sector`)
 Extract the industry sector(s) to which the study's practice belongs, using the Standard Industrial Classification (SIC) Code Manual.
 You MUST select the sector from the **Reference SIC Table** below. Do not invent new sector names or IDs.
 
@@ -258,7 +270,6 @@ If the most suitable sector is not in the table above, use the closest matching 
 - `sector_name`: Must exactly match the "Division (Major Group)" string from the table.
 - `sector_id`: Must exactly match the "SIC XX" code from the same table row.
 - `sector_confidence`: "high", "medium", or "low".
-
 ---
 
 ### Missing-Value Rules
@@ -269,15 +280,11 @@ If the most suitable sector is not in the table above, use the closest matching 
 
 ### Critical Self-Correction & Verification Step
 Before generating the final JSON object for each paper, you must perform a silent, internal compliance check to ensure strict alignment with the coding rules. Verify the following:
-1. **Evidence Check:** Did I extract a hypothesis, future goal, or unverified viewpoint as a confirmed factual 
-result? If yes, remove it or lower the confidence to 'low'.
-2. **Q1 Format Validation:** Is the `tacit_knowledge` just a generic tacit knowledge term (e.g., "knowledge 
-acquisition", "tacit knowledge", etc), rewrite it to specific tacit knowledge strictly aligning with the statement in the study.
-3. **Q1 Taxonomy Match:** Is `tacit_knowledge_normalized` an exact string match for one of the 5 allowed 
-macro-categories? (Ensure the macro label prefix like "Somatic tacit knowledge" is perfectly preserved).
+1. **Evidence Check:** Did I extract a hypothesis, future goal, or unverified viewpoint as a confirmed factual result? If yes, remove it or lower the confidence to 'low'.
+2. **Q1 Format Validation:** Is the `tacit_knowledge` just a generic tacit knowledge term (e.g., "knowledge acquisition", "tacit knowledge", etc), rewrite it to specific tacit knowledge strictly aligning with the statement in the study.
+3. **Q1 Taxonomy Match:** Is `tacit_knowledge_normalized` an exact string match for one of the 5 allowed macro-categories? (Ensure the macro label prefix like "Somatic tacit knowledge" is perfectly preserved).
 4. **Q2 Taxonomy Match:** Is `digital_technology_normalized` an exact string match for one of the 9 allowed ACM classes?
-5. **Q3 SIC Selection:** Did I choose the `sector_name` and `sector_id` strictly from the provided Reference SIC 
-Table? If no exact match is possible, did I pick the closest and set confidence to "low"?
+5. **Q3 SIC Selection:** Did I choose the `sector_name` and `sector_id` strictly from the provided Reference SIC Table? If no exact match is possible, did I pick the closest and set confidence to "low"?
 6. **Q3 Consistency Validation:** Are `sector_name` and `sector_id` taken from the same row in the Reference SIC Table? If not, correct them to be a matched pair before output.
 
 If any check fails during your internal processing, correct it instantly before writing the output.
@@ -322,8 +329,8 @@ if __name__ == '__main__':
     body = [
   {
     "uuid": "5446e584-5403-4f37-83f1-e7867e994fbc",
-    "Title": "Responsible Ai In Knowledge Creation: An Exploration Of Generative Ai'S Opportunities And Risks",
-    "Abstract": "This study explores the transformative potential and inherent challenges of Generative AI in the domain of knowledge creation and management, using the Socialization, Externalization, Combination, and Internalization (SECI) model as an analytical framework. Our qualitative research, based on content analysis from expert opinions, reveals that the integration of Generative AI in knowledge processes is inevitable and offers substantial productivity enhancements. These include providing diverse expression channels, simulating personalized interactions, and facilitating cross-disciplinary communication. However, significant risks accompany these benefits, such as threats to data security, personal privacy, and intellectual property, as well as issues of misinformation, data bias, and reduced human cognitive engagement. The findings extend the SECI model by highlighting specific challenges posed by AI technologies at each knowledge creation stage: socialization, externalization, combination, and internalization. The study underscores the necessity of a balanced approach, integrating technological, ethical, and socio-cultural perspectives to evaluate AI's impact comprehensively. Our research contributes to the theoretical understanding of AI's role in knowledge management and offers actionable strategies for its ethical and effective implementation, emphasizing the importance of interdisciplinary approaches and continuous regulatory adaptation. © 2026 Elsevier Inc."
+    "Title": "Developing Ethical Principle Awareness And Reasoning In A Cybersecurity Context: Enhancing User",
+    "Abstract": "Cybersecurity breaches are often attributed to human behaviour, where individuals fail to integrate ethical principles in their decision-making. This empirical study investigates the effectiveness of the Ripple Down Rules (RDR) method, a knowledge acquisition and representation method, in enhancing ethical awareness and reasoning in cybersecurity contexts. The proposed approach combines rule-based reasoning, case-based learning, reflection, and situated cognition to bridge the gap between ethical knowledge and action by systematically connecting scenario elements to ethical principles. Participants, recruited from a cohort of first-year psychology students, were exposed to training incorporating five ethical principles—Beneficence, Non-Maleficence, Justice, Autonomy, and Explicability—applied to realistic cybersecurity scenarios. The study employed a randomised controlled design with two treatment and one control groups, using pre- and post-study assessments to evaluate improvements in ethical principle identification and reasoning. Participants rated RDR as a clear and helpful tool for understanding ethical reasoning, with sensibility and helpfulness scores ranging from moderate to high. Results demonstrate that RDR training significantly improved participants' ability to identify ethical principles compared to learning without RDR, particularly for principles like autonomy and explicability. However, challenges persisted in distinguishing overlapping principles, such as beneficence and non-maleficence. Implications and guidance for use of RDR for ethics training are discussed. © 2025 The Author(s)"
   },
   {
     "uuid": "10e101b7-3037-487a-8ae0-44336dc20be0",

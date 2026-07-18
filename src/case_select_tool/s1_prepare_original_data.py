@@ -194,7 +194,7 @@ class PrepareScopus(AcademicPaper):
             'Title': 'Title',
             'Authors': 'Author',
             'Abstract': 'Abstract',
-            'Publisher': 'Country of publication',
+            'Affiliations': 'Country of publication',
             'Source title': 'Publication title',
             'DOI': 'DOI Link',
             'Document Type': 'Source type',
@@ -514,6 +514,23 @@ class PreparePaper:
             print("No unique column specified. Skipping deduplication.")
 
         combined_df['uuid'] = combined_df['Title'].apply(lambda x: str(self.allocate_uuid(x)))
+        print(f"After duplicate records removed: {combined_df.shape}")
+
+        combined_df = combined_df[
+            (combined_df['Language of publication'] == 'English') |
+            (combined_df['Language of publication'] == 'eng')
+            ]
+        print(f"After language removed: {combined_df.shape}")
+
+        combined_df = combined_df[
+            (combined_df['Source type'] == 'Article') |
+            (combined_df['Source type'] == 'J') |
+            (combined_df['Source type'] == 'Conference paper') |
+            (combined_df['Source type'] == 'Journal Article') |
+            (combined_df['Source type'] == 'C')
+            ]
+        print(f"After source type removed: {combined_df.shape}")
+
         print(f"Final shape: {combined_df.shape}")
 
         combined_df.to_csv(f'{self.output_dir}/semi_structured_papers.csv', index=None)

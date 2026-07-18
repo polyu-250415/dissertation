@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import numpy as np
 from src.utils.llm_mgmt.kimi_api_interface import KimiAPI
-
+from src.utils.llm_mgmt.ernie_api_interface import get_ernie_obj
 
 class ScreenPapersAuditor:
     def __init__(self):
@@ -68,9 +68,10 @@ class ScreenPapersAuditor:
 
     @staticmethod
     def generate_audit_prompt_from_row(row,
-                                       question1="Whether the study explicitly discusses how to capture or retain knowledge from individuals or organizations？",
+                                       question1="Whether the article explicitly discussed or strongly implied how to "
+                                                 "capture or retain knowledge from individuals or organization environment?",
                                        question2="Whether digital technologies are explicitly used to capture or retain tacit knowledge？",
-                                       question3="What's the document type of this paper？"):
+                                       question3="What's the article type of this paper？"):
         """
         从CSV的一行数据生成完整学术审计Prompt
         """
@@ -84,25 +85,18 @@ class ScreenPapersAuditor:
         expert_A_ans_for_q1 = str(row["A_kr_flag"]).replace('"', '\\"')
         expert_A_ev_for_q1 = str(row["A_kr_evidence"]).replace('"', '\\"')
 
-        expert_B_ans_for_q1 = str(row["B_kr_flag"]).replace('"', '\\"')
-        expert_B_ev_for_q1 = str(row["B_kr_evidence"]).replace('"', '\\"')
-
         expert_C_ans_for_q1 = str(row["C_kr_flag"]).replace('"', '\\"')
         expert_C_ev_for_q1 = str(row["C_kr_evidence"]).replace('"', '\\"')
         # 三位专家数据
         expert_A_ans_for_q2 = str(row["A_DT_flag"]).replace('"', '\\"')
         expert_A_ev_for_q2 = str(row["A_DT_evidence"]).replace('"', '\\"')
 
-        expert_B_ans_for_q2 = str(row["B_DT_flag"]).replace('"', '\\"')
-        expert_B_ev_for_q2 = str(row["B_DT_evidence"]).replace('"', '\\"')
-
         expert_C_ans_for_q2 = str(row["C_DT_flag"]).replace('"', '\\"')
         expert_C_ev_for_q2 = str(row["C_DT_evidence"]).replace('"', '\\"')
 
         # 三位专家数据
-        expert_A_ans_for_q3 = str(row["A_Doc_type"]).replace('"', '\\"')
-        expert_B_ans_for_q3 = str(row["B_Doc_type"]).replace('"', '\\"')
-        expert_C_ans_for_q3 = str(row["C_Doc_type"]).replace('"', '\\"')
+        expert_A_ans_for_q3 = str(row["A_article_type"]).replace('"', '\\"')
+        expert_C_ans_for_q3 = str(row["C_article_type"]).replace('"', '\\"')
 
         # 你完整的英文审计prompt模板（已优化占位符）
         prompt = f"""
@@ -110,58 +104,53 @@ class ScreenPapersAuditor:
 
     Task:
     Analyze the opinions from multiple experts, audit them against the factual information in the Context, 
-    code each entry into a single JSON object within a unified output JSON structure, using a unified, conservative, 
-    evidence-based standard.
+    code each entry into a single JSON object within a unified output JSON structure, using a unified, conservative, evidence-based standard.
 
     Input dataset format:
     The input will be a JSON object.
     {{
-      "uuid": "{uuid}",
-      "Title": "{Title}",
-      "Context": "{combined_text}",
-      "questions": [
+      'uuid': {uuid},
+      'Title': {Title},
+      'Context': {combined_text},
+      'questions': [
         {{
-          "question_id": 1,
-          "question_text": "{question1}",
-          "expert_opinions": {{
-            "expert_A": "Answer: {expert_A_ans_for_q1}. Evidence: {expert_A_ev_for_q1}",
-            "expert_B": "Answer: {expert_B_ans_for_q1}. Evidence: {expert_B_ev_for_q1}",
-            "expert_C": "Answer: {expert_C_ans_for_q1}. Evidence: {expert_C_ev_for_q1}"
+          'question_id': 1,
+          'question_text': {question1},
+          'expert_opinions': {{
+            'expert_A': {expert_A_ans_for_q1}. {expert_A_ev_for_q1},
+            'expert_C': {expert_C_ans_for_q1}. {expert_C_ev_for_q1}
           }}
         }},
         {{
-          "question_id": 2,
-          "question_text": "{question2}",
-          "expert_opinions": {{
-            "expert_A": "Answer: {expert_A_ans_for_q2}. Evidence: {expert_A_ev_for_q2}",
-            "expert_B": "Answer: {expert_B_ans_for_q2}. Evidence: {expert_B_ev_for_q2}",
-            "expert_C": "Answer: {expert_C_ans_for_q2}. Evidence: {expert_C_ev_for_q2}"
+          'question_id': 2,
+          'question_text': {question2},
+          'expert_opinions': {{
+            'expert_A': {expert_A_ans_for_q2}. {expert_A_ev_for_q2},
+            'expert_C': {expert_C_ans_for_q2}. {expert_C_ev_for_q2}
             }}
           }}
         }},
         {{
-          "question_id": 3,
-          "question_text": "{question3}",
-          "expert_opinions": {{
-            "expert_A": "Answer: {expert_A_ans_for_q3}",
-            "expert_B": "Answer: {expert_B_ans_for_q3}",
-            "expert_C": "Answer: {expert_C_ans_for_q3}"
+          'question_id': 3,
+          'question_text': {question3},
+          'expert_opinions': {{
+            'expert_A': {expert_A_ans_for_q3},
+            'expert_C': {expert_C_ans_for_q3}
           }}
         }}
       ]
     }}
 
     Core audit principles:
-    1. Use only information explicitly supported by the Context.
-    2. Treat the Context as the ground truth.
-    3. Never infer facts not clearly stated in the Context.
-    4. Distinguish carefully between directly supported, partially supported, unsupported, contradicted, and insufficient-context claims.
-    5. If the Context is insufficient to verify a claim, mark it as 'Insufficient context'.
-    6. Do not reward plausible reasoning if it is not supported by the Context.
-    7. Be conservative. When uncertain, choose the less certain judgment.
-    8. Evaluate both the answer and the evidence used to justify it.
-    9. A correct conclusion with weak or unsupported evidence is not fully correct.
-    10. Do not copy long sentences. Summarize briefly and precisely.
+    1. Use only information supported by the Context. Treat the Context as the ground truth.Never infer facts not 
+    clearly stated in the Context.
+    2. Distinguish carefully between directly supported, partially supported, unsupported, contradicted, 
+    and insufficient-context claims.
+    3. If the Context is insufficient to verify a claim, mark it as 'Insufficient context'.
+    4. Do not reward plausible reasoning if it is not supported by the Context.
+    5. Be conservative. When uncertain, choose the less certain judgment.
+    6. Evaluate both the answer and the evidence used to justify it.
+    7. A correct conclusion with weak or unsupported evidence is not fully correct.
 
     Audit procedure:
     Step 1: Read the Context and identify the facts relevant to the fixed question.
@@ -169,9 +158,9 @@ class ScreenPapersAuditor:
     Step 3: For each expert, determine:
     - the main answer or claim
     - the evidence cited or implied
-    - whether the answer is supported by the Context
-    - whether the evidence is supported by the Context
-    - whether the reasoning overreaches beyond the Context
+        - whether the answer is supported by the Context
+        - whether the evidence is supported by the Context
+        - whether the reasoning overreaches beyond the Context
     Step 4: Compare all experts only after determining the answer from the Context; do not use agreement among experts as evidence of correctness.
     Step 5: Produce one JSON structure recording the audit result.
 
@@ -198,7 +187,6 @@ class ScreenPapersAuditor:
           'question_id': 1,
           'expert_compliance': {{
             'expert_A': 'string',
-            'expert_B': 'string',
             'expert_C': 'string'
           }},
           'audit_evidence': 'string'
@@ -207,7 +195,6 @@ class ScreenPapersAuditor:
           'question_id': 2,
           'expert_compliance': {{
             'expert_A': 'string',
-            'expert_B': 'string',
             'expert_C': 'string'
           }},
           'audit_evidence': 'string'
@@ -216,7 +203,6 @@ class ScreenPapersAuditor:
           'question_id': 3,
           'expert_compliance': {{
             'expert_A': 'string',
-            'expert_B': 'string',
             'expert_C': 'string'
           }},
           'audit_evidence': 'string'
@@ -224,7 +210,6 @@ class ScreenPapersAuditor:
       ],
       'audit_results':{{
         'expert_A_audit_result': 'string',
-        'expert_B_audit_result': 'string',
         'expert_C_audit_result': 'string'
       }}
     }}
@@ -260,18 +245,12 @@ class ScreenPapersAuditor:
             'deepseek_kr_evidence',
             'qwen_kr_flag',
             'qwen_kr_evidence',
-            'ernie_kr_flag',
-            'ernie_kr_evidence',
             'deepseek_DT_flag',
             'deepseek_DT_evidence',
             'qwen_DT_flag',
             'qwen_DT_evidence',
-            'ernie_DT_flag',
-            'ernie_DT_evidence',
-            'deepseek_Doc_type',
-            'qwen_Doc_type',
-            'ernie_Doc_type',
-            'ernie_ic_label',
+            'deepseek_article_type',
+            'qwen_article_type',
             'deepseek_ic_label',
             'qwen_ic_label'
         ]
@@ -280,12 +259,22 @@ class ScreenPapersAuditor:
             df_audit[self.hide_model_name(name)] = df[name]
 
         audit_prompt = []
+        audit_result = []
         for idx, row in df_audit.iterrows():
             prompt = self.generate_audit_prompt_from_row(row)
             audit_prompt.append(prompt)
+            try:
+                review = get_ernie_obj(prompt)
+                print(review)
+                audit_result.append(review)
+            except Exception as e:
+                audit_result.append(e)
+                pass
 
         df_audit["audit_prompt"] = audit_prompt
-        df_audit.to_csv(self.paper_screen_t3 + f'audit_materials.csv', index=False)
+        df_audit["audit_result"] = audit_result
+        df_audit[['uuid','Title','audit_prompt', 'audit_result']].to_csv(self.paper_screen_t3 +
+                                                                         f'audit_by_llm.csv',  index=False)
 
     def audit_conflict_items(self, input_file):
         df_audit = pd.read_csv(input_file)
@@ -318,7 +307,6 @@ class ScreenPapersAuditor:
                 # 提取三个结果，不存在则返回 None
                 return pd.Series([
                     audit_results.get('expert_A_audit_result'),
-                    audit_results.get('expert_B_audit_result'),
                     audit_results.get('expert_C_audit_result')
                 ])
             except (json.JSONDecodeError, TypeError, AttributeError):
@@ -326,35 +314,36 @@ class ScreenPapersAuditor:
                 return pd.Series([None, None, None])
 
         # 3. 应用到目标列，生成三个新列
-        df_audit_results[['expert_A_audit_result', 'expert_B_audit_result', 'expert_C_audit_result']] = df_audit_results['audit_result'].apply(
-            extract_audit_results)
+        df_audit_results[['expert_A_audit_result', 'expert_C_audit_result']] \
+            = df_audit_results['audit_result'].apply(extract_audit_results)
 
         df_audit_combined = pd.merge(df_audit_materials, df_audit_results, on=['uuid', 'Title'], how='left')
 
         df_audit = pd.DataFrame()
 
         gathering_clos_dict = [
-            'uuid',
-            'Title',
-            'Abstract',
-            'C_kr_flag', 'C_kr_evidence', 'A_kr_flag', 'A_kr_evidence', 'B_kr_flag', 'B_kr_evidence', 'C_DT_flag', 'C_DT_evidence',
-            'A_DT_flag', 'A_DT_evidence', 'B_DT_flag', 'B_DT_evidence', 'C_Doc_type', 'A_Doc_type', 'B_Doc_type','B_ic_label','C_ic_label','A_ic_label',
             'expert_A_audit_result',
-            'expert_B_audit_result',
             'expert_C_audit_result'
         ]
 
-        for name in gathering_clos_dict:
-            df_audit[self.unhide_model_name(name)] = df_audit_combined[name]
+        for name in df_audit_combined.columns:
+            if name in gathering_clos_dict:
+                df_audit[self.unhide_model_name(name)] = df_audit_combined[name]
+            else:
+                df_audit[name] = df_audit_combined[name]
 
         pass_uuid_list = []
+        audit_by_llm = []
         for idx, row in df_audit.iterrows():
-            for model in ['ernie', 'deepseek', 'qwen']:
+            audit_by_llm.append(False)
+            for model in ['deepseek', 'qwen']:
                 if row[f'{model}_ic_label'] and row[f'expert_{model}_audit_result'] == 'Fully Support':
                     pass_uuid_list.append(row['uuid'])
+                    audit_by_llm[-1] = True
                     break
-
-        df_audit.to_csv(self.paper_screen_t3 + f'audit_result_with_context.csv', index=False)
+        df_audit['audit_by_llm'] = audit_by_llm
+        df_audit.drop(['audit_prompt'], axis=1, inplace=True)
+        df_audit.to_csv(self.paper_screen_t3 + f'audit_waiting_for_hr.csv', index=False)
         df_audit[df_audit['uuid'].isin(pass_uuid_list)].to_csv(self.paper_screen_t3 + f'audit_final_results.csv',index=False)
 
         accepted_file = self.paper_screen_t2 + "waiting_for_accept_papers.csv"
@@ -365,15 +354,18 @@ class ScreenPapersAuditor:
         df_accepted_all = pd.concat([df_accepted, df_waiting_audit[df_waiting_audit['uuid'].isin(pass_uuid_list)]],
                                     ignore_index=True)[['uuid', 'Title','Abstract']]
         df_accepted_all.to_csv(f"{self.annotation_path}waiting_for_annotation.csv",index=False)
-        df_accepted_all.to_json(f"{self.annotation_path}waiting_for_annotation.json", orient='records')
 
 
 if __name__ == '__main__':
+
+    stage = 2
     screen_papers = ScreenPapersAuditor()
 
     input_file = "../data/papers/midput/screening_by_abs_t2/waiting_for_audit_papers.csv"
-    screen_papers.audit_preprocessing(input_file)
+    if stage == 1:
+        screen_papers.audit_preprocessing(input_file)
 
-    audit_results_file = "../data/papers/midput/screening_by_abs_t3/audit_materials_GPT-4o.csv"
-    audit_materials_file = "../data/papers/midput/screening_by_abs_t3/audit_materials.csv"
-    screen_papers.audit_postprocessing(audit_materials_file, audit_results_file)
+    if stage == 2:
+        audit_materials_file = "../data/papers/midput/screening_by_abs_t2/waiting_for_audit_papers.csv"
+        audit_results_file = "../data/papers/midput/screening_by_abs_t3/audit_by_llm.csv"
+        screen_papers.audit_postprocessing(audit_materials_file, audit_results_file)

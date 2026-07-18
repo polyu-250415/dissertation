@@ -19,7 +19,8 @@ def get_deepseek_r1_obj(prompt):
 
     response = deepseek_client.chat.completions.create(
         model="deepseek-reasoner",
-        messages=messages
+        messages=messages,
+        temperature=0
     )
 
     # 获取思考过程和最终答案
@@ -34,20 +35,22 @@ def get_gemini_obj():
     llm = genai.GenerativeModel("gemini-2.5-flash")
     return llm
 
-
 qwen_client = OpenAI(
     api_key=qwen_key,
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    base_url="https://ws-du1bku1cb1ea76te.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+    timeout=120
 )
+
 
 def get_qwen_obj(final_prompt):
     response = qwen_client.chat.completions.create(
                 model="qwen-max",
                 messages=[{"role": "user", "content": final_prompt}],
-                max_tokens=5000
+                max_tokens=5000,
+                temperature=0
             )
+    return response.model_extra['text']
 
-    return response.choices[0].message.content
 
 kimi_client = OpenAI(
     api_key=kimi_key,
@@ -70,8 +73,7 @@ def get_ernie_obj(final_prompt):
     resp = ernie_client.chat.completions.create(
         model="ernie-4.5-turbo-128k",
         messages=[{"role": "user", "content": final_prompt}],
-        temperature=0.8,
-        top_p=0.8,
+        temperature=0,
         extra_body={
             "penalty_score":1,
             "stop":[],

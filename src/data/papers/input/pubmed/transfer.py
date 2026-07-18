@@ -80,10 +80,10 @@ def combine_pubmed_to_csv(input_txt,input_csv, output_csv):
     df_combine['Keywords'] = df_txt['OT  -']
     df_combine['Publication title'] = df_csv['Journal/Book']
     df_combine['Country of publication'] = df_txt['PL  -']
-    df_combine['Publication year'] = df_csv['Publication Year']
+    df_combine['Publication year'] = df_txt['DP  -']
     df_combine['Source type'] = df_txt['PT  -']
-    df_combine['Language of publication'] = "unknown"
-    df_combine['DOI Link'] = df_csv['DOI']
+    df_combine['Language of publication'] = df_txt['LA  -']
+    df_combine['DOI Link'] = df_txt['AID -']
 
     df_combine.to_csv(output_csv, index=False)
 
