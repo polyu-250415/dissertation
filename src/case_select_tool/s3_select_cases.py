@@ -1,5 +1,5 @@
 import pandas as pd
-import itertools, os
+import itertools, os, re
 import ast
 
 from src.taxonomy import RetentionTaxonomy
@@ -8,10 +8,12 @@ from collections import defaultdict
 
 class SelectCases:
     def __init__(self):
-        self.all_combination = list(itertools.product(RetentionTaxonomy.tacit_enum, RetentionTaxonomy.digital_enum))
+        self.all_combination = list(itertools.product(RetentionTaxonomy.collins_based_tacit_knowledge_taxonomy, RetentionTaxonomy.digital_enum))
 
         self.annotation_path = "../data/papers/midput/screening_by_annotation/"
         self.selection_path = "../data/papers/midput/selection_cases/"
+        self.conf_path = "../conf/coding_schema/"
+        self.raw_pdf_path = "../data/graph/case_study/raw_pdf_m/"
 
         if not os.path.exists(self.selection_path):
             os.makedirs(self.selection_path, exist_ok=True)
@@ -25,13 +27,12 @@ class SelectCases:
             return []
 
     def load_and_filter_cases(self, input_file, target_sector_code):
-        df = pd.read_csv(input_file, encoding="utf-8")
+        df = pd.read_excel(input_file, sheet_name="annotate_combined_addition")
 
         df["tacit_list"] = df["tacit_taxonomy"].apply(self.safe_parse_list)
         df["digital_list"] = df["digital_taxonomy"].apply(self.safe_parse_list)
-        df["sector_list"] = df["sector_taxonomy"].apply(self.safe_parse_list)
 
-        mask = df["sector_list"].apply(lambda s: len(s) == 1 and s[0] == target_sector_code)
+        mask = df["Sector_Annotation_by_HR"].apply(lambda s: s == target_sector_code)
         df_filtered = df[mask].copy()
 
         cases = []
@@ -44,7 +45,7 @@ class SelectCases:
 
             valid_tacit = []
             for item in tacit:
-                if item in RetentionTaxonomy.tacit_enum:
+                if item in RetentionTaxonomy.collins_based_tacit_knowledge_taxonomy:
                     valid_tacit.append(item)
                 else:
                     print(f"⚠️  Drop invalid tacit enum | UUID: {uuid} | Invalid value: {item}")
@@ -64,7 +65,7 @@ class SelectCases:
 
             cases.append({
                 "uuid": uuid,
-                "title": title,
+                "Title": title,
                 "tacit_taxonomy": valid_tacit,  # 只保留合法值
                 "digital_taxonomy": valid_digital
             })
@@ -82,6 +83,10 @@ class SelectCases:
         else:
             print("❌ 无任何有效组合")
         print("=" * 60 + "\n")
+
+        df_temp = pd.DataFrame([(k[0], k[1], v) for k, v in combo_count.items()],
+                               columns=['t', 'd', 'count'])
+        df_temp.to_csv(f"{self.selection_path}{target_sector_code}_comb.csv", index=False)
         # ================================================================
 
         # print(f"\n✅ Valid case number: {len(cases)}")
@@ -96,13 +101,15 @@ class SelectCases:
             tacit_tags = obj["tacit_taxonomy"]
             digital_tags = obj["digital_taxonomy"]
             coverage_count = len(tacit_tags) * len(digital_tags)
+            comb_list = list(itertools.product(tacit_tags, digital_tags))
 
             for comb in itertools.product(tacit_tags, digital_tags):
                 if comb in result:
                     result[comb].append({
                         "uuid": obj["uuid"],
-                        "title": obj["title"],
-                        "coverage_count": coverage_count
+                        "Title": obj["Title"],
+                        "coverage_count": coverage_count,
+                        'comb_list': comb_list
                     })
 
         final = {}
@@ -111,14 +118,13 @@ class SelectCases:
             candidates_sorted = sorted(candidates, key=lambda x: -x["coverage_count"])
             # 去重
             unique = list({c["uuid"]: c for c in candidates_sorted}.values())
-            # 选2个
-            final[comb] = unique[:3]
+            # 选3个
+            final[comb] = unique[:5]
 
         return final
 
-    def select_case_by_sector(self, sector_list):
-        input_file = f"{self.annotation_path}annotate_combined_statistics.csv"
-
+    def select_case_by_sector(self, input_file, sector_list):
+        df_total = pd.DataFrame()
         for sector in sector_list:
 
             filtered_cases = self.load_and_filter_cases(input_file, sector)
@@ -131,17 +137,68 @@ class SelectCases:
             case_list = []
             for comb in self.all_combination:
                 for case in final_result[comb]:
-                    # print(f'Sector : {sector}\n Combination: {comb}:\n {case}')
                     case_list.append(case)
 
             df = pd.DataFrame(case_list)
             df_clean = df.drop_duplicates(subset=["uuid"], keep="first").reset_index(drop=True)
-            df_clean.to_csv(f"{self.selection_path}case_selection_{sector}.csv",
+            df_clean.to_csv(f"{self.selection_path}{sector}_selected.csv",
                             index=False)
+            df_total = pd.concat([df_total, df_clean])
+
+        df_addition = pd.read_excel(input_file, sheet_name="annotate_combined_addition")
+        df_total = pd.merge(df_total, df_addition, on=['uuid', 'Title'], how='inner')
+        df_total.to_csv(f"{self.selection_path}case_selection_total.csv", index=False)
+
+    def build_case_metadata(self, input_file, raw_pdf_dir):
+        df_case = pd.read_excel(input_file, sheet_name="case_selection_total")
+
+        file_array = []
+        for root, dirs, files in os.walk(raw_pdf_dir):
+            for file in files:
+                file = os.path.join(root, file)
+                file_array.append(file)
+
+        def clean_string(s):
+            return re.sub(r'[^a-zA-Z]', '', str(s)).lower()
+
+        node_id_array = []
+        case_title_array = []
+        pdf_path_array = []
+        for index, row in df_case.iterrows():
+            node_id_array.append(row['node_id'])
+            case_title_array.append(row['Title'])
+            pdf_path_empty_flag = True
+            for file in  file_array:
+                if clean_string(row['Title']) in clean_string(file):
+                    pdf_path_array.append(file)
+                    pdf_path_empty_flag = False
+                    break
+
+            if pdf_path_empty_flag:
+                pdf_path_array.append('unknown')
+
+        pd.DataFrame({
+            'node_id_prex': node_id_array,
+            'case_title': case_title_array,
+            'file_path': pdf_path_array
+        }).to_csv(f"{self.conf_path}case_id_map.csv", index=False)
 
 
 if __name__ == "__main__":
+
+    stage = 2
     obj = SelectCases()
 
-    sector_list = ['82', '80', '73', '87', '2039', '15']
-    obj.select_case_by_sector(sector_list)
+    if stage == 1:
+
+        sector_list = [
+            'SIC15 Construction (Building Construction - General Contractors and Operative Builders)',
+            'SIC35 Manufacturing (Industrial And Commercial Machinery And Computer Equipment)',
+            'SIC80 Services (Health Services)'
+        ]
+        input_file = f'{obj.annotation_path}annotate_combined_addition.xlsx'
+        obj.select_case_by_sector(input_file, sector_list)
+
+    if stage == 2:
+        input_file = f'{obj.selection_path}case_selection_total.xlsx'
+        obj.build_case_metadata(input_file, obj.raw_pdf_path)

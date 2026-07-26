@@ -30,7 +30,7 @@ class DeepSeekAPI:
             result = json.loads(response.strip())
             return result
         except Exception as e:
-            print(f"Error processing extract: {e}")
+            print(f"DeepSeek Error processing extract: {e}")
             return []
 
 
@@ -56,7 +56,7 @@ class DeepSeekAPI:
                 # 一行批量提取所有字段
                 item = {field: item[field] for field in fields}
                 body.append(item)
-                print(f'ERNIE Processing abstract: {i + 1}/{record_num}')
+                print(f'DeepSeek Processing abstract: {i + 1}/{record_num}')
 
                 if ((i + 1) % count) == 0:
                     body_answer = self.extract(LiteratureReviewPrompt(body=body).get_prompt(cmd))
@@ -75,10 +75,10 @@ class DeepSeekAPI:
                     enhanced_docs.extend(body_answer)
 
         except Exception as e:
-            print(f"Error processing abstract: {e}")
+            print(f"DeepSeek Error processing abstract: {e}")
             pass
 
-        (pd.DataFrame(enhanced_docs).fillna("Undisposed").to_csv(f'{output_file}.csv', index=None))
+        (pd.DataFrame(enhanced_docs).fillna("Undisposed").to_csv(f'{output_file}', index=None))
 
 if __name__ == '__main__':
 

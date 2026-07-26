@@ -73,7 +73,7 @@ class QwenAPI:
             print(f"Qwen Error processing abstract: {e}")
             pass
 
-        (pd.DataFrame(enhanced_docs).fillna("Undisposed").to_csv(f'{output_file}.csv', index=None))
+        (pd.DataFrame(enhanced_docs).fillna("Undisposed").to_csv(f'{output_file}', index=None))
 
 
 if __name__ == '__main__':

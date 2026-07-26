@@ -24,7 +24,7 @@ class ErnieAPI:
             result = json.loads(self.clean_llm_json_raw(response))
             return result
         except Exception as e:
-            print(f"Error processing extract: {e}")
+            print(f"ERNIE Error processing extract: {e}")
             return []
 
 
@@ -68,7 +68,7 @@ class ErnieAPI:
             print(f"ERNIE Error processing abstract: {e}")
             pass
 
-        (pd.DataFrame(enhanced_docs).fillna("Undisposed").to_csv(f'{output_file}.csv', index=None))
+        (pd.DataFrame(enhanced_docs).fillna("Undisposed").to_csv(f'{output_file}', index=None))
 
 if __name__ == '__main__':
 

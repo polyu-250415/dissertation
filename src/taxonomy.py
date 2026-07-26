@@ -23,8 +23,7 @@ class RetentionTaxonomy:
     collins_based_tacit_knowledge_taxonomy = [
         "Somatic Tacit Knowledge",
         "Relational Tacit Knowledge",
-        "Collective Tacit Knowledge",
-        "Intellectual Tacit Knowledge"]
+        "Collective Tacit Knowledge"]
 
     """
     Reference Source: Igoa-Iraola, E., & Díez, F. (2024). Procedures for transferring organizational knowledge during generational change: A systematic review. 

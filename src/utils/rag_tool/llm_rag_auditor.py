@@ -379,7 +379,7 @@ if __name__ == '__main__':
         "case_id": case_id
     }
 
-    path = "../../data/graph/case_study/raw_pdf_m/c001/"
+    path = "../../data/graph/case_study/raw_pdf_m/sic15/c001/"
 
     # FIX: Pass the custom_meta dictionary explicitly here
     obj.ingest(path, custom_meta=custom_meta_data)

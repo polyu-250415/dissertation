@@ -4,6 +4,8 @@ from collections import defaultdict
 
 import pandas as pd
 import ast
+import numpy as np
+from poetry.console.commands import self
 
 from src.utils.llm_mgmt.deepseek_api_interface import DeepSeekAPI
 from src.utils.llm_mgmt.qwen_api_interface import QwenAPI
@@ -14,6 +16,8 @@ class ScreenPapersAnnotation:
     def __init__(self, count=10, max_count=0):
         self.annotation_path = "../data/papers/midput/screening_by_annotation/"
         self.paper_screen_t3 = '../data/papers/midput/screening_by_abs_t3/'
+        self.annotation_turn_1 = '../data/papers/midput/screening_by_annotation/turn_1'
+        self.annotation_turn_2 = '../data/papers/midput/screening_by_annotation/turn_2'
         self.count = count
         self.max_count = max_count
         self.cmd = "cmd_annotate_by_abstract"
@@ -30,9 +34,8 @@ class ScreenPapersAnnotation:
         else:
             return DeepSeekAPI.r1_infer(prompt)
 
-    def annotate_by_qwen(self):
-        input_file = f"{self.annotation_path}waiting_for_annotation.json"
-        output_file = f"{self.annotation_path}annotate_by_qwen"
+    def annotate_by_qwen(self, input_file, sub_dir_path):
+        output_file = f"{self.annotation_path}/{sub_dir_path}/annotate_by_qwen.csv"
 
         QwenAPI().batch_extract(input_file,
                                     output_file,
@@ -40,9 +43,8 @@ class ScreenPapersAnnotation:
                                     count=self.count,
                                 max_count=self.max_count)
 
-    def annotate_by_deepseek(self):
-        input_file = f"{self.annotation_path}waiting_for_annotation.json"
-        output_file = f"{self.annotation_path}annotate_by_deepseek"
+    def annotate_by_deepseek(self, input_file, sub_dir_path):
+        output_file = f"{self.annotation_path}/{sub_dir_path}/annotate_by_deepseek.csv"
 
         DeepSeekAPI().batch_extract(input_file,
                                     output_file,
@@ -50,9 +52,8 @@ class ScreenPapersAnnotation:
                                     count=self.count,
                                     max_count=self.max_count)
 
-    def annotate_by_ernie(self):
-        input_file = f"{self.annotation_path}waiting_for_annotation.json"
-        output_file = f"{self.annotation_path}annotate_by_ernie"
+    def annotate_by_ernie(self, input_file, sub_dir_path):
+        output_file = f"{self.annotation_path}/{sub_dir_path}/annotate_by_ernie.csv"
 
         ErnieAPI().batch_extract(input_file,
                                     output_file,
@@ -61,7 +62,7 @@ class ScreenPapersAnnotation:
                                  max_count=self.max_count)
 
 
-    def annotate_parallel(obj):
+    def annotate_parallel(obj, input_file, sub_dir_path):
         """
         并行执行 Qwen 和 Kimi 相关性评估
         :param obj: ScreenPaperCraw 实例对象
@@ -69,15 +70,15 @@ class ScreenPapersAnnotation:
 
         def run_deepseek():
             print("Start evaluating by DeepSeek...")
-            obj.annotate_by_deepseek()
+            obj.annotate_by_deepseek(input_file, sub_dir_path)
 
         def run_qwen():
             print("Start evaluating by Qwen...")
-            obj.annotate_by_qwen()
+            obj.annotate_by_qwen(input_file, sub_dir_path)
 
         def run_ernie():
             print("Start evaluating by ernie...")
-            obj.annotate_by_ernie()
+            obj.annotate_by_ernie(input_file, sub_dir_path)
 
         # 并行执行
         with ThreadPoolExecutor(max_workers=3) as executor:
@@ -115,16 +116,14 @@ class ScreenPapersAnnotation:
                 result.append(obj)
         return result
 
-    def merge_csv_files(self):
-
-        input_file = f"{self.annotation_path}waiting_for_annotation.csv"
+    def merge_csv_files(self,input_file, sub_dir_path):
 
         csv_list = [
-            f'{self.annotation_path}annotate_by_deepseek.csv',
-            f'{self.annotation_path}annotate_by_ernie.csv',
-            f'{self.annotation_path}annotate_by_qwen.csv',
+            f'{self.annotation_path}/{sub_dir_path}/annotate_by_deepseek.csv',
+            f'{self.annotation_path}/{sub_dir_path}/annotate_by_ernie.csv',
+            f'{self.annotation_path}/{sub_dir_path}/annotate_by_qwen.csv',
         ]
-        output = f'{self.annotation_path}annotate_combined.csv'
+        output = f'{self.annotation_path}/{sub_dir_path}/annotate_combined.csv'
 
         key_data = defaultdict(lambda: {'tacit': [], 'digital': [], 'sector': []})
 
@@ -184,10 +183,10 @@ class ScreenPapersAnnotation:
         input_df = pd.read_csv(input_file)
         pd.merge(input_df, output_df, on=['uuid', 'Title'], how='left').to_csv(output, index=False, encoding='utf-8')
 
-    def validate_annotation(self):
+    def validate_annotation(self, sub_dir_path):
 
-        input_file = f'{self.annotation_path}annotate_combined.csv'
-        output = f'{self.annotation_path}annotate_combined_statistics.csv'
+        input_file = f'{self.annotation_path}/{sub_dir_path}/annotate_combined.csv'
+        output_file = f'{self.annotation_path}/{sub_dir_path}/annotate_combined_validated.csv'
 
         key_data = defaultdict(lambda: {'tacit': [],
                                         'digital': [],
@@ -334,11 +333,77 @@ If any check fails during your internal processing, correct it instantly before 
             })
 
         output_df = pd.DataFrame(rows)
-        output_df.to_csv(output, index=False, encoding='utf-8')
+        output_df.to_csv(output_file, index=False)
+
+    def supplement_annotation(self,raw_input_file, input_file, sub_dir_path):
+        output_accepted = f'{self.annotation_path}/{sub_dir_path}/annotate_waiting_for_accepted.csv'
+        output_audited = f'{self.annotation_path}/{sub_dir_path}/annotate_waiting_for_recheck.csv'
+
+        output_df = pd.read_csv(input_file)
+
+        check_columns = [
+            "tacit_knowledge_array",
+            "digital_technology_array",
+            "sector",
+            "tacit_taxonomy",
+            "digital_taxonomy",
+            "sector_taxonomy"
+        ]
+
+        annotation_flag_arr = [True] * output_df.shape[0]
+        for idx, row in output_df.iterrows():
+            for col in check_columns:
+                if row[col] == '[]':
+                    annotation_flag_arr[idx] = False
+                    continue
+
+        output_df[annotation_flag_arr].to_csv(output_accepted, index=False, encoding='utf-8')
+        accepted_uuid_list = output_df[annotation_flag_arr]['uuid'].tolist()
+
+        df_annotated = pd.read_csv(raw_input_file)
+        df_annotated[~df_annotated['uuid'].isin(accepted_uuid_list)].to_csv(output_audited, index=False,
+                                                                            encoding='utf-8')
+    def combine_accepted_papers(self, turn_num=3):
+
+        df = pd.DataFrame()
+        for i in range(turn_num):
+            df = pd.concat([df,
+                            pd.read_csv(f"{self.annotation_path}/turn_{i+1}/annotate_waiting_for_accepted.csv")],
+                           ignore_index=True)
+        df.to_csv(f"{self.annotation_path}/annotate_accepted.csv", index=False)
 
 
 if __name__ == '__main__':
-    obj = ScreenPapersAnnotation(count=10, max_count=30)
-    obj.annotate_parallel()
-    obj.merge_csv_files()
-    obj.validate_annotation()
+    stage = 4
+    obj = ScreenPapersAnnotation(count=6, max_count=500)
+
+    if stage == 1:
+        input_file = f"{obj.annotation_path}waiting_for_annotation.csv"
+        sub_dir_path = f"turn_{stage}"
+        obj.annotate_parallel(input_file, sub_dir_path)
+        obj.merge_csv_files(input_file, sub_dir_path)
+        obj.validate_annotation(sub_dir_path)
+        validated_input_file = f'{obj.annotation_path}/{sub_dir_path}/annotate_combined_validated.csv'
+        obj.supplement_annotation(input_file, validated_input_file, sub_dir_path)
+
+    if stage == 2:
+        input_file = f"{obj.annotation_path}/turn_{stage-1}/annotate_waiting_for_recheck.csv"
+        sub_dir_path = f"turn_{stage}"
+        obj.annotate_parallel(input_file, sub_dir_path)
+        obj.merge_csv_files(input_file, sub_dir_path)
+        obj.validate_annotation(sub_dir_path)
+        validated_input_file = f'{obj.annotation_path}/{sub_dir_path}/annotate_combined_validated.csv'
+        obj.supplement_annotation(input_file, validated_input_file, sub_dir_path)
+
+    if stage == 3:
+        input_file = f"{obj.annotation_path}/turn_{stage - 1}/annotate_waiting_for_recheck.csv"
+        sub_dir_path = f"turn_{stage}"
+        obj.annotate_parallel(input_file, sub_dir_path)
+        obj.merge_csv_files(input_file, sub_dir_path)
+        obj.validate_annotation(sub_dir_path)
+        validated_input_file = f'{obj.annotation_path}/{sub_dir_path}/annotate_combined_validated.csv'
+        obj.supplement_annotation(input_file, validated_input_file, sub_dir_path)
+
+    if stage == 4:
+        obj.combine_accepted_papers()
+

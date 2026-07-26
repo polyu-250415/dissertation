@@ -53,8 +53,8 @@ class MeasureDistribution(object):
         ]
 
         # Read two CSV files as string type to avoid data distortion
-        df1 = pd.read_csv(f'{self.annotation_path}{file1}', dtype=str)
-        df2 = pd.read_csv(f'{self.raw_path}{file2}', dtype=str)
+        df1 = pd.read_csv(file1, dtype=str)
+        df2 = pd.read_csv(file2, dtype=str)
 
         # Check required columns exist
         if not all(col in df1.columns for col in ["uuid"]):
@@ -87,16 +87,14 @@ class MeasureDistribution(object):
         """final_dataframe['publication'] = final_dataframe['Publication title'].apply(
             self.standardise_journal_or_conference)"""
 
-        # Export merged CSV file with Chinese compatible encoding
         final_dataframe.to_csv(f'{self.annotation_path}{output_file}', index=False)
         print(f"Merging completed. Result saved to {output_file}, total {len(final_dataframe)} records")
 
 
-    def illustrate_sector_distribution(self):
-        input_file = f'{self.annotation_path}annotate_combined_statistics.csv'
+    def illustrate_sector_distribution(self,input_file):
         statistic_file = f'{self.selection_path}annotate_sector_statistics.csv'
 
-        df = pd.read_csv(input_file)
+        df = pd.read_excel(input_file,sheet_name="annotate_combined_addition")
 
         # Initialize counter
         counter = Counter()
@@ -128,11 +126,14 @@ class MeasureDistribution(object):
 
         df.to_csv(statistic_file, index=False, encoding='utf-8')
 
-    def illustrate_tacit_knowledge_type_distribution(self):
-        input_file = f'{self.annotation_path}annotate_combined_statistics.csv'
+    def illustrate_tacit_knowledge_type_distribution(self, input_file):
         statistic_file = f'{self.selection_path}annotate_tacit_knowledge_statistics.csv'
 
-        df = pd.read_csv(input_file)
+        df = pd.read_excel(input_file,sheet_name="annotate_combined_addition")
+
+        df = df[~df['Sector_Annotation_by_HR'].isin(['Other (Eliminated Record - Less than 3)',
+                                                    'Other (Lack of digital tech )',
+                                                    'Other (Lack of tacit taxonomy)'])]
 
         # Initialize counter
         counter = Counter()
@@ -157,20 +158,20 @@ class MeasureDistribution(object):
         df.to_csv(statistic_file, index=False, encoding='utf-8')
         pass
 
-    def illustrate_digital_technologies_distribution(self):
-        input_file = f'{self.annotation_path}annotate_combined_statistics.csv'
+    def illustrate_digital_technologies_distribution(self, input_file):
         statistic_file = f'{self.selection_path}annotate_digital_technology_statistics.csv'
 
-        df = pd.read_csv(input_file)
+        df = pd.read_excel(input_file,sheet_name="annotate_combined_addition")
 
         # Initialize counter
         counter = Counter()
 
         # Process each non-null cell in the 'sector_taxonomy' column
         for cell in df['digital_taxonomy'].dropna():
-            # Convert string representation of list (e.g., "['84']") to actual list
-            tks = ast.literal_eval(cell)
-            counter.update(re.sub(r'\([^()]*\)', '', tk) for tk in tks)
+            dts = ast.literal_eval(cell)
+            for dt in dts:
+                for item in dt.split(';'):
+                    counter.update([re.sub(r'\s*\([^()]*\)\s*', '', item).strip()])
 
         dt_type = []
         counts = []
@@ -186,9 +187,8 @@ class MeasureDistribution(object):
         df.to_csv(statistic_file, index=False, encoding='utf-8')
         pass
 
-    def illustrate_cross_distribution(self):
+    def illustrate_cross_sector_distribution(self, input_file):
 
-        input_file = f'{self.annotation_path}annotate_combined_statistics.csv'
         statistic_file = f'{self.selection_path}annotate_cross_sector_statistics.csv'
 
         def parse_sector_list(sector_str):
@@ -201,7 +201,7 @@ class MeasureDistribution(object):
                 return []
 
         # ---------------------- 1. 读取数据 ----------------------
-        df = pd.read_csv(input_file, encoding="utf-8")
+        df = pd.read_excel(input_file,sheet_name="annotate_combined_addition")
         df["sector_parsed"] = df["sector_taxonomy"].apply(parse_sector_list)
 
         # 只保留非空行
@@ -241,6 +241,60 @@ class MeasureDistribution(object):
 
         result_df.to_csv(statistic_file, index=False, encoding='utf-8')
 
+    def illustrate_cross_dt_distribution(self, input_file):
+
+        statistic_file = f'{self.selection_path}annotate_cross_dt_statistics.csv'
+
+        def parse_dt_list(sector_str):
+            try:
+                lst = ast.literal_eval(str(sector_str))
+                if not isinstance(lst, list):
+                    return []
+                return [str(s).strip() for s in lst if str(s).strip() and 'Others' not in s]
+            except:
+                return []
+
+        # ---------------------- 1. 读取数据 ----------------------
+        df = pd.read_excel(input_file,sheet_name="annotate_combined_addition")
+        df["digital_parsed"] = df["digital_taxonomy"].apply(parse_dt_list)
+
+        # 只保留非空行
+        df_valid = df[df["digital_parsed"].str.len() > 0].copy()
+
+        # ---------------------- 2. 提取所有唯一行业key ----------------------
+        all_dt = []
+        for dt in df_valid["digital_parsed"]:
+            all_dt += dt
+        unique_dt = sorted(list(set(all_dt)))
+
+        # ---------------------- 3. 初始化统计 ----------------------
+        dt_cross_count = {key: 0 for key in unique_dt}  # 跨行业数量
+        dt_single_count = {key: 0 for key in unique_dt}  # 不跨行业数量
+
+        # ---------------------- 4. 逐行统计 ----------------------
+        for dt in df_valid["digital_parsed"]:
+            if len(dt) == 1:
+                # 不跨行业：给唯一的那个key +1
+                key = dt[0]
+                if key in dt_single_count:
+                    dt_single_count[key] += 1
+            elif len(dt) >= 2:
+                # 跨行业：给所有key +1
+                for key in dt:
+                    if key in dt_cross_count:
+                        dt_cross_count[key] += 1
+
+        # ---------------------- 5. 构建结果DataFrame ----------------------
+        result_df = pd.DataFrame({"Digital Technology": unique_dt})
+        result_df['dt_name'] = result_df['Digital Technology']
+        result_df['single_dt_count'] = [dt_single_count[k] for k in unique_dt]
+        result_df['cross_dt_count'] = [dt_cross_count[k] for k in unique_dt]
+        result_df['total_count'] = [dt_single_count[k] + dt_cross_count[k] for k in unique_dt]
+        result_df['rate'] = (result_df['cross_dt_count'] / result_df['total_count']).map(lambda x: f"{x:.2f}")
+        result_df.sort_values(["total_count"], ascending=False, inplace=True)
+
+        result_df.to_csv(statistic_file, index=False, encoding='utf-8')
+
     @staticmethod
     def read_authors_from_csv(csv_path, author_col, sep=";"):
         """
@@ -250,7 +304,7 @@ class MeasureDistribution(object):
         :param sep: 同一篇论文多位作者之间的分隔符，常见 ; 或 ,
         :return: list[list]，每篇论文的作者列表
         """
-        df = pd.read_csv(csv_path)
+        df = pd.read_excel(csv_path,sheet_name="annotate_combined_addition")
         paper_author_list = []
         for authors_str in df[author_col].dropna():
             # 拆分作者名，去除首尾空格，过滤空字符串
@@ -337,16 +391,22 @@ class MeasureDistribution(object):
         plt.tight_layout()
 
         if save_path:
-            plt.savefig(save_path, dpi=300, bbox_inches="tight")
-        plt.show()
+            # 在 draw_coauthor_network 函数中找到类似下面这行
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+
+            # 改为（去掉 dpi，或保留但 SVG 会忽略 dpi）
+            plt.savefig(save_path, format='svg', bbox_inches='tight')
+            # 或者直接依赖扩展名：
+            plt.savefig(save_path, bbox_inches='tight')  # matplotlib 自动识别 .svg
+        # plt.show()
 
         return G, author_df, clusters
 
     # ---------------- 调用示例 ----------------
-    def draw_author_network(self):
+    def draw_author_network(self, input_file, author_network_image):
         # 1. 从CSV读取作者列（修改路径、列名、分隔符即可）
         paper_authors = self.read_authors_from_csv(
-            csv_path=f'{self.annotation_path}annotate_combined_addition.csv',  # 你的csv文件路径
+            csv_path=input_file,  # 你的csv文件路径
             author_col="Author",  # 作者列的列名
             sep=";"  # 作者之间的分隔符，WoS导出通常是分号
         )
@@ -355,7 +415,7 @@ class MeasureDistribution(object):
         graph, author_stats, team_clusters = self.draw_coauthor_network(
             paper_author_list=paper_authors,
             figsize=(14, 10),
-            save_path="co_author_network.png"
+            save_path=author_network_image
         )
 
         # 3. 输出分析指标
@@ -368,13 +428,21 @@ class MeasureDistribution(object):
 
 if __name__ == '__main__':
     obj = MeasureDistribution()
-    file1 = 'annotate_combined.csv'
-    file2 = 'semi_structured_papers.csv'
+
+    stage = 2
+    file1 = f'{obj.annotation_path}annotate_combined_addition.xlsx'
+    file2 = f'{obj.raw_path}semi_structured_papers.csv'
     output_file = 'annotate_combined_addition.csv'
-    obj.draw_author_network()
-    """
-    obj.supplement_attributes(file1, file2, output_file)
-    obj.illustrate_sector_distribution()
-    obj.illustrate_tacit_knowledge_type_distribution()
-    obj.illustrate_digital_technologies_distribution()
-    obj.illustrate_cross_distribution()"""
+
+    if stage == 1:
+        obj.supplement_attributes(file1, file2, output_file)
+
+    if stage == 2:
+        author_network_image = f'{obj.selection_path}co_author_network.svg'
+        obj.draw_author_network(file1, author_network_image)
+
+        obj.illustrate_sector_distribution(file1)
+        obj.illustrate_tacit_knowledge_type_distribution(file1)
+        obj.illustrate_digital_technologies_distribution(file1)
+        obj.illustrate_cross_sector_distribution(file1)
+        obj.illustrate_cross_dt_distribution(file1)

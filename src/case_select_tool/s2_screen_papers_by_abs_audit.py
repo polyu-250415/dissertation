@@ -351,7 +351,7 @@ class ScreenPapersAuditor:
         df_accepted  = pd.read_csv(accepted_file)
         df_waiting_audit = pd.read_csv(waiting_audit_file)
 
-        df_accepted_all = pd.concat([df_accepted, df_waiting_audit[df_waiting_audit['uuid'].isin(pass_uuid_list)]],
+        df_accepted_all = pd.concat([df_accepted, df_waiting_audit[df_waiting_audit['uuid'].isin(df_audit['uuid'])]],
                                     ignore_index=True)[['uuid', 'Title','Abstract']]
         df_accepted_all.to_csv(f"{self.annotation_path}waiting_for_annotation.csv",index=False)
 
