@@ -8,7 +8,7 @@ from src.kg_verificator.v_case_kg.s2_rebuild_kg import RebuildKG
 from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_case
 from src.kg_generator.l1_case_measure import calculate_kg_verification
 
-from src.kg_generator.l0_preparing import (transfer_nodes, transfer_relations, combine_data, delete_isolated_nodes)
+from src.kg_generator.l0_preparing import (transfer_nodes, transfer_edges, combine_data, delete_isolated_nodes)
 
 
 class CaseKG:
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     for turn in range(start,end + 1):
         if turn == 1:
             transfer_nodes(case_ids[sector_id])
-            transfer_relations(case_ids[sector_id])
+            transfer_edges(case_ids[sector_id])
             combine_data(case_ids[sector_id])
             delete_isolated_nodes(case_ids[sector_id])
 

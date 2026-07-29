@@ -10,7 +10,7 @@ DATABASE = "kggen"
 
 
 # 匹配 字符串业务ID 创建关系
-def create_relationships(tx, batch):
+def create_edges(tx, batch):
     query = """
     UNWIND $batch AS rel
     // 按 字符串ID 匹配节点（假设节点属性叫 id，你可以改成 node_id）
@@ -30,7 +30,7 @@ def create_relationships(tx, batch):
 
 # ==================== 加载 CSV ====================
 
-def read_relations_from_csv(endswith="relations.csv", path_dir=CSV_DIR):
+def read_edges_from_csv(endswith="relations.csv", path_dir=CSV_DIR):
 
     rels = []
     for root, dirs, files in os.walk(path_dir):
@@ -66,7 +66,7 @@ def read_relations_from_csv(endswith="relations.csv", path_dir=CSV_DIR):
     return rels
 
 if __name__ == '__main__':
-    rels = read_relations_from_csv()
+    rels = read_edges_from_csv()
     # ==================== 执行导入 ====================
     driver = GraphDatabase.driver(URI, auth=AUTH)
     total_created = 0
@@ -74,7 +74,7 @@ if __name__ == '__main__':
     with driver.session(database=DATABASE) as session:
         for i in range(0, len(rels), 500):
             batch = rels[i:i + 500]
-            created = session.execute_write(create_relationships, batch)
+            created = session.execute_write(create_edges, batch)
             total_created += created
             print(f"✅ 批次 {i // 500 + 1}：创建 {created} 条")
 

@@ -14,6 +14,7 @@ class SelectCases:
         self.selection_path = "../data/papers/midput/selection_cases/"
         self.conf_path = "../conf/coding_schema/"
         self.raw_pdf_path = "../data/graph/case_study/raw_pdf_m/"
+        self.raw_kg_path = "../data/graph/case_study/case_1_raw_kg_m/"
 
         if not os.path.exists(self.selection_path):
             os.makedirs(self.selection_path, exist_ok=True)
@@ -182,6 +183,31 @@ class SelectCases:
             'case_title': case_title_array,
             'file_path': pdf_path_array
         }).to_csv(f"{self.conf_path}case_id_map.csv", index=False)
+
+        node_headers = ['node_id','node_name','category','evidence_label','case_title','evidence_statement','object_definition','evidence_location']
+        edge_headers = ['src_node_id','dst_node_id','relation_type','evidence_label','case_title','evidence_statement','evidence_location']
+        # build empty files
+        for idx in node_id_array:
+            file_path = f"{self.raw_kg_path}{idx}_deepseek_nodes.csv"
+            if not os.path.exists(file_path):
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(",".join(node_headers) + "\n")
+
+            file_path = f"{self.raw_kg_path}{idx}_chatgpt_nodes.csv"
+            if not os.path.exists(file_path):
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(",".join(node_headers) + "\n")
+
+            file_path = f"{self.raw_kg_path}{idx}_deepseek_edges.csv"
+            if not os.path.exists(file_path):
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(",".join(edge_headers) + "\n")
+
+            file_path = f"{self.raw_kg_path}{idx}_chatgpt_edges.csv"
+            if not os.path.exists(file_path):
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(",".join(edge_headers) + "\n")
+
 
 
 if __name__ == "__main__":

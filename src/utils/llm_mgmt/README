@@ -13,4 +13,4 @@ ollama pull deepseek-r1:8b
 
 # run model
 pkill -9 ollama
-ollama serve&
+OLLAMA_HOST=0.0.0.0:11435 ollama serve &

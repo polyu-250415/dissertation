@@ -47,7 +47,7 @@ def generate_nodes_data(entity_df):
         nodes.append(node)
     return nodes
 
-def generate_relations_data(edge_df, valid_node_ids):
+def generate_edges_data(edge_df, valid_node_ids):
     """返回关系列表，每个关系为字典，包含 :START_ID, :END_ID, :TYPE, Description, Example"""
     relations = []
     for _, row in edge_df.iterrows():
@@ -110,7 +110,7 @@ def import_nodes_via_api(driver, nodes, batch_size=1000):
                 print(f"  Batch {i//batch_size + 1} done. "
                       f"Nodes created/updated: {summary.counters.nodes_created + summary.counters.nodes_created}")
 
-def import_relations_via_api(driver, relations, batch_size=1000):
+def import_edges_via_api(driver, relations, batch_size=1000):
     """
     按关系类型分组，批量创建关系。
     使用 MERGE 避免重复，匹配节点基于 id 属性。
@@ -162,7 +162,7 @@ def main(excel_path, output_dir='.', neo4j_uri=None, neo4j_user=None, neo4j_pass
         # 生成节点和关系数据
         nodes = generate_nodes_data(entity_df)
         valid_ids = set(node['id'] for node in nodes)
-        relations = generate_relations_data(edge_df, valid_ids)
+        relations = generate_edges_data(edge_df, valid_ids)
         print(f"Generated {len(nodes)} unique nodes and {len(relations)} valid relationship combinations.")
 
         # 可选：保存 CSV（供查看）
@@ -185,7 +185,7 @@ def main(excel_path, output_dir='.', neo4j_uri=None, neo4j_user=None, neo4j_pass
                 if nodes:
                     import_nodes_via_api(driver, nodes, batch_size)
                 if relations:
-                    import_relations_via_api(driver, relations, batch_size)
+                    import_edges_via_api(driver, relations, batch_size)
                 print("Import completed successfully.")
             finally:
                 driver.close()

@@ -40,12 +40,12 @@ class SectorKG:
         df_edges = pd.DataFrame()
         for case_id in case_ids:
             node_file = self.rebuild_kg_path + f'{case_id}_nodes.csv'
-            edge_file = self.rebuild_kg_path + f'{case_id}_relations.csv'
+            edge_file = self.rebuild_kg_path + f'{case_id}_edges.csv'
             df_nodes = pd.concat([df_nodes, pd.read_csv(node_file)])
             df_edges = pd.concat([df_edges, pd.read_csv(edge_file)])
 
         df_nodes.to_csv(self.sector_raw_path + f'{sector_id}_nodes.csv', index=False)
-        df_edges.to_csv(self.sector_raw_path + f'{sector_id}_relations.csv', index=False)
+        df_edges.to_csv(self.sector_raw_path + f'{sector_id}_edges.csv', index=False)
 
     def split_nodes_by_label(self, sector_id):
 
@@ -82,7 +82,7 @@ class SectorKG:
         src_file = self.annotate_nodes_path + f'{sector_id}_nodes.csv'
         mid_l1_node_file = self.norm_nodes_path + f'{sector_id}_l1_nodes.csv'
         mid_l2_node_file = self.norm_nodes_path + f'{sector_id}_l2_nodes.csv'
-        mid_relation_file = self.norm_nodes_path + f'{sector_id}_l12_relations.csv'
+        mid_relation_file = self.norm_nodes_path + f'{sector_id}_l12_edges.csv'
 
         # Step 1: Read original CSV file
         print("Reading original CSV file...")
@@ -165,7 +165,7 @@ class SectorKG:
         layer2_df.to_csv(mid_l2_node_file, index=False)
         relationship_df.to_csv(mid_relation_file, index=False)
 
-    def build_l2_relations(self, sector_id):
+    def build_l2_edges(self, sector_id):
         """
         Build L2 Layer Knowledge Graph Relations
         Steps:
@@ -177,9 +177,9 @@ class SectorKG:
         # --------------------------
         # Step 1: Read input files
         # --------------------------
-        relations_input_path = self.sector_raw_path + f'{sector_id}_relations.csv'
+        relations_input_path = self.sector_raw_path + f'{sector_id}_edges.csv'
         nodes_input_path = self.norm_nodes_path + f'{sector_id}_l1_nodes.csv'
-        output_path: str = self.norm_nodes_path + f'{sector_id}_l2_relations.csv'
+        output_path: str = self.norm_nodes_path + f'{sector_id}_l2_edges.csv'
 
         print("=== Step 1: Reading Input Files ===")
 
@@ -207,17 +207,17 @@ class SectorKG:
                 relations_df["src_node_id"].isin(node_parent_map) &
                 relations_df["dst_node_id"].isin(node_parent_map)
         )
-        valid_relations = relations_df[valid_mask].copy()
-        filtered = len(relations_df) - len(valid_relations)
-        print(f"✅ Valid relations kept: {len(valid_relations)} (filtered {filtered} invalid)")
+        valid_edges = relations_df[valid_mask].copy()
+        filtered = len(relations_df) - len(valid_edges)
+        print(f"✅ Valid relations kept: {len(valid_edges)} (filtered {filtered} invalid)")
 
         # --------------------------
         # Step 4: Build L2 relations
         # --------------------------
         print("\n=== Step 4: Building L2 Layer Relations ===")
-        valid_relations["src_l2_node_id"] = valid_relations["src_node_id"].map(node_parent_map)
-        valid_relations["dst_l2_node_id"] = valid_relations["dst_node_id"].map(node_parent_map)
-        valid_relations["case_title"] = self.sic[sector_id]
+        valid_edges["src_l2_node_id"] = valid_edges["src_node_id"].map(node_parent_map)
+        valid_edges["dst_l2_node_id"] = valid_edges["dst_node_id"].map(node_parent_map)
+        valid_edges["case_title"] = self.sic[sector_id]
 
         # Define output columns
         l2_columns = [
@@ -231,62 +231,62 @@ class SectorKG:
             "evidence_statement"
         ]
 
-        l2_relations = valid_relations[l2_columns].copy()
+        l2_edges = valid_edges[l2_columns].copy()
 
         # Deduplicate
-        before_dedup = len(l2_relations)
-        l2_relations = l2_relations.drop_duplicates(
+        before_dedup = len(l2_edges)
+        l2_edges = l2_edges.drop_duplicates(
             subset=["src_l2_node_id", "dst_l2_node_id", "relation_type"],
             keep="first"
         )
 
-        l2_relations = l2_relations[l2_relations['src_l2_node_id'] != l2_relations['dst_l2_node_id']]
+        l2_edges = l2_edges[l2_edges['src_l2_node_id'] != l2_edges['dst_l2_node_id']]
 
-        l2_relations = l2_relations.rename(columns={
+        l2_edges = l2_edges.rename(columns={
             "src_node_id": "src_l1_node_id",
             "dst_node_id": "dst_l1_node_id",
         }).rename(columns={
             "src_l2_node_id": "src_node_id",
             "dst_l2_node_id": "dst_node_id",
         })
-        print(f"✅ Deduplication: {before_dedup} → {len(l2_relations)} records")
+        print(f"✅ Deduplication: {before_dedup} → {len(l2_edges)} records")
 
         # --------------------------
         # Step 5: Save output
         # --------------------------
         print("\n=== Step 5: Saving L2 Relations File ===")
-        l2_relations.to_csv(output_path, index=False)
+        l2_edges.to_csv(output_path, index=False)
         print(f"✅ L2 relations saved to: {os.path.abspath(output_path)}")
 
         # --------------------------
         # Step 6: Show statistics
         # --------------------------
         print("\n=== L2 Relations Statistics ===")
-        print(f"Total L2 relations: {len(l2_relations)}")
+        print(f"Total L2 relations: {len(l2_edges)}")
         print("\nRelation type distribution:")
-        print(l2_relations["relation_type"].value_counts())
+        print(l2_edges["relation_type"].value_counts())
 
     def create_sector_kg(self, clean_flag=False):
 
         path_dir = self.norm_nodes_path
         file_path = [
             f'{sector_id}_l2_nodes.csv',
-            f'{sector_id}_l2_relations.csv',
+            f'{sector_id}_l2_edges.csv',
         ]
         create_kg_by_files(file_path, path_dir=path_dir, clean_flag=clean_flag)
 
-    def complement_l1_relations(self, sector_id):
+    def complement_l1_edges(self, sector_id):
 
         path_dir = self.norm_nodes_path
         file_path = [
             f'{sector_id}_l1_nodes.csv',
-            f'{sector_id}_l12_relations.csv',
+            f'{sector_id}_l12_edges.csv',
         ]
         create_kg_by_files(file_path, path_dir=path_dir, clean_flag=False)
 
         path_dir = self.sector_raw_path
         file_path = [
-            f'{sector_id}_relations.csv',
+            f'{sector_id}_edges.csv',
         ]
         create_kg_by_files(file_path, path_dir=path_dir, clean_flag=False)
 
@@ -314,7 +314,7 @@ if __name__ == '__main__':
             for sector_id in sector_ids:
                 obj.combine_normalized_splits(sector_ids)
                 obj.build_mid_nodes(sector_id)
-                obj.build_l2_relations(sector_id)
+                obj.build_l2_edges(sector_id)
 
         if turn == 3:
             for sector_id in sector_ids:
@@ -322,4 +322,4 @@ if __name__ == '__main__':
 
         if turn == 4:
             for sector_id in sector_ids:
-                obj.complement_l1_relations(sector_id)
+                obj.complement_l1_edges(sector_id)

@@ -1,7 +1,7 @@
 import requests
 import json
 
-OLLAMA_API = "http://localhost:11434/api/chat"
+OLLAMA_API = "http://localhost:11435/api/chat"
 
 
 def chat_with_deepseek(message, history=None):
@@ -79,6 +79,7 @@ if __name__ == "__main__":
             break
 
         answer = chat_with_deepseek(user_input, chat_history)
-        if answer:  # Only append if we got a valid response
+        if answer:
             chat_history.append({"role": "user", "content": user_input})
             chat_history.append({"role": "assistant", "content": answer})
+            print(f'Bot: {answer}')

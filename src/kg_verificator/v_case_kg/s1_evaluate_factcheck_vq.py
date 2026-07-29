@@ -81,7 +81,7 @@ class EvaluateVQ:
             df_node.to_csv(self.vq_path + "/" + case_id + '_nodes_vq_evaluation_tmp.csv', index=False)
 
         # process relations
-        relation_vq_path = self.vq_path + "/" + case_id + '_relations_vq.csv'
+        relation_vq_path = self.vq_path + "/" + case_id + '_edges_vq.csv'
         df_relation = pd.read_csv(relation_vq_path)
         question_list = df_relation[['sample_type', 'question']].to_dict(orient='records')
         resp_list = self.rag_auditor.ask_by_local_llm(question_list, filters=filters)
@@ -90,10 +90,10 @@ class EvaluateVQ:
         try:
             evaluation_label_list = self.check_evaluation_condition(df_relation)
             df_relation['evaluation_label'] = evaluation_label_list
-            df_relation.to_csv(self.vq_path + "/" + case_id + '_relations_vq_evaluation.csv', index=False)
+            df_relation.to_csv(self.vq_path + "/" + case_id + '_edges_vq_evaluation.csv', index=False)
         except Exception as e:
             print(e)
-            df_relation.to_csv(self.vq_path + "/" + case_id + '_relations_vq_evaluation_tmp.csv', index=False)
+            df_relation.to_csv(self.vq_path + "/" + case_id + '_edges_vq_evaluation_tmp.csv', index=False)
 
     def evaluate_all_vq(self, case_ids):
 

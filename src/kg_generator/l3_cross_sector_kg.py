@@ -23,22 +23,22 @@ class CrossSectorKg:
         df_edges = pd.DataFrame()
         for sector_id in sector_ids:
             node_file = self.sector_norm_path + f'{sector_id}_l2_nodes.csv'
-            edge_file = self.sector_norm_path + f'{sector_id}_l2_relations.csv'
+            edge_file = self.sector_norm_path + f'{sector_id}_l2_edges.csv'
             df_nodes = pd.concat([df_nodes, pd.read_csv(node_file)])
             df_edges = pd.concat([df_edges, pd.read_csv(edge_file)])
 
         df_nodes.to_csv(self.cross_sector_raw_path + f'cross_sector_nodes.csv', index=False)
-        df_edges.to_csv(self.cross_sector_raw_path + f'cross_sector_relations.csv', index=False)
+        df_edges.to_csv(self.cross_sector_raw_path + f'cross_sector_edges.csv', index=False)
 
     def create_sector_kg(self, clean_flag=False):
 
         path_dir = self.cross_sector_raw_path
         file_path = [
             f'cross_sector_nodes.csv',
-            f'cross_sector_relations.csv',
+            f'cross_sector_edges.csv',
             f'h001_nodes.csv',
-            f'h001_relations.csv',
-            f'h001_l_relations.csv',
+            f'h001_edges.csv',
+            f'h001_l_edges.csv',
         ]
         create_kg_by_files(file_path, path_dir=path_dir, clean_flag=clean_flag)
 
@@ -62,7 +62,7 @@ class CrossSectorKg:
     def build_h001_kg(self):
 
         df = pd.read_csv(self.cross_sector_raw_path + 'cross_sector_nodes.csv')
-        df_sector_relations = pd.read_csv(self.cross_sector_raw_path + 'cross_sector_relations.csv')
+        df_sector_edges = pd.read_csv(self.cross_sector_raw_path + 'cross_sector_edges.csv')
         df_nodes = df.copy()
         df_nodes['child_id'] = df['node_id']
         df_nodes['node_id'] = df['node_id'].apply(lambda x: 'h001' + x[4:] if len(x) >= 4 else x)
@@ -71,12 +71,12 @@ class CrossSectorKg:
 
         node_map = dict(zip(df_nodes['child_id'], df_nodes['node_id']))
 
-        df_l_relations = pd.DataFrame()
-        df_l_relations['src_node_id'] = df_nodes['child_id'].astype(str)
-        df_l_relations['dst_node_id'] = df_nodes['node_id'].astype(str)
-        df_l_relations['relation_type'] = 'is_an_instance_of'
-        df_l_relations['evidence_label'] = 'G'
-        df_l_relations['case_title'] = "HOO1:Hard Aggregation"
+        df_l_edges = pd.DataFrame()
+        df_l_edges['src_node_id'] = df_nodes['child_id'].astype(str)
+        df_l_edges['dst_node_id'] = df_nodes['node_id'].astype(str)
+        df_l_edges['relation_type'] = 'is_an_instance_of'
+        df_l_edges['evidence_label'] = 'G'
+        df_l_edges['case_title'] = "HOO1:Hard Aggregation"
 
         df['category'] = df_nodes['node_id']
 
@@ -96,18 +96,18 @@ class CrossSectorKg:
         df_nodes_agg['Description'] = df_nodes_agg['node_id'].map(evidence_map)
 
         df_nodes_agg.to_csv(self.cross_sector_raw_path + 'h001_nodes.csv', index=False)
-        df_l_relations.to_csv(self.cross_sector_raw_path + 'h001_l_relations.csv', index=False)
+        df_l_edges.to_csv(self.cross_sector_raw_path + 'h001_l_edges.csv', index=False)
         df.to_csv(self.cross_sector_raw_path + 'cross_sector_nodes.csv', index=False)
 
-        df_relations = df_sector_relations.copy()
-        df_relations['child_src_id'] = df_sector_relations['src_node_id'].astype(str)
-        df_relations['child_dst_id'] = df_sector_relations['dst_node_id'].astype(str)
-        df_relations['src_node_id'] = df_sector_relations['src_node_id'].map(node_map)
-        df_relations['dst_node_id'] = df_sector_relations['dst_node_id'].map(node_map)
+        df_edges = df_sector_edges.copy()
+        df_edges['child_src_id'] = df_sector_edges['src_node_id'].astype(str)
+        df_edges['child_dst_id'] = df_sector_edges['dst_node_id'].astype(str)
+        df_edges['src_node_id'] = df_sector_edges['src_node_id'].map(node_map)
+        df_edges['dst_node_id'] = df_sector_edges['dst_node_id'].map(node_map)
 
-        df_relations = df_relations.drop_duplicates(['src_node_id', 'dst_node_id'])
+        df_edges = df_edges.drop_duplicates(['src_node_id', 'dst_node_id'])
 
-        df_relations.to_csv(self.cross_sector_raw_path + 'h001_relations.csv', index=False)
+        df_edges.to_csv(self.cross_sector_raw_path + 'h001_edges.csv', index=False)
 
 
 

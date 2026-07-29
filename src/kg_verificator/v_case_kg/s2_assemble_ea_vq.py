@@ -139,7 +139,7 @@ class AssembleEAVQ:
         return pairs
 
     @staticmethod
-    def load_relations(filepath: str) -> Tuple[List[Dict], Set[Tuple[str, str, str]]]:
+    def load_edges(filepath: str) -> Tuple[List[Dict], Set[Tuple[str, str, str]]]:
         """Load relations using pandas and build a set of (src, dst, relation_type)."""
         df = pd.read_csv(filepath)
         relations = df.to_dict(orient='records')
@@ -149,7 +149,7 @@ class AssembleEAVQ:
         return relations, triple_set
 
     @staticmethod
-    def build_relations_by_node(relations: List[Dict]) -> Dict[str, List[Dict]]:
+    def build_edges_by_node(relations: List[Dict]) -> Dict[str, List[Dict]]:
         """Map node_id -> list of relations where it appears as src or dst."""
         by_node = defaultdict(list)
         for rel in relations:
@@ -212,7 +212,7 @@ class AssembleEAVQ:
         for case_id in case_idx:
             nodes_file = f'{self.path}{case_id}_nodes.csv'
             similarity_file = f'{self.path}{case_id}_nodes_similarity.csv'
-            relations_file = f'{self.path}{case_id}_relations.csv'
+            relations_file = f'{self.path}{case_id}_edges.csv'
 
             src = pd.read_csv(nodes_file)
 
@@ -221,8 +221,8 @@ class AssembleEAVQ:
 
             print("Loading data with pandas...")
             pairs = self.load_similarity_pairs(similarity_file)
-            relations, triple_set = self.load_relations(relations_file)
-            by_node = self.build_relations_by_node(relations)
+            relations, triple_set = self.load_edges(relations_file)
+            by_node = self.build_edges_by_node(relations)
 
             print(f"Loaded {len(pairs)} similarity pairs and {len(relations)} relations.\n")
 

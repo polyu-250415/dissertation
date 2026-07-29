@@ -20,8 +20,8 @@ class RebuildKG():
 
         src_nodes_path = self.rag_ea_path + case_id + "_nodes.csv"
         dst_nodes_path = self.rebuild_kg_path + case_id + "_nodes.csv"
-        src_relations_path = self.rag_ea_path + case_id + "_relations.csv"
-        dst_relations_path = self.rebuild_kg_path + case_id + "_relations.csv"
+        src_edges_path = self.rag_ea_path + case_id + "_edges.csv"
+        dst_edges_path = self.rebuild_kg_path + case_id + "_edges.csv"
 
         df_src_nodes = pd.read_csv(src_nodes_path)
 
@@ -34,17 +34,17 @@ class RebuildKG():
         nodes_df_filtered.to_csv(dst_nodes_path, index=False)
         print(f"Saved filtered nodes to {dst_nodes_path}")
 
-        relations_df = pd.read_csv(src_relations_path)
+        relations_df = pd.read_csv(src_edges_path)
         relations_df['src_node_id'] = relations_df['src_node_id'].replace(redundant_id_dict)
         relations_df['dst_node_id'] = relations_df['dst_node_id'].replace(redundant_id_dict)
 
-        filter_relations_df = relations_df.drop_duplicates(
+        filter_edges_df = relations_df.drop_duplicates(
             subset=["src_node_id", "dst_node_id", "relation_type"],
             keep="first"
         )
 
-        filter_relations_df.to_csv(dst_relations_path, index=False)
-        print(f"Updated relations saved to {dst_relations_path}")
+        filter_edges_df.to_csv(dst_edges_path, index=False)
+        print(f"Updated relations saved to {dst_edges_path}")
         print("Done.")
 
     def rebuild_all_kg(self, case_ids):

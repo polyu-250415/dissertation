@@ -17,8 +17,8 @@ class CaseKG:
 if __name__ == '__main__':
 
     obj = CaseKG()
-    path = "../data/graph/case_study/case_6_v_ds/"
+    path = "../data/graph/case_study/case_3_unite/"
     mid_seg = '_gemini'
     #mid_seg = '_deepseek'
-    for id in range(1, 2):
-        obj.build_case_kg_test(f"c10{id}", path, "", clear_flag=True)
+    for id in range(1, 4):
+        obj.build_case_kg_test(f"c10{id}", path, "", clear_flag=False)

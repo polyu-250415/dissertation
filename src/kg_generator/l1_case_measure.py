@@ -42,37 +42,37 @@ def calculate_kg_verification(sector_ids):
                 initial_case_kg = "../data/graph/case_study/case_1_raw_kg_m/"
                 try:
                     stat_dict['Initial_deepseek_nodes'] = len(pd.read_csv(initial_case_kg + case_id + '_deepseek_nodes.csv'))
-                    stat_dict['Initial_deepseek_relations'] = len(pd.read_csv(initial_case_kg + case_id + '_deepseek_relations.csv'))
+                    stat_dict['Initial_deepseek_edges'] = len(pd.read_csv(initial_case_kg + case_id + '_deepseek_edges.csv'))
                 except Exception as e:
                     stat_dict['Initial_deepseek_nodes'] = 0
-                    stat_dict['Initial_deepseek_relations'] = 0
+                    stat_dict['Initial_deepseek_edges'] = 0
                     print(e)
 
                 try:
                     stat_dict['Initial_gemini_nodes'] = len(pd.read_csv(initial_case_kg + case_id + '_gemini_nodes.csv'))
-                    stat_dict['Initial_gemini_relations'] = len( pd.read_csv(initial_case_kg + case_id + '_gemini_relations.csv'))
+                    stat_dict['Initial_gemini_edges'] = len( pd.read_csv(initial_case_kg + case_id + '_gemini_edges.csv'))
                 except Exception as e:
                     stat_dict['Initial_gemini_nodes'] = 0
-                    stat_dict['Initial_gemini_relations'] = 0
+                    stat_dict['Initial_gemini_edges'] = 0
                     print(e)
 
                 case_schema_check = "../data/graph/case_study/case_4_v_kg/"
                 stat_dict['r1_nodes'] = len(pd.read_csv(case_schema_check + case_id + '_nodes.csv'))
-                stat_dict['r1_relations'] = len(pd.read_csv(case_schema_check + case_id + '_relations.csv'))
+                stat_dict['r1_edges'] = len(pd.read_csv(case_schema_check + case_id + '_edges.csv'))
 
                 case_fact_check = "../data/graph/case_study/case_5_v_ea/"
                 stat_dict['r2_nodes'] = len(pd.read_csv(case_fact_check + case_id + '_nodes.csv'))
-                stat_dict['r2_relations'] = len(pd.read_csv(case_fact_check + case_id + '_relations.csv'))
+                stat_dict['r2_edges'] = len(pd.read_csv(case_fact_check + case_id + '_edges.csv'))
 
                 case_ea_alignment = "../data/graph/case_study/case_6_v_ds/"
                 stat_dict['r3_nodes'] = len(pd.read_csv(case_ea_alignment + case_id + '_nodes.csv'))
-                stat_dict['r3_relations'] = len(pd.read_csv(case_ea_alignment + case_id + '_relations.csv'))
+                stat_dict['r3_edges'] = len(pd.read_csv(case_ea_alignment + case_id + '_edges.csv'))
 
                 stat_dict['node_accepted_rate'] = round(stat_dict['r3_nodes'] / (stat_dict['Initial_gemini_nodes'] +
                                                                                  stat_dict[
                                                                                      'Initial_deepseek_nodes']), 2)
-                stat_dict['relation_accepted_rate'] = round(stat_dict['r3_relations'] / (
-                            stat_dict['Initial_deepseek_relations'] + stat_dict['Initial_gemini_relations']),2)
+                stat_dict['relation_accepted_rate'] = round(stat_dict['r3_edges'] / (
+                            stat_dict['Initial_deepseek_edges'] + stat_dict['Initial_gemini_edges']),2)
 
                 stat_dict['dtv_valid'] = round(calculate_dtv(case_ea_alignment + case_id + '_ds_rag.csv'),2)
 

@@ -133,8 +133,8 @@ class AssembleVQ(object):
         for case_id in case_ids:
 
             source_csv = f'{self.kg_rag_path}{case_id}_nodes.csv'
-            relation_csv = f'{self.kg_rag_path}{case_id}_relations.csv'
-            output_csv = f'{self.kg_rag_path}{case_id}_relations_vq.csv'
+            relation_csv = f'{self.kg_rag_path}{case_id}_edges.csv'
+            output_csv = f'{self.kg_rag_path}{case_id}_edges_vq.csv'
 
             # ---------------- 1. Load Source & Build ID->Name Mapping ----------------
             if not os.path.exists(source_csv):
@@ -200,7 +200,7 @@ class AssembleVQ(object):
 
         for root, dirs, files in os.walk(self.kg_rag_path):
 
-            file_path = f'{self.kg_case_path}{case_ids}_relations.csv'
+            file_path = f'{self.kg_case_path}{case_ids}_edges.csv'
             all_selected = []
             try:
                 # Read the CSV

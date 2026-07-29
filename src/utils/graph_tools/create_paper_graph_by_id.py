@@ -1,12 +1,11 @@
 from neo4j import GraphDatabase
 from src.utils.graph_tools.create_nodes import read_nodes_from_csv, create_nodes_with_apoc, create_nodes_fallback
-from src.utils.graph_tools.create_relation import read_relations_from_csv,create_relationships
+from src.utils.graph_tools.create_relation import read_edges_from_csv,create_edges
 
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "MyNewPass123!")
 CSV_DIR = '../../data/graph/case_study/case_3_unite/'
 DATABASE = "kggen"
-case_id = 'c006'
 
 def clear_whole_database(session):
     """
@@ -50,11 +49,11 @@ def create_kg_by_case(case_id, path_dir=CSV_DIR, mid_seg='', clear_flag = True):
 
         print(f"✅ Inserted {created} nodes into Neo4j.")
 
-        rels = read_relations_from_csv(endswith=f'{case_id}{mid_seg}_relations.csv',path_dir=path_dir)
+        rels = read_edges_from_csv(endswith=f'{case_id}{mid_seg}_edges.csv',path_dir=path_dir)
         total_created = 0
         for i in range(0, len(rels), 500):
             batch = rels[i:i + 500]
-            created = session.execute_write(create_relationships, batch)
+            created = session.execute_write(create_edges, batch)
             total_created += created
             print(f"✅ 批次 {i // 500 + 1}：创建 {created} 条")
 
@@ -81,7 +80,7 @@ def create_kg_by_files(files, path_dir=CSV_DIR, clean_flag=False):
                 exit(1)
         elif f.endswith('relations.csv'):
             try:
-                rels = read_relations_from_csv(endswith=f,path_dir=path_dir)
+                rels = read_edges_from_csv(endswith=f,path_dir=path_dir)
                 print(f"✅ Loaded {len(rels)} relations.")
                 rels_array.extend(rels)
             except Exception as e:
@@ -109,7 +108,7 @@ def create_kg_by_files(files, path_dir=CSV_DIR, clean_flag=False):
         total_created = 0
         for i in range(0, len(rels_array), 500):
             batch = rels_array[i:i + 500]
-            created = session.execute_write(create_relationships, batch)
+            created = session.execute_write(create_edges, batch)
             total_created += created
             print(f"✅ 批次 {i // 500 + 1}：创建 {created} 条")
 
@@ -118,5 +117,5 @@ def create_kg_by_files(files, path_dir=CSV_DIR, clean_flag=False):
 
 # === MAIN ===
 if __name__ == "__main__":
-
+    case_id = 'c104'
     create_kg_by_case(case_id)
