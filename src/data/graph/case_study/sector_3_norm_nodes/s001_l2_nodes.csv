@@ -1,0 +1,911 @@
+node_id,node_name,category,evidence_label,case_title,evidence_count,evidence_statement,definition
+s001M01ED01,"Political, Regulatory & Jurisdictional Environment",Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),14,"c002M02N35 | Australian Work Safe fall prevention regulation: Training content was based on an Australian industrial standard—Preventing Falls in Housing Construction—Code of Practice
+c002M02N36 | Construction industry safety compliance standards: The construction industry is among the highest contributors to work-related injuries and on-the-job fatalities among all major industries
+c003M01N24 | Current electricity price set by ARERA: Scenario costs were calculated using the current electricity price set by ARERA.
+c006M02N36 | Industry safety regulations: Creating a safe environment is important, and evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized.
+c008M02N34 | Industry regulations: the State Administration of Work Safety, the websites of various administrative departments, the safety management network, and the municipal government website
+c011M01N32 | Regulatory compliance requirements: the required equipment is determined and constructed according to the relevant regulations in PRC's 'Confined Space Safety Working Guide'
+c014M02N50 | Political risks: Political factors influence the effective operations of the megaprojects
+c014M02N51 | Geopolitical instability: Dynamic environment, including geopolitical instability and logistical complexities
+c014M02N54 | Regulatory changes: Respond quickly to disruptions such as regulatory changes
+c016M01N33 | Peruvian Law N° 29783 on Occupational Safety and Health Management: Risk indexes used in the IPERC process were granted by Peruvian Law N° 29783.
+c016M01N34 | Peruvian OHS standard G-050: The construction monitoring process used key performance indicators from the Peruvian OHS standard G-050.
+c016M01N35 | ANSI/ASSP Z590.3: The paper uses ANSI/ASSP Z590.3 to define effective PtD management as an overall residual risk below 30 percent.
+c016M02N20 | Peruvian Law N° 29783: assigned an initial risk factor (RF - CS) based on exposure, probability and severity indexes granted by the Peruvian Law N° 29783
+c016M02N21 | Industry regulation compliance: The key performance indicators (KPI) of the Peruvian OHS standard G-050","Maps legislation, statutory codes, public policy, government standards, regulatory tariffs, political instability, geopolitical conditions, and jurisdictional requirements imposed by external authorities."
+s001M01ED02,"Economic, Market & Industry Environment",Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c007M02N49 | High Staff Turnover: small workforce, high staff turnover, a basic organisational structure
+c007M02N50 | Fierce Competition: continuous changes in construction techniques, materials and management processes have resulted in fierce competition among SMCCs
+c007M02N51 | Market Changes: Responding to market changes in the market plan (KR2)
+c007M02N52 | Technological Changes: Responding to clients' reactions to technological changes (KR3)
+c012M02N53 | Industry Demographic Shift (Retirement Wave): ""The industry faces a significant demographic shift, with seasoned construction professionals rapidly approaching retirement. This demographic change threatens organizational knowledge continuity""
+c014M02N53 | Changing market trends: Changing market trends influence the effective operations","Maps macroeconomic conditions, market fluctuations, industry competition, sector structure, labor-market conditions, workforce demographic shifts, and industry-wide technological change."
+s001M01ED03,Sociocultural & Societal Environment,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c015M02N31 | Diverse educational backgrounds: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences, diverse backgrounds and various prior level of education.","Maps societal values, cultural expectations, public attitudes, population demographics, community characteristics, and social norms affecting construction or knowledge practices."
+s001M01ED04,Natural & Climatic Environment,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c005M02N48 | Weather-related hazards (wind, sandstorms): The fourth bridge was in an open, remote, and deserted area, thereby causing extreme weather conditions, such as high wind speeds and sand storms, to be main interfering factors and sources of hazards during construction.
+c017M01N24 | weather conditions: Weather conditions influence building temperatures and are included as contextual information.
+c017M02N23 | Seasonal Cycles (Autumn-Winter): The study period was during autumn-winter (October to February), a key season for analyzing heating demand.","Maps broad climatic patterns, seasonal cycles, extreme weather, temperature regimes, flooding, storms, and other naturally occurring conditions affecting construction activities."
+s001M01ED05,External Technological & Infrastructure Environment,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,c001M02N26 | Rural 18.7% failure rate point cloud transmission network: Point cloud data transmission failure rate in rural areas is as high as 18.7% (vs 2.3% in the urban cores),"Maps regional or sector-level internet access, communication networks, electricity supply, public utilities, technology availability, and externally provided infrastructure required for construction or digital activities."
+s001M01ED06,"Client, Procurement & Institutional Environment",Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c007M02N53 | Client Needs Changes: Responding to changes in client needs (KR1)
+c009M02N56 | Client requirements: Every bid must be tailored to the client's specific requirements
+c009M02N57 | Submission deadlines: Submission deadline, submission requirements, required documents
+c009M02N58 | Quality and Cost Based Selection (QCBS) criteria: Weighting is 80% for Technical and 20% for Financial score in Quality and Cost Based Selection (QCBS)","Maps requirements imposed by clients, tendering systems, procurement institutions, bid-evaluation criteria, contractual submission conditions, professional bodies, and accreditation institutions."
+s001M01ED07,Supply-Chain & Logistical Environment,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c014M02N52 | Logistical complexities: Dynamic environment, including geopolitical instability and logistical complexities","Maps external suppliers, transportation networks, material availability, delivery dependencies, logistics systems, and interorganizational supply-chain conditions."
+s001M01ED08,Geographic & Physical Site Context,Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c001M02N27 | Remote mountainous site geographic isolation: There are notable disparities in digital preservation implementation between urban and rural areas of Chongqing
+c004M02N32 | Confined Physical Walking Space (3m x 3m): The movement area in the real world was confined to a 3m x 3m square
+c005M02N46 | Site physical constraints (congested areas, water, etc.): The first site visited was an elevated railway constructed amid a busy and congested area...The second bridge was being built as a crossroads...being built in a heavily populated region...The third bridge is being built across the River Nile...The fourth bridge was in an open, remote, and deserted area, causing extreme weather conditions...The fifth bridge...being constructed in one of the densest and most populated areas in Cairo.
+c005M02N47 | Bridge type-specific hazards (railway, road, etc.): The uniqueness of this bridge emerges from the fact that it is not meant for automobiles or trucks but rather serves as a rail...The main hazards emerging from this site were primarily related to the construction over/near water...extreme weather conditions, such as high wind speeds and sand storms, to be main interfering factors and sources of hazards.
+c006M01N21 | each worker's job site: Researchers attended each worker's job site to collect workload data and record work status.
+c011M02N31 | Confined space physical constraints: A confined space is a space with limited entry and egress and is not suitable for human inhabitants.","Maps the immediate external conditions of a project or workplace, including site geometry, spatial boundaries, congestion, confined spaces, water crossings, terrain, geographic isolation, and structural positioning."
+s001M01ED10,Ambiguous Environmental Dependency(*),Environmental Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c004M02N33 | Post-Training Four-Week Retention Test Window: Participants were contacted four weeks after training and asked to complete a retention questionnaire
+c014M02N49 | Environmental risks: Environmental uncertainties influence the effective operations of the megaprojects
+c015M02N30 | Student absences: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences, diverse backgrounds and various prior level of education.",Maps externally originating dependencies that cannot be assigned to ED01–ED09 because the evidence does not identify a sufficiently specific domain or analytical level.
+s001M01KH01,Community and Cultural Knowledge Custodians,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c001M01N12 | Indigenous people: The return rate of indigenous people is below 30%, immediately followed by the finding that ICH skills face inheritance interruption.","Community members who preserve and transmit local, cultural, historical, or intergenerational knowledge."
+s001M01KH02,Skilled Trades and Craft Practitioners,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c001M02N10 | ICH traditional building craftsmen: Tsyganov (2022) found that Bulgaria's digital authorization system... raised traditional artisans' income by 40%
+c012M02N16 | Skilled Tradesperson: ""Skilled tradespeople"" participated in the bridge project storytelling sessions","Practitioners holding embodied, experience-based, manual, or craft knowledge acquired through sustained practice."
+s001M01KH03,Frontline and Operational Practitioners,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c002M02N13 | General construction site workers: In order to encourage safe practices and ensure safe working conditions for construction workers, it is necessary to increase their safety awareness through systematic safety training
+c002M02N14 | Heavy equipment operators: A machinery operator's knowledge acquisition from VR-based training is an important factor that determines on-site safety performance
+c002M02N16 | Novice construction workers: The hazard recognition ability of experienced and novice construction workers was studied by Dzeng et al.
+c004M02N14 | Excavation Site Safety Officer Role: Determine whether a safety officer is present on site by viewing a safety file and inspecting excavation sites
+c006M01N11 | construction workers: The study assessed physical performance for 320 construction workers and measured workload for 64 workers.
+c006M02N14 | Construction workers (age 45 and older): Individuals aged 45 and older are the most likely to require an assistance suit and experience the impact of light labour. This age group has less muscle weakness and more confidence in their physical strength compared to younger generations, but they have reduced flexibility and balance and may not be aware of their weakening core.
+c006M02N15 | Workers with LBP history: 111 subjects with LBP... There were 111 subjects with LBP. The average for those with a history of LBP was 1.9% for hand load. Workers with a history of LBP tended to have a lower physical performance assessment index E than those without a history of LBP.
+c007M02N08 | Construction Workers: KM in the safety of construction projects relies merely on supervisors' motivation and workers' self-regulation","Personnel who apply process, safety, service, production, or equipment knowledge in day-to-day operations."
+s001M01KH04,"Customers, Users, and Service Recipients",Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c003M01N02 | Building occupants: The study attributes energy-related choices and building-system use to occupants and users.
+c017M01N02 | teachers: Windows or doors may be opened by teachers or students.
+c017M01N03 | students: Windows or doors may be opened by teachers or students.
+c017M02N10 | Occupants / Users: The paper notes that human factors like the opening of windows and doors by teachers or students are a main cause of temperature-occupancy discrepancies.","People holding experiential knowledge derived from using a product, service, facility, or system and who communicate that experience."
+s001M01KH05,"Scientific, Engineering, and Technical Professionals",Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c005M02N15 | Experienced engineers: 24 participants, including students and engineers, undertook the safety training using both the AR and VR technology followed by the hazard identification test. Their years of experience ranged from zero to 36 years.
+c007M01N08 | senior staff: SMCCs draw upon senior staff expertise.
+c007M02N05 | Senior Construction Staff: drawing upon the expertise of senior staff in construction specialties
+c007M02N09 | Construction Engineers: investigating how engineers who participate in regional training programs shared their knowledge inside their organisation
+c008M02N07 | Engineers: Construction site managers and engineers typically store safety information collected during safety inspections
+c012M01N11 | Experienced geotechnical engineer: An experienced geotechnical engineer narrated the Soil Saga and his intuitive response to soil instability.
+c012M01N14 | Senior structural engineer: A senior structural engineer described responses to complex structural failures.
+c012M01N15 | Retiring project engineer: A retiring project engineer shared mistakes, root causes, corrective actions, and preventive strategies.
+c012M01N16 | Retiring engineers: Retiring engineers participated in workshops, interviews, and mentorship meetings to preserve career knowledge.","Professionals holding formal scientific, analytical, design, diagnostic, or technical knowledge."
+s001M01KH06,Domain Experts and Expert Reviewers,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c002M01N28 | 8 identified experts with expertise in construction safety training and implementation: Eight experts participated: four with training-administration backgrounds, two immersive-training designers, and two construction-safety researchers.
+c002M02N17 | Construction safety training expert panel: A cohort of 8 identified experts with expertise in construction safety training and implementation were engaged for the structured interview
+c005M01N12 | construction safety experts: Experts prioritized hazards, validated the model, and reviewed the hazard-identification test.
+c005M02N14 | Test validation experts: Additionally, the exam was confirmed by experts in the field of construction safety, as five experts solved it with experience ranging from five to twenty-five years in the field of construction safety.
+c008M01N14 | experts: Expert interviews and expert opinions are identified as traditional sources of domain knowledge.
+c009M01N18 | Bid preparation team of experts: The system-generated proposal is reviewed by a bid preparation team of experts through multiple iterations.
+c009M02N19 | Expert Review Panel: Five experts were selected based on their extensive professional experience in construction procurement and bid preparation
+c015M02N03 | Industry practitioners: Future potential employers and industry professionals were consulted to assess whether students demonstrated improved industry readiness
+c015M02N05 | Former students/domain experts: These experts included several tutors and former main campus students, whose insights provided valuable feedback on the model's relevance, coherence, and potential applicability.","Recognized specialists who provide expert judgment, validation, evaluation, prioritization, or advisory knowledge."
+s001M01KH07,"Operational, Project, and Middle Managers",Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),15,"c004M02N15 | Construction Project Supervisor Role: Inform supervisors. Ensure a safety officer is present on site before performing any excavation work
+c005M01N11 | safety managers currently supervising bridge constructions: Five safety managers currently supervising bridge constructions in Egypt participated in interviews.
+c007M01N09 | foremen: Foremen manage construction teams and hold accumulated expertise.
+c007M02N06 | Construction Foremen: utilising foremen to manage construction teams on-site can enhance the effectiveness of training and guiding new workers
+c007M02N07 | Construction Supervisors: KM in the safety of construction projects relies merely on supervisors' motivation and workers' self-regulation
+c008M01N15 | management personnel: Traditional safety management relied on management personnel experience.
+c008M02N06 | Construction site managers: Construction site managers and engineers typically store safety information collected during safety inspections
+c008M02N08 | Safety management personnel: safety management personnel have gradually realized the significant research value of accident reports
+c012M01N12 | Project manager: A project manager narrated subcontractor miscommunication and coordination challenges.
+c012M01N13 | Site supervisor: A site supervisor recounted a near-miss and the rapid response that prevented injury.
+c014M01N11 | project managers: Two project managers from CPEC energy projects participated in the pilot interviews.
+c014M01N12 | Project In-charge: A Project In-charge from a CPEC energy project participated in the pilot study.
+c014M01N16 | project leadership: Project leadership uses AI for monitoring and supports knowledge sharing and intervention.
+c014M02N15 | Project Manager (Participant A): Table 1: List of the Participants in the Pilot Study - Project Manager (Energy CPEC)
+c014M02N16 | Project In-charge (Participant B): Table 1: List of the Participants in the Pilot Study - Project In-charge (Energy CPEC)","Managers coordinating people, processes, projects, resources, or operational implementation."
+s001M01KH08,Executive and Strategic Leadership,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c007M01N11 | company owners: Informal KM practices are heavily influenced by company owners.
+c007M02N12 | Chief Executive Officer (CEO): validated through discussions with a chief executive officer (CEO) of an SMCC
+c007M02N13 | Top Managers: KR, KS and KA received limited attention from top managers
+c009M01N19 | Management decision authority: Extracted requirements are displayed to the user or decision authority to support the final Bid/No-Bid decision.
+c014M01N15 | General Manager: A General Manager from a CPEC energy project participated.
+c014M02N20 | General Manager (Participant F): Table 1: List of the Participants in the Pilot Study - General Manager (Energy CPEC)
+c014M02N21 | Top management: Lack of top management support disturbs the allocation of required resources","Senior leaders holding enterprise-level strategic, governance, investment, or decision-making knowledge."
+s001M01KH09,"Public Authorities, Regulators, and Standard-Setting Bodies",Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c001M02N11 | Chongqing provincial and district cultural relic bureaus: Although provincial level has issued cultural heritage protection regulations, district level encounters problem of fund misallocation
+c011M01N09 | PRC regulatory authorities: the required equipment is determined and constructed according to the relevant regulations in PRC's 'Confined Space Safety Working Guide' (Regulation, 2019)","Actors holding statutory, regulatory, compliance, policy, inspection, or standards knowledge."
+s001M01KH10,"Researchers, Analysts, and Knowledge Developers",Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c003M02N08 | Researchers/developers: Elisa Di Giuseppe... Marco D'Orazio... This paper introduces the developed model and the assessment questionnaires...
+c006M02N18 | Researchers: The researchers attended each worker's job site and recorded their work status on video.
+c011M01N10 | Safety experts who developed the guidelines: the required equipment is determined and constructed according to the relevant regulations in PRC's 'Confined Space Safety Working Guide'
+c014M01N13 | Research Analyst: A Research Analyst from the Belt and Road Initiative Research Institute participated.
+c014M02N17 | Research Analyst (Participant C): Table 1: List of the Participants in the Pilot Study - Research Analyst (Belt & Road Initiative Research Institute)
+c017M02N11 | Researchers / Authors: The authors are credited with the conceptualization, methodology, data curation, and writing of the paper, indicating they hold the analytical knowledge derived from the study.","Actors who generate knowledge through research, investigation, modelling, analysis, or system development."
+s001M01KH11,"Educators, Trainers, and Mentors",Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c010M02N03 | Construction educators: educators can create inclusive environments that foster deeper comprehension and maximize learning outcomes
+c015M01N12 | industry educators: Students reported that industry educators came to the course as part of industry-oriented activities.
+c015M02N01 | Tutors/educators: Six CPM students along with two tutors participated in a focus group discussion.","Actors who intentionally transfer knowledge through education, training, coaching, facilitation, or mentorship."
+s001M01KH12,Peer Knowledge Contributors,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c007M02N14 | SMCC Employees: knowledge dissemination through workforce meetings, workshops and discussions; collaboration with customers, suppliers and subcontractors
+c015M01N13 | groupmates: A participant without a construction-management background said that they learned from groupmates.","Colleagues or peers who demonstrably exchange knowledge through collaboration, mutual assistance, or peer learning."
+s001M01KH13,Commercial and Value-Chain Professionals,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c006M02N17 | Professional contractors: At a meeting held in the fall of 2019 to exchange views on inhouse technological development, professional contractors expressed strong expectations for the assistive suits.
+c009M01N13 | Lead Tender Administrator: Alpha's primary participant was the Lead Tender Administrator, who had 14 years of experience.
+c009M01N14 | Assistant Tender Administrator – Environmental tenders: One Alpha assistant was responsible for managing environmental tenders and had five years of experience.
+c009M01N16 | Bid Manager: Beta's primary participant was the Bid Manager, who had 17 years of experience.
+c009M01N17 | Bid Administrator: Two Bid Administrators assisted the Bid Manager in the Beta case.
+c014M01N14 | Supply Chain Manager: A Supply Chain Manager from a CPEC energy project participated.
+c014M02N18 | Supply Chain Manager (Participant D): Table 1: List of the Participants in the Pilot Study - Supply Chain Manager (Energy CPEC)","Actors holding knowledge of markets, customers, procurement, finance, sales, logistics, contracting, or supply networks."
+s001M01KH14,Organizational and Inter-organizational Collectives,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c001M02N09 | Chongqing heritage graded protection taskforce: Based on implementation of 3D laser scanning, virtual reality (VR), and big data analysis, this study collected architectural data
+c007M02N11 | Management Teams: management teams and employees within SMCCs
+c014M01N17 | megaproject stakeholders: Collaborative platforms facilitate knowledge transfer and communication among stakeholders.","Teams, departments, professional communities, partnerships, or stakeholder networks that collectively hold and exchange knowledge."
+s001M01KH15,Other (*) – Insufficient Evidence of a Knowledge-Holding Role,Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c003M02N07 | Training participants: The training experience was designed to involve about 50 participants using the CAVE system at the Department...
+c010M01N10 | 19 undergraduate students: Nineteen students aged 18-24 participated in the Construction Technology course implementation.
+c015M02N04 | Peers/group members: A person stated, 'Being in a group make some people do nothing and put much pressure on others. We decide member one must do something and member two must do something else. It is great for every person to be involved.'","Actors whose evidence establishes participation or knowledge receipt but does not demonstrate knowledge possession, application, contribution, or sharing."
+s001M01KH16,Ambiguous Knowledge Holder(*),Knowledge Holder,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c007M01N10 | employees: The validated company uses the expertise of its employees.
+c016M01N13 | staff: Valuable safety information is lost as staff changes in companies.",Maps knowledge holders that cannot be assigned to KH01-KH15 because the evidence does not identify a sufficiently specific domain or analytical level.
+s001M01KL01,Formal Higher-Education Learners,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c002M01N30 | trainees enrolled in construction safety and risk management at Monash University: Sixty trainees enrolled in construction safety and risk management participated in the training.
+c002M02N18 | Monash University engineering student trainees: A cohort of 60 trainees enrolled in construction safety and risk management at Monash University were employed for the construction safety training
+c010M01N41 | students: Students participated in hands-on sensing-technology activities within the mixed reality learning environment as part of their Construction Technology course.
+c015M01N14 | MSc Construction Project Management students: The study involved the first two MSc CPM cohorts; 24 of 27 students completed the survey.
+c015M02N02 | Postgraduate CPM students: The first two cohorts of MSc. Construction Project Management students at the London campus were participants in the study after completing three or four modules","Students acquiring domain knowledge through a university course, degree module, or academically situated training activity."
+s001M01KL02,Structured Occupational Trainees,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),10,"c002M02N19 | Occupational safety trainees: The training aimed to educate the trainees on the different fall risks in housing construction
+c004M01N13 | university students: The pilot and comparative studies included university students as participants.
+c004M02N10 | Training Program Participants (Trainees): A total of 40 participants...participated in the pilot study
+c004M02N12 | University Student Trainees: The participants consisted of 28 university students and 12 professionals
+c005M01N13 | students: The 24 training participants included students and engineers.
+c005M02N16 | Trainees: 24 participants, including students and engineers, undertook the safety training using both the AR and VR technology followed by the hazard identification test.
+c005M02N17 | Younger trainees (students): However, it was noticed that younger trainees were more comfortable with the VR experience, as it took them around 15 min on average to navigate the site and detect most of the hazards.
+c011M01N11 | Trainees: A total of 78 trainees (59 males and 19 females) volunteered to take part in this experiment.
+c011M01N12 | Students: university students and non-construction workers with similar experience and knowledge levels of construction activities were selected as experimental trainees
+c011M01N13 | Non-construction workers: university students and non-construction workers with similar experience and knowledge levels of construction activities were selected as experimental trainees
+c012M02N21 | Trainees: ""Integration of narratives into organizational training, orientation programs, and professional development activities""","Participants enrolled in a planned vocational, professional-development, induction, or safety-training intervention, regardless of prior occupation."
+s001M01KL03,Novice and Early-Career Workforce Learners,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c006M02N20 | Young workers needing technology transmission: To promote the securing of labour by older workers, the enlightenment of the concept of 'KEIROKA,' and the transmission of technology to younger people, we would like to continue this research.
+c007M01N12 | new workers: Foremen train and guide new workers.
+c007M02N16 | New-Generation Construction Engineers: new generation engineers have become more familiar with construction simulation software (e.g., Navisworks, Revit and SketchUp) and construction information modelling
+c012M02N20 | Younger Personnel: ""Younger and less experienced personnel"" are targeted for knowledge transfer","New, younger, or less-experienced personnel receiving guidance, mentoring, or technology transfer to develop workplace competence."
+s001M01KL04,Experienced Practitioner Upskilling Learners,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c004M01N14 | construction professionals: The pilot and comparative studies included professionals from the construction sector as participants.
+c005M01N14 | engineers: The 24 training participants included students and engineers, with experience ranging from zero to 36 years.
+c005M02N18 | Older trainees (engineers): On the other hand, the older trainees took about 22 min on average to navigate the model and complete the training. They were also not comfortable/not used to using the Oculus touch (Joystick).
+c006M02N19 | Construction workers experiencing Smartsuit fitting: We visited actual work sites, allowed workers to experience the assistive suits, and lent them to those who showed interest.
+c012M01N17 | Mid-career engineers: Mentorship substantially enhanced mid-career engineers' experiential learning and professional development.","Established professionals or workers acquiring new technical, digital, safety, or procedural capabilities as part of continuing practice."
+s001M01KL05,Frontline Safety Knowledge Recipients,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c004M02N11 | On-ground Construction Workers (Target Population): It would be interesting to repeat the study with construction workers on the ground
+c008M02N09 | Workers: protect workers from harm","Site-level workers who receive hazard, prevention, or protective knowledge intended for direct application in operational safety."
+s001M01KL06,Operational Decision and Action Learners,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c008M01N16 | construction managers: The extracted knowledge helps construction managers understand accidents, make decisions, and formulate preventive measures.
+c008M01N17 | operators: The framework is stated to enable managers and operators to obtain a deeper understanding of accident context.
+c017M02N12 | Building Operators / Managers: The study's aim is to provide actionable insights for energy management, implying that the knowledge generated is to be absorbed by the managers of the building systems.","Managers, operators, or other decision users who absorb analyzed knowledge to understand conditions and improve operational choices."
+s001M01KL07,Public and Heritage-Experience Learners,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c001M01N14 | Visitors: Visitors' historical cognition and understanding increased after digital narrative and immersive experiences.
+c001M01N15 | Users: Users upload wartime-themed photography and drawings in the Red Journey co-creation module and engage with its interactive archive.
+c001M02N12 | VR/AR-equipped cultural heritage tourists: The historical cognition of visitors increased by 53% after the QR code animation triggered by Unity3D engine","Visitors, tourists, users, or members of the public who acquire cultural or historical knowledge through interpretive, immersive, or participatory experiences."
+s001M01KL08,Indigenous and Local-Community Learners,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,c001M02N13 | Bayu rural indigenous community inhabitants: The return rate of indigenous people is generally below 30% and intangible cultural heritage skills are at risk of interruption,"Members of place-based or indigenous communities who receive, retain, or renew locally embedded cultural and practical knowledge."
+s001M01KL09,Project and Organizational Collective Learners,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c007M01N13 | project members: The conclusion describes knowledge utilisation and sharing among project members.
+c012M01N18 | Construction crews: Safety cues were converted into a checklist and drill script for recall and transfer across crews.
+c014M01N18 | team members: Training sessions and workshops keep all team members knowledgeable.
+c014M02N23 | Employees: Empowered the employees but also mitigated the resistance to change
+c014M02N24 | Stakeholders: AI facilitates the knowledge transfer among the stakeholders","Teams, crews, employees, project members, or stakeholder groups that acquire and circulate knowledge as a collective organizational capability."
+s001M01KL10,Knowledge Review and Validation Learners,Knowledge Learner,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c009M02N20 | Bid preparation team: System-generated bid proposal is reviewed by the bid preparation team of experts
+c009M02N21 | Research team: Manual annotation of the RFPs by the research team","Expert or research groups that interpret, review, annotate, or validate knowledge artifacts while preparing them for reliable organizational use."
+s001M01LI01,Individual Knowledge and Memory Decay,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c002M01N44 | forgetting about 80% of the content in a week’s time: Two-week gaps were used because most students were expected to have forgotten approximately 80% of content after one week.
+c002M01N47 | failure to achieve long-term information retention: Insufficient absorption in traditional training does not translate into long-term information retention.
+c002M02N39 | Ebbinghaus forgetting curve effect: Most students would have forgotten about 80% of the content in a week's time
+c004M01N29 | acquired knowledge decay: Newly acquired knowledge is vulnerable to forgetting; manual-group knowledge declined significantly after four weeks.
+c004M02N36 | Persistent Safety Knowledge Retention Deficit: poor safety training and poor safety knowledge retention are known to be contributing factors to the high incidence of injury
+c011M01N35 | Forgetting curve: The Wilcoxon signed-rank test indicates that the knowledge level of both groups decreased significantly after 4-5 weeks. After 4-5 weeks, both groups of people have significantly forgotten the knowledge they have learned.","Loss, weakening, or fading of previously acquired knowledge over time. Use only when information was initially learned and later forgotten or retained poorly. Excludes poor initial learning caused by instructional design, which belongs to LI04."
+s001M01LI02,"Individual Ergonomic, Usability and Immediate Safety Risks",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c002M02N42 | Unrecognized hazard induced injury risks: It has been demonstrated that unrecognized hazards can lead to unexpected injuries or even fatalities in a fast-paced construction environment
+c003M02N22 | Potential cybersickness: ...the first was aimed at investigating... the cybersickness disorders related to the use of the virtual reality...
+c004M02N38 | VR-Induced Cybersickness / Motion Sickness: Dhalmahapatra et al. (2021)...Immersive VR provided more effective training, but it generated motion sickness too
+c005M01N44 | withdrawal from VR training: Four older participants withdrew from VR training within the first one to three minutes.","Immediate discomfort, fatigue, cybersickness, physical strain, usability burden, withdrawal caused by discomfort, or direct exposure to injury associated with equipment, interfaces, or work settings."
+s001M01LI03,"Human Physiological, Cognitive-Capacity and Demographic Constraints",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c005M01N43 | older trainees’ discomfort with Oculus Touch: Older trainees took longer and were uncomfortable or unfamiliar with the Oculus Touch joystick.
+c006M02N37 | No uniform effect on everyone: It doesn't have a uniform effect on everyone / It has to be a lower-priced product to be recognized in the construction industry.
+c010M01N36 | limited working memory: The paper states that human working memory is limited and instruction should support effective processing.
+c010M01N37 | learning preferences are not fixed: Several participants possessed multiple preferences, indicating that learning preferences are not fixed.
+c010M02N20 | Mixed learning preferences: learners can possess a combination of two or more learning preferences
+c011M02N37 | Expertise reversal effect: multimedia presentations that are effective for low-knowledge learners can lose their effectiveness for more knowledgeable learners and vice versa (expertise reversal effect)
+c015M01N38 | diverse backgrounds: Diverse student backgrounds were identified as a challenge arising in ABL.","Relatively stable individual differences or biological constraints, including age-related capability differences, health conditions, sensory or motor limitations, working-memory capacity, and heterogeneous learner characteristics. Excludes temporary discomfort classified under LI02 and acquired-knowledge decay classified under LI01."
+s001M01LI04,"Instructional Design, Delivery, Assessment and Transfer Shortcomings",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),29,"c001M01N42 | Passive display and missing wartime-life recreation: Most digital exhibitions passively show exteriors and timelines and lack recreation of wartime life.
+c001M02N39 | Passive static display leading to poor knowledge retention: 85% of digital exhibitions only passively show building exterior and wartime timeline but lack recreation of wartime life
+c002M01N46 | insufficient absorption of information: The broad and unengaging traditional methods result in insufficient absorption of information by construction workers.
+c002M02N38 | Low safety training motivation syndrome: Motivation is an essential factor in translating the concepts taught in training to the workplace
+c002M02N40 | Training-to-construction-site knowledge transfer gap: Motivation was found to be the more effective factor for safety performance practice on the job
+c002M02N41 | Traditional training visual fidelity limitations: Several studies have tried to evaluate the delivery of immersion, interaction, and realism to demonstrate the ability of devices in the realm of extended reality (XR) to reproduce visuals and conditions akin to those of real construction sites
+c003M02N23 | Lack of immersion in traditional methods: Despite its potential benefits for studying human behaviour, the use of virtual reality as a training tool has not received much attention.
+c004M01N32 | questioning as the only VR instructional method: The study used only questioning as the instructional method for the VR system.
+c004M01N33 | VR training delivers explicit knowledge only: The authors explicitly state that the VR training system only delivers explicit knowledge to participants.
+c004M02N35 | Knowledge-Behavior Translation Gap: Manns et al. (2015) conducted a cross-sectional study and discovered a knowledge-to-practice gap
+c005M01N38 | memorization and spoon-feeding: The study calls for departure from memorization and spoon-feeding approaches in traditional safety training.
+c005M01N39 | passive reception of knowledge: Traditional methods were criticized because trainees act as passive receivers of knowledge.
+c005M01N40 | lack of interaction between learners and training material: The traditional lecture design is described as lacking interaction between learners and training material.
+c005M01N41 | lack of cognitive stimulation and skill development: Traditional training was criticized for weak cognitive stimulation and skill development caused by low engagement and interactivity.
+c005M01N46 | partial model coverage: The developed model is part of a larger comprehensive model still under development, and only selected hazard themes were included.
+c005M02N49 | Lack of learner engagement in traditional training: In this design, there is a lack of interaction between learners and training material. Traditional training methods...criticized for the lack of cognitive stimulation and skill development as a result of the lack of engagement and interactivity.
+c005M02N51 | Insufficient cognitive stimulation: Traditional training methods [are] criticized for the lack of cognitive stimulation and skill development as a result of the lack of engagement and interactivity.
+c005M02N52 | Risk of counterproductive learning: Not only does this risk the lack of knowledge due to the trainees' emerging sense of exclusion but also risks counterproductive learning.
+c005M02N55 | Incomplete hazard identification (<50%): Construction workers were incapable of identifying more than 50% of the hazards in typical construction sites.
+c005M02N56 | Knowledge-to-practice gap: Not only would workers be aware of and able to react to hazards within the context of their specific trades but also would be able to identify, assess, and mitigate all potential risks that are related to the type of project being studied.
+c010M01N33 | limited access to construction sites for practical learning: Limited access to construction sites for practical learning is identified as a challenge in educating the future workforce.
+c010M01N35 | cognitive overload: Students can encounter cognitive overload when information is presented in visual and audio modes.
+c011M01N33 | Lack of immersion: the traditional training methods lack immersion
+c011M01N34 | Ethical issues: traditional training methods lack immersion and can cause ethical issues in some cases
+c011M02N38 | Limited to declarative knowledge only: the training objective of this paper is restricted to the declarative knowledge of personal protection before entering a confined space. Therefore, the rationale behind the selection of protective equipment, referred to as explanatory knowledge, was not included.
+c015M01N43 | passive listening: A participant reported becoming tired when someone only talked and preferred being actively involved.
+c015M02N33 | Knowledge-to-practice gap: Graduates often encounter gaps between theoretical knowledge and practical industry competencies, which hinders their immediate employability.
+c015M02N34 | Cognitive overload: The dedicated approach minimises cognitive overload, allowing learners to develop a deeper understanding of core concepts while effectively managing summative assessments.
+c015M02N36 | Student passivity: I personally, when someone's just talking, I really get tired.","Weaknesses in training or educational architecture, including passive delivery, inadequate engagement, restricted content, limited instructional methods, poor assessment coverage, insufficient practical access, cognitive overload caused by presentation design, and failure to transfer learning into practice."
+s001M01LI05,"Software, Algorithmic, Data Quality and Interoperability Barriers",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),30,"c001M01N40 | Unidirectional recording: Paper-based surveying is characterized as unidirectional recording.
+c001M01N41 | Limited retrieval: Total station and film photography provide limited retrieval.
+c001M01N46 | Data format fragmentation and system interoperability problems: More than 70% of projects encounter fragmented formats and system-interoperability issues.
+c001M01N47 | Model precision-real-time rendering trade-off: High-definition scanning improves restoration efficiency, but precision must be balanced with real-time rendering performance.
+c001M01N48 | AR-guide loading delay: Visitors wait an average of 2.7 seconds before experiencing the AR guide.
+c001M02N29 | GLTF/OpenUSD cross-platform data format silos: More than 70% projects are trapped in fragmented data format and system interoperability issues. Urgent to establish cross-platform standards (e.g., unified 3D model format, GLTF or OpenUSD)
+c001M02N30 | Rural LOD200 vs urban LOD400 precision implementation gap: LOD400 modeling precision adopted for central urban districts... county-level projects restricted to LOD200 models, data interoperability rate below 30%
+c002M01N49 | difficulty providing feedback and implementing changes to XR content: Participants considered feedback and content changes easier with the conventional presentation than with AR and VR.
+c008M01N42 | incomplete data: Traditional knowledge-acquisition methods are described as producing incomplete data.
+c008M01N45 | strong subjectivity and classification errors: Manual text classification is affected by strong subjectivity and classification errors.
+c008M01N46 | inefficient retrieval of valuable information: Manual organization of increasing database contents is time-consuming and inefficient, making valuable information difficult to retrieve.
+c008M01N47 | unstructured or semistructured textual data: Computers cannot automatically identify and process accident reports in unstructured or semistructured form without appropriate methods.
+c008M01N48 | manual feature and rule dependence: Conventional classifiers rely on manually defined features and rules that cannot encompass all information in complex safety texts.
+c008M01N49 | domain-dictionary dependence: Traditional segmentation quality depends on the completeness and continuous updating of domain-specific dictionaries.
+c008M01N51 | ambiguous accident-scene vocabulary: Words related to high altitude and machinery caused object-strike reports to be misclassified as falls or mechanical injuries.
+c008M01N52 | Chinese-language specificity: The proposed NLP approach focuses on Chinese text and may lose accuracy when directly applied to languages with different structures and rules.
+c008M01N53 | remaining object-strike classification weakness: Object-strike accidents had the lowest F1-score and weakest performance among the classified accident types.
+c008M01N54 | lack of practical tool development: The authors state that practical tool development is still lacking to translate the theoretical framework into tangible applications.
+c008M02N35 | Domain dictionary completeness: quality of text segmentation is directly influenced by the completeness and continuous updating of domain-specific dictionaries
+c008M02N36 | Data sparsity: statistical language models have a data sparsity defect, meaning they have poor handling capabilities for certain special cases or rare vocabulary
+c008M02N37 | Manual feature design requirement: shallow learning algorithms... usually require manual feature design and rely too much on human-extracted text features
+c008M02N40 | Computational complexity: shallow learning algorithms have high computational complexity when processing large-scale, high-dimensional data
+c008M02N41 | Overfitting/underfitting: may suffer from overfitting and underfitting, which limits the classification performance
+c008M02N44 | Shallow learning performance limitations: traditional methods rely on manually defined features and rules for text classification and analysis, but it is difficult for the manually defined features and rules to encompass all the information
+c009M01N45 | PDF-only document support: The current extraction process supports only PDF documents.
+c009M01N47 | Limited two-firm historical dataset: The study used historical documents from two case-study firms and a 13-document knowledge base.
+c009M02N62 | Time pressure: Firms often deliver the 'best possible' bid within time constraints rather than the most optimal one
+c009M02N66 | Limited adoption of digital tools: Limited adoption of digital tools
+c009M02N67 | No OCR integration: Accuracy decreases for scanned or image-based documents, as no Optical Character Recognition (OCR) is integrated
+c012M02N59 | Difficult Retrieval/Reuse: ""Significant barriers to efficient retrieval and reuse"" of video documentation","Limitations in software functionality, algorithms, model accuracy, computational methods, data completeness or structure, information retrieval, file formats, OCR, language processing, system integration, and cross-platform interoperability. Operational data scarcity belongs here when it constrains a deployed system; research-sample scarcity belongs to LI14."
+s001M01LI06,"Hardware, Sensor and Technical Infrastructure Constraints",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M01N44 | Rural point-cloud data transmission failure: The rural point-cloud transmission failure rate is reported as 18.7%, versus 2.3% in urban cores.
+c001M01N49 | Haptic-device scarcity: Only 5% of venues provide haptic devices.
+c001M02N37 | High error rate in manual total station surveys (2.3%): Total Station Surveying error rate 2.3%
+c004M01N34 | 3 m × 3 m real-world movement area: Real-world participant movement was confined to a 3 m by 3 m square.
+c014M01N36 | lack of technology infrastructure: Many organizations lack infrastructure needed to integrate AI into decisions.
+c017M01N25 | algorithms to count people that include occupancy sensors are still inaccurate: The people-counting algorithms that include occupancy sensors remain inaccurate.
+c017M01N30 | difficulty of fully sectorizing buildings: Difficulty fully sectorizing buildings contributes to divergence from thresholds.
+c017M02N28 | Inaccuracy of occupancy counting sensors: Abnormalities in the temperature-occupancy relationship arise due to technical factors, as algorithms to count people with occupancy sensors are still inaccurate.","Limitations involving physical devices, sensor accuracy or availability, processing capacity, networks, transmission infrastructure, facilities, spatial operating areas, and other physical technical resources. Excludes acquisition cost, which belongs to LI07."
+s001M01LI07,Financial and Capital Constraints,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M01N45 | High digital modeling cost: Advanced digital modeling costs three to five times more per building than traditional methods.
+c006M02N39 | High cost of active assistive suits: Rubber-type assistive suits (passive type) are cheaper, more versatile, and more suited for construction work that involves a lot of fine and complex work than electric and air-type assistive suits (active type).
+c006M02N40 | Rubber-type suits are cheaper and more versatile: Rubber-type assistive suits (passive type) are cheaper, more versatile, and more suited for construction work that involves a lot of fine and complex work than electric and air-type assistive suits (active type).
+c007M01N26 | limited budgets: Limited budgets prevent simultaneous implementation of all KMP factors.
+c007M01N33 | substantial investment costs and time: KM-system application demands substantial investment costs and time.
+c007M01N34 | costly maintenance of a KM system: A KM system can be costly to maintain and slow to yield tangible benefits.
+c007M02N55 | High Investment Costs: Investing in a KM system can be costly to maintain
+c010M01N34 | high costs associated with sensing technologies: The high costs associated with sensing technologies are identified as an obstacle to hands-on learning.
+c012M02N57 | High Production Cost: ""High cost of production"" for video documentation","Insufficient funding or excessive acquisition, development, production, licensing, implementation, or maintenance cost. Code time or staffing burdens separately under LI08 when both mechanisms are present."
+s001M01LI08,"Time, Staffing, Expertise, Scheduling and Workload Constraints",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),21,"c005M01N42 | VR game creation time and cost: Although VR addresses conventional gaps, the paper states that game creation is time-consuming and costly.
+c005M02N53 | High VR development time and cost: Although VR fills in conventional training gaps, game creation is time-consuming and costly. AR was advised at this training to save design time and costs.
+c007M01N30 | small workforce: A small workforce is an inherent SMCC challenge.
+c007M02N56 | Time to Yield Tangible Benefits: may take time to yield tangible benefits
+c008M01N41 | high time and cost requirements: Traditional domain-knowledge acquisition methods consume substantial time and cost.
+c008M01N44 | high manual time and personnel requirements: Manual text classification requires substantial time and personnel.
+c008M02N39 | Time consumption: manual text classification tasks require a lot of time and personnel
+c009M01N40 | Manual and repetitive bid tasks: The case process involved highly manual and repetitive document gathering, review, and drafting activities.
+c009M01N43 | Context-specific customization requirement: Every bid must be customized to the client's specific requirements.
+c009M01N44 | Need for expert contextual judgment: Complex specifications and nuanced project risks make full automation impractical without expert input.
+c009M01N50 | Limited knowledge transfer: The paper characterizes conventional bid preparation as constrained by limited knowledge transfer.
+c009M02N61 | Fragmented information storage: Fragmented information, inconsistent documentation, and limited knowledge transfer
+c009M02N69 | Reliance on third-party APIs: Transmitting bid documents through third-party APIs could introduce privacy or confidentiality risks
+c009M02N70 | Contextual judgment limitations: Making full automation less practical without expert input
+c011M02N39 | Need for human instructional oversight: our PF VR training system minimizes the need for human instructional oversight, adding another layer of cost-effectiveness
+c012M01N42 | Limited scalability of mentoring: Mentoring and apprenticeship were beneficial but limited in scalability, standardization, and organizational retention.
+c012M01N43 | Time-intensive facilitation and curation: Workshops and narrative analysis were time-intensive and could constrain scalability.
+c012M02N65 | Resource and Time Constraints: ""Implementation required dedicated resources, organizational commitment, and time for effective narrative elicitation, transcription, analysis, and integration into digital platforms""
+c015M01N37 | student absences: Students discussed solutions to student absences as a challenge arising in ABL.
+c016M01N38 | limited familiarity with BIM tools and new technologies/methodologies: Conventional methods persist in developing countries because familiarity with BIM tools and newer technologies or methodologies is limited.
+c016M01N39 | little knowledge in the application of OHS management models: The paper states that there is often little knowledge of applying OHS management models during project execution.","Scarcity of time, personnel, specialist expertise, implementation resources, scheduling capacity, or attention; excessive workload; time-intensive development or curation; and delays in realizing benefits."
+s001M01LI09,"Organizational Culture, Leadership and Adoption Barriers",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),25,"c003M02N24 | Limited awareness of available technologies: A possible explanation is the users' limited awareness of available technologies to optimize energy performance.
+c004M02N37 | Organizational Safety Training Implementation Gap: This situation is due to the lack of proper implementation of safety practices in the industry
+c007M02N57 | Limited Attention to Other KMP Processes: KR, KS and KA received limited attention from top managers due to the inherent challenges faced by SMCCs
+c007M02N58 | Ineffective KM Implementations: the effectiveness of these implementations was hindered by a lack of attention to other KMP processes
+c009M02N65 | Lack of standardized data formats: Absence of standardised data formats
+c012M01N41 | Knowledge-hoarding and reluctance to share: Implementation encountered hoarding, competition, and reluctance toward open knowledge sharing.
+c012M01N46 | Sustained engagement requirements: Continued participation required promotion, training, incentives, feedback, and platform refinement.
+c012M02N61 | Knowledge Hoarding: ""Knowledge hoarding, fear of job security threats, competitive pressures, and lack of incentives to share knowledge, further hinder tacit knowledge capture""
+c012M02N62 | Fear of Job Security Threats: ""Fear of job security threats"" is a barrier to knowledge sharing
+c012M02N63 | Lack of Incentives: ""Lack of incentives to share knowledge"" is a barrier
+c012M02N64 | Inadequate Trust: ""Inadequate trust"" is a barrier to knowledge sharing
+c012M02N66 | Cultural Resistance: ""Cultural and individual resistance... initial resistance linked to individual knowledge-hoarding behaviors, competitive attitudes, and organizational cultures traditionally reluctant towards open knowledge sharing""
+c014M01N37 | resistance to change: Resistance to change is identified as an AI-implementation challenge.
+c014M01N38 | authoritarian leadership: Authoritarian leadership suppresses innovation, sharing, and AI utilization.
+c014M01N39 | abusive leadership: Abusive leadership is associated with negligible adoption, poor sharing, and KM failure.
+c014M01N40 | underutilization of AI tools: Lack of leadership support is associated with underutilized AI tools.
+c014M01N42 | lack of training and engagement: Lack of leadership support includes lack of training and engagement.
+c014M02N55 | Lack of leadership support: A critical hurdle identified in the results is the lack of leadership support for utilizing AI-driven KM initiatives
+c014M02N56 | Authoritarian leadership hindering adoption: The authoritarian and abusive leadership style hinders its adoption
+c014M02N57 | Abusive leadership causing zero adoption: Abusive leadership - Negligible or zero adoption
+c014M02N59 | Lack of adaptive capability: Some projects face delays and shutdowns as those projects lack the adaptive capability
+c014M02N62 | Delays and disruptions: Authoritarian leadership - Delays and disruptions
+c014M02N63 | Operational inefficiencies: Abusive leadership - Operational inefficiencies
+c015M01N40 | unequal group contribution: Participants reported that some group members did little, placing pressure on others.
+c015M01N41 | group dynamics: Addressing group dynamics was identified as an implementation challenge.","Resistance to change, weak leadership support, authoritarian or abusive leadership, lack of trust or incentives, knowledge hoarding, low motivation, poor participation, group-dynamic problems, reluctance to share, and underuse or rejection of available technologies or practices."
+s001M01LI10,"Knowledge Continuity, Documentation, Governance, Privacy and Security",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),19,"c001M01N43 | Intangible cultural heritage skills inheritance interruption: ICH skills are at risk of interruption in inheritance while indigenous people's return rate is below 30%.
+c007M01N28 | high staff turnover: High staff turnover is an inherent SMCC challenge.
+c007M01N29 | risk of knowledge loss when employees depart: Reliance on critical human members creates knowledge-loss risk when employees depart.
+c009M01N39 | Fragmented bid-related data: Bid information was scattered across departments or databases because a centralized data system was lacking.
+c009M01N41 | Inconsistent documentation and formatting: Manual fragmented practices produced inconsistent documentation and formatting.
+c009M01N42 | Staff-turnover knowledge loss: The paper links knowledge loss risk to firms experiencing staff turnover.
+c009M01N48 | Textual methodology-only generation scope: The implemented generation component was limited to textual methodology sections for consulting proposals.
+c009M01N49 | Third-party API confidentiality risk: The paper notes potential privacy and confidentiality risks from transmitting bid documents through third-party APIs.
+c009M02N59 | Manual labor intensity: Construction bid preparation remains predominantly manual, labour-intensive
+c009M02N68 | Hallucinations: To improve domain relevance and reduce hallucinations
+c012M01N37 | Context-dependent and difficult-to-articulate knowledge: Tacit knowledge was described as intuitive, context-dependent, and difficult to articulate or transfer.
+c012M01N38 | Inadequate capture of contextual and interpersonal dynamics: Formal project documents inadequately captured context and interpersonal dynamics.
+c012M01N39 | Temporary and dispersing project teams: Temporary teams disbanded after projects and dispersed experiential knowledge.
+c012M01N40 | Retirement-related knowledge loss: The consultancy faced imminent loss of expertise from senior-engineer retirements.
+c012M01N44 | Privacy, consent, and sensitivity concerns: Sensitive stories required consent, opt-outs, anonymization, restricted access, and support pathways.
+c012M02N60 | Loss of Nuance: ""Fail to capture the context-dependent, nuanced, and intuitive nature of tacit knowledge""
+c014M01N41 | inadequate knowledge transfer: The results identify a gap in technology use and knowledge transfer.
+c016M01N36 | loss of valuable information as staff changes: Information on incidents, accidents, and best practices is lost as staff changes in companies.
+c016M01N37 | loss of gathered information over time: The paper observes that gathered OHS information is often lost over time, hindering continuous improvement.","Failure to capture, preserve, document, retrieve, govern, or transfer organizational knowledge; knowledge loss caused by turnover, retirement, or temporary teams; fragmented documentation; confidentiality, privacy, consent, access-control, and security risks."
+s001M01LI11,Physical-Environmental and Operational Variability,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M02N38 | Termite damage and structural decay of wooden buildings: 37% wooden buildings are damaged by termites; rate of building damage occurred decreased by 17% after digital platform use
+c017M01N26 | class attendance is not mandatory: Class attendance is not mandatory.
+c017M01N27 | sporadic uses of classrooms are not reflected in reservation schedules: Sporadic classroom uses do not appear in reservation schedules.
+c017M01N28 | unpredictable situations: Non-pattern behaviour is associated with open windows or doors and presence outside scheduled times.
+c017M01N29 | complexity of space usage: Complexity of space usage is a main reason for divergence from normative thresholds.
+c017M01N31 | divergence between measured temperatures and normative thresholds: The paper reports divergence between measured temperatures and normative thresholds.
+c017M02N25 | Inflexibility of scheduled heating periods: The scheduling of heating periods is carried out weekly based on weather forecasts, which is a key reason for the divergence between measured and normative temperatures.
+c017M02N27 | Unpredictable human behavior (opening windows): The paper identifies non-pattern behaviors related to unpredictable situations, such as the opening of windows or doors by occupants.","Uncontrolled or difficult-to-control physical and operational conditions, including weather, biological deterioration, structural decay, irregular space use, unpredictable occupant behavior, and divergence between planned and actual operating conditions. Human behavior belongs here when treated as external operational variability; deliberate resistance belongs to LI09."
+s001M01LI12,"Market, Commercialization, Regulatory and External Institutional Change",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c001M01N50 | Excessive commercialization weakens cultural expression: Excessive commercialization reduced positive EEG emotional signals by 40%.
+c001M02N28 | Internet celebrity punch point over-commercialization erosion: Excessive commercial operation would decrease the number of EEG positive signals by 40%; excessive commercialization (such as punch point of Internet celebrity) will reduce EEG+ emotional signals by 40%","Constraints arising outside the focal organization, including market shifts, commercialization pressure, labor-market change, regulatory change, industry-standard change, and other external institutional developments. Excludes internal culture and managerial choices classified under LI09."
+s001M01LI13,"Research Design, Measurement and Validation Flaws",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),10,"c004M01N30 | knowledge retention assessed only through knowledge test scores: The study assessed retention by measuring knowledge-test scores.
+c004M01N31 | long-term practical performance not investigated: The authors state that whether VR improves long-term practical performance remains uninvestigated.
+c005M01N45 | inability to isolate each technology’s contribution: The authors state that future research should quantify each technology’s contribution by testing between the AR and VR sessions.
+c006M01N24 | no significant difference in physical performance according to the presence or absence of LBP: A one-sided T-test found no significant difference in physical-performance evaluation according to the presence or absence of LBP.
+c006M01N25 | no significant difference in estimated load according to LBP history: A one-sided T-test found no significant difference between estimated load values for workers with and without an LBP history.
+c006M02N38 | Lack of correlation between workload and assistive technologies: There is no correlation between the workload and the assistive technologies, it is unclear who the target audience is and what approaches can be taken to introduce such technologies.
+c008M01N43 | subjective interference: Traditional domain-knowledge acquisition is affected by subjective interference factors.
+c010M01N39 | limited number of features: The limited number of analytical features may have constrained model predictive power.
+c010M01N40 | controversy over validity of learning styles: The paper notes that some studies question learning-style validity and that this controversy may limit applicability.
+c012M01N45 | Surface-level interview information: Structured interviews and surveys could restrict natural expression and capture only surface-level information.","Weaknesses in the study producing the evidence, including missing controls, inability to isolate causal contributions, narrow measurement instruments, untested outcomes, construct-validity problems, inappropriate comparisons, and insufficient validation. These records are methodological exclusions rather than substantive sector limitations."
+s001M01LI14,Empirical Sample and Generalizability Limitations,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c006M01N22 | external loads analysed for only 7 of the 64 subjects: Lumbar load taking external loads into account was analysed for 7 out of the 64 subjects.
+c008M01N50 | limited and imbalanced accident-report samples: Performance varied with the number of reports by accident type, and the authors identified the total sample size as an area for improvement.
+c008M02N43 | Insufficient training samples: the quantity of text cases for different accident types... the small number of cases... was one reason for the low classification accuracy
+c009M01N46 | No integrated Optical Character Recognition: Accuracy decreases for scanned or image-based documents because OCR was not integrated.
+c010M01N38 | insufficient representation of mixed learners' data: The difficulty predicting combined preferences may be due to insufficient mixed-learner data during training.","Small, narrow, imbalanced, localized, or unrepresentative research samples, including insufficient evaluation or model-training observations when the deficiency arises from the study design. These records are methodological exclusions rather than substantive sector limitations."
+s001M01LI15,Ambiguous Limitation(*),Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c006M01N23 | unclear target audience and approaches for introducing assistive technologies: The paper states that the target audience and approaches for introducing assistive technologies were unclear.
+c006M02N42 | Lumbar load independent of age: We do not see a low trend in lumbar load by age, we can conclude that there is little need to limit work by age.",Maps limitation that cannot be assigned to LI01–LI14 because the evidence does not identify a sufficiently specific domain or analytical level.
+s001M01OD01,"Governance, Standards & Formal Control",Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c001M02N24 | Government-led plus community crowdfunding preservation model: The 'government-led + community crowdfunding' model used by Eastern European countries such as Bulgaria and Hungary for historical buildings preservation can provide institutional design references for Chongqing
+c001M02N25 | LOD400/LOD200 graded modeling precision mandate: Core buildings are required to model at millimeter level based on Technical Standards for Historical Building Digitization (2021) [2]; county-level projects restricted to LOD200
+c002M02N33 | Organizational systematic safety training policies: It is necessary to increase their safety awareness through systematic safety training
+c004M02N28 | OSHA Excavation Safety Regulatory Mandates: The training objectives of the immersive VR training system were developed based on two guidelines: Occupational Safety and Health Administration (OSHA) Trenching and Excavation Safety
+c004M02N30 | University Research Ethics Approval: Massey University Research Ethics Committee granted ethics approval (Southern A, Application 18/21) to conduct this study
+c004M02N31 | Mandatory VR Safety Induction Briefing: participants received instructions and health and safety induction about VR and the use of Oculus Quest
+c009M02N53 | Document standardization practices: Absence of standardised data formats
+c012M01N32 | Informed consent and privacy safeguards: Consent, opt-outs, anonymization, restricted access, and withdrawal rights were applied.
+c012M01N36 | Platform stewardship and sustained engagement: Ongoing promotion, training, incentives, updates, review cycles, and stewardship were required.","Formal policies, mandates, technical standards, protocols, approvals, audits, privacy rules, ethics clearances, and stewardship controls."
+s001M01OD02,Strategic Leadership & Sponsorship,Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),11,"c006M02N32 | Management support for assistive technology introduction: At a meeting held in the fall of 2019 to exchange views on inhouse technological development, professional contractors expressed strong expectations for the assistive suits.
+c007M01N24 | senior management support: Senior management support is important for knowledge-sharing initiatives.
+c008M02N33 | Management buy-in: strengthening safety management practices and improving the effectiveness of accident prevention and management
+c012M01N34 | Leadership commitment and cultural reinforcement: Leadership, advocacy, and cultural reinforcement were required to address resistance and institutionalize storytelling.
+c012M02N48 | Leadership Commitment: ""Inadequate leadership commitment"" is a barrier; ""senior leadership commitment were critical success factors""
+c012M02N52 | Management Buy-In: ""Management buy-in"" is a critical success factor
+c014M01N31 | leadership support: Leadership support is vital to successful AI-driven KM implementation.
+c014M01N32 | participative leadership: Participative leadership facilitates AI use, knowledge sharing, and proactive planning.
+c014M02N43 | Top management engagement: Lack of top management support disturbs the allocation of required resources
+c014M02N45 | Clear strategic vision: Leadership support... articulating a clear vision
+c015M02N25 | Institutional support: Armellini and Padilla Rodriguez (2021) and Margolis et al. (2017) underline the necessity of scalable digital platforms, robust institutional backing, and faculty development to sustain blended learning innovations.","Executive commitment, strategic vision, championship, management buy-in, advocacy, and high-level institutional backing for technology-enabled knowledge retention and organizational learning."
+s001M01OD03,"Financial, Technical & Information Resources",Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),12,"c003M01N23 | DICEA CAVE facility availability: The CAVE system was available at the DICEA Department of the Polytechnic University of the Marche.
+c005M02N44 | Organizational resource allocation for AR/VR: (Implied by the development of AR and VR models using Unity, Oculus, and other commercial tools)
+c007M01N41 | existing basic management systems: The validating company uses employee expertise and existing basic management systems.
+c007M02N44 | Financial Constraints: current financial constraints limited its ability to make full investments in KMP
+c007M02N45 | Limited Budget: limited budgets
+c008M01N40 | large-scale construction accident text corpus: The deep-learning model learns patterns from a large collection of historical reports, and the authors state that performance depends on representative data volume.
+c009M01N37 | Availability and quality of relevant bid data: The paper states that automation success hinges on the quality and availability of relevant data.
+c009M01N38 | Integrated digital infrastructure: The paper identifies integrated infrastructure and centralized data management as critical for scaling automation.
+c009M02N47 | Centralized data management systems: Overcoming this challenge will require the development of integrated data management systems that can centralize and standardize the information needed for bid preparation
+c009M02N52 | Information systems readiness: Organizational maturity and information systems readiness significantly influence a firm's automation readiness
+c012M02N50 | Dedicated Resources for KM: ""Lack of dedicated resources for KM initiatives"" is a barrier; ""Adequate resourcing... were critical success factors""
+c014M01N33 | resource allocation: Top-management support is required to allocate implementation and training resources.","Availability and organizational readiness of budgets, facilities, hardware, software, platforms, integrated infrastructure, and usable data. Covers internal technological capacity, but not intrinsic technology properties such as accuracy or reliability."
+s001M01OD04,"Time, Workload & Operational Scheduling",Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c003M02N21 | Adaptation phase: ...it will be important to plan an initial adaptation phase (about 3-4 minutes) for participants, allowing them to freely experience the CAVE scenario...
+c011M01N29 | Training time allocation: we decided maximum of 10 min for each trainee's training duration
+c012M01N35 | Dedicated time and resources: Narrative elicitation, transcription, analysis, and integration required time and dedicated resources.
+c015M01N36 | small class sizes: A participant linked small class sizes with greater interaction and one-to-one communication.
+c015M02N24 | Block teaching: The student learning is compressed in 4 weeks of classes with 2 weeks of catch-up and assessment, when students study one module at a time.","Protected time, workload allowances, activity duration, delivery sequence, class size, and other scheduling arrangements."
+s001M01OD05,"Human Capacity, Roles & Participation",Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),11,"c002M02N34 | Workplace safety orientation and onboarding: A study exploring the reasons behind unsafe work behavior on construction sites describes the lack of safety orientation and training as one of the leading causes of unsafe behavior
+c003M02N19 | Sample selection: Sample selection is crucial to ensure the accuracy and reliability of training findings.
+c005M02N45 | Staff availability for training sessions: 24 participants, including students and engineers, undertook the safety training.
+c007M01N25 | KM training to the workforce: Management support includes KM training to the workforce.
+c007M02N46 | Small Workforce: small workforce
+c009M02N54 | Staff retention strategies: Knowledge loss, particularly in firms with high staff turnover
+c012M01N33 | Trained facilitators: Facilitators trained in narrative inquiry guided participants using open-ended prompts.
+c014M01N35 | stakeholder participation: Participative leadership encourages stakeholder participation and alignment.
+c014M02N47 | Training and development: Leadership support... allocates them in the training and development of the human resource
+c015M02N27 | Student engagement: 82% of respondents reported feeling more actively involved in discussions, group activities, and problem-solving exercises compared to their previous educational experiences.
+c015M02N29 | Student co-creation: The student co-creation, where learners actively contribute to shaping course content and activities, fosters a sense of ownership, creativity, and alignment with both academic goals and industry expectations.","Staff availability, competence, training, facilitation, departmental responsibility, expert participation, stakeholder engagement, retention, mentoring, validation, and succession."
+s001M01OD06,"Culture, Trust & Relational Climate",Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),10,"c006M02N33 | Acceptance of lower-priced products in construction industry: It has to be a lower-priced product to be recognized in the construction industry.
+c007M01N23 | knowledge-sharing culture: SMCCs should cultivate a knowledge-sharing culture.
+c007M02N43 | Inter-Organizational Trust: trust between construction organisations
+c008M02N32 | Corporate safety culture: strengthening safety management practices
+c009M02N49 | Openness to digital transformation: Selected based on... openness to digital transformation
+c012M01N31 | Psychological safety and trust: Storytelling required trust, openness, and psychological safety for genuine sharing.
+c012M02N49 | Knowledge-Sharing Culture: ""Absence of a supportive knowledge-sharing culture"" is a barrier to effective KM
+c014M01N34 | knowledge-sharing culture: Leadership creates a culture of knowledge sharing and innovation.
+c016M01N32 | safety culture: The paper states that establishing a safety culture depends on the organization working consciously and ensuring safe work.
+c016M02N24 | Continuous improvement culture: fosters a culture of continuous safety improvement, where past projects serve as references","Trust, psychological safety, openness, intrinsic knowledge-sharing motivation, learning orientation, technology receptiveness, and continuous-improvement norms. Also covers negative states such as knowledge hiding, fear, destructive internal competition, and weak learning cultures."
+s001M01OD07,Incentives & Performance Alignment,Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c012M02N51 | Organizational Incentives: ""Absence of organizational incentives"" deters effective KM","Extrinsic knowledge-sharing motivation through rewards, allowances, recognition, promotion criteria, targets, and performance measures tied to knowledge retention or technology use. Competitive incentives that encourage hiding also belong here."
+s001M01OD08,Organizational Structure & Process Design,Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c002M01N42 | training customization to the applicable work area and actual task: The authors identify customized training relevant to specific on-site tasks as important for efficient knowledge acquisition.
+c002M01N43 | virtual interface design that allows trainees to maintain attention: Effective virtual training must use an interface that enables trainees to maintain attention.
+c003M02N20 | Clear instructions: To maintain participant immersion... clear instructions should be provided to participants before starting the CAVE activity...
+c006M02N34 | Compatibility with individual worker needs: It's compatibility with the individual is greater than the type of work / It doesn't have a uniform effect on everyone.
+c007M02N47 | Flat Organisational Structure: SMCCs typically operate with a flat organisational structure
+c009M02N50 | Dedicated bid management departments: Both maintain dedicated bid management departments
+c009M02N51 | Organizational maturity: Organizational maturity and information systems readiness significantly influence a firm's automation readiness
+c011M01N30 | Randomized controlled experimental design: the trainees were randomly assigned to one of the two training methods
+c015M02N28 | Industry-aligned curriculum: bridges the gap between theory and practice, offering a robust framework for curriculum innovation","Hierarchy, organizational maturity, workflow configuration, technology–workflow fit, content or interface design, customization, compatibility, and curriculum alignment not governed by OD01–OD07."
+s001M01TE01,Artificial Intelligence and Intelligent Computation,Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),26,"c001M01N38 | Artificial intelligence: AI predicts site visitation 48 hours ahead and dynamically plans walking paths.
+c008M01N29 | natural language processing: The framework integrates NLP to process and analyze accident narrative text.
+c008M01N30 | deep learning: Deep learning was used for automatic feature extraction and representation learning from complex safety texts.
+c008M01N32 | Word2Vec: Word2Vec CBOW was used to pretrain word vectors for the embedding layer.
+c008M01N34 | Jieba: The Jieba package in Python was used for text-corpus preprocessing.
+c008M01N35 | gensim: The gensim library implemented Word2Vec to generate the embedding-layer word-vector matrix.
+c008M01N36 | TensorFlow: TensorFlow 2.6.0 formed part of the experimental environment used to construct the CNN model.
+c008M01N37 | Keras: Keras 2.7.0 formed part of the experimental environment used to construct the CNN model.
+c008M01N38 | mutual information: Mutual information measured the interdependence of adjacent words for phrase formation.
+c008M01N39 | information entropy: Left and right adjacency entropy was used to determine phrase boundaries and semantic completeness.
+c008M02N26 | Jieba package: use the Jieba package in Python language for text corpus preprocessing
+c009M01N28 | GPT-4o: GPT-4o was used to extract requirements and generate methodology content.
+c009M01N29 | OpenAI text-embedding-ada-002: The model converted document chunks and queries into dense vector embeddings.
+c009M01N31 | Vector embeddings: Historical chunks and new requirements were encoded into a common semantic vector space.
+c009M01N32 | Cosine similarity: Cosine similarity was used to identify and rank the closest historical proposals.
+c009M01N33 | Few-shot prompting: Retrieved methodology examples were supplied to GPT-4o to improve relevance, style, and factual grounding.
+c009M01N34 | LangChain: LangChain orchestrated retrieval, prompting, and generation steps.
+c009M02N43 | Natural Language Processing (NLP): NLP techniques, including named entity recognition, text summarisation, and text generation
+c010M01N29 | MATLAB: Training of the machine-learning models was conducted using MATLAB.
+c010M01N30 | Ensemble classifier: The Ensemble classifier was trained, tested, and identified as the most accurate classifier, with 83.3% test accuracy.
+c010M01N31 | Neural Network classifier: Neural Network was one of the three top-performing classifiers evaluated by the study.
+c010M01N32 | KNN classifier: K-Nearest Neighbors was one of the three top-performing classifiers evaluated by the study.
+c014M01N28 | artificial intelligence: Artificial intelligence is integrated into knowledge-management initiatives.
+c014M01N29 | predictive analytics: Predictive analytics is used to make backup plans ahead of time.
+c014M01N30 | generative AI: The results identify generative AI tools such as Net Zero Cloud.
+c014M02N41 | Net zero cloud: Generative AI tools, such as the 'net zero cloud,' was noted to be used by some projects under CPEC","Foundational core models, connectionist AI, natural language processing architectures, and generative systems."
+s001M01TE02,Human–Computer Interaction and Immersive Technologies,Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),48,"c001M01N32 | Virtual reality: Virtual reality is implemented for data analysis, immersive exhibition, and cross-platform historical-scene restoration.
+c001M01N33 | Unity3D engine: Unity3D supports the digital twin system, QR-triggered animation, and cross-platform virtual reality.
+c001M01N34 | AR scene overlay technology: AR scene overlays combine with historical archives to reconstruct rooms and open halls.
+c001M01N36 | AR glasses: Historical scenes are restored interactively on AR glasses.
+c001M01N37 | VR headsets: Historical scenes are restored interactively on VR headsets.
+c001M01N39 | NetEase Yaotai architecture: The Red Journey module is constructed using NetEase Yaotai architecture.
+c002M01N36 | Unity3D: Unity3D was used to prepare the immersive AR and VR visualizations.
+c002M01N37 | augmented reality: Augmented reality was one of the two XR technologies implemented in the training comparison.
+c002M01N38 | virtual reality: Virtual reality was one of the two XR technologies implemented in the training comparison.
+c002M01N39 | Microsoft Hololens 2: Microsoft Hololens 2 was used for AR training.
+c002M01N40 | Samsung Odyssey VR headset: Samsung Odyssey VR headset was used for VR training.
+c002M02N30 | Unity3D game engine software: The safety team prepared an immersive environment for demonstration of concepts using Unity3D
+c003M01N14 | Unity 2018.4.14f1: The 3D model was imported into Unity for rendering, materials, lighting, and first-person camera control.
+c003M01N17 | TechViz XL 2023: The integrated virtual model was presented through the CAVE environment using TechViz XL 2023.
+c003M01N18 | CAVE system: The model was presented through a projection-based CAVE environment at DICEA.
+c003M01N21 | CAVE projection hardware: The setup used an aluminium framework, two walls, a floor, and short-range and ultrashort-range projectors.
+c003M02N15 | Unity software: The 3D model was then imported into Unity (ver. 2018.4.14f1) for rendering...
+c004M01N22 | immersive virtual reality: The implemented training solution was an immersive VR application.
+c004M01N23 | Oculus Quest: The immersive application was deployed on the standalone Oculus Quest head-mounted display.
+c004M01N24 | Oculus Quest wireless controllers: Two Oculus Quest wireless controllers enabled participant interaction with virtual environments.
+c004M01N26 | Unity version 2019.1.10f1: The virtual environments were modelled and rendered using Unity version 2019.1.10f1.
+c004M01N27 | Terrain Unity plugin: The Terrain plugin was used to create site terrain, location, depth, width, and texture.
+c004M01N28 | Google Forms: The safety knowledge test was administered through Google Forms.
+c004M02N23 | Unity Real-time 3D Rendering Engine: The virtual environments were modelled and rendered using Unity (version 2019.1.10f1)
+c005M01N24 | AR technology: The training program integrated augmented reality with virtual reality.
+c005M01N25 | VR technology: The training program used virtual reality to immerse trainees in a simulated bridge-construction environment.
+c005M01N26 | Unity Game Engine: Unity Game Engine was used to develop the AR model and create the VR environment.
+c005M01N27 | Blender: Blender was used in AR development and for VR structural adjustments and character animation.
+c005M01N30 | Vuforia Augmented Reality SDK: Vuforia transformed the host images into targets and supplied the AR camera.
+c005M01N33 | Oculus Touch: The right Oculus Touch vibrated near hazards and the controllers interfaced with model buttons and canvases.
+c005M01N34 | Oculus Quest: The VR model was created with Oculus Quest in mind and used an Oculus-developed camera rig.
+c005M01N37 | Maximo: Object motions and worker-walking animations were added using Maximo.
+c005M02N41 | OVRPlayerController VR camera rig: The primary camera was then replaced by OVRPlayerController, which included OVRCameraRig. OVRCameraRig is developed by Meta corporation to develop VR games targeting Oculus quest and Oculus quest 2 virtual reality headsets.
+c006M02N30 | Web application: A dedicated web application (Fig.6) has been developed separately for the purpose of streamlining questionnaires.
+c007M02N35 | Navisworks: construction simulation software (e.g., Navisworks, Revit and SketchUp)
+c007M02N37 | SketchUp: construction simulation software (e.g., Navisworks, Revit and SketchUp)
+c009M01N35 | Streamlit: A Streamlit interface allowed users to upload RFPs and review AI-generated drafts.
+c010M01N25 | Qualtrics: The methodology overview identifies Qualtrics as the survey platform.
+c010M01N27 | HoloLens 2: HoloLens 2 provided eye and head gaze data and was used to immerse participants in the MR environment.
+c010M01N28 | Unity3D game engine: The MR learning environment was developed using the Unity3D game engine.
+c010M02N12 | Virtual assistant: All scenes were equipped with a virtual assistant and menu interfaces
+c010M02N13 | Menu interfaces: All scenes were equipped with a virtual assistant and menu interfaces
+c011M01N26 | HTC VIVE: The platform used for the virtual training was the HTC VIVE, which consists of a helmet, two positioners, and two controllers.
+c011M01N27 | Unity game engine: Trainee interaction with the 3D models was coded in Unity through C# programming.
+c015M01N28 | Vevox: Vevox was listed among the classroom technologies blended into ABL.
+c015M01N30 | Montimeter: Montimeter was listed among the classroom technologies blended into ABL.
+c015M01N33 | H5P: H5P was listed among the classroom technologies blended into ABL.
+c015M02N18 | Mentimeter: blending classroom technologies such as Vevox, Padlet, Montimeter, Moodle, Teams, HSP
+c015M02N21 | HSP: blending classroom technologies such as Vevox, Padlet, Montimeter, Moodle, Teams, HSP
+c016M01N24 | Navisworks: The model was exported to Navisworks for synchronization with the schedule and 4D simulation.
+c016M01N30 | PowerApps: PowerApps was used to create the application that visualizes earlier-phase information.","User experience design, interactive software interfaces, and spatial computing environments."
+s001M01TE03,"Cyber-Physical Systems, IoT, and Smart Environments",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c001M02N18 | FARO Focus S350 3D laser scanner: FARO Focus S350 realizes millimeter-level point cloud modeling
+c006M02N31 | Smartsuit: 'Smartsuit' which is based on logical and scientific evidence, among the numerous passive assistance suits (Fig. 5).
+c017M01N18 | +200 geolocated wireless sensors: The IoT ecosystem includes more than 200 geolocated wireless sensors.",Hardware-software integration where computational logic interacts directly with physical mechanics and automated hardware feedback.
+s001M01TE04,"Data, Information, and Knowledge Systems",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),21,"c001M01N30 | GIS software: GIS software aggregates scattered 3D models into spatial distribution maps.
+c002M02N31 | Building Information Models (BIM) library: Building information models (BIM) and other 3D visualizations have gained traction with the broader acceptance of the Building 4.0 platform
+c003M01N12 | AutoCAD 2023: The apartment floor plan was created in AutoCAD version 2023.
+c003M01N13 | Rhinoceros 7: The AutoCAD floor plan was imported into Rhinoceros version 7 to build the 3D model.
+c004M02N25 | Unity Asset Store Construction Site Models: An extensive range of virtual objects was obtained from Unity Asset Store and imported into Unity
+c005M01N35 | Revit: Revit was used to model structural pieces based on a real pier and pier cap from a visited bridge.
+c007M01N38 | data warehousing technology: Data warehousing technology is the technology specified by KS1.
+c007M01N39 | database: KS activities include database access, screening and storage of lessons learned.
+c007M02N32 | Building Information Modeling (BIM): using BIM 3D modelling helps in presenting design ideas effectively
+c007M02N36 | Revit: construction simulation software (e.g., Navisworks, Revit and SketchUp)
+c009M01N30 | Pinecone vector database: Document embeddings were stored in Pinecone for real-time semantic similarity searches.
+c010M01N26 | Microsoft Excel: The learning-preference survey was analyzed using descriptive statistics in Microsoft Excel.
+c012M02N33 | Existing Digital KMS Platform: ""Integrated into the existing digital KMS platform"" in the engineering consultancy
+c012M02N34 | Digital Repositories: ""Digital repositories, multimedia tools, and databases"" used for explicit knowledge
+c012M02N44 | NVivo Software: ""Audio-recorded stories and interviews were professionally transcribed... organized in NVivo for systematic management""
+c015M01N31 | Moodle: Moodle was listed among the classroom technologies blended into ABL.
+c016M01N22 | Building Information Modelling (BIM): BIM was combined with PtD and a centralized database and used for precise design-stage hazard and risk identification.
+c016M01N23 | Autodesk Revit: Autodesk Revit was used to create and sectorize the 3D model before export for 4D simulation.
+c016M01N25 | Microsoft Excel: The Phase 3 OHS management application was developed in Microsoft Excel and supplied data to the SQL server.
+c016M01N28 | Microsoft Azure: The relational data server was developed on the Microsoft Azure platform.
+c016M01N29 | SQL server: Information from the PtD application feeds and is stored in a SQL server.","The structural storage, architecture, indexing, retrieval, and semantic mapping of data and structural knowledge."
+s001M01TE05,"Imaging, Sensing, and Perception Technologies",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),17,"c001M01N27 | 3D laser scanning: The localized case implements 3D laser scanning to collect architectural data and generate precise models.
+c001M01N28 | UAV oblique photography: Multi-angle UAV photography works with ground laser scanning to generate the Peng's Dwelling model.
+c001M01N29 | ContextCapture software: ContextCapture generates textured 3D models by stitching aerial images.
+c001M01N31 | Thermal imaging scanning: Thermal imaging scanning identifies hidden structural dangers such as wood decay and hollow walls.
+c001M02N23 | IoT-based heritage site crowd flow sensors: AR Guidance + IoT Crowd Monitoring for Functional Adaptation Rate 60%
+c004M01N25 | Oculus Quest motion tracking system and sensors: Embedded motion tracking and sensors translated real-world participant movement into virtual movement.
+c005M01N29 | Adobe Photoshop: Adobe Photoshop was used to develop the AR host.
+c006M01N19 | multiple IMU sensors: The lumbar load measuring device was equipped with multiple IMU sensors.
+c006M01N20 | wearable camera: A wearable camera was used to record video footage of the work situation.
+c012M01N30 | Audio/video recording: Stories and interviews were audio- or video-recorded to preserve authenticity and emotional context.
+c012M02N42 | Audio Recording: ""Stories shared in workshops and interviews are audio or video-recorded, maintaining authenticity and preserving emotional context""
+c017M01N19 | VS121 occupancy smart sensor: VS121 provides anonymous people-counting data.
+c017M01N21 | QPA1004 room air quality sensor: QPA1004 detects CO2 concentration, temperature, and humidity.
+c017M01N22 | EM500 industrial temperature equipment: EM500 is equipped with a high-precision PT100 sensor.
+c017M01N23 | Khomp Meteo meteorological station: Khomp Meteo combines seven sensors for weather variables.
+c017M02N17 | VSI21 Occupancy Sensor: The IoT ecosystem includes VSI21 sensors for anonymous people counting data to monitor and understand space utilization.
+c017M02N18 | AM307 IAQ Sensor: The IoT ecosystem includes AM307 Indoor Air Quality (IAQ) sensors to detect CO2, temperature, humidity, light, and other air quality metrics.","The hardware, telemetry, and signal/image processing algorithms required to capture and perceive environmental inputs."
+s001M01TE07,"Mobile, Social and Communication Technologies",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),10,"c001M01N35 | Smartphones: Historical scenes are restored interactively on smartphones.
+c005M01N28 | Android Operating System: The AR model was developed to operate on the Android Operating System.
+c005M01N32 | trainees’ smartphones: Trainees accessed the AR software and scanned the hazard sheet using their smartphones.
+c007M01N40 | communication tools: Zalo, Line and Viber are widely used, readily available communication tools.
+c007M02N33 | ICT: partnership with researchers in the information and communications technology (ICT) industry to enhance the use of the new technology
+c007M02N38 | Zalo: Available and free communication tools (e.g., Zalo, Line and Viber)
+c007M02N39 | Line: Available and free communication tools (e.g., Zalo, Line and Viber)
+c007M02N40 | Viber: Available and free communication tools (e.g., Zalo, Line and Viber)
+c014M02N39 | Collaborative platforms: Collaborative platforms also fosters better communication
+c015M01N29 | Padlet: Padlet was listed among the classroom technologies blended into ABL.
+c015M01N32 | Teams: Teams was listed among the classroom technologies blended into ABL.
+c015M01N34 | YouTube: Students identified YouTube as useful learning technology and described its use for scaffolding visualization.","Network communication protocols, distributed social systems, and mobile-first software application ecosystems."
+s001M01TE08,"Rule-Based, Decision and Expert Systems",Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c003M01N19 | C# scripts: C# scripts automatically modified the indicators according to choices in the virtual environment.
+c016M01N26 | macros: Macros were among the functions used to develop the Phase 3 template.
+c016M01N27 | Visual Basic programming: Visual Basic programming was used to develop the Phase 3 template.","Deterministic, symbolic, and non-probabilistic AI that drives automated decision-making through hard-coded logic and expert rules."
+s001M01TE09,Ambiguous Digital Technology(*),Digital Technology,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c003M01N16 | EnergyPlus: The twelve interaction scenarios were simulated in EnergyPlus.
+c003M01N20 | Visual Studio 2007: The C# scripts were developed using Visual Studio version 2007.
+c003M01N22 | CAVE workstation: The CAVE workstation used an Intel Xeon processor, 128 GB RAM, and two NVIDIA RTX A6000 graphics cards.
+c005M01N31 | C#: AR buttons and animations and VR hazard canvases were programmed using C# scripts.
+c005M01N36 | Visual Studio: The VR model was written in C# using Visual Studio.
+c008M02N27 | Python language: Python language was used to crawl the accident data from 2013 to 2021 on the websites
+c009M01N36 | OpenAI API: The system accessed OpenAI embedding and language-model services through API access.
+c015M01N35 | eBooks: A participant identified eBooks as useful learning technology.
+c016M02N28 | Microsoft Project: scheduling activities in the Microsoft Project tool",Maps Digital Technology that cannot be assigned to TE01-TE08 because the evidence does not identify a sufficiently specific domain or analytical level.
+s001M01THR05,Knowledge Harvesting Workshops,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c005M01N16 | semi-structured interviews: Five semi-structured interviews were conducted with safety managers working on bridge-construction projects.
+c005M02N20 | Semi-structured interviews with safety managers: Interviews with safety managers who are currently working in bridge construction projects were conducted in Egypt. The type of interviews conducted was semi-structured; whereas, the purposive sampling technique was used where interviewees who play key roles in managing the safety of bridge construction were chosen.
+c008M01N20 | expert interviews: Expert interviews are listed as a traditional data-collection method for domain-knowledge acquisition.
+c012M01N26 | Dedicated interviews: Dedicated interviews were part of the consultancy's narrative-capture initiative.
+c012M01N48 | Conventional structured interviews and surveys: Interviews and surveys could restrict natural expression and produce surface-level information without experiential depth.
+c012M02N25 | Face-to-Face Interview: ""Interviews and surveys, while structured and replicable, often restrict individuals' natural expression""
+c014M01N43 | semi-structured interviews: The study conducts semi-structured interviews with six decision-influencing participants.","Structured elicitation sessions designed to extract, decompose, clarify, and document an expert's tacit decision rules, especially for organizational retention or succession."
+s001M01THR06,Critical Incident Technique,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c012M02N30 | Critical Incident Technique (CIT): ""Interviews about specific pivotal events; incident descriptions; causal mapping""","Retrospective elicitation focused on human behavior, decisions, and causal conditions during a specific significant, exceptional, or hazardous event."
+s001M01THR07,Mentoring,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c001M02N33 | Master-apprentice live craft transmission cycle: The return rate of indigenous people is generally below 30% and intangible cultural heritage skills are at risk of interruption in inheritance
+c007M01N17 | staff mentoring: Disseminating knowledge through staff mentoring is KD2.
+c012M01N27 | Narrative-based mentorship meetings: Retiring engineers were paired with mid-career colleagues for personalized storytelling and mentorship meetings.
+c012M02N23 | Mentoring Program: ""Mentoring and apprenticeship programs, though beneficial for direct knowledge transfer""
+c012M02N24 | Apprenticeship Program: ""Apprenticeship programs"" as a traditional method","A sustained master-apprentice or expert-novice relationship that transfers contextual know-how, professional judgment, safety norms, and occupational identity through personalized guidance."
+s001M01THR08,Storytelling,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c012M01N24 | Structured storytelling workshops: Structured workshops elicited personal experiences, incidents, solutions, and lessons from practitioners.","Use of oral, written, or facilitated narratives to transmit experiential knowledge, historical lessons, organizational culture, and context-rich understanding."
+s001M01THR09,After-Action Reviews,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c009M01N23 | Post-bid review: After submission, the case process conducts a review to gather feedback and assess lessons learned.
+c012M02N27 | Project Review Workshop: ""Project reviews and workshops"" are traditional methods
+c012M02N29 | After-Action Reviews (AAR): ""Short, time-boxed reflection soon after events/milestones; notes/action items; lessons logs""","A timely and structured post-event or post-milestone team debrief that examines what occurred, why it occurred, what was learned, and how future action should change."
+s001M01THR10,Communities of Practice,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c012M02N28 | Communities of Practice (CoPs): ""Communities of practice (CoPs), offer informal settings for peer-to-peer knowledge exchange""","A continuing, practitioner-led social network whose members regularly solve shared problems, refine practice, and maintain collective or institutional memory."
+s001M01THR11,Instructor-Led Training and Briefings,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c002M01N31 | traditional safety training presentation: The conventional training used PowerPoint and overhead projection and encouraged trainees to ask questions.
+c002M02N20 | Overhead projection classroom safety briefing: Current safety training sessions are delivered using traditional classroom lectures, textbook learning, and on-site safety briefings
+c002M02N21 | Construction site verbal safety toolbox talks: Current safety training sessions are delivered using traditional classroom lectures, textbook learning, and on-site safety briefings
+c005M01N15 | lecture-based traditional safety training: Traditional training is described as lecture-based and heavily reliant on slides, lecture notes, and multimedia.
+c005M02N24 | Textbook and presentation-based learning: Existing safety training is conducted in the most traditional forms while using textbooks, lectures, and presentations in the construction industry; furthermore, they are mostly being conducted as mere compliance to safety regulations.
+c007M02N22 | Seminars: job training and seminars
+c011M01N15 | Lectures: VR has been proven to be more effective than other existing safety training methods, including videos, lectures, and safety manuals.
+c012M01N49 | Toolbox talks: Captured narrative knowledge was reused through toolbox talks, and the Soil Saga heuristic was internalized through toolbox talks and a pre-excavation checklist.
+c014M01N19 | regular training sessions: Leadership-supported training sessions communicate best practices and new rules.
+c015M01N15 | traditional lecture-based learning: All surveyed students had previous exposure to conventional lecture-based education.","Instructor-directed transfer of established knowledge through lectures, presentations, seminars, demonstrations, inductions, or workplace briefings, without the individualized continuity of mentoring."
+s001M01THR12,Codified-Material Learning,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c001M01N19 | Static-picture presentation: Most bomb-shelter exhibitions use static pictures rather than scenically reproducing refuge noise and lighting.
+c001M02N32 | Static wartime timeline and exterior photo display: 85% of digital exhibitions only passively show building exterior and wartime timeline but lack recreation of wartime life
+c002M02N22 | Self-study safety textbooks and manuals: Current safety training sessions are delivered using traditional classroom lectures, textbook learning, and on-site safety briefings
+c004M01N15 | excavation health and safety manual self-study: Control participants received induction based on a manual and studied it until they felt they understood and remembered its items.
+c011M01N14 | Instructional videos: VR has been proven to be more effective than other existing safety training methods, including videos, lectures, and safety manuals.
+c011M01N16 | Safety manuals: VR has been proven to be more effective than other existing safety training methods, including videos, lectures, and safety manuals.
+c011M01N17 | Textbook-based safety training: Han et al. (2022) developed a VR construction safety training platform and compared it with traditional textbook-based safety training.
+c011M01N18 | Leaflet teaching: Their study compared the training effectiveness of VR and leaflets. Their results showed that VR training was more effective than leaflet teaching","Human learning or knowledge dissemination primarily mediated by prepared codified materials such as manuals, textbooks, leaflets, instructional videos, photographs, or static presentations."
+s001M01THR13,Experiential and On-the-Job Learning,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c006M01N12 | study session on ""KEIROKA"" and Smartsuit fitting session: The first initiative was a study session on KEIROKA and a Smartsuit fitting session, including worksite fitting events.
+c007M02N23 | On-the-Job Training: training and guiding new workers while maintaining control over construction processes
+c010M01N16 | construction-site practical learning: The study identifies access to construction sites for practical learning as a challenge in educating the future workforce.
+c012M02N22 | On-the-Job Learning: ""Traditional reliance on informal, on-the-job learning, mentoring, or apprenticeship programs""
+c015M01N18 | industry visits: The focus group emphasized industry visits as a means of enhancing learning outcomes.
+c015M01N19 | case studies: Case studies were identified as an ABL method supporting industry preparation.
+c015M01N20 | project-based learning: Students associated case studies and project-based learning with preparation for professional roles.
+c015M01N22 | authentic and experiential learning: The campus integrated authentic and experiential learning with ABL and technology.","Learning through direct participation in authentic work, site exposure, applied projects, or practical experience when the evidence does not establish job shadowing, rotation, mentoring, or deliberate repetition."
+s001M01THR14,Collaborative Group Learning,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c002M02N23 | Peer-to-peer safety discussion groups: A study demonstrated improvements in safety performance with increased safety discussions and the distribution of safety training materials to construction workers
+c007M01N14 | workforce meetings: Workforce meetings disseminate knowledge.
+c007M02N18 | Workshops: workshops and discussions
+c008M01N18 | brainstorming: Brainstorming is listed as a traditional data-collection method for domain-knowledge acquisition.
+c014M01N20 | workshops: Leadership-supported workshops communicate best practices and new rules.
+c015M01N17 | classroom group activities: Students valued group activities but also reported unequal participation.
+c015M01N21 | student co-creation: Learners contributed to shaping course content and activities.
+c015M02N07 | Group activities: Group work is challenging when some individuals do not contribute equally.","Facilitated, episodic group exercises, meetings, or workshops in which participants learn jointly, but which lack the open knowledge-café format or the continuing identity and self-organization of a community of practice."
+s001M01THR15,Manual Knowledge Documentation and Codification,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),14,"c001M01N16 | Paper-based surveying: First-generation conservation used paper-based surveying with 2D planar data and unidirectional recording.
+c001M01N17 | Total station and film photography: Second-generation conservation used total station and film photography for elevations and partial depth data.
+c001M02N31 | Total station manual surveying baseline: Total Station Surveying cost 0.8-1.2万 CNY, error rate 2.3%, data acquisition 7-10 days
+c007M01N22 | Storing knowledge in hard copies: Storing knowledge in hard copies is KS5.
+c008M01N22 | manual organization and classification: The paper describes manual organization of growing databases and manual text-classification work as time-consuming and inefficient.
+c008M02N11 | Manual analysis of accident reports: manually analyzing unstructured or semistructured textual data stored in records is a daunting task
+c008M02N16 | Rule-based language modeling: Rule-based language models require researchers to manually write knowledge expressions and call rules to develop algorithms
+c008M02N17 | Domain dictionary loading: Traditional Chinese text segmentation algorithms mainly rely on loading domain dictionaries, matching the target string with the words in the established dictionary through specific strategies
+c009M01N20 | Manual bid proposal preparation: The case firms' core preparation phase manually drafts technical and financial content and assembles supporting material.
+c009M01N21 | Manual cross-referencing with previous proposals: The traditional activity reviews prior bids to reuse effective content, maintain consistency, and support quality.
+c009M02N26 | Manual annotation of RFPs: Ground truth labels for the requirements extraction module were generated through manual annotation of the RFPs by the research team
+c012M01N47 | Traditional documentation methods: Project challenges were inadequately captured through traditional project documentation methods.
+c012M02N12 | Video Documentation Practice: ""Video documentation, although rich in visual context, presents challenges related to privacy concerns, ethical issues, the high cost of production, and significant barriers to efficient retrieval and reuse""
+c012M02N26 | Written Reports: ""Written reports, project reviews, and workshops, commonly used across construction organizations""","Human preparation, recording, annotation, organization, classification, cross-referencing, or storage of explicit knowledge without automated knowledge-processing support."
+s001M01THR16,Human Expert Review and Validation,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c002M01N32 | three rounds of structured interviews: Three structured interview rounds gathered expert opinions and feedback to determine the final sub-criteria.
+c005M01N18 | Delphi probability-impact analysis: Three experts assessed identified hazards by probability and impact to categorize and prioritize them.
+c005M02N22 | Delphi technique for hazard prioritization: The prioritization was conducted using the Delphi technique with three experts who conducted a probability-impact analysis where the identified hazards were assessed based on their probability of happening and their impact on the safety of construction laborers and their impacts on the three constraints a project.
+c009M01N22 | Internal expert review and finalization: Generated proposals undergo expert review and multiple iterations before a final draft is submitted.
+c009M02N27 | Expert review (blind evaluation): The evaluation was conducted as a blind review: experts were not informed whether a given section had been produced manually or by the AI system","Human expert evaluation, checking, consensus formation, prioritization, or iterative refinement of a knowledge product or decision; the principal purpose is validation rather than tacit-knowledge extraction."
+s001M01THR17,Ambiguous Traditional Human-central Practice,Traditional Human-central Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),28,"c001M01N18 | Traditional exhibition: The VR exhibition hall is compared with traditional exhibition.
+c003M02N09 | Training with apps, mobile phones, tablets and PCs: Currently, the most used tools for training are apps, mobile phones, tablets and PCs.
+c004M01N35 | self-efficacy questionnaire: Eight self-rated statements were used to measure participants’ self-efficacy before and immediately after training.
+c005M01N17 | bridge-construction site visits: Five site visits covering five bridge types and varied conditions were used to gather hazard data.
+c005M02N23 | Traditional paper-based hazard identification tests: The test consisted of photographs in which the trainees were asked to analyze the hazards in each photograph. Each photograph represented one of the scenarios that the learner would encounter during the VR and AR training.
+c006M01N13 | physical strength measurement: Workers completed seven physical-strength measurement events at site offices.
+c006M01N14 | health questionnaire: Health questionnaires were administered to workers and collected personal, work, exercise, LBP, fatigue and endurance information.
+c006M02N22 | Questionnaire survey: The questionnaire collects personal information such as height, weight, age, physical gender, type of work, duration of work, working hours per week, main working posture (upright, downward, squatting, sitting), maximum weight to be handled, current LBP or LBP history, frequency of LBP in the last 6 months, how much exercise they do per week, and duration of exercise.
+c007M01N16 | discussions: Discussions disseminate knowledge.
+c007M01N18 | training programmes: Training programmes promote KMP implementation.
+c007M01N19 | further education initiatives: Further education initiatives promote KMP implementation.
+c007M01N20 | two-way communication: Encouraging two-way communication is KD1.
+c007M01N21 | collaboration with customers, suppliers and subcontractors: Collaboration with customers, suppliers and subcontractors promotes KMP.
+c007M01N32 | reliance on informal KM practices heavily influenced by company owners: SMCCs rely on informal KM practices heavily influenced by company owners.
+c007M02N66 | People-Based KMP Approach: people-based approach focuses on humans to manage their tacit knowledge
+c008M01N19 | questionnaire surveys: Questionnaire surveys are listed as a traditional data-collection method for domain-knowledge acquisition.
+c008M01N21 | literature research: Literature research is listed as a traditional method for domain-knowledge acquisition.
+c009M02N24 | Document analysis: Document analysis of sample RFPs and submitted proposals triangulated interview findings
+c009M02N25 | Cross-case comparison: A cross-case comparison identified similarities and differences in bid preparation practices
+c010M02N04 | Questionnaires on learning preferences: The study employs a learning style questionnaire from the University of California, Merced.
+c014M02N25 | Manual data analysis: Lack of adaptive capability... some projects face delays and shutdowns
+c014M02N26 | Traditional decision-making process: We are not asked for any opinion, we are told to perform any task
+c014M02N27 | Unstructured knowledge sharing: Minimal stakeholder involvement... reduces knowledge sharing
+c015M01N16 | focused or block teaching: Students studied one module at a time in four weeks of classes followed by catch-up and assessment.
+c016M01N15 | conventional hazard identification, risk assessment and accident prevention methods: The paper states that conventional methods are applied during design in developing countries because knowledge of BIM and new technologies or methodologies is limited.
+c016M02N09 | Conventional/traditional methods: only traditional methods for hazard identification, risk assessment and accident prevention are applied in the design phase
+c017M01N12 | review of university lecture schedules: Tuesday was selected as representative based on a review of university lecture schedules.
+c017M01N13 | scheduling of heating periods carried out weekly based on weather forecasts: Heating periods are scheduled weekly based on weather forecasts.",Maps Traditional Human-central Practices that cannot be assigned to THR01-THR18 because the evidence does not identify a sufficiently specific domain or analytical level.
+s001M01TK02,Knowledge Conveyed Through Examples or Demonstration,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c007M02N03 | Lessons Learned: Storing lesson learned into the database (KS6)
+c011M01N07 | Hazard identification skills: trainees attempt to solve challenging problems before receiving explicit instruction... In the process, trainees often fail to succeed in the initial task itself, which will enhance the retention of knowledge gained.
+c011M01N08 | Emergency response intuition: experiencing disasters can benefit disaster preparedness and responses. PF theory advocates for the importance of experiencing failure during the exploratory learning phase.
+c012M01N08 | Innovative structural problem-solving: A senior structural engineer narrated innovative solutions and adaptive practices used during structural failures.
+c012M01N09 | Decision-making under uncertain conditions: A retiring project engineer's failure stories revealed critical decision-making under uncertainty.
+c012M02N05 | Lessons from project failures: ""A retiring project engineer shared candid stories about challenging projects, highlighting detailed accounts of mistakes, their root causes, corrective actions, and preventive strategies. His reflective narratives provided candid insights into risk management practices and critical decision-making under uncertain conditions""
+c014M02N09 | Lessons learned from past practices: Collaborative platforms... enable organizations to draw lessons from past practices
+c015M01N10 | industry knowledge: A student reported learning what the industry requires through visits, educators, and case studies.","Knowledge transferred through cases, stories, simulations, examples, pointing, or practical demonstration because a sufficient verbal account has not been provided."
+s001M01TK04,Unrecognized or Unarticulated Personal Know-how,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c009M01N12 | Bid Manager intuition: The Beta firm was described as relying on the Bid Manager's intuition.
+c012M01N01 | Intuitive geotechnical problem-solving: The experienced geotechnical engineer explained an intuitive response to soil instability based on knowledge from previous projects.
+c017M02N08 | Judgment on Opening Windows/Doors: The paper identifies unpredictable human behavior, such as opening windows or doors, as a key factor causing temperature-occupancy discrepancies and non-pattern behaviors.","A person performs or decides effectively but has not consciously identified, reflected upon, or expressed the knowledge being used."
+s001M01TK05,Practised Motor and Tool-Operation Skill,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c001M01N09 | Craftsmanship process of wooden construction: The wooden-construction craftsmanship process is recorded in sequence.
+c001M01N10 | Craftsmanship process of rammed earth technology: The rammed-earth craftsmanship process is recorded in sequence.
+c001M01N11 | Intangible cultural heritage skills: Intangible cultural heritage skills are at risk of interruption in inheritance.
+c003M01N01 | Energy-related behaviour: Occupant choices in using air conditioning, windows, and blinds can influence energy consumption and indoor comfort.
+c015M01N09 | digital fluency: The conclusion states that the approach fostered practical knowledge application and digital fluency.",Competence requiring learned bodily control and coordination during physical work or tool-mediated activity.
+s001M01TK06,Trained Sensory and Perceptual Recognition,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),12,"c002M02N07 | On-site hazard identification competency: The enhanced ability of construction workers to understand and recognize hazards is fundamental for a high safety performance on construction sites
+c002M02N09 | Heavy machinery operational situational awareness: A VR-based serious game was also used by Choi et al. to evaluate operators' situational awareness during forklift operations
+c002M02N12 | Machinery depth perception skills: The importance of using VR-HMDs for enhancing depth perception among novice heavy machinery operators was studied by Shringi et al.
+c004M02N06 | On-site Excavation Hazard Recognition Capability: Participants were instructed to walk to the predefined positions around the site and orally identify...each hazard
+c005M01N07 | safety awareness: The authors concluded that increased knowledge acquisition increased trainees’ hazard awareness.
+c005M01N08 | hazard identification skills: Post-training results showed significant improvement in trainees’ ability to identify hazards missed before training.
+c005M02N09 | Real-time hazard recognition ability: The trainees promptly started witnessing the hazards that were discussed in the AR session while showing significant improvements in the assessment of the associated risks. As the trainees approach one of the hazardous locations, the right Oculus joystick (Oculus Touch) begins to vibrate, revealing the hazard.
+c006M02N10 | Real-time hazard identification performance: Creating a safe environment is important... Based on this result, the development of assistive technology suitable for work is required.
+c008M01N07 | accident precursors: The framework extracts precursor information from narrative descriptions and uses it for classification and prevention knowledge.
+c012M01N02 | Reading excavation face responses: The Soil Saga externalized tacit heuristics such as reading excavation-face responses.
+c014M02N10 | Real-time hazard identification: Real-time monitoring... can prevent minor issues from developing into significant disruptions
+c016M02N06 | Hazard identification performance: identify the hazards of the case study from the design stage","A learned capacity to detect meaningful visual, auditory, tactile, spatial, or other sensory differences."
+s001M01TK07,"Embodied Posture, Balance, and Spatial Control",Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c002M02N10 | Fall protection behavioral responses: The walking pattern of construction workers was studied by Shi et al. using a VR-HMD to assess their fall risk behaviour before and after safety training
+c006M01N02 | working posture: The questionnaire records main working posture, while sensor posture information and video of the working posture are used in workload estimation.
+c006M02N09 | Safe work routines: Workers may not be aware of their weakening core and are more prone to developing low back pain (LBP) syndromes from overexertion at work. The proper use of Smartsuit can reduce burden and fatigue.
+c006M02N13 | Work posture adaptation skills: Zhao et al. are promoting Musculoskeletal Disorders (MSDs) prevention by estimating abnormal postures of workers using video and machine learning. It is important to measure the posture in this way.","Bodily competence involving posture, balance, orientation, movement, distance, positioning, or spatial awareness."
+s001M01TK08,Immediate Embodied Response to Changing Conditions,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c004M02N05 | Hands-on Excavation Hazard Mitigation Skills: Participants' practical performance was assessed in VR before and immediately after the training
+c012M01N07 | Intuitive safety practices: The site supervisor described quick decisions and intuitive safety practices that prevented injury.","Rapid bodily or neurophysiological response to hazards or changing conditions, often preceding complete conscious reasoning."
+s001M01TK09,Shared Professional Language and Contextual Meaning,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c009M01N10 | Bid preparation expertise: The paper emphasizes specialized staff experience and human expertise in interpreting project specifications and client expectations.
+c009M02N11 | Professional expertise: Professional expertise in interpreting complex project specifications","Understanding that depends on participation in a community sharing specialized terms, categories, expressions, narratives, and contextual meanings."
+s001M01TK10,Shared Professional Norms and Standards of Judgment,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),28,"c002M01N26 | safe work practices on construction sites: The authors state that knowledge acquired from customized virtual safety training can be translated into safe work practices on construction sites.
+c002M01N27 | expertise in construction safety training and implementation: The selected experts possessed experience in administering, designing, implementing, or researching construction safety training.
+c002M02N08 | Construction site safety risk perception: The role of virtual safety training in enhancing risk recognition and improving risk perceptions was studied by Namian et al.
+c004M01N11 | practical performance in dealing with excavation hazards: Participants orally identified, evaluated, and responded to hazards; their practical performance increased significantly after VR training.
+c004M02N09 | Excavation Emergency Response Action Knowledge: 3 stands for being able to identify, evaluate and respond
+c005M01N06 | experienced bridge-construction hazard knowledge: Safety managers with 14-to-20-plus years of experience were interviewed about hazards encountered in bridge construction.
+c005M01N09 | hazard assessment skills: Trainees showed improved assessment of risk severity, likelihood, and potential impact during VR and after training.
+c005M01N10 | risk mitigation skills: The discussion states that VR reinforced the how element and elevated trainees’ hazard assessment and risk-mitigation skills.
+c005M02N10 | Risk mitigation knowledge: The left-hand canvas was used to guide and direct the trainees toward ways to mitigate/prevent the potential consequences of the encountered hazards.
+c005M02N11 | Situational awareness in bridge construction: The trainees promptly started witnessing the hazards that were discussed in the AR session while showing significant improvements in the assessment of the associated risks in terms of their severity (likelihood of occurrence and potential impact on workers, time, cost, and quality).
+c007M02N04 | Safety Knowledge: KM in the safety of construction projects relies merely on supervisors' motivation and workers' self-regulation
+c008M01N05 | expert opinions: The paper states that production safety management traditionally relied on expert opinions.
+c008M01N06 | management personnel experience: The paper states that production safety management traditionally relied on management personnel experience.
+c008M01N09 | importance of risk factors: The authors identify the importance of risk factors as tacit knowledge discoverable from construction safety texts.
+c008M01N10 | potential safety hazards in specific scenarios: The authors identify potential safety hazards in specific scenarios as tacit knowledge discoverable from construction safety texts.
+c008M01N11 | importance of temporary support during construction: The phrase temporary support during construction may reveal tacit safety knowledge about the importance of such support.
+c008M01N12 | potential risks of soil stability issues: The phrase soil stability issues may reveal tacit safety knowledge about associated potential risks.
+c008M01N13 | impact of material fatigue on the safety of building structures: The phrase material fatigue may reveal tacit safety knowledge about its effect on building-structure safety.
+c009M01N11 | Context-aware judgment of nuanced project risks: Method statements require context-aware judgment and understanding of nuanced project risks.
+c009M02N10 | Context-aware judgment: Context-aware judgment and understanding of nuanced project risks
+c011M01N05 | Knowledge of correct equipment selection: Trainees are supposed to choose corresponding items for the gas detected in the confined space, using their prior knowledge. This represents the internalized ability to select correct equipment.
+c011M01N06 | Safe behavioral response to confined space hazards: Trainees need to choose the right equipment to protect themselves before entering space. Correct equipment selection represents safe behavioral response.
+c012M01N03 | Adaptive risk-mitigation practices: Analysis of the Soil Saga identified adaptive strategies and risk-mitigation practices.
+c012M01N06 | Real-time risk assessment: The Safety Savior account highlighted real-time risk assessment during a near-miss.
+c014M02N12 | Leadership intuition for resource allocation: Strong leadership assists in utilizing the resources, sustainably, and allocates them in the training and development
+c014M02N14 | Proactive planning capability: Participative leadership... ensures proactive planning to deal with disruptions and enhance resilience
+c016M02N07 | OHS management expertise: The team of professionals in charge of health and safety management on the project
+c017M02N29 | Improved Heating Control Strategy (Derived from IoT Data): The paper suggests that the IoT-derived insights, such as thermal patterns and savings potential, should lead to more informed and dynamic heating management. This represents the new tacit know-how for building operators.","Judgment grounded in collectively learned expectations about what is appropriate, acceptable, credible, safe, or legitimate."
+s001M01TK11,"Informal Coordination, Communication, and Escalation Know-how",Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c012M01N04 | Stakeholder coordination know-how: The Coordination Conundrum conveyed tacit insights about stakeholder management, proactive communication, and trust-building.
+c012M01N05 | Handover micro-routines: Stories exposed who contacts whom and when escalation is acceptable during handovers.
+c012M02N02 | Coordination norms and communication patterns: ""A project manager narrated challenges arising from subcontractor miscommunication... This narrative emphasized tacit insights into effective stakeholder management, proactive communication strategies, and the essential role of trust-building in facilitating smooth interdisciplinary collaboration""
+c014M02N13 | Participative decision-making skills: Participative leaders play a crucial role in aligning the stakeholders and ensuring the effective usage of communication channels
+c015M02N42 | Collaboration skills: I learn from my groupmates.","Unwritten conventions governing coordination, communication, negotiation, signalling, collaboration, contact, and escalation within a group."
+s001M01TK12,Organizational Culture and Unwritten Working Practices,Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),4,"c007M02N68 | Owner Tacit Knowledge: informal KM practices heavily influenced by company owners
+c009M02N13 | Organizational knowledge: Knowledge loss, particularly in firms with high staff turnover
+c012M01N10 | Organizational cultural knowledge: Engineers' stories conveyed values, traditions, teamwork, identity, and interpersonal dynamics.
+c016M01N01 | OHS knowledge: The paper states that lack of retention of OHS knowledge and lessons learned obstructs continuous improvement and that valuable information is lost as staff changes.","Knowledge embedded in organizational identity, traditions, routines, authority relations, and historically developed ways of working."
+s001M01TK13,AmbiguousTacit Knowledge(*),Tacit Knowledge,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),32,"c001M01N54 | Historical cognition of visitors: Visitors' historical cognition increased by 53% after the dynamic narrative intervention.
+c002M02N11 | Post-training safety knowledge retention capability: The effectiveness of training can be measured by understanding knowledge acquisition and retention among trainees
+c003M02N05 | Knowledge of thermal comfort: The recommendations provided in the training experience are useful for increase my knowledge of thermal comfort.
+c003M02N06 | Knowledge of energy consumption in summer: The recommendations provided in the training experience are useful for increase my knowledge of energy consumption in summer.
+c004M01N12 | self-efficacy about excavation health and safety: Self-efficacy measured participants’ belief in their capability to follow rules and handle hazardous excavation events.
+c006M01N01 | physical abilities and skills of each worker: The abstract states that one necessary finding is to know the physical abilities and skills of each worker.
+c006M01N03 | work status: Researchers attended each worker's job site and recorded their work status on video.
+c007M01N01 | expertise of senior staff in construction specialties: SMCCs draw upon the expertise of senior staff in construction specialties.
+c007M01N02 | expertise they have accumulated and applied to company projects: Foremen possess expertise accumulated and applied to company projects.
+c007M01N03 | previous project’s experiences: Acquiring knowledge from previous project’s experiences is KA6.
+c007M02N64 | Senior Staff Expertise: drawing upon the expertise of senior staff in construction specialties
+c007M02N65 | Foremen Expertise: the expertise they have accumulated and applied to company projects
+c008M01N08 | correlations between accident types: The authors identify correlations between accident types as tacit knowledge discoverable through deep learning.
+c010M01N01 | Visual learning preference: The questionnaire and Table I identify students categorized with a Visual preference.
+c010M01N02 | Auditory learning preference: The questionnaire and Table I identify students categorized with an Auditory preference.
+c010M01N03 | Kinesthetic learning preference: The questionnaire and Table I identify students categorized with a Kinesthetic preference.
+c010M01N04 | Read/Write learning preference: The questionnaire and Table I identify students categorized with a Read/Write preference.
+c010M01N05 | Visual + Kinesthetic learning preference: Table I reports two students with the combined Visual + Kinesthetic preference.
+c010M01N08 | visual attention: Eye-tracking data measure where and how students allocate visual attention during learning tasks.
+c010M01N09 | interaction patterns within the AR learning environment: The eye-tracking inputs can reveal users' cognition, including visual attention and interaction patterns within the AR learning environment.
+c010M02N01 | Learning preferences: The study presents models that can detect students' learning preferences.
+c010M02N22 | Visual learners: Visual Learners learn things using real-time visual tools such as graphs, charts, diagrams, and symbols
+c010M02N23 | Auditory learners: Auditory Learners prefer to understand through listening such as lectures, discussions, and tapes
+c010M02N24 | Read/Write learners: Read/write learners prefer information displayed in written form, such as lists and text
+c010M02N25 | Kinesthetic learners: The Tactile/Kinesthetic learners engage best with real-time experiences such as hands-on projects
+c014M02N11 | Problem-solving skills: The integration of AI in the knowledge management initiatives offers crucial opportunities to enhance the success and the resilience
+c015M01N05 | critical thinking skills: Participants stated that ABL promoted critical thinking more than traditional teaching.
+c015M01N06 | problem-solving skills: Participants reported improved problem-solving through researching and solving problems presented in class.
+c015M01N07 | practical competencies: The study assessed whether students demonstrated improved industry readiness and practical competencies.
+c015M01N08 | deeper understanding of complex concepts: Students preferred ABL partly because it improved their understanding of complex concepts.
+c015M02N39 | Leadership skills: These foster critical thinking and problem-solving skills, ensuring that students not only grasp theoretical concepts but also gain the necessary competencies for future employability and professional success.
+c017M01N01 | user behaviour and its interaction with the environment: The paper identifies IoT feedback as user behaviour and interaction with the environment.",Maps tacit knowledge that cannot be assigned to TK01-TK12 because the evidence does not identify a sufficiently specific domain or analytical level.
+s001M01TP01,Model-based Knowledge Representation and Simulation,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c002M02N27 | BIM-driven 3D visualization system: Building information models (BIM) and other 3D visualizations have gained traction with the broader acceptance of the Building 4.0 platform
+c003M01N09 | Immersive virtual model: The selected apartment living room was recreated as an immersive virtual model.
+c003M02N13 | Energy simulation process: Those 12 scenarios were simulated in the EnergyPlus software to determine electrical consumption...
+c007M02N29 | BIM/3D Modeling Practice: using BIM 3D modelling helps in presenting design ideas effectively
+c007M02N31 | Construction Simulation Practice: new generation engineers have become more familiar with construction simulation software (e.g., Navisworks, Revit and SketchUp)
+c016M01N16 | Ultra Safety Design (USD) methodology: The implemented methodology links input data, 4D simulation, PtD risk management, and knowledge management.
+c016M01N17 | 4D simulations: The Revit model was exported to Navisworks and synchronized with the schedule to simulate execution and identify hazards during design.
+c016M02N11 | 4D BIM simulation: the next step is to export the file to an .nwc format for 4D simulation in Navisworks
+c016M02N22 | USD methodology: the Ultra Safety Design (USD) methodology was created to address these challenges through integrated and complementary solutions","Uses BIM, 3D/4D models, engineering simulations, virtual models, and computational scenarios to represent assets, environments, construction processes, system behavior, and performance relationships."
+s001M01TP02,Spatial Knowledge Capture and Geospatial Reconstruction,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c001M01N22 | Graded-protection modeling workflow: Peng's Dwelling uses differentiated LOD precision and collaborative UAV and ground laser scanning to produce a high-precision 3D model.
+c001M01N51 | Drone oblique photogrammetry modeling: Aerial multi-angle images are stitched by ContextCapture to generate a textured 3D model.
+c001M01N52 | GIS-based spatial mapping: GIS aggregates scattered 3D models into spatial distribution maps.","Uses UAVs, photogrammetry, laser scanning, GIS, and surveying technologies to convert physical and spatial conditions into measurable digital representations."
+s001M01TP03,Situated Experiential Learning through Extended Reality,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),30,"c001M01N23 | Living Inheritance Mode: Historical archives and AR scene overlays reconstruct living scenes at Peng's Dwelling.
+c001M01N24 | Peng's Dwelling Digital Twin Platform: The platform restores historical scenes interactively across smartphones, AR glasses, and VR headsets.
+c001M01N55 | AR guides: Visitors using AR guides wait an average of 2.7 seconds before experiencing the service.
+c001M02N17 | AR-guided QR code animation tour system: QR code animation triggered by Unity3D engine and AR guided tour
+c002M01N33 | AR-based safety training: AR-based safety training used HoloLens 2 and interactive visualizations and was most effective for most sub-criteria.
+c002M01N34 | VR-based safety training: VR-based safety training used a Samsung Odyssey headset and virtual-space interaction.
+c002M02N24 | Immersive VR headset safety simulation: Samsung Odyssey VR headset was used for VR training
+c002M02N25 | Interactive AR headset safety overlay training: Microsoft Hololens 2 was used for AR training
+c002M02N26 | Unity3D XR safety training platform: The safety team prepared an immersive environment for demonstration of concepts using Unity3D to simulate the safety risks
+c003M01N11 | Developed immersive training tool: The work developed the virtual model, simulation feedback, and assessment instruments for an immersive training activity.
+c003M02N10 | Immersive training activity in a CAVE: ...a research activity with the goal of creating a training tool that will be utilized in a CAVE to optimize summer energy use in residential buildings was performed.
+c004M01N16 | immersive VR training system: The study designed, developed, deployed, and tested an immersive VR application for excavation safety and hazard identification.
+c004M01N17 | office-scenario VR tutorials: The office scenario provided tutorials for learning and practising interaction and navigation with Oculus Quest controllers.
+c004M02N17 | Immersive VR Excavation Safety Simulator: The training solution presented in this work was an immersive VR application deployed on Oculus Quest
+c004M02N18 | VR Introductory Interaction Tutorial: The office scenario offered tutorials for participants to learn and practice interaction and navigation
+c004M02N19 | VR Site A Instructional Training Scenario: The Site A scenario offered a site to assess pre-training practical performance and deliver actual training content
+c005M01N21 | integrated AR and VR-based bridge construction safety training program: The study designed and tested a safety training program integrating AR and VR for bridge-construction hazards.
+c005M01N22 | AR model: The camera-based AR model displayed hazard scenes on trainees’ smartphones after they scanned targets on the hazard sheet.
+c005M01N23 | VR model: The VR model replicated bridge-construction activities and allowed trainees to navigate, inspect, recognize, and assess hazards.
+c005M02N25 | AR-based hazard training model: The AR model was developed using Unity Game Engine (2019.4.17f1), Blinder, and Unity's animation assets and to be operated on the Android Operating System. The produced augmented reality (AR) model is a camera-based model that could be accessed using the trainees' smartphones.
+c005M02N26 | VR-based immersive safety training model: The VR model replicated bridge construction activities including excavation, concrete pouring, pier cap installation, and rigging and lifting activities. This model was created with Oculus Quest in mind and was built using the Unity game engine to create the virtual environment and imitate the site layout.
+c010M01N19 | mixed reality learning environment: Participants interacted with three implemented learning scenes through an AR head-mounted display.
+c010M01N20 | Explore Jobsite Scene: Participants observed construction activities and resources and identified risks and suitable sensing systems.
+c010M01N21 | Sensor Tutorial Scene: The scene offers a step-by-step guide for implementing five sensing technologies.
+c010M01N22 | Sensor Implementation Scene: Users implemented a selected sensor on a selected activity to mitigate an identified risk.
+c011M01N19 | DI VR training system: DI VR applies DI as the pedagogical solution. DI VR lets trainees follow the instructions of the system to complete operations and learn.
+c011M01N20 | PF VR training system: PF VR is a VR training system that is based on the PF pedagogical theory. PF VR provides a VR learning scenario where trainees are first presented with complex problems that they attempt to solve using their existing knowledge.
+c011M01N21 | Step-by-step instruction module: DI VR lets trainees follow the instructions of the system to complete operations and learn.
+c011M01N22 | Exploration stage: The prototyping of PF VR includes two phases: an Exploration stage and an Instruction stage. In the exploration stage, the system does not guide trainees.
+c011M01N23 | Instruction stage: The prototyping of PF VR includes two phases: an Exploration stage and an Instruction stage.","Uses VR, AR, MR, CAVE, or hybrid XR environments to support embodied rehearsal, contextual guidance, historical interpretation, hazard recognition, and situated knowledge transfer."
+s001M01TP04,Interactive Consequence Learning and Digital Feedback,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M01N25 | Dynamic narrative system: The implemented dynamic narrative system increased visitors' historical cognition by 53%.
+c001M01N56 | Multisensory heritage experience: The paper evaluates haptic and other sensory presentation and notes that visitors cannot feel shockwaves or smell scorched earth where devices are absent.
+c001M02N16 | Bombing scene dynamic narrative temporal-spatial subsystem: A dynamic narrative system... reconstructs historical scene such as bombing scene with temporal-space information under the standard of Digital Protection of Intangible Cultural Heritage (2023) [3]
+c003M01N10 | Graphical indicators: Graphical indicators represented energy costs, indoor temperature, and system states and were modified automatically according to user choices.
+c004M01N18 | Site A questioning-based VR training: At Site A, participants answered questions about critical hazards and received immediate textual feedback, photos, and videos.
+c011M01N24 | Accident animations: The feedback includes the animation of accidents due to the wrongly equipped items and a summary of the right and wrong selections.
+c011M01N25 | Feedback and summary module: The system provides feedback again, summarizing the properties of the gas and the selection of equipment.
+c011M02N40 | Accident consequences visualization: The animations are designed to provide realistic visual feedback on trainees' wrong selections of equipment.","Uses responsive simulations, animations, indicators, interfaces, or multisensory feedback to make relationships between actions, system states, and consequences experientially perceptible."
+s001M01TP05,Real-time Building Intelligence through IoT Monitoring,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c014M01N26 | AI environmental monitoring tools: AI tools track carbon footprints and emissions in real time.
+c017M01N14 | IoT-driven methodology: The methodology identifies buildings and locations, deploys sensors, acquires measurements, and analyzes results.
+c017M01N15 | IoT ecosystem: The ecosystem contains more than 200 geolocated wireless sensors and collects more than 1,000 measurements per hour.
+c017M01N16 | real-time monitoring of experimental measurements: The methodology is based on real-time monitoring of experimental measurements.
+c017M02N14 | IoT-Driven Methodology for SBE Analysis: The paper proposes an IoT-driven methodology: to deploy a sensor infrastructure to acquire experimental measurements; analyse data to convert them into context- aware information; and make knowledge- based decisions.
+c017M02N15 | Real-time Temperature Monitoring: The IoT ecosystem collects +1000 real-time measurements every hour, including key variables like temperature, CO2, and occupancy.","Uses connected sensors and real-time data streams to capture building performance, occupancy, environmental conditions, and operational states."
+s001M01TP06,Worker Activity and State Capture through Wearable Sensors and Cameras,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c006M01N15 | workload measurement using wearable sensors: The third initiative and Section 4 describe workload measurement using wearable sensors.
+c006M01N16 | posture measurement using a lumbar load measuring device: A lumbar load measuring device with multiple IMU sensors was used to measure posture and workload.
+c006M01N17 | video recording of work status using a wearable camera: Researchers recorded work status and the work situation on video using a wearable camera.
+c006M02N26 | Video recording of work posture: To collect workload data and determine the presence or absence of manual loads, we were present at each worker's worksite and recorded video footage of the work situation using a wearable camera (Fig. 4).
+c006M02N27 | Workload measurement system: Based on these processes, the workload is estimated by combining the posture information obtained from the wearable sensor and the hand weight obtained from the captured video.
+c010M01N23 | eye-tracking data collection: The study recorded fixation duration, fixation times, and head origin coordinates during HoloLens 2 interaction.","Uses IMUs, wearable sensors, eye trackers, cameras, and video analysis to record workers’ movement, posture, gaze, workload, task sequences, and situated work activities."
+s001M01TP07,Algorithmic Pattern Discovery and Prediction,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),16,"c008M01N23 | construction accident type text classification framework: The study constructed and tested a deep-learning NLP framework for automatic classification of construction accident reports.
+c008M01N24 | text cleaning: The implemented framework checks missing data, standardizes formats, and removes noise, faulty data, duplicates, punctuation, and numbers.
+c008M01N25 | phrase extraction: The study used phrase extraction based on mutual information and information entropy to segment text and identify informative phrases.
+c008M01N26 | Word2Vec pretraining: CBOW Word2Vec generated pretrained vectors for segmented text, and the resulting vectors were used in the CNN embedding layer.
+c008M01N27 | CNN text classification: A multilayer, multisize CNN learned text features and produced probabilities for five accident types.
+c008M02N19 | SVM model: three representative shallow learning comparison models, namely, SVM, NB, and LR
+c008M02N20 | Logistic regression model: three representative shallow learning comparison models, namely, SVM, NB, and LR
+c008M02N21 | Naive Bayes model: three representative shallow learning comparison models, namely, SVM, NB, and LR
+c008M02N23 | TextRank algorithm: the TextRank algorithm and the phrase extraction technology based on mutual information and information entropy were used to segment words and extract keywords
+c009M01N25 | Content Review and Extraction: The system accepts a PDF RFP and extracts predefined requirements for review and Bid/No-Bid decision-making.
+c009M02N30 | Requirements extraction system: The first section of the system is the requirements extraction process
+c010M01N24 | machine learning data classification: Models were trained on data from 19 participants after preference categorization and fixation extraction.
+c010M02N07 | Ensemble classifier: Ensemble emerged as the best classifier with an accuracy of 83.3%
+c010M02N08 | Neural Network classifier: The study adopted a wide array of machine learning classifiers, including Neural Networks (NN)
+c010M02N09 | KNN classifier: The study adopted a wide array of machine learning classifiers, including K-Nearest Neighbors (KNN)
+c014M01N24 | AI-enabled real-time monitoring: Project leadership uses AI monitoring followed by knowledge sharing and intervention.
+c014M01N25 | AI-enabled predictive analytics: Predictive analytics supports backup plans and predicts trends and outcomes.
+c017M01N17 | threshold algorithm: Heating timeslots follow a threshold algorithm comparing weather in previous days.","Uses AI, machine learning, NLP, statistical learning, or rule-based algorithms to derive classifications, forecasts, detected patterns, and predicted conditions from data."
+s001M01TP08,Generative Knowledge Synthesis and Content Production,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),5,"c009M01N24 | GenAI-based bid preparation system: The proof-of-concept system integrates extraction, semantic retrieval, generation, an interface, and human review.
+c009M01N27 | Proposal Generation (Methodology section): GPT-4o generates a new methodology section using extracted requirements and retrieved examples.
+c009M02N37 | LangChain orchestration framework: The pipeline was orchestrated through the LangChain framework
+c014M01N27 | Net Zero Cloud: Some CPEC projects use Net Zero Cloud to read data and generate reports.
+c014M02N32 | Generative AI tools: Generative AI tools, such as the 'net zero cloud,' was noted to be used","Uses generative AI to combine requirements, contextual data, and retrieved knowledge into new drafts, reports, explanations, summaries, or recommendations."
+s001M01TP09,Semantic Knowledge Structuring and Retrieval,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),6,"c001M01N21 | Interactive knowledge graph: An interactive knowledge graph is constructed to digitize the recording of craftsmanship process.
+c009M01N26 | Closest Bid Matching: The system retrieves and ranks the three historical proposals most similar to the extracted requirements.
+c009M02N33 | Vector database storage system: Embeddings were stored in a Pinecone vector database
+c009M02N34 | Semantic retrieval system: Semantic similarity searches using cosine similarity
+c012M02N39 | Metadata tagging: ""Narratives are systematically categorized based on project phases, professional domains, knowledge types, and contexts. Comprehensive metadata tagging significantly enhances retrieval""
+c012M02N40 | Advanced search functionalities: ""Advanced retrieval features, including AI-powered search and Natural Language Processing (NLP) technologies, enable efficient narrative discovery""","Uses knowledge graphs, semantic metadata, embeddings, vector databases, and meaning-based search to represent knowledge relationships and retrieve contextually relevant information."
+s001M01TP10,Database-supported Project Knowledge Archiving,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),16,"c001M01N20 | Sequential digital recording of craftsmanship process: Wooden-construction and rammed-earth craftsmanship processes are recorded in sequence.
+c007M01N35 | Storing knowledge using the data warehousing technology: Storing knowledge using data warehousing technology was evaluated as KS1.
+c007M01N36 | Storing lesson learned into the database: Storing lesson learned into the database was evaluated as KS6.
+c007M02N28 | Project Knowledge Database: Storing lesson learned into the database (KS6)
+c012M01N28 | Storytelling-based Knowledge Management System (SToKMS): SToKMS captured, structured, tagged, integrated, retrieved, and reused situated narratives.
+c012M01N29 | Digital KMS platform: The consultancy integrated its narrative initiative into an existing digital KMS that housed the narratives.
+c012M02N37 | Knowledge capture and transformation module: ""This phase involves systematically converting raw narrative data into structured knowledge assets""
+c012M02N38 | Knowledge integration module: ""Once narratives are structured and refined, integration into a digital Knowledge Management System ensures accessibility, retrievability, and scalability""
+c016M01N18 | OHS management application based on the PtD initiative and processes: An Excel application was developed for hazard identification, initial risk management, mitigation, residual-risk management, RFI, lessons learned, and search.
+c016M01N19 | Knowledge Management App: Phase 4 stores management information from previous phases and uses it for monitoring and control during project execution.
+c016M01N20 | relational table (SQL) data server: A relational SQL data server was developed on Microsoft Azure and populated with data from the Phase 3 Excel application.
+c016M01N21 | PowerApps application: An application was created in PowerApps to visualize earlier-phase information during construction for OHS monitoring and control.
+c016M02N10 | Microsoft Excel application (Phase 3): an application was developed in Microsoft Excel oriented to OHS management based on the PtD initiative
+c016M02N12 | SQL database on Microsoft Azure: a relational table (SQL) data server has been developed on the Microsoft Azure platform
+c016M02N13 | PowerApps OHS monitoring app: In PowerApps, an application was created to visualize the information of the previous phases during the execution of the project in order to monitor and control the OHS management
+c016M02N26 | Centralized database approach: implementation of a centralized database enables the retention and sharing of knowledge","Preserves and retrieves codified project records, narratives, lessons learned, safety information, and operational knowledge through databases, data warehouses, or conventional KMS repositories."
+s001M01TP11,Collaborative Knowledge Co-creation through Digital Platforms,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),7,"c001M01N26 | Red Journey co-creation module: A Red Journey co-creation module is constructed in a virtual village where users upload wartime-themed materials.
+c007M02N30 | SMCC Communication Tools Practice: Available and free communication tools (e.g., Zalo, Line and Viber) are also being developed rapidly and have become popular and easily accessible to SMCCs
+c014M01N22 | AI-enabled collaborative platforms: Collaborative platforms facilitate transfer, streamline recording, and improve communication.
+c014M01N23 | project news portal: Some projects use a portal through which all project news is shared.
+c014M02N30 | Collaborative knowledge-sharing platforms: The use of collaborative platforms also fosters better communication... ensuring that everyone is aligned and informed
+c014M02N33 | Stakeholder communication portal: Some of the projects have a portal where all the news is shared
+c015M01N25 | online collaboration: Students reported that online collaboration platforms enhanced their learning experience.","Uses portals, messaging systems, shared virtual environments, and online collaboration platforms to support peer exchange, collective interpretation, user contribution, and shared knowledge construction."
+s001M01TP12,Multimedia and Blended Knowledge Internalization,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),8,"c001M01N57 | Living Craft Display: For Peng's Traditional Dwelling, Table 5 lists Lightweight Modeling plus Living Craft Display and reports ICH skills inheritance coverage of 60%.
+c015M01N24 | Active Blended Learning: ABL combined face-to-face instruction with digital learning methods and was implemented with the CPM cohorts.
+c015M01N26 | interactive content: Students reported that interactive content enhanced their learning experience.
+c015M01N27 | YouTube scaffolding demonstration: A participant said that using YouTube to show scaffolding improved understanding.
+c015M02N10 | Case studies: Using real-world applications, interactive role-plays, industry cases, and technology-driven simulations
+c015M02N11 | Industry visits: We have industry visits, the industry educators come, and we do case studies.
+c015M02N12 | Role-plays: Using real-world applications, interactive role-plays, industry cases, and technology-driven simulations
+c015M02N13 | Peer-assisted learning: These studies support adopting structured ABL models such as flipped classrooms, peer-assisted learning, and interactive discussions to enhance student engagement.
+c015M02N14 | Interactive discussions: These studies support adopting structured ABL models such as flipped classrooms, peer-assisted learning, and interactive discussions to enhance student engagement.
+c015M02N15 | Flipped classroom: El Sadik and Al Abdulmonem (2021) further validate this approach by demonstrating how flipped classrooms significantly enhance higher-order cognitive outcomes.","Combines digital content, interactive media, online resources, and face-to-face or workplace activities to strengthen demonstration, participation, and knowledge internalization."
+s001M01TP13,Criteria-based Performance Evaluation and Ranking,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),13,"c002M01N35 | online questionnaire and IT2F–AHP analysis: Participant inputs were collected through an online questionnaire and analyzed using IT2F–AHP to evaluate knowledge retention.
+c002M02N43 | IT2F-AHP knowledge retention analysis: An IT2F-AHP was used for the interpretation of participant feedback on the ARCS questionnaire
+c004M01N19 | Site A pre-training practical assessment: Before training, participants identified, evaluated, and responded orally to seven hazards in Site A.
+c004M01N21 | Google Forms safety knowledge test: A ten-question knowledge test was administered through Google Forms before, immediately after, and four weeks after training.
+c004M02N20 | VR Site A Baseline Practical Assessment: Site A offered an excavation site where participants were exposed to seven types of hazards. Participants were instructed to...identify, evaluate and respond
+c004M02N21 | VR Site B Post-Training Practical Assessment: The Site B scenario was a different excavation site that included similar hazards found in Site A, which allowed for assessing post-training practical performance
+c005M02N28 | Pre-training hazard identification assessment: The test was divided into two sections: a pre-training assessment of trainees' knowledge and a post-training assessment of trainees' increment in knowledge. The same test was administered to all the trainees before and after the training.
+c006M01N18 | dedicated web application: A dedicated web application was developed to streamline questionnaires and tabulate and analyse the data.
+c006M02N25 | Physical performance web application: A dedicated web application (Fig.6) has been developed separately for the purpose of streamlining questionnaires and is used to tabulate and analyse the data.
+c007M02N59 | SMCC KU Practices: KU criterion ranked first with the highest priority vector value
+c007M02N60 | SMCC KD Practices: KD had the second-highest priority vector value
+c007M02N61 | SMCC KS Practices: KS consists of six sub-criteria
+c008M01N28 | model testing and performance evaluation: The CNN was tested against SVM, logistic regression, and naive Bayes using precision, recall, F1-score, ROC, and AUC.","Measures, compares, scores, or ranks learners, models, interventions, and alternatives using predefined criteria, indicators, benchmarks, or performance metrics."
+s001M01TP14,Ambiguous Technology-enable Practice,Technology-enable Practice,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),11,"c003M02N11 | Pre-experimental survey: A pre- experimental survey with sixty- six questions to be completed before the beginning of training session was developed...
+c006M02N24 | Smartsuit fitting sessions: We began by holding multiple passive assistive suit fitting events to help many people understand the benefits of assistive suits. We visited actual work sites, allowed workers to experience the assistive suits, and lent them to those who showed interest.
+c007M01N37 | Disseminating knowledge within the company using updated technology: Disseminating knowledge using updated technology was evaluated as KD4.
+c009M02N36 | Streamlit graphical interface: A lightweight graphical interface was built with Streamlit
+c010M01N17 | learning preferences survey through Qualtrics: The methodology overview specifies demographic and learning-preference surveys through Qualtrics.
+c012M02N36 | Narrative elicitation module: ""Knowledge elicitation forms the foundation... primarily focused on identifying and extracting experiential insights from knowledge holders""
+c012M02N41 | Knowledge dissemination module: ""To ensure captured knowledge translates effectively into organizational performance improvements, systematic dissemination and proactive utilization strategies are crucial""
+c014M01N21 | AI-based knowledge management initiatives: The case reports implementation and underutilization of AI-based KM initiatives.
+c014M02N34 | Real-time monitoring systems: Real-time monitoring, and then knowledge is shared as this immediate intervention can prevent minor issues
+c014M02N36 | Training sessions and workshops: Regular training sessions and workshops supported by the leadership keep everyone in the loop
+c017M02N16 | Data-to-Knowledge Analysis Process: The methodology includes an analysis of results step, which enables multidisciplinary studies and follows international directives to convert data into actionable insights.",Maps Technology-enable practices that cannot be assigned to TP01-TP13 because the evidence does not identify a sufficiently specific domain or analytical level.

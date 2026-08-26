@@ -9,7 +9,7 @@ URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "MyNewPass123!")
 CSV_DIR = "../../data/graph/case_study/case_6_v_ds"
 
-def read_nodes_from_csv(endswith='nodes.csv', path_dir=CSV_DIR):
+def read_nodes_from_csv(endswith='nodes.csv', path_dir=CSV_DIR, excluded_properties = []):
     nodes = []
     for root, dirs, files in os.walk(path_dir):
         for file in files:
@@ -26,7 +26,8 @@ def read_nodes_from_csv(endswith='nodes.csv', path_dir=CSV_DIR):
                 props={}
                 Label = re.sub(r'[^a-zA-Z]', '', item['category'])
                 for prop_title in item.keys():
-                    if item[prop_title] != 'nan':
+                    if (item[prop_title] != 'nan'
+                            and prop_title not in excluded_properties):
                         props[prop_title] = item[prop_title]
 
                 nodes.append({

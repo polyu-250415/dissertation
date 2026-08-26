@@ -105,28 +105,31 @@ class AlignRwN:
 
     def screen_nodes(self, case_ids):
         for case_id in case_ids:
-            vq_nodes_file = f"{self.vq_path}/{case_id}_nodes_vq_evaluation.csv"
-            vq_edges_file = f"{self.vq_path}/{case_id}_edges_vq_evaluation.csv"
+            try:
+                vq_nodes_file = f"{self.vq_path}/{case_id}_nodes_vq_evaluation.csv"
+                vq_edges_file = f"{self.vq_path}/{case_id}_edges_vq_evaluation.csv"
 
-            aligned_nodes_file = f"{self.vq_path}/{case_id}_nodes_aligned.csv"
-            aligned_edges_file = f"{self.vq_path}/{case_id}_edges_aligned.csv"
+                aligned_nodes_file = f"{self.vq_path}/{case_id}_nodes_aligned.csv"
+                aligned_edges_file = f"{self.vq_path}/{case_id}_edges_aligned.csv"
 
-            nodes_file = f"{self.unit_path}/{case_id}_nodes.csv"
-            relations_file = f"{self.unit_path}/{case_id}_edges.csv"
+                nodes_file = f"{self.unit_path}/{case_id}_nodes.csv"
+                relations_file = f"{self.unit_path}/{case_id}_edges.csv"
 
-            filter_nodes_file = f"{self.ea_path}/{case_id}_nodes.csv"
-            filter_edges_file = f"{self.ea_path}/{case_id}_edges.csv"
+                filter_nodes_file = f"{self.ea_path}/{case_id}_nodes.csv"
+                filter_edges_file = f"{self.ea_path}/{case_id}_edges.csv"
 
-            self.align_edges_with_nodes(
-                nodes_csv_path=vq_nodes_file,
-                relations_csv_path=vq_edges_file,
-                output_nodes_path=aligned_nodes_file,
-                output_edges_path=aligned_edges_file,
-                unite_nodes_csv_path=nodes_file,
-                unite_edges_csv_path=relations_file,
-                filter_nodes_path=filter_nodes_file,
-                filter_edges_path=filter_edges_file
-            )
+                self.align_edges_with_nodes(
+                    nodes_csv_path=vq_nodes_file,
+                    relations_csv_path=vq_edges_file,
+                    output_nodes_path=aligned_nodes_file,
+                    output_edges_path=aligned_edges_file,
+                    unite_nodes_csv_path=nodes_file,
+                    unite_edges_csv_path=relations_file,
+                    filter_nodes_path=filter_nodes_file,
+                    filter_edges_path=filter_edges_file
+                )
+            except Exception as e:
+                print(e)
 
 
 if __name__ == '__main__':

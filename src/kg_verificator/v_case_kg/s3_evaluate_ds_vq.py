@@ -1,5 +1,5 @@
 from src.utils.rag_tool.kg_rag_auditor import KGRAGAuditor
-import pandas as pd, json
+import pandas as pd, json, os
 from src.utils.rag_tool.llm_rag_auditor import RAGAuditor
 from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_case
 
@@ -24,34 +24,36 @@ class EvaluateDSVQ:
             self.rag_auditor.ingest(self.pdf_path + "/" +case_id,
                                     custom_meta=custom_meta_data)
 
-    def query_with_retry(self,question, try_times=2):
-
+    def query_with_retry(self,question, cypher_stmt='', try_times=1):
+        rsp = {}
         for i in range(try_times):
             try:
-                rsp = self.kg_rag_auditor.query(question)
-                rsp_j =  json.loads(rsp)
-                if len(rsp_j['evidence']) <= 2:
-                    continue
-                return rsp_j
+                rsp = self.kg_rag_auditor.query(question, cypher_stmt=cypher_stmt)
+                return rsp
             except Exception as e:
                 print(e)
-                return {"answer": "Exception", "evidence": ""}
 
-        return {"answer": "Not Mention", "evidence": ""}
+        if isinstance(rsp, dict) and "cypher" in rsp.keys():
+            return {"answer": "Exception", "evidence": ""}
+        else:
+            return {"answer": "Exception", "evidence": ""}
 
     def do_ds_rag(self, case_id):
 
         # build KG
-        create_kg_by_case(case_id, path_dir = self.v_ds_path)
+        create_kg_by_case(case_id, path_dir = self.v_ds_path, excluded_properties=['case_title', 'evidence_location','evidence_label', 'object_definition'])
         self.kg_rag_auditor.refresh_kg_schema()
+
+        if not os.path.exists(f"{self.v_ds_path}/{case_id}_nodes.csv"):
+            return
 
         # build VQ
         df_question = pd.read_excel(self.v_ds_template, sheet_name="downstream_task").dropna(how="all")
         answer_list = []
         evidence_list = []
-        for question in df_question['Question']:
-            print(f"Question from {case_id}: {question}")
-            rsp = self.query_with_retry(question)
+        for index, row in df_question.iterrows():
+            print(f"Question from {case_id}: {row['Question']}")
+            rsp = self.query_with_retry(row['Question'],row['Cypher'])
             answer_list.append(rsp['answer'])
             evidence_list.append(rsp['evidence'])
 
@@ -61,9 +63,42 @@ class EvaluateDSVQ:
         output_file = f"{self.v_ds_path}/{case_id}_ds_rag.csv"
         df_question.to_csv(output_file, index=False)
 
-    def do_all_ds_rag(self, case_ids):
+    def redo_ds_rag(self, case_id):
+        """
+        重跑Evidence为空的问题，原地更新csv
+        """
+        output_file = f"{self.v_ds_path}/{case_id}_ds_rag.csv"
+        df = pd.read_csv(output_file)
+
+        # 识别空证据：NaN / "" / "   "
+        mask_empty = df["Evidence"].isna() | (df["Evidence"].astype(str).str.strip() == "")
+        rerun_subset = df[mask_empty]
+
+        if rerun_subset.shape[0] == 0:
+            print(f"[{case_id}] 无Evidence为空记录，跳过redo")
+            return
+
+        print(f"[{case_id}] 待重跑条数：{rerun_subset.shape[0]}")
+
+        for index, row in rerun_subset.iterrows():
+            print(f"Question from {case_id}: {row['Question']}")
+            rsp = self.query_with_retry(row['Question'], row['Cypher'])
+            df.at[index, "Answer"] = rsp["answer"]
+            df.at[index, "Evidence"] = rsp["evidence"]
+
+        # 覆盖原文件
+        df.to_csv(output_file, index=False)
+        print(f"[{case_id}] redo完成，文件已更新：{output_file}")
+
+    def do_all_ds_rag(self, case_ids, redo_flag =False):
         for case_id in case_ids:
-            self.do_ds_rag(case_id)
+            try:
+                if not redo_flag:
+                    self.do_ds_rag(case_id)
+                else:
+                    self.redo_ds_rag(case_id)
+            except Exception as e:
+                print(e)
 
     @staticmethod
     def convert_to_valid_int(resp_list):
@@ -105,7 +140,11 @@ class EvaluateDSVQ:
 if __name__ == '__main__':
     obj = EvaluateDSVQ()
 
-    case_ids = ['c101', 'c102', 'c103', 'c104', 'c105', 'c106', 'c107','c108', 'c109','c201', 'c202', 'c203', 'c204',
-                'c205','c206','c207','c208','c209','c210','c211']
-    obj.do_all_ds_rag(case_ids)
-    #obj.evaluate_all_ds_rag(case_ids)
+    sector_ids = {"s001": ['c001','c002','c003','c004','c005','c006','c007','c008','c009','c010','c011','c012','c013','c014','c015','c016','c017'],
+        "s002": ['c101', 'c102', 'c103', 'c104', 'c105', 'c106', 'c107', 'c108', 'c109','c110','c111', 'c112', 'c113', 'c114', 'c115', 'c116', 'c117', 'c118', 'c119','c120','c121', 'c122', 'c123', 'c124', 'c125', 'c126'],
+        "s003": ['c201', 'c202', 'c203', 'c204', 'c205', 'c206', 'c207', 'c208', 'c209', 'c210', 'c211','c212','c213', 'c214', 'c215', 'c216', 'c217', 'c218', 'c219', 'c220', 'c221','c222','c223', 'c224', 'c225', 'c226', 'c227']
+                  }
+    sector_id = 's003'
+    obj.do_all_ds_rag(sector_ids[sector_id], redo_flag=False)
+    for time in range(1):
+        obj.do_all_ds_rag(sector_ids[sector_id], redo_flag=True)

@@ -6,64 +6,45 @@ Input Data Format
 You will be processing a CSV dataset containing research nodes. The input columns are:
 * node_id: Unique identifier (e.g., c001M01N01)
 * node_name: The specific entity, tool, practice, human agent, or constraint
-* category: One of 9 high-level structural categories
+* category: One of 10 high-level structural categories
 * evidence_label: The type of evidence (e.g., E for explicit, I for implicit)
 * case_title: The source of the node
 * evidence_statement: The specific textual evidence of the node from literature
 * object_definition: The functional or operational definition of the node
 * evidence_location: Section or page number where the evidence resides
 
-High-Level Categories
-1. Explicit Knowledge
-2. Tacit Knowledge
-3. Knowledge Holder
-4. Traditional Human-central Practice
-5. Technology-enable Practice
-6. Digital Technology
-7. Organizational Dependency
-8. Environmental Dependency
-9. Limitation
-
 CRITICAL CLASSIFICATION METHODOLOGY REMINDER
 When mapping data rows to sub-categories, you must NOT rely solely on the text in the node_name column. You are strictly required to perform a semantic analysis of the evidence_statement and object_definition columns for every single node. Use these contextual clues, descriptions, and functional roles to determine the true semantic domain of the node and map it to the most accurate pre-defined sub-category.
 
-Taxonomy Guidelines & Tasks
-Task 1: General Category Sub-Taxonomy (Categories 1, 3, 7, 8)
-For all categories NOT explicitly restricted or pre-defined in Tasks 2 below, you must:
-1. Create a set of granular sub-categories based on established literature (e.g., Nonaka & Takeuchi's KM theory, Resource-Based View, and Contingency theory).
-2. CRITICAL CARDINALITY CONSTRAINT: Every high-level category in this task must contain at least 6, but strictly LESS THAN 16 active sub-categories.
-3. Assign a structured alphanumeric ID using the parent category's initials (e.g., Explicit Knowledge -> EK01, EK02).
-
-Task 2: Traditional Human-central Practice
-When expanding this category, you must map nodes into the following sub-categories:
-1. 'Job Shadowing'(Code : THR01): Observation-based learning where an apprentice physically accompanies an expert on-site to absorb somatic routines and uncodified field maneuvers. --e.g.,On-site observation of senior technicians’ unwritten calibration gestures, subtle fault judgment habits and emergency operation rhythms
-2. 'Job Rotation'(Code : THR02): Systematic movement of personnel across various operational roles to build cross-functional cognitive mental models and a holistic understanding of project risks. --e.g.,Cross-role experience accumulation of cross-department collaboration logic, multi-link risk perception and holistic project operational judgment
-3. 'Deliberate Practice'(Code : THR03): Highly structured, targeted physical or mental repetition aimed at mastering specific operational proficiencies or self-study protocols. --e.g.,Structured repeated training to form embodied somatic memory and instant error-correction intuition for high-precision welding scenarios
-4. 'Knowledge Cafés'(Code : THR04): Open, semi-structured conversational forums designed to cross-pollinate perspectives, unearth group memory, and foster collaborative dialogue. --e.g.,Open sharing of unrecorded site adaptation experience, implicit team tacit understanding and scenario-based problem-solving insights
-5. 'Knowledge Harvesting Workshops'(Code : THR05): Structured elicitation and interview sessions aimed at extracting, decomposing, and documenting an expert's deep decision rules before they exit the firm. --e.g.,Scenario-based extraction of senior experts’ implicit hazard screening logic, fuzzy risk criteria and unwritten site management experience
-6. 'Critical Incident Technique'(Code : THR06): Retrospective review focusing on human behavior during significant, exceptional, or hazardous project events to capture live situational problem-solving. --e.g.,Retrospective summary of on-site emergency instant judgment, adaptive operation and collaborative disposal tacit experience
-7. 'Mentoring'(Code : THR07): Long-term master-apprentice relationships focused on delivering contextual/clinical know-how, safety socialization, and expert professional judgment. --e.g.,Long-term inheritance of implicit site safety norms, scenario-based professional judgment and industry risk intuition via one-on-one guidance
-8. 'Storytelling'(Code : THR08): Use of oral or written narratives to organically pass down historical safety lessons, organizational culture, and contextual site knowledge. --e.g.,Oral inheritance of historical safety cases, hidden danger handling experience and implicit organizational risk prevention cognition
-9. 'After-Action Reviews'(Code : THR09): Immediate, highly structured post-event team debriefs evaluating what happened, why it happened, and how operational workflows can be improved. --e.g.,Post-project summary of implicit team cooperation tacit understanding, operational optimization details and scenario adaptive experience
-10. 'Communities of Practice'(Code : THR10): Self-organizing social networks of practitioners who collaborate regularly to solve shared technical challenges and maintain institutional memory. --e.g.,Regular sharing of personalized uncodified technical skills and co-maintenance of institutional project practice memory
+Taxonomy Guidelines
+When expanding the category–Traditional Human-central Practice, you must map nodes into the following sub-categories:
+1. 'Job Shadowing'(Code : THR01): Observation-based learning in which a learner physically accompanies an experienced practitioner on-site to absorb embodied routines, contextual judgment, and uncodified field maneuvers. --e.g.,A junior technician accompanies a senior technician and observes unwritten calibration gestures, subtle fault-diagnosis habits, and emergency operating rhythms.
+2. 'Job Rotation'(Code : THR02): Systematic movement of personnel across operational roles or functions to develop cross-functional mental models, coordination awareness, and holistic understanding of project risks. --e.g.,An engineer rotates through design, procurement, site supervision, and safety roles to learn cross-department coordination logic and multi-stage risk dependencies.
+3. 'Deliberate Practice'(Code : THR03): Highly structured and targeted physical or mental repetition, including defined self-study protocols, undertaken to master a specific operational proficiency through feedback and correction. --e.g.,A welder repeatedly performs a high-precision joint under supervised feedback until embodied control and immediate error-correction become reliable.
+4. 'Knowledge Cafés'(Code : THR04): Open, semi-structured conversational forums in which participants exchange perspectives, surface group memory, and collaboratively interpret shared problems. --e.g.,Site personnel hold an open discussion to exchange unrecorded adaptation experience, implicit team understandings, and alternative solutions to recurring field problems.
+5. 'Knowledge Harvesting Workshops'(Code : THR05): Structured elicitation sessions designed to extract, decompose, clarify, and document an expert's tacit decision rules, especially for organizational retention or succession. --e.g.,Before retirement, a senior safety manager is interviewed through scenarios to articulate implicit hazard-screening logic, fuzzy risk thresholds, and unwritten management practices.
+6. 'Critical Incident Technique'(Code : THR06): Retrospective elicitation focused on human behavior, decisions, and causal conditions during a specific significant, exceptional, or hazardous event. --e.g.,A facilitator interviews participants about a pivotal site emergency to reconstruct instant judgments, adaptive actions, coordination behavior, and causal factors.
+7. 'Mentoring'(Code : THR07): A sustained master-apprentice or expert-novice relationship that transfers contextual know-how, professional judgment, safety norms, and occupational identity through personalized guidance. --e.g.,An experienced site manager provides long-term one-to-one guidance that develops a junior colleague's safety judgment, contextual decision-making, and industry risk intuition.
+8. 'Storytelling'(Code : THR08): Use of oral, written, or facilitated narratives to transmit experiential knowledge, historical lessons, organizational culture, and context-rich understanding. --e.g.,A retiring engineer recounts a difficult excavation incident to convey hidden-warning signs, improvised responses, and the organizational reasoning behind later safety rules.
+9. 'After-Action Reviews'(Code : THR09): A timely and structured post-event or post-milestone team debrief that examines what occurred, why it occurred, what was learned, and how future action should change. --e.g.,Immediately after a project milestone, the team compares intended and actual outcomes, identifies coordination failures, and records agreed workflow improvements.
+10. 'Communities of Practice'(Code : THR10): A continuing, practitioner-led social network whose members regularly solve shared problems, refine practice, and maintain collective or institutional memory. --e.g.,A recurring network of construction planners exchanges personalized scheduling techniques and jointly maintains a repository of lessons from completed projects.
+11. 'Instructor-Led Training and Briefings'(Code : THR11): Instructor-directed transfer of established knowledge through lectures, presentations, seminars, demonstrations, inductions, or workplace briefings, without the individualized continuity of mentoring. --e.g.,A safety officer delivers a classroom lecture and on-site toolbox briefing explaining newly issued excavation rules and expected work procedures.
+12. 'Codified-Material Learning'(Code : THR12): Human learning or knowledge dissemination primarily mediated by prepared codified materials such as manuals, textbooks, leaflets, instructional videos, photographs, or static presentations. --e.g.,Workers independently study a safety manual and instructional video containing prescribed hazard-control procedures.
+13. 'Experiential and On-the-Job Learning'(Code : THR13): Learning through direct participation in authentic work, site exposure, applied projects, or practical experience when the evidence does not establish job shadowing, rotation, mentoring, or deliberate repetition. --e.g.,Students visit an active construction project and develop practical understanding by examining real work conditions and participating in an applied site task.
+14. 'Collaborative Group Learning'(Code : THR14): Facilitated, episodic group exercises, meetings, or workshops in which participants learn jointly, but which lack the open knowledge-café format or the continuing identity and self-organization of a community of practice. --e.g.,A project team completes a facilitated classroom exercise in which members jointly analyze a construction case and compare proposed responses.
+15. 'Manual Knowledge Documentation and Codification'(Code : THR15): Human preparation, recording, annotation, organization, classification, cross-referencing, or storage of explicit knowledge without automated knowledge-processing support. --e.g.,A research team manually annotates proposal requirements, classifies the resulting records, and stores the validated documentation for later reuse.
+16. 'Human Expert Review and Validation'(Code : THR16): Human expert evaluation, checking, consensus formation, prioritization, or iterative refinement of a knowledge product or decision; the principal purpose is validation rather than tacit-knowledge extraction. --e.g.,A panel of experienced safety managers reviews a hazard register, evaluates probability and impact, resolves disagreements, and validates the final priorities.
+17. 'Ambiguous Traditional Human-central Practice'(Code : THR17): Maps Traditional Human-central Practices that cannot be assigned to THR01-THR18 because the evidence does not identify a sufficiently specific domain or analytical level. 
 
 
 Strategic Reasoning Process
 Before generating the final output, execute and display your step-by-step reasoning under a "Strategic Reasoning Process" heading following these exact phases:
 Phase 1: Theoretical Foundation & Base Taxonomy Derivation
-* Document the academic literature and KM frameworks used to formalize the sub-taxonomies for the general categories (Categories 1, 3,8 9).
-* Explicitly define the semantic boundaries, operational scope, and unique alphanumeric identifier prefix (e.g., EX, KH, TP, ED) for every newly created sub-category.
-Phase 2: Structural Boundary & Cardinality Audit
-* Enumerate and count the exact number of sub-categories active within each of the 9 high-level parent categories.
-* Cross-reference these counts against the mathematical constraints established in the guidelines:
-* Provide an explicit "Pass/Fail" statement confirming structural compliance before mapping data rows.
-Phase 3: Edge-Case Resolution & Intersection Handling
-* Identify any ambiguous nodes where the node_name could be misleading (e.g., human constraints vs. systemic limitations), and detail how you examined the evidence_statement and object_definition to resolve the classification.
-* Formulate and explicitly state a deterministic domain-tiebreaking rule based on construction informatics principles to cleanly assign the node to a single, optimal sub-category without ambiguity.
-Phase 4: Alphanumeric Mapping & Code-String Synthesis
+* Understand each subcategory defined in the ***Taxonomy Guidelines*** and ensure that the coding is carried out in accordance with the unified rules.
+Phase 2: Alphanumeric Mapping & Code-String Synthesis
 * Synthesize the final structural combinations by verifying that each mapped node's parent category directly matches the alphabetical prefix of its assigned sub_category_id.
 * Ensure that the text string in the final sub_category column perfectly corresponds to the formalized taxonomy definitions from Phase 1 & Tasks 2-6, removing any syntactic drift or formatting discrepancies.
-Phase 5: CSV Integrity Pre-Check:
+Phase 3: CSV Integrity Pre-Check:
 * Ensure that all rows have been processed in accordance with the unified standard.
 * Verify that the total number of output rows matches the input file exactly.
 * Verify that all fields are cleanly enclosed in double quotes to handle internal commas safely.
@@ -72,3 +53,4 @@ Output Format
 Following the CoT log, output the final result as a cleanly formatted CSV file.
 * The output data rows must include the two newly appended columns: sub_category_id and sub_category.
 * The delimiter of CSV files should be a comma (,), with fields enclosed in double quotes to safely handle any commas inside node names or statements.
+    

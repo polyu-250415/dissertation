@@ -11,7 +11,7 @@ class AssembleVQ(object):
         self.assemble_relation_template = {
             "be_documented_partially_by": "is documented partially by",
             "translate_into":"translate into",
-            "be_held_by": "is held by",
+            "be_shared_by": "is shared by",
             "be_absorbed_by": "is absorbed by",
             "be_captured_by": "is captured by",
             "be_transferred_by": "is transferred by",
@@ -25,7 +25,8 @@ class AssembleVQ(object):
             "mitigate": "mitigate",
             "complement": "complement",
             "cannot_fully_replace": "cannot fully replace",
-            "be_difficult_to_capture_due_to": "is difficult to capture due to"
+            "be_difficult_to_capture_due_to": "is difficult to capture due to",
+            "be_composed_of": "is composed of",
         }
 
     @staticmethod
@@ -39,51 +40,53 @@ class AssembleVQ(object):
             file = f'{self.kg_rag_path}{case_id}_nodes.csv'
 
             output_path = f'{self.kg_rag_path}{case_id}_nodes_vq.csv'
-            df = pd.read_csv(file)
+            try:
+                df = pd.read_csv(file)
+                # Store generated questions
+                questions = []
 
-            # Store generated questions
-            questions = []
+                # Iterate through each row
+                for idx, row in df.iterrows():
+                    name = str(row['node_name']).strip()
+                    category = str(row['category']).strip()
 
-            # Iterate through each row
-            for idx, row in df.iterrows():
-                name = str(row['node_name']).strip()
-                category = str(row['category']).strip()
+                    evidence_statement = row['evidence_statement']
+                    questions.append({
+                        'node_id': row['node_id'],
+                        'group': idx,
+                        'sample_type': 'evidence',
+                        'question': evidence_statement,
+                        'verification_label': 1
 
-                evidence_statement = row['evidence_statement']
-                questions.append({
-                    'node_id': row['node_id'],
-                    'group': idx,
-                    'sample_type': 'evidence',
-                    'question': evidence_statement,
-                    'verification_label': 1
+                    })
 
-                })
+                    positive_sample = f"{name} has been discussed."
+                    questions.append({
+                        'node_id': row['node_id'],
+                        'group': idx,
+                        'sample_type': 'assemble',
+                        'question': positive_sample,
+                        'verification_label': 1
 
-                positive_sample = f"{name} has been discussed."
-                questions.append({
-                    'node_id': row['node_id'],
-                    'group': idx,
-                    'sample_type': 'assemble',
-                    'question': positive_sample,
-                    'verification_label': 1
+                    })
 
-                })
+                    """fake_category = self.get_random_except(category_list, category)
+                    negative_sample = f"'{name}' is an instance of '{fake_category}'"
+                    questions.append({
+                        'node_id': row['node_id'],
+                        'group': idx,
+                        'sample_type': 'assemble',
+                        'question': negative_sample,
+                        'verification_label': 0
+                    })"""
 
-                """fake_category = self.get_random_except(category_list, category)
-                negative_sample = f"'{name}' is an instance of '{fake_category}'"
-                questions.append({
-                    'node_id': row['node_id'],
-                    'group': idx,
-                    'sample_type': 'assemble',
-                    'question': negative_sample,
-                    'verification_label': 0
-                })"""
-
-            # Save to output CSV if path is provided
-            if output_path:
-                result_df = pd.DataFrame(questions)
-                result_df.to_csv(output_path, index=False)
-                print(f"\n✓ Generated {len(questions)} questions. Saved to: {output_path}")
+                # Save to output CSV if path is provided
+                if output_path:
+                    result_df = pd.DataFrame(questions)
+                    result_df.to_csv(output_path, index=False)
+                    print(f"\n✓ Generated {len(questions)} questions. Saved to: {output_path}")
+            except Exception as e:
+                print(e)
 
 
     def choose_entity_samples(self):
@@ -138,7 +141,7 @@ class AssembleVQ(object):
 
             # ---------------- 1. Load Source & Build ID->Name Mapping ----------------
             if not os.path.exists(source_csv):
-                raise FileNotFoundError(f"Source CSV not found: {source_csv}")
+                continue
 
             src = pd.read_csv(source_csv)
 

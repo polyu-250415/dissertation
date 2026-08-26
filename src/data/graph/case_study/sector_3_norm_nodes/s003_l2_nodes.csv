@@ -1,0 +1,970 @@
+node_id,node_name,category,evidence_label,case_title,evidence_count,evidence_statement,definition
+s003M01ED01,"Political, Regulatory & Jurisdictional Environment",Environmental Dependency,G,SIC 20-39 - Manufacturing,6,"c210M02N36 | China NHC ethical research regulations: All procedures complied with the Ethical Review of Biomedical Research Involving Human Beings issued by the China's National Health Commission
+c213M01N38 | healthcare privacy regulations: Healthcare collaboration must protect patient privacy and operate within privacy regulations.
+c214M02N42 | Annual radiation exposure limits: Due to strict confidentiality requirements and annual radiation exposure limits, on-site training opportunities are restricted
+c227M01N24 | Swedish legislation mandating the wait time guarantee: Swedish legislation mandated patients' right to assessment and intervention within specified time limits.
+c227M02N35 | Swedish Health and Medical Care Act: Given that existing regulation mandated that care providers keep wait times below certain levels, involved actors were expected to be motivated to monitor the wait times through the DT.
+c227M02N36 | Stockholm Regional Council governance policies: The case concerned the (non)use of the digital wait time registry (hereafter 'the Registry') implemented in the Stockholm Region by the Stockholm Regional Council in Sweden.","Maps legislation, statutory codes, public policy, government standards, regulatory tariffs, political instability, geopolitical conditions, and jurisdictional requirements imposed by external authorities."
+s003M01ED02,"Economic, Market & Industry Environment",Environmental Dependency,G,SIC 20-39 - Manufacturing,2,"c214M02N43 | Workforce personnel turnover: These challenges are further compounded by personnel turnover, with the constant influx of new hires and departure of experienced workers creating gaps in knowledge transfer
+c218M02N53 | Heavy clinical workload time constraints: more time to be able to fulfill the activities in a reasonable time, since we are all already overwhelmed with work","Maps macroeconomic conditions, market fluctuations, industry competition, sector structure, labor-market conditions, workforce demographic shifts, and industry-wide technological change."
+s003M01ED03,Sociocultural & Societal Environment,Environmental Dependency,G,SIC 20-39 - Manufacturing,2,"c217M02N26 | Cross-cultural Nursing Education Contexts: Cross-cultural validation also involved testing the consistency of organizational culture and technological environment variables across different cultural backgrounds.
+c218M02N52 | Non-native English language comprehension: Lectures should be more clear in order to make them palatable for people not speaking English","Maps societal values, cultural expectations, public attitudes, population demographics, community characteristics, and social norms affecting construction or knowledge practices."
+s003M01ED05,External Technological & Infrastructure Environment,Environmental Dependency,G,SIC 20-39 - Manufacturing,7,"c209M02N48 | Cadaver preservation and handling complexity: cadaver resources are scarce, and preservation and handling are complex
+c218M01N31 | Reliable internet connectivity for NOTS online learning: Unreliable internet connectivity can hinder online engagement by participants in LMICs.
+c218M01N32 | Access to digital devices and online-learning infrastructure in LMICs: Limited access to digital devices and insufficient infrastructure frequently hinder online engagement.
+c218M02N51 | Internet infrastructure: Unreliable internet connectivity, limited access to digital devices, and insufficient infrastructure frequently hinder online engagement
+c222M01N41 | access to PubMed osteosarcoma literature from 2003–2023: The study searched PubMed for osteosarcoma literature published from 2003 to 2023 and used the resulting corpus to construct the knowledge graph.
+c224M01N21 | access to communication and information devices: Easy access to communication and information devices was identified as enabling nurses to obtain technical-scientific updates.
+c224M01N22 | internet access: The paper links the expansion of MOOCs to growth in the number of people with internet access.","Maps regional or sector-level internet access, communication networks, electricity supply, public utilities, technology availability, and externally provided infrastructure required for construction or digital activities."
+s003M01ED06,"Client, Procurement & Institutional Environment",Environmental Dependency,G,SIC 20-39 - Manufacturing,4,"c212M02N30 | Student eligibility criteria: To participate in the study, individuals had to meet criteria: be employed as a nurse and be between ages 25 and 45. Participants who were on leave, sick leave, or who declined to participate were excluded.
+c214M02N41 | Nuclear facility confidentiality restrictions: Due to strict confidentiality requirements and annual radiation exposure limits, on-site training opportunities are restricted
+c215M02N30 | IEEE 1708-2014 wearable cuffless BP device standards: IEEE Standard for Wearable Cuffless Blood Pressure Measuring Devices, IEEE Standard 1708-2014
+c215M02N31 | AAMI BP measurement accuracy compliance standards: These metrics underline that the proposed model consistently delivers accurate BP measurements, meeting or closely aligning with AAMI standards.","Maps requirements imposed by clients, tendering systems, procurement institutions, bid-evaluation criteria, contractual submission conditions, professional bodies, and accreditation institutions."
+s003M01ED07,Supply-Chain & Logistical Environment,Environmental Dependency,G,SIC 20-39 - Manufacturing,2,"c209M02N47 | Cadaver resource scarcity: cadaver resources are scarce, and preservation and handling are complex
+c221M01N28 | Availability of palm tree manuscripts containing traditional medicine recipes: The proof of concept used palm tree manuscripts whose translated content provided the foundation for training Llama2-13B.","Maps external suppliers, transportation networks, material availability, delivery dependencies, logistics systems, and interorganizational supply-chain conditions."
+s003M01ED08,Geographic & Physical Site Context,Environmental Dependency,G,SIC 20-39 - Manufacturing,2,"c212M02N29 | Regional availability (urban centers): The participant sample was drawn from several leading medical institutions across three regions of the country: Moscow, St. Petersburg, and Perm.
+c216M02N43 | Diverse physical location constraints: To evaluate applicability of MR training potential... field testing with participants was conducted in diverse environments such as offices, churches, living rooms of residences, backyards, and picnic areas.","Maps the immediate external conditions of a project or workplace, including site geometry, spatial boundaries, congestion, confined spaces, water crossings, terrain, geographic isolation, and structural positioning."
+s003M01ED09,Local Utility & Connectivity Conditions,Environmental Dependency,G,SIC 20-39 - Manufacturing,3,"c210M02N37 | Stable internet connection for WeChat access: WeChat push service-based platform; transcending geographical barriers
+c219M02N44 | Computer with stable internet: Students were eligible for the study if they... had access to a computer with a stable internet connection capable of running the platform
+c219M02N45 | Mobile phone or laptop access: Participants were asked to complete a series of tasks, including: (1) registering and logging into the KG-DTPNursing via mobile phone or laptop","Maps the availability and reliability of electricity, internet connectivity, wireless networks, data transmission, and peripheral infrastructure at the specific site where a technology or KM practice is implemented."
+s003M01ED10,Ambiguous Environmental Dependency(*),Environmental Dependency,G,SIC 20-39 - Manufacturing,3,"c209M02N49 | Lung parenchyma opacity: due to the opacity of lung parenchyma, it is difficult to teach sublobar structures within the lungs
+c214M02N44 | Risk-free simulation safety mandate: VR provides realistic, risk-free simulations, enabling trainees to safely experience hazardous scenarios
+c215M02N33 | Multi-day follow-up measurement intervals (D1-D4): For incremental data in the CAS-BP dataset, the initial training dataset comprised three samples collected on day D1... each day separated by seven days.",Maps externally originating dependencies that cannot be assigned to ED01–ED09 because the evidence does not identify a sufficiently specific domain or analytical level.
+s003M01ED11,"User Characteristics, Eligibility & Participation Conditions",Environmental Dependency,G,SIC 20-39 - Manufacturing,1,c214M01N36 | physical and visual thresholds: VR participation requires physical and visual suitability to reduce discomfort or adverse effects.,"Environmental dependencies arising from the characteristics, circumstances, or eligibility status of intended users that determine whether and how they can access, participate in, or benefit from a technology, programme, training activity, or organizational intervention. "
+s003M01EK01,Codified Normative Knowledge,Explicit Knowledge,G,SIC 20-39 - Manufacturing,17,"c209M01N04 | safe margins for early-stage lung cancer: The teaching content included knowledge of safe margins for early-stage lung cancer.
+c210M01N01 | Standard Guide to Practice Standards for Intravenous Fluid Therapy (2021 edition): The research team referenced the Chinese version of this standard when revising the survey instrument.
+c210M01N02 | Standard of Practice for Intravenous Therapy Nursing Techniques (WS/T 433-2023): The research team referenced WS/T 433-2023 when revising the survey instrument.
+c210M01N03 | Clinical Nursing Practice Guidelines for Common Complications of Intravenous Catheters: The questionnaire was developed with reference to these clinical nursing practice guidelines.
+c212M01N01 | Ethical principles and standards: AI programs assisted students in analyzing practical cases and making decisions based on ethical principles; the course addressed ethical principles and standards.
+c212M02N02 | Bioethical principles and codes: The moral behavior test, developed based on existing scales and tests in medical ethics, was used to assess moral behavior. The test included situational tasks and questions evaluating ethical decision-making.
+c212M02N03 | Medical deontology standards: Medical deontology refers to the set of ethical norms governing the professional behavior of healthcare workers in their interactions with patients. Deontology reflects ethical concepts and possesses a more pragmatic and specific nature.
+c216M01N01 | CPR training guidelines provided by the American Heart Association: The platform used CPR training guidelines provided by the American Heart Association.
+c216M01N02 | naloxone training guidelines provided by SAMHSA: The platform used naloxone training guidelines provided by SAMHSA.
+c216M02N05 | Mandatory 911 call requirement: Mean for incorrectly answering 'No need to call for an ambulance if I know how to manage an overdose' decreased to zero in round 2.
+c219M01N02 | curriculum syllabi: The knowledge system was based on standard textbooks and syllabi, and extracted content was checked against the curriculum syllabus.
+c219M01N09 | relationship dictionary: A formal ontology with relations such as ""has part"" and ""is an attribute of"" was established.
+c222M01N42 | unified osteosarcoma text-annotation specification: Domain experts contributed to formulating a unified specification to analyze and comprehend the text more fully.
+c225M02N02 | MKN Directive No. 20 national disaster management policy: ""national policy, management system, and disaster aid known as MKN Directive No. 20""
+c225M02N03 | NADMA No. 1 national disaster management policy: ""recently upgraded to NADMA No. 1""
+c227M01N03 | wait time guarantee standards: Interpreting results required standards including strategic goals, measures, formal agreements, and thresholds for acceptable wait times.
+c227M02N02 | 80% compliance threshold for care guarantee: According to formal agreements, economic sanctions would be applied to large care providers if fewer than 80% of the patients received care within the wait time guarantee.
+c227M02N04 | Regional formal compliance contracts: According to formal agreements, economic sanctions would be applied to large care providers if fewer than 80% of the patients received care within the wait time guarantee.","Articulated and persistently recorded statements specifying what is required, permitted, prohibited, or formally recommended, including laws, regulations, standards, codes, and mandatory thresholds."
+s003M01EK02,Codified Descriptive Knowledge,Explicit Knowledge,G,SIC 20-39 - Manufacturing,59,"c209M01N01 | patient-specific CT scan images: Lung CT scan images were imported into Mimics in DICOM format and used for reconstruction.
+c209M01N02 | generated STL file: The generated STL file of the 3DV model was imported into preprocessing software for inspection and repair.
+c209M01N03 | lung anatomy: The course covered lung anatomy, specifically segmental and subsegmental divisions.
+c209M01N05 | resection range: The teaching content included the resection range.
+c209M02N09 | 3DV digital lung anatomical model: The 3DV model, which included bronchi, pulmonary arteries, pulmonary veins, tumors, lung lobes, and segments
+c209M02N16 | Lung segmental and subsegmental anatomy knowledge: It covered lung anatomy, specifically segmental and subsegmental divisions
+c210M01N06 | Nurses’ knowledge of PIVC placement: Ten single-choice questions quantified nurses’ understanding of PIVC placement knowledge.
+c212M01N02 | Bioethics knowledge: Faculty examinations covered core medical subjects and specialized topics in bioethics.
+c213M01N01 | Wisconsin breast cancer digitized FNA image dataset: The cancer application used the Wisconsin breast cancer dataset containing features computed from digitized fine needle aspirate images of breast masses.
+c213M01N03 | Parkinson’s disease biomedical voice dataset: The Parkinson’s disease application used biomedical voice measurements from 31 individuals and 195 voice recordings.
+c213M01N04 | Parkinson’s disease biomedical voice measurements: Each record contains biomedical voice measurements used to differentiate healthy individuals from individuals with Parkinson’s disease.
+c213M01N05 | healthcare supplier selection dataset: The supplier-selection application simulated data from a publicly available supplier-selection dataset.
+c213M01N11 | healthcare-provider breast cancer hold-out validation sets: Each institution retained a test portion of its breast-cancer data and used local validation data to evaluate peer models.
+c213M01N12 | healthcare-provider Parkinson’s disease hold-out validation sets: Each provider’s Parkinson’s dataset was divided into training and test sets while preserving the original class distribution.
+c213M02N09 | Wisconsin Breast Cancer Dataset: contains features computed from digitized images of fine needle aspirates (FNA) of breast mass
+c213M02N11 | Supplier Selection Data: data have been simulated from a publicly available supplier selection dataset available at www.kaggle.com
+c213M02N12 | Local Training Data: data was further split into training (80%) and test (20%) sets
+c214M01N06 | hazard analysis: All experimental groups received identical content including hazard analysis.
+c215M01N03 | individual average pulse pressure: Pulse pressure is calculated as the average SBP-DBP difference for each person.
+c215M01N04 | handcrafted physiological features: The selected physiological features have established physiological significance and demonstrated effectiveness in cuffless BP estimation.
+c215M01N05 | information from previous features: The trained model weights already contain some information learned from previous features.
+c215M01N07 | incremental biosignal mapped features: PPG is the initial signal, followed by ECG and PPW as incremental signal inputs.
+c215M01N08 | reference BP measurements: Reference SBP and DBP values serve as ground truth for training and evaluation.
+c215M02N01 | Handcrafted morphological and frequency-domain feature vectors: The features utilized are outlined in Table V, where the last four rows represent demographics.
+c215M02N02 | CAS-BP large-scale wearable BP dataset (1,272 subjects): CAS-BP dataset, provided by the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, comprises 10,146 measurements collected from 1,272 subjects
+c215M02N04 | Systolic Blood Pressure (SBP) reference values in wearable BP datasets: Y_s for SBP... Systolic BP (SBP)
+c215M02N07 | Multiday biosignal training samples (PPG, ECG, PPW): Given the training dataset {X,Y} | X∈R^(N×M), Y∈R^(N×C)
+c216M02N02 | Overdose recognition signs (slow breathing/small pupils): Correctly identifying slow/shallow breathing as an overdose sign significantly increased from 80% to 100% and very small pupils from 52% to 88%.
+c216M02N03 | Naloxone 1‑hour effect duration knowledge: Participants' understanding of the duration of naloxone's effect increased from 32% to 72% (p = 0.002).
+c218M01N03 | CNS tumor diagnostics: Respondents identified CNS tumor diagnostics as an important course topic.
+c218M02N03 | Neuro-oncology clinical case studies: Participants also engaged in synchronous online sessions, guided online discussions, and clinical cases to illustrate theoretical concepts
+c219M01N03 | structured databases: Knowledge entities were extracted from structured sources such as databases.
+c219M01N04 | textual descriptions: Knowledge entities were extracted from unstructured sources such as textual descriptions.
+c219M01N05 | knowledge points: Key concepts and relationships were extracted and verified; the implemented platform contained 32 knowledge points.
+c219M01N07 | formal ontology model: Validated knowledge was formally structured into a unified ontology model defining classes, properties, and hierarchies.
+c219M01N08 | RDF triples: The ontology model was transformed into RDF triples; knowledge was represented as entity–relationship–entity triplets.
+c219M02N01 | Internal medicine nursing curriculum knowledge: The detailed development process of the KG-DTPNursing... grounded in constructivism theory, and the analysis, design, development, implementation, and evaluation (ADDIE) instructional design model
+c221M01N03 | Palm tree manuscripts containing traditional medicine recipes: The proof of concept used ancient medicine recipe books, specifically palm tree manuscripts.
+c221M02N01 | Puskola book palm tree manuscript recipe collections: Precious texts, like the 'puskola book'(palm tree manuscript), are at risk of being lost without digital preservation
+c221M02N03 | Patient treatment outcome and history records: Medical recipe data, including treatment histories and physician details, are encapsulated in Model Cards
+c221M02N04 | Medical recipe origin and ownership lineage data: Data provenance information of medical recipes and treatments is encoded into Model Card objects
+c221M02N05 | Practitioner identity credential proofs: Digital identity proofs (SSI proofs) for doctors... as well as data provenance information for medical recipes and prescriptions are securely stored
+c221M02N06 | Structured Model Card repositories: Medical recipe data, including treatment histories and physician details, are encapsulated in Model Cards and securely stored on the blockchain
+c222M01N01 | osteosarcoma literature abstracts from PubMed: A PubMed search using osteosarcoma for 2003–2023 initially yielded 25,415 abstracts.
+c222M01N02 | cleaned corpus of 18,270 osteosarcoma articles: After invalid, retracted, and irrelevant records were removed, 18,270 articles remained.
+c222M01N03 | osteosarcoma entity-and-relationship dictionary: Manual annotation of approximately 400 papers produced a dictionary of entities and relationships.
+c222M01N04 | osteosarcoma disease-name classification dictionary: A classification dictionary was constructed to categorize disease entities with synonymous names.
+c222M01N05 | osteosarcoma labeled entity-and-relationship JSON data: Annotated text was exported to JSON and used as pretrained-model input.
+c222M01N06 | Gene Ontology: Gene Ontology was used to identify pivotal entity types and criteria.
+c222M01N07 | GeneCards: GeneCards was used to identify pivotal entity types and criteria.
+c222M01N09 | DrugBank: DrugBank was used to identify pivotal entity types and criteria.
+c222M01N10 | osteosarcoma knowledge graph (OSKG): The resulting OSKG contains 6,633 entities and 96,035 inter-entity relationships.
+c222M02N08 | KEGG Biological Pathway Database: existing ontologies and knowledge bases (e.g., Gene Ontology, GeneCards, KEGG, DrugBank, etc.) were employed
+c222M02N10 | BioBERT Osteosarcoma Entity-Relation Training Dataset: The labeled entity data was then fed into the model, and during the training process, the model learned to map the input text to the corresponding entity labels
+c224M01N01 | COPD self-management knowledge: The MOOC was developed around self-management of COPD, and participant knowledge in the clinical area of COPD was assessed before and after training.
+c227M01N01 | wait time data: The Registry contained data about patient wait times, normally updated daily and automatically extracted from electronic medical records.
+c227M01N02 | manually extracted wait time information: Before the Registry, wait-time information was extracted and reported manually to contractors.
+c227M02N01 | Registry wait time statistics: The data in the Registry were, with few exceptions, updated daily and automatically extracted from the electronic medical records.
+c227M02N03 | Registry-generated aggregated reports: Data were published in an aggregated format and made accessible to patients, displayed through digital interfaces searchable through web browsers.","Articulated and persistently recorded statements of what is or was the case, including facts, observations, measurements, records, classifications, attributes, and historical descriptions."
+s003M01EK03,Codified Procedural Knowledge,Explicit Knowledge,G,SIC 20-39 - Manufacturing,26,"c209M01N06 | surgical treatment strategies: The course covered related surgical treatment strategies.
+c209M02N15 | Thoracoscopic sublobar resection procedural steps: After routine disinfection and draping, a single-port thoracoscopic incision is made at the 4th or 5th intercostal space...
+c209M02N18 | Sublobar resection range knowledge: resection range, and related surgical treatment strategies
+c210M01N05 | Educational content on PIVC placement techniques: Two to three concise educational messages regarding PIVC placement techniques were delivered twice daily for ten days.
+c210M02N06 | 10-day WeChat educational message schedule: Table 1. Educational content.
+c214M01N01 | official operation manuals: The domain-specific knowledge base was developed using official operation manuals.
+c214M01N08 | operational procedures: All experimental groups received identical content including operational procedures.
+c214M02N01 | Nuclear safety operation manuals: The domain-specific knowledge base was developed using official operation manuals and safety training handbooks
+c214M02N05 | Nuclear safety operational protocols: It delivers essential knowledge and skills to trainers, including standard operational procedures, human error preventions, risk assessment skills, and occupational health protocols
+c216M01N03 | opioid-overdose recognition and naloxone-response knowledge: Assessments covered overdose signs, naloxone effects, repeat dosing, and emergency response.
+c216M01N04 | ReviveXR safety instructions for syringes and fentanyl contamination: Safety instructions were added concerning syringes and fentanyl skin contamination.
+c216M01N05 | ReviveXR real-time naloxone and rescue-breathing instructions: Real-time instructions were integrated into naloxone administration and rescue breathing.
+c216M02N01 | ReviveXR naloxone administration protocol: ReviveXR participants learned the following skills: evaluation... administering intranasal naloxone spray
+c216M02N04 | Second naloxone dose protocol: Knowledge of the need for a second naloxone dose improved from 72% to 100% (p = 0.008).
+c216M02N06 | AHA rescue breathing technique knowledge: Perceived effectiveness of rescue breathing increased from a mean of 3.84 to 4.68 (p < 0.001).
+c218M02N02 | Online neuro-oncology module curriculum: Participants are required to complete 9 weeks of online modules
+c218M02N05 | Pediatric CNS tumor diagnostic protocols: respondents described CNS tumor diagnostics...as important topics
+c218M02N07 | Pediatric neuro-oncology imaging/radiology: among these topics, the most frequently discussed elements were...radiology
+c218M02N09 | Pediatric neuro-oncology MDT approach: among these topics, the most frequently discussed elements were...multidisciplinary team integration
+c218M02N10 | Pediatric CNS tumor treatment protocols: respondents described...CNS tumor treatment as important topics
+c218M02N11 | Pediatric CNS tumor neurosurgery: some respondents requested more lectures related to specific aspects of the treatment of children with CNS tumors (e.g., neurosurgical approach)
+c218M02N13 | Pediatric CNS tumor chemotherapy: some respondents requested more lectures related to specific aspects of the treatment of children with CNS tumors (e.g....chemotherapy)
+c219M02N02 | Internal medicine nursing clinical problem-solving competencies: The platform was structured around a four-layer framework... Problem system layer: Bridges theory and practice by challenging students with clinical problems, thereby developing their clinical reasoning and competency
+c219M02N05 | KG-DTPNursing user manual: A user manual was developed to familiarize nursing students with platform operations
+c221M01N05 | Medicinal recipes derived from ancient traditional medicine texts: Doctors with deep-rooted traditional medical knowledge develop medicinal recipes from ancient texts or books.
+c222M02N05 | BIO Sequence Annotation Scheme: The BIO annotation system is a widely utilized markup scheme in the field of sequence annotation","Articulated and persistently recorded knowledge explaining how an activity should be performed, including instructions, methods, algorithms, checklists, operating procedures, and prescribed controls; uncodified expert know-how is excluded."
+s003M01EK04,Codified Explanatory Knowledge,Explicit Knowledge,G,SIC 20-39 - Manufacturing,4,"c215M01N01 | physiological knowledge of the pulse pressure difference: The authors introduce PPR to capture physiological knowledge concerning the pulse-pressure difference.
+c215M01N02 | dependence between SBP and DBP: The PPR objective emphasizes the dependence between systolic and diastolic blood pressure.
+c217M02N34 | Nursing Education Knowledge Management Model: This paper adopts the knowledge management model, combined with the unique context of nursing education, to explore the dual impact of organizational culture and technological environment.
+c224M02N17 | Knowles' Adult Learning Andragogical Framework: This study used the Adult Learning Theory of Malcolm Knowles (1913-1997), since for effective learning, adult nurses have to perceive the usefulness of the knowledge.","Articulated and persistently recorded accounts of why or how a condition, event, or relationship occurs, including causal mechanisms, interpreted patterns, and reasoned explanations."
+s003M01EK05,Codified Predictive Knowledge,Explicit Knowledge,G,SIC 20-39 - Manufacturing,5,"c213M01N07 | healthcare-provider breast cancer prediction models: Ten healthcare-provider nodes trained and cross-evaluated classification models using their allocated breast-cancer data.
+c213M01N08 | healthcare-provider Parkinson’s disease classification models: Provider nodes trained and evaluated models that differentiated healthy individuals from individuals with Parkinson’s disease.
+c213M01N09 | healthcare-provider supplier selection classification models: Each healthcare provider trained a classification model for selecting suppliers and shared it for cross-node evaluation.
+c213M01N10 | healthcare-provider predictive model parameters and updates: Providers retain their data while sharing trained model parameters or model updates through the blockchain.
+c213M02N04 | Local Predictive Models: Each node trains a local predictive model using its historical and real-time data","Articulated and persistently recorded forecasts, simulations, estimates, or inferential statements about likely future states, consequences, risks, or performance."
+s003M01EK06,Codified Evaluative Knowledge,Explicit Knowledge,G,SIC 20-39 - Manufacturing,20,"c209M02N12 | Fill-in-the-blank questions (lung segment naming): The test consisted of three parts: fill-in-the-blank questions
+c209M02N13 | Image recognition questions (anatomy): The test consisted of three parts:... image recognition
+c209M02N14 | Multiple-choice questions (surgical reasoning): The test consisted of three parts:... multiple-choice questions
+c210M02N01 | 10-item PIVC knowledge MCQ survey: The participants knowledge was assessed by designing 10 singlechoice questions. One point was awarded for correct answers to each question, and no points were awarded for incorrect answers.
+c210M02N02 | 13-item PIVC practical skills checklist: A checklist was utilized to assess nurses performance in practical manoeuvres systematically. The scale consisted of 13 assessment items, each of which was scored by onsite observation, and the results were categorized into two categories: pass and fail. The total score for the entire checklist was 15 points.
+c212M02N04 | CASES self-efficacy scale: To measure self-efficacy, the College Academic Self-Efficacy Scale (CASES) was utilized, as enhanced by Ifdil et al. The validity of the scale was assessed using Cronbach's alpha analysis, indicating a coefficient α>0.3 confirming validity of 33 CASES items.
+c212M02N05 | Moral behavior test: The moral behavior test, developed based on existing scales and tests in medical ethics, was used to assess moral behavior. The test included situational tasks and questions evaluating ethical decision-making. The test was validated with Cronbach's alpha coefficient of 0.87.
+c214M01N05 | expert-crafted reference answers: Learner responses were compared with expert-crafted reference answers using structured prompting.
+c214M01N07 | risk assessment: All experimental groups received identical content including risk assessment.
+c214M02N03 | Expert-crafted reference answers for safety scenarios: The system employed a LLM which compared each learner's input with expert-crafted reference answers using structured prompting
+c214M02N04 | Scenario-specific nuclear safety assessment questions: Within this system, a library of scenario-specific questions prompts users to respond as part of their training
+c216M02N10 | Modified Learning Self‑Efficacy Scale (L‑SES): These surveys evaluated participants' learning self‑efficacy using a modified version of the Learning Self‑Efficacy Scale (L‑SES) adjusted for naloxone.
+c216M02N11 | Opioid Overdose Knowledge Scale (OOKS): Baseline assessment... included... opioid‑related knowledge [measured by OOKS]
+c219M01N10 | assessment questions: The platform contained 55 assessment questions designed to evaluate knowledge-point mastery.
+c219M02N03 | Internal medicine nursing assessment questions: The KG-DTPNursing platform incorporated a total of... 55 assessment questions designed to evaluate knowledge point mastery
+c219M02N06 | Health Information Technology Usability Evaluation Scale (Health-ITUES): The usability of KG-DTPNursing was assessed by the Chinese version of the Health Information Technology Usability Evaluation Scale (Health-ITUES) for Usability Assessment
+c219M02N07 | Information literacy questionnaire: Information literacy measured by a questionnaire which consists of 23 items with 4 dimensions: information awareness (5 items), computational thinking (5 items), digital learning and innovation (5 items), and information society responsibility (8 items)
+c222M01N11 | literature-sourced osteosarcoma gold-standard answers: Correct answers for the 100 evaluation questions were sourced from relevant literature.
+c224M01N06 | COPD knowledge assessment items: Knowledge was assessed with 29 multiple-choice questions and 24 true-or-false statements concerning COPD.
+c224M02N10 | Pre-Test COPD Assessment Items: The level of knowledge was assessed using a set of items, including 29 multiple-choice questions and 24 true or false statements.","Articulated and persistently recorded criteria, instruments, frameworks, scales, protocols, and decision rules specifying how an entity, condition, intervention, or performance should be assessed."
+s003M01EK07,Codified Outcome Knowledge,Explicit Knowledge,G,SIC 20-39 - Manufacturing,11,"c209M02N10 | Theory test scores (thoracic surgery): Pre- and post-teaching test scores were compared to assess the effectiveness of both models
+c209M02N11 | Questionnaire survey ratings: after the final test, all interns completed a questionnaire that rated the advantages of each group's model on a scale of 1 to 5
+c211M02N23 | Knowledge sharing effectiveness outcomes: This study examines how distinct stressor types influence physicians' knowledge-sharing behaviors within online communities
+c212M02N01 | Standardized exam grades: Standardized exams and tests designed by faculty members were used to assess academic performance. The exams covered core subjects of medical education, as well as specialized topics in bioethics.
+c213M01N14 | cross-provider breast cancer model accuracy scores: Table 3 reports the accuracy of each provider-trained model when tested at every provider node.
+c213M01N16 | cross-provider supplier selection model accuracy scores: Table 7 compares the accuracy of supplier-selection models across healthcare-provider nodes.
+c213M01N19 | best-performing supplier selection model at each provider node: Several supplier-selection models trained by other nodes outperformed a provider’s locally trained model.
+c213M02N06 | Benchmark Accuracy Scores: Each node benchmarks the performance of received models on its own hold-out validation set
+c222M02N11 | BioBERT OSKG Entity Recognition Accuracy (98.09%): The final overall prediction accuracy of the entities reached 98.09%
+c222M02N13 | KGQA System Osteosarcoma Q&A Accuracy Scores: KGQA responses were significantly higher than those of the other 3 groups of LLM in terms of clinical, genetic, cellular, and signaling pathways
+c224M02N24 | Course Completion Rate Metric: 157 successfully achieved an evaluation score exceeding 50% thereby qualifying for a certificate... completion rate was 93.45%.","Articulated and persistently recorded results produced through measurement, calculation, assessment, or evaluation, including scores, indicators, KPIs, observed effects, and quantified outcomes."
+s003M01EK08,Codified Experiential Knowledge,Explicit Knowledge,G,SIC 20-39 - Manufacturing,5,"c211M01N02 | case analyses: Publishing case analyses is provided as an example of knowledge contribution.
+c211M01N03 | experience summaries: Publishing experience summaries is provided as an example of knowledge contribution.
+c211M02N01 | Physicians' clinical experiences: Physicians' proactive creation and sharing of professional knowledge, clinical experiences, or solutions, such as publishing case analyses or experience summaries in communities
+c211M02N03 | Physicians' clinical case analyses: Publishing case analyses or experience summaries in communities
+c217M02N03 | Shared Nursing Teaching Experience: ""The teaching experience I shared has been recognized and adopted by my colleagues."" - measure of knowledge sharing quality.","Lessons or insights from situated experience that have been articulated and persistently recorded, including lessons learned, after-action findings, critical-incident accounts, case reflections, and reusable project insights; experience retained only in a person's mind is excluded."
+s003M01EK09,Ambiguous Explicit Knowledge(*),Explicit Knowledge,G,SIC 20-39 - Manufacturing,20,"c210M01N04 | Relevant domestic literature: The researchers synthesized relevant domestic literature and reformulated the survey questions for the Chinese clinical context.
+c211M01N01 | professional knowledge: Knowledge contribution is defined as physicians proactively creating and sharing professional knowledge, clinical experiences, or solutions.
+c211M01N04 | knowledge-sharing posts: The paper identifies posts used for sharing knowledge and measures them as physician contributions.
+c211M01N05 | existing community knowledge: Knowledge seeking includes searching, browsing, and assimilating existing knowledge in the community.
+c211M02N20 | Physicians' knowledge contribution posts: Physicians' proactive creation and sharing of professional knowledge, clinical experiences, or solutions, such as publishing case analyses or experience summaries in communities
+c211M02N21 | Physicians' knowledge seeking comments: Knowledge seeking describes physicians' active searching, browsing, and assimilation of existing community knowledge
+c214M01N04 | domain-specific knowledge base: Validated domain content was embedded in a RAG-based knowledge base for LLM interaction.
+c214M02N06 | Professional nuclear safety training documents: Detailed professional safety documents were crafted to describe the training scenarios and subsequently uploaded to the knowledge base
+c217M01N01 | teaching resources: The questionnaire measured how many teaching resources educators had shared, and whether technology helped them obtain and share educational resources.
+c217M01N02 | teaching content: The quality measure asked whether shared teaching content could solve colleagues' practical problems; 75 percent reported that it could.
+c217M02N02 | Shared Nursing Teaching Materials: ""How many teaching resources have I shared in the past month?"" - measure of knowledge sharing frequency.
+c218M01N01 | Pediatric neuro-oncology knowledge: NOTS was designed to equip multidisciplinary providers with essential knowledge related to neuro-oncological care.
+c218M01N04 | CNS tumor treatment: Respondents identified CNS tumor treatment as an important course topic.
+c218M01N05 | Supportive and palliative care for children with CNS tumors: Supportive and palliative care was among the course elements frequently identified by respondents.
+c218M01N06 | Multidisciplinary team integration in pediatric neuro-oncology: Multidisciplinary team integration was identified as a valuable specialty-agnostic topic.
+c218M01N07 | Institutional CNS tumor care research proposal: Participating teams conceptualized a research project aimed at enhancing care for children with CNS tumors at their institutions.
+c218M02N01 | Pre-recorded neuro-oncology lecture curriculum: Pre-recorded lectures, rated highly by 73.5% of respondents, were appreciated for their content quality and flexibility
+c219M01N06 | multiformat teaching resources: Videos, cases, text, images, literature, guidelines, and instructional videos were linked to knowledge points.
+c219M02N04 | Internal medicine nursing teaching resources: The KG-DTPNursing platform incorporated a total of... 65 teaching resources (e.g., high-quality literature, guidelines, and instructional videos)
+c227M02N05 | Patient appointment invitation materials: A care manager was asked to remove the phone number from patient information material by the care guarantee unit personnel because they could not deal with the large number of patients who needed their assistance.",Maps explicit knowledge that cannot be assigned to EK01-EK08 because the evidence does not identify a sufficiently specific domain or analytical level.
+s003M01KH01,Community and Cultural Knowledge Custodians,Knowledge Holder,G,SIC 20-39 - Manufacturing,3,"c221M02N09 | Traditional medicine practitioners: Doctors provide traditional medical knowledge and prescriptions, derived from ancient texts
+c221M02N11 | Medicinal recipe contributors: Medicine providers contribute medicinal recipes
+c221M02N13 | Therapy and healing practitioners: Therapists, all committed to preserving and advancing traditional healing practices","Community members who preserve and transmit local, cultural, historical, or intergenerational knowledge."
+s003M01KH02,Skilled Trades and Craft Practitioners,Knowledge Holder,G,SIC 20-39 - Manufacturing,1,c221M02N12 | Specialized traditional medicine manufacturers: Manufacturers produce specialized medicinal products,"Practitioners holding embodied, experience-based, manual, or craft knowledge acquired through sustained practice."
+s003M01KH03,Frontline and Operational Practitioners,Knowledge Holder,G,SIC 20-39 - Manufacturing,12,"c210M01N08 | Nurses with PIVC placement qualifications: Eligibility required a current clinical nursing role with PIVC placement qualifications.
+c210M02N13 | Intervention group nurses (n=64): 64 assigned to the intervention group
+c210M02N14 | Control group nurses (n=59): 59 to the control group
+c211M01N11 | verified practitioners: Credential verification ensures that the collected posts and comments originate from verified healthcare practitioners.
+c211M02N07 | Physicians as knowledge holders: Data were collected from DXY.cn... 198 active users... all data originates from verified practitioners
+c212M02N13 | Nursing staff (mid-level practitioners): The study involved 150 nurses working in key areas of medicine: therapy, surgery, and obstetrics-gynecology. The average age of participants was 37 years. Of the 150 participants, 68% were male and 32% female.
+c214M02N18 | Experienced workers departing nuclear facilities: These challenges are further compounded by personnel turnover, with the constant influx of new hires and departure of experienced workers creating gaps in knowledge transfer
+c224M02N04 | Hospital Medicine Department Nurses: This study included 168 nurses from the medicine department of a hospital in northern Portugal.
+c224M02N05 | Postgraduate Master's Prepared Nurses: Nurses with a master's degree exhibited a higher level of basic knowledge... mean initial assessment scores of 69.15 (SD 12.77).
+c224M02N06 | Undergraduate Bachelor's Prepared Nurses: Those with a bachelor's degree had a mean score of 62.52 (SD 13.62; t143 = -2.037, P = .02).
+c227M01N11 | Care personnel: Care personnel provided scheduled care and reported information through clinical systems, although they were generally unaware of comparative wait times.
+c227M02N16 | Care guarantee support unit staff: The care guarantee unit, i.e., the unit responsible for informing and assisting patients in receiving care within the stipulated wait time guarantee.","Personnel who apply process, safety, service, production, or equipment knowledge in day-to-day operations."
+s003M01KH04,"Customers, Users, and Service Recipients",Knowledge Holder,G,SIC 20-39 - Manufacturing,3,"c216M01N68 | ReviveXR field-test participants providing usability feedback: Participants shared experiences and perspectives through semi-structured interviews.
+c216M02N20 | People who use drugs (PWUD): The study recruited a diverse sample representing people who use drugs, their family members...
+c218M01N15 | 2022 and 2023 NOTS participants: A total of 153 participants were enrolled and 83 completed the online evaluation.","People holding experiential knowledge derived from using a product, service, facility, or system and who communicate that experience."
+s003M01KH05,"Scientific, Engineering, and Technical Professionals",Knowledge Holder,G,SIC 20-39 - Manufacturing,9,"c212M02N12 | Physicians (practitioners): Physicians encounter patient interaction challenges more frequently, as indicated by a higher mean score and statistically significant deviation from results observed among nurses. Issues with colleagues were often due to attempts to conceal inadequate competence.
+c218M02N21 | NOTS multidisciplinary providers: to equip multidisciplinary providers with essential knowledge and skills related to neuro-oncological care
+c218M02N22 | Pediatric oncologists: with most working in the fields of pediatric oncology (41.1%, n = 63)
+c218M02N23 | Neurosurgeons: most working in the fields of...neurosurgery (24.8%, n = 38)
+c218M02N24 | Radiation oncologists: most working in the fields of...radiation oncology (11.8%, n = 18)
+c218M02N25 | Pathologists: most working in the fields of...pathology (7.8%, n = 12)
+c218M02N26 | Radiologists: most working in the fields of...radiology (6.5%, n = 10)
+c219M02N16 | Information technology specialists: Its development followed an iterative testing protocol: an alpha version was evaluated by information technology specialists to address technical issues, with each module undergoing 10-20 test cycles to ensure functional reliability
+c221M01N08 | Translators of ancient traditional medicine texts: Translators convert ancient medical texts into English, and the implementation reports that the manuscript content was expertly translated.","Professionals holding formal scientific, analytical, design, diagnostic, or technical knowledge."
+s003M01KH06,Domain Experts and Expert Reviewers,Knowledge Holder,G,SIC 20-39 - Manufacturing,7,"c210M01N12 | Specialist intravenous therapy nurses: Three specialist intravenous therapy nurses participated in content validation; qualified specialist nurses also served as practical assessors.
+c210M01N13 | Clinical nurse specialist: One clinical nurse specialist participated in assessing questionnaire content validity.
+c214M01N13 | human factor engineering experts: Human factor engineering experts experienced in nuclear safety training reviewed and validated the compiled content.
+c218M01N12 | Pediatric neuro-oncology experts: Respondents described interacting with experts and receiving effective feedback from them.
+c219M01N15 | two domain experts (internal medicine nursing educators): Extracted knowledge was manually verified by two domain experts identified as internal medicine nursing educators; expert input also supported iterative refinement.
+c219M02N15 | Internal medicine nursing educators: The extracted knowledge was manually verified by two domain experts (internal medicine nursing educators) for relevance and accuracy against the curriculum syllabus, with discrepancies resolved through discussion
+c224M01N10 | experts who validated the assessment items: The assessment items were validated by a group of experts in the field of the training program.","Recognized specialists who provide expert judgment, validation, evaluation, prioritization, or advisory knowledge."
+s003M01KH07,"Operational, Project, and Middle Managers",Knowledge Holder,G,SIC 20-39 - Manufacturing,1,"c227M01N10 | Care managers: Care managers managed care personnel, received reports, and could request direct Registry access.","Managers coordinating people, processes, projects, resources, or operational implementation."
+s003M01KH09,"Public Authorities, Regulators, and Standard-Setting Bodies",Knowledge Holder,G,SIC 20-39 - Manufacturing,8,"c216M01N62 | American Heart Association: The platform used CPR training guidelines provided by the American Heart Association.
+c216M01N63 | Substance Abuse and Mental Health Services Administration: The platform used naloxone training guidelines provided by SAMHSA.
+c225M02N09 | Royal Malaysia Police (PDRM) disaster field operations team: ""five leading agencies, including the PDRM (Royal Malaysian Police)""
+c225M02N10 | Fire and Rescue Department of Malaysia (JBPM) emergency response unit: ""JBPM (Fire and Rescue Department of Malaysia)""
+c225M02N11 | Malaysian Civil Defence Force (APM) disaster relief squad: ""APM (Malaysian Civil Defence Force)""
+c225M02N12 | Ministry of Health Malaysia (KKM) medical emergency response team: ""KKM (Ministry of Health Malaysia)""
+c225M02N13 | National Disaster Management Agency (NADMA) coordination and planning department: ""NADMA [2, 3]""
+c227M02N14 | Compliance monitoring officers: Compliance managers were to judge on a case-by-case basis... compliance officers struggled to assess whether 80% was a reasonable cutoff for intervention.","Actors holding statutory, regulatory, compliance, policy, inspection, or standards knowledge."
+s003M01KH10,"Researchers, Analysts, and Knowledge Developers",Knowledge Holder,G,SIC 20-39 - Manufacturing,2,"c216M01N64 | doctoral student contributing to ReviveXR development: A doctoral student applied expertise in 3D modeling, animation, programming, lighting, and texture creation.
+c222M01N12 | osteosarcoma literature annotators: Approximately 400 papers were manually annotated, and the paper later discusses the efforts of the annotators.","Actors who generate knowledge through research, investigation, modelling, analysis, or system development."
+s003M01KH11,"Educators, Trainers, and Mentors",Knowledge Holder,G,SIC 20-39 - Manufacturing,7,"c212M01N09 | Instructors: Five Sechenov University instructors designed the research program, conducted training, and evaluated participants.
+c212M02N11 | Instructors (Sechenov University): Five instructors from Sechenov University were responsible for designing the research program, conducting training, and evaluating the experimental participants. The instructors held doctoral degrees and had at least 10 years of professional experience.
+c216M02N23 | Traditional human instructors: When comparing ReviveXR to traditional overdose‑reversal training methods (many of them utilizing... live instructors with plastic mannequins).
+c216M02N24 | AI‑generated virtual instructor: Simultaneously, a virtual instructor in the background delivered an immersive tutorial in managing overdose situations.
+c217M01N06 | nursing educators: The study examines knowledge-sharing behavior among nursing educators and reports their sharing of resources, content, experience, and insights.
+c218M01N13 | NOTS professors: A respondent valued the fruitful comments and supportive attitude of the professors.
+c224M01N09 | experts who developed the training content: The assessment items were determined by the experts who developed the contents of the training program.
+c225M01N09 | experts who developed the training content: The assessment items were determined by the experts who developed the contents of the training program.","Actors who intentionally transfer knowledge through education, training, coaching, facilitation, or mentorship."
+s003M01KH12,Peer Knowledge Contributors,Knowledge Holder,G,SIC 20-39 - Manufacturing,2,"c211M01N09 | knowledge contributors: The practical discussion identifies physicians who contribute knowledge and receive recognition from knowledge seekers.
+c218M01N14 | NOTS peer participants: Participants reported international interaction and effective feedback from peers.","Colleagues or peers who demonstrably exchange knowledge through collaboration, mutual assistance, or peer learning."
+s003M01KH13,Commercial and Value-Chain Professionals,Knowledge Holder,G,SIC 20-39 - Manufacturing,1,"c227M01N09 | Contract administrators: Contract administrators negotiated standards, received monthly reports, and were expected to notice divergences and enforce compliance.","Actors holding knowledge of markets, customers, procurement, finance, sales, logistics, contracting, or supply networks."
+s003M01KH14,Organizational and Inter-organizational Collectives,Knowledge Holder,G,SIC 20-39 - Manufacturing,6,"c209M02N22 | Thoracic Surgery Department staff: Thoracic Surgery Department, Affiliated Hospital of Hebei University
+c209M02N23 | 3D Image and 3D Printing Center staff: 3D Image and 3D Printing Center, Affiliated Hospital of Hebei University
+c213M01N20 | participating healthcare provider nodes: Each healthcare provider operates as an independent node, retains local data, and trains predictive models.
+c213M02N01 | Healthcare Institutions (Nodes A–J): each stakeholder (healthcare provider) acts as an independent node
+c219M02N17 | Multidisciplinary team: As shown in Figure 2, the user interface of the KG-DTPNursing platform (Figure 2) was designed by a multidisciplinary team
+c227M01N08 | Unit for development: The Unit for development was responsible for internal infrastructure such as the Registry and had full administrative access.","Teams, departments, professional communities, partnerships, or stakeholder networks that collectively hold and exchange knowledge."
+s003M01KH15,Other (*) – Insufficient Evidence of a Knowledge-Holding Role,Knowledge Holder,G,SIC 20-39 - Manufacturing,6,"c209M02N21 | Clinical interns (baseline knowledge holders): A total of 62 fourth-year clinical medicine undergraduate students who completed their internship
+c214M02N16 | Trainees: A total of 90 participants (36.67% female, 63.33% male; M = 23.5 years old) were identified for the experiment. The participants were then randomly assigned to one of three groups
+c215M02N16 | Individual subjects (patients) with varied BP levels: the average pulse pressure for each person
+c216M01N67 | participants with prior overdose-witnessing experience: Thirty-six percent of participants had witnessed an overdose.
+c216M02N21 | Bystanders at overdose events: Data suggests that in a vast majority of opioid overdose deaths, there was a potential bystander present, but unfortunately, naloxone was not administered.
+c216M02N22 | Laypersons (non‑professional responders): In 2018, the U.S. Surgeon General issued a call to action for training laypersons who encounter people at risk for opioid overdose.","Actors whose evidence establishes participation or knowledge receipt but does not demonstrate knowledge possession, application, contribution, or sharing."
+s003M01KH16,Ambiguous Knowledge Holder(*),Knowledge Holder,G,SIC 20-39 - Manufacturing,3,"c215M02N13 | CAS-BP dataset knowledge repository: CAS-BP dataset... comprises 10,146 measurements collected from 1,272 subjects
+c215M02N14 | Aurora-BP dataset knowledge repository: Aurora-BP dataset comprises measurements from 1,125 individuals
+c215M02N15 | SBP and DBP auscultation reference measurements: In physiological measurements, SBP represents the pressure in the arteries when the heart beats, while DBP represents the pressure when the heart is at rest between beats.",Maps knowledge holders that cannot be assigned to KH01-KH15 because the evidence does not identify a sufficiently specific domain or analytical level.
+s003M01KL01,Formal Higher-Education Learners,Knowledge Learner,G,SIC 20-39 - Manufacturing,6,"c209M01N12 | clinical interns: Sixty-two clinical interns were randomly assigned to the 3DV and 3DP groups.
+c209M02N24 | Fourth-year clinical medicine undergraduates: The study included 62 fourth-year clinical medicine undergraduate students
+c212M02N14 | Nursing students (trainee participants): Participants were divided into two groups: an experimental group and a control group, with 75 individuals in each. To participate in the study, individuals had to be employed as a nurse and be between ages 25 and 45.
+c217M02N07 | Nursing Students: The frequency of knowledge sharing behavior among undergraduates, masters, and doctoral students is measured.
+c219M01N17 | nursing students: Nursing students used the platform for learning and participated in formal usability testing.
+c225M02N16 | Final-year nursing undergraduates enrolled in the NURD 4412 Elective Disaster Nursing course: ""twenty undergraduate final-year nursing students who had undertaken an elective course (NURD 4412: Elective Disaster Nursing)""","Students acquiring domain knowledge through a university course, degree module, or academically situated training activity."
+s003M01KL02,Structured Occupational Trainees,Knowledge Learner,G,SIC 20-39 - Manufacturing,18,"c210M01N09 | Intervention group nurses: Sixty-four nurses received the WeChat educational intervention and demonstrated improved knowledge and practice scores.
+c210M01N10 | Control group nurses: Fifty-nine nurses received no intervention during the study and showed no significant score changes.
+c210M02N18 | WeChat intervention learner nurses: 64 assigned to the intervention group
+c212M01N10 | Students: The participating nurses were assigned to control and experimental student groups and completed the semester-long training.
+c214M01N14 | trainees: Trainees used the systems, completed assessments, and received targeted retraining.
+c214M02N19 | Trainees as knowledge absorbers: A total of 90 participants (36.67% female, 63.33% male; M = 23.5 years old) were identified for the experiment. The participants were then randomly assigned to one of three groups
+c216M01N20 | people who use drugs participating in ReviveXR field testing: People who use drugs were represented in the recruited sample.
+c216M01N23 | registered nurses participating in ReviveXR field testing: Registered nurses were included in field testing.
+c216M01N25 | ambulance workers participating in ReviveXR field testing: Ambulance workers were included among first-responder participants.
+c216M01N27 | IT and VR professionals participating in ReviveXR field testing: IT and VR professionals were included in field testing.
+c216M02N25 | ReviveXR training participants (N=25): Participants (N = 25) were recruited from both urban and rural communities...
+c216M02N26 | ReviveXR platform trainees: Trainees practiced using a real naloxone spray (i.e., demonstration device) on a virtual patient in their environment.
+c218M01N16 | Multidisciplinary pediatric neuro-oncology providers: NOTS was launched to equip multidisciplinary providers with pediatric neuro-oncology knowledge and skills.
+c218M02N27 | NOTS course participants: A total of 153 participants from 30 institutions participated in the online modules
+c218M02N28 | LMIC healthcare professionals: shortage of trained providers with expertise in pediatric neuro-oncology, exacerbated by limited access to educational opportunities
+c224M01N11 | nurses from the Internal Medicine Department: The study included 168 nurses from the medicine department of a hospital in northern Portugal.
+c225M02N17 | First responder trainees participating in tabletop exercise programs: ""trained to disaster responders, such as police, firefighters, civil defence officers, nurses, and paramedics""
+c227M02N18 | Clinic administrators needing Registry education: A care manager referred to how clinic administrators needed to be educated to act in a meaningful manner.","Participants enrolled in a planned vocational, professional-development, induction, or safety-training intervention, regardless of prior occupation."
+s003M01KL04,Experienced Practitioner Upskilling Learners,Knowledge Learner,G,SIC 20-39 - Manufacturing,3,"c211M01N10 | physicians seeking knowledge: Knowledge-seeking physicians search, browse, assimilate existing content, read posts, and study other physicians' cases.
+c217M01N07 | colleagues: Shared teaching content addressed colleagues' problems, and shared experience was recognized and adopted by colleagues.
+c217M02N06 | Nursing Educator Colleagues: 75% of nursing educators say that their shared content can solve colleagues' problems.","Established professionals or workers acquiring new technical, digital, safety, or procedural capabilities as part of continuing practice."
+s003M01KL06,Operational Decision and Action Learners,Knowledge Learner,G,SIC 20-39 - Manufacturing,4,"c221M02N14 | Remote consultation patients: Users can consult remotely with doctors who prescribe treatments through this wallet
+c227M01N12 | Administrators at care units: Administrators scheduled visits and were expected to be informed by care managers about necessary scheduling changes.
+c227M01N13 | Central contractor unit: The unit received monthly reports and was expected to use data to identify and influence underperforming care providers.
+c227M01N14 | Patients: Patients could view aggregated wait times and use the information to decide where to seek care or monitor compliance.","Managers, operators, or other decision users who absorb analyzed knowledge to understand conditions and improve operational choices."
+s003M01KL09,Project and Organizational Collective Learners,Knowledge Learner,G,SIC 20-39 - Manufacturing,3,"c213M01N21 | participating healthcare provider nodes: Providers test peer models, compare results, identify biases, and recognize potential improvements.
+c217M02N08 | Nursing Education Team Members: ""Can team members help each other with teaching resources?"" - measure of cooperative culture.
+c218M02N29 | NOTS multidisciplinary team members: to equip multidisciplinary providers with essential knowledge and skills","Teams, crews, employees, project members, or stakeholder groups that acquire and circulate knowledge as a collective organizational capability."
+s003M01KL10,Knowledge Review and Validation Learners,Knowledge Learner,G,SIC 20-39 - Manufacturing,1,c222M01N15 | medical and nursing researchers: The system provides accurate assistance and guidance for medical and nursing researchers.,"Expert or research groups that interpret, review, annotate, or validate knowledge artifacts while preparing them for reliable organizational use."
+s003M01KL11,Ambiguous Knowledge Learner(*),Knowledge Learner,G,SIC 20-39 - Manufacturing,3,"c215M02N46 | BpBLS incremental learning model instance: BpBLS can be updated flexibly and quickly without retraining the entire model for incremental biosignals and/or training samples
+c215M02N47 | Wearable cuffless BP estimation system on edge devices: BpBLS... enabling deployment on wearable devices while seamlessly adapting to new biosignal modalities
+c221M02N15 | Recipe NFT purchasers: Customers can acquire [recipe NFTs] by exchanging fiat currency",Maps knowledge learner that cannot be assigned to KL01-KL10 because the evidence does not identify a sufficiently specific domain or analytical level.
+s003M01LI01,Individual Knowledge and Memory Decay,Limitation,G,SIC 20-39 - Manufacturing,5,"c210M01N28 | Knowledge attrition: Knowledge scores declined from 8.55 immediately after intervention to 8.17 at four weeks.
+c210M02N38 | Ebbinghaus forgetting curve retention decay: Ebbinghaus forgetting curve theory, which suggests that knowledge that is not actively retrieved and practically applied tends to fade over time
+c210M02N44 | Four-week post-intervention knowledge score attrition: Statistically significant decline in knowledge scores was observed at 4 weeks postintervention (8.55 → 8.17), indicating limitations in sustained knowledge retention
+c214M01N40 | information was easily forgotten: Participants reported that information in traditional instruction was easily forgotten.
+c216M02N45 | Skill retention forgetting curve over time: The long‑term retention of skills acquired through ReviveXR remains uncertain, particularly for individuals who may encounter overdose events infrequently.","Loss, weakening, or fading of previously acquired knowledge over time. Use only when information was initially learned and later forgotten or retained poorly. Excludes poor initial learning caused by instructional design, which belongs to LI04."
+s003M01LI02,"Individual Ergonomic, Usability and Immediate Safety Risks",Limitation,G,SIC 20-39 - Manufacturing,10,"c211M02N17 | Physician moral distress and self-blame: Conflict stressors caused by ethical conflicts lead physicians to question their values and moral beliefs
+c214M01N41 | fatigue: Participants reported fatigue as an issue with slide-based instruction.
+c214M01N46 | dizziness: Participants in both AIVR and traditional VR reported dizziness.
+c214M01N48 | difficult to use: Some participants found AIVR difficult to use.
+c214M02N56 | Technology complexity barrier for novice users: A few participants (n = 4) found the system difficult to use, potentially due to the complexity of adaptive interactions or unfamiliarity with the AI or VR technology
+c216M01N49 | layperson anxiety and fear of mistakes during real overdose response: Anxiety and fear or uncertainty can inhibit response to a real overdose.
+c216M01N54 | distress and re-traumatization risk from realistic overdose scenarios: Realistic overdose scenarios may distress participants with related personal or traumatic experience.
+c216M01N58 | ReviveXR object-manipulation and interface problems: Participants reported object manipulation, action-recognition, panel-control, and visibility problems.
+c216M02N48 | Apple Vision Pro headset physical discomfort: Some reported physical discomfort during use, including headset heaviness, mild headaches after extended use, eye strain, and difficulty fitting the headset with glasses.
+c225M02N37 | Unacceptable system usability threshold (SUS score 58.4) indicating significant UX bottlenecks: ""SUS score of 58.4, classifying the application as 'Not acceptable'""","Immediate discomfort, fatigue, cybersickness, physical strain, usability burden, withdrawal caused by discomfort, or direct exposure to injury associated with equipment, interfaces, or work settings."
+s003M01LI03,"Human Physiological, Cognitive-Capacity and Demographic Constraints",Limitation,G,SIC 20-39 - Manufacturing,6,"c211M01N22 | limited cognitive resources for organizing professional experiences: Hindrance and conflict stressors deplete cognitive resources and impair physicians' ability to organize and contribute professional experience.
+c211M02N16 | Physician cognitive resource depletion: Persistent anxiety and fear deplete limited cognitive resources, leading physicians into a state of physical and mental exhaustion
+c214M02N57 | Learner prior VR experience requirement: VR training necessitates certain physical and visual thresholds to mitigate potential discomfort or adverse effects
+c214M02N58 | Motion sickness susceptibility screening: Individuals who reported severe symptoms were excluded from the study to ensure safety and comfort during immersive training
+c216M01N52 | variation in ReviveXR users' digital and technical literacy: Variability in digital and technical literacy may impede engagement.
+c216M02N49 | User digital literacy and technical capability barriers: Variability in digital and technical literacy among users may pose a barrier to effective engagement with the MR platform.","Relatively stable individual differences or biological constraints, including age-related capability differences, health conditions, sensory or motor limitations, working-memory capacity, and heterogeneous learner characteristics. Excludes temporary discomfort classified under LI02 and acquired-knowledge decay classified under LI01."
+s003M01LI04,"Instructional Design, Delivery, Assessment and Transfer Shortcomings",Limitation,G,SIC 20-39 - Manufacturing,44,"c209M01N27 | scarcity of cadaver resources: The paper states that cadaver resources are scarce.
+c209M01N29 | lack of three-dimensionality: Two-dimensional images and anatomical atlases lack three-dimensionality and make spatial relationships harder to understand.
+c209M01N30 | mental construction of 3D information from a 2D screen: Students using 3DV must mentally construct tissue information from interaction with a 2D screen.
+c209M02N59 | Lack of 3D depth in 2D images: 2D images and anatomical atlases lack three-dimensionality
+c209M02N62 | No intuitiveness advantage over 3DV: No significant differences were found between the two groups regarding model intuitiveness
+c210M01N25 | Persistent gaps in nurses’ PIVC competencies: The paper reports persistent competency gaps in site selection, catheter types, securement, duration management, and early complication recognition.
+c210M01N26 | Temporal and spatial constraints of traditional classroom settings: WeChat communication was described as creating educational opportunities beyond traditional classroom time and location constraints.
+c210M01N27 | Passive push-based learning modalities: The decline in four-week knowledge scores indicated limited sustained retention through passive push-based learning.
+c210M01N29 | Lack of individualisation: The conclusion states that long-term effectiveness was limited by passive learning and lack of individualisation.
+c210M01N30 | Absence of stratified educational design: Junior nurses required foundational guidance while senior practitioners required advanced content, but the intervention was not stratified by career stage.
+c210M01N31 | Single form of continuing education: Low workshop attendance was interpreted as reflecting the current single form of continuing education.
+c210M02N45 | Insufficient skill consolidation from theory-only teaching: Insufficiency of purely didactic interventions for consolidating complex clinical competencies
+c212M01N26 | Static nature of traditional lectures and seminars: The paper contrasts the adaptive AI environment with traditional lectures and seminars, which it characterizes as typically static.
+c214M01N37 | limited interactivity: Conventional classroom-oriented safety training was described as having limited interactivity.
+c214M01N38 | low engagement: Traditional approaches were described as having low or minimal engagement.
+c214M01N42 | inability to simulate real-world scenarios: Slide-based training performed poorly in risk avoidance because it could not simulate real-world scenarios.
+c214M01N44 | procedural information without deeper interaction: VR auto-guidance typically supplied procedural information but lacked deeper learning interactions.
+c214M01N45 | cognitive overload: Traditional VR participants reported cognitive overload.
+c214M02N46 | Low learner engagement in passive instruction: Traditional safety training methods, such as classroom lectures, have significant limitations, including limited interactivity, low engagement, and weak motivation among participants
+c214M02N47 | Weak motivation for self-directed learning: Traditional safety training methods, such as classroom lectures, have significant limitations, including limited interactivity, low engagement, and weak motivation among participants
+c214M02N48 | Restricted physical access to nuclear facilities: Due to strict confidentiality requirements and annual radiation exposure limits, on-site training opportunities are restricted
+c214M02N49 | Lack of hands-on practice in real hazards: This lack of hands-on practice often leaves trainees ill-prepared to resolve on-site issues promptly and insufficiently equipped to assess risks effectively
+c214M02N51 | Passive learning through slide-based delivery: Many scientific and engineering contents are often delivered by trainers which making the learning process passive despite the different immersive environment
+c216M01N50 | gap between naloxone knowledge gains and real-world overdose intervention: Knowledge improvements may not translate into confident intervention.
+c216M01N51 | need for additional chest-compression and rescue-breathing practice: Chest compressions and rescue breathing may require additional practice or instruction.
+c216M02N44 | Knowledge‑to‑practice gap in opioid response: As with past research, there remains a gap in real‑world application, suggesting that knowledge improvements may not always translate into confident intervention.
+c216M02N53 | Need for periodic refresher training: The RCT should also follow up with participants over years to examine... if/when they need refresher training.
+c218M01N35 | English-language and lecture-audio clarity barriers in NOTS: Respondents requested clearer lectures and audio enhancements for people not speaking English.
+c218M02N54 | Geographic barriers to in-person learning: healthcare professionals face geographic and financial barriers to in-person learning
+c218M02N57 | Course design structural flaws: many online courses face challenges related to...course design limitations
+c218M02N58 | Insufficient mentorship integration: many online courses face challenges related to...insufficient integration of mentorship
+c218M02N59 | Scarcity of neuro-oncology training opportunities: shortage of trained providers with expertise in pediatric neuro-oncology, exacerbated by limited access to educational opportunities
+c218M02N62 | Insufficient formative assessments: participants requested a short after-topic test for better understanding
+c218M02N64 | Translation of learning into clinical practice gap: to ensure that online training translates into improved knowledge, changes in clinical practice, and improved patient outcomes
+c219M01N32 | knowledge fragmentation: Online education platforms tend to fragment knowledge, hindering coherent understanding.
+c219M01N34 | cognitive overload: Navigating a vast amount of fragmented information often causes cognitive overload.
+c219M01N35 | temporal and spatial limitations of traditional instruction: The platform was described as overcoming the temporal and spatial limitations of traditional instruction.
+c219M01N37 | insufficient emphasis on key knowledge points: Participants reported insufficient emphasis on key knowledge points.
+c219M01N38 | limited assessment question types: Participants suggested diversifying question types in assessments.
+c219M01N39 | insufficiently detailed answer explanations: Participants requested more detailed explanations for knowledge-point questions.
+c219M02N48 | Lack of domain structure in generic platforms: This design offers a distinct advantage over generic MOOC platforms, which lack inherent domain structure
+c224M02N22 | Theoretical Knowledge to Clinical Application Gap: This approach enabled the recreation of clinical decision-making environments... allowing them to identify opportunities to enhance their decision-making skills when addressing daily challenges.
+c224M02N23 | Geographic Access Limitations to Training Sites: ICT-based platforms... enable large-scale access with no geographical and time limits.
+c225M02N32 | Low-fidelity scenario immersion and passive learning environment of conventional TTX: ""limitations such as a lack of realism""
+c225M02N36 | Insufficient prior exposure and practical experience of nursing students with tabletop exercises: ""the training was limited due to a lack of knowledge and experience among the nursing students in the tabletop exercise training""","Weaknesses in training or educational architecture, including passive delivery, inadequate engagement, restricted content, limited instructional methods, poor assessment coverage, insufficient practical access, cognitive overload caused by presentation design, and failure to transfer learning into practice."
+s003M01LI05,"Software, Algorithmic, Data Quality and Interoperability Barriers",Limitation,G,SIC 20-39 - Manufacturing,42,"c209M01N37 | lack of information on the safe margins of lesions: A lack of information on lesion safe margins is identified as a limitation of current 3DP models.
+c209M01N38 | unclear sublobar boundaries: Unclear sublobar boundaries are identified as a limitation of current 3DP models.
+c209M02N54 | Unmarked safe margins in previous 3DP: lack of information on the safe margins of lesions
+c211M02N25 | Deep learning model interpretability limitations: The deep learning models used in this study have inherent limitations in interpretability
+c212M01N35 | High-quality training data requirement: The discussion identifies reliance on high-quality data for training AI models as a limitation.
+c212M01N36 | Algorithmic bias risk: The discussion lists algorithmic bias among the limitations of artificial intelligence in medical education.
+c212M01N37 | Technical integration challenges: The paper identifies technical challenges in integrating AI into educational processes and developing AI applications.
+c212M02N32 | Technical implementation challenges: Difficulties arise in assessing effectiveness of AI in medical education, as well as in addressing technical issues during development of AI applications.
+c213M01N39 | cross-institutional healthcare data silos: Data silos hinder traditional healthcare collaboration and benchmarking.
+c213M01N40 | incompatible healthcare IT infrastructures: Traditional benchmarking is hindered by incompatible information-technology infrastructures.
+c213M01N41 | limited institution-specific cancer and Parkinson’s disease training data: Local learning was difficult when provider nodes operated with limited clinical datasets.
+c213M01N42 | cross-provider predictive-model accuracy variability: Locally trained model performance varied substantially across healthcare-provider nodes.
+c213M01N45 | restriction to supervised healthcare learning scenarios: The current model mainly supports supervised-learning scenarios.
+c213M02N22 | Institutional Data Silos: Traditional collaboration methods are hindered by barriers such as data silos
+c213M02N24 | Centralised System Single Point of Failure: centralized systems prone to single point of failure and lack of transparency
+c213M02N25 | Interoperability Issues: the implementation of DTs faces challenges, such as data integration, interoperability, and privacy concerns
+c214M01N47 | AI hallucination risk: Participants feared AI hallucinations, and the authors identified inaccurate or misleading outputs as a safety risk.
+c214M01N49 | lag in real-time responsiveness: The current adaptive learning system retained a lag in real-time responsiveness.
+c215M01N23 | redundancy and bias in incremental data: Incoming information may already exist in the dataset and may introduce redundancy and bias.
+c215M01N26 | suboptimal performance for elderly and hypertensive subpopulations: Performance remains suboptimal for elderly and hypertensive subpopulations.
+c215M02N37 | Mandatory full retraining requirement for new data: Conventional data-driven approaches require complete retraining to incorporate newly emerging features or continuously expanding datasets.
+c215M02N38 | Cumulative retraining computational overhead: This results in cumulative computational overhead and increasing operational latency.
+c215M02N39 | Model update and inference operation latency: This results in cumulative computational overhead and increasing operational latency.
+c215M02N40 | Neglect of SBP-DBP intrinsic relationship in traditional models: Existing data-driven methods often overlook the intrinsic structure within BP measurements
+c215M02N41 | Absence of explicit physiological constraint modeling: thereby disregarding valuable information that could enhance model performance
+c215M02N42 | Slow convergence in iterative gradient descent: BpBLS eliminates the need for iterative gradient-based optimization, reducing incremental time when compared to models like HGCTNet.
+c215M02N43 | Manual feature engineering dependency: the current approach relies on manually engineered features as inputs, which may limit the model's generalizability across diverse situations
+c219M01N36 | lack of navigational flexibility: Participants reported difficulty returning to previous interfaces.
+c222M01N30 | osteosarcoma synonym and disease-subcategory ambiguity: Annotation encountered synonymous and subcategorized disease names, including OS and osteosarcoma.
+c222M01N31 | incomplete osteosarcoma entity identification from complex text: Preprocessing was designed to prevent incomplete entity identification caused by textual structures.
+c222M01N32 | limited OSKG expressiveness for complex biomedical relationships and concepts: The ternary KG representation cannot fully express complex relationships and concepts.
+c222M01N34 | factually incorrect or insufficiently grounded osteosarcoma answers from unguided LLMs: Large models without specialized domain guidance may be factually wrong or lack detailed bases.
+c222M01N35 | reduced BioBERT accuracy for low-frequency osteosarcoma entities: Uneven entity frequencies and limited data reduced prediction accuracy for some low-frequency entities.
+c222M01N38 | complex training of osteosarcoma KG–LLM models: The paper identifies complex model training as a current KG–LLM integration challenge.
+c222M02N28 | Low-Frequency Osteosarcoma Entity Prediction Limitation: the distribution of entities with varying frequencies during the training process resulted in a reduction in the accuracy of predictions for certain entities with low frequencies
+c222M02N29 | Osteosarcoma Research Trend Shift Model Bias: as research trends evolve and the focus shifts to prominent topics, some pivotal entities may be overlooked
+c225M02N34 | Functional incompatibility of AR features with legacy Android devices and older tablets: ""limitations such as device compatibility issues""
+c227M01N27 | insufficient data quality: The evaluation found uncertainty about data quality, and Registry data were described as flawed because of insufficient or incorrect reporting.
+c227M01N28 | two-month-old statistics: Care managers described the latest available statistics as two months old.
+c227M01N29 | insufficiently detailed data: Regional staff considered some Registry data insufficiently detailed to be actionable.
+c227M01N30 | limited support for context analysis and communication: The system merely displayed data and did not support context analysis or communication through digital forums.
+c227M01N36 | failure to address system-wide problems: Local systems enabled local analysis but replaced efforts to communicate and correct Registry-wide deficiencies.
+c227M02N37 | Registry data unreliability and manipulation: [The Registry] is very... not very reliable, it's very bad, so healthcare providers don't report, they report wrongly, so many numbers don't seem to match.","Limitations in software functionality, algorithms, model accuracy, computational methods, data completeness or structure, information retrieval, file formats, OCR, language processing, system integration, and cross-platform interoperability. Operational data scarcity belongs here when it constrains a deployed system; research-sample scarcity belongs to LI14."
+s003M01LI06,"Hardware, Sensor and Technical Infrastructure Constraints",Limitation,G,SIC 20-39 - Manufacturing,16,"c209M01N34 | limited convenience of the physical 3DP model: The 3DV group scored significantly higher for convenience because digital models are easier to store, carry, replicate, and access.
+c209M01N36 | refractive errors due to transparent parenchyma: Refractive errors due to transparent parenchyma are identified as a limitation of current 3DP models.
+c209M01N39 | obstructed visualization of surgery-related structures: Obstructed visualization of surgery-related structures is identified as a limitation of current 3DP models.
+c209M01N40 | opacity of lung parenchyma: The opacity of lung parenchyma makes sublobar structures within the lungs difficult to teach.
+c209M01N41 | lack of interactivity in the 3DP model: The authors state that the optimized surgical-element design compensates for the lack of interactivity in the 3DP model.
+c212M01N38 | Additional resource and access requirements: The discussion identifies the need for additional resources, technology access, and equal access for students.
+c215M01N21 | limited computational and storage capabilities of wearable devices: Standard wearable devices may struggle to meet the computation and storage demands of retraining.
+c215M02N36 | Wearable device real-time processing speed bottlenecks: these devices still face strict constraints in... processing speed
+c216M01N56 | absence of mannequin-like tactile feedback in ReviveXR: Participants noted the absence of tactile feedback normally provided by physical mannequins.
+c216M01N60 | ReviveXR physical-space constraint in rural or resource-limited settings: Required physical space may limit scalability in rural or resource-limited settings.
+c216M01N61 | one ReviveXR participant per headset constraint: Without multiple devices, the current approach supports one participant at a time.
+c216M02N47 | Absence of tactile/mannequin physical feedback: The absence of tactile feedback, which is typically provided by physical mannequins, was noted as a limitation. One pointed out that while ReviveXR is effective for general use, it may not be as well‑suited for techniques requiring precise hands‑on skills, such as CPR.
+c216M02N50 | Physical space requirement for MR training: The physical space required for the current training modality may limit scalability, particularly in rural or resource‑limited settings.
+c216M02N51 | Single‑user per device limitation: The current approach allows for only one participant at a time without multiple devices—raising cost and efficiency concerns.
+c218M02N56 | Internet connectivity and device limitations: Online learning in LMICs, such as time constraints and internet connection, have potential to impede the benefits of online learning
+c218M02N63 | Physical and technical infrastructure deficits: Unreliable internet connectivity, limited access to digital devices, and insufficient infrastructure","Limitations involving physical devices, sensor accuracy or availability, processing capacity, networks, transmission infrastructure, facilities, spatial operating areas, and other physical technical resources. Excludes acquisition cost, which belongs to LI07."
+s003M01LI07,Financial and Capital Constraints,Limitation,G,SIC 20-39 - Manufacturing,5,"c209M01N31 | cost of 3DP: Cost was identified as a limiting factor, and the study model cost approximately ¥1500.
+c216M02N52 | Device cost and availability scalability challenges: ReviveXR offers a scalable, cost‑effective alternative... though cost and efficiency concerns remain.
+c218M01N33 | Geographic and financial barriers to pediatric neuro-oncology in-person training: Healthcare professionals face geographic and financial barriers to in-person learning.
+c224M01N24 | financial burden: Associated financial burden was identified as a barrier to lifelong learning.
+c224M02N19 | Continuing Education Financial Barriers: Barriers to accessing lifelong learning... the associated financial burden.","Insufficient funding or excessive acquisition, development, production, licensing, implementation, or maintenance cost. Code time or staffing burdens separately under LI08 when both mechanisms are present."
+s003M01LI08,"Time, Staffing, Expertise, Scheduling and Workload Constraints",Limitation,G,SIC 20-39 - Manufacturing,19,"c209M01N28 | complex cadaver preservation and handling: Cadaver preservation and handling are described as complex.
+c209M01N32 | production time of 3DP: Production time was identified as a limiting factor for widespread application.
+c209M01N33 | technical complexity of 3DP: Technical complexity was identified as a limiting factor for widespread application.
+c209M02N64 | 3DP time barriers: production time... are limiting factors for its widespread application
+c209M02N65 | 3DP skill barriers: technical complexity of 3DP are limiting factors for its widespread application
+c215M01N20 | complete retraining is time-consuming: Complete retraining for expanding samples or biosignals is described as time-consuming.
+c217M01N20 | insufficient technical support: The thematic analysis identifies insufficient technical support as one of the main obstacles to technology application.
+c217M02N27 | Insufficient Technical Support in Nursing Education: The main obstacles nursing educators face in technology application include insufficient technical support and cultural differences.
+c218M01N34 | NOTS participants' time constraints and clinical work overload: A respondent requested more time because participants were already overwhelmed with work.
+c222M01N29 | resource inefficiency of manually annotating the full osteosarcoma corpus: The authors state that manually annotating the considerable number of documents would be an inefficient use of resources.
+c224M01N25 | decreased human resources and staff turnover: Decreased human resources and their turnover were described as obstacles to nurses’ continuing training.
+c224M01N26 | increased workload: Increased workload in health institutions was described as an obstacle to nurses’ continuing training.
+c224M02N18 | Nurses' Work-Life Balance Conflicts: Nowadays, there are still barriers to accessing lifelong learning, such as the need to balance family and professional life.
+c224M02N20 | High Clinical Workload Demands: The decrease in human resources and their turnover and the increase in workload in health institutions are obstacles to nurses' continuing training.
+c225M02N35 | User dependency on technical support for AR application navigation and troubleshooting: ""limitations such as device compatibility issues and the need for technical support""
+c227M01N31 | lack of expertise: Respondents claimed that insufficient expertise prevented them from selecting standards and interpreting wait-time results.
+c227M01N32 | time constraints: Respondents said they lacked time to judge acceptable attainment and analyze Registry results.
+c227M02N38 | Perceived analytical incapacity among staff: Respondents claimed that they were incapable of engaging in such work because of lack of expertise, time constraints, or the task not being part of their role description.
+c227M02N40 | Administrative burden from Registry engagement: Care managers were reluctant to suggest new or modified measurements or to voice concerns about current ones, saying that it would lead to a greater administrative or care production burden.","Scarcity of time, personnel, specialist expertise, implementation resources, scheduling capacity, or attention; excessive workload; time-intensive development or curation; and delays in realizing benefits."
+s003M01LI09,"Organizational Culture, Leadership and Adoption Barriers",Limitation,G,SIC 20-39 - Manufacturing,16,"c210M01N32 | Insufficient incentives: The paper associates extremely low professional-workshop participation with insufficient incentives.
+c212M02N37 | Complex colleague relationships: Among factors negatively impacting work efficiency and psychological well-being in professional context, complex relationships with colleagues emerged as a leading issue, affecting 73.6 ± 5.8% of mid-level medical staff.
+c212M02N38 | Patient interaction difficulties: Psychological difficulties in interactions with patients or their representatives were identified as a significant and frequent issue. For physicians, this problem was highly significant with average ranking of 3.4 in factor hierarchy.
+c217M01N21 | cultural differences: The thematic analysis identifies cultural differences as one of the main obstacles to technology application.
+c217M02N28 | Cross-cultural Differences in Nursing Education: The main obstacles nursing educators face in technology application include insufficient technical support and cultural differences.
+c218M01N36 | NOTS online-course noncompletion and early dropout: Some participants did not complete the course, had no grades, or dropped out early.
+c218M02N60 | Participant satisfaction and engagement gaps: Previous studies on online pediatric hematology-oncology education have primarily focused on evaluating knowledge scores and participant satisfaction
+c218M02N61 | Low online course completion rates: participants with low completion rates (under 70%) or no grades at all
+c221M01N24 | Undervaluation of indigenous medicine practitioners’ expertise: The expertise of indigenous medicine practitioners is often undervalued and unrecognized in formal healthcare systems, marginalizing practitioners and threatening the survival of the traditions.
+c224M01N27 | MOOC noncompletion: Eleven of the 168 enrolled participants did not complete the training program.
+c224M02N21 | Online Course Attrition Risk: MOOC drop-out rates have ranged from 10% to 85%... The course completion rate was 93.45%.
+c227M01N34 | patterned non-use of Registry data: Target users displayed patterned disinterest and often did not access, interpret, or react to Registry data.
+c227M01N35 | collective passivity: Individual ignoring justifications accumulated into collective passivity and obstructed knowledge-transfer activities.
+c227M02N39 | Belief in systemic stagnation and futility: Respondents references to things being 'pointless,' as things would not change anyway; hence, there was no reason to try to do something about noted problems.
+c227M02N41 | Collective passivity toward Registry data: The individuals' ignoring justifications constituted a key mechanism in producing this systemic passivity by obstructing the activities involved in knowledge transfer.
+c227M02N42 | Strategic ignoring of Registry insights: We approached the case as illustrating strategic ignoring rather than mere non-use of a DT.","Resistance to change, weak leadership support, authoritarian or abusive leadership, lack of trust or incentives, knowledge hoarding, low motivation, poor participation, group-dynamic problems, reluctance to share, and underuse or rejection of available technologies or practices."
+s003M01LI10,"Knowledge Continuity, Documentation, Governance, Privacy and Security",Limitation,G,SIC 20-39 - Manufacturing,14,"c211M01N20 | insufficiency for addressing increasingly intricate medical issues: The paper states that traditional offline communication is often insufficient for increasingly intricate medical issues.
+c211M01N21 | imbalance between knowledge supply and knowledge demand: Unmet demand or insufficient supply makes knowledge-sharing ineffective and accelerates member attrition.
+c212M01N34 | Data confidentiality and privacy risk: The discussion identifies confidentiality, privacy violations, and possible data breaches as ethical concerns in AI-supported education.
+c213M02N23 | Patient Data Exposure Risk: Data management in healthcare faces significant challenges in balancing security and anonymity during information exchange
+c214M02N50 | Knowledge transfer gaps from departing experienced workers: The constant influx of new hires and departure of experienced workers creating gaps in knowledge transfer
+c217M01N18 | inefficient knowledge transfer: The introduction identifies inefficient knowledge transfer as a long-standing challenge impeding professional development and teamwork.
+c217M01N19 | communication barriers: The introduction identifies communication barriers as a long-standing challenge in nursing educators' professional development and teamwork.
+c221M01N21 | Fading of intergenerational traditional medical knowledge: Knowledge transferred from generation to generation faces the danger of fading away.
+c221M01N22 | Obscurity and local confinement of indigenous medical practices: Many indigenous medical practices are obscure, orally transmitted, or confined to local knowledge.
+c221M01N23 | Loss risk for nondigitized puskola medical manuscripts: Precious texts such as the puskola or palm-tree manuscript are at risk of being lost without digital preservation.
+c221M02N36 | Undigitized palm manuscript degradation and loss: Precious texts, like the 'puskola book'(palm tree manuscript), are at risk of being lost without digital preservation
+c221M02N38 | Absence of verifiable practitioner credential protocols: The lack of verification mechanisms for practitioners' credentials and the risk of fraud due to the absence of credential verification mechanisms
+c221M02N39 | Geographic and oral confinement of recipe knowledge: Often passed down orally or confined to local knowledge
+c227M01N37 | data manipulation: Respondents described registrations and appointment offers that made waiting times appear shorter without correcting the underlying situation.","Failure to capture, preserve, document, retrieve, govern, or transfer organizational knowledge; knowledge loss caused by turnover, retirement, or temporary teams; fragmented documentation; confidentiality, privacy, consent, access-control, and security risks."
+s003M01LI12,"Market, Commercialization, Regulatory and External Institutional Change",Limitation,G,SIC 20-39 - Manufacturing,1,c221M02N40 | Systemic exclusion from formal healthcare structures: This leaves them marginalized and threatens the survival of these traditions,"Constraints arising outside the focal organization, including market shifts, commercialization pressure, labor-market change, regulatory change, industry-standard change, and other external institutional developments. Excludes internal culture and managerial choices classified under LI09."
+s003M01LI13,"Research Design, Measurement and Validation Flaws",Limitation,G,SIC 20-39 - Manufacturing,15,"c210M02N41 | Cross-contamination knowledge spillover effect: Knowledge spillover between groups, as both cohorts operated within the same clinical environment
+c212M01N29 | Limited long-term evidence: The limited study timeframe did not permit examination of long-term changes or the dynamics of self-realization and stress resilience.
+c212M01N31 | Self-report and interview bias: The authors note that interviews and testing may reflect personal perceptions, social expectations, or socially desirable responses.
+c212M01N32 | Prior technology experience: Prior experience with technology may have affected how quickly participants adapted to AI-supported learning.
+c212M01N33 | Variation in teaching quality: Differences in teaching quality among instructors may have contributed to inconsistent group outcomes.
+c212M02N35 | Short-term timeframe (one semester): The study was conducted within a limited timeframe, which does not allow for the consideration of long-term changes in indicators and dynamics of factors affecting self-realization and stress resilience.
+c212M02N36 | Subjective interview response bias: Testing and interviews may involve subjective biases, as participants might respond in ways they perceive as socially desirable rather than reflecting their true experiences or behaviors.
+c213M01N44 | unestablished effect on actual patient outcomes: The downstream effect of the framework on actual patient outcomes has not been empirically established.
+c216M01N53 | uncertain long-term retention of ReviveXR-acquired skills: Long-term skill retention remains uncertain, especially when overdoses are encountered infrequently.
+c216M01N55 | insufficient evidence that ReviveXR equals or exceeds in-person naloxone training: The modest sample does not establish equivalence or superiority for real-world outcomes.
+c217M02N31 | Cross-cultural KSB Measurement Bias: The measurement invariance test assesses whether the same measurement standards and constructs hold across different cultural groups through multi-level verification, thereby eliminating any potential measurement bias caused by cultural differences.
+c217M02N33 | Unaddressed Social Interaction Factors: The study does not address some social interaction factors.
+c218M01N37 | Self-report and evaluation-completer bias in the NOTS study: The study relied on self-reported measures and contained inherent bias among participants who completed the evaluation.
+c218M01N38 | Lack of long-term pediatric neuro-oncology competency and clinical-outcome assessment: The study did not establish long-term effects on clinical competency, clinical practice, or patient outcomes.
+c224M01N28 | absence of a control group: The absence of a control group prevented attribution of knowledge gains to the developed intervention.","Weaknesses in the study producing the evidence, including missing controls, inability to isolate causal contributions, narrow measurement instruments, untested outcomes, construct-validity problems, inappropriate comparisons, and insufficient validation. These records are methodological exclusions rather than substantive sector limitations."
+s003M01LI14,Empirical Sample and Generalizability Limitations,Limitation,G,SIC 20-39 - Manufacturing,9,"c210M02N43 | Single-center tertiary hospital contextual bias: The intervention and control groups were selected from a single tertiary hospital
+c211M02N26 | Single-platform data generalizability limitation: Our research is based on data from the Dingxiangyuan online physician community and does not consider data from other online physician communities
+c212M01N30 | Limited generalizability: The sample size, urban geographical concentration, one institution, and third-year nursing population restrict generalization.
+c212M02N33 | Limited sample size (n=150): The total number of participants was 150, which may restrict the generalizability of the results to a broader population of healthcare professionals. The relatively small sample size limits statistical power.
+c212M02N34 | Geographic concentration bias: The geographical concentration in large urban centers does not fully reflect the situation in other regions of the country, particularly in rural areas.
+c213M01N43 | Parkinson’s disease recording class imbalance: The Parkinson’s dataset contains more recordings from individuals with Parkinson’s disease than from healthy individuals.
+c217M02N32 | Limited Regional Sample Representativeness: The sample is primarily drawn from specific regions, which may not fully reflect global contexts.
+c224M01N29 | single-department single-hospital sample: Restricting the sample to one medicine department in one hospital hindered generalizability.
+c224M01N30 | single COPD self-management intervention: The study was limited to one intervention related to COPD self-management.","Small, narrow, imbalanced, localized, or unrepresentative research samples, including insufficient evaluation or model-training observations when the deficiency arises from the study design. These records are methodological exclusions rather than substantive sector limitations."
+s003M01LI15,Ambiguous Limitation(*),Limitation,G,SIC 20-39 - Manufacturing,1,c216M01N48 | scalability and sustainability constraints of conventional naloxone training: Existing naloxone programs face scalability and sustainability challenges.,Maps limitation that cannot be assigned to LI01–LI14 because the evidence does not identify a sufficiently specific domain or analytical level.
+s003M01OD01,"Governance, Standards & Formal Control",Organizational Dependency,G,SIC 20-39 - Manufacturing,8,"c209M02N44 | Ethics Committee approval: The study was approved by the Ethics Committee of Hebei University Affiliated Hospital (HDFYLL-KY-2024-134)
+c209M02N45 | Written informed consent: All participants provided written informed consent and voluntarily participated in the study
+c211M01N17 | strict healthcare credential verification: DXY requires healthcare credential verification for posting and commenting.
+c213M01N37 | healthcare-node ethical transparency: The model relies on ethical transparency at the participating-node level.
+c214M02N38 | Expert-validated nuclear safety training content: To ensure reliability and compliance with professional standards, the compiled content was reviewed and validated by human factor engineering experts
+c215M02N29 | Physiologically validated feature selection framework: we follow the previous feature selection framework to ensure feature effectiveness
+c219M02N41 | Iterative testing protocol (alpha version): Its development followed an iterative testing protocol: an alpha version was evaluated by information technology specialists to address technical issues, with each module undergoing 10-20 test cycles to ensure functional reliability
+c225M02N28 | MKN Directive No. 20 policy framework for disaster management training: ""MKN Directive No. 20 (Majlis Keselamatan Negara, or National Security Council in English)""","Formal policies, mandates, technical standards, protocols, approvals, audits, privacy rules, ethics clearances, and stewardship controls."
+s003M01OD02,Strategic Leadership & Sponsorship,Organizational Dependency,G,SIC 20-39 - Manufacturing,1,"c227M02N30 | Management commitment to Registry use: Among the internal management, the view was that the old system had greater issues of quality, but the current system displayed the correct wait times and, hence, was successful.","Executive commitment, strategic vision, championship, management buy-in, advocacy, and high-level institutional backing for technology-enabled knowledge retention and organizational learning."
+s003M01OD03,"Financial, Technical & Information Resources",Organizational Dependency,G,SIC 20-39 - Manufacturing,12,"c209M02N46 | Research funding support: This study was supported by the Key Research Fund Project of the Hebei University Affiliated Hospital (2017z001)
+c212M01N25 | Technology and learning-platform access: The intervention required AI applications, a HoloLens headset, a remote learning platform, and video-conference proctoring; the discussion also identifies additional resource and access requirements.
+c213M01N36 | healthcare-institution computational infrastructure and federated-learning capability: The framework assumes adequate computational infrastructure and technical capability across participating healthcare institutions.
+c214M01N35 | carefully curated and structured documents: Domain-specific knowledge representation requires carefully curated and structured documents.
+c215M02N27 | Availability of large-scale labeled BP training sets: Given the training dataset {X,Y} | X∈R^(N×M), Y∈R^(N×C)
+c215M02N28 | Reference SBP/DBP ground truth values: a pair of SBP and DBP auscultation readings were measured at the beginning and end of each recording
+c216M01N45 | ReviveXR application downloaded to the headset: Wi-Fi is unnecessary after the program is downloaded to the device.
+c216M01N46 | multiple ReviveXR headsets for simultaneous participant training: Multiple devices are needed to train more than one participant at a time.
+c216M02N41 | Illinois Innovation Network research funding: This material is based upon work supported by the Illinois Innovation Network of the University of Illinois System under Award ID 114098.
+c217M01N17 | technical support: The technological-environment measure included the degree of technical support and whether school support promoted teaching practice.
+c217M02N24 | Technical Support for Nursing Education: ""The technical support provided by the school promotes my teaching practice"" - questionnaire item.
+c225M02N30 | On-site technical assistance and troubleshooting support for AR devices: ""I need technical support to use this AR application""","Availability and organizational readiness of budgets, facilities, hardware, software, platforms, integrated infrastructure, and usable data. Covers internal technological capacity, but not intrinsic technology properties such as accuracy or reliability."
+s003M01OD04,"Time, Workload & Operational Scheduling",Organizational Dependency,G,SIC 20-39 - Manufacturing,4,"c210M01N23 | Nurses’ work schedules: The researchers obtained detailed work-schedule information to ensure that messages were read promptly.
+c210M01N24 | Clinical workflow patterns: Twice-daily short-message delivery was aligned with nurses’ workflow patterns.
+c214M02N39 | Dedicated training hours for AIVR sessions: It was administered a total of five times throughout the experiment: a foundational knowledge assessment, an immediate training learning assessment, adaptive re-training assessments, and a retention assessment one week after training
+c227M02N32 | Time allocation for data analysis: Compliance officers claimed they lacked ability and time to judge acceptable levels of attainment for the wait time guarantee.","Protected time, workload allowances, activity duration, delivery sequence, class size, and other scheduling arrangements."
+s003M01OD05,"Human Capacity, Roles & Participation",Organizational Dependency,G,SIC 20-39 - Manufacturing,16,"c209M01N26 | completion of basic medical and clinical courses: Eligibility required completion of basic medical and certain clinical courses that supported comprehension of the models.
+c209M02N43 | Completion of clinical courses: Inclusion criteria were... completion of... clinical courses (such as Internal Medicine and Surgery)
+c210M02N31 | Nursing department recruitment announcements: Participants are recruited by means of announcements made by the nursing department of the hospital
+c210M02N32 | Department morning meeting recruitment briefings: Announcements made at the morning meetings of the department
+c210M02N33 | Mandatory valid nursing license: Possession of a valid nursing licence
+c210M02N34 | Mandatory PIVC placement clinical qualification: Current clinical nursing role with PIVC placement qualifications
+c210M02N35 | Competency assessment requirement (≥50 procedures): Independently performed ≥50 PIVC procedures in the past year with successful completion of a competency-based assessment
+c212M01N24 | Experienced instructors: The five instructors had doctoral degrees and at least ten years of professional experience and were responsible for program design, training, and evaluation.
+c212M02N26 | Faculty expertise: The instructors held doctoral degrees and had at least 10 years of professional experience. Instructors were responsible for designing research program, conducting training, and evaluating participants.
+c216M01N44 | person trained to operate the ReviveXR headset: Any person trained in VR headset operation can administer the current training.
+c218M02N47 | Multidisciplinary team representation: Teams were selected through an open application process, considering factors such as the size of their institution's neuro-oncology program and multidisciplinary representation
+c219M02N36 | Expert verification by internal medicine nursing educators: The extracted knowledge was manually verified by two domain experts... for relevance and accuracy against the curriculum syllabus, with discrepancies resolved through discussion
+c219M02N42 | Alpha version testing by IT specialists: Its development followed an iterative testing protocol: an alpha version was evaluated by information technology specialists to address technical issues
+c221M02N34 | Multi-stakeholder collaborative contributor network: WedaGPT creates a collaborative ecosystem connecting doctors, medicine providers, therapists, patients, and technology experts
+c222M01N40 | availability of osteosarcoma domain experts for annotation review: Domain experts participated in reviewing the annotation process and formulating a unified specification.
+c227M02N31 | Staff training on Registry interpretation: A care manager referred to how clinic administrators needed to be educated to act in a meaningful manner.","Staff availability, competence, training, facilitation, departmental responsibility, expert participation, stakeholder engagement, retention, mentoring, validation, and succession."
+s003M01OD06,"Culture, Trust & Relational Climate",Organizational Dependency,G,SIC 20-39 - Manufacturing,10,"c211M01N18 | emotional support: Encouragement, recognition, empathy, and care from peers influence physicians' participation and knowledge contribution.
+c211M02N15 | Perceived community emotional support resource: Perceived community emotional support significantly moderates the relationship between stressor types and knowledge-sharing behaviors
+c217M01N14 | supportive culture: The model and findings show that supportive culture significantly promotes knowledge-sharing behavior.
+c217M01N15 | trust culture: The findings show that trust culture significantly promotes knowledge-sharing behavior.
+c217M01N16 | cooperative culture: Cooperative culture was measured through mutual help with teaching resources and cross-departmental collaboration and knowledge sharing.
+c217M02N20 | Nursing Education Organizational Culture: Organizational culture and technological environment on knowledge-sharing behavior among nursing educators - central to the study.
+c217M02N21 | Supportive Culture in Nursing Education: ""Does the team encourage sharing experiences?"" and ""Does the organization have a positive incentive mechanism for knowledge sharing?"" - items measuring supportive culture.
+c217M02N22 | Trust Culture in Nursing Education: ""Do I trust my colleagues in sharing knowledge?"" and ""Are there obstacles to information sharing among team members?"" - items measuring trust culture.
+c217M02N23 | Cooperative Culture in Nursing Education: ""Can team members help each other with teaching resources?"" and ""Does the culture of our organization promote cross-departmental collaboration and knowledge sharing?"" - items measuring cooperative culture.
+c227M02N33 | Organizational culture of data engagement: We in fact noted a patterned disinterest in it. The target users further provided a set of justifications for not using the DT or reacting to the information it provided.","Trust, psychological safety, openness, intrinsic knowledge-sharing motivation, learning orientation, technology receptiveness, and continuous-improvement norms. Also covers negative states such as knowledge hiding, fear, destructive internal competition, and weak learning cultures."
+s003M01OD07,Incentives & Performance Alignment,Organizational Dependency,G,SIC 20-39 - Manufacturing,1,"c221M02N35 | NFT sale revenue distribution mechanism: Revenue from these sales is distributed among platform contributors, promoting equitable ownership and recognition","Extrinsic knowledge-sharing motivation through rewards, allowances, recognition, promotion criteria, targets, and performance measures tied to knowledge retention or technology use. Competitive incentives that encourage hiding also belong here."
+s003M01OD08,Organizational Structure & Process Design,Organizational Dependency,G,SIC 20-39 - Manufacturing,10,"c212M02N27 | Structured curriculum: The training lasted one semester and focused on developing moral behavior in future nurses within framework of course 'Ethics and Deontology.' Classes were three times a week for 2 hours each session.
+c214M02N40 | Continuous knowledge base update: The system's flexibility is maintained as domain-specific documents that can be dynamically updated, hence supporting various safety training contexts
+c218M02N49 | NOTS training program design: many online courses face challenges related to...course design limitations
+c218M02N50 | Peer and expert feedback mechanism: The findings suggest that blended learning models, interactive content, and incorporating peer and expert feedback can enhance knowledge retention
+c219M02N37 | Curriculum syllabus alignment: Key concepts and their relationships were extracted and then verified by nursing educators for curriculum relevance, ensuring the content is accurate and essential for students
+c219M02N38 | Constructivism learning theory: The platform was constructed using an 'eight-step' methodology, grounded in constructivism theory
+c219M02N39 | ADDIE instructional design model: The platform was constructed using an 'eight-step' methodology, grounded in constructivism theory, and the analysis, design, development, implementation, and evaluation (ADDIE) instructional design model
+c219M02N40 | KG-DTPNursing user manual development: A user manual was developed to familiarize nursing students with platform operations
+c224M01N20 | alignment with nurses’ professional roles and needs: The MOOC was based on needs expressed by professionals, and alignment with their professional roles likely contributed to enrollment and completion.
+c225M02N31 | Android operating system compatibility requirement for AR application installation: ""AR application has been tested on mobile phones and tablets that use Android software""","Hierarchy, organizational maturity, workflow configuration, technology–workflow fit, content or interface design, customization, compatibility, and curriculum alignment not governed by OD01–OD07."
+s003M01OD09,Ambiguous Organizational Dependency(*),Organizational Dependency,G,SIC 20-39 - Manufacturing,1,c212M02N28 | Institutional support: The study was conducted within several leading medical institutions across three regions. Tests were validated and verified for reliability through internal reviews at participating universities.,Maps organizational dependencies that cannot be assigned to OD01–OD08 because the evidence does not identify a sufficiently specific domain or analytical level.
+s003M01TE01,Artificial Intelligence and Intelligent Computation,Digital Technology,G,SIC 20-39 - Manufacturing,41,"c211M02N11 | T-MMOE stress detection deep learning model: We developed a new deep learning model based on the MMOE (Multi-gate Mixture-of-Experts) multi-task learning framework to fully exploit these associations and perform joint analysis of comment stress and post topics
+c211M02N12 | BERTopic text topic modeling tool: BERTopic is a topic modeling technique that leverages BERT's capabilities for semantic text comprehension, and employs clustering algorithms to identify topics within documents
+c211M02N13 | Sentence-BERT document embedding model: Each document was converted into a context-aware vector representation (document embedding) using Sentence-BERT (SBERT)
+c212M01N19 | Artificial Intelligence: The experimental group used artificial intelligence technologies throughout all stages of training.
+c212M01N22 | Scenario Generator: The Scenario Generator created unique virtual scenarios from parameters including difficulty, subject matter, and ethical dilemmas.
+c212M01N23 | AI Entity Constructor: The AI Entity Constructor developed entities with characteristics such as emotions, knowledge, and goals that evolved through learner interaction.
+c213M01N31 | logistic regression: Logistic regression was one of four classification algorithms implemented in the cases.
+c213M01N32 | decision tree: Decision tree was one of four classification algorithms implemented in the cases.
+c213M01N33 | random forest: Random forest was one of four classification algorithms implemented in the cases.
+c213M01N34 | gradient boosting: Gradient boosting was one of four classification algorithms implemented in the cases.
+c214M01N23 | large language models: LLMs generate personalized content, answer questions, and evaluate learner responses.
+c214M01N24 | retrieval-augmented generation: RAG retrieves localized domain content to improve response precision and mitigate hallucination.
+c214M01N28 | Langchain-Chatchat: The RAG-based Langchain-Chatchat application was implemented.
+c214M01N29 | ChatGLM: ChatGLM was used in the AI tutoring and assessment systems.
+c214M01N34 | prompt engineering: Prompt engineering delivered retrieved content and user queries to the LLM and supported assessment.
+c214M02N31 | LLMs integrated into AIVR for personalized tutoring: Recent advancements such as large language models (LLMs) and virtual reality (VR) have opened new possibilities for enhancing professional training experiences
+c215M01N14 | broad learning system: BLS is an incremental flat network capable of handling both sample and model increments.
+c215M01N15 | flat network architecture: The flat architecture avoids memory-intensive layer stacking and supports efficient updating.
+c215M01N16 | Moore-Penrose pseudoinverse: BLS computes output weights analytically using the Moore-Penrose generalized inverse.
+c215M01N17 | block matrix pseudoinverse calculation: Efficient block pseudoinverse calculations incorporate new data without retraining from scratch.
+c215M01N18 | sparse backward propagation: The system replaces the unsupervised sparse autoencoder with sparse backward propagation.
+c215M02N22 | Moore-Penrose generalized inverse matrix computation: W = A^+ Y, A^+ = (λ_b I + A A^+)^{-1} A^+
+c215M02N23 | Ridge regression with L2 regularization: Ridge regression provides an analytical solution and the PPR term is quadratic, the loss function of BpBLS can also be solved analytically
+c215M02N24 | Pulse Pressure Regularization (PPR) loss term: We propose PPR to capture the BP knowledge
+c216M01N42 | AI-generated ReviveXR training person and voice: The introduction was updated with an AI-generated person and voice.
+c216M02N38 | AI‑generated instructor voiceover guidance: The initial introduction video was updated with an AI‑generated person and voice to provide training guidance.
+c219M01N25 | natural language processing (NLP): NLP was used to identify entities and relationships and to generate the knowledge graph.
+c219M01N29 | intelligent recommendation feature: The platform suggests relevant materials based on individual learning needs.
+c221M01N14 | Llama2-13B LLM fine-tuned on ancient medicine recipe books: The proof of concept custom-trained the Llama2-13B large language model using ancient medicine recipe books.
+c221M01N15 | QLoRA 4-bit quantization for the WedaGPT Llama2-13B model: The fine-tuning process used QLoRA's 4-bit quantized pretrained model.
+c221M01N16 | Low Rank Adapters for traditional medicine LLM fine-tuning: The fine-tuning process used Low Rank Adapters.
+c221M01N17 | Ollama APIs for WedaGPT traditional medicine queries: Queries in the proof-of-concept implementation were managed by Ollama APIs.
+c221M01N18 | LlamaIndex in the WedaGPT answer-generation flow: Queries were managed using Ollama APIs, LlamaIndex, and LangChain.
+c221M02N24 | Meta Llama2-13B foundation model: Custom-trained Meta's Llama2 Large Language Model (LLM)
+c221M02N26 | Ollama LLM API service: The interaction with Meta's Llama2 LLM is facilitated by Recipe smart contract through Ollam's LLM API
+c221M02N28 | LangChain orchestration framework: Llamaindex and LangChain, a robust interface that enables streamlined and effective communication with the language model
+c222M01N23 | BioBERT-base-cased-v1.2: BioBERT-base-cased-v1.2 was selected and trained for entity and relationship recognition.
+c222M01N25 | ChatGLM3–6B: ChatGLM3–6B processes retrieved graph information and generates the natural-language response.
+c222M01N26 | LangChain conversational agent: A LangChain conversational agent mediates interaction between users and ChatGLM3–6B.
+c222M02N22 | ChatGLM3-6B Large Language Model: ChatGLM3-6B is a publicly available model within the ChatGLM3 series
+c222M02N23 | LangChain LLM Agent Framework: LangChain is a language model-based application development framework that supports the development of several types of agents","Foundational core models, connectionist AI, natural language processing architectures, and generative systems."
+s003M01TE02,Human–Computer Interaction and Immersive Technologies,Digital Technology,G,SIC 20-39 - Manufacturing,24,"c209M01N24 | computer: The 3DV group interacted with the digital model on a computer.
+c212M01N20 | HoloHuman: HoloHuman displayed a human model on an examination table for interactive examination and digital analysis.
+c212M01N21 | HoloLens headset: Students and moderators interacted with the model and interface through the HoloLens headset.
+c212M02N24 | Augmented Reality (AR): The AR application 'HoloHuman' displays a human model on an examination table. AR learning enhances outcomes in professional knowledge, cognitive and practical skills, social skills, innovation, competence, and creativity.
+c214M01N22 | virtual reality: VR provides immersive and risk-free simulations of hazardous scenarios.
+c214M01N26 | HTC VIVE Pro Eye: The training used an HTC VIVE Pro Eye head-mounted display.
+c214M02N33 | Unity 3D platform for VR environment construction: The collected data was then processed and used to create an accurate VR model within the Unity 3D platform
+c216M01N36 | mixed reality blending virtual overdose scenarios with physical surroundings: ReviveXR merged virtual and physical worlds through mixed reality.
+c216M01N37 | Apple Vision Pro spatial-computing headset: ReviveXR used the Apple Vision Pro spatial computing headset.
+c216M01N38 | Unity game engine for the ReviveXR environment: The ReviveXR environment was built in Unity.
+c216M01N43 | immersive video used in ReviveXR overdose training: ReviveXR combined mixed reality with immersive video.
+c216M02N34 | Unity real‑time 3D development engine: Unity is a versatile development platform and game engine that enables the creation of interactive 2D and 3D experiences...
+c216M02N35 | Mixed Reality (MR) spatial computing technology: The advantage of MR over VR is that it allows users to see and interact with virtual objects while simultaneously... see their real‑world surroundings.
+c216M02N40 | Virtual 911 phone simulation (removed in R2): The virtual phone used for calling 911 was removed, and the program was updated to detect hand movements simulating making the call.
+c218M02N46 | Neuro-oncology video lectures: self-paced formats (e.g., pre-recorded lectures and videos)
+c224M01N18 | multimedia resources: The MOOC incorporated multimedia resources, including videos.
+c224M02N14 | Gamification Elements: Integrating virtual simulation and gamification boosted motivation and reduced drop-out rates.
+c224M02N15 | COPD Multimedia Educational Resources: Each lesson includes a theoretical overview of the topic, one or more supporting videos (lasting about 5.06 min) and bibliographical references.
+c225M02N20 | Augmented Reality (AR) simulation software for disaster training: ""augmented reality has garnered significant attention as a technology utilised in disaster management""
+c225M02N21 | QR-code-triggered marker-based AR tracking system for 3D model overlays: ""marker-based augmented reality is applied due to its higher accuracy, lower complexity, and logical features""
+c225M02N23 | 3D environmental and casualty models rendered via Unreal Engine: ""AR features of 3D models from the Unreal Engine software""
+c225M02N24 | Unreal Engine 3D asset creation and rendering software: ""3D models from the Unreal Engine software""
+c227M01N20 | report generator interface: The interface showed numbers of waiting patients by queue, waiting duration, and registered reason.
+c227M01N21 | web browsers: Aggregated Registry information was displayed through digital interfaces searchable through web browsers.","User experience design, interactive software interfaces, and spatial computing environments."
+s003M01TE03,"Cyber-Physical Systems, IoT, and Smart Environments",Digital Technology,G,SIC 20-39 - Manufacturing,6,"c209M01N22 | Voxel Dance Additive 3.0 preprocessing software: The STL file was imported into Voxel Dance Additive 3.0 for model inspection and repair.
+c209M01N23 | J501Pro 3D printer: The data were sent to a J501Pro 3D printer to produce the transparent hollow model.
+c209M01N25 | 3D printing: 3D printing creates three-dimensional objects by layering materials and was used to make the physical model.
+c213M01N30 | predictive digital twins: Predictive digital twins use data and predictive analytics to forecast future states and support decisions.
+c216M01N41 | ReviveXR haptic feedback for correctly performed actions: Haptic responses were triggered when actions were performed correctly.
+c216M02N39 | MR headset haptic feedback system: Participants appreciated the haptic feedback that triggered when they performed correctly.",Hardware-software integration where computational logic interacts directly with physical mechanics and automated hardware feedback.
+s003M01TE04,"Data, Information, and Knowledge Systems",Digital Technology,G,SIC 20-39 - Manufacturing,27,"c209M01N19 | DICOM format: Lung CT images were imported into Mimics in DICOM format.
+c209M02N39 | G*Power software: sample size was estimated using G*Power software (Version 3.1.9.7, Dusseldorf, Germany)
+c209M02N40 | IBM SPSS Statistics Version 26.0: Data analysis was performed using IBM SPSS Statistics for Windows, Version 26.0
+c213M02N19 | InterPlanetary File System (IPFS): blockchain-based solutions can be integrated with off-chain storage such as InterPlanetary File System (IPFS) for decentralized storage
+c214M01N31 | semantic vector database: Segmented documents were vectorized and embedded in a semantic vector database.
+c214M01N32 | MySQL database: User requests, server responses, and timestamps were recorded in real time in MySQL.
+c217M02N16 | Nursing Education LMS Software: The quantitative indicators of the technological environment were evaluated using several items in the questionnaire, focusing on the frequency of use of learning management systems (LMS).
+c218M01N28 | Cure4Kids online learning platform: Invited teams were enrolled into the prerequisite modules in Cure4Kids.
+c218M02N44 | MAXQDA 24 analysis software: An inductive approach was applied to the qualitative analysis of open text questions using MAXQDA 24
+c218M02N45 | Downloadable offline files: downloadable files for offline learning and alternatives to video
+c219M01N21 | knowledge graph: The knowledge graph forms the platform's core and visually represents knowledge points and their interconnections.
+c219M01N22 | Web Ontology Language (OWL): An ontology-based approach using OWL created the visual knowledge model.
+c219M01N23 | Protégé (V5.5.0): Validated knowledge was structured into the ontology model using Protégé V5.5.0.
+c219M01N26 | web crawling (Python): The knowledge graph was generated using techniques including web crawling in Python.
+c219M01N27 | Neo4j graph database: RDF triples were stored in Neo4j for visualization and querying.
+c219M02N32 | Python (web crawling): The knowledge graph was generated by using techniques such as web crawling (Python) and NLP
+c219M02N33 | RDF triples: This model was subsequently transformed into RDF triples and stored in a Neo4j graph database for visualization and querying
+c221M02N27 | Llamaindex data indexing tool: Llamaindex and LangChain, a robust interface that enables streamlined and effective communication with the language model
+c222M01N22 | Doccano: Doccano was used for manual annotation of selected papers.
+c222M01N24 | Neo4j: Neo4j stores and queries the entity-relationship structure of the knowledge graph.
+c222M01N27 | Lucene full-text index: Lucene-based full-text indexing retrieves relevant entities and associated triples.
+c222M01N28 | Neo4j vector indexing: Neo4j vector indexing was used to implement vector-similarity search for KGQA.
+c222M02N24 | Cypher Query Language for Neo4j: Cypher (the query language utilized by Neo4j)
+c222M02N25 | Lucene Full-Text Search Engine Library: Lucene is a high-performance full-text search engine library
+c227M01N19 | electronic medical records: Registry data were normally extracted automatically from electronic medical records.
+c227M01N22 | local data files: Care units entered wait-time data and additional variables into their own local data files.
+c227M02N27 | Registry software platform: The case concerned the (non)use of the digital wait time registry (hereafter 'the Registry') implemented in the Stockholm Region.","The structural storage, architecture, indexing, retrieval, and semantic mapping of data and structural knowledge."
+s003M01TE05,"Imaging, Sensing, and Perception Technologies",Digital Technology,G,SIC 20-39 - Manufacturing,10,"c209M01N18 | CT: The model was reconstructed from lung CT scan images.
+c209M01N20 | Mimics 23.0 software: Mimics 23.0 was used for initial reconstruction and accurate delineation of sublobar boundaries.
+c209M01N21 | 3-matic 15.0 software: Initial reconstruction was followed by post-processing using 3-matic 15.0.
+c209M02N37 | CT scanning technology: Based on individual patient imaging data, such as CT
+c214M01N27 | 3D scanner or CAD: The physical training environment was captured using a 3D scanner or CAD.
+c214M01N33 | Windows Speech Recognition: Windows Speech Recognition converted users' spoken input into text.
+c215M01N19 | wearable devices: The framework is designed for biosignals collected from wearable devices and potential wearable deployment.
+c215M02N25 | Morphological and spectral feature extraction algorithms: For traditional machine learning approaches, features such as morphological, frequency domain, and time-frequency domain features are first extracted
+c216M01N40 | ReviveXR hand-movement detection for simulated 911 calls: The revised program detected hand movements simulating a 911 call.
+c225M02N22 | QR code visual markers for AR scene activation: ""requires the camera to scan the QR code to display the three-dimensional (3D) model above it""","The hardware, telemetry, and signal/image processing algorithms required to capture and perceive environmental inputs."
+s003M01TE06,"Security, Privacy, and Trustworthy Technologies",Digital Technology,G,SIC 20-39 - Manufacturing,10,"c213M01N28 | blockchain technology: Blockchain provides decentralized model exchange, immutability, traceability, and consensus.
+c213M01N29 | federated learning: Federated learning permits local model training and collaborative model development without direct data exchange.
+c213M01N35 | blockchain smart contracts for healthcare model access and use: Providers can establish smart contracts defining the conditions under which shared models may be accessed or used.
+c213M02N17 | Blockchain Network: blockchain technology...enables secure data storage and sharing across multiple stakeholders
+c213M02N18 | Blockchain Smart Contracts: Smart contracts, a key feature of blockchain, automate transactions, connect stakeholders, and enable secure, transparent data sharing
+c221M01N20 | Rahasak blockchain for WedaGPT transaction records: The implementation evaluated transaction throughput, block generation time, and Lucene Index-based search using the Rahasak blockchain.
+c221M02N30 | Identity Recipe Model Card NFT smart contracts: Four main smart contracts: Identity, Recipe, Model Card, and NFT contracts
+c221M02N31 | W-528 NFT token schema for recipes: Custom NFT schema known as 'w-528,' customized to represent recipe data as NFT objects
+c221M02N32 | Self-Sovereign Identity digital framework: SSI-enabled mobile wallets for secure interactions
+c221M02N33 | SSI-enabled mobile wallet application: SSI-enabled mobile wallets, which safeguard their personal information","Systems designed to ensure data integrity, privacy preservation, confidentiality, and architectural trust."
+s003M01TE07,"Mobile, Social and Communication Technologies",Digital Technology,G,SIC 20-39 - Manufacturing,10,"c210M01N20 | WeChat: WeChat was used to deliver educational messages and obtain feedback that messages had been read.
+c210M01N21 | Text and video messaging: The discussion identifies text and video as multimedia elements incorporated into the intervention.
+c210M02N30 | Nurses' personal mobile devices: The proliferation of mobile electronic devices has catalysed the evolution of nursing education methodologies
+c211M01N16 | internet technology: Internet technology is identified as the technical foundation for online health communities.
+c217M02N17 | Nursing Education Video Conferencing Software: Figure 2 illustrates the distribution of usage for three key technological tools: LMS (A), video conferencing (B), and online teaching platforms (C).
+c217M02N18 | Nursing Education Online Teaching Software: Figure 2 illustrates the distribution of usage for three key technological tools: LMS (A), video conferencing (B), and online teaching platforms (C).
+c217M02N35 | Digital Collaboration Platforms for Nursing: The effectiveness of technological environments (e.g., digital collaboration platforms) needs to be adapted to organizational culture.
+c224M01N16 | NAU e-learning platform: The MOOC was made available on NAU, an e-learning platform administered by FCCN of FCT.
+c224M01N19 | mobile devices: The paper defines m-learning as access to educational content through mobile devices regardless of time and location.
+c225M01N19 | mobile devices: The paper defines m-learning as access to educational content through mobile devices regardless of time and location.
+c225M02N25 | Android-based mobile smartphones for AR application deployment: ""AR application has been tested on mobile phones and tablets that use Android software""
+c225M02N27 | Multiplayer synchronization system enabling real-time cross-device interaction: ""this project adopted a multiplayer system that synchronised all players' devices to provide real-time interaction in all scenes""","Network communication protocols, distributed social systems, and mobile-first software application ecosystems."
+s003M01TE08,"Rule-Based, Decision and Expert Systems",Digital Technology,G,SIC 20-39 - Manufacturing,1,c219M01N24 | rule-based matching: Rule-based matching was combined with NLP to identify entities and relationships.,"Deterministic, symbolic, and non-probabilistic AI that drives automated decision-making through hard-coded logic and expert rules."
+s003M01THR07,Mentoring,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,1,c218M02N32 | Mentorship: many online courses face challenges related to...insufficient integration of mentorship,"A sustained master-apprentice or expert-novice relationship that transfers contextual know-how, professional judgment, safety norms, and occupational identity through personalized guidance."
+s003M01THR11,Instructor-Led Training and Briefings,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,8,"c210M01N15 | Telephonic communication: Telephonic communication is identified as part of traditional didactic delivery.
+c210M02N22 | Print materials and telephone didactic sessions: Traditional didactic methods relying on print materials and telephonic communication
+c212M02N16 | Traditional lectures and seminars: Teaching methods included lectures and seminars (traditional sessions conducted by instructors covering fundamental principles of bioethics and self-efficacy in medical practice), practical sessions (clinical exercises and scenarios without the use of AI), group discussions, and case studies.
+c214M02N20 | Classroom lectures for nuclear safety training: Traditional safety training methods, such as classroom lectures, have significant limitations, including limited interactivity, low engagement, and weak motivation among participants
+c218M02N31 | In-person learning: healthcare professionals face geographic and financial barriers to in-person learning
+c219M02N22 | Traditional face-to-face instruction: It embodies a student-centered approach, overcoming the temporal and spatial limitations of traditional instruction
+c221M02N16 | Cross-generational oral recipe teaching: This knowledge, usually transferred from generation to generation, faces the danger of fading away
+c224M02N08 | Face-to-Face Continuing Education Programs: e-learning... often complement traditional teaching models.","Instructor-directed transfer of established knowledge through lectures, presentations, seminars, demonstrations, inductions, or workplace briefings, without the individualized continuity of mentoring."
+s003M01THR12,Codified-Material Learning,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,9,"c209M01N14 | 2D imaging: Traditional clinical teaching typically relied on cadaver dissection or 2D imaging.
+c209M01N15 | anatomical atlases: The paper states that 2D images and anatomical atlases lack three-dimensionality.
+c209M02N27 | 2D imaging learning method: Traditional clinical teaching has typically relied on... 2D imaging
+c210M01N14 | Traditional didactic methods relying on print materials: The paper contrasts mobile learning with traditional didactic methods relying on print materials.
+c214M01N15 | slide-based instruction: Slide-based instruction was one of the three experimentally compared training modalities.
+c214M02N21 | Slide-based instruction for nuclear safety: Slide-based instruction (Group 3, N = 30)
+c214M02N23 | Video watching for nuclear safety compliance: Conventional safety training approaches, such as classroom lectures and video watching, are hindered by limited interactivity, minimal engagement, and insufficient motivation
+c216M02N29 | Instructional video training: Traditional methods... instructional videos
+c219M02N21 | Textbook learning: We first defined the knowledge system based on standard textbooks and syllabi to ensure alignment with students' core learning objectives","Human learning or knowledge dissemination primarily mediated by prepared codified materials such as manuals, textbooks, leaflets, instructional videos, photographs, or static presentations."
+s003M01THR13,Experiential and On-the-Job Learning,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,6,"c209M01N13 | cadaver dissection: Traditional clinical teaching typically relied on cadaver dissection or 2D imaging.
+c210M02N24 | Spontaneous clinical experience accrual: Control group minor practice score fluctuation may reflect spontaneous clinical experience accumulation
+c212M01N12 | Practical sessions: The control group completed clinical exercises and scenarios without AI.
+c212M02N18 | Practical clinical exercises: Practical sessions (clinical exercises and scenarios without the use of AI). Clinical exercises conducted without technological augmentation.
+c214M02N24 | On-site physical training at nuclear facilities: Due to strict confidentiality requirements and annual radiation exposure limits, on-site training opportunities are restricted
+c216M02N27 | Traditional mannequin‑based CPR/Naloxone training: ReviveXR demonstrated unique advantages... compared with traditional CPR training with plastic busts.","Learning through direct participation in authentic work, site exposure, applied projects, or practical experience when the evidence does not establish job shadowing, rotation, mentoring, or deliberate repetition."
+s003M01THR14,Collaborative Group Learning,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,7,"c212M01N13 | Group discussions: Group discussions were included among the control group's traditional methods.
+c212M01N14 | Case studies: Students discussed clinical cases in groups under instructor guidance to develop moral skills.
+c217M01N08 | teaching exchanges: Knowledge-sharing frequency included the number of teaching exchanges in which an educator participated.
+c217M01N09 | team discussions: The participation measure asked whether educators actively shared teaching experience in team discussions.
+c217M01N10 | instructional design: Table 1 reports active participation in instructional design, while the survey measured personal knowledge and experience contributed in teaching design.
+c225M02N18 | Face-to-face discussion-based tabletop exercise (TTX) for disaster preparedness: ""A tabletop exercise (TTX) is a discussion-based approach to disaster training that requires participants to gather in a classroom or small group setting and is carried out face-to-face""
+c227M02N22 | Cross-provider referral meetings: I have contacted... [them] for referral meetings regarding hand surgery, at the hand surgery clinic.","Facilitated, episodic group exercises, meetings, or workshops in which participants learn jointly, but which lack the open knowledge-café format or the continuing identity and self-organization of a community of practice."
+s003M01THR15,Manual Knowledge Documentation and Codification,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,3,"c217M02N12 | Thematic Analysis of Nursing Interviews: A thematic analysis approach was used to systematically extract key themes from the interviewees' narratives.
+c221M02N18 | Manual palm manuscript to English conversion: Translators then convert these texts into English
+c227M01N15 | manual extraction and reporting of wait time information: In the pre-Registry situation, wait-time information was manually extracted and reported to contractors.","Human preparation, recording, annotation, organization, classification, cross-referencing, or storage of explicit knowledge without automated knowledge-processing support."
+s003M01THR16,Human Expert Review and Validation,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,5,"c210M01N18 | Real-time on-site PIVC placement observation: Researchers observed and assessed nurses’ practical skills during real-time on-site PIVC placement operations.
+c216M01N34 | ReviveXR post-training semi-structured interviews: Semi-structured interviews collected in-depth qualitative feedback.
+c217M02N11 | Cross-cultural Validation of KSB Model: Cross-cultural validation also involved testing the consistency of organizational culture and technological environment variables across different cultural backgrounds.
+c221M01N30 | LLM response evaluation for palm-manuscript treatments: In the LLM evaluation, the researchers assessed responses from the LLM for queries concerning treatments documented in the palm manuscripts.
+c222M01N17 | osteosarcoma annotation domain-expert review: Domain experts reviewed the annotation process and contributed a unified specification.","Human expert evaluation, checking, consensus formation, prioritization, or iterative refinement of a knowledge product or decision; the principal purpose is validation rather than tacit-knowledge extraction."
+s003M01THR17,Ambiguous Traditional Human-central Practice,Traditional Human-central Practice,G,SIC 20-39 - Manufacturing,18,"c210M01N16 | Professional workshops: Only 4.69 percent of intervention-group nurses had participated in PIVC-related workshops.
+c211M01N12 | Traditional offline communication: The introduction states that traditional offline communication is insufficient for increasingly intricate medical issues.
+c211M02N14 | Peer emotional support practice: Emotional support manifests as encouragement, empathy, and care functions to mitigate individual stress and its adverse effects
+c214M02N59 | Subjective questionnaire for self-efficacy measurement: Immediately after the training and assessment phases, participants were asked to complete questionnaires measuring: technology acceptance (based on UTAUT, Venkatesh et al. 2003) and perceived self-efficacy
+c215M02N17 | Full model retraining from scratch: Conventional data-driven approaches require complete retraining to incorporate newly emerging features or continuously expanding datasets.
+c216M01N33 | ReviveXR pre- and post-training paper-and-pencil surveys: Participants completed quantitative paper-and-pencil surveys.
+c217M02N09 | Nursing KSB Questionnaire Surveys: The study combines quantitative questionnaire surveys and qualitative interviews to test the relevant hypotheses.
+c217M02N10 | Nursing KSB Semi-structured Interviews: Semi-structured interviews were conducted to explore topics such as technological application barriers and organizational cultural cognition in depth.
+c218M01N18 | NOTS 7-day in-person workshop: Nine weeks of online learning were followed by a 7-day in-person workshop.
+c218M02N33 | Traditional knowledge tests: Previous studies on online pediatric hematology-oncology education have primarily focused on evaluating knowledge scores
+c219M01N19 | traditional instruction: The Discussion contrasts the platform with the temporal and spatial limitations of traditional instruction.
+c221M01N09 | Oral transmission of indigenous medical practices: Many indigenous medical practices are passed down orally.
+c221M01N10 | Intergenerational transfer of traditional medical knowledge: Traditional medical knowledge is usually transferred from generation to generation.
+c221M02N17 | Practitioner-patient consultation sessions: Users can consult remotely with doctors who prescribe treatments through this wallet
+c222M01N16 | manual osteosarcoma literature retrieval: The platform reduces the time and cost normally associated with literature retrieval.
+c224M01N12 | face-to-face training: The paper discusses MOOCs as useful and effective online learning compared with face-to-face training.
+c227M02N20 | Contract administrator compliance interventions: Contract administrators employed at the Region were to notice divergences and enforce compliance among care-providing organizations.
+c227M02N21 | Local administrative shortcut practices: Rather than trying to explore and communicate this systemic problem further, the respondents would use a local, administrative shortcut.",Maps Traditional Human-central Practices that cannot be assigned to THR01-THR18 because the evidence does not identify a sufficiently specific domain or analytical level.
+s003M01TK01,Deliberately Withheld or Confidential Knowledge,Tacit Knowledge,G,SIC 20-39 - Manufacturing,1,c227M02N06 | Clinician judgment on viable care unit scale: Assessing reasonable size of a clinic: illustrating how knowledge of appropriate size of the clinic is important to enable quality assurance of registry data. Contract administrations have this knowledge but do not share it with the unit for development.,"Articulable knowledge deliberately withheld because of secrecy, confidentiality, competition, hierarchy, or distrust."
+s003M01TK02,Knowledge Conveyed Through Examples or Demonstration,Tacit Knowledge,G,SIC 20-39 - Manufacturing,6,"c209M01N10 | segmental and subsegmental localization and resection techniques: Students and surgeons could grasp techniques for segmental and subsegmental localization and resection through demonstration with the 3DP model.
+c211M02N05 | Physicians' clinical judgment: Physicians can enhance their judgment in ethical conflicts within these online communities by studying other physicians' cases
+c219M01N13 | problem-solving competencies: Knowledge points were connected to problem-solving tasks so students could apply learning to realistic clinical scenarios.
+c219M02N08 | Internal medicine nursing clinical reasoning skills: Problem system layer: Bridges theory and practice by challenging students with clinical problems, thereby developing their clinical reasoning and competency
+c224M01N07 | clinical decision-making: In module 13, each participant could practice clinical decision-making through four clinical scenarios.
+c224M01N08 | decision-making skills: The simulation allowed participants to identify opportunities to enhance their decision-making skills when addressing daily challenges.","Knowledge transferred through cases, stories, simulations, examples, pointing, or practical demonstration because a sufficient verbal account has not been provided."
+s003M01TK04,Unrecognized or Unarticulated Personal Know-how,Tacit Knowledge,G,SIC 20-39 - Manufacturing,2,"c218M02N16 | Pediatric neuro-oncology patient management intuition: An analysis of the combined impact of the online course and subsequent in-person workshops is underway and will focus on further exploration of the perceived impact on patient management
+c221M02N07 | Indigenous healer expertise for cancer and bone injury treatments: Doctors with deep-rooted traditional medical knowledge begin by developing medicinal recipes from ancient texts/books","A person performs or decides effectively but has not consciously identified, reflected upon, or expressed the knowledge being used."
+s003M01TK05,Practised Motor and Tool-Operation Skill,Tacit Knowledge,G,SIC 20-39 - Manufacturing,8,"c209M01N07 | surgical skills: The study evaluated whether the models enhanced anatomical knowledge and surgical skills.
+c210M01N07 | Practical manoeuvres for PIVC placement: A thirteen-item checklist and onsite observation assessed nurses’ performance in practical PIVC placement manoeuvres.
+c210M02N08 | Hands-on PIVC cannulation technique: Practical manoeuvres for PIVC placement assessed through 13-item observation checklist
+c210M02N12 | Venous filling promotion maneuvers: Effective means of promoting venous filling prior to cannulation
+c216M01N06 | opioid-overdose recognition, CPR, and naloxone-response skills: ReviveXR promoted skill acquisition in overdose response and CPR techniques.
+c216M01N14 | administering intranasal naloxone to an overdose victim: Trainees practiced using a real naloxone demonstration device on a virtual patient.
+c216M02N17 | Participant muscle memory development: Participants highlighted... that it closely resembles real‑world scenarios and aids in developing muscle memory.
+c219M02N14 | Internal medicine nursing hands-on skills: Basic knowledge layer: Covers fundamental concepts, from etiology to nursing care, that students must understand to build a solid knowledge base",Competence requiring learned bodily control and coordination during physical work or tool-mediated activity.
+s003M01TK06,Trained Sensory and Perceptual Recognition,Tacit Knowledge,G,SIC 20-39 - Manufacturing,13,"c209M01N08 | spatial understanding of anatomical structures: The novel method significantly enhanced students' spatial understanding of anatomical structures.
+c209M01N09 | understanding of vascular spatial relationships: The 3DP group was rated significantly higher for understanding vascular spatial relationships.
+c209M02N03 | 3D spatial cognition of lung anatomy: This novel teaching method significantly enhances students' spatial understanding of anatomical structures
+c209M02N04 | Intraoperative vascular injury avoidance skills: understand how to avoid intraoperative vascular injuries
+c209M02N07 | Complex anatomical pathology comprehension: 3DP models offer precise, individualized, and life-size physical models that help interns better grasp the spatial relationships between tumors, bronchi, and vascular structures
+c210M02N11 | PIVC complication recognition and prevention routine: Post-intubation care assessment and complication prevention programme; Early recognition of treatment-related complications
+c214M01N10 | risk identification: The assessment measured the ability to detect potential safety issues in simulated industrial contexts.
+c214M02N08 | Risk identification ability in nuclear hazard scenarios: Risk identification: the ability to detect potential safety issues within simulated industrial contexts
+c214M02N10 | Hazard awareness in nuclear power plant contexts: Many studies indicated that VR has advantages in learning of behavior compliance, hazard awareness, and operational procedures
+c216M01N07 | evaluation of overdose surroundings for drug evidence and responder hazards: Participants learned to evaluate surroundings for drug evidence and hazards such as needles and fentanyl.
+c216M01N08 | checking an overdose victim's responsiveness: Checking patient responsiveness was included among the skills learned.
+c216M01N10 | checking an overdose victim for breathing: Checking for breathing was included in the response sequence.
+c216M02N18 | Participant situational awareness in MR: The advantage of MR over VR is that it allows users to see and interact with virtual objects while simultaneously... see their real‑world surroundings.","A learned capacity to detect meaningful visual, auditory, tactile, spatial, or other sensory differences."
+s003M01TK08,Immediate Embodied Response to Changing Conditions,Tacit Knowledge,G,SIC 20-39 - Manufacturing,3,"c214M02N11 | Safe behavioral responses to nuclear safety threats: VR enables participants to experience scenarios that would be too hazardous to replicate in traditional on-site training, offering a risk-free platform to practice appropriate responses to unsafe situations
+c214M02N15 | Real-time decision-making skill during nuclear emergencies: VR enables participants to experience scenarios that would be too hazardous to replicate in traditional on-site training, offering a risk-free platform to practice appropriate responses to unsafe situations
+c216M01N15 | reassessing an overdose victim and repeating response steps: Participants learned to reassess the victim and repeat earlier steps when indicated.
+c225M02N08 | Rapid clinical and logistical decision-making under time-pressure and resource constraints: ""enhanced decision-making skills among participants""","Rapid bodily or neurophysiological response to hazards or changing conditions, often preceding complete conscious reasoning."
+s003M01TK09,Shared Professional Language and Contextual Meaning,Tacit Knowledge,G,SIC 20-39 - Manufacturing,2,"c221M01N02 | English translation skills for ancient medical texts: The recipe-generation process integrates the linguistic skills of translators who convert ancient medical texts into English.
+c222M01N39 | osteosarcoma domain knowledge for entity and relationship annotation: Domain experts reviewed the annotation process and contributed to a unified specification for analyzing and comprehending the text.","Understanding that depends on participation in a community sharing specialized terms, categories, expressions, narratives, and contextual meanings."
+s003M01TK10,Shared Professional Norms and Standards of Judgment,Tacit Knowledge,G,SIC 20-39 - Manufacturing,18,"c209M02N05 | Safe margin-affected lung segment identification ability: No significant differences were found between the two groups regarding... identification of the lung segment range influenced by the safety margin
+c210M02N07 | Anatomical vein selection reasoning skills: Scientific basis and evaluation criteria for vein selection; Vein localisation methods based on anatomical features
+c210M02N09 | Catheter type selection and placement protocols: Catheter selection strategies; PIVC placement protocols; Standardised preparation process for PIVC placement
+c210M02N10 | Aseptic handling during catheter insertion: Principles of asepsis and patient safety during tube insertion
+c211M02N04 | Physicians' clinical diagnostic reasoning: Contributing knowledge allows physicians to systematize clinical insights, articulate diagnostic reasoning, and refine therapeutic approaches
+c212M01N04 | Moral behavior: Moral behavior is described as actions and decisions based on bioethical principles; it was an evaluated training outcome.
+c212M01N06 | Ethical decision-making skills: Virtual medical situations required ethical decision-making, and the moral-behavior test included situational tasks evaluating such decisions.
+c213M02N08 | Clinical Decision-Making: This model is used for predictions and decision-making during the next time interval
+c214M01N11 | preventive and recovery measures: The assessment measured selection of appropriate responses or corrective actions in hazardous situations.
+c214M02N07 | Operational understanding of spent fuel pool cooling system: Operational understanding: comprehension of safety knowledge and functional mechanisms
+c214M02N09 | Preventive and recovery response knowledge for nuclear incidents: Preventive and recovery measures: selection of appropriate responses or corrective actions in hazardous situations
+c214M02N14 | Contextual reasoning skill in simulated nuclear environments: Learners were presented with short-answer questions requiring contextual reasoning, decision-making, and applied understanding
+c218M02N18 | Expert feedback and professional judgment: received effective feedback from experts and peers
+c219M02N10 | Internal medicine nursing clinical decision-making capabilities: Problem system layer: Bridges theory and practice by challenging students with clinical problems, thereby developing their clinical reasoning and competency
+c225M02N05 | Triage and resource prioritisation decision-making in mass casualty scenarios: ""Participants have the opportunity to practise disaster management skills such as communication, prioritisation, teamwork, and delegation""
+c227M01N04 | knowledge of appropriate clinic size: The authors' coding example states that knowledge of appropriate clinic size was important for quality assurance and was held by contract administrators.
+c227M01N05 | knowledge of long wait times: Some respondents accessed Registry data and acquired knowledge identifying long wait times.
+c227M02N07 | Data interpretation competency for wait time metrics: Transforming wait time results into meaningful information required the categorization of specific results as either being within acceptable intervals or as being 'too long.'","Judgment grounded in collectively learned expectations about what is appropriate, acceptable, credible, safe, or legitimate."
+s003M01TK11,"Informal Coordination, Communication, and Escalation Know-how",Tacit Knowledge,G,SIC 20-39 - Manufacturing,4,"c212M02N08 | Clinical communication skills: Psychological difficulties in interactions with patients or their representatives were identified as a significant and frequent issue. The effectiveness of treatment depends on psychological atmosphere created during interactions between physician and patient.
+c216M01N09 | calling 911 during an opioid-overdose response: Participants learned to contact emergency services by calling 911.
+c216M01N70 | community overdose education and naloxone distribution experience: Some health program coordinators regularly conducted OEND in communities.
+c225M02N04 | Inter-agency communication and coordination practices during flood response: ""Participants have the opportunity to practise disaster management skills such as communication, prioritisation, teamwork, and delegation""
+c225M02N06 | Multidisciplinary teamwork and role delegation among first responder units: ""Participants have the opportunity to practise disaster management skills such as communication, prioritisation, teamwork, and delegation""
+c225M02N07 | Task delegation and command chain execution in emergency operations: ""Participants have the opportunity to practise disaster management skills such as communication, prioritisation, teamwork, and delegation""","Unwritten conventions governing coordination, communication, negotiation, signalling, collaboration, contact, and escalation within a group."
+s003M01TK12,Organizational Culture and Unwritten Working Practices,Tacit Knowledge,G,SIC 20-39 - Manufacturing,4,"c213M01N46 | healthcare-provider cancer diagnostic experience and clinical practices: The local cancer-learning scenario reflects each healthcare provider’s specific patient demographics and clinical practices, and the federated scenario allows providers to benefit from collective knowledge and experiences.
+c213M01N47 | healthcare-provider supplier-selection strategies and methodologies: The paper explains that institutions can enhance their models by learning from one another and adopting successful strategies or methodologies; the supplier case allows providers to analyze and adapt using shared model-performance insights.
+c227M02N09 | Booking manipulation tactics for wait time figures: This is where it comes to… that you start to deceive a little. We pretend that patients have an appointment on New Year's Eve. Nobody wants to come on New Year's Eve.
+c227M02N17 | Local administrative workaround routines: Rather than trying to explore and communicate this systemic problem further, the respondents would use a local, administrative shortcut.","Knowledge embedded in organizational identity, traditions, routines, authority relations, and historically developed ways of working."
+s003M01TK13,AmbiguousTacit Knowledge(*),Tacit Knowledge,G,SIC 20-39 - Manufacturing,42,"c209M02N06 | Knowledge acquisition ease (3DP model): 3DP group demonstrated superiority in the ease of knowledge acquisition
+c211M01N06 | clinical experiences: The community enables physicians to share clinical experiences across regions, specialties, and knowledge backgrounds.
+c211M01N07 | professional insights: Physicians use online communities to exchange professional insights.
+c211M01N08 | specialized expertise: The paper states that physicians acquire specialized expertise from peers through reciprocal contribution and exchange.
+c211M02N06 | Physicians' clinical therapeutic approaches: Contributing knowledge allows physicians to refine therapeutic approaches
+c212M01N05 | Self-efficacy: Self-efficacy was measured as students' confidence in achieving goals and managing professional tasks.
+c212M01N07 | Critical thinking skills: The system was described as fostering critical thinking through active decisions and analysis of consequences.
+c212M01N08 | Problem-solving skills: AI entities could possess problem-solving capabilities, and the learning system was described as developing problem-solving competence.
+c212M02N07 | Professional self-efficacy beliefs: Self-efficacy refers to an individual's confidence in their ability to achieve set goals and effectively manage professional tasks. A high level of self-efficacy among healthcare workers is associated with better professional performance, job satisfaction, and reduced occupational burnout.
+c212M02N09 | Stress coping strategies: The study explored factors that facilitate or hinder professional self-realization among medical workers and strategies they employ to manage professional stress. Professional conflicts lead to a decrease in effectiveness of treatment.
+c212M02N10 | Professional self-actualization capacity: The research identified factors that both facilitate and hinder professional self-realization: issues with colleague relationships, problems with patient interactions, colleagues' ambitions and career aspirations, psychological characteristics of certain colleagues, and complexity of labor.
+c214M01N09 | operational understanding: The assessment measured comprehension of safety knowledge and functional mechanisms.
+c214M01N12 | safety skills: AIVR supported acquisition and mastery of skills through interactive practice.
+c214M02N12 | Self-efficacy in nuclear safety task execution: To assess trainees' self-efficacy levels after completing training via AIVR, traditional VR, or slides-based methods
+c214M02N13 | Critical thinking ability for safety decision-making: LLMs demonstrate strengths in providing personalized content delivery, interactive feedback, and natural language-based explanations to clarify complex concepts, thereby fostering cognitive engagement and critical thinking
+c215M02N10 | SBP-DBP pulse pressure dependence constraints: SBP and DBP are not independent but have a meaningful relationship that provides information on cardiovascular health.
+c215M02N11 | Intrinsic systolic-diastolic structure in BP measurements: Existing data-driven methods often overlook the intrinsic structure within BP measurements
+c215M02N12 | Subject-specific averaged pulse pressure (PP) profiles: PP = Avg(Y_s - Y_d) represents the average pulse pressure for each person
+c216M01N16 | confidence in rescue breathing, chest compressions, and naloxone administration: Confidence in overdose-response activities was assessed and several measures increased after round 1.
+c216M01N17 | naloxone-administration learning self-efficacy: Cognitive, affective, and psychomotor learning self-efficacy was evaluated.
+c216M01N18 | behavioral preparedness to intervene in an opioid overdose: Qualitative feedback emphasized enhanced behavioral preparedness.
+c216M01N19 | ReviveXR training experiences and usability perspectives: Participants shared training experiences and perspectives through semi-structured interviews.
+c216M01N69 | ReviveXR 3D modeling, animation, programming, lighting, and texture-creation expertise: The doctoral student applied expertise in these development areas.
+c216M01N71 | real-world naloxone overdose-intervention experience: Twenty percent of participants had intervened in an overdose using naloxone.
+c216M01N72 | real-world overdose-witnessing experience: Thirty-six percent of participants had witnessed an overdose.
+c216M02N13 | Participant confidence in rescue breathing: Confidence in performing rescue breathing increased from a mean of 3.60 to 4.60 (p < 0.001).
+c216M02N14 | Participant confidence in chest compressions: Although confidence in performing chest compressions also improved, the change was not statistically significant (p = 0.083).
+c216M02N15 | Participant fear of making mistakes: Participants' fear of making mistakes in overdose situations dropped significantly from a mean of 2.68 to 1.96 (p = 0.023).
+c216M02N16 | Participant intent to intervene: Intent to use naloxone from 4.16 to 4.84 (p = 0.005), rescue breathing from 4.12 to 4.64 (p = 0.006), and respond from 4.28 to 4.88 (p = 0.01).
+c217M01N03 | teaching experience: Educators reported sharing teaching experience in team discussions, and 68 percent said their experience was recognized and adopted.
+c217M01N04 | personal knowledge and experience: The participation measure asked whether educators actively contributed personal knowledge and experience in teaching design.
+c217M01N05 | teaching insights: Table 1 reports that teaching insights were shared proactively.
+c217M02N01 | Nursing Educators' Knowledge Sharing Behavior: This study investigates the influence of organizational culture and technological environment on knowledge-sharing behavior among nursing educators.
+c218M01N09 | Pediatric neuro-oncology clinical knowledge and skills: NOTS was launched to equip multidisciplinary providers with essential knowledge and skills related to neuro-oncological care.
+c218M01N11 | NOTS participants' perceptions of the online learning experience: Participants were invited to evaluate their perceptions of the online course.
+c218M02N17 | Pediatric neuro-oncology clinical competency: Future programs should also consider competency-based assessments to ensure that online training translates into improved knowledge, changes in clinical practice, and improved patient outcomes
+c219M01N14 | knowledge point mastery: Assessment questions were designed to evaluate knowledge-point mastery.
+c219M02N09 | Internal medicine nursing critical thinking abilities: Curriculum objective layer: Defines overarching learning goals to guide students toward mastering knowledge, skill, and critical thinking
+c219M02N13 | Internal medicine nursing self-directed learning capability: The KG-DTPNursing platform represents an innovative teaching tool that leverages information technology to support self-directed learning
+c221M01N01 | Deep-rooted traditional medicine knowledge of doctors: Doctors with deep-rooted traditional medical knowledge develop medicinal recipes from ancient texts or books.
+c224M02N03 | Nurses' Self-Efficacy in COPD Care: High-fidelity simulation... improves learning satisfaction, confidence, and self-efficacy among nursing students.
+c227M01N06 | knowledge of Registry design flaws: Actors recognized Registry flaws, but knowledge that could support improvement remained hidden in system actors' minds or was not utilized.",Maps tacit knowledge that cannot be assigned to TK01-TK12 because the evidence does not identify a sufficiently specific domain or analytical level.
+s003M01TP01,Model-based Knowledge Representation and Simulation,Technology-enable Practice,G,SIC 20-39 - Manufacturing,7,"c209M01N16 | 3D visualization model-based teaching: The 3DV group interacted with a digital model on a computer to study lung anatomy and surgical procedures.
+c209M01N17 | transparent hollow 3DP model-based teaching: The 3DP group used a transparent hollow model without lung parenchyma to observe internal structures and the surgical resection range.
+c209M01N35 | current 3DP models used in clinical practice: The authors explicitly discuss limitations in current 3DP models used in clinical practice and state that optimization tailored to surgical needs is required.
+c209M02N29 | 3DV model computer-based teaching method: The 3DV group learned with a 3D visualization model, interacting with the digital model on a computer
+c209M02N31 | 3D reconstruction process (Mimics): Lung CT scan images were imported into Mimics 23.0 software for initial 3D reconstruction
+c209M02N32 | 3D model post-processing (3-matic/Voxel): followed by post-processing using 3-matic 15.0 software
+c224M01N15 | virtual clinical simulation with four clinical scenarios: Module 13 allowed each participant to practice clinical decision-making through four clinical scenarios.","Uses BIM, 3D/4D models, engineering simulations, virtual models, and computational scenarios to represent assets, environments, construction processes, system behavior, and performance relationships."
+s003M01TP03,Situated Experiential Learning through Extended Reality,Technology-enable Practice,G,SIC 20-39 - Manufacturing,9,"c212M02N21 | HoloHuman AR application: The AR application 'HoloHuman' displays a human model on an examination table. Moderators could interact with the model and user interface via the HoloLens headset. Structures, organs, and systems could be examined individually or in combination.
+c212M02N22 | HoloLens headset-based learning: Students engaged with AI through the HoloLens headset. Moderators could interact with the model and user interface via the HoloLens headset.
+c214M01N16 | traditional VR training: Traditional VR training was an immersive comparator without AIVR personalization.
+c214M01N17 | AIVR: AIVR integrates VR, an AI tutoring system, and adaptive learning for safety training.
+c214M01N18 | VR system: The VR system provides an immersive environment and adaptive navigation support.
+c214M02N25 | Traditional VR training for nuclear safety: traditional VR training (Group 2, N = 30)
+c214M02N26 | AIVR adaptive nuclear safety training system: This paper proposes an adaptive learning theory-based AI-powered VR safety training system, named AIVR
+c216M01N35 | ReviveXR mixed reality-based naloxone training: ReviveXR is self-paced mixed reality training for overdose response, CPR, and naloxone administration.
+c225M02N19 | Augmented Reality (AR)-enhanced multiplayer tabletop exercise for disaster response training: ""adoption of technology, such as augmented reality (AR), has the potential to overcome the limitations of conventional disaster preparedness training""","Uses VR, AR, MR, CAVE, or hybrid XR environments to support embodied rehearsal, contextual guidance, historical interpretation, hazard recognition, and situated knowledge transfer."
+s003M01TP04,Interactive Consequence Learning and Digital Feedback,Technology-enable Practice,G,SIC 20-39 - Manufacturing,4,"c212M01N15 | Interactive AI Simulations: Students engaged in AI-created virtual practical scenarios, made decisions, observed consequences, and generated action data.
+c212M01N17 | Personalized Learning Programs: AI technologies tailored educational materials to each student's needs and proficiency level.
+c214M01N20 | adaptive learning system: The adaptive learning system identifies weaknesses and initiates targeted content adjustment and retraining.
+c214M02N28 | Adaptive learning system for performance-based content adjustment: An adaptive learning system that continuously assesses learner performance and adjusts training content to address individual knowledge gaps","Uses responsive simulations, animations, indicators, interfaces, or multisensory feedback to make relationships between actions, system states, and consequences experientially perceptible."
+s003M01TP07,Algorithmic Pattern Discovery and Prediction,Technology-enable Practice,G,SIC 20-39 - Manufacturing,10,"c213M01N22 | Blockchain-based Predictive Digital Twin: The validated architecture combines predictive digital twins, blockchain, and federated learning for decentralized model development and benchmarking.
+c213M02N14 | Federated Learning Protocol: Federated Learning (FL) is a decentralized approach to ML that enables multiple participants to collaboratively train models without directly sharing data
+c215M01N09 | complete model retraining: Existing data-driven approaches retrain the complete model when samples or biosignal inputs expand.
+c215M01N10 | BpBLS: BpBLS is implemented as a knowledge-embedded bi-incremental framework for cuffless BP estimation.
+c215M01N11 | Pulse Pressure Regularization: PPR captures BP knowledge and constrains SBP and DBP predictions using pulse pressure.
+c215M01N12 | data-incremental update: The data-incremental algorithm updates mapped features, the pseudoinverse, and model weights for new samples.
+c215M02N18 | BpBLS knowledge-embedded bi-incremental broad learning system: We propose a Knowledge-embedded Bi-incremental Broad Learning System (BpBLS) for cuffless BP estimation
+c215M02N19 | BpBLS data incremental update practice: Data Incremental: The knowledge-embedded incremental implementation leverages the calculation of the pseudoinverse of the partition matrix
+c215M02N20 | BpBLS biosignal modality incremental update practice: Signal Incremental: Next, let us see the cases where multichannel signals... continue to enter into the system.
+c222M01N19 | BioBERT-based entity and relationship extraction: Fine-tuned BioBERT identified osteosarcoma-related entities and relationships and processed the complete dataset.","Uses AI, machine learning, NLP, statistical learning, or rule-based algorithms to derive classifications, forecasts, detected patterns, and predicted conditions from data."
+s003M01TP08,Generative Knowledge Synthesis and Content Production,Technology-enable Practice,G,SIC 20-39 - Manufacturing,6,"c212M01N16 | AI Assistants: AI programs supported practical-case analysis and supplied explanations, advice, additional information, and feedback.
+c214M01N19 | AI tutoring system: The AI tutoring system provides real-time personalized responses based on the knowledge base.
+c214M02N29 | AI tutoring system for personalized content generation: An AI tutoring system, that leveraging LLMs for personalized content generation
+c221M01N12 | Llama2-13B knowledge base trained on traditional medicine manuscripts: The researchers custom-trained Llama2-13B using ancient medicine recipe books and their English-translated content.
+c221M02N19 | WedaGPT AI and blockchain platform ecosystem: We introduce 'WedaGPT,' a Generative AI-enabled platform that utilizes a custom-trained Meta's Llama2 Large Language Model (LLM), Blockchain, self-sovereign identity (SSI), Non-Fungible Tokens (NFTs), and model cards to share traditional medical knowledge
+c221M02N20 | LLM-driven chat inquiry interface in mobile wallet: Through a chat-based interface in the SSI-enabled mobile wallet, users can interact with the LLM and access detailed information on treatments","Uses generative AI to combine requirements, contextual data, and retrieved knowledge into new drafts, reports, explanations, summaries, or recommendations."
+s003M01TP09,Semantic Knowledge Structuring and Retrieval,Technology-enable Practice,G,SIC 20-39 - Manufacturing,6,"c214M02N30 | RAG-based knowledge retrieval system for nuclear safety: The RAG system vectorizes the query, retrieves the most relevant content from the knowledge base, and delivers this content, along with the query, to the LLMs using prompt engineering
+c219M01N20 | KG-DTPNursing: The research prototype was developed to structure nursing knowledge and support systematic knowledge acquisition.
+c222M01N18 | manual annotation using Doccano: Approximately 400 papers were manually annotated using Doccano.
+c222M01N20 | OSKG construction in Neo4j: Collected data were processed by the trained model to construct the osteosarcoma KG in Neo4j.
+c222M01N21 | Knowledge Graph Question Answering (KGQA): The implemented system integrates OSKG, an LLM, and three retrieval tools to answer natural-language questions.
+c222M02N18 | Osteosarcoma KGQA System (ChatGLM3-6B Integrated): we developed a specialized question-answering system (knowledge graph question answering (KGQA)) powered by ChatGPTM3","Uses knowledge graphs, semantic metadata, embeddings, vector databases, and meaning-based search to represent knowledge relationships and retrieve contextually relevant information."
+s003M01TP10,Database-supported Project Knowledge Archiving,Technology-enable Practice,G,SIC 20-39 - Manufacturing,7,"c213M02N15 | Blockchain-based Model Sharing: Instead of sharing sensitive patient data, each node shares their trained models and parameters on the blockchain network
+c221M01N11 | English translation and PDF digitization of ancient medical recipe books: Ancient medical recipe books were translated into English and digitized into PDF formats to enrich the platform's knowledge base.
+c221M01N13 | WedaGPT traditional medicine knowledge platform: WedaGPT was developed as a proof of concept with traditional medicine practitioners and evaluated for blockchain and LLM performance.
+c221M02N22 | Blockchain-backed recipe verification and storage: Medical recipe data, including treatment histories and physician details, are encapsulated in Model Cards and securely stored on the blockchain
+c221M02N23 | Model Card generation and retrieval service: Model Cards serve as invaluable repositories, capturing essential details such as patient status, prescription dates, and other critical information
+c227M01N18 | national platforms: Patients could view aggregated wait times through national platforms.
+c227M02N25 | Electronic medical record data entry: The data in the Registry were, with few exceptions, updated daily and automatically extracted from the electronic medical records.","Preserves and retrieves codified project records, narratives, lessons learned, safety information, and operational knowledge through databases, data warehouses, or conventional KMS repositories."
+s003M01TP11,Collaborative Knowledge Co-creation through Digital Platforms,Technology-enable Practice,G,SIC 20-39 - Manufacturing,12,"c211M01N13 | knowledge-contribution behaviors: Knowledge contribution involves proactive creation and sharing, and is measured through monthly knowledge-sharing posts.
+c211M01N14 | knowledge-seeking behaviors: Knowledge seeking consists of searching, browsing, and assimilating community knowledge and is measured through knowledge-sharing comments.
+c211M01N15 | DXY online physician community: DXY supports academic exchange, continuing medical education, medication guidance, industry discussion, and specialty-specific communication.
+c217M01N12 | video conferencing: Video conferencing tools were used mainly for remote teaching and meetings and were found to facilitate knowledge-sharing behavior.
+c217M02N14 | Nursing Video Conferencing Tools: Video conferencing tools are primarily utilized for remote teaching and meetings, with 20% of respondents using them daily and 40% using them weekly.
+c218M01N21 | NOTS synchronous online sessions/live meetings: Participants engaged in synchronous online sessions, and live meetings were highly rated.
+c218M01N22 | NOTS guided online discussions: Participants engaged in guided online discussions during the modules.
+c218M01N23 | NOTS virtual pediatric neuro-oncology case discussions: Clinical cases illustrated theoretical concepts and case discussions provided opportunities to apply learning.
+c218M01N24 | NOTS institutional CNS tumor care research-project development: Participating teams developed research projects and received feedback from experts and peers.
+c218M02N35 | NOTS live online meetings: Live meetings were also of importance, with many participants requesting an expansion of interactive online sessions
+c218M02N36 | NOTS online discussion forums: Online discussion forums were...rated as most valuable
+c218M02N38 | NOTS case discussion sessions: recommendations for learning activities, requests for more synchronous events...The need for more case discussions","Uses portals, messaging systems, shared virtual environments, and online collaboration platforms to support peer exchange, collective interpretation, user contribution, and shared knowledge construction."
+s003M01TP12,Multimedia and Blended Knowledge Internalization,Technology-enable Practice,G,SIC 20-39 - Manufacturing,16,"c210M01N19 | WeChat push service-based platform: Clinical-guideline education was delivered through a WeChat push service-based platform.
+c210M02N25 | WeChat push-based fragmented learning intervention: Targeted educational content on PIVC placement was developed and delivered through the WeChat platform. Participants received 2-3 concise messages twice daily over a 10-day period.
+c210M02N26 | Mobile device-based learning systems: Mobile-enabled learning systems provide more cost-effective solutions for content delivery
+c210M02N27 | Ubiquitous internet learning platforms: Internet-based learning further facilitates ubiquitous access to multimodal educational resources
+c210M02N28 | E-learning platforms: Evidence indicates that technology-enhanced learning (TEL) approaches, particularly E-learning platforms
+c217M01N11 | Learning Management Systems (LMS): LMS was the most commonly used measured tool for daily teaching, with about 50 percent using it daily and 30 percent multiple times weekly.
+c217M01N13 | online teaching platforms: Online teaching platforms were widely used, with 45 percent using them daily and 35 percent multiple times weekly.
+c217M02N13 | Nursing LMS Platform: Learning Management Systems (LMS) is the most commonly used tool for daily teaching, with approximately 50% of teachers and students using it every day.
+c218M01N19 | NOTS prerequisite self-directed online modules: Participants were invited to complete nine weeks of prerequisite self-directed online modules.
+c218M01N20 | NOTS pre-recorded pediatric neuro-oncology lectures/videos: Pre-recorded lectures and videos were identified as valuable self-paced formats.
+c218M02N34 | Pre-recorded lecture video delivery system: Pre-recorded lectures, rated highly by 73.5% of respondents
+c218M02N40 | Online module Learning Management System: Participants are required to complete 9 weeks of online modules
+c218M02N41 | Cure4Kids LMS: Participants were then enrolled into the prerequisite modules in Cure4Kids
+c218M02N42 | Pediatric oncology virtual learning: the potential of technology-facilitated pediatric hematology-oncology education
+c219M02N25 | Online education platforms (e.g., MOOCs): The integration of 'Internet Plus Education' has spurred the emergence and rapid development of various online learning platforms
+c224M01N13 | self-management of COPD (Ecare-COPD) MOOC: The intervention was a MOOC-format training program called self-management of COPD (Ecare-COPD), organized into 13 modules.","Combines digital content, interactive media, online resources, and face-to-face or workplace activities to strengthen demonstration, participation, and knowledge internalization."
+s003M01TP13,Criteria-based Performance Evaluation and Ranking,Technology-enable Practice,G,SIC 20-39 - Manufacturing,17,"c209M02N66 | Statistical analysis practice: Data analysis was performed using IBM SPSS Statistics
+c209M02N67 | Sample size calculation practice: sample size was estimated using G*Power software
+c212M01N18 | Online pre- and post-training assessment: Preliminary and final assessments were conducted online through a remote learning platform with video-conference proctoring.
+c213M01N23 | blockchain-based healthcare predictive-model sharing and benchmarking: Locally trained models are shared across the blockchain and benchmarked against each recipient node’s validation data.
+c213M01N24 | cross-provider breast cancer model evaluation: Every provider evaluated breast-cancer models developed by other providers on its own validation data.
+c213M01N25 | cross-provider Parkinson’s disease model evaluation: The Parkinson’s disease case partitioned provider data and compared model performance across institutions.
+c213M01N26 | cross-provider healthcare supplier selection model evaluation: Each supplier-selection model was evaluated against models developed by other nodes and shared through the blockchain.
+c213M02N16 | Performance Benchmarking: Each node benchmarks the performance of received models on its own hold-out validation set
+c214M01N21 | AI-based assessment system: The assessment system evaluates responses, records performance, and identifies learning weaknesses.
+c217M02N36 | Structural Equation Modeling for KSB: SEM also incorporates the error structure of latent variables to enhance model reliability.
+c218M01N25 | NOTS graded online course tasks and activities: Individual grades were assigned based on completion of course tasks and activities.
+c218M01N26 | NOTS anonymous online post-course evaluation: At the conclusion of the online modules, enrollees were prompted to anonymously evaluate their online learning experience.
+c224M01N14 | module knowledge assessments: Participants completed an initial assessment and a knowledge assessment at the end of each formative module.
+c227M01N16 | digital wait time registry: The Registry was implemented to display, evaluate, and improve wait-time data and to support monitoring, steering, and organizational learning.
+c227M01N17 | parallel, local digital systems: Some care units developed parallel local systems and used them for analyses intended to improve wait times.
+c227M02N24 | Registry report generator usage: An example of the report generator interface as seen by personnel at the central contractor unit or care managers that specifically asked for access.
+c227M02N26 | Local parallel digital tracking systems: Some care units further developed parallel, local digital systems instead of voicing concerns about and suggesting ways of addressing flaws in the Registry.","Measures, compares, scores, or ranks learners, models, interventions, and alternatives using predefined criteria, indicators, benchmarks, or performance metrics."
+s003M01TP14,Ambiguous Technology-enable Practice,Technology-enable Practice,G,SIC 20-39 - Manufacturing,3,"c209M02N68 | Randomization assignment practice: randomly assigned to one of two groups using a computer-generated random number table
+c221M02N21 | NFT marketplace for recipe token exchange: Transforming ancient medicinal recipes into NFT tokens for sale on NFT marketplaces
+c222M02N19 | Osteosarcoma Literature Data Preprocessing Workflow: During the data preprocessing phase, a series of procedures was conducted on the 25,415 obtained articles to guarantee the quality and accessibility of the data",Maps Technology-enable practices that cannot be assigned to TP01-TP13 because the evidence does not identify a sufficiently specific domain or analytical level.

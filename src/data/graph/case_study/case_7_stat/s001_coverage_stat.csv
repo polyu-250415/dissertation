@@ -1,0 +1,139 @@
+ID,Object,Question,Weight,Cypher,c001,c002,c003,c004,c005,c006,c007,c008,c009,c010,c011,c012,c014,c015,c016,c017,cross_cases
+DS01Q01,Tacit knowledge,which tacit knowledge elements are described?,1,"MATCH (tk:TacitKnowledge)
+RETURN DISTINCT tk",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS01Q02,Knowledge Holder,Which knowledge holders are described?,2,"MATCH (kh:KnowledgeHolder)
+RETURN DISTINCT kh",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS01Q03,Traditional Human-centred Practices,Which traditional human-centred practice elements are described?,2,"MATCH (t:TraditionalHumancentralPractice)
+RETURN DISTINCT t",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS01Q04,technology-enable Practice,Which technology‑enable practices have been described?,1,"MATCH (p:TechnologyenablePractice)
+RETURN DISTINCT p",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS01Q05,Digital Technology,Which digital technology elements have been described?,1,"MATCH (dt:DigitalTechnology)
+RETURN DISTINCT dt",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS01Q06,Organizational Dependency,Which organizational dependencies are stated as necessary for technology-enable practices?,2,"MATCH (od:OrganizationalDependency)
+RETURN DISTINCT od",1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,0,12
+DS01Q07,Environment Dependency,Which external factors affect the implementation of technology-enable practices?,2,"MATCH (d:EnvironmentalDependency)
+RETURN DISTINCT d",0,1,1,0,0,0,1,1,1,0,1,1,1,1,1,1,11
+DS01Q08,Limitation,Which limitations are been described,1,"MATCH (l:Limitation)
+RETURN DISTINCT l",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS01Q09,be_shared_by,Which tacit knowledge  is shared by knowledge holders?,2,"MATCH (tk:TacitKnowledge)-[r:be_shared_by]->(kh:KnowledgeHolder)
+WITH COLLECT({src_node:tk, rel: r, dst_node: kh}) AS obj
+RETURN DISTINCT obj",1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,15
+DS01Q10,be_absorbed_by,which tacit knowledge is absorbed by knowledge learners?,2,"MATCH (tk:TacitKnowledge)-[r:be_absorbed_by]-(kl:KnowledgeLearner)
+WITH COLLECT({src_node:tk, rel: r, dst_node: kl}) AS obj
+RETURN DISTINCT obj",1,1,0,1,1,1,1,1,0,1,0,1,1,1,0,0,11
+DS01Q11,be_captured_by,which tacit knowledge is captured by technology-enable practices?,2,"MATCH (tk:TacitKnowledge)-[r:be_captured_by]-(tep:TechnologyenablePractice)
+WITH COLLECT({src_node:tk, rel: r, dst_node: tep}) AS obj
+RETURN DISTINCT obj",1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,1,11
+DS01Q12,participate_in,Which knowledge holders or knowledge learners take part in knowledge retention practices?,2,"MATCH (k:KnowledgeHolder|KnowledgeLearner)-[r:participate_in]->(p:TechnologyenablePractice)
+WITH COLLECT({src_node:k, rel: r, dst_node: p}) AS obj
+RETURN DISTINCT obj",1,1,1,1,0,1,1,1,0,0,1,1,1,0,0,1,11
+DS01Q13,depend_on,which organization or environment conditions technology-enable practices depend on?,2,"MATCH (p:TechnologyenablePractice)-[r:depend_on]->(d:OrganizationalDependency|EnvironmentalDependency)
+WITH COLLECT({src_node:p, rel: r, dst_node: d}) AS obj
+RETURN DISTINCT obj",1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,15
+DS01Q14,evaluate,which tacit knowledge is evaluated by technology-enable practices?,2,"MATCH (tk:TacitKnowledge)-[r:evaluate]-(t:TechnologyenablePractice)
+WITH COLLECT({src_node:tk, rel: r, dst_node: t}) AS obj
+RETURN DISTINCT obj",1,1,0,1,0,1,0,0,0,1,1,1,1,0,0,0,8
+DS01Q15,adopt,Which digital technologies technology‑enable practices adopt?,2,"MATCH (p:TechnologyenablePractice)-[r:adopt]-(d:DigitalTechnology)
+WITH COLLECT({src_node:p, rel: r, dst_node: d}) AS obj
+RETURN DISTINCT obj",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS01Q16,be_constrained_by,Which limitations technology-enable practices are constrained by?,2,"MATCH (p:TechnologyenablePractice)-[r:be_constrained_by]-(l:Limitation)
+WITH COLLECT({src_node:p, rel: r, dst_node: l}) AS obj
+RETURN DISTINCT obj",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS01Q17,mitigate or at least resolve,Which limitations technology‑enable practices mitigate or at least resolve?,2,"MATCH (p:TechnologyenablePractice)-[r:mitigate|resolve]->(l:Limitation)
+WITH COLLECT({src_node:p, rel: r, dst_node: l}) AS obj
+RETURN DISTINCT obj",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS01Q18,complement,Which traditional human-central practices  technology‑enable practices complement?,2,"MATCH (p:TechnologyenablePractice)-[r:complement]->(t:TraditionalHumancentralPractice)
+WITH COLLECT({src_node:p, rel: r, dst_node: t}) AS obj
+RETURN DISTINCT obj",1,1,0,1,0,0,0,1,1,0,1,1,0,1,1,1,10
+DS01Q19,cannot_fully_replace,Which traditional human-central practice technology-enable practice cannot replace fully?,3,"MATCH (p:TechnologyenablePractice)-[r:cannot_fully_replace]->(t:TraditionalHumancentralPractice)
+WITH COLLECT({src_node:p, rel: r, dst_node: t}) AS obj
+RETURN DISTINCT obj",1,1,0,0,0,0,0,1,1,0,1,0,0,1,0,0,6
+DS01Q20,be_difficult_to_capture_due_to,Which limitations make tacit knowledge difficult to capture?,3,"MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(l:Limitation)
+WITH COLLECT({src_node:tk, rel: r, dst_node: l}) AS obj
+RETURN DISTINCT obj",1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,15
+DS02Q01,RQ1: What emerging technologies are adopted and how they support tacit knowledge capture and retention?,"What's the mechanism of each technology-enable practice?  introduce this from multiple perspectives: firstly, explain which digital technologies are adopted by these practice, then find which tacit knowledge were captured by these practices, subsequently dig out all potential  relations between these practices with knowledge holders, knowledge learners, organisational dependency, environmental dependency, and limitation. Finally, you should summrise the mechanism based on the evidence mentioned above.",1,"MATCH (tep:TechnologyenablePractice)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 1. 捕获 TacitKnowledge (be_captured_by) -> 生成 tk_list
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep)
+WITH tep, adoptions, 
+     COLLECT({src_node:tk, rel: r, dst_node: tep}) AS capturedBy,
+     COLLECT(DISTINCT tk) AS tk_list
+
+// 4. 捕获 OrganizationalDependency (depend_on) -> 生成 od_list
+OPTIONAL MATCH (tep)-[r:depend_on]->(d:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, adoptions, capturedBy, 
+     COLLECT({src_node:tep, rel: r, dst_node: d}) AS depends
+
+// 5. 捕获 Limitation (be_constrained_by) -> 生成 lim_list
+OPTIONAL MATCH (tep)-[r:be_constrained_by]->(lim:Limitation)
+WITH tep, adoptions, capturedBy, depends,
+     COLLECT({src_node:tep, rel: r, dst_node: lim}) AS constraints,
+     COLLECT(DISTINCT lim) AS lim_list
+
+// 8. 捕获 mitigates (tep -[:mitigate]-> lim)
+//    限定 lim_mit 必须在 lim_list 中
+OPTIONAL MATCH (tep)-[r:mitigate]->(lim_mit:Limitation)
+WHERE lim_mit IN lim_list
+WITH tep, adoptions, capturedBy, depends, constraints, 
+     COLLECT({src_node:tep, rel: r, dst_node: lim_mit}) AS mitigates
+
+RETURN adoptions,
+       capturedBy,
+       depends,
+       constraints,
+       mitigates",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS02Q02,RQ1: What emerging technologies are adopted and how they support tacit knowledge capture and retention?,"What's the mechanism of each traditional human-central practice?  introduce this from multiple perspectives: firstly, explain which knowledge holders participated in these practice, then find which tacit knowledge were captured by these practices, subsquently dig out all potential  relations between these paractices with knowledge learners, organizational dependency, environmental dependency, and limitation. Finally, you should summrize the mechanism based on the evidence mentioned above.",2,"MATCH (thp:TraditionalHumancentralPractice)-[r:participate_in]-(h:KnowledgeHolder|KnowledgeLearner)
+WITH thp, COLLECT({src_node:thp, rel: r, dst_node: h}) AS participates
+
+// 1. 捕获 TacitKnowledge (be_transferred_by) -> 生成 tk_list
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_transferred_by|evaluate]-(thp)
+WITH thp, participates, 
+     COLLECT({src_node:tk, rel: r, dst_node: thp}) AS transferredBy
+
+// 4. 捕获 OrganizationalDependency (depend_on) -> 生成 od_list
+OPTIONAL MATCH (thp)-[r:depend_on]->(d:OrganizationalDependency|EnvironmentalDependency)
+WITH thp, participates, transferredBy, 
+     COLLECT({src_node:thp, rel: r, dst_node: d}) AS depends
+
+// 5. 捕获 Limitation (be_constrained_by) -> 生成 lim_list
+OPTIONAL MATCH (thp)-[r:be_constrained_by]->(lim:Limitation)
+WITH thp, participates, transferredBy, depends,
+     COLLECT({src_node:thp, rel: r, dst_node: lim}) AS constraints,
+     COLLECT(DISTINCT lim) AS lim_list
+
+// 8. 捕获 mitigates (tep -[:mitigate]-> lim)
+//    限定 lim_mit 必须在 lim_list 中
+OPTIONAL MATCH (tep)-[r:mitigate]->(lim_mit:Limitation)
+WHERE lim_mit IN lim_list
+WITH thp, participates, transferredBy, depends, constraints, 
+     COLLECT({src_node:tep, rel: r, dst_node: lim_mit}) AS mitigates
+
+RETURN participates,
+       transferredBy,
+       depends,
+       constraints,
+       mitigates",1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,0,12
+DS03Q01,"RQ2: What resources and capabilities are required, such as data input, expert participation, technical infrastructure, and organizational resources?",Which external environment condition is required by the technology-enable practices?,2,"MATCH (p:TechnologyenablePractice)-[r:depend_on]->(e:EnvironmentalDependency)
+WITH e, COLLECT({src_node:p, rel: r, dst_node: e}) AS depends
+RETURN DISTINCT depends",1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,1,11
+DS03Q02,"RQ2: What resources and capabilities are required, such as data input, expert participation, technical infrastructure, and organizational resources?",Which environmental conditions are required by the traditional human practices?,2,"MATCH (p:TraditionalHumancentralPractice)-[r:depend_on]->(e:EnvironmentalDependency)
+WITH e, COLLECT({src_node:p, rel: r, dst_node: e}) AS depends
+RETURN DISTINCT depends",0,1,0,1,1,1,1,1,1,0,0,0,0,1,0,1,9
+DS04Q01,"RQ3: How organizational culture influence effectiveness, such as culture, trust, leadership support, motivation, and expert participation?","which organizational resource (e.g., culture, trust, leadership support, motivation, and expert participation, etc) were needed in technology-enable Practices?",2,"MATCH (p:TechnologyenablePractice)-[r:depend_on]->(o:OrganizationalDependency)
+WITH o, COLLECT({src_node:p, rel: r, dst_node: o}) AS depends
+RETURN DISTINCT o,depends",0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,13
+DS04Q02,"RQ3: How organizational culture influence effectiveness, such as culture, trust, leadership support, motivation, and expert participation?","which organizational resource (e.g., culture, trust, leadership support, motivation, and expert participation, etc) were needed in traditional Human Practices?",2,"MATCH (p:TraditionalHumancentralPractice)-[r:depend_on]->(o:OrganizationalDependency)
+WITH o, COLLECT({src_node:p, rel: r, dst_node: o}) AS depends
+RETURN DISTINCT o,depends",0,1,0,0,0,0,1,0,1,0,0,1,1,1,0,0,6
+DS05Q01,"What inherent vulnerability, shortcoming, or failure points the knowledge retention practices face?","What inherent vulnerability, shortcoming, or failure point of  the technology-enable practices?",2,"MATCH (p:TechnologyenablePractice)-[r:be_constrained_by]->(l:Limitation)
+WITH l, COLLECT({src_node:p, rel: r, dst_node: l}) AS constrainedBy
+RETURN DISTINCT l,constrainedBy",1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,15
+DS05Q02,"What inherent vulnerability, shortcoming, or failure points the knowledge retention practices face?","What inherent vulnerability, shortcoming, or failure point of  the traditional human-central practices?",2,"MATCH (p:TraditionalHumancentralPractice)-[r:be_constrained_by]->(l:Limitation)
+WITH l, COLLECT({src_node:p, rel: r, dst_node: l}) AS constrainedBy
+RETURN DISTINCT l,constrainedBy",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16
+DS05Q03,"What inherent vulnerability, shortcoming, or failure points the knowledge retention practices face?",Which limitations the technology-enable practices resolve or at least mitigate the traditional human-central practices have faced?,2,"MATCH (p:TechnologyenablePractice)-[r:mitigate]->(l:Limitation)
+WITH l, COLLECT({src_node:p, rel: r, dst_node: l}) AS mitigates
+OPTIONAL MATCH (l)-[r:be_constrained_by]-(t:TraditionalHumancentralPractice)
+WITH l, mitigates, COLLECT({src_node:l, rel: r, dst_node: t}) AS constrainedBy
+RETURN DISTINCT l,mitigates,constrainedBy",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,16

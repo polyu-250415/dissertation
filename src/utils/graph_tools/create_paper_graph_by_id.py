@@ -20,10 +20,10 @@ def clear_whole_database(session):
     session.run(query)
     print("✅ 数据库已清空！")
 
-def create_kg_by_case(case_id, path_dir=CSV_DIR, mid_seg='', clear_flag = True):
+def create_kg_by_case(case_id, path_dir=CSV_DIR, mid_seg='', clear_flag = True, excluded_properties = []):
     print("📥 Reading nodes from CSV...")
     try:
-        nodes = read_nodes_from_csv(endswith=f'{case_id}{mid_seg}_nodes.csv', path_dir=path_dir)
+        nodes = read_nodes_from_csv(endswith=f'{case_id}{mid_seg}_nodes.csv', path_dir=path_dir, excluded_properties = excluded_properties)
         print(f"✅ Loaded {len(nodes)} nodes.")
         for i, n in enumerate(nodes[:3], 1):  # preview first 3
             print(f"  {i}. Label: {n['Label']}, Props keys: {list(n['properties'].keys())}")
@@ -49,7 +49,7 @@ def create_kg_by_case(case_id, path_dir=CSV_DIR, mid_seg='', clear_flag = True):
 
         print(f"✅ Inserted {created} nodes into Neo4j.")
 
-        rels = read_edges_from_csv(endswith=f'{case_id}{mid_seg}_edges.csv',path_dir=path_dir)
+        rels = read_edges_from_csv(endswith=f'{case_id}{mid_seg}_edges.csv',path_dir=path_dir, excluded_properties = excluded_properties)
         total_created = 0
         for i in range(0, len(rels), 500):
             batch = rels[i:i + 500]
@@ -60,7 +60,7 @@ def create_kg_by_case(case_id, path_dir=CSV_DIR, mid_seg='', clear_flag = True):
         print(f"\n🎉 导入完成！成功关系：{total_created}")
     driver.close()
 
-def create_kg_by_files(files, path_dir=CSV_DIR, clean_flag=False):
+def create_kg_by_files(files, path_dir=CSV_DIR, clean_flag=False, excluded_properties = []):
     print("📥 Reading nodes from CSV...")
 
     nodes_array = []
@@ -68,7 +68,7 @@ def create_kg_by_files(files, path_dir=CSV_DIR, clean_flag=False):
     for f in files:
         if f.endswith('nodes.csv'):
             try:
-                nodes = read_nodes_from_csv(endswith=f, path_dir=path_dir)
+                nodes = read_nodes_from_csv(endswith=f, path_dir=path_dir, excluded_properties = excluded_properties)
                 print(f"✅ Loaded {len(nodes)} nodes.")
                 for i, n in enumerate(nodes[:3], 1):  # preview first 3
                     print(f"  {i}. Label: {n['Label']}, Props keys: {list(n['properties'].keys())}")
@@ -78,11 +78,12 @@ def create_kg_by_files(files, path_dir=CSV_DIR, clean_flag=False):
             except Exception as e:
                 print("❌ Failed to read CSV:", e)
                 exit(1)
-        elif f.endswith('relations.csv'):
+        elif f.endswith('edges.csv'):
             try:
-                rels = read_edges_from_csv(endswith=f,path_dir=path_dir)
+                rels = read_edges_from_csv(endswith=f,path_dir=path_dir, excluded_properties=excluded_properties)
                 print(f"✅ Loaded {len(rels)} relations.")
                 rels_array.extend(rels)
+
             except Exception as e:
                 print("❌ Failed to read CSV:", e)
                 exit(1)
@@ -114,6 +115,12 @@ def create_kg_by_files(files, path_dir=CSV_DIR, clean_flag=False):
 
         print(f"\n🎉 导入完成！成功关系：{total_created}")
     driver.close()
+
+
+def clear_kg():
+    driver = GraphDatabase.driver(URI, auth=AUTH)
+    with driver.session(database='kggen') as session:
+        clear_whole_database(session)
 
 # === MAIN ===
 if __name__ == "__main__":

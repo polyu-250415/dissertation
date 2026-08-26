@@ -1,0 +1,13 @@
+overlap
+case c007
+the role of two knowledge learners may overlap while new workers participating in a certain project
+node_name: "project members"
+node_name: "new workers"
+
+entity mismatch
+case c010
+deepseek annotated four tacit knowledge entities, but they are not tacit knowledge while recognizing from their names.
+N22,Visual learners,Tacit Knowledge,E,"Towards Personalized Learning Environments: Using Machine Learning to Predict Students' Learning Preferences in a Mixed Reality Environment","Visual Learners learn things using real-time visual tools such as graphs, charts, diagrams, and symbols","Learning preference category from VARK model.","Page 4"
+N23,Auditory learners,Tacit Knowledge,E,"Towards Personalized Learning Environments: Using Machine Learning to Predict Students' Learning Preferences in a Mixed Reality Environment","Auditory Learners prefer to understand through listening such as lectures, discussions, and tapes","Learning preference category from VARK model.","Page 4"
+N24,Read/Write learners,Tacit Knowledge,E,"Towards Personalized Learning Environments: Using Machine Learning to Predict Students' Learning Preferences in a Mixed Reality Environment","Read/write learners prefer information displayed in written form, such as lists and text","Learning preference category from VARK model.","Page 4"
+N25,Kinesthetic learners,Tacit Knowledge,E,"Towards Personalized Learning Environments: Using Machine Learning to Predict Students' Learning Preferences in a Mixed Reality Environment","The Tactile/Kinesthetic learners engage best with real-time experiences such as hands-on projects","Learning preference category from VARK model.","Page 4"

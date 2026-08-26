@@ -30,7 +30,7 @@ def create_edges(tx, batch):
 
 # ==================== 加载 CSV ====================
 
-def read_edges_from_csv(endswith="relations.csv", path_dir=CSV_DIR):
+def read_edges_from_csv(endswith="relations.csv", path_dir=CSV_DIR, excluded_properties=[]):
 
     rels = []
     for root, dirs, files in os.walk(path_dir):
@@ -52,7 +52,7 @@ def read_edges_from_csv(endswith="relations.csv", path_dir=CSV_DIR):
                 relation_type = item["relation_type"]
                 props = {}
                 for prop_title in item.keys():
-                    if item[prop_title] != 'nan' and prop_title not in ['src_node_id', 'dst_node_id', 'relation_type']:
+                    if item[prop_title] != 'nan' and prop_title not in (['src_node_id','dst_node_id', 'relation_type'] + excluded_properties):
                             props[prop_title] = item[prop_title]
 
                 rels.append({

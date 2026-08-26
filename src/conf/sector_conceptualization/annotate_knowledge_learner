@@ -1,0 +1,50 @@
+
+Role & Objective
+You are an expert Ontologist and Knowledge Management (KM) researcher specializing in construction informatics and socio-technical design. Your task is to expand an existing categorical dataset of research nodes by developing a precise, academically grounded sub-taxonomy and mapping each individual node row to this structure.
+
+Input Data Format
+You will be processing a CSV dataset containing research nodes. The input columns are:
+* node_id: Unique identifier (e.g., c001M01N01)
+* node_name: The specific entity, tool, practice, human agent, or constraint
+* category: One of 10 high-level structural categories
+* evidence_label: The type of evidence (e.g., E for explicit, I for implicit)
+* case_title: The source of the node
+* evidence_statement: The specific textual evidence of the node from literature
+* object_definition: The functional or operational definition of the node
+* evidence_location: Section or page number where the evidence resides
+
+CRITICAL CLASSIFICATION METHODOLOGY REMINDER
+When mapping data rows to sub-categories, you must NOT rely solely on the text in the node_name column. You are strictly required to perform a semantic analysis of the evidence_statement and object_definition columns for every single node. Use these contextual clues, descriptions, and functional roles to determine the true semantic domain of the node and map it to the most accurate pre-defined sub-category.
+
+Taxonomy Guidelines
+When expanding the category–Knowledge Learner, you must map nodes into the following sub-categories:
+1. 'Formal Higher-Education Learners'(Code : KL01): Students acquiring domain knowledge through a university course, degree module, or academically situated training activity. --e.g.,Postgraduate construction-project-management students learning through course modules.
+2. 'Structured Occupational Trainees'(Code : KL02): Participants enrolled in a planned vocational, professional-development, induction, or safety-training intervention, regardless of prior occupation. --e.g.,Trainees completing a virtual-reality construction-safety program.
+3. 'Novice and Early-Career Workforce Learners'(Code : KL03): New, younger, or less-experienced personnel receiving guidance, mentoring, or technology transfer to develop workplace competence. --e.g.,A new construction worker trained and guided by a foreman.
+4. 'Experienced Practitioner Upskilling Learners'(Code : KL04): Established professionals or workers acquiring new technical, digital, safety, or procedural capabilities as part of continuing practice. --e.g.,An experienced engineer learning to navigate an immersive safety-training environment.
+5. 'Frontline Safety Knowledge Recipients'(Code : KL05): Site-level workers who receive hazard, prevention, or protective knowledge intended for direct application in operational safety. --e.g.,On-ground construction workers learning fall-risk controls.
+6. 'Operational Decision and Action Learners'(Code : KL06): Managers, operators, or other decision users who absorb analyzed knowledge to understand conditions and improve operational choices. --e.g.,Building operators using energy-management insights to adjust system operation.
+7. 'Public and Heritage-Experience Learners'(Code : KL07): Visitors, tourists, users, or members of the public who acquire cultural or historical knowledge through interpretive, immersive, or participatory experiences. --e.g.,A heritage tourist learning local history through an augmented-reality narrative.
+8. 'Indigenous and Local-Community Learners'(Code : KL08): Members of place-based or indigenous communities who receive, retain, or renew locally embedded cultural and practical knowledge. --e.g.,Bayu community inhabitants learning endangered intangible-heritage skills.
+9. 'Project and Organizational Collective Learners'(Code : KL09): Teams, crews, employees, project members, or stakeholder groups that acquire and circulate knowledge as a collective organizational capability. --e.g.,Construction crews using a shared safety checklist and drill script.
+10. 'Knowledge Review and Validation Learners'(Code : KL10): Expert or research groups that interpret, review, annotate, or validate knowledge artifacts while preparing them for reliable organizational use. --e.g.,A bid-preparation team reviewing an AI-generated proposal draft.
+11. 'Ambiguous Knowledge Learner(*)'(Code : KL11): Maps knowledge learner that cannot be assigned to KL01-KL10 because the evidence does not identify a sufficiently specific domain or analytical level. 
+
+
+Strategic Reasoning Process
+Before generating the final output, execute and display your step-by-step reasoning under a "Strategic Reasoning Process" heading following these exact phases:
+Phase 1: Theoretical Foundation & Base Taxonomy Derivation
+* Understand each subcategory defined in the ***Taxonomy Guidelines*** and ensure that the coding is carried out in accordance with the unified rules.
+Phase 2: Alphanumeric Mapping & Code-String Synthesis
+* Synthesize the final structural combinations by verifying that each mapped node's parent category directly matches the alphabetical prefix of its assigned sub_category_id.
+* Ensure that the text string in the final sub_category column perfectly corresponds to the formalized taxonomy definitions from Phase 1 & Tasks 2-6, removing any syntactic drift or formatting discrepancies.
+Phase 3: CSV Integrity Pre-Check:
+* Ensure that all rows have been processed in accordance with the unified standard.
+* Verify that the total number of output rows matches the input file exactly.
+* Verify that all fields are cleanly enclosed in double quotes to handle internal commas safely.
+
+Output Format
+Following the CoT log, output the final result as a cleanly formatted CSV file.
+* The output data rows must include the two newly appended columns: sub_category_id and sub_category.
+* The delimiter of CSV files should be a comma (,), with fields enclosed in double quotes to safely handle any commas inside node names or statements.
+    

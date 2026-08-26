@@ -15,7 +15,7 @@ class AssembleEAVQ:
         self.assemble_relation_template = {
             "be_documented_partially_by": "is documented partially by",
             "translate_into": "translate into",
-            "be_held_by": "is held by",
+            "be_shared_by": "is shared by",
             "be_absorbed_by": "is absorbed by",
             "be_captured_by": "is captured by",
             "be_transferred_by": "is transferred by",
@@ -29,7 +29,8 @@ class AssembleEAVQ:
             "mitigate": "mitigate",
             "complement": "complement",
             "cannot_fully_replace": "cannot fully replace",
-            "be_difficult_to_capture_due_to": "is difficult to capture due to"
+            "be_difficult_to_capture_due_to": "is difficult to capture due to",
+            "be_composed_of": "is composed of",
         }
         self.accept_threshold = 0.9
 
@@ -54,78 +55,81 @@ class AssembleEAVQ:
         and return the best matching pair (highest similarity).
         """
         for case_id in case_idx:
-            csv_path = f"{self.path}/{case_id}_nodes.csv"
-            df = pd.read_csv(csv_path)
-            df = df[['node_id', 'node_name', 'category']].dropna()
+            try:
+                csv_path = f"{self.path}/{case_id}_nodes.csv"
+                df = pd.read_csv(csv_path)
+                df = df[['node_id', 'node_name', 'category']].dropna()
 
-            results = []
+                results = []
 
-            for category, group in df.groupby('category'):
-                if len(group) < 2:
-                    print(f"Skipping '{category}' (only {len(group)} node)")
-                    continue
+                for category, group in df.groupby('category'):
+                    if len(group) < 2:
+                        print(f"Skipping '{category}' (only {len(group)} node)")
+                        continue
 
-                node_ids = group['node_id'].tolist()
-                node_names = group['node_name'].tolist()
+                    node_ids = group['node_id'].tolist()
+                    node_names = group['node_name'].tolist()
 
-                # Embed all texts in this category
-                embeddings = []
-                for name in node_names:
-                    emb = self.embedder.run(text=name)['embedding']
-                    embeddings.append(np.array(emb))
+                    # Embed all texts in this category
+                    embeddings = []
+                    for name in node_names:
+                        emb = self.embedder.run(text=name)['embedding']
+                        embeddings.append(np.array(emb))
 
-                best_pairs_group = []
-                best_score_threshold = 0.75
+                    best_pairs_group = []
+                    best_score_threshold = 0.75
 
-                n = len(node_ids)
+                    n = len(node_ids)
 
-                for i, j in combinations(range(n), 2):
-                    score = self.cosine_similarity(embeddings[i], embeddings[j])
-                    print(f"cosine_similarity {category}, {node_ids[i]}, {node_ids[j]}, {score}")
+                    for i, j in combinations(range(n), 2):
+                        score = self.cosine_similarity(embeddings[i], embeddings[j])
+                        print(f"cosine_similarity {category}, {node_ids[i]}, {node_ids[j]}, {score}")
 
-                    if score > best_score_threshold:
-                        current_nodes = (i, j)
-                        current_ids = (node_ids[i], node_ids[j])
-                        current_item = {
-                            "nodes": current_nodes,
-                            "ids": current_ids,
-                            "score": score
-                        }
+                        if score > best_score_threshold:
+                            current_nodes = (i, j)
+                            current_ids = (node_ids[i], node_ids[j])
+                            current_item = {
+                                "nodes": current_nodes,
+                                "ids": current_ids,
+                                "score": score
+                            }
 
-                        found_duplicate = False
-                        to_remove_index = -1
+                            found_duplicate = False
+                            to_remove_index = -1
 
-                        for idx, existing in enumerate(best_pairs_group):
-                            ex_i, ex_j = existing["nodes"]
+                            for idx, existing in enumerate(best_pairs_group):
+                                ex_i, ex_j = existing["nodes"]
 
-                            if ex_i == i or ex_i == j or ex_j == i or ex_j == j:
-                                found_duplicate = True
-                                if score > existing["score"]:
-                                    to_remove_index = idx
-                                break
+                                if ex_i == i or ex_i == j or ex_j == i or ex_j == j:
+                                    found_duplicate = True
+                                    if score > existing["score"]:
+                                        to_remove_index = idx
+                                    break
 
-                        if found_duplicate:
-                            if to_remove_index != -1:
-                                del best_pairs_group[to_remove_index]
+                            if found_duplicate:
+                                if to_remove_index != -1:
+                                    del best_pairs_group[to_remove_index]
+                                    best_pairs_group.append(current_item)
+                            else:
                                 best_pairs_group.append(current_item)
-                        else:
-                            best_pairs_group.append(current_item)
 
-                for best_item in best_pairs_group:
-                    i, j = best_item["nodes"]
-                    results.append({
-                        'category': category,
-                        'node_id_1': node_ids[i],
-                        'node_name_1': node_names[i],
-                        'node_id_2': node_ids[j],
-                        'node_name_2': node_names[j],
-                        'similarity_score': round(best_item["score"], 4)
-                    })
+                    for best_item in best_pairs_group:
+                        i, j = best_item["nodes"]
+                        results.append({
+                            'category': category,
+                            'node_id_1': node_ids[i],
+                            'node_name_1': node_names[i],
+                            'node_id_2': node_ids[j],
+                            'node_name_2': node_names[j],
+                            'similarity_score': round(best_item["score"], 4)
+                        })
 
-            result_df = pd.DataFrame(results)
-            result_df.drop_duplicates(inplace=True)
-            result_df = result_df.sort_values('similarity_score', ascending=False)
-            result_df.to_csv(f"{self.path}/{case_id}_nodes_similarity.csv", index=False)
+                result_df = pd.DataFrame(results)
+                result_df.drop_duplicates(inplace=True)
+                result_df = result_df.sort_values('similarity_score', ascending=False)
+                result_df.to_csv(f"{self.path}/{case_id}_nodes_similarity.csv", index=False)
+            except Exception as e:
+                print(e)
 
     def map_similar_nodes(self):
         self.init_embedder()
@@ -210,28 +214,31 @@ class AssembleEAVQ:
     def assemble_ea_vq(self, case_idx):
 
         for case_id in case_idx:
-            nodes_file = f'{self.path}{case_id}_nodes.csv'
-            similarity_file = f'{self.path}{case_id}_nodes_similarity.csv'
-            relations_file = f'{self.path}{case_id}_edges.csv'
+            try:
+                nodes_file = f'{self.path}{case_id}_nodes.csv'
+                similarity_file = f'{self.path}{case_id}_nodes_similarity.csv'
+                relations_file = f'{self.path}{case_id}_edges.csv'
 
-            src = pd.read_csv(nodes_file)
+                src = pd.read_csv(nodes_file)
 
-            # Create fast lookup dictionary: {id: name}
-            id_to_name = dict(zip(src['node_id'], src['node_name']))
+                # Create fast lookup dictionary: {id: name}
+                id_to_name = dict(zip(src['node_id'], src['node_name']))
 
-            print("Loading data with pandas...")
-            pairs = self.load_similarity_pairs(similarity_file)
-            relations, triple_set = self.load_edges(relations_file)
-            by_node = self.build_edges_by_node(relations)
+                print("Loading data with pandas...")
+                pairs = self.load_similarity_pairs(similarity_file)
+                relations, triple_set = self.load_edges(relations_file)
+                by_node = self.build_edges_by_node(relations)
 
-            print(f"Loaded {len(pairs)} similarity pairs and {len(relations)} relations.\n")
+                print(f"Loaded {len(pairs)} similarity pairs and {len(relations)} relations.\n")
 
-            results = []
-            for pair in pairs:
-                res = self.validate_pair(id_to_name, pair, by_node, triple_set)
-                results.extend(res)
+                results = []
+                for pair in pairs:
+                    res = self.validate_pair(id_to_name, pair, by_node, triple_set)
+                    results.extend(res)
 
-            pd.DataFrame(results).to_csv(f'{self.path}/{case_id}_ea_vq.csv', index=False)
+                pd.DataFrame(results).to_csv(f'{self.path}/{case_id}_ea_vq.csv', index=False)
+            except Exception as e:
+                print(e)
 
 if __name__ == '__main__':
     obj = AssembleEAVQ()

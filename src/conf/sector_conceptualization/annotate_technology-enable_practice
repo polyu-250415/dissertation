@@ -6,67 +6,42 @@ Input Data Format
 You will be processing a CSV dataset containing research nodes. The input columns are:
 * node_id: Unique identifier (e.g., c001M01N01)
 * node_name: The specific entity, tool, practice, human agent, or constraint
-* category: One of 9 high-level structural categories
+* category: One of 10 high-level structural categories
 * evidence_label: The type of evidence (e.g., E for explicit, I for implicit)
 * case_title: The source of the node
 * evidence_statement: The specific textual evidence of the node from literature
 * object_definition: The functional or operational definition of the node
 * evidence_location: Section or page number where the evidence resides
 
-High-Level Categories
-1. Explicit Knowledge
-2. Tacit Knowledge
-3. Knowledge Holder
-4. Traditional Human-central Practice
-5. Technology-enable Practice
-6. Digital Technology
-7. Organizational Dependency
-8. Environmental Dependency
-9. Limitation
-
 CRITICAL CLASSIFICATION METHODOLOGY REMINDER
 When mapping data rows to sub-categories, you must NOT rely solely on the text in the node_name column. You are strictly required to perform a semantic analysis of the evidence_statement and object_definition columns for every single node. Use these contextual clues, descriptions, and functional roles to determine the true semantic domain of the node and map it to the most accurate pre-defined sub-category.
 
-Taxonomy Guidelines & Tasks
-Task 1: General Category Sub-Taxonomy (Categories 1, 3, 7, 8)
-For all categories NOT explicitly restricted or pre-defined in Tasks 2 below, you must:
-1. Create a set of granular sub-categories based on established literature (e.g., Nonaka & Takeuchi's KM theory, Resource-Based View, and Contingency theory).
-2. CRITICAL CARDINALITY CONSTRAINT: Every high-level category in this task must contain at least 6, but strictly LESS THAN 16 active sub-categories.
-3. Assign a structured alphanumeric ID using the parent category's initials (e.g., Explicit Knowledge -> EK01, EK02).
-
-Task 2: Technology-enable Practice
-When expanding this category, you must map nodes into the following sub-categories:
-1. 'Immersive Virtual Training Environments'(Code : TP01): Fully simulated 3D virtual site environments, augmented reality emulations, or patient simulators designed to act as active sandboxes to stabilize and transfer experiential practices into human mental schemas. 
-2. 'Experiential & Cognitive Skill Evaluation'(Code : TP02): Methodologies and digital tools that test, measure, and baseline human experiential learning, knowledge retention, or neurological response within or immediately adjacent to interactive simulations. 
-3. 'Real-Time Assistive Integration & Guidance'(Code : TP03): Real-time spatial visualizations, active assistive suit fittings, or localized animations that superimpose instructional insights directly over physical settings or human actions to stabilize execution. 
-4. 'Spatial & Reality Capture Codification'(Code : TP04): Workflows utilizing laser scanning, photogrammetry, or aerial imagery to systematically digitize, model, and translate physical environments and building geometry into high-fidelity point clouds or geometric meshes. 
-5. 'Intelligent Semantic & Rule Codification'(Code : TP05): AI models, natural language processing tools, semantic knowledge graphs, engineering methodologies, and algorithmic pipelines that convert unstructured textual requirements, regulations, or raw visual data into discrete digital properties or auto-generated drafts. 
-6. 'Relational Knowledge Storage & Management Systems'(Code : TP06): Core database environments, external indexes, and storage architectures engineered specifically to house, relate, and retrieve externalized explicit digital knowledge embeddings and tabular logs. 
-7. 'Digital Operations Monitoring & User Interfaces'(Code : TP07): Front-end web applications, interactive dashboards, macro-enabled spreadsheets, or digital questionnaires deployed to monitor compliance, visualize engineering statistics, and collect user data. 
-8. 'Quantitative Field & Behavioral Codification'(Code : TP08): Systematic digital physical testing batteries, multi-channel wearable sensor grids, and video-based posture recordings used to isolate, quantify, and translate real-time physical worker traits and workloads into empirical metrics. 
-9. 'Asynchronous E-Learning & Digital Media Learning'(Code : TP09): Systems providing structured, remote, self-paced learning sequences and media production pipelines that externalize expert instruction into digital video, text procedures, or open online courses. 
-10. 'Gamified Training & Serious Games'(Code : TP10): Instructional structures incorporating card-ordering layouts, quiz engines, compound matching, and role-playing mechanics to incentivize human engagement and cognitive retention. 
-11. 'Synthetic Media & Voice Personalization Practices'(Code : TP11): Generative audio and speech systems that model, clone, and translate specific human expert traits into artificial explicit records to personalize knowledge translation. 
-12. 'Advanced Computational & Algorithmic Simulation Frameworks'(Code : TP12): Advanced mathematical model simulations, game-theoretic computational frameworks, and simulation experiments that codify and model complex strategic or operational dynamics under environmental uncertainty. 
-13. 'Other(*)'(Code : TP13): Technology-enable Practice, but excludes TP01-TP12 
+Taxonomy Guidelines
+When expanding the category–Technology-enable Practice, you must map nodes into the following sub-categories:
+1. 'Model-based Knowledge Representation and Simulation'(Code : TP01): Uses BIM, 3D/4D models, engineering simulations, virtual models, and computational scenarios to represent assets, environments, construction processes, system behavior, and performance relationships. --e.g.,BIM-based hazard simulation and EnergyPlus building-performance simulation
+2. 'Spatial Knowledge Capture and Geospatial Reconstruction'(Code : TP02): Uses UAVs, photogrammetry, laser scanning, GIS, and surveying technologies to convert physical and spatial conditions into measurable digital representations. --e.g.,Drone photogrammetry producing a textured heritage-building model
+3. 'Situated Experiential Learning through Extended Reality'(Code : TP03): Uses VR, AR, MR, CAVE, or hybrid XR environments to support embodied rehearsal, contextual guidance, historical interpretation, hazard recognition, and situated knowledge transfer. --e.g.,VR excavation-safety training and AR reconstruction of historical scenes
+4. 'Interactive Consequence Learning and Digital Feedback'(Code : TP04): Uses responsive simulations, animations, indicators, interfaces, or multisensory feedback to make relationships between actions, system states, and consequences experientially perceptible. --e.g.,Accident animations showing the consequences of incorrect equipment selection
+5. 'Real-time Building Intelligence through IoT Monitoring'(Code : TP05): Uses connected sensors and real-time data streams to capture building performance, occupancy, environmental conditions, and operational states. --e.g.,IoT monitoring of temperature, CO₂, and occupancy
+6. 'Worker Activity and State Capture through Wearable Sensors and Cameras'(Code : TP06): Uses IMUs, wearable sensors, eye trackers, cameras, and video analysis to record workers’ movement, posture, gaze, workload, task sequences, and situated work activities. --e.g.,Combining wearable IMU and camera data to estimate worker workload
+7. 'Algorithmic Pattern Discovery and Prediction'(Code : TP07): Uses AI, machine learning, NLP, statistical learning, or rule-based algorithms to derive classifications, forecasts, detected patterns, and predicted conditions from data. --e.g.,CNN classification of construction-accident reports
+8. 'Generative Knowledge Synthesis and Content Production'(Code : TP08): Uses generative AI to combine requirements, contextual data, and retrieved knowledge into new drafts, reports, explanations, summaries, or recommendations. --e.g.,GPT-generated bid-methodology section
+9. 'Semantic Knowledge Structuring and Retrieval'(Code : TP09): Uses knowledge graphs, semantic metadata, embeddings, vector databases, and meaning-based search to represent knowledge relationships and retrieve contextually relevant information. --e.g.,Interactive craftsmanship knowledge graph
+10. 'Database-supported Project Knowledge Archiving'(Code : TP10): Preserves and retrieves codified project records, narratives, lessons learned, safety information, and operational knowledge through databases, data warehouses, or conventional KMS repositories. --e.g.,SQL archive of OHS lessons learned
+11. 'Collaborative Knowledge Co-creation through Digital Platforms'(Code : TP11): Uses portals, messaging systems, shared virtual environments, and online collaboration platforms to support peer exchange, collective interpretation, user contribution, and shared knowledge construction. --e.g.,Virtual-village co-creation of heritage materials
+12. 'Multimedia and Blended Knowledge Internalization'(Code : TP12): Combines digital content, interactive media, online resources, and face-to-face or workplace activities to strengthen demonstration, participation, and knowledge internalization. --e.g.,YouTube scaffolding demonstration within active blended learning
+13. 'Criteria-based Performance Evaluation and Ranking'(Code : TP13): Measures, compares, scores, or ranks learners, models, interventions, and alternatives using predefined criteria, indicators, benchmarks, or performance metrics. --e.g.,IT2F–AHP evaluation of training effectiveness
+14. 'Ambiguous Technology-enable Practice'(Code : TP14): Maps Technology-enable practices that cannot be assigned to TP01-TP13 because the evidence does not identify a sufficiently specific domain or analytical level. 
 
 
 Strategic Reasoning Process
 Before generating the final output, execute and display your step-by-step reasoning under a "Strategic Reasoning Process" heading following these exact phases:
 Phase 1: Theoretical Foundation & Base Taxonomy Derivation
-* Document the academic literature and KM frameworks used to formalize the sub-taxonomies for the general categories (Categories 1, 3,8 9).
-* Explicitly define the semantic boundaries, operational scope, and unique alphanumeric identifier prefix (e.g., EX, KH, TP, ED) for every newly created sub-category.
-Phase 2: Structural Boundary & Cardinality Audit
-* Enumerate and count the exact number of sub-categories active within each of the 9 high-level parent categories.
-* Cross-reference these counts against the mathematical constraints established in the guidelines:
-* Provide an explicit "Pass/Fail" statement confirming structural compliance before mapping data rows.
-Phase 3: Edge-Case Resolution & Intersection Handling
-* Identify any ambiguous nodes where the node_name could be misleading (e.g., human constraints vs. systemic limitations), and detail how you examined the evidence_statement and object_definition to resolve the classification.
-* Formulate and explicitly state a deterministic domain-tiebreaking rule based on construction informatics principles to cleanly assign the node to a single, optimal sub-category without ambiguity.
-Phase 4: Alphanumeric Mapping & Code-String Synthesis
+* Understand each subcategory defined in the ***Taxonomy Guidelines*** and ensure that the coding is carried out in accordance with the unified rules.
+Phase 2: Alphanumeric Mapping & Code-String Synthesis
 * Synthesize the final structural combinations by verifying that each mapped node's parent category directly matches the alphabetical prefix of its assigned sub_category_id.
 * Ensure that the text string in the final sub_category column perfectly corresponds to the formalized taxonomy definitions from Phase 1 & Tasks 2-6, removing any syntactic drift or formatting discrepancies.
-Phase 5: CSV Integrity Pre-Check:
+Phase 3: CSV Integrity Pre-Check:
 * Ensure that all rows have been processed in accordance with the unified standard.
 * Verify that the total number of output rows matches the input file exactly.
 * Verify that all fields are cleanly enclosed in double quotes to handle internal commas safely.
@@ -75,3 +50,4 @@ Output Format
 Following the CoT log, output the final result as a cleanly formatted CSV file.
 * The output data rows must include the two newly appended columns: sub_category_id and sub_category.
 * The delimiter of CSV files should be a comma (,), with fields enclosed in double quotes to safely handle any commas inside node names or statements.
+    

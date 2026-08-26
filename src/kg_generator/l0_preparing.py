@@ -9,12 +9,12 @@ combination_path = os.path.abspath('../data/graph/case_study/') + '/case_3_unite
 
 
 def get_models():
-    return ['gemini', 'deepseek']
+    return ['chatgpt', 'deepseek']
 
 def get_model_flag(model):
     if "deepseek" == model:
         return "M02"
-    elif "gemini" == model:
+    elif "chatgpt" == model:
         return "M01"
     else:
         return "M00"
@@ -74,8 +74,12 @@ def delete_isolated_nodes(case_ids):
     for case_id in case_ids:
         node_path= f'{combination_path}{case_id}_nodes.csv'
         relation_path = f'{combination_path}{case_id}_edges.csv'
-        df_nodes = pd.read_csv(node_path)
-        df_edges = pd.read_csv(relation_path)
+        try:
+            df_nodes = pd.read_csv(node_path)
+            df_edges = pd.read_csv(relation_path)
+        except Exception as e:
+            print(e)
+            continue
     
         # Collect all node IDs that appear in relationships
         used_node_ids = set(df_edges["src_node_id"]).union(set(df_edges["dst_node_id"]))
@@ -103,10 +107,10 @@ def combine_data(case_ids, clear_flag = False):
     for case_id in case_ids:
         # 存储所有要合并的 DataFrame
         df_list = []
-        # 读取 gemini 文件（修复了读错文件的bug）
-        gemini_file = f'{norm_path}{case_id}_gemini_nodes.csv'
-        if os.path.exists(gemini_file):
-            df = pd.read_csv(gemini_file)
+        # 读取 chatgpt 文件（修复了读错文件的bug）
+        chatgpt_file = f'{norm_path}{case_id}_chatgpt_nodes.csv'
+        if os.path.exists(chatgpt_file):
+            df = pd.read_csv(chatgpt_file)
             df_list.append(df)
 
         # 读取 deepseek 文件
@@ -121,10 +125,10 @@ def combine_data(case_ids, clear_flag = False):
             df_nodes.to_csv(f'{combination_path}{case_id}_nodes.csv', index=False)
 
         df_relation_list = []
-        # 读取 gemini 文件（修复了读错文件的bug）
-        gemini_file = f'{norm_path}{case_id}_gemini_edges.csv'
-        if os.path.exists(gemini_file):
-            df = pd.read_csv(gemini_file)
+        # 读取 chatgpt 文件（修复了读错文件的bug）
+        chatgpt_file = f'{norm_path}{case_id}_chatgpt_edges.csv'
+        if os.path.exists(chatgpt_file):
+            df = pd.read_csv(chatgpt_file)
             df_relation_list.append(df)
 
         # 读取 deepseek 文件
@@ -142,10 +146,13 @@ if __name__ == '__main__':
 
     # clear_directory(norm_path)
 
-    case_ids = ['c201']
+    """case_ids = ['c201', 'c202', 'c203', 'c204', 'c205', 'c206', 'c207', 'c208', 'c209', 'c210', 'c211','c212','c213','c214', 'c215', 'c216', 'c217', 'c218', 'c219', 'c220','c221', 'c222', 'c223', 'c224', 'c225','c226', 'c227']"""
+    case_ids = ['c001']
     transfer_nodes(case_ids)
     transfer_edges(case_ids)
     combine_data(case_ids)
     delete_isolated_nodes(case_ids)
-    evaluate_raw_kg_by_indicator(case_ids)
+
+
+
 

@@ -24,7 +24,9 @@ Q7: Describe the new knowledge retention or capture process (including participa
 Q8: Describe the knowledge retention or capture processes in knowledge graph form
 
 Node(Entity) coding rules:
-You must extract all nodes as comprehensively as possible and normalize all node strings strictly to one of the following 9 categories. Each node corresponds to only one category; a category usually contains multiple nodes. Use the provided boundary rules to resolve classification ambiguities:
+You must extract all nodes as comprehensively as possible and normalize all node strings strictly to one of the
+following 10 categories. Each node corresponds to only one category; a category usually contains multiple nodes. Use the
+ provided boundary rules to resolve classification ambiguities:
 1. `Explicit Knowledge`: Specific piece of codified information (e.g., a manual, a database, a written report, rule-based standard metrics). Keep the node names consistent with the terms used in the paper.
 2. `Tacit Knowledge`: Specific uncodified skill, intuition, routine, safe behavioral response, self-efficacy belief, or "know-how" held by an individual (e.g., real-time hazard identification performance, situational awareness).
 3. `Knowledge Holder`: Specific role, expert, or team possessing all or part of the knowledge (e.g., "Senior Engineer", not "Engineers").Keep the node names consistent with the terms used in the paper.
@@ -34,25 +36,27 @@ You must extract all nodes as comprehensively as possible and normalize all node
 7. `Organizational Dependency`: Specific internal prerequisite or baseline condition required for the practice to succeed (e.g., "Corporate culture", "Dedicated training hours", "Management buy-in").
 8. `Environmental Dependency`: Specific external factor outside the organization's direct control required for the practice (e.g., "Industry regulation", "Physical location constraint", "Internet infrastructure").
 9. `Limitation`: Specific inherent vulnerability, shortcoming, or failure point of a practice itself (e.g., "Cognitive overload", "Data decay", "Loss of nuance", "Knowledge-to-practice gap", "Forgetting curve").
+10. `Knowledge Learner`: Specific role, team, or system which master tacit knowledge in knowledge retention practices (e.g., "trainees", "students", etc).Keep the node names consistent with the terms used in the paper.
 
 Relation type coding rules：
 You must normalize all edge strings strictly to the following permitted semantic definitions. Ensure the edge direction strictly flows from `src_node_id` to `dst_node_id` using these exact singular terms:
 * 'be_documented_partially_by': Links [Tacit Knowledge] ->to ->[Knowledge Holder] (Use this when knowledge holder codify human experience, routines, or behaviors  into structured text, files, or manuals.)* 'be_derived_from': Links [Explicit Knowledge] ->to ->[Explicit Knowledge] (Use this to trace the origin or lineage of structured documents, showing that one file or rule was sourced directly from another standard text.)
 * 'translate_into': Links [Explicit Knowledge] ->to ->[Tacit Knowledge] (Use this when written rules, metrics, or guidelines are successfully put into practice by a person and turned into safe personal routines or hands-on skills.)
-* 'be_held_by': Links [Tacit Knowledge] ->to ->[Knowledge Holder] (Use this to show the baseline location of an asset, identifying which specific person, expert, or team currently possesses that know-how or documentation.)
-* 'be_absorbed_by': Links [Tacit Knowledge OR Explicit Knowledge] ->to ->[Knowledge Holder] (Use this to mark a clear learning milestone, showing that a specific person or role has successfully gained new knowledge)
+* 'be_shared_by': Links [Tacit Knowledge] ->to ->[Knowledge Holder] (Use this to show the baseline location of an asset,clearly indicating which specific individuals, experts or teams share their tacit knowledge (such as experience,  professional knowledge or skills) in the knowledge retention practice).
+* 'be_absorbed_by': Links [Tacit Knowledge] ->to ->[Knowledge Learner] (Use this to mark a clear learning milestone,showing that a specific person or role has successfully gained new knowledge)
 * 'be_captured_by': Links [Tacit Knowledge] ->to ->[Technology-enable Practice] (Use this when human routines, actions, or real-time spatial behaviors are actively tracked or monitored inside a digital application or simulation.)
-* 'be_transferred_by': Links [Tacit Knowledge OR Explicit Knowledge] ->to ->[Traditional Human-central Practice OR Technology-enable Practice] (Use this to connect a specific knowledge asset to the exact training vehicle, manual review, or simulation system used to distribute it.)
-* 'participate_in': Links [Knowledge Holder] ->to ->[Traditional Human-central Practice OR Technology-enable Practice] (Use this to map human actors to an operational workflow, showing who actively takes part in a chosen training approach or experiment.)
+* 'be_transferred_by': Links [Explicit Knowledge] ->to ->[Traditional Human-central Practice OR Technology-enable Practice] (Use this to connect a specific knowledge asset to the exact training vehicle, manual review, or simulation system used to distribute it.)
+* 'participate_in': Links [Knowledge Holder OR Knowledge Learner] ->to ->[Traditional Human-central Practice OR Technology-enable Practice] (Use this to map human actors to an operational workflow, showing who actively takes part in a chosen  training approach or experiment.)
 * 'depend_on': Links [Traditional Human-central Practice OR Technology-enable Practice] ->to ->[Organizational Dependency OR Environmental Dependency] (Use this to flag necessary baseline resources, company cultures, or external regulatory requirements needed for a practice to run successfully.)
 * 'evaluate': Links [Technology-enable Practice OR Traditional Human-central Practice] ->to ->[Tacit Knowledge OR Explicit Knowledge] (Use this when a practice includes testing parameters, quizzes, or built-in performance scores designed to actively check a participant's skill or compliance level.)
 * 'adopt': Links [Technology-enable Practice] ->to ->[Digital Technology OR Explicit Knowledge] (Use this to outline system architecture, connecting a digital practice to its underlying physical hardware tools, software engines, or structural data files.)
 * 'be_constrained_by': Links [Traditional Human-central Practice OR Technology-enable Practice] ->to ->[Limitation] (Use this to tie a practice directly to its known shortcomings, system bottlenecks, or real-world flaws, like steep human forgetting or passivity.)
 * 'resolve': Links [Technology-enable Practice] ->to [Limitation] (Use this only when verified data proves that a digital or automated approach completely removes or neutralizes an existing process bottleneck.)
-* 'mitigate': Links [Technology-enable Practice] ->to ->[Limitation] (Use this when an approach successfully lowers, softens, or controls a structural flaw or behavioral risk without completely eliminating it.)
+* 'mitigate': Links [Technology-enable Practice] ->to ->[Limitation OR Organizational Dependency OR Environmental Dependency] (Use this when an approach successfully lowers, softens, or controls a structural flaw or behavioral risk without completely eliminating it.)
 * 'complement': Links [Technology-enable Practice] ->to ->[Traditional Human-central Practice] (Use this to show that a newly introduced digital framework enhances or patches a legacy human routine without making it obsolete.)
 * 'cannot_fully_replace': Links [Technology-enable Practice] ->to ->[Traditional Human-central Practice] (Use this when case evidence proves that an automated tool still relies on human baselines, or that a physical practice remains legally mandatory.)
 * 'be_difficult_to_capture_due_to': Links [Tacit Knowledge] ->to ->[Limitation] (Use this to map specific knowledge management roadblocks, explaining exactly what cognitive or process barriers prevent hands-on skills from being easily stored.)
+* 'be_composed_of': Links [Technology-enable Practice] → [Technology-enable Practice]. Use when an overarching implemented digital practice or system consists of distinct operational modules, functions, or subprocesses. The destination must be an actively implemented component, not a proposed feature or underlying technology.
 
 Evidence label Coding Rules：
 Use these provenance levels consistently across answers and data schema:
@@ -79,7 +83,9 @@ Before generating the final output, execute and display your step-by-step reason
    * Scan the paper for every key concept and actor.
    * Explicitly list them and verify that no two distinct instances are combined. (e.g., If both "students" and "professionals" appear, explicitly write out why they must be separated into independent nodes rather than merged into "students and professionals").
 2. **Strict Category Assignment**:
-   * Align each extracted entity instance to exactly one of the 9 fixed categories: Explicit Knowledge, Tacit Knowledge, Knowledge Holders, Traditional Human-central Practices, Technology-enable Practices, Digital Technology, Organizational Dependency, Environmental Dependency, or Limitations.
+   * Align each extracted entity instance to exactly one of the 10 fixed categories: Explicit Knowledge, Tacit
+   Knowledge, Knowledge Holders, knowledge learner, Traditional Human-central Practices, Technology-enable Practices,
+   Digital Technology, Organizational Dependency, Environmental Dependency, or Limitations.
    * Document your reasoning for any borderline nodes.
 3. **Relationship Semantic Validation**:
    * Map out the comprehensive edges. For every single relationship, explicitly verify it against the authorized semantic list
@@ -101,4 +107,5 @@ Nodes CSV Headers:
 node_id,node_name,category,evidence_label,case_title,evidence_statement,object_definition,evidence_location
 Relations CSV Headers:
 src_node_id,dst_node_id,relation_type,evidence_label,case_title,evidence_statement,evidence_location
-(Use the exact paper title for the case_title field; The delimiter of csv files should be a comma (,), with fields enclosed in double quotes to safely handle any commas inside node names ).
+(Use the exact paper title for the case_title field; The delimiter of csv files should be a comma (,), with all fields
+enclosed in double quotes to safely handle any commas inside node names ).

@@ -23,29 +23,34 @@ class RebuildKG():
         src_edges_path = self.rag_ea_path + case_id + "_edges.csv"
         dst_edges_path = self.rebuild_kg_path + case_id + "_edges.csv"
 
-        df_src_nodes = pd.read_csv(src_nodes_path)
+        try:
 
-        original_count = len(df_src_nodes)
-        # Filter out rows where node_id is in the mapping (i.e., redundant nodes)
-        nodes_df_filtered = df_src_nodes[~df_src_nodes['node_id'].isin(redundant_id_dict.keys())]
-        removed_count = original_count - len(nodes_df_filtered)
-        print(f"Nodes: {original_count} rows -> removed {removed_count} redundant nodes, "
-              f"{len(nodes_df_filtered)} remain.")
-        nodes_df_filtered.to_csv(dst_nodes_path, index=False)
-        print(f"Saved filtered nodes to {dst_nodes_path}")
+            df_src_nodes = pd.read_csv(src_nodes_path)
 
-        relations_df = pd.read_csv(src_edges_path)
-        relations_df['src_node_id'] = relations_df['src_node_id'].replace(redundant_id_dict)
-        relations_df['dst_node_id'] = relations_df['dst_node_id'].replace(redundant_id_dict)
+            original_count = len(df_src_nodes)
+            # Filter out rows where node_id is in the mapping (i.e., redundant nodes)
+            nodes_df_filtered = df_src_nodes[~df_src_nodes['node_id'].isin(redundant_id_dict.keys())]
+            removed_count = original_count - len(nodes_df_filtered)
+            print(f"Nodes: {original_count} rows -> removed {removed_count} redundant nodes, "
+                  f"{len(nodes_df_filtered)} remain.")
+            nodes_df_filtered.to_csv(dst_nodes_path, index=False)
+            print(f"Saved filtered nodes to {dst_nodes_path}")
 
-        filter_edges_df = relations_df.drop_duplicates(
-            subset=["src_node_id", "dst_node_id", "relation_type"],
-            keep="first"
-        )
+            relations_df = pd.read_csv(src_edges_path)
+            relations_df['src_node_id'] = relations_df['src_node_id'].replace(redundant_id_dict)
+            relations_df['dst_node_id'] = relations_df['dst_node_id'].replace(redundant_id_dict)
 
-        filter_edges_df.to_csv(dst_edges_path, index=False)
-        print(f"Updated relations saved to {dst_edges_path}")
-        print("Done.")
+            filter_edges_df = relations_df.drop_duplicates(
+                subset=["src_node_id", "dst_node_id", "relation_type"],
+                keep="first"
+            )
+
+            filter_edges_df.to_csv(dst_edges_path, index=False)
+            print(f"Updated relations saved to {dst_edges_path}")
+            print("Done.")
+        except Exception as e:
+            print(e)
+            pass
 
     def rebuild_all_kg(self, case_ids):
         redundant_id_path = self.rag_ea_path + "redundant_pairs.csv"

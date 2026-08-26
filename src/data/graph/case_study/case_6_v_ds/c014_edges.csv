@@ -1,0 +1,111 @@
+src_node_id,dst_node_id,relation_type,evidence_label,case_title,evidence_statement,evidence_location
+c014M01N02,c014M01N22,be_transferred_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Collaborative platforms enable organizations to draw lessons from past practices.,"p. 1165, §4"
+c014M01N03,c014M01N23,be_transferred_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Some projects use a portal through which project news is shared.,"p. 1166, §4.1"
+c014M01N04,c014M01N19,be_transferred_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Regular training sessions communicate best practices.,"p. 1166, §4.3"
+c014M01N04,c014M01N20,be_transferred_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Workshops communicate best practices.,"p. 1166, §4.3"
+c014M01N05,c014M01N19,be_transferred_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Regular training sessions communicate new rules.,"p. 1166, §4.3"
+c014M01N05,c014M01N20,be_transferred_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Workshops communicate new rules.,"p. 1166, §4.3"
+c014M01N07,c014M01N06,be_derived_from,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI analyzes extensive data to predict trends and outcomes.,"p. 1165, §4"
+c014M01N07,c014M01N25,be_transferred_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Predictive tools provide insights about trends and outcomes.,"p. 1165, §4"
+c014M01N08,c014M01N06,be_derived_from,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Analysis of vast datasets enables potential-risk identification.,"p. 1165, §4"
+c014M01N08,c014M01N25,be_transferred_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Predictive analysis enables risk identification before escalation.,"p. 1165, §4"
+c014M01N09,c014M01N26,be_transferred_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Environmental monitoring tools track and make emissions data available.,"p. 1166, §4.1"
+c014M01N11,c014M01N43,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Two project managers participated in the interviews.,"pp. 1164–1165, §3 and Table 1"
+c014M01N12,c014M01N43,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,A Project In-charge participated in the interviews.,"p. 1165, Table 1"
+c014M01N15,c014M01N43,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,A General Manager participated in the interviews.,"p. 1165, Table 1"
+c014M01N16,c014M01N21,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Project leadership supports implementation of AI-based KM initiatives.,"pp. 1165–1167, §§4–5"
+c014M01N16,c014M01N22,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Participative leaders align stakeholders and communication channels.,"p. 1165, §4"
+c014M01N16,c014M01N24,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Project leadership uses AI monitoring and intervenes.,"p. 1165, §4"
+c014M01N17,c014M01N21,participate_in,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-based KM initiatives foster stakeholder collaboration.,"pp. 1163–1165, Abstract and §§1–4"
+c014M01N17,c014M01N22,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Collaborative platforms facilitate stakeholder knowledge transfer.,"p. 1165, §4"
+c014M01N17,c014M01N23,participate_in,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,The portal supports stakeholder communication.,"p. 1166, §4.1"
+c014M01N18,c014M01N19,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Team members participate in regular training sessions.,"p. 1166, §4.3"
+c014M01N18,c014M01N20,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Team members participate in workshops.,"p. 1166, §4.3"
+c014M01N18,c014M01N21,participate_in,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Employees receive development for working with AI-based initiatives.,"p. 1163, Abstract"
+c014M01N19,c014M01N31,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Regular training sessions are supported by leadership.,"p. 1166, §4.3"
+c014M01N20,c014M01N31,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Workshops are supported by leadership.,"p. 1166, §4.3"
+c014M01N21,c014M01N28,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-based KM initiatives integrate artificial intelligence.,"pp. 1164–1167, §§2–5"
+c014M01N21,c014M01N31,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Leadership support is fundamental to implementation.,"pp. 1166–1167, §4.4 and Table 2"
+c014M01N21,c014M01N32,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Participative leadership facilitates AI use and sharing.,"pp. 1165–1167, §4 and Table 2"
+c014M01N21,c014M01N33,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Implementation requires resource allocation.,"pp. 1164 and 1166, §1 and §4.4"
+c014M01N21,c014M01N34,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,A knowledge-sharing culture supports AI implementation.,"pp. 1163–1164, Abstract and §2"
+c014M01N21,c014M01N36,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Organizations lack infrastructure required for AI integration.,"p. 1164, §1"
+c014M01N21,c014M01N37,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Resistance to change challenges implementation.,"pp. 1163 and 1167, Abstract and Table 2"
+c014M01N21,c014M01N38,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Authoritarian leadership hinders AI use and sharing.,"pp. 1165–1167, §4 and Table 2"
+c014M01N21,c014M01N39,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Abusive leadership is associated with negligible adoption and failure.,"p. 1167, Table 2"
+c014M01N21,c014M01N40,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Some projects underutilize AI tools.,"pp. 1166–1167, §4.4 and Table 2"
+c014M01N21,c014M01N41,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,A technology-use and knowledge-transfer gap remains.,"p. 1166, §4.3"
+c014M01N21,c014M01N42,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Lack of training and engagement weakens AI-KM outcomes.,"p. 1167, Table 2"
+c014M01N22,c014M01N28,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,The collaborative platforms are AI-enabled.,"p. 1165, §4"
+c014M01N22,c014M01N31,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Leadership support promotes AI-enabled sharing and communication.,"pp. 1165–1167, §§4–4.4"
+c014M01N22,c014M01N32,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Participative leaders align stakeholders and communication channels.,"p. 1165, §4"
+c014M01N22,c014M01N34,depend_on,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,A knowledge-sharing culture supports collaborative platforms.,"pp. 1163–1165, Abstract and §§2–4"
+c014M01N22,c014M01N35,depend_on,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Collaborative communication depends on stakeholder participation.,"pp. 1165–1167, §4 and Table 2"
+c014M01N22,c014M01N38,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Authoritarian leadership reduces sharing and involvement.,"pp. 1166–1167, Table 2"
+c014M01N22,c014M01N39,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Abusive leadership creates distrust and poor sharing.,"p. 1167, Table 2"
+c014M01N22,c014M01N41,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,A transfer gap remains despite collaborative platforms.,"pp. 1165–1166, §§4 and 4.3"
+c014M01N22,c014M01N42,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Lack of training weakens knowledge-sharing platform use.,"pp. 1166–1167, §§4.3–4.4"
+c014M01N22,c014M01N41,mitigate,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Collaborative platforms facilitate transfer although a gap remains.,"pp. 1165–1166, §§4 and 4.3"
+c014M01N23,c014M01N31,depend_on,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Leadership supports effective communication-channel use.,"pp. 1165–1166, §§4–4.1"
+c014M01N23,c014M01N38,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Authoritarian leadership restricts knowledge-sharing channels.,"pp. 1165–1167, §§4–4.1 and Table 2"
+c014M01N23,c014M01N41,mitigate,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Knowledge sharing is better in projects using a portal.,"p. 1166, §4.1"
+c014M01N24,c014M01N28,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Project leadership uses AI for real-time monitoring.,"p. 1165, §4"
+c014M01N24,c014M01N31,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,"Leadership supports monitoring, sharing, and intervention.","p. 1165, §4"
+c014M01N24,c014M01N32,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Participative leadership supports proactive intervention.,"p. 1166, §4.2"
+c014M01N24,c014M01N36,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Insufficient infrastructure limits AI monitoring.,"p. 1164, §1; p. 1165, §4"
+c014M01N24,c014M01N38,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Authoritarian leadership hinders AI use and timely response.,"pp. 1165–1167, §4 and Table 2"
+c014M01N24,c014M01N39,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Negligible adoption limits real-time monitoring.,"p. 1167, Table 2"
+c014M01N24,c014M01N40,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Underutilization limits access to real-time data.,"pp. 1166–1167, §4.4 and Table 2"
+c014M01N24,c014M01N41,mitigate,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Monitoring is followed by immediate knowledge sharing.,"p. 1165, §4"
+c014M01N25,c014M01N29,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Predictive analytics supports forecasts and backup plans.,"p. 1165, §4"
+c014M01N25,c014M01N31,depend_on,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Leadership influences implementation of predictive tools.,"pp. 1165–1166, §§4–4.4"
+c014M01N25,c014M01N36,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Insufficient infrastructure limits predictive decision tools.,"p. 1164, §1; p. 1165, §4"
+c014M01N25,c014M01N38,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Authoritarian leadership hinders predictive AI use.,"pp. 1165–1167, §4 and Table 2"
+c014M01N25,c014M01N40,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Underutilization limits access to analytics.,"pp. 1166–1167, §4.4 and Table 2"
+c014M01N26,c014M01N28,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Environmental monitoring tools are AI-driven.,"p. 1166, §4.1"
+c014M01N27,c014M01N06,adopt,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Net Zero Cloud reads project data as input.,"p. 1166, §4.3"
+c014M01N27,c014M01N30,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Net Zero Cloud is a generative AI tool.,"p. 1166, §4.3"
+c014M01N27,c014M01N31,depend_on,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Leadership supports implementation of AI-based tools.,"p. 1166, §§4.3–4.4"
+c014M01N27,c014M01N40,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Net Zero Cloud is used by only some projects amid wider underutilization.,"p. 1166, §§4.3–4.4"
+c014M01N27,c014M01N42,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Lack of training weakens implementation of generative AI tools.,"pp. 1166–1167, §4.3 and Table 2"
+c014M02N10,c014M02N34,be_captured_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,"Real-time monitoring, and then knowledge is shared as this immediate intervention can prevent minor issues",Page 3
+c014M02N09,c014M01N18,be_absorbed_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Lessons learned absorbed by team members during training,Page 4
+c014M02N09,c014M02N24,be_absorbed_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Lessons learned absorbed by stakeholders,Page 3
+c014M01N18,c014M02N36,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Team members participate in training sessions and workshops,Page 4
+c014M02N23,c014M02N36,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Employees participate in training sessions and workshops,Page 4
+c014M02N24,c014M02N30,participate_in,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Stakeholders participate in collaborative knowledge-sharing platforms,Page 3
+c014M02N30,c014M02N39,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Collaborative platforms adopt collaborative platforms technology,Page 3
+c014M02N32,c014M01N30,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Generative AI tools adopt generative AI technology,Page 4
+c014M02N30,c014M02N08,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Collaborative platforms capture AI-generated reports,Page 4
+c014M02N33,c014M02N06,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Stakeholder communication portal captures stakeholder communication knowledge,Page 4
+c014M01N26,c014M01N09,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Environmental monitoring AI tools capture carbon footprint tracking data,Page 4
+c014M02N32,c014M02N08,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Generative AI tools capture AI-generated reports,Page 4
+c014M01N21,c014M02N55,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven knowledge management initiatives constrained by lack of leadership support,Page 4
+c014M02N09,c014M01N41,be_difficult_to_capture_due_to,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Lessons learned difficult to capture due to inadequate knowledge transfer,Page 4
+c014M02N11,c014M02N56,be_difficult_to_capture_due_to,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Problem-solving skills difficult to capture due to authoritarian leadership hindering adoption,Table 2
+c014M01N21,c014M02N62,mitigate,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven knowledge management initiatives mitigate delays and disruptions,Page 3
+c014M01N25,c014M02N63,mitigate,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Predictive analytics systems mitigate operational inefficiencies,Page 3
+c014M02N34,c014M02N10,evaluate,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Real-time monitoring systems evaluate real-time hazard identification,Page 3
+c014M01N21,c014M01N25,be_composed_of,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven knowledge management initiatives composed of predictive analytics systems,Page 3
+c014M01N21,c014M02N34,be_composed_of,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven knowledge management initiatives composed of real-time monitoring systems,Page 3
+c014M01N21,c014M02N45,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven knowledge management initiatives depend on clear strategic vision,Page 1
+c014M01N21,c014M02N47,depend_on,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven knowledge management initiatives depend on training and development,Page 1
+c014M01N21,c014M02N59,mitigate,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven knowledge management initiatives mitigate lack of adaptive capability,Page 3-4
+c014M01N21,c014M01N37,mitigate,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven knowledge management initiatives mitigate resistance to change,Page 1
+c014M01N07,c014M02N05,be_derived_from,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Decision-making insights derived from predictive insights,Page 3
+c014M01N21,c014M02N01,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven KM initiatives adopt real-time data analytics,Page 1
+c014M02N03,c014M01N07,be_derived_from,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Supply chain risk knowledge derived from predictive insights,Page 3
+c014M02N30,c014M02N07,adopt,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Collaborative platforms adopt operational knowledge from past practices,Page 3
+c014M02N13,c014M02N21,be_shared_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Participative decision-making skills held by Top management,Page 3
+c014M02N13,c014M01N18,be_absorbed_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Participative decision-making skills absorbed by team members,Page 4
+c014M02N14,c014M02N21,be_shared_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Proactive planning capability held by Top management,Page 4
+c014M01N21,c014M02N43,depend_on,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven KM initiatives depend on top management engagement,Page 4
+c014M01N21,c014M02N57,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,AI-driven KM initiatives constrained by abusive leadership,Table 2
+c014M02N27,c014M02N55,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Unstructured knowledge sharing constrained by lack of leadership support,Page 1
+c014M02N27,c014M02N56,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Unstructured knowledge sharing constrained by authoritarian leadership,Table 2
+c014M02N27,c014M02N57,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Unstructured knowledge sharing constrained by abusive leadership,Table 2
+c014M02N26,c014M02N55,be_constrained_by,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Traditional decision-making constrained by lack of leadership support,Page 4
+c014M02N26,c014M02N56,be_constrained_by,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Traditional decision-making constrained by authoritarian leadership,Table 2
+c014M02N09,c014M02N55,be_difficult_to_capture_due_to,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Lessons learned difficult to capture due to lack of leadership support,Page 1
+c014M02N09,c014M02N56,be_difficult_to_capture_due_to,E,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Lessons learned difficult to capture due to authoritarian leadership,Table 2
+c014M02N11,c014M02N55,be_difficult_to_capture_due_to,I,Ai-Driven Knowledge Management In Megaprojects: The Leadership Factor,Problem-solving skills difficult to capture due to lack of leadership support,Page 1

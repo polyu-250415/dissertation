@@ -15,15 +15,16 @@ class EvaluateVQ:
     def build_vector_db(self, case_ids=[]):
 
         root = Path(self.pdf_path)
-        sub_dirs = [f for f in root.iterdir() if f.is_dir()]
+        file_list = [f for f in root.iterdir() if f.is_file() and f.suffix.lower() == ".pdf"]
 
-        for d in sub_dirs:
-            if d.name in case_ids:
-                custom_meta_data: dict = {
-                    "case_id": d.name
-                }
-                self.rag_auditor.ingest(self.pdf_path + "/" + d.name,
-                                        custom_meta=custom_meta_data)
+        for case_id in case_ids:
+            for file in file_list:
+                if case_id in file.name:
+                    custom_meta_data: dict = {
+                        "case_id": case_id
+                    }
+                    self.rag_auditor.ingest(self.pdf_path, file_name_screening = file.name,
+                                            custom_meta=custom_meta_data)
 
     @staticmethod
     def convert_to_valid_int(resp_list):
@@ -66,34 +67,32 @@ class EvaluateVQ:
 
         filters = {"field": "meta.case_id", "operator": "==", "value": case_id}
 
-        # process nodes
-        node_vq_path = self.vq_path + "/" + case_id + '_nodes_vq.csv'
-        df_node = pd.read_csv(node_vq_path)
-        question_list = df_node[['sample_type', 'question']].to_dict(orient='records')
-        resp_list = self.rag_auditor.ask_by_local_llm(question_list, filters=filters)
-        df_node['rag_rate'] = resp_list
         try:
+            node_vq_path = self.vq_path + "/" + case_id + '_nodes_vq.csv'
+            df_node = pd.read_csv(node_vq_path)
+            question_list = df_node[['sample_type', 'question']].to_dict(orient='records')
+            resp_list = self.rag_auditor.ask_by_local_llm(question_list, filters=filters)
+            df_node['rag_rate'] = resp_list
+
             evaluation_label_list = self.check_evaluation_condition(df_node)
             df_node['evaluation_label'] = evaluation_label_list
             df_node.to_csv(self.vq_path + "/" + case_id + '_nodes_vq_evaluation.csv', index=False)
         except Exception as e:
             print(e)
-            df_node.to_csv(self.vq_path + "/" + case_id + '_nodes_vq_evaluation_tmp.csv', index=False)
 
         # process relations
-        relation_vq_path = self.vq_path + "/" + case_id + '_edges_vq.csv'
-        df_relation = pd.read_csv(relation_vq_path)
-        question_list = df_relation[['sample_type', 'question']].to_dict(orient='records')
-        resp_list = self.rag_auditor.ask_by_local_llm(question_list, filters=filters)
-        df_relation['rag_rate'] = resp_list
-
         try:
+            relation_vq_path = self.vq_path + "/" + case_id + '_edges_vq.csv'
+            df_relation = pd.read_csv(relation_vq_path)
+            question_list = df_relation[['sample_type', 'question']].to_dict(orient='records')
+            resp_list = self.rag_auditor.ask_by_local_llm(question_list, filters=filters)
+            df_relation['rag_rate'] = resp_list
+
             evaluation_label_list = self.check_evaluation_condition(df_relation)
             df_relation['evaluation_label'] = evaluation_label_list
             df_relation.to_csv(self.vq_path + "/" + case_id + '_edges_vq_evaluation.csv', index=False)
         except Exception as e:
             print(e)
-            df_relation.to_csv(self.vq_path + "/" + case_id + '_edges_vq_evaluation_tmp.csv', index=False)
 
     def evaluate_all_vq(self, case_ids):
 

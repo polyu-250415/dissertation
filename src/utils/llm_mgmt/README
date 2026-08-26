@@ -14,3 +14,22 @@ ollama pull deepseek-r1:8b
 # run model
 pkill -9 ollama
 OLLAMA_HOST=0.0.0.0:11435 ollama serve &
+
+# set explicit env variables
+launchctl setenv NEO4J_URI "neo4j://127.0.0.1:7687"
+launchctl setenv NEO4J_USERNAME "neo4j"
+launchctl setenv NEO4J_DATABASE "kggen"
+
+# input password
+read -s 'NEO4J_PASSWORD?Enter Neo4j password: '
+
+# set password
+echo
+launchctl setenv NEO4J_PASSWORD "$NEO4J_PASSWORD"
+unset NEO4J_PASSWORD
+
+# query env variables
+launchctl getenv NEO4J_URI
+launchctl getenv NEO4J_USERNAME
+launchctl getenv NEO4J_DATABASE
+test -n "$(launchctl getenv NEO4J_PASSWORD)" && echo "Password configured"

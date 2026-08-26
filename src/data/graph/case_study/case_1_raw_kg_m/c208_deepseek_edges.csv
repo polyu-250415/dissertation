@@ -1,0 +1,48 @@
+src_node_id,dst_node_id,relation_type,evidence_label,case_title,evidence_statement,evidence_location
+N01,N12,be_transferred_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,learners were taught the fundamentals of CXR interpretation,Page 1
+N01,N13,be_transferred_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,questions assessed learners on basic principles of CXR interpretation,Page 2
+N02,N12,be_transferred_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"learners were taught the fundamentals of CXR interpretation, including steps",Page 1
+N02,N13,be_transferred_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,questions assessed learners on steps to systematic CXR interpretation,Page 2
+N03,N12,be_transferred_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,learners were taught components of a normal and abnormal CXR,Page 1
+N03,N13,be_transferred_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,questions assessed learners on components of a normal and abnormal CXR,Page 2
+N04,N13,be_transferred_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,questions assessed learners on verifying placement of lines and tubes,Page 2
+N05,N13,be_transferred_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,questions assessed learners on identifying CXR pathologies learners should not miss,Page 2
+N07,N11,be_absorbed_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,learners gained confidence in CXR interpretation,"Page 1, Page 4"
+N08,N11,be_absorbed_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,learners gained confidence and retained knowledge in CXR interpretation,Page 1
+N09,N12,participate_in,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,multiple-choice questions developed by faculty for the presentation module,Page 1
+N09,N13,participate_in,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,multiple-choice questions developed by faculty for the game,Page 1
+N11,N12,participate_in,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,learners could access asynchronously in their learning management system,Page 1
+N11,N13,participate_in,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,learners engaged in a free application-based gaming platform,Page 1
+N11,N26,participate_in,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,Pre- and post- survey data was matched to determine... students who participated in both surveys,Page 2
+N12,N24,depend_on,I,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"Institutional knowledge, faculty training... are some of the barriers",Page 1
+N12,N25,depend_on,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,the advent of distance learning are some of the barriers,Page 1
+N13,N24,depend_on,I,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"Institutional knowledge, faculty training... are some of the barriers",Page 1
+N13,N25,depend_on,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,the advent of distance learning are some of the barriers,Page 1
+N26,N24,depend_on,I,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"Institutional knowledge, faculty training... are some of the barriers",Page 1
+N26,N25,depend_on,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,the advent of distance learning are some of the barriers,Page 1
+N12,N20,be_constrained_by,I,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,only 28 completed the pre- and post surveys,Page 4
+N12,N21,be_constrained_by,I,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"participation was voluntary, making it hard to determine the participation rate",Page 4
+N12,N22,be_constrained_by,I,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,The 6-week duration... limited to only 1 cohort,Page 4
+N12,N23,be_constrained_by,I,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"limited to only 1 cohort, constraining the ability to extrapolate findings broadly",Page 4
+N13,N20,be_constrained_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,only 28 completed the pre- and post surveys,Page 4
+N13,N21,be_constrained_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"participation was voluntary, making it hard to determine the participation rate",Page 4
+N13,N22,be_constrained_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,The 6-week duration... limited to only 1 cohort,Page 4
+N13,N23,be_constrained_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"limited to only 1 cohort, constraining the ability to extrapolate findings broadly",Page 4
+N26,N20,be_constrained_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,only 28 completed the pre- and post surveys,Page 4
+N26,N21,be_constrained_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"participation was voluntary, making it hard to determine the participation rate",Page 4
+N26,N22,be_constrained_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,The 6-week duration... limited to only 1 cohort,Page 4
+N26,N23,be_constrained_by,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"limited to only 1 cohort, constraining the ability to extrapolate findings broadly",Page 4
+N26,N07,evaluate,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,post-assessment... learners were either somewhat or very confident in making correct diagnoses,Page 1
+N26,N08,evaluate,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"comfort with CXR interpretation among all respondents... at the post, the majority felt somewhat comfortable",Page 2
+N26,N06,evaluate,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,results from the 4-question pre-post gamification quiz,Page 2
+N12,N15,adopt,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,learners could access asynchronously in their learning management system,Page 1
+N13,N14,adopt,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"learners engaged in a free application-based gaming platform, independent of the LMS",Page 1
+N13,N16,adopt,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,learners were placed in teams of 4 to 6 and competed against other teams,Page 1
+N13,N17,adopt,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,competed against other teams within their cohort to earn points toward an overall leader,Page 1
+N13,N18,adopt,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"earning hot streak, marathon, team accuracy, and team participation badges",Page 2
+N13,N19,adopt,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"The Attention, Relevance, Confidence, and Satisfaction (ARCS) model was used for this project",Page 1
+N26,N06,adopt,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,Pre- and post- survey data was matched... results from the 4-question pre-post gamification quiz,Page 2
+N07,N20,be_difficult_to_capture_due_to,I,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"only 28 completed the pre- and post surveys, limiting measure of confidence",Page 4
+N13,N27,mitigate,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,64.3% answered at least 75% correctly indicating knowledge retention... learners gained confidence,Page 1
+N13,N12,complement,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,"The asynchronous sessions were followed by an interactive, online game-based learning experience",Page 1
+N13,N12,cannot_fully_replace,E,Gamifying Chest X-Ray Interpretation for Advanced Practice Nurses,The project consisted of both didactic and practical learning,Page 1

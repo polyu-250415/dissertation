@@ -6,63 +6,37 @@ Input Data Format
 You will be processing a CSV dataset containing research nodes. The input columns are:
 * node_id: Unique identifier (e.g., c001M01N01)
 * node_name: The specific entity, tool, practice, human agent, or constraint
-* category: One of 9 high-level structural categories
+* category: One of 10 high-level structural categories
 * evidence_label: The type of evidence (e.g., E for explicit, I for implicit)
 * case_title: The source of the node
 * evidence_statement: The specific textual evidence of the node from literature
 * object_definition: The functional or operational definition of the node
 * evidence_location: Section or page number where the evidence resides
 
-High-Level Categories
-1. Explicit Knowledge
-2. Tacit Knowledge
-3. Knowledge Holder
-4. Traditional Human-central Practice
-5. Technology-enable Practice
-6. Digital Technology
-7. Organizational Dependency
-8. Environmental Dependency
-9. Limitation
-
 CRITICAL CLASSIFICATION METHODOLOGY REMINDER
 When mapping data rows to sub-categories, you must NOT rely solely on the text in the node_name column. You are strictly required to perform a semantic analysis of the evidence_statement and object_definition columns for every single node. Use these contextual clues, descriptions, and functional roles to determine the true semantic domain of the node and map it to the most accurate pre-defined sub-category.
 
-Taxonomy Guidelines & Tasks
-Task 1: General Category Sub-Taxonomy (Categories 1, 3, 7, 8)
-For all categories NOT explicitly restricted or pre-defined in Tasks 2 below, you must:
-1. Create a set of granular sub-categories based on established literature (e.g., Nonaka & Takeuchi's KM theory, Resource-Based View, and Contingency theory).
-2. CRITICAL CARDINALITY CONSTRAINT: Every high-level category in this task must contain at least 6, but strictly LESS THAN 16 active sub-categories.
-3. Assign a structured alphanumeric ID using the parent category's initials (e.g., Explicit Knowledge -> EK01, EK02).
-
-Task 2: Digital Technology
-When expanding this category, you must map nodes into the following sub-categories:
-1. 'Artificial Intelligence and Computational Intelligence'(Code : TE01): Foundational core models, connectionist AI, natural language processing architectures, and generative systems. --e.g.,GenAI systems, LLMs, prompt engineering, foundational semantic similarity algorithms, GPT models, neural networks, and machine learning pipelines.
+Taxonomy Guidelines
+When expanding the category–Digital Technology, you must map nodes into the following sub-categories:
+1. 'Artificial Intelligence and Intelligent Computation'(Code : TE01): Foundational core models, connectionist AI, natural language processing architectures, and generative systems. --e.g.,GenAI systems, LLMs, prompt engineering, foundational semantic similarity algorithms, GPT models, neural networks, and machine learning pipelines.
 2. 'Human–Computer Interaction and Immersive Technologies'(Code : TE02): User experience design, interactive software interfaces, and spatial computing environments. --e.g.,VR environments, AR scene overlays, digital displays, interactive dashboards, user interface (UI) configurations, and spatial authoring tools like Unity3D, Metaverse
 3. 'Cyber-Physical Systems, IoT, and Smart Environments'(Code : TE03): Hardware-software integration where computational logic interacts directly with physical mechanics and automated hardware feedback. --e.g.,Active/passive smart suits, Digital Twin, automated physical feedback loops, embedded control loops, and smart infrastructure networks.
-4. 'Information Systems and Data Management'(Code : TE04): The structural storage, architecture, indexing, retrieval, and semantic mapping of data and structural knowledge. --e.g.,Databases, cloud computing databases, vector databases, relational registries, Information Retrieval (IR) engines, data mining, knowledge graphs, and ontologies.
-5. 'Computer Vision, Sensing, and Perception'(Code : TE05): The hardware, telemetry, and signal/image processing algorithms required to capture and perceive environmental inputs. --e.g.,IMU telemetry sensors, eye trackers, EEG devices, 3D laser scanning, UAV oblique photography, wearable cameras, image/video processing, pattern recognition, and sensor data fusion.
+4. 'Data, Information, and Knowledge Systems'(Code : TE04): The structural storage, architecture, indexing, retrieval, and semantic mapping of data and structural knowledge. --e.g.,Databases, cloud computing databases, vector databases, relational registries, Information Retrieval (IR) engines, data mining, knowledge graphs, and ontologies.
+5. 'Imaging, Sensing, and Perception Technologies'(Code : TE05): The hardware, telemetry, and signal/image processing algorithms required to capture and perceive environmental inputs. --e.g.,IMU telemetry sensors, eye trackers, EEG devices, 3D laser scanning, UAV oblique photography, wearable cameras, image/video processing, pattern recognition, and sensor data fusion.
 6. 'Security, Privacy, and Trustworthy Technologies'(Code : TE06): Systems designed to ensure data integrity, privacy preservation, confidentiality, and architectural trust. --e.g.,Cryptography, network security, blockchain, decentralized ledgers, zero-knowledge proofs, and formal verification.
 7. 'Mobile, Social and Communication Technologies'(Code : TE07): Network communication protocols, distributed social systems, and mobile-first software application ecosystems. --e.g.,Wireless communication, 5G/6G protocols, social networks, mobile applications, and ubiquitous computing platforms.
 8. 'Rule-Based, Decision and Expert Systems'(Code : TE08): Deterministic, symbolic, and non-probabilistic AI that drives automated decision-making through hard-coded logic and expert rules. --e.g.,Symbolic AI, rule-based systems, expert decision-making tools, business logic engines, automated compliance verification, and if-then diagnostic frameworks.
-9. 'Other(*)'(Code : TE09): Digital Technology, but excludes TE01-TE08 
+9. 'Ambiguous Digital Technology(*)'(Code : TE09): Maps Digital Technology that cannot be assigned to TE01-TE08 because the evidence does not identify a sufficiently specific domain or analytical level. 
 
 
 Strategic Reasoning Process
 Before generating the final output, execute and display your step-by-step reasoning under a "Strategic Reasoning Process" heading following these exact phases:
 Phase 1: Theoretical Foundation & Base Taxonomy Derivation
-* Document the academic literature and KM frameworks used to formalize the sub-taxonomies for the general categories (Categories 1, 3,8 9).
-* Explicitly define the semantic boundaries, operational scope, and unique alphanumeric identifier prefix (e.g., EX, KH, TP, ED) for every newly created sub-category.
-Phase 2: Structural Boundary & Cardinality Audit
-* Enumerate and count the exact number of sub-categories active within each of the 9 high-level parent categories.
-* Cross-reference these counts against the mathematical constraints established in the guidelines:
-* Provide an explicit "Pass/Fail" statement confirming structural compliance before mapping data rows.
-Phase 3: Edge-Case Resolution & Intersection Handling
-* Identify any ambiguous nodes where the node_name could be misleading (e.g., human constraints vs. systemic limitations), and detail how you examined the evidence_statement and object_definition to resolve the classification.
-* Formulate and explicitly state a deterministic domain-tiebreaking rule based on construction informatics principles to cleanly assign the node to a single, optimal sub-category without ambiguity.
-Phase 4: Alphanumeric Mapping & Code-String Synthesis
+* Understand each subcategory defined in the ***Taxonomy Guidelines*** and ensure that the coding is carried out in accordance with the unified rules.
+Phase 2: Alphanumeric Mapping & Code-String Synthesis
 * Synthesize the final structural combinations by verifying that each mapped node's parent category directly matches the alphabetical prefix of its assigned sub_category_id.
 * Ensure that the text string in the final sub_category column perfectly corresponds to the formalized taxonomy definitions from Phase 1 & Tasks 2-6, removing any syntactic drift or formatting discrepancies.
-Phase 5: CSV Integrity Pre-Check:
+Phase 3: CSV Integrity Pre-Check:
 * Ensure that all rows have been processed in accordance with the unified standard.
 * Verify that the total number of output rows matches the input file exactly.
 * Verify that all fields are cleanly enclosed in double quotes to handle internal commas safely.
@@ -71,3 +45,4 @@ Output Format
 Following the CoT log, output the final result as a cleanly formatted CSV file.
 * The output data rows must include the two newly appended columns: sub_category_id and sub_category.
 * The delimiter of CSV files should be a comma (,), with fields enclosed in double quotes to safely handle any commas inside node names or statements.
+    

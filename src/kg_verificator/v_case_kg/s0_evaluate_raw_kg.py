@@ -3,6 +3,7 @@ import networkx as nx
 from datetime import datetime
 from typing import List, Dict
 from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_case
+from src.kg_verificator.v_case_kg.s0_verify_schema import VerifySchema
 
 
 class CSVGraphQualityInspector:
@@ -28,6 +29,38 @@ class CSVGraphQualityInspector:
         self.node_cat_map = dict(
             self.nodes_df[["node_id", "category"]].dropna(subset=["category"]).values
         )
+        self.relation_type_map = {
+            "be_documented_partially_by": 0,
+            "translate_into": 0,
+            "be_shared_by": 0,
+            "be_absorbed_by": 0,
+            "be_captured_by": 0,
+            "be_transferred_by": 0,
+            "be_derived_from": 0,
+            "participate_in": 0,
+            "depend_on": 0,
+            "evaluate": 0,
+            "adopt": 0,
+            "be_constrained_by": 0,
+            "resolve": 0,
+            "mitigate": 0,
+            "complement": 0,
+            "cannot_fully_replace": 0,
+            "be_difficult_to_capture_due_to": 0,
+            "be_composed_of": 0,
+        }
+        self.entity_category_map = {
+            "Explicit Knowledge":0,
+            "Tacit Knowledge":0,
+            "Knowledge Holder":0,
+            "Traditional Human-central Practice":0,
+            "Technology-enable Practice":0,
+            "Digital Technology":0,
+            "Organizational Dependency":0,
+            "Environmental Dependency":0,
+            "Limitation":0,
+            "Knowledge Learner":0
+        }
 
     def _load_and_validate_nodes(self) -> pd.DataFrame:
         """加载节点CSV并做基础校验"""
@@ -350,7 +383,7 @@ class CSVGraphQualityInspector:
                 "max_component_ratio": round(max_component_ratio, 4)
             }
 
-    def print_summary(self):
+    def print_summary(self, case_id, model):
         """控制台打印核心质量汇总"""
         print("=" * 70)
         print("📊 CSV图谱质量巡检核心汇总")
@@ -374,6 +407,7 @@ class CSVGraphQualityInspector:
         cat_warning_dict = {}
         for cat, info in type_deg.items():
             print(f"{cat:<16}{info['node_count']:<8}{info['avg_in_degree']:<10.3f}{info['avg_out_degree']:<10.3f}")
+            self.entity_category_map[cat] = info['node_count']
             if info['avg_in_degree'] + info['avg_out_degree'] < 2:
                 cat_warning_dict[cat] = info['avg_in_degree'] + info['avg_out_degree']
 
@@ -385,8 +419,8 @@ class CSVGraphQualityInspector:
             print(f"【关系】Schema违规: {em['schema_violations']['total_violation_count']}条")
         print('\nDistribution of relations:')
         for key in em['rel_type_distribution'].keys():
+            self.relation_type_map[key] = em['rel_type_distribution'][key]
             print(f"relation type - {key}: {em['rel_type_distribution'][key]}")
-
 
         # 拓扑核心指标
         print(f"\n【拓扑】全局平均度: {tp['avg_degree']:.2f} | 全局平均入度：{tp['degree_distribution']['avg_in_degree']:.3f} | 全局平均出度：{tp['degree_distribution']['avg_out_degree']:.3f}")
@@ -402,32 +436,54 @@ class CSVGraphQualityInspector:
         print("=" * 70)
 
         recommend = []
-        recommend.append('check each node, the node name should present domain character, avoid direct using concept')
-        recommend.append('check the relations, some records misused the relation type between the src node and the dst node')
+        recommend.append('1. Check the outline of the knowledge graph\n')
+        if tp['connected_components']['component_count'] > 1:
+            recommend.append(
+                f"The number of the weakly connected components （{tp['connected_components']['component_count']}) is "
+                f"too high, please check whether you missed some relations")
 
         if nm['isolated_nodes']['isolated_ratio'] >= 0.1:
-            recommend.append(f"The isolated node ratio ({nm['isolated_nodes']['isolated_ratio']}) is too high, check whether all relations among nodes have been identified")
+            recommend.append(f"The isolated node ratio ({nm['isolated_nodes']['isolated_ratio']}) is too high, "
+                             f"check whether all relations among nodes have been identified")
 
         if tp['avg_degree'] < 2.5:
             recommend.append(
                 f"The average degree ({tp['avg_degree']}) is too low, check whether all "
                 f"relations among nodes have been identified")
 
+        recommend.append('\n2. Check the nodes of the knowledge graph\n')
+        recommend.append('Check each node, the node name should present domain character, avoid direct using concept')
+        for key in self.entity_category_map.keys():
+            if self.entity_category_map[key]:
+                continue
+            recommend.append(
+                f'There is no entity category named {key}. Please check if they have been omitted.')
+
+        recommend.append('\n3. Check the edges of the knowledge graph\n')
+        if VerifySchema().validate_raw_kg_schema(case_id, model):
+            recommend.append('Check the relations, some records misused the relation type between the src node and the dst node')
+
+        for key in self.relation_type_map.keys():
+            if self.relation_type_map[key]:
+                continue
+            recommend.append(
+                f'There is no relationship type named "{key}". Please check if they have '
+                f'been omitted.')
+
+        recommend.append('\n4. Check the triplets of the knowledge graph\n')
         for key in cat_warning_dict.keys():
-            recommend.append(f"the nodes belonging to {key} demonstrated a low avarage degree: "
-                             f"{cat_warning_dict[key]}, check whether all relations associated with these nodes have "
-                             f"been "
-                             f"identified")
+            recommend.append(f'The nodes belonging to {key} demonstrated a low average degree: '
+                             f'"{cat_warning_dict[key]}", check whether all relations associated with these nodes have been identified')
 
         print("\nRecommendations:")
         for reco in recommend:
             print(reco)
 
 
-def measure_kg_by_indicator(case_id):
-    # ===================== 【请修改此处文件路径】 =====================
-    NODE_CSV_PATH = f"../data/graph/case_study/case_1_raw_kg_m/{case_id}_deepseek_nodes.csv"
-    EDGE_CSV_PATH = f"../data/graph/case_study/case_1_raw_kg_m/{case_id}_deepseek_edges.csv"
+def measure_kg_by_indicator(case_id, model='deepseek'):
+
+    NODE_CSV_PATH = f"../../data/graph/case_study/case_1_raw_kg_m/{case_id}_{model}_nodes.csv"
+    EDGE_CSV_PATH = f"../../data/graph/case_study/case_1_raw_kg_m/{case_id}_{model}_edges.csv"
 
     # 1. 初始化巡检器
     inspector = CSVGraphQualityInspector(NODE_CSV_PATH, EDGE_CSV_PATH)
@@ -456,14 +512,26 @@ def measure_kg_by_indicator(case_id):
     inspector.stat_degree_by_node_category()   # 新增调用！
 
     # 5. 输出结果
-    inspector.print_summary()
+    inspector.print_summary(case_id,model)
 
 
-def evaluate_raw_kg_by_indicator(case_ids):
+def evaluate_raw_kg_by_indicator(case_ids,model):
     for case_id in case_ids:
-        measure_kg_by_indicator(case_id)
+        measure_kg_by_indicator(case_id, model=model)
 
 
 if __name__ == "__main__":
-    case_id = 'c201'
-    create_kg_by_case(case_id)
+    case_id = 'c107'
+    model = 'chatgpt'
+
+    step = 3
+    if step == 1:
+        measure_kg_by_indicator(case_id, model=model)
+
+    if step == 2:
+        path_dir = "../../data/graph/case_study/case_1_raw_kg_m/"
+        create_kg_by_case(case_id, path_dir=path_dir, mid_seg=f"_{model}")
+
+    if step == 3:
+        path_dir = "../../data/graph/case_study/case_6_v_ds/"
+        create_kg_by_case(case_id)

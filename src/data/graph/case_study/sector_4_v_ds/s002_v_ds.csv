@@ -1,0 +1,2194 @@
+node_id,category,cypher,task
+s002M01TP01,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP01'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP01'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP03,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP03'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP03'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP04,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP04'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP04'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP05,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP05'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP05'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP06,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP06'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP06'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP07,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP07'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP07'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP08,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP08'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP08'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP09,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP09'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP09'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP10,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP10'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP10'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP11,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP11'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP11'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP12,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP12'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP12'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP13,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP13'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP13'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01TP14,Technology-enable Retention Mechanism,"MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP14'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+***Task***
+Analyze the knowledge graph extracted from multiple cases and conduct conceptual coding of emerging-technology-enabled tacit knowledge retention.
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's002M01TP14'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy
+
+***Research question***
+RQ1. What emerging technologies have been adopted to support tacit knowledge retention practices?
+Analytical chain:
+technology-enabled practice → adopted technology → enabling mechanism → retained tacit knowledge
+
+***Unit of analysis***
+1. Treat the retrieved TechnologyenablePractice node as the basic units for analysis, that is, a collection of a group of technology-enabled practices aggregated from multiple cases.
+2. If the query retrieves one technology-enabled practice, report and analyze one only.
+3. Do not transform technologies, components, functions, mechanisms, or case examples into additional technology-enabled practices.
+4. Related practices may be mentioned only when explicitly retrieved by the query and directly necessary to explain the focal practice.
+5. Do not imply that the number of mechanisms or case examples equals the number of practices.
+6. All nodes in the knowledge graph are conceptual topics which derived from multiple cases. Therefore, you should remind yourself they are a combination instead of a single real world event or object.
+
+***Mandatory analytical procedure***
+1. Inspect the definition and evidence_statement of every retrieved node used in the analysis. Do not classify a node from its name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining how technology supports retention.
+3. Classify the focal practice under exactly one primary perspective:
+    * Experience Amplification: Technology principally provides a sandbox for situated rehearsal, embodied interaction, feedback, simulation, or transmission of empirical patterns without externalizing intuition into a durable representation.
+    * Digital Coding: Technology principally intercepts, models, records, or translates unstructured activity, spatial context, or heuristic judgment into durable data, parameters, or recorded representations.
+4. Select the primary perspective using the practice’s dominant retention function. Do not classify the same practice under both perspectives. Capabilities associated with the non-selected perspective may be noted only as secondary features.
+5. Keep the focal technology-enabled practice at the centre.  Explain:
+    * which technologies it adopts;
+    * which tacit knowledge it captures or transfers;
+    * which organizational or environmental conditions it depends on;
+    * which limitations constrain it; and
+    * which limitations it mitigates or resolves.
+6. Distinguish among:
+    * technology availability;
+    * technology adoption;
+    * knowledge capture or transfer; 
+    * and effective knowledge retention.
+7. Graph adjacency or adoption alone does not demonstrate retention.
+8. Synthesize evidence across cases to identify the focal practice’s common retention mechanism. Do not present cases as separate practices.
+Where the evidence is incomplete, contradictory, or insufficient to establish retention, state this explicitly. Do not fill evidence gaps through speculation.
+
+***Output requirements***
+Write approximately 600 words as a concise conceptual analysis with the following structure:
+Focal technology-enabled tacit knowledge retention approach. Name and explain the retrieved practice entity as a conceptual entity.
+Retention Mechanism. Classify it as either Experience Amplification or Digital Coding and justify the choice by the complete evidence-supported chain: adopted technologies → tacit knowledge captured or transferred →  retention outcome.
+Tacit Knowledge Retained. Introduce the related tacit knowledge node and justify it by the evidence: why this tacit knowledge is hard to retain -> how technology-enable approach mitigate limitations of tacit knowledge retention.
+Conditions and constraints. Explain potential organizational dependencies, environmental dependencies, limitations.
+
+***Integrative theoretical statement***
+Explain how the focal practice illustrates the adoption of emerging technology for tacit knowledge retention.
+Use multiple cases to support each major claim where the graph permits. Cite evidence exactly as: (node_id:sXXX)
+Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
+s002M01RRQ2,Environmental Dependencies,"MATCH (depends:EnvironmentalDependency)
+WHERE depends.node_id STARTS WITH 's002'
+WITH depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:depend_on]-(depends)
+WITH depends, 
+     COLLECT({src_node:thp, rel: r, dst_node: depends}) AS thp_depends
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:depend_on]-(depends)
+WITH depends, thp_depends,
+     COLLECT({src_node:tep, rel: r, dst_node: depends}) AS tep_depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's002'
+WITH depends, thp_depends,tep_depends,
+     COLLECT({src_node:thp, rel: r, dst_node: lim}) AS thp_limits
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's002'
+WITH depends, thp_depends,tep_depends,thp_limits,
+     COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+RETURN thp_depends,
+       tep_depends,
+       thp_limits,
+       tep_limits","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+Task
+Analyze a case-based knowledge subgraph and develop an evidence-grounded conceptual coding of the resources and capabilities required for emerging-technology-enabled tacit knowledge retention.
+
+Input data
+Use $analyze-neo4j-knowledge-graph to quey the target sub-graph. The query cypher is as follows:
+MATCH (depends:EnvironmentalDependency)
+WHERE depends.node_id STARTS WITH 's002'
+WITH depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:depend_on]-(depends)
+WITH depends, 
+     COLLECT({src_node:thp, rel: r, dst_node: depends}) AS thp_depends
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:depend_on]-(depends)
+WITH depends, thp_depends,
+     COLLECT({src_node:tep, rel: r, dst_node: depends}) AS tep_depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's002'
+WITH depends, thp_depends,tep_depends,
+     COLLECT({src_node:thp, rel: r, dst_node: lim}) AS thp_limits
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's002'
+WITH depends, thp_depends,tep_depends,thp_limits,
+     COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+RETURN thp_depends,
+       tep_depends,
+       thp_limits,
+       tep_limits
+
+Research question
+RQ2.  What organizational tangible resources and capabilities (e.g., data infrastructure, expert participation, and environmental factors ) are required to deploy these technologies?
+
+Mandatory analytical procedure
+1. Inspect the evidence_statement and definition of every retrieved node. Do not only classify an element from name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining why and how one practice depends on a resource or capability.
+3. Coding from two perspectives:
+    * Digital-Era Specific Dependencies.This perspective highlights the unique technological infrastructure, specific computational competencies, and dynamic user capabilities required to deploy advanced digital tools.
+    * Classic Industry & Institutional Dependence. This perspective highlights the permanent, traditional organizational structures, physical assets, and regulatory architectures that remain indispensable for operational continuity.
+4. Treat “dependency” neutrally. Do not present dependencies as benefits. Explain how they condition, enable, constrain, or interrupt retention outcomes.
+5. Move beyond case description. Identify deeper cross-case mechanisms, including:
+    * Necessary conditions and dependency chains
+    * Complementarities among resources
+    * Bottlenecks and weakest-link effects
+    * Trade-offs, tensions, and contradictions
+    * How technology redistributes rather than eliminates expert work
+    * How digital representations become—or fail to become—actionable organizational memory
+6. Distinguish technical availability from effective knowledge retention. Graph adjacency or technology adoption alone does not demonstrate retention.
+7. Combine multiple cases to support each major insight. Do not list cases separately; synthesize them into a shared explanatory mechanism.
+8. Identify weak, indirect, contradictory, or missing evidence. If the queried subgraph does not directly represent the external environment, explicitly state which governance or institutional evidence is used as a proxy.
+
+Output requirements
+Write approximately 300 words as a concise conceptual analysis.
+Organize the answer around two perspectives, each perspective demonstrates three to five higher-order insights. For each insight:
+* Name the conceptual dependency.
+* Explain its mechanism.
+* Integrate evidence from multiple cases.
+* State its constraining or conditional implications.
+Use this citation format exactly: (node_id:node_id:sXXX)
+Conclude with an integrative theoretical statement explaining how digital-era and classic dependencies interact to convert—or prevent the conversion of—digital representations into retained, actionable organizational know-how."
+s002M01RRQ3,Organizational Culture Dependencies,"MATCH (depends:OrganizationalDependency)
+WHERE depends.node_id STARTS WITH 's002'
+WITH depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:depend_on]-(depends)
+WITH depends, 
+     COLLECT({src_node:thp, rel: r, dst_node: depends}) AS thp_depends
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:depend_on]-(depends)
+WITH depends, thp_depends,
+     COLLECT({src_node:tep, rel: r, dst_node: depends}) AS tep_depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's002'
+WITH depends, thp_depends,tep_depends,
+     COLLECT({src_node:thp, rel: r, dst_node: lim}) AS thp_limits
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's002'
+WITH depends, thp_depends,tep_depends,thp_limits,
+     COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+RETURN thp_depends,
+       tep_depends,
+       thp_limits,
+       tep_limits","You are an expert academic scholar with interdisciplinary expertise in knowledge management, emerging technologies, organizational capabilities, and innovation.
+
+Task
+Analyze a case-based knowledge subgraph and develop an evidence-grounded conceptual coding of the resources and capabilities required for emerging-technology-enabled tacit knowledge retention.
+
+Input data
+Use $analyze-neo4j-knowledge-graph to quey the target sub-graph. The query cypher is as follows:
+MATCH (depends:OrganizationalDependency)
+WHERE depends.node_id STARTS WITH 's002'
+WITH depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:depend_on]-(depends)
+WITH depends, 
+     COLLECT({src_node:thp, rel: r, dst_node: depends}) AS thp_depends
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:depend_on]-(depends)
+WITH depends, thp_depends,
+     COLLECT({src_node:tep, rel: r, dst_node: depends}) AS tep_depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's002'
+WITH depends, thp_depends,tep_depends,
+     COLLECT({src_node:thp, rel: r, dst_node: lim}) AS thp_limits
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's002'
+WITH depends, thp_depends,tep_depends,thp_limits,
+     COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+RETURN thp_depends,
+       tep_depends,
+       thp_limits,
+       tep_limits
+
+Research question
+How does organizational culture (e.g., trust, psychological safety, leadership support, and motivation) influence the effectiveness of technology-enabled tacit knowledge retention?
+
+Mandatory analytical procedure
+1. Inspect the evidence_statement and definition of every retrieved node. Do not only classify an element from name or category alone.
+2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining why and how one practice depends on a resource or capability.
+3. Coding from two perspectives:
+    * Digital-Era Specific Dependencies. This perspective evaluates how modern tech-driven practices rely on specialized cultural shifts surrounding digital familiarity, system confidence, and human-agent trust.
+    * Classic Industry & Institutional Dependence. This perspective captures the foundational, long-standing organizational paradigms—such as formalized safety mindsets and turnover management—that have governed physical workspaces for generations.
+4. Treat “dependency” neutrally. Do not present dependencies as benefits. Explain how they condition, enable, constrain, or interrupt retention outcomes.
+5. Move beyond case description. Identify deeper cross-case mechanisms, including:
+    * Necessary conditions and dependency chains
+    * Complementarities among resources
+    * Bottlenecks and weakest-link effects
+    * Trade-offs, tensions, and contradictions
+    * How technology redistributes rather than eliminates expert work
+    * How digital representations become—or fail to become—actionable organizational memory
+6. Distinguish technical availability from effective knowledge retention. Graph adjacency or technology adoption alone does not demonstrate retention.
+7. Combine multiple cases to support each major insight. Do not list cases separately; synthesize them into a shared explanatory mechanism.
+8. Identify weak, indirect, contradictory, or missing evidence. If the queried subgraph does not directly represent the external environment, explicitly state which governance or institutional evidence is used as a proxy.
+
+Output requirements
+Write approximately 300 words as a concise conceptual analysis.
+Organize the answer around two perspectives, each perspective demonstrates three to five higher-order insights. For each insight:
+* Name the conceptual dependency.
+* Explain its mechanism.
+* Integrate evidence from multiple cases.
+* State its constraining or conditional implications.
+Use this citation format exactly: (node_id:node_id:sXXX)
+Conclude with an integrative theoretical statement explaining how digital-era and classic dependencies interact to convert—or prevent the conversion of—digital representations into retained, actionable organizational know-how."

@@ -15,12 +15,17 @@ class EvaluateEA:
 
     def build_vector_db(self, case_ids):
 
+        root = Path(self.pdf_path)
+        file_list = [f for f in root.iterdir() if f.is_file() and f.suffix.lower() == ".pdf"]
+
         for case_id in case_ids:
-            custom_meta_data: dict = {
-                "case_id": case_id
-            }
-            self.rag_auditor.ingest(self.pdf_path + "/" +case_id,
-                                    custom_meta=custom_meta_data)
+            for file in file_list:
+                if case_id in file.name:
+                    custom_meta_data: dict = {
+                        "case_id": case_id
+                    }
+                    self.rag_auditor.ingest(self.pdf_path, file_name_screening = file.name,
+                                            custom_meta=custom_meta_data)
 
     @staticmethod
     def convert_to_valid_int(resp_list):
@@ -53,7 +58,6 @@ class EvaluateEA:
             df_node['evaluation_label'] = evaluation_label_list
             df_node.to_csv(self.rag_ea_path + "/" + case_id + '_ea_vq_evaluation.csv', index=False)
         except Exception as e:
-            df_node.to_csv(self.rag_ea_path + "/" + case_id + '_ea_vq_evaluation_tmp.csv', index=False)
             print(e)
 
 

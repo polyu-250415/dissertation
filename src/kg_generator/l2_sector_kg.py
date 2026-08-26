@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_files
+from src.utils.graph_tools.create_paper_graph_by_id import create_kg_by_files,clear_kg
 
 
 class SectorKG:
@@ -27,6 +27,7 @@ class SectorKG:
             "Explicit Knowledge":"ek",
             "Technology-enable Practice":"tp",
             "Knowledge Holder":"kh",
+            "Knowledge Learner": "kl",
             "Limitation":"li",
             "Digital Technology":"dt",
             "Traditional Human-central Practice":"thp",
@@ -39,10 +40,14 @@ class SectorKG:
         df_nodes = pd.DataFrame()
         df_edges = pd.DataFrame()
         for case_id in case_ids:
-            node_file = self.rebuild_kg_path + f'{case_id}_nodes.csv'
-            edge_file = self.rebuild_kg_path + f'{case_id}_edges.csv'
-            df_nodes = pd.concat([df_nodes, pd.read_csv(node_file)])
-            df_edges = pd.concat([df_edges, pd.read_csv(edge_file)])
+            try:
+                node_file = self.rebuild_kg_path + f'{case_id}_nodes.csv'
+                edge_file = self.rebuild_kg_path + f'{case_id}_edges.csv'
+                df_nodes = pd.concat([df_nodes, pd.read_csv(node_file)])
+                df_edges = pd.concat([df_edges, pd.read_csv(edge_file)])
+            except Exception as e:
+                print(e)
+                pass
 
         df_nodes.to_csv(self.sector_raw_path + f'{sector_id}_nodes.csv', index=False)
         df_edges.to_csv(self.sector_raw_path + f'{sector_id}_edges.csv', index=False)
@@ -52,14 +57,20 @@ class SectorKG:
         input_file = self.sector_raw_path + f'{sector_id}_nodes.csv'
         df = pd.read_csv(input_file)
         for category, group in df.groupby("category", dropna=False):
-            output_file = self.sector_raw_path + f'{sector_id}_{self.category_file_flag[category]}_nodes.csv'
+            output_file = self.sector_raw_path + (f'{sector_id}/{sector_id}'
+                                                  f'_{self.category_file_flag[category]}_nodes.csv')
             group.to_csv(output_file, index=False, encoding="utf-8")
+            pd.DataFrame().to_csv(self.sector_raw_path + f'{sector_id}/{sector_id}'
+                                                f'_{self.category_file_flag[category]}_nodes_annotation.csv',
+                                  index=False,
+                                  encoding="utf-8")
 
         print("Split completed successfully!")
 
     def combine_nodes_by_sector(self, sector_id):
 
-        df_nodes = pd.DataFrame()
+        df_nodes = pd.read_csv(self.sector_raw_path + f'{sector_id}_nodes.csv')
+        df_node_annotation = pd.DataFrame()
         for root, dirs, files in os.walk(self.annotate_nodes_path):
             for file in files:
                 if (not file.startswith(sector_id)
@@ -70,13 +81,55 @@ class SectorKG:
                 file = os.path.join(root, file)
                 df = pd.read_csv(file)
                 df = df.astype(str)
-                df_nodes = pd.concat([df_nodes, df])
+                df_node_annotation = pd.concat([df_node_annotation, df])
 
+        df_node_annotation.rename(columns={"sub_category_id":"raw_sub_category_id",
+                           "sub_category":"raw_sub_category",
+                           "adjust_sub_category_id":"sub_category_id",
+                           "adjust_sub_category":"sub_category"}, inplace=True)
+
+        df_nodes.to_csv(self.annotate_nodes_path + f'{sector_id}_node_annotation.csv', index=False)
+
+        map_sub_id = df_node_annotation.set_index("node_id")["sub_category_id"]
+        map_sub_name = df_node_annotation.set_index("node_id")["sub_category"]
+
+        df_nodes["sub_category_id"] = df_nodes["node_id"].map(map_sub_id)
+        df_nodes["sub_category"] = df_nodes["node_id"].map(map_sub_name)
         df_nodes.to_csv(self.annotate_nodes_path + f'{sector_id}_nodes.csv', index=False)
+
 
     def combine_normalized_splits(self, sector_ids):
         for sector_id in sector_ids:
             self.combine_nodes_by_sector(sector_id)
+
+    @staticmethod
+    def generate_mapping_dict():
+        sheets = [
+            "Tacit Knowledge",
+            "Digital Technology",
+            "Traditional Human-central Pract",
+            "Environmental Dependency",
+            "Organizational Dependency",
+            "Limitation",
+            "Knowledge Holder",
+            "Knowledge Learner",
+            "Explicit Knowledge",
+            "Technology-enable Practice"
+        ]
+
+        result = {}
+
+        for sheet in sheets:
+            try:
+                df = pd.read_excel("../conf/coding_schema/coding_schema.xlsx", sheet_name=sheet)
+                # 确保列名存在（可根据实际列名调整）
+                if "Name" in df.columns and "Scope" in df.columns:
+                    # 以 ID 为 key，Name 为 value；若 ID 重复则保留最后一个
+                    result.update(dict(zip(df["Name"], df["Scope"])))
+            except Exception as e:
+                print(e)
+
+        return result
 
     def build_mid_nodes(self, sector_id):
         src_file = self.annotate_nodes_path + f'{sector_id}_nodes.csv'
@@ -92,7 +145,7 @@ class SectorKG:
         # Step 2: Process Layer 1 Knowledge Graph Nodes
         print("\nProcessing Layer 1 Knowledge Graph Nodes...")
         # Add s001M02 prefix to sub_category_id
-        df_original['prefixed_subcat_id'] = f'{sector_id}M02' + df_original['sub_category_id']
+        df_original['prefixed_subcat_id'] = f'{sector_id}M01' + df_original['sub_category_id']
 
         # Extract and rename columns for Layer 1
         layer1_mapping = {
@@ -115,7 +168,7 @@ class SectorKG:
             category=('category', 'first'),
             evidence_label=('evidence_label', 'first'),
             case_title=('case_title', 'first'),
-            evidence_count=('evidence_statement', lambda x: x.dropna().nunique()),
+            evidence_count=('evidence_statement', lambda x: int(x.dropna().nunique() or 0)),
             evidence_statement=('evidence_statement', lambda series:
             '\n'.join(
                 f"{nid} | {name}: {stmt}"
@@ -133,8 +186,10 @@ class SectorKG:
 
         # Deduplicate
         layer2_df = layer2_df.drop_duplicates(subset='node_id')
-
         print(f"Layer 2 nodes generated: {len(layer2_df)} nodes")
+
+        mapping_dict=self.generate_mapping_dict()
+        layer2_df["definition"] = layer2_df["node_name"].map(mapping_dict).fillna("")
 
         # Step 4: Create Child-Parent Relationships
         print("\nCreating child-parent relationships...")
@@ -217,7 +272,6 @@ class SectorKG:
         print("\n=== Step 4: Building L2 Layer Relations ===")
         valid_edges["src_l2_node_id"] = valid_edges["src_node_id"].map(node_parent_map)
         valid_edges["dst_l2_node_id"] = valid_edges["dst_node_id"].map(node_parent_map)
-        valid_edges["case_title"] = self.sic[sector_id]
 
         # Define output columns
         l2_columns = [
@@ -235,20 +289,34 @@ class SectorKG:
 
         # Deduplicate
         before_dedup = len(l2_edges)
-        l2_edges = l2_edges.drop_duplicates(
-            subset=["src_l2_node_id", "dst_l2_node_id", "relation_type"],
-            keep="first"
-        )
 
+        group_keys = ["src_l2_node_id", "dst_l2_node_id", "relation_type"]
+
+        # 方案A：evidence 保存为列表
+        l2_edges = l2_edges.groupby(group_keys).agg(
+            src_l2_node_id=('src_l2_node_id', 'first'),
+            dst_l2_node_id=('dst_l2_node_id', 'first'),
+            relation_type=('relation_type', 'first'),
+            evidence_count=('evidence_statement', lambda x: int(x.dropna().nunique() or 0)),
+            evidence_statement=('evidence_statement', lambda series:
+            '\n'.join(
+                f"{src_node_id} - {relation_type}: {stmt}"
+                for src_node_id, relation_type, stmt in zip(
+                    l2_edges.loc[series.index, 'src_node_id'],
+                    l2_edges.loc[series.index, 'dst_node_id'],
+                    series.dropna().astype(str)
+                )
+            )))
+
+        l2_edges["case_title"] = self.sic[sector_id]
+        l2_edges["evidence_label"] = 'Aggregation'
         l2_edges = l2_edges[l2_edges['src_l2_node_id'] != l2_edges['dst_l2_node_id']]
 
         l2_edges = l2_edges.rename(columns={
-            "src_node_id": "src_l1_node_id",
-            "dst_node_id": "dst_l1_node_id",
-        }).rename(columns={
             "src_l2_node_id": "src_node_id",
             "dst_l2_node_id": "dst_node_id",
         })
+
         print(f"✅ Deduplication: {before_dedup} → {len(l2_edges)} records")
 
         # --------------------------
@@ -266,14 +334,14 @@ class SectorKG:
         print("\nRelation type distribution:")
         print(l2_edges["relation_type"].value_counts())
 
-    def create_sector_kg(self, clean_flag=False):
+    def create_sector_kg(self, clean_flag=False, excluded_properties=[]):
 
         path_dir = self.norm_nodes_path
         file_path = [
             f'{sector_id}_l2_nodes.csv',
             f'{sector_id}_l2_edges.csv',
         ]
-        create_kg_by_files(file_path, path_dir=path_dir, clean_flag=clean_flag)
+        create_kg_by_files(file_path, path_dir=path_dir, clean_flag=clean_flag, excluded_properties=excluded_properties)
 
     def complement_l1_edges(self, sector_id):
 
@@ -294,16 +362,16 @@ class SectorKG:
 if __name__ == '__main__':
 
     case_ids = {
-        "s001": ['c001', 'c002', 'c003', 'c004', 'c005', 'c006', 'c007'],
-        "s002": ['c101', 'c102', 'c103', 'c104', 'c105', 'c106', 'c107', 'c108', 'c109'],
-        "s003": ['c201', 'c202', 'c203', 'c204', 'c205', 'c206', 'c207', 'c208', 'c209', 'c210', 'c211'],
+        "s001": ['c001','c002','c003','c004','c005','c006','c007','c008','c009','c010','c011','c012','c013','c014','c015','c016','c017'],
+        "s002": ['c101', 'c102', 'c103', 'c104', 'c105', 'c106', 'c107', 'c108', 'c109','c110','c111', 'c112', 'c113', 'c114', 'c115', 'c116', 'c117', 'c118', 'c119','c120','c121', 'c122', 'c123', 'c124', 'c125', 'c126'],
+        "s003": ['c201', 'c202', 'c203', 'c204', 'c205', 'c206', 'c207', 'c208', 'c209', 'c210', 'c211','c212','c213', 'c214', 'c215', 'c216', 'c217', 'c218', 'c219', 'c220', 'c221','c222','c223', 'c224', 'c225', 'c226', 'c227']
     }
 
     obj = SectorKG()
-    sector_ids = ['s001']
+    sector_ids = ['s001','s002','s003']
 
-    start = 1
-    end = 4
+    start = 2
+    end = 3
     for turn in range(start, end + 1):
         if turn == 1:
             for sector_id in sector_ids:
@@ -317,8 +385,14 @@ if __name__ == '__main__':
                 obj.build_l2_edges(sector_id)
 
         if turn == 3:
+            clear_kg()
+
             for sector_id in sector_ids:
-                obj.create_sector_kg(clean_flag=True)
+                excluded_properties = ['case_title',
+                                       'evidence_location',
+                                       'evidence_label',
+                                       'object_definition']
+                obj.create_sector_kg(clean_flag=False, excluded_properties=excluded_properties)
 
         if turn == 4:
             for sector_id in sector_ids:

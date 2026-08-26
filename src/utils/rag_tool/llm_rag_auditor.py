@@ -1,4 +1,4 @@
-import os
+import os,time
 import logging
 from pathlib import Path
 import pandas as pd
@@ -205,7 +205,7 @@ Your output:"""
 
             return pipeline
 
-    def ingest(self, pdf_path: str, custom_meta: dict = None):
+    def ingest(self, pdf_path: str, file_name_screening: str ="", custom_meta: dict = None):
         path = Path(pdf_path)
         pdf_files = list(path.glob("*.pdf"))
 
@@ -214,6 +214,9 @@ Your output:"""
             return
 
         for pdf in pdf_files:
+            if len(file_name_screening) and pdf.name != file_name_screening:
+                continue
+
             print(f"Ingesting: {pdf.name}")
             result = self.indexing_pipeline.run({
                 "converter": {"sources": [str(pdf)]}
@@ -292,7 +295,7 @@ Your output:"""
 
         return resp_list
 
-    def query_related_docs(self, question):
+    def query_related_docs(self, question, filters):
         docs = []
         run_input = {
             "text_embedder": {"text": question}
@@ -314,9 +317,12 @@ Your output:"""
 
         resp_list = []
 
+        interval = 0
+
         for item in question_list:
             try:
-                context = self.query_related_docs(item['question'])
+                start = time.time()
+                context = self.query_related_docs(item['question'], filters)
 
                 prompt_template = {
                     "assemble":
@@ -359,10 +365,10 @@ f"""
 
     Your output:"""
                 }
-
+                print(f'vector search time cost: {time.time()-start}')
                 resp = chat_with_deepseek(prompt_template[item['sample_type']])
                 resp_list.append(resp)
-
+                print(f'chat_with_deepseek time cost: {time.time()-start}')
                 print(f'C:{context} \n Q: {item["question"]}\n R: {resp}')
             except Exception as e:
                 resp_list.append("E")
