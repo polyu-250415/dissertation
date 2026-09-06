@@ -1,0 +1,13 @@
+Read the attachment, analyze the column name 'insight', extract key elements to present the profile of the insight
+
+coding rules:
+primary retention category: Digital Codification or Experience Amplification
+retention mechanism: Explain how emerging technologies assist tacit knowledge retention in 100 words based on the
+selected cases
+tacit knowledge retained: the knowledge name list
+condition and constraint: explian the dependencies and limitation of technology-enable practice and tacit knowledge in
+100 words while distinguishing whether they were mitigated
+evidence chain: the relationships among id. for example: TE02;TE05 -> TP03 -> TK06
+
+Output requirement:
+extend 4 columns to record the analysis result, and output the csv with additional columns

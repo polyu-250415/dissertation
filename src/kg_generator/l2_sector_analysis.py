@@ -78,30 +78,23 @@ class L2SectorAnalysis:
 
         print("\n\nSector Insights:\n")
         print("""
+Read the records with the category named "Technology-enable Retention Mechanism", answer the RQ1 based on the insight column. The results should be presented in the Results section with a 600-word narrative, structured as follows:
 RQ1: What specific emerging technologies have been adopted to support tacit knowledge retention practices, and how do specific technologies facilitate the transformation of tacit knowledge?
 Experience Amplification
 ...
 Digital Coding
 ...
 
-
-RQ2: What organizational resources and capabilities (e.g., data infrastructure, expert participation, and environmental factors ) are required to deploy these technologies?
-Digital-Era Specific Dependencies
-...
-Classic Industry & Institutional Dependencies
-...
-
-
-RQ3: How does organizational culture (e.g., trust, psychological safety, leadership support, and motivation) influence the effectiveness of technology-enabled tacit knowledge retention?
-Digital-Era Specific Dependencies
-...
-Classic Industry & Institutional Dependencies
-...
-
 ***Coding Rule***
-RQ1 Coding Rule: Technology-enable Retention Mechanism should be analyzed based on the explicit evidence chain(e.g., digital technologies-> technology-enable practice -> tacit knowledge -> Conditions and constraints) in which each node can be supported by node_id (sXXX).
-RQ2 Coding Rule: directly reuse s001M01RRQ2
-RQ3 Coding Rule: directly reuse s001M01RRQ3
+Technology-enable Retention Mechanism should be analyzed based on the explicit evidence chain following the bellow structure:
+Object: Treat technology-enable practice as the basic unit of analysis. 
+Mechanism: Explain the core mechanism of how the objective support tacit knowledge retention.
+Knowledge target: Introduce the tacit knowledge retained.
+Evidence chain: technology nodes → practice node → tacit-knowledge nodes.
+Interpretive summary: Concisely summarize this in 20 words.
+
+For Example:
+Multimedia and blended knowledge internalization. This integrated interactive interfaces, data and knowledge systems, and mobile and communication technologies to present demonstrations, narratives, videos, and socially mediated learning materials. Its mechanism combined repeated exposure to representations of practice with opportunities for discussion, imitation, and application. It principally supported the internalization of practised motor and tool-operation skills and informal coordination, communication, and escalation know-how. The evidence-supported chain was digital technologies (s001M01TE02;TE04;TE07) → multimedia and blended knowledge internalization (s001M01TP12) → practical and coordinative tacit knowledge (s001M01TK05;TK11) → sociocultural, leadership, scheduling, participation, and organizational-process conditions (s001M01ED03; s001M01OD02;OD04–OD05;OD08). Cognitive and demographic differences, workload, limited expertise, and cultural or leadership barriers could prevent accessible content from becoming competent practice (s001M01LI03;LI08–LI09). Thus, multimedia retained tacit knowledge primarily when learners actively internalized demonstrated practice rather than merely consumed stored information.
         """)
 
     def develop_insight_kg(self):

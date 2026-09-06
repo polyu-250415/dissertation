@@ -1,0 +1,41 @@
+***Task***
+Analyze the knowledge graph extracted from multiple cases, try to draw a map used in academic paper in svg format. Each node takes data label including name, id and count.
+
+***Layout***
+The map uses a wide, layered column layout designed to read from technological inputs toward organizational conditions and constraints.
+From left to right, the columns are:
+1. Digital Technology
+2. Technology-enabled Practice
+3. Traditional Human-centered Practice
+4. Tacit Knowledge
+5. Explicit Knowledge
+6. Knowledge Holder
+7. Knowledge Learner
+8. Organizational Dependency
+9. Environmental Dependency
+10. Limitation
+Within each column:
+* Nodes are ordered first by evidence count, highest to lowest, then alphabetically.
+* Each node is a rounded white rectangle with a category-colored border.
+* The node label contains:
+    * name, wrapped across up to two visible lines;
+    * node ID;
+    * evidence count.
+* Higher evidence counts produce slightly larger boxes and thicker borders.
+* Dashed vertical guides visually organize the categories.
+* A colored header identifies each category.
+Relationships appear above the nodes:
+* Arrows preserve the direction stored in Neo4j.
+* Cross-column relationships use curved Bézier lines.
+* Relationships within the same column curve outward before returning to the target.
+* Lines are thin and semi-transparent to reduce visual congestion.
+* Relationship types are available as SVG hover tooltips but are not printed directly on the lines.
+* Duplicate undirected query results are consolidated into unique directed relationships.
+The figure is 3600 × 1900 pixels. Its title and summary appear at the top with a big front, while relationship-type frequencies following the summary.
+
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (a)-[r]-(b) 
+WHERE a.node_id STARTS WITH 's003M01' AND NOT coalesce(a.node_name, '') STARTS WITH 'Ambiguous' AND NOT coalesce(b.node_name, '') STARTS WITH 'Ambiguous'
+RETURN a, r, b

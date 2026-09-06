@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1600" viewBox="0 0 1800 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Knowledge map: Situated Experiential Learning through Extended Reality</title>
+  <desc id="desc">Academic-style knowledge graph with numbered dashed panels, a central practice node, color-coded evidence cards, directed relationship bundles, dependencies, limitations, and mitigation.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#14213d" flood-opacity=".12"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/></marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#15803d"/></marker>
+    <style>
+      .bg{fill:#f7f8fb}.panel{fill:#fff;stroke:#9aa4b2;stroke-width:1.5;stroke-dasharray:8 7}.pt{font:700 16px Arial,sans-serif;fill:#263244;letter-spacing:.7px}.num{font:700 15px Arial,sans-serif;fill:#fff}.card{stroke-width:1.2;rx:10}.name{font:600 13px Arial,sans-serif;fill:#182230}.meta{font:11px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#52606d}.small{font:11px Arial,sans-serif;fill:#52606d}.rel{font:600 11px Arial,sans-serif;fill:#4b5563;paint-order:stroke;stroke:#f7f8fb;stroke-width:5}.edge{fill:none;stroke:#4b5563;stroke-width:1.8;marker-end:url(#arrow)}.green{stroke:#15803d;marker-end:url(#arrowGreen)}
+      .tech{fill:#e8f1ff;stroke:#4f83cc}.holder{fill:#fff1dc;stroke:#d68b2c}.learner{fill:#e8f7ee;stroke:#48a76b}.tk{fill:#f2eafe;stroke:#8a5cc7}.dep{fill:#e8f7f6;stroke:#3a9994}.lim{fill:#fff0f1;stroke:#cc6670}.dual{fill:#fff7dc;stroke:#d09a22}.practice{fill:#172a46;stroke:#0d1b2e;stroke-width:2.5}.pname{font:700 22px Arial,sans-serif;fill:#fff}.pmeta{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#cfe0f5}.mechanism{font:700 13px Arial,sans-serif;fill:#b8e7cb;letter-spacing:1px}
+    </style>
+  </defs>
+  <rect class="bg" width="1800" height="1600"/>
+  <text x="60" y="55" style="font:700 30px Georgia,serif;fill:#172a46">Situated Experiential Learning through Extended Reality</text>
+  <text x="60" y="82" style="font:14px Arial,sans-serif;fill:#52606d">Evidence-grounded practice map · dominant mechanism: experiential amplification · generated from Neo4j case synthesis</text>
+
+  <!-- relationship bundles behind cards -->
+  <path class="edge" d="M500 275 C650 275 655 405 790 405"/><text class="rel" x="625" y="305">adopt</text>
+  <path class="edge" d="M500 680 C650 680 650 505 790 505"/><text class="rel" x="620" y="630">participate_in</text>
+  <path class="edge" d="M1010 420 C1145 420 1140 290 1290 290"/><text class="rel" x="1090" y="330">TK → be_*_by → practice</text>
+  <path class="edge" d="M1290 665 C1165 665 1145 500 1010 500"/><text class="rel" x="1090" y="635">be_absorbed_by</text>
+  <path class="edge" d="M900 560 C900 690 900 760 900 890"/><text class="rel" x="912" y="740">depend_on</text>
+  <path class="edge" d="M900 560 C900 810 700 1040 700 1135"/><text class="rel" x="730" y="1000">be_constrained_by</text>
+  <path class="edge green" d="M1010 520 C1190 760 1300 1015 1300 1135"/><text class="rel" x="1215" y="1015" style="fill:#15803d">mitigate</text>
+
+  <!-- 01 technologies -->
+  <rect class="panel" x="40" y="110" width="480" height="355" rx="18"/>
+  <circle cx="68" cy="138" r="16" fill="#4f83cc"/><text class="num" x="63" y="143">1</text><text class="pt" x="94" y="144">ADOPTED DIGITAL TECHNOLOGIES</text>
+  <g transform="translate(62 166)">
+    <rect class="card tech" width="210" height="76"/><text class="name" x="12" y="24"><tspan>AI &amp; intelligent</tspan><tspan x="12" dy="16">computation</tspan></text><text class="meta" x="12" y="66">s001M01TE01 · n=26</text>
+    <g transform="translate(224 0)"><rect class="card tech" width="210" height="76"/><text class="name" x="12" y="24"><tspan>Human–computer interaction</tspan><tspan x="12" dy="16">&amp; immersive technologies</tspan></text><text class="meta" x="12" y="66">s001M01TE02 · n=48</text></g>
+    <g transform="translate(0 90)"><rect class="card tech" width="210" height="76"/><text class="name" x="12" y="24"><tspan>Cyber-physical systems,</tspan><tspan x="12" dy="16">IoT &amp; smart environments</tspan></text><text class="meta" x="12" y="66">s001M01TE03 · n=3</text></g>
+    <g transform="translate(224 90)"><rect class="card tech" width="210" height="76"/><text class="name" x="12" y="24"><tspan>Data, information &amp;</tspan><tspan x="12" dy="16">knowledge systems</tspan></text><text class="meta" x="12" y="66">s001M01TE04 · n=21</text></g>
+    <g transform="translate(0 180)"><rect class="card tech" width="210" height="76"/><text class="name" x="12" y="24"><tspan>Imaging, sensing &amp;</tspan><tspan x="12" dy="16">perception technologies</tspan></text><text class="meta" x="12" y="66">s001M01TE05 · n=17</text></g>
+    <g transform="translate(224 180)"><rect class="card tech" width="210" height="76"/><text class="name" x="12" y="24"><tspan>Mobile, social &amp;</tspan><tspan x="12" dy="16">communication technologies</tspan></text><text class="meta" x="12" y="66">s001M01TE07 · n=10</text></g>
+  </g>
+
+  <!-- 02 holders -->
+  <rect class="panel" x="40" y="490" width="480" height="420" rx="18"/>
+  <circle cx="68" cy="518" r="16" fill="#d68b2c"/><text class="num" x="63" y="523">2</text><text class="pt" x="94" y="524">KNOWLEDGE HOLDERS</text>
+  <g transform="translate(62 546)">
+    <rect class="card holder" width="210" height="70"/><text class="name" x="12" y="23"><tspan>Community &amp; cultural</tspan><tspan x="12" dy="16">knowledge custodians</tspan></text><text class="meta" x="12" y="60">s001M01KH01 · n=1</text>
+    <g transform="translate(224 0)"><rect class="card holder" width="210" height="70"/><text class="name" x="12" y="23"><tspan>Frontline &amp; operational</tspan><tspan x="12" dy="16">practitioners</tspan></text><text class="meta" x="12" y="60">s001M01KH03 · n=8</text></g>
+    <g transform="translate(0 82)"><rect class="card holder" width="210" height="70"/><text class="name" x="12" y="23"><tspan>Customers, users &amp;</tspan><tspan x="12" dy="16">service recipients</tspan></text><text class="meta" x="12" y="60">s001M01KH04 · n=3</text></g>
+    <g transform="translate(224 82)"><rect class="card holder" width="210" height="70"/><text class="name" x="12" y="23"><tspan>Scientific, engineering &amp;</tspan><tspan x="12" dy="16">technical professionals</tspan></text><text class="meta" x="12" y="60">s001M01KH05 · n=9</text></g>
+    <g transform="translate(0 164)"><rect class="card holder" width="210" height="70"/><text class="name" x="12" y="23"><tspan>Domain experts &amp;</tspan><tspan x="12" dy="16">expert reviewers</tspan></text><text class="meta" x="12" y="60">s001M01KH06 · n=9</text></g>
+    <g transform="translate(224 164)"><rect class="card holder" width="210" height="70"/><text class="name" x="12" y="23"><tspan>Operational, project &amp;</tspan><tspan x="12" dy="16">middle managers</tspan></text><text class="meta" x="12" y="60">s001M01KH07 · n=15</text></g>
+    <g transform="translate(0 246)"><rect class="card holder" width="210" height="70"/><text class="name" x="12" y="23"><tspan>Executive &amp; strategic</tspan><tspan x="12" dy="16">leadership</tspan></text><text class="meta" x="12" y="60">s001M01KH08 · n=7</text></g>
+    <text class="small" x="236" y="272">Holders share one or more</text><text class="small" x="236" y="289">of the mapped tacit forms.</text>
+  </g>
+
+  <!-- 03 central practice -->
+  <rect class="panel" x="745" y="270" width="310" height="330" rx="18"/>
+  <circle cx="773" cy="298" r="16" fill="#172a46"/><text class="num" x="768" y="303">3</text><text class="pt" x="798" y="304">CENTRAL PRACTICE</text>
+  <g filter="url(#shadow)"><rect class="practice" x="790" y="345" width="220" height="215" rx="20"/></g>
+  <text class="mechanism" x="900" y="378" text-anchor="middle">EXPERIENTIAL AMPLIFICATION</text>
+  <text class="pname" x="900" y="422" text-anchor="middle"><tspan x="900">Situated Experiential</tspan><tspan x="900" dy="29">Learning through</tspan><tspan x="900" dy="29">Extended Reality</tspan></text>
+  <line x1="820" y1="495" x2="980" y2="495" stroke="#6e88a8"/>
+  <text class="pmeta" x="900" y="521" text-anchor="middle">s001M01TP03</text><text class="pmeta" x="900" y="542" text-anchor="middle">evidence count n=29</text>
+
+  <!-- 04 tacit knowledge -->
+  <rect class="panel" x="1255" y="110" width="505" height="500" rx="18"/>
+  <circle cx="1283" cy="138" r="16" fill="#8a5cc7"/><text class="num" x="1278" y="143">4</text><text class="pt" x="1309" y="144">TACIT KNOWLEDGE TRANSFORMED</text>
+  <g transform="translate(1278 170)">
+    <rect class="card tk" width="458" height="68"/><text class="name" x="14" y="27">Practised Motor and Tool-Operation Skill</text><text class="meta" x="14" y="53">s001M01TK05 · n=5 · be_captured_by</text>
+    <g transform="translate(0 80)"><rect class="card tk" width="458" height="68"/><text class="name" x="14" y="27">Trained Sensory and Perceptual Recognition</text><text class="meta" x="14" y="53">s001M01TK06 · n=12 · be_transferred_by</text></g>
+    <g transform="translate(0 160)"><rect class="card tk" width="458" height="68"/><text class="name" x="14" y="27">Embodied Posture, Balance, and Spatial Control</text><text class="meta" x="14" y="53">s001M01TK07 · n=4 · be_captured_by</text></g>
+    <g transform="translate(0 240)"><rect class="card tk" width="458" height="68"/><text class="name" x="14" y="21"><tspan>Immediate Embodied Response</tspan><tspan x="14" dy="16">to Changing Conditions</tspan></text><text class="meta" x="14" y="57">s001M01TK08 · n=2 · be_captured_by</text></g>
+    <g transform="translate(0 320)"><rect class="card tk" width="458" height="76"/><text class="name" x="14" y="25"><tspan>Shared Professional Norms and</tspan><tspan x="14" dy="16">Standards of Judgment</tspan></text><text class="meta" x="14" y="65">s001M01TK10 · n=28 · transfer + evaluate</text></g>
+  </g>
+
+  <!-- 05 learners -->
+  <rect class="panel" x="1255" y="635" width="505" height="275" rx="18"/>
+  <circle cx="1283" cy="663" r="16" fill="#48a76b"/><text class="num" x="1278" y="668">5</text><text class="pt" x="1309" y="669">KNOWLEDGE LEARNERS</text>
+  <g transform="translate(1278 692)">
+    <rect class="card learner" width="220" height="57"/><text class="name" x="10" y="22">Higher-education learners</text><text class="meta" x="10" y="45">s001M01KL01 · n=5</text>
+    <g transform="translate(234 0)"><rect class="card learner" width="224" height="57"/><text class="name" x="10" y="22">Occupational trainees</text><text class="meta" x="10" y="45">s001M01KL02 · n=10</text></g>
+    <g transform="translate(0 68)"><rect class="card learner" width="220" height="57"/><text class="name" x="10" y="22">Novice workforce learners</text><text class="meta" x="10" y="45">s001M01KL03 · n=4</text></g>
+    <g transform="translate(234 68)"><rect class="card learner" width="224" height="57"/><text class="name" x="10" y="22">Upskilling practitioners</text><text class="meta" x="10" y="45">s001M01KL04 · n=5</text></g>
+    <g transform="translate(0 136)"><rect class="card learner" width="220" height="57"/><text class="name" x="10" y="22">Frontline safety recipients</text><text class="meta" x="10" y="45">s001M01KL05 · n=2</text></g>
+    <g transform="translate(234 136)"><rect class="card learner" width="224" height="57"/><text class="name" x="10" y="22">Decision/action learners</text><text class="meta" x="10" y="45">s001M01KL06 · n=3</text></g>
+  </g>
+
+  <!-- 06 dependencies -->
+  <rect class="panel" x="420" y="885" width="960" height="220" rx="18"/>
+  <circle cx="448" cy="913" r="16" fill="#3a9994"/><text class="num" x="443" y="918">6</text><text class="pt" x="474" y="919">CONTEXTUAL DEPENDENCIES</text>
+  <g transform="translate(445 945)">
+    <rect class="card dep" width="215" height="58"/><text class="name" x="10" y="22">Governance &amp; formal control</text><text class="meta" x="10" y="46">s001M01OD01 · n=9</text>
+    <g transform="translate(230 0)"><rect class="card dep" width="215" height="58"/><text class="name" x="10" y="22">Resources &amp; information</text><text class="meta" x="10" y="46">s001M01OD03 · n=12</text></g>
+    <g transform="translate(460 0)"><rect class="card dep" width="215" height="58"/><text class="name" x="10" y="22">Workload &amp; scheduling</text><text class="meta" x="10" y="46">s001M01OD04 · n=5</text></g>
+    <g transform="translate(690 0)"><rect class="card dep" width="215" height="58"/><text class="name" x="10" y="22">Roles &amp; participation</text><text class="meta" x="10" y="46">s001M01OD05 · n=11</text></g>
+    <g transform="translate(0 72)"><rect class="card dep" width="215" height="58"/><text class="name" x="10" y="22">Structure &amp; process design</text><text class="meta" x="10" y="46">s001M01OD08 · n=9</text></g>
+    <g transform="translate(230 72)"><rect class="card dep" width="215" height="58"/><text class="name" x="10" y="22">Regulatory environment</text><text class="meta" x="10" y="46">s001M01ED01 · n=14</text></g>
+    <g transform="translate(460 72)"><rect class="card dep" width="215" height="58"/><text class="name" x="10" y="22">External tech infrastructure</text><text class="meta" x="10" y="46">s001M01ED05 · n=1</text></g>
+    <g transform="translate(690 72)"><rect class="card dep" width="215" height="58"/><text class="name" x="10" y="22">Geographic/site context</text><text class="meta" x="10" y="46">s001M01ED08 · n=6</text></g>
+  </g>
+
+  <!-- 07 limitations + mitigation -->
+  <rect class="panel" x="40" y="1130" width="1720" height="315" rx="18"/>
+  <circle cx="68" cy="1158" r="16" fill="#cc6670"/><text class="num" x="63" y="1163">7</text><text class="pt" x="94" y="1164">LIMITATIONS AND MITIGATION</text>
+  <text x="70" y="1196" style="font:700 12px Arial;fill:#a13e48">CONSTRAINS PRACTICE</text>
+  <g transform="translate(70 1210)">
+    <rect class="card dual" width="250" height="58"/><text class="name" x="10" y="21">Knowledge &amp; memory decay</text><text class="meta" x="10" y="45">s001M01LI01 · n=6 · dual</text>
+    <g transform="translate(266 0)"><rect class="card dual" width="250" height="58"/><text class="name" x="10" y="21">Ergonomics, usability &amp; safety</text><text class="meta" x="10" y="45">s001M01LI02 · n=4 · dual</text></g>
+    <g transform="translate(532 0)"><rect class="card lim" width="250" height="58"/><text class="name" x="10" y="21">Cognitive/demographic capacity</text><text class="meta" x="10" y="45">s001M01LI03 · n=7</text></g>
+    <g transform="translate(798 0)"><rect class="card dual" width="250" height="58"/><text class="name" x="10" y="21">Instruction &amp; transfer gaps</text><text class="meta" x="10" y="45">s001M01LI04 · n=29 · dual</text></g>
+    <g transform="translate(1064 0)"><rect class="card lim" width="250" height="58"/><text class="name" x="10" y="21">Software/data interoperability</text><text class="meta" x="10" y="45">s001M01LI05 · n=30</text></g>
+    <g transform="translate(1330 0)"><rect class="card lim" width="250" height="58"/><text class="name" x="10" y="21">Hardware &amp; infrastructure</text><text class="meta" x="10" y="45">s001M01LI06 · n=8</text></g>
+  </g>
+  <g transform="translate(70 1280)">
+    <rect class="card dual" width="250" height="58"/><text class="name" x="10" y="21">Time, staffing &amp; workload</text><text class="meta" x="10" y="45">s001M01LI08 · n=21 · dual</text>
+    <g transform="translate(266 0)"><rect class="card lim" width="250" height="58"/><text class="name" x="10" y="21">Market/regulatory change</text><text class="meta" x="10" y="45">s001M01LI12 · n=2</text></g>
+    <g transform="translate(532 0)"><rect class="card lim" width="250" height="58"/><text class="name" x="10" y="21">Measurement &amp; validation flaws</text><text class="meta" x="10" y="45">s001M01LI13 · n=10</text></g>
+    <text x="808" y="-10" style="font:700 12px Arial;fill:#15803d">MITIGATION TARGETS</text>
+    <g transform="translate(798 0)"><rect class="card dual" width="250" height="58"/><text class="name" x="10" y="21">Financial/capital constraints</text><text class="meta" x="10" y="45">s001M01LI07 · n=8</text></g>
+    <g transform="translate(1064 0)"><rect class="card dual" width="250" height="58"/><text class="name" x="10" y="21">Culture, leadership &amp; adoption</text><text class="meta" x="10" y="45">s001M01LI09 · n=25</text></g>
+    <g transform="translate(1330 0)"><rect class="card dual" width="250" height="58"/><text class="name" x="10" y="21">Physical/operational variability</text><text class="meta" x="10" y="45">s001M01LI11 · n=8</text></g>
+  </g>
+  <text class="small" x="70" y="1370">Dual-status cards are connected by both be_constrained_by and mitigate; mitigation is an observed graph relation, not proof that the limitation was eliminated.</text>
+  <text class="small" x="70" y="1390">Tacit-specific capture barriers additionally include LI05, LI10 (Knowledge continuity, documentation, governance, privacy &amp; security · s001M01LI10 · n=19), LI03 and LI04.</text>
+
+  <!-- academic legend -->
+  <rect x="40" y="1470" width="1720" height="92" rx="10" fill="#eef1f5" stroke="#c9d0da"/>
+  <text x="62" y="1496" style="font:700 13px Georgia,serif;fill:#263244">FIGURE LEGEND / READING NOTE</text>
+  <line x1="62" y1="1520" x2="125" y2="1520" class="edge"/><text class="small" x="140" y="1524">Directed relationship stored in Neo4j</text>
+  <rect x="415" y="1506" width="32" height="22" class="card dual"/><text class="small" x="458" y="1524">Dual: both constraint and mitigation target</text>
+  <rect x="760" y="1506" width="32" height="22" class="panel"/><text class="small" x="803" y="1524">Dashed boundary: analytic panel</text>
+  <text class="small" x="1080" y="1524">n = node evidence_count (not edge count)</text>
+  <text class="small" x="62" y="1547">Scope: exact query supplied by user; “Ambiguous…” tacit-knowledge nodes excluded. Adjacency indicates coded association, not causality. Evidence spans multiple cases; IDs preserve graph traceability.</text>
+</svg>

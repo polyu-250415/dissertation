@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="3300" height="3300" viewBox="0 0 3300 3300" role="img" aria-labelledby="title desc">
+<title id="title">Concentric knowledge graph for Model-based Knowledge Representation and Simulation</title>
+<desc id="desc">TP01 is central, s001 conceptual nodes form the middle ring, and c001/c016 evidence nodes form the outer ring.</desc>
+<defs>
+ <filter id="shadow" x="-15%" y="-25%" width="130%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#14283C" flood-opacity=".14"/></filter>
+ <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="context-stroke"/></marker>
+ <style>.title{font:700 42px Georgia,serif;fill:#172535}.sub{font:400 22px Arial,sans-serif;fill:#566473}.name{font:700 20px Arial,sans-serif;fill:#172535}.pname{font:700 22px Arial,sans-serif;fill:#172535}.meta{font:400 16px Arial,sans-serif;fill:#586675}.rel{font:italic 16px Arial,sans-serif;fill:#465563;paint-order:stroke;stroke:#FBFCFD;stroke-width:7px}.count{font:700 18px Arial,sans-serif;fill:#fff}.ring{font:700 17px Arial,sans-serif;letter-spacing:2px}</style>
+</defs>
+<rect width="100%" height="100%" fill="#FBFCFD"/>
+<text x="90" y="72" class="title" font-size="48">Concentric evidence map: model-based knowledge representation and
+ simulation</text>
+<text x="90" y="114" class="sub">Case nodes are grouped by conceptual parent and publication case to improve legibility</text>
+<line x1="90" y1="148" x2="3210" y2="148" stroke="#D5DDE5"/>
+<circle cx="1650" cy="1710" r="890" fill="#F7F9FB" stroke="#CBD5DE" stroke-width="2.5" stroke-dasharray="12 12"/>
+<circle cx="1650" cy="1710" r="1510" fill="none" stroke="#D8E0E7" stroke-width="2.5" stroke-dasharray="12 12"/>
+<text x="1650" y="830" text-anchor="middle" class="ring" fill="#798693">s001 CONCEPTUAL RING</text>
+<text x="1650" y="215" text-anchor="middle" class="ring" fill="#798693">GROUPED c001 / c016 EVIDENCE RING</text>
+
+<path d="M1650.0 1710.0 L1650.0 1030.0" fill="none" stroke="#2F6F89" stroke-opacity="1" stroke-width="5.2" marker-end="url(#arrow)"/>
+<text x="1650.0" y="1360.0" text-anchor="middle" class="rel" opacity="1">adopt</text>
+<path d="M1650.0 1030.0 L1388.0 477.5" fill="none" stroke="#2F6F89" stroke-opacity="1" stroke-width="4.2" marker-start="url(#arrow)"/>
+<path d="M1650.0 1030.0 L1912.0 477.5" fill="none" stroke="#2F6F89" stroke-opacity="1" stroke-width="4.2" marker-start="url(#arrow)"/>
+<path d="M1650.0 1710.0 L2181.6 1286.0" fill="none" stroke="#2F6F89" stroke-opacity="1" stroke-width="5.2" marker-end="url(#arrow)"/>
+<text x="1915.8" y="1488.0" text-anchor="middle" class="rel" opacity="1">adopt</text>
+<path d="M2181.6 1286.0 L2450.2 736.8" fill="none" stroke="#2F6F89" stroke-opacity="1" stroke-width="4.2" marker-start="url(#arrow)"/>
+<path d="M2181.6 1286.0 L2776.9 1146.4" fill="none" stroke="#2F6F89" stroke-opacity="1" stroke-width="4.2" marker-start="url(#arrow)"/>
+<path d="M1650.0 1710.0 L2313.0 1861.3" fill="none" stroke="#A45550" stroke-opacity="1" stroke-width="5.2" marker-end="url(#arrow)"/>
+<text x="1981.5" y="1775.7" text-anchor="middle" class="rel" opacity="1">be_constrained_by</text>
+<path d="M2313.0 1861.3 L2878.4 1990.4" fill="none" stroke="#A45550" stroke-opacity="1" stroke-width="4.2" marker-start="url(#arrow)"/>
+<path d="M1650.0 1710.0 L1945.0 2322.7" fill="none" stroke="#A45550" stroke-opacity="1" stroke-width="5.2" marker-end="url(#arrow)"/>
+<text x="1797.5" y="2006.3" text-anchor="middle" class="rel" opacity="1">mitigate</text>
+<path d="M1945.0 2322.7 L2420.8 2706.7" fill="none" stroke="#A45550" stroke-opacity="1" stroke-width="4.2" marker-start="url(#arrow)"/>
+<path d="M1945.0 2322.7 L1948.7 2934.1" fill="none" stroke="#A45550" stroke-opacity="1" stroke-width="4.2" marker-start="url(#arrow)"/>
+<path d="M1650.0 1710.0 L1355.0 2322.7" fill="none" stroke="#A45550" stroke-opacity="1" stroke-width="5.2" marker-end="url(#arrow)"/>
+<path d="M1650.0 1710.0 L1355.0 2322.7" fill="none" stroke="#A45550" stroke-opacity="1" stroke-width="5.2" marker-end="url(#arrow)"/>
+<text x="1502.5" y="2006.3" text-anchor="middle" class="rel" opacity="1">be_constrained_by / mitigate</text>
+<path d="M1355.0 2322.7 L1103.3 2845.2" fill="none" stroke="#A45550" stroke-opacity="1" stroke-width="4.2" marker-start="url(#arrow)"/>
+<path d="M1650.0 1710.0 L987.0 1861.3" fill="none" stroke="#76579A" stroke-opacity=".16" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="1318.5" y="1775.7" text-anchor="middle" class="rel" opacity=".16">depend_on</text>
+<path d="M987.0 1861.3 L421.6 1990.4" fill="none" stroke="#76579A" stroke-opacity=".13" stroke-width="1.4" marker-start="url(#arrow)"/>
+<path d="M1650.0 1710.0 L1118.4 1286.0" fill="none" stroke="#397560" stroke-opacity="1" stroke-width="5.2" marker-start="url(#arrow)"/>
+<text x="1384.2" y="1488.0" text-anchor="middle" class="rel" opacity="1">be_captured_by</text>
+<path d="M1118.4 1286.0 L664.9 924.4" fill="none" stroke="#397560" stroke-opacity="1" stroke-width="4.2" marker-start="url(#arrow)"/>
+<g filter="url(#shadow)" opacity="1"><rect x="1420.0" y="966.0" width="460" height="128" rx="16" fill="#EAF4F8" stroke="#2F6F89" stroke-width="5"/><rect x="1420.0" y="966.0" width="10" height="128" rx="5" fill="#2F6F89"/>
+<text x="1447.0" y="1002.0" class="pname">Data, Information, and Knowledge Systems</text>
+<text x="1447.0" y="1077.0" class="meta">ID s001M01TE04 · count 21</text><circle cx="1849.0" cy="997.0" r="25" fill="#2F6F89"/><text x="1849.0" y="1003.0" text-anchor="middle" class="count">21</text></g>
+<g filter="url(#shadow)" opacity="1"><rect x="1951.6" y="1222.0" width="460" height="128" rx="16" fill="#EAF4F8" stroke="#2F6F89" stroke-width="5"/><rect x="1951.6" y="1222.0" width="10" height="128" rx="5" fill="#2F6F89"/>
+<text x="1978.6" y="1258.0" class="pname">Human–Computer Interaction and Immersive</text>
+<text x="1978.6" y="1283.0" class="pname">Technologies</text>
+<text x="1978.6" y="1333.0" class="meta">ID s001M01TE02 · count 48</text><circle cx="2380.6" cy="1253.0" r="25" fill="#2F6F89"/><text x="2380.6" y="1259.0" text-anchor="middle" class="count">48</text></g>
+<g filter="url(#shadow)" opacity="1"><rect x="2083.0" y="1797.3" width="460" height="128" rx="16" fill="#FAEFEE" stroke="#A45550" stroke-width="5"/><rect x="2083.0" y="1797.3" width="10" height="128" rx="5" fill="#A45550"/>
+<text x="2110.0" y="1833.3" class="pname">Financial and Capital Constraints</text>
+<text x="2110.0" y="1908.3" class="meta">ID s001M01LI07 · count 8</text><circle cx="2512.0" cy="1828.3" r="25" fill="#A45550"/><text x="2512.0" y="1834.3" text-anchor="middle" class="count">8</text></g>
+<g filter="url(#shadow)" opacity="1"><rect x="1715.0" y="2258.7" width="460" height="128" rx="16" fill="#FAEFEE" stroke="#A45550" stroke-width="5"/><rect x="1715.0" y="2258.7" width="10" height="128" rx="5" fill="#A45550"/>
+<text x="1742.0" y="2294.7" class="pname">Knowledge Continuity, Documentation,</text>
+<text x="1742.0" y="2319.7" class="pname">Governance, Privacy and Security</text>
+<text x="1742.0" y="2369.7" class="meta">ID s001M01LI10 · count 19</text><circle cx="2144.0" cy="2289.7" r="25" fill="#A45550"/><text x="2144.0" y="2295.7" text-anchor="middle" class="count">19</text></g>
+<g filter="url(#shadow)" opacity="1"><rect x="1125.0" y="2258.7" width="460" height="128" rx="16" fill="#FAEFEE" stroke="#A45550" stroke-width="5"/><rect x="1125.0" y="2258.7" width="10" height="128" rx="5" fill="#A45550"/>
+<text x="1152.0" y="2294.7" class="pname">Time, Staffing, Expertise, Scheduling and</text>
+<text x="1152.0" y="2319.7" class="pname">Workload Constraints</text>
+<text x="1152.0" y="2369.7" class="meta">ID s001M01LI08 · count 21</text><circle cx="1554.0" cy="2289.7" r="25" fill="#A45550"/><text x="1554.0" y="2295.7" text-anchor="middle" class="count">21</text></g>
+<g filter="url(#shadow)" opacity=".34"><rect x="757.0" y="1797.3" width="460" height="128" rx="16" fill="#F3EFF8" stroke="#76579A" stroke-width="2.0"/><rect x="757.0" y="1797.3" width="10" height="128" rx="5" fill="#76579A"/>
+<text x="784.0" y="1833.3" class="pname">Culture, Trust &amp; Relational Climate</text>
+<text x="784.0" y="1908.3" class="meta">ID s001M01OD06 · count 10</text><circle cx="1186.0" cy="1828.3" r="25" fill="#76579A"/><text x="1186.0" y="1834.3" text-anchor="middle" class="count">10</text></g>
+<g filter="url(#shadow)" opacity="1"><rect x="888.4" y="1222.0" width="460" height="128" rx="16" fill="#EDF7F2" stroke="#397560" stroke-width="5"/><rect x="888.4" y="1222.0" width="10" height="128" rx="5" fill="#397560"/>
+<text x="915.4" y="1258.0" class="pname">Trained Sensory and Perceptual Recognition</text>
+<text x="915.4" y="1333.0" class="meta">ID s001M01TK06 · count 12</text><circle cx="1317.4" cy="1253.0" r="25" fill="#397560"/><text x="1317.4" y="1259.0" text-anchor="middle" class="count">12</text></g>
+<g filter="url(#shadow)" opacity="1"><rect x="1153.0" y="431.0" width="470" height="93" rx="13" fill="#fff" stroke="#2F6F89" stroke-width="4"/><rect x="1153.0" y="431.0" width="9" height="93" rx="4" fill="#2F6F89"/>
+<text x="1175.0" y="460.0" class="pname">c001 evidence · 1 node</text>
+<text x="1607.0" y="460.0" text-anchor="end" class="rel">is an instance of</text>
+<text x="1175.0" y="489.0" class="meta">GIS software — c001M01N30 · count 1</text>
+</g>
+<g filter="url(#shadow)" opacity="1"><rect x="1677.0" y="377.0" width="470" height="201" rx="13" fill="#fff" stroke="#2F6F89" stroke-width="4"/><rect x="1677.0" y="377.0" width="9" height="201" rx="4" fill="#2F6F89"/>
+<text x="1699.0" y="406.0" class="pname">c016 evidence · 5 nodes</text>
+<text x="2131.0" y="406.0" text-anchor="end" class="rel">is an instance of</text>
+<text x="1699.0" y="435.0" class="meta">Building Information Modelling (BIM) — c016M01N22 · count 1</text>
+<text x="1699.0" y="462.0" class="meta">Autodesk Revit — c016M01N23 · count 1</text>
+<text x="1699.0" y="489.0" class="meta">Microsoft Excel — c016M01N25 · count 1</text>
+<text x="1699.0" y="516.0" class="meta">Microsoft Azure — c016M01N28 · count 1</text>
+<text x="1699.0" y="543.0" class="meta">SQL server — c016M01N29 · count 1</text>
+</g>
+<g filter="url(#shadow)" opacity="1"><rect x="2215.2" y="622.8" width="470" height="228" rx="13" fill="#fff" stroke="#2F6F89" stroke-width="4"/><rect x="2215.2" y="622.8" width="9" height="228" rx="4" fill="#2F6F89"/>
+<text x="2237.2" y="651.8" class="pname">c001 evidence · 6 nodes</text>
+<text x="2669.2" y="651.8" text-anchor="end" class="rel">is an instance of</text>
+<text x="2237.2" y="680.8" class="meta">Virtual reality — c001M01N32 · count 1</text>
+<text x="2237.2" y="707.8" class="meta">Unity3D engine — c001M01N33 · count 1</text>
+<text x="2237.2" y="734.8" class="meta">AR scene overlay technology — c001M01N34 · count 1</text>
+<text x="2237.2" y="761.8" class="meta">AR glasses — c001M01N36 · count 1</text>
+<text x="2237.2" y="788.8" class="meta">VR headsets — c001M01N37 · count 1</text>
+<text x="2237.2" y="815.8" class="meta">NetEase Yaotai architecture — c001M01N39 · count 1</text>
+</g>
+<g filter="url(#shadow)" opacity="1"><rect x="2541.9" y="1086.4" width="470" height="120" rx="13" fill="#fff" stroke="#2F6F89" stroke-width="4"/><rect x="2541.9" y="1086.4" width="9" height="120" rx="4" fill="#2F6F89"/>
+<text x="2563.9" y="1115.4" class="pname">c016 evidence · 2 nodes</text>
+<text x="2995.9" y="1115.4" text-anchor="end" class="rel">is an instance of</text>
+<text x="2563.9" y="1144.4" class="meta">Navisworks — c016M01N24 · count 1</text>
+<text x="2563.9" y="1171.4" class="meta">PowerApps — c016M01N30 · count 1</text>
+</g>
+<g filter="url(#shadow)" opacity="1"><rect x="2643.4" y="1943.9" width="470" height="93" rx="13" fill="#fff" stroke="#A45550" stroke-width="4"/><rect x="2643.4" y="1943.9" width="9" height="93" rx="4" fill="#A45550"/>
+<text x="2665.4" y="1972.9" class="pname">c001 evidence · 1 node</text>
+<text x="3097.4" y="1972.9" text-anchor="end" class="rel">is an instance of</text>
+<text x="2665.4" y="2001.9" class="meta">High digital modeling cost — c001M01N45 · count 1</text>
+</g>
+<g filter="url(#shadow)" opacity="1"><rect x="2185.8" y="2660.2" width="470" height="93" rx="13" fill="#fff" stroke="#A45550" stroke-width="4"/><rect x="2185.8" y="2660.2" width="9" height="93" rx="4" fill="#A45550"/>
+<text x="2207.8" y="2689.2" class="pname">c001 evidence · 1 node</text>
+<text x="2639.8" y="2689.2" text-anchor="end" class="rel">is an instance of</text>
+<text x="2207.8" y="2718.2" class="meta">Intangible cultural heritage skills inheritance interruption — c001M01N43 · count 1</text>
+</g>
+<g filter="url(#shadow)" opacity="1"><rect x="1713.7" y="2874.1" width="470" height="120" rx="13" fill="#fff" stroke="#A45550" stroke-width="4"/><rect x="1713.7" y="2874.1" width="9" height="120" rx="4" fill="#A45550"/>
+<text x="1735.7" y="2903.1" class="pname">c016 evidence · 2 nodes</text>
+<text x="2167.7" y="2903.1" text-anchor="end" class="rel">is an instance of</text>
+<text x="1735.7" y="2932.1" class="meta">loss of valuable information as staff changes — c016M01N36 · count 1</text>
+<text x="1735.7" y="2959.1" class="meta">loss of gathered information over time — c016M01N37 · count 1</text>
+</g>
+<g filter="url(#shadow)" opacity="1"><rect x="868.3" y="2785.2" width="470" height="120" rx="13" fill="#fff" stroke="#A45550" stroke-width="4"/><rect x="868.3" y="2785.2" width="9" height="120" rx="4" fill="#A45550"/>
+<text x="890.3" y="2814.2" class="pname">c016 evidence · 2 nodes</text>
+<text x="1322.3" y="2814.2" text-anchor="end" class="rel">is an instance of</text>
+<text x="890.3" y="2843.2" class="meta">limited familiarity with BIM tools and new technologies/methodologies — c016M01N38 · count 1</text>
+<text x="890.3" y="2870.2" class="meta">little knowledge in the application of OHS management models — c016M01N39 · count 1</text>
+</g>
+<g filter="url(#shadow)" opacity=".25"><rect x="186.6" y="1930.4" width="470" height="120" rx="13" fill="#fff" stroke="#76579A" stroke-width="1.5"/><rect x="186.6" y="1930.4" width="9" height="120" rx="4" fill="#76579A"/>
+<text x="208.6" y="1959.4" class="pname">c016 evidence · 2 nodes</text>
+<text x="640.6" y="1959.4" text-anchor="end" class="rel">is an instance of</text>
+<text x="208.6" y="1988.4" class="meta">safety culture — c016M01N32 · count 1</text>
+<text x="208.6" y="2015.4" class="meta">Continuous improvement culture — c016M02N24 · count 1</text>
+</g>
+<g filter="url(#shadow)" opacity="1"><rect x="429.9" y="877.9" width="470" height="93" rx="13" fill="#fff" stroke="#397560" stroke-width="4"/><rect x="429.9" y="877.9" width="9" height="93" rx="4" fill="#397560"/>
+<text x="451.9" y="906.9" class="pname">c016 evidence · 1 node</text>
+<text x="883.9" y="906.9" text-anchor="end" class="rel">is an instance of</text>
+<text x="451.9" y="935.9" class="meta">Hazard identification performance — c016M02N06 · count 1</text>
+</g>
+<g filter="url(#shadow)"><rect x="1355.0" y="1620.0" width="590" height="180" rx="24" fill="#FFF5D8" stroke="#B88921"
+                               stroke-width="3"/><rect x="1355.0" y="1620.0" width="590" height="42" rx="24"
+                                                       fill="#D19B27"/><rect x="1355.0" y="1640.0" width="590"
+                                                                             height="22" fill="#D19B27"/><text
+        x="1380.0" y="1648.0" font-family="Arial" font-size="28" font-weight="700" fill="#fff" letter-spacing="1.4"
+>FOCAL PRACTICE</text><circle cx="1914.0" cy="1641.0" r="22" fill="#8D6617"/><text x="1914.0" y="1646.0"
+                                                                                   text-anchor="middle"
+                                                                                   class="count">9</text><text
+        x="1650" y="1709.0" text-anchor="middle" class="pname" font-size="24">Model-based Knowledge
+ Representation</text><text x="1650" y="1733.0" text-anchor="middle" class="pname">and Simulation</text><text x="1650" y="1771.0" text-anchor="middle" class="sub">ID s001M01TP01 · count 9</text></g>
+<line x1="90" y1="3185" x2="3210" y2="3185" stroke="#D5DDE5"/><text x="90" y="3225" class="meta">Each outer card combines nodes from one case that instantiate the same s001 concept; individual names, IDs, and counts remain listed.</text><text x="90" y="3257" class="meta">Explicit relations are preserved. “Assist retention” is a cross-case inference from the linked templates.</text></svg>

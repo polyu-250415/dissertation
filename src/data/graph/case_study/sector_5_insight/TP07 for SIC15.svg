@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1400" viewBox="0 0 1700 1400" role="img" aria-labelledby="title desc">
+<title id="title">Knowledge map: Algorithmic Pattern Discovery and Prediction</title>
+<desc id="desc">Academic knowledge map with numbered dashed panels, central practice, technologies, actors, tacit knowledge, dependencies, limitations and mitigation.</desc>
+<defs>
+ <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#475569"/></marker>
+ <marker id="g" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#16803d"/></marker>
+ <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-opacity=".14"/></filter>
+ <style>
+ .bg{fill:#f7f8fb}.p{fill:#fff;stroke:#98a5b5;stroke-width:1.5;stroke-dasharray:8 7}.h{font:700 15px Arial;fill:#263244;letter-spacing:.5px}.n{font:700 14px Arial;fill:white}.card{stroke-width:1.2;rx:9}.name{font:600 12px Arial;fill:#172033}.meta{font:10px ui-monospace,monospace;fill:#52606d}.tech{fill:#e7f0ff;stroke:#4f83cc}.holder{fill:#fff1dc;stroke:#d68b2c}.learner{fill:#e8f7ee;stroke:#48a76b}.tk{fill:#f1e9fc;stroke:#8859c4}.dep{fill:#e7f6f5;stroke:#399994}.lim{fill:#fff0f1;stroke:#cc6670}.dual{fill:#fff6da;stroke:#d09a22}.e{fill:none;stroke:#475569;stroke-width:1.7;marker-end:url(#a)}.eg{fill:none;stroke:#16803d;stroke-width:2;marker-end:url(#g)}.rl{font:600 10px Arial;fill:#475569;paint-order:stroke;stroke:#f7f8fb;stroke-width:4}.small{font:10.5px Arial;fill:#52606d}
+ </style>
+</defs>
+<rect class="bg" width="1700" height="1400"/>
+<text x="45" y="46" style="font:700 28px Georgia;fill:#172a46">Algorithmic Pattern Discovery and Prediction</text>
+<text x="45" y="72" style="font:13px Arial;fill:#52606d">Evidence-grounded practice map · dominant mechanism: digital codification · Neo4j multi-case synthesis</text>
+
+<!-- bundled relationships -->
+<path class="e" d="M360 245C520 245 585 380 720 380"/><text class="rl" x="525" y="285">adopt</text>
+<path class="e" d="M450 560C590 560 610 455 720 455"/><text class="rl" x="575" y="525">participate_in</text>
+<path class="e" d="M980 390C1100 390 1130 255 1270 255"/><text class="rl" x="1060" y="310">be_captured_by / be_transferred_by</text>
+<path class="e" d="M1270 560C1120 560 1100 455 980 455"/><text class="rl" x="1080" y="535">be_absorbed_by</text>
+<path class="e" d="M850 525V805"/><text class="rl" x="862" y="700">depend_on</text>
+<path class="e" d="M810 525C700 745 620 920 620 1010"/><text class="rl" x="650" y="860">be_constrained_by</text>
+<path class="eg" d="M920 525C1080 760 1190 925 1190 1010"/><text class="rl" x="1080" y="860" style="fill:#16803d">mitigate</text>
+
+<!-- 1 technology -->
+<rect class="p" x="35" y="105" width="355" height="245" rx="18"/><circle cx="62" cy="132" r="15" fill="#4f83cc"/><text class="n" x="58" y="137">1</text><text class="h" x="86" y="138">ADOPTED TECHNOLOGY</text>
+<rect class="card tech" x="60" y="175" width="305" height="95"/><text class="name" x="78" y="205"><tspan>Artificial Intelligence and</tspan><tspan x="78" dy="17">Intelligent Computation</tspan></text><text class="meta" x="78" y="250">s001M01TE01 · n=26</text>
+<text class="small" x="60" y="302">AI is adoption evidence; retention is inferred</text><text class="small" x="60" y="318">from the practice–knowledge relations below.</text>
+
+<!-- 2 holders -->
+<rect class="p" x="35" y="375" width="455" height="360" rx="18"/><circle cx="62" cy="402" r="15" fill="#d68b2c"/><text class="n" x="58" y="407">2</text><text class="h" x="86" y="408">KNOWLEDGE HOLDERS</text>
+<g transform="translate(58 440)">
+ <rect class="card holder" width="190" height="66"/><text class="name" x="10" y="22"><tspan>Frontline &amp; operational</tspan><tspan x="10" dy="15">practitioners</tspan></text><text class="meta" x="10" y="56">s001M01KH03 · n=8</text>
+ <g transform="translate(205)"><rect class="card holder" width="190" height="66"/><text class="name" x="10" y="22"><tspan>Scientific, engineering &amp;</tspan><tspan x="10" dy="15">technical professionals</tspan></text><text class="meta" x="10" y="56">s001M01KH05 · n=9</text></g>
+ <g transform="translate(0 82)"><rect class="card holder" width="190" height="66"/><text class="name" x="10" y="22">Domain experts &amp; reviewers</text><text class="meta" x="10" y="56">s001M01KH06 · n=9</text></g>
+ <g transform="translate(205 82)"><rect class="card holder" width="190" height="66"/><text class="name" x="10" y="22"><tspan>Operational, project &amp;</tspan><tspan x="10" dy="15">middle managers</tspan></text><text class="meta" x="10" y="56">s001M01KH07 · n=15</text></g>
+ <g transform="translate(0 164)"><rect class="card holder" width="190" height="66"/><text class="name" x="10" y="22">Executive &amp; strategic leadership</text><text class="meta" x="10" y="56">s001M01KH08 · n=7</text></g>
+</g>
+
+<!-- 3 central -->
+<rect class="p" x="680" y="220" width="340" height="350" rx="18"/><circle cx="707" cy="247" r="15" fill="#172a46"/><text class="n" x="703" y="252">3</text><text class="h" x="731" y="253">CENTRAL PRACTICE</text>
+<rect x="720" y="300" width="260" height="225" rx="20" fill="#172a46" stroke="#0d1b2e" stroke-width="2.5" filter="url(#s)"/>
+<text x="850" y="335" text-anchor="middle" style="font:700 13px Arial;fill:#9ce1b8;letter-spacing:1px">DIGITAL CODIFICATION</text>
+<text x="850" y="385" text-anchor="middle" style="font:700 22px Arial;fill:white"><tspan x="850">Algorithmic Pattern</tspan><tspan x="850" dy="30">Discovery and</tspan><tspan x="850" dy="30">Prediction</tspan></text>
+<line x1="760" y1="465" x2="940" y2="465" stroke="#66809f"/><text x="850" y="492" text-anchor="middle" style="font:12px ui-monospace;fill:#d4e2f2">s001M01TP07 · n=16</text>
+
+<!-- 4 tacit -->
+<rect class="p" x="1235" y="105" width="430" height="300" rx="18"/><circle cx="1262" cy="132" r="15" fill="#8859c4"/><text class="n" x="1258" y="137">4</text><text class="h" x="1286" y="138">TACIT KNOWLEDGE CODIFIED</text>
+<rect class="card tk" x="1260" y="175" width="380" height="76"/><text class="name" x="1274" y="202">Trained Sensory and Perceptual Recognition</text><text class="meta" x="1274" y="232">s001M01TK06 · n=12 · capture + transfer</text>
+<rect class="card tk" x="1260" y="270" width="380" height="90"/><text class="name" x="1274" y="296"><tspan>Shared Professional Norms and</tspan><tspan x="1274" dy="16">Standards of Judgment</tspan></text><text class="meta" x="1274" y="342">s001M01TK10 · n=28 · capture</text>
+
+<!-- 5 learners -->
+<rect class="p" x="1210" y="430" width="455" height="305" rx="18"/><circle cx="1237" cy="457" r="15" fill="#48a76b"/><text class="n" x="1233" y="462">5</text><text class="h" x="1261" y="463">KNOWLEDGE LEARNERS</text>
+<g transform="translate(1233 495)">
+ <rect class="card learner" width="195" height="56"/><text class="name" x="9" y="21">Higher-education learners</text><text class="meta" x="9" y="45">s001M01KL01 · n=5</text>
+ <g transform="translate(208)"><rect class="card learner" width="195" height="56"/><text class="name" x="9" y="21">Occupational trainees</text><text class="meta" x="9" y="45">s001M01KL02 · n=10</text></g>
+ <g transform="translate(0 67)"><rect class="card learner" width="195" height="56"/><text class="name" x="9" y="21">Novice workforce learners</text><text class="meta" x="9" y="45">s001M01KL03 · n=4</text></g>
+ <g transform="translate(208 67)"><rect class="card learner" width="195" height="56"/><text class="name" x="9" y="21">Upskilling practitioners</text><text class="meta" x="9" y="45">s001M01KL04 · n=5</text></g>
+ <g transform="translate(0 134)"><rect class="card learner" width="195" height="56"/><text class="name" x="9" y="21">Frontline safety recipients</text><text class="meta" x="9" y="45">s001M01KL05 · n=2</text></g>
+ <g transform="translate(208 134)"><rect class="card learner" width="195" height="56"/><text class="name" x="9" y="21">Decision/action learners</text><text class="meta" x="9" y="45">s001M01KL06 · n=3</text></g>
+</g>
+
+<!-- 6 dependencies -->
+<rect class="p" x="400" y="790" width="900" height="180" rx="18"/><circle cx="427" cy="817" r="15" fill="#399994"/><text class="n" x="423" y="822">6</text><text class="h" x="451" y="823">CONTEXTUAL DEPENDENCIES</text>
+<g transform="translate(425 855)">
+ <rect class="card dep" width="200" height="65"/><text class="name" x="10" y="23">Strategic leadership</text><text class="meta" x="10" y="52">s001M01OD02 · n=11</text>
+ <g transform="translate(215)"><rect class="card dep" width="200" height="65"/><text class="name" x="10" y="23">Resources &amp; information</text><text class="meta" x="10" y="52">s001M01OD03 · n=12</text></g>
+ <g transform="translate(430)"><rect class="card dep" width="200" height="65"/><text class="name" x="10" y="23">Culture, trust &amp; climate</text><text class="meta" x="10" y="52">s001M01OD06 · n=10</text></g>
+ <g transform="translate(645)"><rect class="card dep" width="200" height="65"/><text class="name" x="10" y="23">Natural &amp; climatic environment</text><text class="meta" x="10" y="52">s001M01ED04 · n=3</text></g>
+</g>
+
+<!-- 7 limitations -->
+<rect class="p" x="35" y="1000" width="1630" height="275" rx="18"/><circle cx="62" cy="1027" r="15" fill="#cc6670"/><text class="n" x="58" y="1032">7</text><text class="h" x="86" y="1033">LIMITATIONS AND MITIGATION</text>
+<g transform="translate(60 1065)">
+ <rect class="card lim" width="250" height="58"/><text class="name" x="9" y="21">Knowledge &amp; memory decay</text><text class="meta" x="9" y="45">s001M01LI01 · n=6 · TK barrier</text>
+ <g transform="translate(262)"><rect class="card lim" width="250" height="58"/><text class="name" x="9" y="21">Cognitive/demographic limits</text><text class="meta" x="9" y="45">s001M01LI03 · n=7 · TK barrier</text></g>
+ <g transform="translate(524)"><rect class="card lim" width="250" height="58"/><text class="name" x="9" y="21">Instruction &amp; transfer gaps</text><text class="meta" x="9" y="45">s001M01LI04 · n=29 · TK barrier</text></g>
+ <g transform="translate(786)"><rect class="card dual" width="250" height="58"/><text class="name" x="9" y="21">Software/data interoperability</text><text class="meta" x="9" y="45">s001M01LI05 · n=30 · dual</text></g>
+ <g transform="translate(1048)"><rect class="card lim" width="250" height="58"/><text class="name" x="9" y="21">Hardware &amp; infrastructure</text><text class="meta" x="9" y="45">s001M01LI06 · n=8</text></g>
+ <g transform="translate(1310)"><rect class="card dual" width="250" height="58"/><text class="name" x="9" y="21">Time, staffing &amp; expertise</text><text class="meta" x="9" y="45">s001M01LI08 · n=21 · mitigation</text></g>
+ <g transform="translate(0 72)"><rect class="card dual" width="250" height="58"/><text class="name" x="9" y="21">Culture, leadership &amp; adoption</text><text class="meta" x="9" y="45">s001M01LI09 · n=25 · dual</text></g>
+ <g transform="translate(262 72)"><rect class="card dual" width="250" height="58"/><text class="name" x="9" y="21">Continuity, governance &amp; privacy</text><text class="meta" x="9" y="45">s001M01LI10 · n=19 · dual</text></g>
+ <g transform="translate(524 72)"><rect class="card lim" width="250" height="58"/><text class="name" x="9" y="21">Physical/operational variability</text><text class="meta" x="9" y="45">s001M01LI11 · n=8</text></g>
+ <g transform="translate(786 72)"><rect class="card lim" width="250" height="58"/><text class="name" x="9" y="21">Measurement &amp; validation flaws</text><text class="meta" x="9" y="45">s001M01LI13 · n=10</text></g>
+ <g transform="translate(1048 72)"><rect class="card lim" width="250" height="58"/><text class="name" x="9" y="21">Sample/generalizability limits</text><text class="meta" x="9" y="45">s001M01LI14 · n=5</text></g>
+</g>
+<text class="small" x="60" y="1238">Dual = direct constraint and mitigation target. LI08 is a mitigation target and also a tacit-knowledge capture barrier; mitigation does not establish elimination.</text>
+
+<!-- legend -->
+<rect x="35" y="1300" width="1630" height="70" rx="10" fill="#eef1f5" stroke="#c9d0da"/><text x="55" y="1323" style="font:700 12px Georgia;fill:#263244">FIGURE LEGEND / READING NOTE</text>
+<path class="e" d="M55 1343H105"/><text class="small" x="118" y="1347">stored direction</text><rect class="card dual" x="260" y="1332" width="30" height="20"/><text class="small" x="300" y="1347">constraint + mitigation</text><rect class="p" x="485" y="1332" width="30" height="20"/><text class="small" x="525" y="1347">analytic panel</text>
+<text class="small" x="705" y="1347">n = node evidence_count · Ambiguous tacit nodes excluded · adjacency is coded association, not causality</text>
+</svg>

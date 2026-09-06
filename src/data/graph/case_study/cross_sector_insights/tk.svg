@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="3200" height="1780" viewBox="0 0 3200 1780" role="img"
+     aria-labelledby="figure-title figure-desc">
+  <title id="figure-title">Cross-sector TP convergence and divergence by tacit knowledge type</title>
+  <desc id="figure-desc">Ten tacit knowledge types are arranged as wedges. Three concentric layers show Construction, Manufacturing, and Health Services coverage. Marker and callout colors identify the relational, somatic, or collective retention taxonomy, while outside panels list convergent and divergent technology-enabled retention practice relationships.</desc>
+
+  <defs>
+    <style><![CDATA[
+      .title { font: 700 60px Arial, Helvetica, sans-serif; fill: #183247; }
+      .subtitle { font: 400 28px Arial, Helvetica, sans-serif; fill: #536776;}
+      .legend-heading { font: 700 21px Arial, Helvetica, sans-serif; fill: #183247; letter-spacing: .7px; }
+      .legend-text { font: 400 20px Arial, Helvetica, sans-serif; fill: #536776; }
+      .ring-base { fill: none; stroke: #E8EDF1; stroke-width: 64; }
+      .connector { fill: none; stroke: #9CADBA; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+      .marker { stroke: #FFFFFF; stroke-width: 4; }
+      .marker-text { font: 700 16px Arial, Helvetica, sans-serif; fill: #FFFFFF; text-anchor: middle; dominant-baseline: middle; }
+      .card { fill: #FFFFFF; stroke: #D5DEE6; stroke-width: 2; }
+      .card-id { font: 700 24px Arial, Helvetica, sans-serif; fill: #183247; }
+      .taxonomy { font: 600 20px Arial, Helvetica, sans-serif; }
+      .coverage { font: 700 22px Arial, Helvetica, sans-serif; fill: #183247; text-anchor: end; }
+      .tk-name { font: 700 28px Arial, Helvetica, sans-serif; fill: #294153; }
+      .pattern-label { font: 700 24px Arial, Helvetica, sans-serif; fill: #70808D; letter-spacing: 1.8px; }
+      .pattern { font: 400 24px Arial, Helvetica, sans-serif; fill: #344B5C; }
+      .hub-number { font: 700 58px Arial, Helvetica, sans-serif; fill: #183247; text-anchor: middle; }
+      .hub-main { font: 700 29px Arial, Helvetica, sans-serif; fill: #183247; text-anchor: middle; }
+      .hub-note { font: 400 19px Arial, Helvetica, sans-serif; fill: #667784; text-anchor: middle; }
+      .footer { font: 400 19px Arial, Helvetica, sans-serif; fill: #61717D; }
+      .relational-fill { fill: #7B5AA6; }
+      .somatic-fill { fill: #C35F57; }
+      .collective-fill { fill: #255C74; }
+      .relational-text { fill: #7B5AA6; }
+      .somatic-text { fill: #B4524A; }
+      .collective-text { fill: #255C74; }
+    ]]></style>
+
+    <filter id="soft-shadow" x="-10%" y="-15%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#163247" flood-opacity="0.10"/>
+    </filter>
+
+    <line id="separator" x1="1600" y1="760" x2="1600" y2="506"
+          stroke="#FFFFFF" stroke-width="6"/>
+  </defs>
+
+  <rect width="3200" height="1780" fill="#F7F9FB"/>
+
+  <!-- Title and legends -->
+  <g id="title-and-legends">
+    <text class="title" x="1600" y="76" text-anchor="middle">Cross-sector Distribution of Tacit Knowledge
+      Retained</text>
+    <text class="subtitle" x="1600" y="120" text-anchor="middle">Sector layers show TK coverage; callouts distinguish TP relationships recurring across sectors from those identified in only one sector.</text>
+
+    <g id="sector-legend" transform="translate(700 153)">
+      <text class="legend-heading" x="0" y="24">LAYERS — INNER TO OUTER</text>
+      <rect x="390" y="2" width="27" height="27" rx="4" fill="#4C7FBE"/><text class="legend-text" x="430" y="24">Construction</text>
+      <rect x="590" y="2" width="27" height="27" rx="4" fill="#E39A3B"/><text class="legend-text" x="630" y="24">Manufacturing</text>
+      <rect x="815" y="2" width="27" height="27" rx="4" fill="#43A087"/><text class="legend-text" x="855" y="24">Health Services</text>
+      <rect x="1055" y="2" width="27" height="27" rx="4" fill="#E8EDF1"/><text class="legend-text" x="1095" y="24">Not identified</text>
+    </g>
+
+    <g id="taxonomy-legend" transform="translate(930 197)">
+      <text class="legend-heading" x="0" y="22">Collins' Taxonomy</text>
+      <circle cx="315" cy="14" r="11" fill="#7B5AA6"/><text class="legend-text" x="337" y="22">Relational</text>
+      <circle cx="485" cy="14" r="11" fill="#C35F57"/><text class="legend-text" x="507" y="22">Somatic</text>
+      <circle cx="635" cy="14" r="11" fill="#255C74"/><text class="legend-text" x="657" y="22">Collective</text>
+      <text class="legend-text" x="790" y="22">Tacit Knowledge</text>
+    </g>
+  </g>
+
+  <!-- Radial matrix. Wedges are arranged in contiguous taxonomy groups. -->
+  <g id="radial-matrix">
+    <circle id="construction-layer-base" class="ring-base" cx="1600" cy="950" r="250"/>
+    <circle id="manufacturing-layer-base" class="ring-base" cx="1600" cy="950" r="330"/>
+    <circle id="health-services-layer-base" class="ring-base" cx="1600" cy="950" r="410"/>
+
+    <g id="construction-coverage">
+      <path id="construction-TK05" d="M 1600.00,668.00 A 282,282 0 0 1 1765.76,721.86 L 1728.14,773.63 A 218,218 0 0 0 1600.00,732.00 Z" fill="#4C7FBE"/>
+      <path id="construction-TK06" d="M 1765.76,721.86 A 282,282 0 0 1 1868.20,862.86 L 1807.33,882.63 A 218,218 0 0 0 1728.14,773.63 Z" fill="#4C7FBE"/>
+      <path id="construction-TK07" d="M 1868.20,862.86 A 282,282 0 0 1 1868.20,1037.14 L 1807.33,1017.37 A 218,218 0 0 0 1807.33,882.63 Z" fill="#4C7FBE"/>
+      <path id="construction-TK08" d="M 1868.20,1037.14 A 282,282 0 0 1 1765.76,1178.14 L 1728.14,1126.37 A 218,218 0 0 0 1807.33,1017.37 Z" fill="#4C7FBE"/>
+      <path id="construction-TK04" d="M 1600.00,1232.00 A 282,282 0 0 1 1434.24,1178.14 L 1471.86,1126.37 A 218,218 0 0 0 1600.00,1168.00 Z" fill="#4C7FBE"/>
+      <path id="construction-TK10" d="M 1331.80,1037.14 A 282,282 0 0 1 1331.80,862.86 L 1392.67,882.63 A 218,218 0 0 0 1392.67,1017.37 Z" fill="#4C7FBE"/>
+      <path id="construction-TK11" d="M 1331.80,862.86 A 282,282 0 0 1 1434.24,721.86 L 1471.86,773.63 A 218,218 0 0 0 1392.67,882.63 Z" fill="#4C7FBE"/>
+      <path id="construction-TK12" d="M 1434.24,721.86 A 282,282 0 0 1 1600.00,668.00 L 1600.00,732.00 A 218,218 0 0 0 1471.86,773.63 Z" fill="#4C7FBE"/>
+    </g>
+
+    <g id="manufacturing-coverage">
+      <path id="manufacturing-TK05" d="M 1600.00,588.00 A 362,362 0 0 1 1812.78,657.14 L 1775.16,708.91 A 298,298 0 0 0 1600.00,652.00 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TK06" d="M 1812.78,657.14 A 362,362 0 0 1 1944.28,838.14 L 1883.41,857.91 A 298,298 0 0 0 1775.16,708.91 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TK07" d="M 1944.28,838.14 A 362,362 0 0 1 1944.28,1061.86 L 1883.41,1042.09 A 298,298 0 0 0 1883.41,857.91 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TK02" d="M 1812.78,1242.86 A 362,362 0 0 1 1600.00,1312.00 L 1600.00,1248.00 A 298,298 0 0 0 1775.16,1191.09 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TK04" d="M 1600.00,1312.00 A 362,362 0 0 1 1387.22,1242.86 L 1424.84,1191.09 A 298,298 0 0 0 1600.00,1248.00 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TK09" d="M 1387.22,1242.86 A 362,362 0 0 1 1255.72,1061.86 L 1316.59,1042.09 A 298,298 0 0 0 1424.84,1191.09 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TK10" d="M 1255.72,1061.86 A 362,362 0 0 1 1255.72,838.14 L 1316.59,857.91 A 298,298 0 0 0 1316.59,1042.09 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TK12" d="M 1387.22,657.14 A 362,362 0 0 1 1600.00,588.00 L 1600.00,652.00 A 298,298 0 0 0 1424.84,708.91 Z" fill="#E39A3B"/>
+    </g>
+
+    <g id="health-services-coverage">
+      <path id="health-TK05" d="M 1600.00,508.00 A 442,442 0 0 1 1859.80,592.41 L 1822.18,644.19 A 378,378 0 0 0 1600.00,572.00 Z" fill="#43A087"/>
+      <path id="health-TK06" d="M 1859.80,592.41 A 442,442 0 0 1 2020.37,813.41 L 1959.50,833.19 A 378,378 0 0 0 1822.18,644.19 Z" fill="#43A087"/>
+      <path id="health-TK08" d="M 2020.37,1086.59 A 442,442 0 0 1 1859.80,1307.59 L 1822.18,1255.81 A 378,378 0 0 0 1959.50,1066.81 Z" fill="#43A087"/>
+      <path id="health-TK02" d="M 1859.80,1307.59 A 442,442 0 0 1 1600.00,1392.00 L 1600.00,1328.00 A 378,378 0 0 0 1822.18,1255.81 Z" fill="#43A087"/>
+      <path id="health-TK04" d="M 1600.00,1392.00 A 442,442 0 0 1 1340.20,1307.59 L 1377.82,1255.81 A 378,378 0 0 0 1600.00,1328.00 Z" fill="#43A087"/>
+      <path id="health-TK09" d="M 1340.20,1307.59 A 442,442 0 0 1 1179.63,1086.59 L 1240.50,1066.81 A 378,378 0 0 0 1377.82,1255.81 Z" fill="#43A087"/>
+      <path id="health-TK10" d="M 1179.63,1086.59 A 442,442 0 0 1 1179.63,813.41 L 1240.50,833.19 A 378,378 0 0 0 1240.50,1066.81 Z" fill="#43A087"/>
+      <path id="health-TK11" d="M 1179.63,813.41 A 442,442 0 0 1 1340.20,592.41 L 1377.82,644.19 A 378,378 0 0 0 1240.50,833.19 Z" fill="#43A087"/>
+      <path id="health-TK12" d="M 1340.20,592.41 A 442,442 0 0 1 1600.00,508.00 L 1600.00,572.00 A 378,378 0 0 0 1377.82,644.19 Z" fill="#43A087"/>
+    </g>
+
+    <g id="wedge-separators">
+      <use xlink:href="#separator" transform="rotate(0 1600 950)"/><use xlink:href="#separator" transform="rotate(36 1600 950)"/>
+      <use xlink:href="#separator" transform="rotate(72 1600 950)"/><use xlink:href="#separator" transform="rotate(108 1600 950)"/>
+      <use xlink:href="#separator" transform="rotate(144 1600 950)"/><use xlink:href="#separator" transform="rotate(180 1600 950)"/>
+      <use xlink:href="#separator" transform="rotate(216 1600 950)"/><use xlink:href="#separator" transform="rotate(252 1600 950)"/>
+      <use xlink:href="#separator" transform="rotate(288 1600 950)"/><use xlink:href="#separator" transform="rotate(324 1600 950)"/>
+    </g>
+
+    <circle cx="1600" cy="950" r="190" fill="#FFFFFF" stroke="#D7E0E7" stroke-width="3" filter="url(#soft-shadow)"/>
+    <text class="hub-number" x="1600" y="900">10</text>
+    <text class="hub-main" x="1600" y="952">TACIT KNOWLEDGE</text>
+    <text class="hub-main" x="1600" y="988">TYPES</text>
+    <text class="hub-note" x="1600" y="1030">sector coverage → TP convergence / divergence</text>
+  </g>
+
+  <!-- Connectors -->
+  <g id="connectors">
+    <polyline class="connector" points="1743.7,507.8 1762.2,450.7 2090,365 2150,365"/>
+    <polyline class="connector" points="1976.2,676.7 2024.7,641.4 2090,645 2150,645"/>
+    <polyline class="connector" points="2065,950 2125,950 2090,925 2150,925"/>
+    <polyline class="connector" points="1976.2,1223.3 2024.7,1258.6 2090,1205 2150,1205"/>
+    <polyline class="connector" points="1743.7,1392.2 1762.2,1449.3 2090,1485 2150,1485"/>
+    <polyline class="connector" points="1456.3,1392.2 1437.8,1449.3 1110,1485 1050,1485"/>
+    <polyline class="connector" points="1223.8,1223.3 1175.3,1258.6 1110,1205 1050,1205"/>
+    <polyline class="connector" points="1135,950 1075,950 1110,925 1050,925"/>
+    <polyline class="connector" points="1223.8,676.7 1175.3,641.4 1110,645 1050,645"/>
+    <polyline class="connector" points="1456.3,507.8 1437.8,450.7 1110,365 1050,365"/>
+  </g>
+
+  <!-- Taxonomy-colored TK markers -->
+  <g id="tk-markers">
+    <g><circle class="marker somatic-fill" cx="1743.7" cy="507.8" r="28"/><text class="marker-text" x="1743.7" y="507.8">TK05</text></g>
+    <g><circle class="marker somatic-fill" cx="1976.2" cy="676.7" r="28"/><text class="marker-text" x="1976.2" y="676.7">TK06</text></g>
+    <g><circle class="marker somatic-fill" cx="2065" cy="950" r="28"/><text class="marker-text" x="2065" y="950">TK07</text></g>
+    <g><circle class="marker somatic-fill" cx="1976.2" cy="1223.3" r="28"/><text class="marker-text" x="1976.2" y="1223.3">TK08</text></g>
+    <g><circle class="marker relational-fill" cx="1743.7" cy="1392.2" r="28"/><text class="marker-text" x="1743.7" y="1392.2">TK02</text></g>
+    <g><circle class="marker relational-fill" cx="1456.3" cy="1392.2" r="28"/><text class="marker-text" x="1456.3" y="1392.2">TK04</text></g>
+    <g><circle class="marker collective-fill" cx="1223.8" cy="1223.3" r="28"/><text class="marker-text" x="1223.8" y="1223.3">TK09</text></g>
+    <g><circle class="marker collective-fill" cx="1135" cy="950" r="28"/><text class="marker-text" x="1135" y="950">TK10</text></g>
+    <g><circle class="marker collective-fill" cx="1223.8" cy="676.7" r="28"/><text class="marker-text" x="1223.8" y="676.7">TK11</text></g>
+    <g><circle class="marker collective-fill" cx="1456.3" cy="507.8" r="28"/><text class="marker-text" x="1456.3" y="507.8">TK12</text></g>
+  </g>
+
+  <!-- Right-side pattern callouts -->
+  <g id="right-callouts">
+    <g id="callout-TK05" transform="translate(2150 230)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="somatic-fill" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK05 · <tspan class="taxonomy somatic-text">Somatic Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">3/3</text>
+      <text class="tk-name" x="32" y="77">Practised Motor and Tool-Operation Skill</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">TP03; TP09; TP10; TP12</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">TP01; TP04; TP06; TP07; TP13; TP16</text>
+    </g>
+
+    <g id="callout-TK06" transform="translate(2150 510)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="somatic-fill" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK06 · <tspan class="taxonomy somatic-text">Somatic Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">3/3</text>
+      <text class="tk-name" x="32" y="77">Trained Sensory and Perceptual Recognition</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">TP01; TP03; TP06; TP07</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">TP08; TP16</text>
+    </g>
+
+    <g id="callout-TK07" transform="translate(2150 790)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="somatic-fill" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK07 · <tspan class="taxonomy somatic-text">Somatic Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">2/3</text>
+      <text class="tk-name" x="32" y="77">Embodied Posture, Balance, and Spatial Control</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">TP03; TP06</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">TP08</text>
+    </g>
+
+    <g id="callout-TK08" transform="translate(2150 1070)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="somatic-fill" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK08 · <tspan class="taxonomy somatic-text">Somatic Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">2/3</text>
+      <text class="tk-name" x="32" y="77">Immediate Embodied Response to Changing Conditions</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">TP03</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">None identified</text>
+    </g>
+
+    <g id="callout-TK02" transform="translate(2150 1350)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="relational-fill" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK02 · <tspan class="taxonomy relational-text">Relational Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">2/3</text>
+      <text class="tk-name" x="32" y="77">Knowledge Conveyed Through Examples or Demonstration</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">None identified</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">TP07; TP09; TP10; TP11</text>
+    </g>
+  </g>
+
+  <!-- Left-side pattern callouts -->
+  <g id="left-callouts">
+    <g id="callout-TK12" transform="translate(50 230)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="collective-fill" x="990" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK12 · <tspan class="taxonomy collective-text">Collective Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">3/3</text>
+      <text class="tk-name" x="32" y="77">Organizational Culture and Unwritten Working Practices</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">TP08</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">TP09; TP10; TP11; TP13</text>
+    </g>
+
+    <g id="callout-TK11" transform="translate(50 510)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="collective-fill" x="990" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK11 · <tspan class="taxonomy collective-text">Collective Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">2/3</text>
+      <text class="tk-name" x="32" y="77">Informal Coordination, Communication, and Escalation Know-how</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">None identified</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">TP03; TP10; TP12</text>
+    </g>
+
+    <g id="callout-TK10" transform="translate(50 790)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="collective-fill" x="990" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK10 · <tspan class="taxonomy collective-text">Collective Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">3/3</text>
+      <text class="tk-name" x="32" y="77">Shared Professional Norms and Standards of Judgment</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">TP03; TP07; TP13</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">TP01; TP04; TP09; TP10; TP11; TP12</text>
+    </g>
+
+    <g id="callout-TK09" transform="translate(50 1070)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="collective-fill" x="990" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK09 · <tspan class="taxonomy collective-text">Collective Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">2/3</text>
+      <text class="tk-name" x="32" y="77">Shared Professional Language and Contextual Meaning</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">None identified</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">TP09; TP10; TP11</text>
+    </g>
+
+    <g id="callout-TK04" transform="translate(50 1350)">
+      <rect class="card" width="1000" height="270" rx="18" filter="url(#soft-shadow)"/><rect class="relational-fill" x="990" width="10" height="270" rx="5"/>
+      <text class="card-id" x="32" y="38">TK04 · <tspan class="taxonomy relational-text">Relational Tacit Knowledge</tspan></text><text class="coverage" x="968" y="38">3/3</text>
+      <text class="tk-name" x="32" y="77">Unrecognized or Unarticulated Personal Know-how</text>
+      <text class="pattern-label" x="32" y="132">TP CONVERGENCE</text><text class="pattern" x="310" y="132">TP10; TP11</text>
+      <text class="pattern-label" x="32" y="190">TP DIVERGENCE</text><text class="pattern" x="310" y="190">TP03; TP06; TP07; TP15</text>
+    </g>
+  </g>
+
+  <g id="figure-note">
+    <line x1="120" y1="1670" x2="3080" y2="1670" stroke="#D6DEE5" stroke-width="2"/>
+    <text class="footer" x="120" y="1710"><tspan font-weight="700">Interpretive rule.</tspan> TP convergence means the same TP–TK relationship appears in at least two sectors; TP divergence means it appears in only one sector.</text>
+    <text class="footer" x="120" y="1742">“None identified” and uncolored sector cells refer only to the selected evidence and do not establish absence.</text>
+    <text class="footer" x="3080" y="1742" text-anchor="end">Inner: Construction · Middle: Manufacturing · Outer: Health Services</text>
+  </g>
+</svg>

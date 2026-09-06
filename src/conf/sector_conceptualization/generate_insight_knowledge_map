@@ -1,0 +1,56 @@
+***Task***
+Analyze the knowledge graph extracted from multiple cases, try to draw a map following the style: numbered dashed panels, central practice node, color-coded cards and relationships, mitigation section, and academic-paper legend; output in svg format. Each node takes data label including name, id and count
+
+***Input data***
+Use [$analyze-neo4j-knowledge-graph] to execute the following Cypher query:
+MATCH (tk:TacitKnowledge)-[r:be_captured_by|be_transferred_by|evaluate]-(tep:TechnologyenablePractice)
+WHERE tep.node_id = 's001M01TP03' AND NOT coalesce(tk.node_name, '') STARTS WITH 'Ambiguous'
+WITH tep,
+COLLECT({src_node:tk, rel: r, dst_node: tep}) AS enabledBy,
+COLLECT(DISTINCT tk) AS tk_list
+
+// 1. 检索使用的数字技术
+OPTIONAL MATCH (tep)-[r:adopt]->(dt:DigitalTechnology)
+WITH tep, enabledBy, tk_list,
+COLLECT({src_node:tep, rel: r, dst_node: dt}) AS adoptions
+
+// 2. 检索关联的knowledge holder
+OPTIONAL MATCH (role:KnowledgeHolder|KnowledgeLearner)-[r:be_shared_by|be_absorbed_by]-(tk:TacitKnowledge)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list,adoptions,
+COLLECT({src_node:role, rel: r, dst_node: tk}) AS roleBy,
+COLLECT(DISTINCT role) AS role_list
+
+OPTIONAL MATCH (role)-[r:participate_in]-(tep)
+WHERE role IN role_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy,
+COLLECT({src_node:role, rel: r, dst_node: tep}) AS participateBy
+
+// 3. 检索相关的限制
+OPTIONAL MATCH (tk:TacitKnowledge)-[r:be_difficult_to_capture_due_to]-(lim:Limitation)
+WHERE tk IN tk_list
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,
+COLLECT({src_node:tk, rel: r, dst_node: lim}) AS tk_limits
+
+OPTIONAL MATCH (tep)-[r:be_constrained_by]-(lim:Limitation)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+// 4. 捕获 OrganizationalDependency / EnvironmentalDependency
+OPTIONAL MATCH (tep)-[r:depend_on]->(dependancies:OrganizationalDependency|EnvironmentalDependency)
+WITH tep, enabledBy, tk_list, adoptions,roleBy, participateBy,tk_limits,tep_limits,
+COLLECT({src_node:tep, rel: r, dst_node: dependancies}) AS dependancyON
+
+// 5. 捕获 mitigates (tep -[:mitigate]-> lim)
+OPTIONAL MATCH (tep)-[r:mitigate|resolve]->(lim:Limitation)
+WITH enabledBy,roleBy,adoptions,participateBy,tk_limits,tep_limits,dependancyON,
+COLLECT({src_node:tep, rel: r, dst_node: lim}) AS mitigateBy
+
+RETURN enabledBy,
+adoptions,
+roleBy,
+participateBy,
+tk_limits,
+tep_limits,
+dependancyON,
+mitigateBy

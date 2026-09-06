@@ -1,0 +1,1160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3600" height="1900" viewBox="0 0 3600 1900" role="img" aria-labelledby="title desc">
+<title id="title">Knowledge pathways and conditions across cases</title>
+<desc id="desc">Evidence-grounded subgraph for s002M01: 98 concepts and 615 unique directed relationships. Columns progress from technological inputs and practices through knowledge forms and actors to dependencies and limitations.</desc>
+<defs>
+      <filter id="shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#253044" flood-opacity=".13"/></filter>
+      <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 z" fill="#455469" fill-opacity=".55"/></marker>
+      <style><![CDATA[
+        text{font-family:Inter,Arial,sans-serif;fill:#202938}.title{font-family:Georgia,serif;font-size:52px;font-weight:700}.summary{font-size:20px;fill:#526071}.freq{font-size:16px;fill:#687486}.head{font-size:19px;font-weight:700;fill:white}.name{font-size:16px;font-weight:700}.meta{font-size:13px;fill:#657184}.edge{fill:none;stroke:#526174;stroke-opacity:.17;marker-end:url(#arrow)}
+      ]]></style>
+    </defs>
+<rect width="3600" height="1900" fill="#F7F8FA"/>
+<text class="title" x="90" y="82">Industry-level KG for Manufacturing</text>
+<text class="summary" x="90" y="125">Evidence-grounded subgraph for s002M01: 98 concepts and 615 unique directed relationships. Columns progress from technological inputs and practices through knowledge forms and actors to dependencies and limitations.</text>
+<text class="freq" x="90" y="164">Relationship frequencies — participate_in: 104  ·  depend_on: 94  ·  be_transferred_by: 72  ·  be_constrained_by: 68  ·  adopt: 58  ·  mitigate: 37  ·  be_shared_by: 35  ·  evaluate: 30  ·  be_composed_of:</text>
+<text class="freq" x="90" y="188">23  ·  be_absorbed_by: 17  ·  be_captured_by: 17  ·  be_difficult_to_capture_due_to: 15  ·  complement: 12  ·  be_derived_from: 12  ·  translate_into: 8  ·  cannot_fully_replace: 6  ·  resolve: 4  ·</text>
+<line x1="261.0" y1="270" x2="261.0" y2="1840" stroke="#3B78C8" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="103" y="260" width="316" height="104" rx="18" fill="#3B78C8"/>
+<text class="head" text-anchor="middle" x="261" y="308">Digital Technology</text>
+<text x="261" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 8</text>
+<line x1="603.0" y1="270" x2="603.0" y2="1840" stroke="#12A6A6" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="445" y="260" width="316" height="104" rx="18" fill="#12A6A6"/>
+<text class="head" text-anchor="middle" x="603" y="295">Technology-enabled</text>
+<text class="head" text-anchor="middle" x="603" y="319">Practice</text>
+<text x="603" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 14</text>
+<line x1="945.0" y1="270" x2="945.0" y2="1840" stroke="#7B6BB1" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="787" y="260" width="316" height="104" rx="18" fill="#7B6BB1"/>
+<text class="head" text-anchor="middle" x="945" y="295">Traditional Human-</text>
+<text class="head" text-anchor="middle" x="945" y="319">centered Practice</text>
+<text x="945" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 11</text>
+<line x1="1287.0" y1="270" x2="1287.0" y2="1840" stroke="#D6842B" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="1129" y="260" width="316" height="104" rx="18" fill="#D6842B"/>
+<text class="head" text-anchor="middle" x="1287" y="308">Tacit Knowledge</text>
+<text x="1287" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 9</text>
+<line x1="1629.0" y1="270" x2="1629.0" y2="1840" stroke="#D0A11D" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="1471" y="260" width="316" height="104" rx="18" fill="#D0A11D"/>
+<text class="head" text-anchor="middle" x="1629" y="308">Explicit Knowledge</text>
+<text x="1629" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 8</text>
+<line x1="1971.0" y1="270" x2="1971.0" y2="1840" stroke="#4C9B62" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="1813" y="260" width="316" height="104" rx="18" fill="#4C9B62"/>
+<text class="head" text-anchor="middle" x="1971" y="308">Knowledge Holder</text>
+<text x="1971" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 13</text>
+<line x1="2313.0" y1="270" x2="2313.0" y2="1840" stroke="#75A943" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="2155" y="260" width="316" height="104" rx="18" fill="#75A943"/>
+<text class="head" text-anchor="middle" x="2313" y="308">Knowledge Learner</text>
+<text x="2313" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 6</text>
+<line x1="2655.0" y1="270" x2="2655.0" y2="1840" stroke="#B85B77" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="2497" y="260" width="316" height="104" rx="18" fill="#B85B77"/>
+<text class="head" text-anchor="middle" x="2655" y="308">Organizational Dependency</text>
+<text x="2655" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 7</text>
+<line x1="2997.0" y1="270" x2="2997.0" y2="1840" stroke="#80664F" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="2839" y="260" width="316" height="104" rx="18" fill="#80664F"/>
+<text class="head" text-anchor="middle" x="2997" y="308">Environmental Dependency</text>
+<text x="2997" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 8</text>
+<line x1="3339.0" y1="270" x2="3339.0" y2="1840" stroke="#C55454" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
+<rect x="3181" y="260" width="316" height="104" rx="18" fill="#C55454"/>
+<text class="head" text-anchor="middle" x="3339" y="308">Limitation</text>
+<text x="3339" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 14</text>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 808.3,868.6 741.7,1341.8 796.7,1341.8"><title>s002M01TP03 → s002M01THR07 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 808.3,773.9 739.6,584.6 794.6,584.6"><title>s002M01TP08 → s002M01THR12 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 808.2,963.2 739.8,679.3 794.8,679.3"><title>s002M01TP09 → s002M01THR15 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.9,1531.1 C 806.9,1531.1 739.2,490.0 794.2,490.0"><title>s002M01TP10 → s002M01THR11 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 810.2,584.6 739.6,584.6 794.6,584.6"><title>s002M01TP11 → s002M01THR12 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 809.2,679.3 739.2,490.0 794.2,490.0"><title>s002M01TP12 → s002M01THR11 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1011.6,1341.8 1213.5,490.0 1473.0,490.0"><title>s002M01TP01 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1014.4,868.6 1217.6,868.6 1478.7,868.6"><title>s002M01TP03 → s002M01EK01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.3,1247.1 C 1011.8,1247.1 1213.6,490.0 1473.0,490.0"><title>s002M01TP04 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.7,1625.7 C 1011.3,1625.7 1213.3,490.0 1473.0,490.0"><title>s002M01TP05 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1013.7,1436.4 1217.1,868.6 1478.7,868.6"><title>s002M01TP06 → s002M01EK01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1016.5,490.0 1218.7,868.6 1478.7,868.6"><title>s002M01TP07 → s002M01EK01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1012.4,773.9 1213.9,490.0 1473.0,490.0"><title>s002M01TP08 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 1012.3,963.2 1213.9,490.0 1473.0,490.0"><title>s002M01TP09 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1013.6,584.6 1214.6,490.0 1473.0,490.0"><title>s002M01TP11 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1012.9,679.3 1214.2,490.0 1473.0,490.0"><title>s002M01TP12 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.3,1720.4 C 1013.2,1720.4 1216.9,868.6 1478.7,868.6"><title>s002M01TP16 → s002M01EK01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1628.0,1341.8 2309.2,490.0 3185.1,490.0"><title>s002M01TP01 → s002M01LI10 · resolve</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1631.0,490.0 2311.0,584.6 3185.5,584.6"><title>s002M01TP07 → s002M01LI05 · resolve</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1629.0,773.9 2310.0,679.3 3185.7,679.3"><title>s002M01TP08 → s002M01LI04 · resolve</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 1628.8,963.2 2309.8,584.6 3185.5,584.6"><title>s002M01TP09 → s002M01LI05 · resolve</title></path>
+<path class="edge" stroke-width="1.15" d="M 1785.0,490.0 C 1921.2,490.0 2027.1,490.0 2163.3,490.0"><title>s002M01EK02 → s002M01KL09 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.3,963.2 C 1698.0,963.2 1901.6,490.0 2163.3,490.0"><title>s002M01TK02 → s002M01KL09 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 1698.9,679.3 1902.8,963.2 2165.0,963.2"><title>s002M01TK04 → s002M01KL03 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 1699.5,490.0 1902.6,773.9 2163.7,773.9"><title>s002M01TK05 → s002M01KL01 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1437.4,584.6 C 1698.9,584.6 1902.2,773.9 2163.7,773.9"><title>s002M01TK06 → s002M01KL01 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1057.9 C 1697.9,1057.9 1901.7,773.9 2163.7,773.9"><title>s002M01TK07 → s002M01KL01 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.3,1247.1 C 1697.5,1247.1 1901.5,868.6 2163.7,868.6"><title>s002M01TK09 → s002M01KL10 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1152.5 C 1697.9,1152.5 1901.7,868.6 2163.7,868.6"><title>s002M01TK10 → s002M01KL10 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 1698.2,773.9 1901.7,490.0 2163.3,490.0"><title>s002M01TK11 → s002M01KL09 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,868.6 C 1698.3,868.6 1901.9,679.3 2163.7,679.3"><title>s002M01TK12 → s002M01KL04 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.7,868.6 C 1340.6,868.6 1233.2,679.3 1095.2,679.3"><title>s002M01EK01 → s002M01THR15 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1336.6,490.0 1230.5,868.6 1094.1,868.6"><title>s002M01EK02 → s002M01THR05 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1338.2,584.6 1231.4,868.6 1094.1,868.6"><title>s002M01EK03 → s002M01THR05 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.7,1057.9 C 1218.2,1057.9 1014.8,773.9 753.3,773.9"><title>s002M01EK04 → s002M01TP08 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.0,963.2 C 1217.3,963.2 1013.8,1341.8 752.1,1341.8"><title>s002M01EK05 → s002M01TP01 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.7,773.9 C 1217.5,773.9 1014.3,1057.9 753.0,1057.9"><title>s002M01EK06 → s002M01TP13 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.6,679.3 C 1218.6,679.3 1016.5,490.0 756.5,490.0"><title>s002M01EK07 → s002M01TP07 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 1082.3,679.3 1148.3,1247.1 1093.3,1247.1"><title>s002M01TK04 → s002M01THR01 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 1080.5,490.0 1149.1,868.6 1094.1,868.6"><title>s002M01TK05 → s002M01THR05 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1136.6,584.6 C 1081.6,584.6 1149.1,868.6 1094.1,868.6"><title>s002M01TK06 → s002M01THR05 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1138.1,1057.9 C 1083.1,1057.9 1150.4,584.6 1095.4,584.6"><title>s002M01TK07 → s002M01THR12 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1138.1,1152.5 C 1083.1,1152.5 1150.2,679.3 1095.2,679.3"><title>s002M01TK10 → s002M01THR15 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.5,868.6 C 1082.5,868.6 1150.2,679.3 1095.2,679.3"><title>s002M01TK12 → s002M01THR15 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.7,963.2 C 1000.5,963.2 893.7,490.0 756.5,490.0"><title>s002M01TK02 → s002M01TP07 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 998.6,679.3 890.8,1436.4 752.1,1436.4"><title>s002M01TK04 → s002M01TP06 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 997.9,490.0 890.9,868.6 753.3,868.6"><title>s002M01TK05 → s002M01TP03 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1136.6,584.6 C 998.6,584.6 891.3,868.6 753.3,868.6"><title>s002M01TK06 → s002M01TP03 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1138.1,1057.9 C 999.1,1057.9 891.1,1436.4 752.1,1436.4"><title>s002M01TK07 → s002M01TP06 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1138.7,1247.1 C 1000.6,1247.1 893.3,584.6 755.2,584.6"><title>s002M01TK09 → s002M01TP11 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.5,868.6 C 999.2,868.6 891.6,773.9 753.3,773.9"><title>s002M01TK12 → s002M01TP08 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1822.3,1625.7 C 1560.2,1625.7 1356.3,868.6 1094.1,868.6"><title>s002M01KH02 → s002M01THR05 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.1,773.9 C 1559.1,773.9 1355.4,1247.1 1093.3,1247.1"><title>s002M01KH03 → s002M01THR01 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1822.3,1341.8 C 1438.2,1341.8 1139.4,584.6 755.2,584.6"><title>s002M01KH04 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1822.3,1531.1 C 1438.7,1531.1 1140.2,490.0 756.5,490.0"><title>s002M01KH05 → s002M01TP07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,584.6 C 1559.2,584.6 1355.7,868.6 1094.1,868.6"><title>s002M01KH06 → s002M01THR05 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1822.1,1247.1 C 1438.0,1247.1 1139.3,584.6 755.2,584.6"><title>s002M01KH08 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,679.3 C 1559.1,679.3 1355.6,1057.9 1093.9,1057.9"><title>s002M01KH10 → s002M01THR13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.5,1057.9 C 1560.2,1057.9 1357.1,490.0 1095.8,490.0"><title>s002M01KH11 → s002M01THR11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.7,1152.5 C 1560.4,1152.5 1357.1,490.0 1095.8,490.0"><title>s002M01KH12 → s002M01THR11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.5,963.2 C 1559.5,963.2 1355.7,1152.5 1093.7,1152.5"><title>s002M01KH13 → s002M01THR10 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.6,490.0 C 1559.0,490.0 1355.6,868.6 1094.1,868.6"><title>s002M01KH14 → s002M01THR05 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.3,868.6 C 1560.1,868.6 1357.0,490.0 1095.8,490.0"><title>s002M01KH15 → s002M01THR11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1779.2,773.9 1480.2,490.0 1095.8,490.0"><title>s002M01KL01 → s002M01THR11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,584.6 C 1779.0,584.6 1480.1,490.0 1095.8,490.0"><title>s002M01KL02 → s002M01THR11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2165.0,963.2 C 1779.2,963.2 1479.2,1341.8 1093.3,1341.8"><title>s002M01KL03 → s002M01THR07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1778.5,679.3 1478.9,1152.5 1093.7,1152.5"><title>s002M01KL04 → s002M01THR10 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1778.1,490.0 1478.5,1247.1 1093.3,1247.1"><title>s002M01KL09 → s002M01THR01 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,868.6 C 1778.6,868.6 1479.2,868.6 1094.1,868.6"><title>s002M01KL10 → s002M01THR05 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.3,1247.1 C 1601.2,1247.1 1996.2,679.3 2504.1,679.3"><title>s002M01THR01 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.1,868.6 C 1725.3,868.6 2216.2,584.6 2847.3,584.6"><title>s002M01THR05 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.3,1341.8 C 1724.8,1341.8 2216.0,679.3 2847.5,679.3"><title>s002M01THR07 → s002M01ED02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.0,1436.4 C 1601.0,1436.4 1996.1,679.3 2504.1,679.3"><title>s002M01THR08 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.7,1152.5 C 1725.3,1152.5 2216.5,773.9 2848.1,773.9"><title>s002M01THR10 → s002M01ED03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1726.4,490.0 2216.9,679.3 2847.5,679.3"><title>s002M01THR11 → s002M01ED02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.4,584.6 C 1726.2,584.6 2216.7,679.3 2847.5,679.3"><title>s002M01THR12 → s002M01ED02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,1057.9 C 1725.0,1057.9 2215.8,490.0 2846.8,490.0"><title>s002M01THR13 → s002M01ED08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,963.2 C 1725.4,963.2 2216.6,773.9 2848.1,773.9"><title>s002M01THR14 → s002M01ED03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.2,679.3 C 1725.9,679.3 2216.5,584.6 2847.3,584.6"><title>s002M01THR15 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1506.4,1341.8 2093.0,584.6 2847.3,584.6"><title>s002M01TP01 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1507.1,868.6 2093.5,584.6 2847.3,584.6"><title>s002M01TP03 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.3,1247.1 C 1506.4,1247.1 2092.8,490.0 2846.8,490.0"><title>s002M01TP04 → s002M01ED08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1506.4,1436.4 2093.0,584.6 2847.3,584.6"><title>s002M01TP06 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1509.0,490.0 2094.3,490.0 2846.8,490.0"><title>s002M01TP07 → s002M01ED08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1507.1,773.9 2093.5,584.6 2847.3,584.6"><title>s002M01TP08 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.9,1531.1 C 1506.2,1531.1 2093.0,584.6 2847.3,584.6"><title>s002M01TP10 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1508.4,584.6 2094.2,584.6 2847.3,584.6"><title>s002M01TP11 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1507.7,679.3 2093.8,584.6 2847.3,584.6"><title>s002M01TP12 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1383.4,1057.9 1873.7,679.3 2504.1,679.3"><title>s002M01TP13 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1506.9,1152.5 2093.3,584.6 2847.3,584.6"><title>s002M01TP15 → s002M01ED01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.1,868.6 C 1848.0,868.6 2434.3,773.9 3188.2,773.9"><title>s002M01THR05 → s002M01LI08 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.3,1341.8 C 1848.4,1341.8 2435.6,1720.4 3190.7,1720.4"><title>s002M01THR07 → s002M01LI01 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1850.0,490.0 2436.5,1720.4 3190.7,1720.4"><title>s002M01THR11 → s002M01LI01 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.4,584.6 C 1849.5,584.6 2436.0,1531.1 3190.1,1531.1"><title>s002M01THR12 → s002M01LI03 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,1057.9 C 1846.9,1057.9 2432.6,679.3 3185.7,679.3"><title>s002M01THR13 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,963.2 C 1846.7,963.2 2432.3,490.0 3185.1,490.0"><title>s002M01THR14 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.2,679.3 C 1847.5,679.3 2432.7,490.0 3185.1,490.0"><title>s002M01THR15 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1628.2,1341.8 2309.6,679.3 3185.7,679.3"><title>s002M01TP01 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1630.2,868.6 2312.2,1057.9 3189.1,1057.9"><title>s002M01TP03 → s002M01LI02 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.3,1247.1 C 1628.3,1247.1 2309.7,679.3 3185.7,679.3"><title>s002M01TP04 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.7,1625.7 C 1627.7,1625.7 2309.1,490.0 3185.1,490.0"><title>s002M01TP05 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1628.1,1436.4 2309.5,584.6 3185.5,584.6"><title>s002M01TP06 → s002M01LI05 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1631.0,490.0 2311.0,584.6 3185.5,584.6"><title>s002M01TP07 → s002M01LI05 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1629.0,773.9 2310.0,679.3 3185.7,679.3"><title>s002M01TP08 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 1628.8,963.2 2309.8,584.6 3185.5,584.6"><title>s002M01TP09 → s002M01LI05 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1630.1,584.6 2310.6,584.6 3185.5,584.6"><title>s002M01TP11 → s002M01LI05 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1631.1,679.3 2313.2,1531.1 3190.1,1531.1"><title>s002M01TP12 → s002M01LI03 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1628.8,1057.9 2309.9,679.3 3185.7,679.3"><title>s002M01TP13 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1628.7,1152.5 2309.9,679.3 3185.7,679.3"><title>s002M01TP15 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.3,963.2 C 2066.0,963.2 2555.8,584.6 3185.5,584.6"><title>s002M01TK02 → s002M01LI05 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 2066.3,679.3 2555.9,584.6 3185.5,584.6"><title>s002M01TK04 → s002M01LI05 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 2067.5,490.0 2556.7,679.3 3185.7,679.3"><title>s002M01TK05 → s002M01LI04 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1437.4,584.6 C 2068.6,584.6 2559.5,1720.4 3190.7,1720.4"><title>s002M01TK06 → s002M01LI01 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1057.9 C 2065.8,1057.9 2555.8,679.3 3185.7,679.3"><title>s002M01TK07 → s002M01LI04 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1152.5 C 2065.6,1152.5 2555.4,490.0 3185.1,490.0"><title>s002M01TK10 → s002M01LI10 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 2066.0,773.9 2555.6,490.0 3185.1,490.0"><title>s002M01TK11 → s002M01LI10 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,868.6 C 2066.0,868.6 2555.6,490.0 3185.1,490.0"><title>s002M01TK12 → s002M01LI10 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 808.3,868.6 741.7,1341.8 796.7,1341.8"><title>s002M01TP03 → s002M01THR07 · cannot_fully_replace</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 808.3,773.9 739.6,584.6 794.6,584.6"><title>s002M01TP08 → s002M01THR12 · cannot_fully_replace</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 810.2,584.6 740.7,773.9 795.7,773.9"><title>s002M01TP11 → s002M01THR16 · cannot_fully_replace</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 809.2,679.3 739.2,490.0 794.2,490.0"><title>s002M01TP12 → s002M01THR11 · cannot_fully_replace</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1628.2,1341.8 2309.6,679.3 3185.7,679.3"><title>s002M01TP01 → s002M01LI04 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1630.7,868.6 2313.2,1720.4 3190.7,1720.4"><title>s002M01TP03 → s002M01LI01 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.3,1247.1 C 1628.3,1247.1 2309.7,679.3 3185.7,679.3"><title>s002M01TP04 → s002M01LI04 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.7,1625.7 C 1629.0,1625.7 2311.4,868.6 3188.7,868.6"><title>s002M01TP05 → s002M01LI11 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1628.0,1436.4 2309.2,490.0 3185.1,490.0"><title>s002M01TP06 → s002M01LI10 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1631.0,490.0 2311.0,584.6 3185.5,584.6"><title>s002M01TP07 → s002M01LI05 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1629.0,773.9 2310.0,679.3 3185.7,679.3"><title>s002M01TP08 → s002M01LI04 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 1628.8,963.2 2309.8,584.6 3185.5,584.6"><title>s002M01TP09 → s002M01LI05 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.9,1531.1 C 1627.9,1531.1 2309.2,490.0 3185.1,490.0"><title>s002M01TP10 → s002M01LI10 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1630.1,584.6 2310.6,584.6 3185.5,584.6"><title>s002M01TP11 → s002M01LI05 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1629.5,679.3 2310.3,679.3 3185.7,679.3"><title>s002M01TP12 → s002M01LI04 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1628.7,1057.9 2309.8,584.6 3185.5,584.6"><title>s002M01TP13 → s002M01LI05 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.3,1720.4 C 1627.7,1720.4 2309.3,679.3 3185.7,679.3"><title>s002M01TP16 → s002M01LI04 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.1,868.6 C 1149.1,868.6 1082.5,868.6 1137.5,868.6"><title>s002M01THR05 → s002M01TK12 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.4,584.6 C 1233.4,584.6 1340.7,773.9 1478.7,773.9"><title>s002M01THR12 → s002M01EK06 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.2,679.3 C 1231.2,679.3 1337.0,490.0 1473.0,490.0"><title>s002M01THR15 → s002M01EK02 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.3,773.9 C 1232.7,773.9 1340.3,773.9 1478.7,773.9"><title>s002M01THR16 → s002M01EK06 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1014.4,868.6 1217.6,773.9 1478.7,773.9"><title>s002M01TP03 → s002M01EK06 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1014.5,490.0 1215.1,490.0 1473.0,490.0"><title>s002M01TP07 → s002M01EK02 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1012.4,773.9 1213.9,490.0 1473.0,490.0"><title>s002M01TP08 → s002M01EK02 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 891.5,963.2 999.1,868.6 1137.5,868.6"><title>s002M01TP09 → s002M01TK12 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1013.6,584.6 1214.6,490.0 1473.0,490.0"><title>s002M01TP11 → s002M01EK02 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1014.9,679.3 1217.8,679.3 1478.6,679.3"><title>s002M01TP12 → s002M01EK07 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1012.2,1057.9 1213.8,490.0 1473.0,490.0"><title>s002M01TP13 → s002M01EK02 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1014.1,1152.5 1217.3,679.3 1478.6,679.3"><title>s002M01TP15 → s002M01EK07 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.7,868.6 C 1423.7,868.6 1493.5,490.0 1438.5,490.0"><title>s002M01EK01 → s002M01TK05 · translate_into</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1418.0,490.0 1492.4,584.6 1437.4,584.6"><title>s002M01EK02 → s002M01TK06 · translate_into</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1420.5,584.6 1493.5,490.0 1438.5,490.0"><title>s002M01EK03 → s002M01TK05 · translate_into</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.0,963.2 C 1424.0,963.2 1491.7,679.3 1436.7,679.3"><title>s002M01EK05 → s002M01TK04 · translate_into</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.7,868.6 C 1368.7,868.6 1363.0,490.0 1473.0,490.0"><title>s002M01EK01 → s002M01EK02 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 1785.0,490.0 C 1859.0,490.0 1856.5,584.6 1782.5,584.6"><title>s002M01EK02 → s002M01EK03 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1365.5,584.6 1369.0,963.2 1479.0,963.2"><title>s002M01EK03 → s002M01EK05 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 1779.0,963.2 C 1877.0,963.2 1877.4,679.3 1779.4,679.3"><title>s002M01EK05 → s002M01EK07 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 1575.0,679.3 1682.5,584.6 1820.8,584.6"><title>s002M01TK04 → s002M01KH06 · be_documented_partially_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 1576.1,490.0 1683.2,679.3 1820.8,679.3"><title>s002M01TK05 → s002M01KH10 · be_documented_partially_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 1574.9,773.9 1682.5,679.3 1820.8,679.3"><title>s002M01TK11 → s002M01KH10 · be_documented_partially_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.3,963.2 C 1574.9,963.2 1682.6,773.9 1821.1,773.9"><title>s002M01TK02 → s002M01KH03 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 1575.1,679.3 1682.7,773.9 1821.1,773.9"><title>s002M01TK04 → s002M01KH03 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 1576.7,490.0 1684.2,1625.7 1822.3,1625.7"><title>s002M01TK05 → s002M01KH02 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1437.4,584.6 C 1576.0,584.6 1683.8,1625.7 1822.3,1625.7"><title>s002M01TK06 → s002M01KH02 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1057.9 C 1574.6,1057.9 1682.5,773.9 1821.1,773.9"><title>s002M01TK07 → s002M01KH03 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.3,1247.1 C 1574.1,1247.1 1682.1,584.6 1820.8,584.6"><title>s002M01TK09 → s002M01KH06 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1152.5 C 1574.6,1152.5 1682.5,773.9 1821.1,773.9"><title>s002M01TK10 → s002M01KH03 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 1575.0,773.9 1682.7,773.9 1821.1,773.9"><title>s002M01TK11 → s002M01KH03 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,868.6 C 1575.0,868.6 1682.7,773.9 1821.1,773.9"><title>s002M01TK12 → s002M01KH03 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 850.1,1341.8 849.7,1625.7 751.7,1625.7"><title>s002M01TP01 → s002M01TP05 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 452.7,868.6 C 342.7,868.6 343.7,1247.1 453.7,1247.1"><title>s002M01TP03 → s002M01TP04 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 449.5,490.0 C 267.5,490.0 271.9,1436.4 453.9,1436.4"><title>s002M01TP07 → s002M01TP06 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 875.3,773.9 874.3,1247.1 752.3,1247.1"><title>s002M01TP08 → s002M01TP04 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 452.8,963.2 C 342.8,963.2 340.8,584.6 450.8,584.6"><title>s002M01TP09 → s002M01TP11 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 454.1,1531.1 C 272.1,1531.1 268.8,584.6 450.8,584.6"><title>s002M01TP10 → s002M01TP11 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 877.2,584.6 875.0,1057.9 753.0,1057.9"><title>s002M01TP11 → s002M01TP13 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 451.8,679.3 C 341.8,679.3 343.0,1057.9 453.0,1057.9"><title>s002M01TP12 → s002M01TP13 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.3,1720.4 C 873.3,1720.4 874.3,1247.1 752.3,1247.1"><title>s002M01TP16 → s002M01TP04 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 808.3,868.6 739.2,490.0 794.2,490.0"><title>s002M01TP03 → s002M01THR11 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 808.3,773.9 741.1,1057.9 796.1,1057.9"><title>s002M01TP08 → s002M01THR13 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 810.2,584.6 741.1,963.2 796.1,963.2"><title>s002M01TP11 → s002M01THR14 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1013.8,1341.8 1217.3,963.2 1479.0,963.2"><title>s002M01TP01 → s002M01EK05 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1012.4,868.6 1213.9,490.0 1473.0,490.0"><title>s002M01TP03 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.3,1247.1 C 1013.8,1247.1 1217.1,679.3 1478.6,679.3"><title>s002M01TP04 → s002M01EK07 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1011.6,1436.4 1213.5,490.0 1473.0,490.0"><title>s002M01TP06 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1014.5,490.0 1215.1,490.0 1473.0,490.0"><title>s002M01TP07 → s002M01EK02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1014.4,773.9 1217.5,679.3 1478.6,679.3"><title>s002M01TP08 → s002M01EK07 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 452.8,963.2 C 397.8,963.2 466.9,679.3 411.9,679.3"><title>s002M01TP09 → s002M01TE04 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1014.5,584.6 1216.2,584.6 1475.5,584.6"><title>s002M01TP11 → s002M01EK03 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1013.8,679.3 1215.8,584.6 1475.5,584.6"><title>s002M01TP12 → s002M01EK03 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 454.7,1720.4 C 399.7,1720.4 468.6,584.6 413.6,584.6"><title>s002M01TP16 → s002M01TE02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 1698.3,679.3 1901.7,490.0 2163.3,490.0"><title>s002M01TK04 → s002M01KL09 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 1699.4,490.0 1902.4,584.6 2163.3,584.6"><title>s002M01TK05 → s002M01KL02 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1437.4,584.6 C 1698.8,584.6 1902.0,584.6 2163.3,584.6"><title>s002M01TK06 → s002M01KL02 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1057.9 C 1698.4,1057.9 1902.6,963.2 2165.0,963.2"><title>s002M01TK07 → s002M01KL03 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,868.6 C 1698.2,868.6 1901.7,490.0 2163.3,490.0"><title>s002M01TK12 → s002M01KL09 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1336.3,490.0 1230.0,1341.8 1093.3,1341.8"><title>s002M01EK02 → s002M01THR07 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1338.8,584.6 1232.5,490.0 1095.8,490.0"><title>s002M01EK03 → s002M01THR11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.7,1057.9 C 1218.1,1057.9 1014.7,963.2 753.2,963.2"><title>s002M01EK04 → s002M01TP09 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.0,963.2 C 1217.7,963.2 1014.5,868.6 753.3,868.6"><title>s002M01EK05 → s002M01TP03 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.6,679.3 C 1218.2,679.3 1015.6,584.6 755.2,584.6"><title>s002M01EK07 → s002M01TP11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1480.3,1152.5 C 1219.3,1152.5 1016.3,584.6 755.2,584.6"><title>s002M01EK08 → s002M01TP11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 1082.3,679.3 1148.3,1341.8 1093.3,1341.8"><title>s002M01TK04 → s002M01THR07 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 1080.5,490.0 1150.8,490.0 1095.8,490.0"><title>s002M01TK05 → s002M01THR11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1136.6,584.6 C 1081.6,584.6 1150.8,490.0 1095.8,490.0"><title>s002M01TK06 → s002M01THR11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1138.1,1057.9 C 999.6,1057.9 891.8,868.6 753.3,868.6"><title>s002M01TK07 → s002M01TP03 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 1000.2,679.3 893.6,490.0 756.5,490.0"><title>s002M01TK04 → s002M01TP07 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 997.5,490.0 890.2,1436.4 752.1,1436.4"><title>s002M01TK05 → s002M01TP06 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1136.6,584.6 C 998.2,584.6 890.5,1436.4 752.1,1436.4"><title>s002M01TK06 → s002M01TP06 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1138.1,1057.9 C 999.6,1057.9 891.8,773.9 753.3,773.9"><title>s002M01TK07 → s002M01TP08 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1822.3,1625.7 C 1560.3,1625.7 1356.4,773.9 1094.3,773.9"><title>s002M01KH02 → s002M01THR16 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.1,773.9 C 1560.0,773.9 1356.9,490.0 1095.8,490.0"><title>s002M01KH03 → s002M01THR11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1822.3,1531.1 C 1437.4,1531.1 1138.1,963.2 753.2,963.2"><title>s002M01KH05 → s002M01TP09 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,584.6 C 1558.9,584.6 1355.2,1341.8 1093.3,1341.8"><title>s002M01KH06 → s002M01THR07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1822.3,1436.4 C 1437.1,1436.4 1137.4,1341.8 752.1,1341.8"><title>s002M01KH07 → s002M01TP01 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1822.1,1247.1 C 1437.6,1247.1 1138.6,679.3 754.2,679.3"><title>s002M01KH08 → s002M01TP12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,679.3 C 1559.6,679.3 1356.4,679.3 1095.2,679.3"><title>s002M01KH10 → s002M01THR15 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.5,1057.9 C 1560.1,1057.9 1356.8,584.6 1095.4,584.6"><title>s002M01KH11 → s002M01THR12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.7,1152.5 C 1559.7,1152.5 1355.9,963.2 1093.9,963.2"><title>s002M01KH12 → s002M01THR14 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.5,963.2 C 1438.1,963.2 1139.9,490.0 756.5,490.0"><title>s002M01KH13 → s002M01TP07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.6,490.0 C 1559.1,490.0 1355.8,773.9 1094.3,773.9"><title>s002M01KH14 → s002M01THR16 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.3,868.6 C 1560.0,868.6 1356.8,584.6 1095.4,584.6"><title>s002M01KH15 → s002M01THR12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1779.1,773.9 1480.0,584.6 1095.4,584.6"><title>s002M01KL01 → s002M01THR12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,584.6 C 1778.9,584.6 1479.9,584.6 1095.4,584.6"><title>s002M01KL02 → s002M01THR12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2165.0,963.2 C 1656.8,963.2 1261.5,868.6 753.3,868.6"><title>s002M01KL03 → s002M01TP03 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1779.2,679.3 1480.2,490.0 1095.8,490.0"><title>s002M01KL04 → s002M01THR11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1778.0,490.0 1478.3,1436.4 1093.0,1436.4"><title>s002M01KL09 → s002M01THR08 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,868.6 C 1779.1,868.6 1480.0,584.6 1095.4,584.6"><title>s002M01KL10 → s002M01THR12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.3,1247.1 C 1601.2,1247.1 1996.2,584.6 2504.1,584.6"><title>s002M01THR01 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.1,868.6 C 1725.8,868.6 2217.0,868.6 2848.7,868.6"><title>s002M01THR05 → s002M01ED04 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.0,1436.4 C 1601.0,1436.4 1996.1,584.6 2504.1,584.6"><title>s002M01THR08 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.7,1152.5 C 1601.4,1152.5 1996.3,679.3 2504.1,679.3"><title>s002M01THR10 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1726.6,490.0 2217.3,773.9 2848.1,773.9"><title>s002M01THR11 → s002M01ED03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.4,584.6 C 1725.9,584.6 2216.3,490.0 2846.8,490.0"><title>s002M01THR12 → s002M01ED08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,1057.9 C 1725.8,1057.9 2217.2,1152.5 2849.0,1152.5"><title>s002M01THR13 → s002M01ED09 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,963.2 C 1601.6,963.2 1996.4,679.3 2504.1,679.3"><title>s002M01THR14 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.2,679.3 C 1726.2,679.3 2217.0,773.9 2848.1,773.9"><title>s002M01THR15 → s002M01ED03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1506.5,1341.8 2093.2,679.3 2847.5,679.3"><title>s002M01TP01 → s002M01ED02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1507.0,868.6 2093.2,490.0 2846.8,490.0"><title>s002M01TP03 → s002M01ED08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.3,1247.1 C 1383.0,1247.1 1873.4,679.3 2504.1,679.3"><title>s002M01TP04 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1383.1,1436.4 1873.9,773.9 2504.8,773.9"><title>s002M01TP06 → s002M01OD01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1385.9,490.0 1875.4,773.9 2504.8,773.9"><title>s002M01TP07 → s002M01OD01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1383.9,773.9 1874.4,963.2 2505.0,963.2"><title>s002M01TP08 → s002M01OD02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.9,1531.1 C 1506.5,1531.1 2093.5,773.9 2848.1,773.9"><title>s002M01TP10 → s002M01ED03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1508.7,584.6 2094.7,773.9 2848.1,773.9"><title>s002M01TP11 → s002M01ED03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1508.3,679.3 2094.9,1057.9 2849.0,1057.9"><title>s002M01TP12 → s002M01ED05 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1384.2,1057.9 1875.1,1057.9 2506.3,1057.9"><title>s002M01TP13 → s002M01OD04 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1507.5,1152.5 2094.4,963.2 2849.0,963.2"><title>s002M01TP15 → s002M01ED06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.1,868.6 C 1848.4,868.6 2435.0,1152.5 3189.3,1152.5"><title>s002M01THR05 → s002M01LI09 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.3,1341.8 C 1848.2,1341.8 2435.3,1531.1 3190.1,1531.1"><title>s002M01THR07 → s002M01LI03 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1849.8,490.0 2436.2,1531.1 3190.1,1531.1"><title>s002M01THR11 → s002M01LI03 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.4,584.6 C 1847.9,584.6 2433.2,679.3 3185.7,679.3"><title>s002M01THR12 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,1057.9 C 1848.1,1057.9 2434.7,963.2 3188.8,963.2"><title>s002M01THR13 → s002M01LI06 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1628.0,1341.8 2309.2,490.0 3185.1,490.0"><title>s002M01TP01 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1629.0,868.6 2310.0,679.3 3185.7,679.3"><title>s002M01TP03 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.3,1247.1 C 1628.3,1247.1 2309.5,584.6 3185.5,584.6"><title>s002M01TP04 → s002M01LI05 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1629.3,1436.4 2311.6,963.2 3188.8,963.2"><title>s002M01TP06 → s002M01LI06 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1632.2,490.0 2313.2,963.2 3188.8,963.2"><title>s002M01TP07 → s002M01LI06 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1628.9,773.9 2309.9,584.6 3185.5,584.6"><title>s002M01TP08 → s002M01LI05 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 1630.2,963.2 2312.3,1152.5 3189.3,1152.5"><title>s002M01TP09 → s002M01LI09 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1630.0,584.6 2310.4,490.0 3185.1,490.0"><title>s002M01TP11 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1629.5,679.3 2310.3,679.3 3185.7,679.3"><title>s002M01TP12 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1630.1,1057.9 2312.2,1152.5 3189.3,1152.5"><title>s002M01TP13 → s002M01LI09 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1628.6,1152.5 2309.7,584.6 3185.5,584.6"><title>s002M01TP15 → s002M01LI05 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 2066.1,679.3 2555.7,490.0 3185.1,490.0"><title>s002M01TK04 → s002M01LI10 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 2067.4,490.0 2556.5,584.6 3185.5,584.6"><title>s002M01TK05 → s002M01LI05 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1437.4,584.6 C 2066.8,584.6 2556.3,679.3 3185.7,679.3"><title>s002M01TK06 → s002M01LI04 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1057.9 C 2065.7,1057.9 2555.6,584.6 3185.5,584.6"><title>s002M01TK07 → s002M01LI05 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 808.3,868.6 741.1,1057.9 796.1,1057.9"><title>s002M01TP03 → s002M01THR13 · cannot_fully_replace</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 808.3,773.9 739.8,679.3 794.8,679.3"><title>s002M01TP08 → s002M01THR15 · cannot_fully_replace</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1628.0,1341.8 2309.2,490.0 3185.1,490.0"><title>s002M01TP01 → s002M01LI10 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1630.5,868.6 2312.8,1531.1 3190.1,1531.1"><title>s002M01TP03 → s002M01LI03 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1629.3,1436.4 2311.5,868.6 3188.7,868.6"><title>s002M01TP06 → s002M01LI11 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1632.2,490.0 2313.2,963.2 3188.8,963.2"><title>s002M01TP07 → s002M01LI06 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1628.9,773.9 2309.9,584.6 3185.5,584.6"><title>s002M01TP08 → s002M01LI05 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 1629.8,963.2 2311.6,773.9 3188.2,773.9"><title>s002M01TP09 → s002M01LI08 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1631.1,584.6 2312.3,773.9 3188.2,773.9"><title>s002M01TP11 → s002M01LI08 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1630.4,679.3 2311.9,773.9 3188.2,773.9"><title>s002M01TP12 → s002M01LI08 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1628.6,1057.9 2309.6,490.0 3185.1,490.0"><title>s002M01TP13 → s002M01LI10 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.3,1720.4 C 1628.8,1720.4 2311.3,963.2 3188.8,963.2"><title>s002M01TP16 → s002M01LI06 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.2,679.3 C 1232.1,679.3 1338.6,584.6 1475.5,584.6"><title>s002M01THR15 → s002M01EK03 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 890.9,868.6 997.9,490.0 1135.5,490.0"><title>s002M01TP03 → s002M01TK05 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1015.4,490.0 1216.6,584.6 1475.5,584.6"><title>s002M01TP07 → s002M01EK03 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1014.8,773.9 1218.2,1057.9 1479.7,1057.9"><title>s002M01TP08 → s002M01EK04 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1015.6,584.6 1218.2,679.3 1478.6,679.3"><title>s002M01TP11 → s002M01EK07 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 891.5,679.3 998.2,490.0 1135.5,490.0"><title>s002M01TP12 → s002M01TK05 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1014.3,1057.9 1217.5,773.9 1478.7,773.9"><title>s002M01TP13 → s002M01EK06 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1418.0,490.0 1491.5,868.6 1436.5,868.6"><title>s002M01EK02 → s002M01TK12 · translate_into</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1420.5,584.6 1491.5,868.6 1436.5,868.6"><title>s002M01EK03 → s002M01TK12 · translate_into</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.0,963.2 C 1424.0,963.2 1492.4,584.6 1437.4,584.6"><title>s002M01EK05 → s002M01TK06 · translate_into</title></path>
+<path class="edge" stroke-width="1.15" d="M 1779.3,868.6 C 1877.3,868.6 1880.5,584.6 1782.5,584.6"><title>s002M01EK01 → s002M01EK03 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1339.0,490.0 1345.7,1057.9 1479.7,1057.9"><title>s002M01EK02 → s002M01EK04 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.3,963.2 C 1574.8,963.2 1682.4,584.6 1820.8,584.6"><title>s002M01TK02 → s002M01KH06 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 1575.0,679.3 1682.5,584.6 1820.8,584.6"><title>s002M01TK04 → s002M01KH06 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 1576.2,490.0 1683.4,773.9 1821.1,773.9"><title>s002M01TK05 → s002M01KH03 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1437.4,584.6 C 1575.7,584.6 1683.2,1057.9 1821.5,1057.9"><title>s002M01TK06 → s002M01KH11 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1057.9 C 1574.5,1057.9 1682.3,584.6 1820.8,584.6"><title>s002M01TK07 → s002M01KH06 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.3,1247.1 C 1574.1,1247.1 1682.1,679.3 1820.8,679.3"><title>s002M01TK09 → s002M01KH10 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1152.5 C 1575.0,1152.5 1683.2,1436.4 1822.3,1436.4"><title>s002M01TK10 → s002M01KH07 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 1574.9,773.9 1682.5,584.6 1820.8,584.6"><title>s002M01TK11 → s002M01KH06 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,868.6 C 1575.4,868.6 1683.5,1531.1 1822.3,1531.1"><title>s002M01TK12 → s002M01KH05 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 922.1,1341.8 926.5,490.0 756.5,490.0"><title>s002M01TP01 → s002M01TP07 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 923.3,868.6 921.3,1720.4 751.3,1720.4"><title>s002M01TP03 → s002M01TP16 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.7,1625.7 C 897.7,1625.7 899.2,963.2 753.2,963.2"><title>s002M01TP05 → s002M01TP09 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 851.3,773.9 854.5,490.0 756.5,490.0"><title>s002M01TP08 → s002M01TP07 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 808.3,868.6 739.6,584.6 794.6,584.6"><title>s002M01TP03 → s002M01THR12 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 808.3,773.9 739.8,679.3 794.8,679.3"><title>s002M01TP08 → s002M01THR15 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.9,1341.8 C 398.9,1341.8 468.9,490.0 413.9,490.0"><title>s002M01TP01 → s002M01TE01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1013.3,868.6 1215.5,584.6 1475.5,584.6"><title>s002M01TP03 → s002M01EK03 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.7,1247.1 C 398.7,1247.1 468.6,584.6 413.6,584.6"><title>s002M01TP04 → s002M01TE02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.9,1436.4 C 398.9,1436.4 468.9,490.0 413.9,490.0"><title>s002M01TP06 → s002M01TE01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1015.4,490.0 1216.6,584.6 1475.5,584.6"><title>s002M01TP07 → s002M01EK03 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 452.8,963.2 C 397.8,963.2 464.7,963.2 409.7,963.2"><title>s002M01TP09 → s002M01TE08 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1015.7,584.6 1218.2,773.9 1478.7,773.9"><title>s002M01TP11 → s002M01EK06 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1015.1,679.3 1218.0,963.2 1479.0,963.2"><title>s002M01TP12 → s002M01EK05 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 454.7,1720.4 C 399.7,1720.4 466.9,773.9 411.9,773.9"><title>s002M01TP16 → s002M01TE05 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 1699.4,490.0 1902.4,490.0 2163.3,490.0"><title>s002M01TK05 → s002M01KL09 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1437.4,584.6 C 1698.8,584.6 1902.0,490.0 2163.3,490.0"><title>s002M01TK06 → s002M01KL09 · be_absorbed_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.7,868.6 C 1217.6,868.6 1014.4,868.6 753.3,868.6"><title>s002M01EK01 → s002M01TP03 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1337.1,490.0 1231.4,584.6 1095.4,584.6"><title>s002M01EK02 → s002M01THR12 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1338.7,584.6 1232.2,584.6 1095.4,584.6"><title>s002M01EK03 → s002M01THR12 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.0,963.2 C 1218.9,963.2 1016.6,490.0 756.5,490.0"><title>s002M01EK05 → s002M01TP07 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.6,679.3 C 1217.8,679.3 1014.9,679.3 754.2,679.3"><title>s002M01EK07 → s002M01TP12 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1480.3,1152.5 C 1218.5,1152.5 1014.8,1152.5 752.9,1152.5"><title>s002M01EK08 → s002M01TP15 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 1082.3,679.3 1150.8,490.0 1095.8,490.0"><title>s002M01TK04 → s002M01THR11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 1080.5,490.0 1150.4,584.6 1095.4,584.6"><title>s002M01TK05 → s002M01THR12 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1136.6,584.6 C 1081.6,584.6 1150.2,679.3 1095.2,679.3"><title>s002M01TK06 → s002M01THR15 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.5,868.6 C 999.9,868.6 892.8,584.6 755.2,584.6"><title>s002M01TK12 → s002M01TP11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 998.6,679.3 890.6,1531.1 751.9,1531.1"><title>s002M01TK04 → s002M01TP10 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 999.1,490.0 893.0,490.0 756.5,490.0"><title>s002M01TK05 → s002M01TP07 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1136.6,584.6 C 998.6,584.6 891.3,773.9 753.3,773.9"><title>s002M01TK06 → s002M01TP08 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.1,773.9 C 1559.9,773.9 1356.7,584.6 1095.4,584.6"><title>s002M01KH03 → s002M01THR12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,584.6 C 1559.6,584.6 1356.4,679.3 1095.2,679.3"><title>s002M01KH06 → s002M01THR15 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1822.1,1247.1 C 1437.2,1247.1 1137.9,1057.9 753.0,1057.9"><title>s002M01KH08 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.5,1057.9 C 1559.6,1057.9 1355.8,1057.9 1093.9,1057.9"><title>s002M01KH11 → s002M01THR13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.5,963.2 C 1437.6,963.2 1139.1,584.6 755.2,584.6"><title>s002M01KH13 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1778.6,773.9 1479.0,1057.9 1093.9,1057.9"><title>s002M01KL01 → s002M01THR13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,584.6 C 1778.3,584.6 1478.9,1057.9 1093.9,1057.9"><title>s002M01KL02 → s002M01THR13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1778.6,679.3 1479.0,1057.9 1093.9,1057.9"><title>s002M01KL04 → s002M01THR13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1778.2,490.0 1478.7,1152.5 1093.7,1152.5"><title>s002M01KL09 → s002M01THR10 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,868.6 C 1779.0,868.6 1479.8,679.3 1095.2,679.3"><title>s002M01KL10 → s002M01THR15 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.1,868.6 C 1601.7,868.6 1996.4,490.0 2504.0,490.0"><title>s002M01THR05 → s002M01OD05 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.7,1152.5 C 1601.4,1152.5 1996.3,584.6 2504.1,584.6"><title>s002M01THR10 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1726.2,490.0 2216.5,490.0 2846.8,490.0"><title>s002M01THR11 → s002M01ED08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.4,584.6 C 1602.5,584.6 1997.0,679.3 2504.1,679.3"><title>s002M01THR12 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,1057.9 C 1601.6,1057.9 1996.4,679.3 2504.1,679.3"><title>s002M01THR13 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,963.2 C 1601.6,963.2 1996.4,584.6 2504.1,584.6"><title>s002M01THR14 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.2,679.3 C 1602.3,679.3 1996.8,490.0 2504.0,490.0"><title>s002M01THR15 → s002M01OD05 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1383.2,1341.8 1874.0,963.2 2505.0,963.2"><title>s002M01TP01 → s002M01OD02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1386.0,490.0 1875.5,963.2 2505.0,963.2"><title>s002M01TP07 → s002M01OD02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1383.6,773.9 1873.8,679.3 2504.1,679.3"><title>s002M01TP08 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.9,1531.1 C 1383.0,1531.1 1873.9,963.2 2505.0,963.2"><title>s002M01TP10 → s002M01OD02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1507.5,679.3 2093.5,490.0 2846.8,490.0"><title>s002M01TP12 → s002M01ED08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1383.4,1057.9 1873.7,584.6 2504.1,584.6"><title>s002M01TP13 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1383.3,1152.5 1873.6,679.3 2504.1,679.3"><title>s002M01TP15 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.1,868.6 C 1846.9,868.6 2432.4,490.0 3185.1,490.0"><title>s002M01THR05 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.3,1341.8 C 1846.4,1341.8 2432.1,490.0 3185.1,490.0"><title>s002M01THR07 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1848.2,490.0 2433.3,679.3 3185.7,679.3"><title>s002M01THR11 → s002M01LI04 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.4,584.6 C 1848.8,584.6 2434.8,773.9 3188.2,773.9"><title>s002M01THR12 → s002M01LI08 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,1057.9 C 1848.5,1057.9 2435.3,1436.4 3189.9,1436.4"><title>s002M01THR13 → s002M01LI07 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1628.9,868.6 2309.9,584.6 3185.5,584.6"><title>s002M01TP03 → s002M01LI05 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.3,1247.1 C 1629.5,1247.1 2311.7,963.2 3188.8,963.2"><title>s002M01TP04 → s002M01LI06 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1628.0,1436.4 2309.2,490.0 3185.1,490.0"><title>s002M01TP06 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1631.9,490.0 2312.8,773.9 3188.2,773.9"><title>s002M01TP07 → s002M01LI08 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1630.4,773.9 2312.6,1341.8 3189.7,1341.8"><title>s002M01TP08 → s002M01LI13 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 1628.7,963.2 2309.6,490.0 3185.1,490.0"><title>s002M01TP09 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1629.3,679.3 2310.0,490.0 3185.1,490.0"><title>s002M01TP12 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1630.1,1057.9 2312.4,1247.1 3189.5,1247.1"><title>s002M01TP13 → s002M01LI14 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1630.2,1152.5 2312.5,1436.4 3189.9,1436.4"><title>s002M01TP15 → s002M01LI07 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 2068.6,490.0 2558.7,963.2 3188.8,963.2"><title>s002M01TK05 → s002M01LI06 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1437.4,584.6 C 2066.6,584.6 2556.0,490.0 3185.1,490.0"><title>s002M01TK06 → s002M01LI10 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1057.9 C 2067.0,1057.9 2557.8,963.2 3188.8,963.2"><title>s002M01TK07 → s002M01LI06 · be_difficult_to_capture_due_to</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1629.3,1341.8 2311.5,868.6 3188.7,868.6"><title>s002M01TP01 → s002M01LI11 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1629.0,868.6 2310.0,679.3 3185.7,679.3"><title>s002M01TP03 → s002M01LI04 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1630.8,490.0 2310.8,490.0 3185.1,490.0"><title>s002M01TP07 → s002M01LI10 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1629.9,773.9 2311.6,773.9 3188.2,773.9"><title>s002M01TP08 → s002M01LI08 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 1630.2,963.2 2312.3,1152.5 3189.3,1152.5"><title>s002M01TP09 → s002M01LI09 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1630.0,584.6 2310.4,490.0 3185.1,490.0"><title>s002M01TP11 → s002M01LI10 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.3,1720.4 C 1629.2,1720.4 2312.0,1436.4 3189.9,1436.4"><title>s002M01TP16 → s002M01LI07 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 891.3,868.6 998.6,584.6 1136.6,584.6"><title>s002M01TP03 → s002M01TK06 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1016.6,490.0 1218.9,963.2 1479.0,963.2"><title>s002M01TP07 → s002M01EK05 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 891.3,773.9 998.6,584.6 1136.6,584.6"><title>s002M01TP08 → s002M01TK06 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 892.4,679.3 999.9,1152.5 1138.1,1152.5"><title>s002M01TP12 → s002M01TK10 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1014.2,1057.9 1217.4,679.3 1478.6,679.3"><title>s002M01TP13 → s002M01EK07 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.0,963.2 C 1424.0,963.2 1491.5,868.6 1436.5,868.6"><title>s002M01EK05 → s002M01TK12 · translate_into</title></path>
+<path class="edge" stroke-width="1.15" d="M 1779.3,868.6 C 1853.3,868.6 1853.0,963.2 1779.0,963.2"><title>s002M01EK01 → s002M01EK05 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.3,963.2 C 1574.9,963.2 1682.7,868.6 1821.3,868.6"><title>s002M01TK02 → s002M01KH15 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 1575.4,679.3 1683.4,1247.1 1822.1,1247.1"><title>s002M01TK04 → s002M01KH08 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 1576.6,490.0 1684.0,1247.1 1822.1,1247.1"><title>s002M01TK05 → s002M01KH08 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1437.4,584.6 C 1575.6,584.6 1683.1,868.6 1821.3,868.6"><title>s002M01TK06 → s002M01KH15 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1152.5 C 1574.9,1152.5 1683.1,1247.1 1822.1,1247.1"><title>s002M01TK10 → s002M01KH08 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 1575.3,773.9 1683.3,1247.1 1822.1,1247.1"><title>s002M01TK11 → s002M01KH08 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,868.6 C 1574.8,868.6 1682.3,490.0 1820.6,490.0"><title>s002M01TK12 → s002M01KH14 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 878.5,490.0 875.2,963.2 753.2,963.2"><title>s002M01TP07 → s002M01TP09 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 808.3,868.6 741.1,1057.9 796.1,1057.9"><title>s002M01TP03 → s002M01THR13 · complement</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.9,1341.8 C 398.9,1341.8 465.1,868.6 410.1,868.6"><title>s002M01TP01 → s002M01TE03 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.7,1247.1 C 398.7,1247.1 466.9,773.9 411.9,773.9"><title>s002M01TP04 → s002M01TE05 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.9,1436.4 C 398.9,1436.4 468.6,584.6 413.6,584.6"><title>s002M01TP06 → s002M01TE02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1016.6,490.0 1218.9,963.2 1479.0,963.2"><title>s002M01TP07 → s002M01EK05 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 452.7,773.9 C 397.7,773.9 468.9,490.0 413.9,490.0"><title>s002M01TP08 → s002M01TE01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1016.3,584.6 1219.3,1152.5 1480.3,1152.5"><title>s002M01TP11 → s002M01EK08 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 451.8,679.3 C 396.8,679.3 465.1,868.6 410.1,868.6"><title>s002M01TP12 → s002M01TE03 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 454.7,1720.4 C 399.7,1720.4 464.0,1152.5 409.0,1152.5"><title>s002M01TP16 → s002M01TE07 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.7,868.6 C 1217.4,868.6 1014.2,1152.5 752.9,1152.5"><title>s002M01EK01 → s002M01TP15 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1336.5,490.0 1230.4,963.2 1093.9,963.2"><title>s002M01EK02 → s002M01THR14 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1338.6,584.6 1232.1,679.3 1095.2,679.3"><title>s002M01EK03 → s002M01THR15 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.0,963.2 C 1218.0,963.2 1015.1,679.3 754.2,679.3"><title>s002M01EK05 → s002M01TP12 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.6,679.3 C 1217.4,679.3 1014.2,1057.9 753.0,1057.9"><title>s002M01EK07 → s002M01TP13 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 1082.3,679.3 1148.9,963.2 1093.9,963.2"><title>s002M01TK04 → s002M01THR14 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 1080.5,490.0 1148.9,1057.9 1093.9,1057.9"><title>s002M01TK05 → s002M01THR13 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1136.6,584.6 C 997.9,584.6 890.0,1720.4 751.3,1720.4"><title>s002M01TK06 → s002M01TP16 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 999.8,679.3 892.8,584.6 755.2,584.6"><title>s002M01TK04 → s002M01TP11 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 997.4,490.0 890.0,1531.1 751.9,1531.1"><title>s002M01TK05 → s002M01TP10 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.1,773.9 C 1559.3,773.9 1355.7,963.2 1093.9,963.2"><title>s002M01KH03 → s002M01THR14 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,584.6 C 1559.3,584.6 1355.9,773.9 1094.3,773.9"><title>s002M01KH06 → s002M01THR16 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,679.3 C 1437.7,679.3 1139.7,490.0 756.5,490.0"><title>s002M01KH10 → s002M01TP07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.5,1057.9 C 1436.9,1057.9 1137.8,868.6 753.3,868.6"><title>s002M01KH11 → s002M01TP03 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.7,1152.5 C 1437.7,1152.5 1139.1,584.6 755.2,584.6"><title>s002M01KH12 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.6,490.0 C 1435.9,490.0 1136.8,1341.8 752.1,1341.8"><title>s002M01KH14 → s002M01TP01 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.3,868.6 C 1436.4,868.6 1137.0,1436.4 752.1,1436.4"><title>s002M01KH15 → s002M01TP06 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1778.7,773.9 1479.3,773.9 1094.3,773.9"><title>s002M01KL01 → s002M01THR16 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1779.0,679.3 1479.8,679.3 1095.2,679.3"><title>s002M01KL04 → s002M01THR15 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1779.0,490.0 1480.1,490.0 1095.8,490.0"><title>s002M01KL09 → s002M01THR11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,868.6 C 1778.7,868.6 1479.3,773.9 1094.3,773.9"><title>s002M01KL10 → s002M01THR16 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.1,868.6 C 1601.7,868.6 1996.5,584.6 2504.1,584.6"><title>s002M01THR05 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1603.1,490.0 1997.7,963.2 2505.0,963.2"><title>s002M01THR11 → s002M01OD02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.4,584.6 C 1602.9,584.6 1997.5,868.6 2505.0,868.6"><title>s002M01THR12 → s002M01OD08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.2,679.3 C 1602.4,679.3 1996.9,584.6 2504.1,584.6"><title>s002M01THR15 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1382.8,1341.8 1873.3,490.0 2504.0,490.0"><title>s002M01TP01 → s002M01OD05 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1383.6,868.6 1873.8,679.3 2504.1,679.3"><title>s002M01TP03 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1385.6,490.0 1875.0,679.3 2504.1,679.3"><title>s002M01TP07 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1383.5,773.9 1873.7,490.0 2504.0,490.0"><title>s002M01TP08 → s002M01OD05 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.9,1531.1 C 1382.7,1531.1 1873.3,679.3 2504.1,679.3"><title>s002M01TP10 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1385.1,584.6 1875.0,773.9 2504.8,773.9"><title>s002M01TP11 → s002M01OD01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1384.5,679.3 1874.7,963.2 2505.0,963.2"><title>s002M01TP12 → s002M01OD02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1383.3,1152.5 1873.6,584.6 2504.1,584.6"><title>s002M01TP15 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1849.3,490.0 2435.3,963.2 3188.8,963.2"><title>s002M01THR11 → s002M01LI06 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.4,584.6 C 1847.7,584.6 2432.8,490.0 3185.1,490.0"><title>s002M01THR12 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1093.9,1057.9 C 1848.4,1057.9 2435.2,1341.8 3189.7,1341.8"><title>s002M01THR13 → s002M01LI13 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1630.1,868.6 2312.0,963.2 3188.8,963.2"><title>s002M01TP03 → s002M01LI06 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.3,1247.1 C 1629.2,1247.1 2311.3,773.9 3188.2,773.9"><title>s002M01TP04 → s002M01LI08 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1436.4 C 1629.3,1436.4 2311.5,868.6 3188.7,868.6"><title>s002M01TP06 → s002M01LI11 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1630.8,490.0 2310.8,490.0 3185.1,490.0"><title>s002M01TP07 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1629.6,1152.5 2311.5,773.9 3188.2,773.9"><title>s002M01TP15 → s002M01LI08 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1630.1,868.6 2312.0,963.2 3188.8,963.2"><title>s002M01TP03 → s002M01LI06 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1632.1,490.0 2313.1,868.6 3188.7,868.6"><title>s002M01TP07 → s002M01LI11 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1628.8,773.9 2309.7,490.0 3185.1,490.0"><title>s002M01TP08 → s002M01LI10 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 1628.7,963.2 2309.6,490.0 3185.1,490.0"><title>s002M01TP09 → s002M01LI10 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1016.5,490.0 1218.7,773.9 1478.7,773.9"><title>s002M01TP07 → s002M01EK06 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 890.7,1057.9 997.8,490.0 1135.5,490.0"><title>s002M01TP13 → s002M01TK05 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 1575.3,679.3 1683.1,1152.5 1821.7,1152.5"><title>s002M01TK04 → s002M01KH12 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 1576.1,490.0 1683.2,679.3 1820.8,679.3"><title>s002M01TK05 → s002M01KH10 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1435.9,1152.5 C 1574.5,1152.5 1682.3,679.3 1820.8,679.3"><title>s002M01TK10 → s002M01KH10 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 1574.9,773.9 1682.5,679.3 1820.8,679.3"><title>s002M01TK11 → s002M01KH10 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 449.5,490.0 C 363.5,490.0 365.8,679.3 451.8,679.3"><title>s002M01TP07 → s002M01TP12 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.9,1341.8 C 398.9,1341.8 466.9,773.9 411.9,773.9"><title>s002M01TP01 → s002M01TE05 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.7,1247.1 C 398.7,1247.1 464.0,1152.5 409.0,1152.5"><title>s002M01TP04 → s002M01TE07 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.9,1436.4 C 398.9,1436.4 466.9,773.9 411.9,773.9"><title>s002M01TP06 → s002M01TE05 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1016.5,490.0 1218.7,773.9 1478.7,773.9"><title>s002M01TP07 → s002M01EK06 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 452.7,773.9 C 397.7,773.9 468.6,584.6 413.6,584.6"><title>s002M01TP08 → s002M01TE02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 450.8,584.6 C 395.8,584.6 468.9,490.0 413.9,490.0"><title>s002M01TP11 → s002M01TE01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.7,868.6 C 1216.9,868.6 1013.2,1720.4 751.3,1720.4"><title>s002M01EK01 → s002M01TP16 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1337.0,490.0 1231.2,679.3 1095.2,679.3"><title>s002M01EK02 → s002M01THR15 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 998.2,490.0 891.5,679.3 754.2,679.3"><title>s002M01TK05 → s002M01TP12 · be_captured_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.1,773.9 C 1559.8,773.9 1356.5,679.3 1095.2,679.3"><title>s002M01KH03 → s002M01THR15 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,679.3 C 1436.5,679.3 1137.5,963.2 753.2,963.2"><title>s002M01KH10 → s002M01TP09 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.5,1057.9 C 1436.8,1057.9 1137.7,1057.9 753.0,1057.9"><title>s002M01KH11 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.7,1152.5 C 1437.0,1152.5 1137.7,1057.9 753.0,1057.9"><title>s002M01KH12 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.6,490.0 C 1436.3,490.0 1137.5,773.9 753.3,773.9"><title>s002M01KH14 → s002M01TP08 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.3,868.6 C 1438.0,868.6 1139.9,490.0 756.5,490.0"><title>s002M01KH15 → s002M01TP07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,584.6 C 1655.7,584.6 1260.9,868.6 753.3,868.6"><title>s002M01KL02 → s002M01TP03 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1778.3,490.0 1478.9,963.2 1093.9,963.2"><title>s002M01KL09 → s002M01THR14 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1094.1,868.6 C 1602.0,868.6 1997.1,868.6 2505.0,868.6"><title>s002M01THR05 → s002M01OD08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1602.8,490.0 1997.1,679.3 2504.1,679.3"><title>s002M01THR11 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1382.8,1341.8 1873.4,584.6 2504.1,584.6"><title>s002M01TP01 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1383.5,868.6 1873.7,490.0 2504.0,490.0"><title>s002M01TP03 → s002M01OD05 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1386.5,490.0 1876.4,1057.9 2506.3,1057.9"><title>s002M01TP07 → s002M01OD04 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,773.9 C 1383.9,773.9 1874.4,868.6 2505.0,868.6"><title>s002M01TP08 → s002M01OD08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.9,1531.1 C 1382.7,1531.1 1873.3,584.6 2504.1,584.6"><title>s002M01TP10 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1385.1,584.6 1875.1,963.2 2505.0,963.2"><title>s002M01TP11 → s002M01OD02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1384.1,679.3 1874.1,679.3 2504.1,679.3"><title>s002M01TP12 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1849.7,490.0 2436.0,1436.4 3189.9,1436.4"><title>s002M01THR11 → s002M01LI07 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1630.0,868.6 2312.0,868.6 3188.7,868.6"><title>s002M01TP03 → s002M01LI11 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1632.1,490.0 2313.1,868.6 3188.7,868.6"><title>s002M01TP07 → s002M01LI11 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1628.5,1152.5 2309.5,490.0 3185.1,490.0"><title>s002M01TP15 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1630.5,868.6 2312.7,1436.4 3189.9,1436.4"><title>s002M01TP03 → s002M01LI07 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1632.4,490.0 2313.6,1247.1 3189.5,1247.1"><title>s002M01TP07 → s002M01LI14 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1016.5,490.0 1218.6,679.3 1478.6,679.3"><title>s002M01TP07 → s002M01EK07 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 891.6,1057.9 999.5,1152.5 1138.1,1152.5"><title>s002M01TP13 → s002M01TK10 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 1574.9,679.3 1682.4,490.0 1820.6,490.0"><title>s002M01TK04 → s002M01KH14 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1438.5,490.0 C 1576.3,490.0 1683.5,868.6 1821.3,868.6"><title>s002M01TK05 → s002M01KH15 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 1575.2,773.9 1683.0,1152.5 1821.7,1152.5"><title>s002M01TK11 → s002M01KH12 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 449.5,490.0 C 394.5,490.0 468.9,490.0 413.9,490.0"><title>s002M01TP07 → s002M01TE01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 450.8,584.6 C 395.8,584.6 468.6,584.6 413.6,584.6"><title>s002M01TP11 → s002M01TE02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1215.5,584.6 1013.3,868.6 753.3,868.6"><title>s002M01EK03 → s002M01TP03 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 999.1,679.3 891.5,868.6 753.3,868.6"><title>s002M01TK04 → s002M01TP03 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 997.9,490.0 890.9,868.6 753.3,868.6"><title>s002M01TK05 → s002M01TP03 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,584.6 C 1436.5,584.6 1137.6,868.6 753.3,868.6"><title>s002M01KH06 → s002M01TP03 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,679.3 C 1437.2,679.3 1138.8,584.6 755.2,584.6"><title>s002M01KH10 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.6,490.0 C 1437.0,490.0 1138.7,584.6 755.2,584.6"><title>s002M01KH14 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.3,868.6 C 1436.8,868.6 1137.8,773.9 753.3,773.9"><title>s002M01KH15 → s002M01TP08 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1655.9,773.9 1261.0,868.6 753.3,868.6"><title>s002M01KL01 → s002M01TP03 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,584.6 C 1655.4,584.6 1260.3,1247.1 752.3,1247.1"><title>s002M01KL02 → s002M01TP04 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1655.9,679.3 1261.0,868.6 753.3,868.6"><title>s002M01KL04 → s002M01TP03 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,868.6 C 1657.1,868.6 1263.1,490.0 756.5,490.0"><title>s002M01KL10 → s002M01TP07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1602.8,490.0 1997.1,584.6 2504.1,584.6"><title>s002M01THR11 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.1,1341.8 C 1383.2,1341.8 1874.0,868.6 2505.0,868.6"><title>s002M01TP01 → s002M01OD08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1383.6,868.6 1873.8,584.6 2504.1,584.6"><title>s002M01TP03 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1385.6,490.0 1874.9,490.0 2504.0,490.0"><title>s002M01TP07 → s002M01OD05 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1384.8,584.6 1874.5,679.3 2504.1,679.3"><title>s002M01TP11 → s002M01OD03 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1384.9,679.3 1875.6,1057.9 2506.3,1057.9"><title>s002M01TP12 → s002M01OD04 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1848.0,490.0 2433.0,490.0 3185.1,490.0"><title>s002M01THR11 → s002M01LI10 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1630.4,868.6 2312.6,1341.8 3189.7,1341.8"><title>s002M01TP03 → s002M01LI13 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1632.5,490.0 2313.7,1341.8 3189.7,1341.8"><title>s002M01TP07 → s002M01LI13 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 752.9,1152.5 C 1630.4,1152.5 2312.9,1625.7 3190.3,1625.7"><title>s002M01TP15 → s002M01LI12 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 893.0,490.0 999.1,490.0 1135.5,490.0"><title>s002M01TP07 → s002M01TK05 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.7,679.3 C 1575.2,679.3 1682.8,868.6 1821.3,868.6"><title>s002M01TK04 → s002M01KH15 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 1574.8,773.9 1682.3,490.0 1820.6,490.0"><title>s002M01TK11 → s002M01KH14 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 449.5,490.0 C 394.5,490.0 466.9,679.3 411.9,679.3"><title>s002M01TP07 → s002M01TE04 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 450.8,584.6 C 395.8,584.6 465.1,868.6 410.1,868.6"><title>s002M01TP11 → s002M01TE03 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.5,490.0 1011.6,1341.8 752.1,1341.8"><title>s002M01EK02 → s002M01TP01 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1215.1,584.6 1012.7,1247.1 752.3,1247.1"><title>s002M01EK03 → s002M01TP04 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 998.6,679.3 890.6,1531.1 751.9,1531.1"><title>s002M01TK04 → s002M01TP10 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 997.6,490.0 890.3,1247.1 752.3,1247.1"><title>s002M01TK05 → s002M01TP04 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.1,773.9 C 1436.7,773.9 1137.7,773.9 753.3,773.9"><title>s002M01KH03 → s002M01TP08 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,584.6 C 1436.1,584.6 1136.9,1436.4 752.1,1436.4"><title>s002M01KH06 → s002M01TP06 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,679.3 C 1436.8,679.3 1138.2,679.3 754.2,679.3"><title>s002M01KH10 → s002M01TP12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.6,490.0 C 1436.7,490.0 1138.1,679.3 754.2,679.3"><title>s002M01KH14 → s002M01TP12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1655.6,773.9 1260.4,1247.1 752.3,1247.1"><title>s002M01KL01 → s002M01TP04 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,584.6 C 1656.0,584.6 1261.4,679.3 754.2,679.3"><title>s002M01KL02 → s002M01TP12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1655.3,679.3 1260.0,1625.7 751.7,1625.7"><title>s002M01KL04 → s002M01TP05 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1655.3,490.0 1260.2,1341.8 752.1,1341.8"><title>s002M01KL09 → s002M01TP01 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,868.6 C 1656.6,868.6 1262.3,584.6 755.2,584.6"><title>s002M01KL10 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1603.1,490.0 1997.7,868.6 2505.0,868.6"><title>s002M01THR11 → s002M01OD08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1385.6,490.0 1875.0,584.6 2504.1,584.6"><title>s002M01TP07 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1385.6,584.6 1875.9,1057.9 2506.3,1057.9"><title>s002M01TP11 → s002M01OD04 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1384.1,679.3 1874.0,490.0 2504.0,490.0"><title>s002M01TP12 → s002M01OD05 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1095.8,490.0 C 1849.3,490.0 2435.3,868.6 3188.7,868.6"><title>s002M01THR11 → s002M01LI11 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1630.3,868.6 2312.5,1247.1 3189.5,1247.1"><title>s002M01TP03 → s002M01LI14 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1632.4,490.0 2313.6,1247.1 3189.5,1247.1"><title>s002M01TP07 → s002M01LI14 · be_constrained_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 893.3,490.0 999.8,584.6 1136.6,584.6"><title>s002M01TP07 → s002M01TK06 · evaluate</title></path>
+<path class="edge" stroke-width="1.15" d="M 1436.5,773.9 C 1575.0,773.9 1682.8,868.6 1821.3,868.6"><title>s002M01TK11 → s002M01KH15 · be_shared_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 449.5,490.0 C 394.5,490.0 466.9,773.9 411.9,773.9"><title>s002M01TP07 → s002M01TE05 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 450.8,584.6 C 395.8,584.6 466.9,679.3 411.9,679.3"><title>s002M01TP11 → s002M01TE04 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.9,490.0 1012.4,868.6 753.3,868.6"><title>s002M01EK02 → s002M01TP03 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1216.6,584.6 1015.4,490.0 756.5,490.0"><title>s002M01EK03 → s002M01TP07 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1137.3,679.3 C 999.8,679.3 892.8,584.6 755.2,584.6"><title>s002M01TK04 → s002M01TP11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 999.1,490.0 893.0,490.0 756.5,490.0"><title>s002M01TK05 → s002M01TP07 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.1,773.9 C 1437.0,773.9 1138.3,679.3 754.2,679.3"><title>s002M01KH03 → s002M01TP12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,584.6 C 1437.2,584.6 1138.8,584.6 755.2,584.6"><title>s002M01KH06 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.8,679.3 C 1436.4,679.3 1137.4,1057.9 753.0,1057.9"><title>s002M01KH10 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1820.6,490.0 C 1436.2,490.0 1137.3,1057.9 753.0,1057.9"><title>s002M01KH14 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.3,868.6 C 1436.7,868.6 1137.5,1152.5 752.9,1152.5"><title>s002M01KH15 → s002M01TP15 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1657.1,773.9 1263.1,490.0 756.5,490.0"><title>s002M01KL01 → s002M01TP07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,584.6 C 1655.6,584.6 1260.7,1057.9 753.0,1057.9"><title>s002M01KL02 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1657.1,679.3 1263.1,490.0 756.5,490.0"><title>s002M01KL04 → s002M01TP07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1656.9,490.0 1263.0,490.0 756.5,490.0"><title>s002M01KL09 → s002M01TP07 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,868.6 C 1655.8,868.6 1260.8,1057.9 753.0,1057.9"><title>s002M01KL10 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1386.0,490.0 1875.5,868.6 2505.0,868.6"><title>s002M01TP07 → s002M01OD08 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1384.8,584.6 1874.4,490.0 2504.0,490.0"><title>s002M01TP11 → s002M01OD05 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 1384.1,679.3 1874.1,584.6 2504.1,584.6"><title>s002M01TP12 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 449.5,490.0 C 394.5,490.0 464.7,963.2 409.7,963.2"><title>s002M01TP07 → s002M01TE08 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 450.8,584.6 C 395.8,584.6 464.3,1057.9 409.3,1057.9"><title>s002M01TP11 → s002M01TE06 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.6,490.0 1011.8,1247.1 752.3,1247.1"><title>s002M01EK02 → s002M01TP04 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1215.5,584.6 1013.3,773.9 753.3,773.9"><title>s002M01EK03 → s002M01TP08 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1135.5,490.0 C 997.2,490.0 889.7,1720.4 751.3,1720.4"><title>s002M01TK05 → s002M01TP16 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1821.1,773.9 C 1436.6,773.9 1137.5,1057.9 753.0,1057.9"><title>s002M01KH03 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1655.9,773.9 1261.0,773.9 753.3,773.9"><title>s002M01KL01 → s002M01TP08 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1655.9,679.3 1260.9,963.2 753.2,963.2"><title>s002M01KL04 → s002M01TP09 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1655.2,490.0 1260.0,1531.1 751.9,1531.1"><title>s002M01KL09 → s002M01TP10 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 1384.8,584.6 1874.5,584.6 2504.1,584.6"><title>s002M01TP11 → s002M01OD06 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.3,490.0 1011.3,1625.7 751.7,1625.7"><title>s002M01EK02 → s002M01TP05 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1215.4,584.6 1013.2,963.2 753.2,963.2"><title>s002M01EK03 → s002M01TP09 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1656.2,773.9 1261.6,679.3 754.2,679.3"><title>s002M01KL01 → s002M01TP12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1656.6,679.3 1262.3,584.6 755.2,584.6"><title>s002M01KL04 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1656.4,490.0 1262.1,584.6 755.2,584.6"><title>s002M01KL09 → s002M01TP11 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.5,490.0 1011.6,1436.4 752.1,1436.4"><title>s002M01EK02 → s002M01TP06 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1215.0,584.6 1012.4,1531.1 751.9,1531.1"><title>s002M01EK03 → s002M01TP10 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,773.9 C 1655.8,773.9 1260.8,1057.9 753.0,1057.9"><title>s002M01KL01 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1656.2,679.3 1261.6,679.3 754.2,679.3"><title>s002M01KL04 → s002M01TP12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1656.0,490.0 1261.4,679.3 754.2,679.3"><title>s002M01KL09 → s002M01TP12 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1215.1,490.0 1014.5,490.0 756.5,490.0"><title>s002M01EK02 → s002M01TP07 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1216.2,584.6 1014.5,584.6 755.2,584.6"><title>s002M01EK03 → s002M01TP11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.7,679.3 C 1655.8,679.3 1260.8,1057.9 753.0,1057.9"><title>s002M01KL04 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 2163.3,490.0 C 1655.6,490.0 1260.7,1057.9 753.0,1057.9"><title>s002M01KL09 → s002M01TP13 · participate_in</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.9,490.0 1012.4,773.9 753.3,773.9"><title>s002M01EK02 → s002M01TP08 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1215.8,584.6 1013.8,679.3 754.2,679.3"><title>s002M01EK03 → s002M01TP12 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.9,490.0 1012.3,963.2 753.2,963.2"><title>s002M01EK02 → s002M01TP09 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1475.5,584.6 C 1215.4,584.6 1013.1,1057.9 753.0,1057.9"><title>s002M01EK03 → s002M01TP13 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.4,490.0 1011.5,1531.1 751.9,1531.1"><title>s002M01EK02 → s002M01TP10 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1214.6,490.0 1013.6,584.6 755.2,584.6"><title>s002M01EK02 → s002M01TP11 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1214.2,490.0 1012.9,679.3 754.2,679.3"><title>s002M01EK02 → s002M01TP12 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.8,490.0 1012.2,1057.9 753.0,1057.9"><title>s002M01EK02 → s002M01TP13 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 1473.0,490.0 C 1213.2,490.0 1011.1,1720.4 751.3,1720.4"><title>s002M01EK02 → s002M01TP16 · be_transferred_by</title></path>
+<path class="edge" stroke-width="1.15" d="M 454.1,1531.1 C 399.1,1531.1 468.9,490.0 413.9,490.0"><title>s002M01TP10 → s002M01TE01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 452.7,868.6 C 397.7,868.6 468.6,584.6 413.6,584.6"><title>s002M01TP03 → s002M01TE02 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.0,1057.9 C 398.0,1057.9 466.9,679.3 411.9,679.3"><title>s002M01TP13 → s002M01TE04 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 452.7,868.6 C 397.7,868.6 466.9,773.9 411.9,773.9"><title>s002M01TP03 → s002M01TE05 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.1,1152.5 C 398.1,1152.5 464.3,1057.9 409.3,1057.9"><title>s002M01TP15 → s002M01TE06 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 756.5,490.0 C 1509.7,490.0 2095.5,868.6 2848.7,868.6"><title>s002M01TP07 → s002M01ED04 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.3,868.6 C 1383.9,868.6 1874.3,773.9 2504.8,773.9"><title>s002M01TP03 → s002M01OD01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1383.7,1057.9 1874.3,963.2 2505.0,963.2"><title>s002M01TP13 → s002M01OD02 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.9,1531.1 C 1629.4,1531.1 2311.8,1152.5 3189.3,1152.5"><title>s002M01TP10 → s002M01LI09 · mitigate</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.0,1057.9 C 398.0,1057.9 468.9,490.0 413.9,490.0"><title>s002M01TP13 → s002M01TE01 · adopt</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 1383.7,1057.9 1874.2,773.9 2504.8,773.9"><title>s002M01TP13 → s002M01OD01 · depend_on</title></path>
+<path class="edge" stroke-width="1.15" d="M 450.8,584.6 C 340.8,584.6 342.8,963.2 452.8,963.2"><title>s002M01TP11 → s002M01TP09 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 754.2,679.3 C 828.2,679.3 829.2,584.6 755.2,584.6"><title>s002M01TP12 → s002M01TP11 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 1782.5,584.6 C 1856.5,584.6 1859.0,490.0 1785.0,490.0"><title>s002M01EK03 → s002M01EK02 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 453.7,1247.1 C 343.7,1247.1 342.7,868.6 452.7,868.6"><title>s002M01TP04 → s002M01TP03 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 949.2,584.6 945.7,1625.7 751.7,1625.7"><title>s002M01TP11 → s002M01TP05 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.0,1057.9 C 875.0,1057.9 877.2,584.6 755.2,584.6"><title>s002M01TP13 → s002M01TP11 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 1782.5,584.6 C 1880.5,584.6 1877.3,868.6 1779.3,868.6"><title>s002M01EK03 → s002M01EK01 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 1479.7,1057.9 C 1345.7,1057.9 1339.0,490.0 1473.0,490.0"><title>s002M01EK04 → s002M01EK02 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 751.3,1720.4 C 921.3,1720.4 923.3,868.6 753.3,868.6"><title>s002M01TP16 → s002M01TP03 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 1779.0,963.2 C 1901.0,963.2 1907.0,490.0 1785.0,490.0"><title>s002M01EK05 → s002M01EK02 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 753.2,963.2 C 875.2,963.2 878.5,490.0 756.5,490.0"><title>s002M01TP09 → s002M01TP07 · be_composed_of</title></path>
+<path class="edge" stroke-width="1.15" d="M 1478.6,679.3 C 1392.6,679.3 1387.0,490.0 1473.0,490.0"><title>s002M01EK07 → s002M01EK02 · be_derived_from</title></path>
+<path class="edge" stroke-width="1.15" d="M 755.2,584.6 C 829.2,584.6 830.5,490.0 756.5,490.0"><title>s002M01TP11 → s002M01TP07 · be_composed_of</title></path>
+<g><title>Situated Experiential Learning through Extended Reality | ID: s002M01TP03 | Evidence count: 12 | Evidence: c104M01N12 | MAR application IoT assembly training: The study developed and evaluated a MAR application that visualized IoT circuit assembly steps, provided 3D component models, and enabled interaction. c104M01N13 | step-by-step assembly guidance module: Virtual elements and step-by-step animation guided users in placing real elements accurately on the breadboard. c104M02N14 | MAR application for assembly guidance: T</title>
+<rect x="452.7" y="824.3" width="300.6" height="88.6" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.68" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="849.6">Situated Experiential</text>
+<text class="name" text-anchor="middle" x="603.0" y="868.6">Learning through Extende…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="894.6">ID: s002M01TP03 · count: 12</text></g>
+<g><title>Mentoring | ID: s002M01THR07 | Evidence count: 2 | Evidence: c105M01N18 | Cognitive apprenticeship: Traditional workplace instruction involved a master directly teaching an apprentice the required skills. c105M01N20 | Expert guidance: The non-expert repeatedly asked experts whether task steps were correct.</title>
+<rect x="796.7" y="1299.4" width="296.7" height="84.7" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.16" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="1331.8">Mentoring</text>
+<text class="meta" text-anchor="middle" x="945.0" y="1359.8">ID: s002M01THR07 · count: 2</text></g>
+<g><title>Generative Knowledge Synthesis and Content Production | ID: s002M01TP08 | Evidence count: 12 | Evidence: c101M01N10 | LLM-powered chatbot: The paper presents an LLM-powered chatbot that guides users in describing workflows and incrementally constructs a BPMN model. c101M01N11 | interactive modelling session: The evaluation was conducted through an interactive dialogue between a user and the chatbot. c101M01N12 | conversational frontend: The implemented split-screen interface contains a chat window and a diagram canvas. </title>
+<rect x="452.7" y="729.6" width="300.6" height="88.6" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.68" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="754.9">Generative Knowledge</text>
+<text class="name" text-anchor="middle" x="603.0" y="773.9">Synthesis and Content…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="799.9">ID: s002M01TP08 · count: 12</text></g>
+<g><title>Codified-Material Learning | ID: s002M01THR12 | Evidence count: 13 | Evidence: c104M01N10 | paper-based manual intervention: Paper-group participants repeatedly referred to a book manual, alternating between reading instructions and performing each assembly step. c104M02N13 | Paper-based self-study: The paper group utilized a book manual as an assistance tool. c105M01N19 | Paper and digital work-instruction use: Companies used paper or digital instructions and printed drawings as conventional t</title>
+<rect x="794.6" y="540.2" width="300.9" height="88.9" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.72" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="565.6">Codified-Material</text>
+<text class="name" text-anchor="middle" x="945.0" y="584.6">Learning</text>
+<text class="meta" text-anchor="middle" x="945.0" y="610.6">ID: s002M01THR12 · count: 13</text></g>
+<g><title>Semantic Knowledge Structuring and Retrieval | ID: s002M01TP09 | Evidence count: 11 | Evidence: c102M01N14 | Scene graph construction: The scene graph model learns object relationships and establishes connections using different edge types. c102M01N15 | Scene-graph-based task interpretation: Task interpretations are generated from triples derived from the scene graph. c108M01N36 | semi-formal modeling of industrial know-how with mind maps and UML diagrams: Informal know-how was transformed into structured semi-</title>
+<rect x="452.8" y="919.1" width="300.3" height="88.3" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.64" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="944.2">Semantic Knowledge</text>
+<text class="name" text-anchor="middle" x="603.0" y="963.2">Structuring and Retrieval</text>
+<text class="meta" text-anchor="middle" x="603.0" y="989.2">ID: s002M01TP09 · count: 11</text></g>
+<g><title>Manual Knowledge Documentation and Codification | ID: s002M01THR15 | Evidence count: 11 | Evidence: c101M01N08 | paper-based purchase requests: The technician fills out a paper purchase request and leaves it on the procurement manager&#x27;s desk. c101M01N09 | handwritten &#x27;Awaiting Part&#x27; sign: The technician leaves a handwritten Awaiting Part sign on the machine. c108M01N29 | professional-activity analysis of company documents and processes: The first phase studies internal documents, generic knowledge, processes, and s</title>
+<rect x="794.8" y="635.1" width="300.3" height="88.3" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.64" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="660.3">Manual Knowledge</text>
+<text class="name" text-anchor="middle" x="945.0" y="679.3">Documentation and…</text>
+<text class="meta" text-anchor="middle" x="945.0" y="705.3">ID: s002M01THR15 · count: 11</text></g>
+<g><title>Database-supported Project Knowledge Archiving | ID: s002M01TP10 | Evidence count: 4 | Evidence: c109M01N15 | AI-based sustainability knowledge-management solutions used by UAE SMEs: AI-based knowledge-management solutions in UAE manufacturing SMEs are described as storing and retrieving sustainability best practices and capturing tacit knowledge concerning energy-efficient activities. c109M02N22 | AI-based knowledge management platforms: &quot;AI-based knowledge management solutions such as SAP&#x27;s sustainability mana</title>
+<rect x="454.1" y="1488.2" width="297.8" height="85.8" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.31" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="1512.1">Database-supported</text>
+<text class="name" text-anchor="middle" x="603.0" y="1531.1">Project Knowledge…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="1557.1">ID: s002M01TP10 · count: 4</text></g>
+<g><title>Instructor-Led Training and Briefings | ID: s002M01THR11 | Evidence count: 16 | Evidence: c104M01N09 | instructor demonstration: Before assisted assembly, instructors demonstrated how to assemble the circuit and provided IoT information. c106M01N13 | trainer-supported machinery setup training: During Scenario 2, the trainer explained machinery parts, processes, functionalities, and technical features. c106M02N05 | Traditional Training Approach: The confirmation group (G1) has been selected to simulate the</title>
+<rect x="794.2" y="445.2" width="301.6" height="89.6" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.82" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="471.0">Instructor-Led Training</text>
+<text class="name" text-anchor="middle" x="945.0" y="490.0">and Briefings</text>
+<text class="meta" text-anchor="middle" x="945.0" y="516.0">ID: s002M01THR11 · count: 16</text></g>
+<g><title>Collaborative Knowledge Co-creation through Digital Platforms | ID: s002M01TP11 | Evidence count: 30 | Evidence: c108M01N38 | luxury-packaging collaborative digital environment for know-how expression: The resulting manufacturing ontology provided a collaborative digital environment for know-how expression. c108M02N17 | Collaborative digital knowledge exchange environment: provide a collaborative digital environment for the expression of know-how for the company. c109M01N13 | AI-powered collaboration tools used by Canadian SMEs</title>
+<rect x="450.8" y="538.4" width="304.5" height="92.5" rx="14" fill="white" stroke="#12A6A6" stroke-width="3.19" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="565.6">Collaborative Knowledge</text>
+<text class="name" text-anchor="middle" x="603.0" y="584.6">Co-creation through…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="610.6">ID: s002M01TP11 · count: 30</text></g>
+<g><title>Multimedia and Blended Knowledge Internalization | ID: s002M01TP12 | Evidence count: 19 | Evidence: c105M01N21 | Current digital work instructions on an external screen: Company A displayed its normal instructions on a screen close to the workplace. c106M01N14 | digital procedures provided by a screen: G1 used digital procedures displayed on a large smart screen and navigated with a keyboard. c109M02N26 | Coursera for Business: &quot;Canadian SMEs make use of platforms like Coursera for Business to motivate their workfo</title>
+<rect x="451.8" y="634.1" width="302.3" height="90.3" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.91" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="660.3">Multimedia and Blended</text>
+<text class="name" text-anchor="middle" x="603.0" y="679.3">Knowledge Internalization</text>
+<text class="meta" text-anchor="middle" x="603.0" y="705.3">ID: s002M01TP12 · count: 19</text></g>
+<g><title>Model-based Knowledge Representation and Simulation | ID: s002M01TP01 | Evidence count: 5 | Evidence: c107M01N37 | two-dimensional simulation software: Current simulation software is predominantly two-dimensional and usually represents pneumatic components through circuit symbols. c121M02N11 | Simulation-based analysis: GenAI can also analyze and summarize past successful circular supply chain cases through simulation-based analysis. c124M01N15 | digital-twin-enabled mechanical maintenance management: The practice co</title>
+<rect x="453.9" y="1298.7" width="298.3" height="86.3" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.37" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="1322.8">Model-based Knowledge</text>
+<text class="name" text-anchor="middle" x="603.0" y="1341.8">Representation and…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="1367.8">ID: s002M01TP01 · count: 5</text></g>
+<g><title>Codified Descriptive Knowledge | ID: s002M01EK02 | Evidence count: 89 | Evidence: c101M01N19 | BPMN 2.0 XML: The model is instructed to output complete, standards-compliant BPMN 2.0 XML. c101M01N20 | initial “AS-IS” BPMN diagram: The system processed the user&#x27;s narrative and generated the initial AS-IS BPMN diagram. c102M01N03 | Object-predicate-subject triples: Traditional task interpretations are generated from object-predicate-subject triples derived from the scene graph. c102M01N04 | Common-se</title>
+<rect x="1473.0" y="440.0" width="312.0" height="100.0" rx="14" fill="white" stroke="#D0A11D" stroke-width="4.20" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1629.0" y="471.0">Codified Descriptive</text>
+<text class="name" text-anchor="middle" x="1629.0" y="490.0">Knowledge</text>
+<text class="meta" text-anchor="middle" x="1629.0" y="516.0">ID: s002M01EK02 · count: 89</text></g>
+<g><title>Codified Normative Knowledge | ID: s002M01EK01 | Evidence count: 12 | Evidence: c102M01N07 | Task description: Robot skills and execution policies are learned based solely on a task description. c103M02N06 | Handwork recognition task: Technology that can digitalize handwork in detail in real time should be developed... to introduce collaborative robots, improve production efficiency, and take over skilled manufacturing and maintenance work. c106M01N05 | previously agreed correction protocol: The</title>
+<rect x="1478.7" y="824.3" width="300.6" height="88.6" rx="14" fill="white" stroke="#D0A11D" stroke-width="2.68" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1629.0" y="849.6">Codified Normative</text>
+<text class="name" text-anchor="middle" x="1629.0" y="868.6">Knowledge</text>
+<text class="meta" text-anchor="middle" x="1629.0" y="894.6">ID: s002M01EK01 · count: 12</text></g>
+<g><title>Interactive Consequence Learning and Digital Feedback | ID: s002M01TP04 | Evidence count: 6 | Evidence: c101M01N13 | client-side visualization: Process diagrams are rendered in the browser, providing instant visual feedback and diagram interaction. c104M01N14 | IoT component-control module: The second main module allowed users to control IoT components after completing the circuit through commands sent via a web server. c106M01N18 | Virtual Dashboard: The dashboard displayed the current step and indicated whether addit</title>
+<rect x="453.7" y="1203.8" width="298.7" height="86.7" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.42" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="1228.1">Interactive Consequence</text>
+<text class="name" text-anchor="middle" x="603.0" y="1247.1">Learning and Digital…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="1273.1">ID: s002M01TP04 · count: 6</text></g>
+<g><title>Real-time Condition Intelligence through IoT Monitoring | ID: s002M01TP05 | Evidence count: 3 | Evidence: c108M01N40 | Wine Cloud vine life-cycle traceability platform: The Wine Cloud project provided a complete traceability platform for the vine life cycle. c124M01N16 | real-time mechanical-asset monitoring: The digital-twin maintenance construct includes real-time monitoring and provides real-time understanding of mechanical-asset status, behaviour, and output. c124M02N18 | Real-time Condition Monitoring: A digital pra</title>
+<rect x="454.3" y="1583.1" width="297.3" height="85.3" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="1606.7">Real-time Condition</text>
+<text class="name" text-anchor="middle" x="603.0" y="1625.7">Intelligence through IoT…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="1651.7">ID: s002M01TP05 · count: 3</text></g>
+<g><title>Worker Activity and State Capture through Wearable Sensors and Cameras | ID: s002M01TP06 | Evidence count: 5 | Evidence: c103M01N25 | dominant-wrist body-conducted-sound acquisition: A wrist-mounted sensor acquired sounds during 13 handwork types over six iterations. c103M02N21 | Wearable wrist sensor: A wristband was used to secure a body-conducted sound sensor in the middle of the dorsal wrist of the dominant hand. c103M02N28 | Air-conducted sound capture: Air-conducted sounds can also be utilized as a modality for handwork recogniti</title>
+<rect x="453.9" y="1393.3" width="298.3" height="86.3" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.37" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="1417.4">Worker Activity and State</text>
+<text class="name" text-anchor="middle" x="603.0" y="1436.4">Capture through Wearable…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="1462.4">ID: s002M01TP06 · count: 5</text></g>
+<g><title>Algorithmic Pattern Discovery and Prediction | ID: s002M01TP07 | Evidence count: 47 | Evidence: c102M01N12 | Traditional multi-step task interpretation: Traditional task interpretation involves scene perception, scene graph construction, and task interpretation. c102M01N13 | Scene perception module: The scene perception module detects humans, robots, and industrial parts in the HRC workspace. c102M01N17 | Human intention narration approach: The approach generates textual descriptions of human-relevant tasks fro</title>
+<rect x="449.5" y="442.5" width="307.1" height="95.1" rx="14" fill="white" stroke="#12A6A6" stroke-width="3.54" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="471.0">Algorithmic Pattern</text>
+<text class="name" text-anchor="middle" x="603.0" y="490.0">Discovery and Prediction</text>
+<text class="meta" text-anchor="middle" x="603.0" y="516.0">ID: s002M01TP07 · count: 47</text></g>
+<g><title>Gamified Procedural and Scenario-based Learning | ID: s002M01TP16 | Evidence count: 2 | Evidence: c107M01N14 | A.R.P.S.: Augmented Reality Pneumatic Simulation was implemented as an AR-based mobile training application with two pneumatics exercises. c107M02N22 | Serious game elements: AR elements and serious game elements are used for the development of the AR-based training</title>
+<rect x="454.7" y="1678.0" width="296.7" height="84.7" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.16" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="1701.4">Gamified Procedural and</text>
+<text class="name" text-anchor="middle" x="603.0" y="1720.4">Scenario-based Learning</text>
+<text class="meta" text-anchor="middle" x="603.0" y="1746.4">ID: s002M01TP16 · count: 2</text></g>
+<g><title>Knowledge Continuity, Documentation, Governance, Privacy and Security | ID: s002M01LI10 | Evidence count: 52 | Evidence: c101M01N24 | hard to articulate: Tacit knowledge is described as unwritten, experience-based knowledge that is notoriously difficult to articulate. c101M01N25 | undocumented expertise departs with veteran staff: When veteran staff retire or change jobs, their undocumented expertise leaves with them. c101M01N35 | lack of a formalized, digitally-tracked system: The existing workflow lacks a formalized, digitally tracke</title>
+<rect x="3185.1" y="442.1" width="307.8" height="95.8" rx="14" fill="white" stroke="#C55454" stroke-width="3.63" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="471.0">Knowledge Continuity,</text>
+<text class="name" text-anchor="middle" x="3339.0" y="490.0">Documentation,…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="516.0">ID: s002M01LI10 · count: 52</text></g>
+<g><title>Software, Algorithmic, Data Quality and Interoperability Barriers | ID: s002M01LI05 | Evidence count: 47 | Evidence: c101M01N28 | inconsistent or malformed XML: Early prompt iterations produced inconsistent or malformed XML, and Gemini Flash outputs sometimes failed to render. c101M01N29 | significant system latency: The complete evaluated sequence took over 12 minutes, and a single complex output sometimes took up to 10 minutes. c101M01N30 | verbose BPMN XML generation: Large BPMN XML files are described as token-intensive and as </title>
+<rect x="3185.5" y="537.1" width="307.1" height="95.1" rx="14" fill="white" stroke="#C55454" stroke-width="3.54" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="565.6">Software, Algorithmic,</text>
+<text class="name" text-anchor="middle" x="3339.0" y="584.6">Data Quality and…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="610.6">ID: s002M01LI05 · count: 47</text></g>
+<g><title>Instructional Design, Delivery, Assessment and Transfer Shortcomings | ID: s002M01LI04 | Evidence count: 44 | Evidence: c104M01N25 | attention switching between instructions and assembly: Paper-group participants alternated between reading instructions and performing assembly, and the discussion states that the paper approach required switching attention between the task and instructions. c104M01N26 | no clear physical position indicator: Participants found calculating connection slots from the paper diagram difficult because the phys</title>
+<rect x="3185.7" y="632.0" width="306.7" height="94.7" rx="14" fill="white" stroke="#C55454" stroke-width="3.49" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="660.3">Instructional Design,</text>
+<text class="name" text-anchor="middle" x="3339.0" y="679.3">Delivery, Assessment and…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="705.3">ID: s002M01LI04 · count: 44</text></g>
+<g><title>Project and Organizational Collective Learners | ID: s002M01KL09 | Evidence count: 8 | Evidence: c109M01N06 | manufacturing SME team members: Tacit-information sharing enables team members to acquire practical skills, unique experiences, and specialized techniques. c109M02N13 | Workforce: &quot;businesses could foster a workforce that is inclined to innovate by investing in green human capital development programs that enable the sharing and understanding of tacit knowledge&quot; c114M01N08 | Chinese A-share listed enterp</title>
+<rect x="2163.3" y="446.3" width="299.4" height="87.4" rx="14" fill="white" stroke="#75A943" stroke-width="2.52" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2313.0" y="471.0">Project and</text>
+<text class="name" text-anchor="middle" x="2313.0" y="490.0">Organizational Collectiv…</text>
+<text class="meta" text-anchor="middle" x="2313.0" y="516.0">ID: s002M01KL09 · count: 8</text></g>
+<g><title>Knowledge Conveyed Through Examples or Demonstration | ID: s002M01TK02 | Evidence count: 6 | Evidence: c102M01N01 | Human action intentions: The validation test applies a pre-trained video-text LLM to learn human action intentions from temporal video. c109M01N02 | manufacturing employees’ personal work experience: The paper identifies personal experiences as knowledge shared during collaboration and tacit-knowledge exchange. c110M02N10 | Alumni&#x27;s Problem-Solving Experience: Alumni often had to search for information i</title>
+<rect x="1137.7" y="919.9" width="298.7" height="86.7" rx="14" fill="white" stroke="#D6842B" stroke-width="2.42" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1287.0" y="944.2">Knowledge Conveyed</text>
+<text class="name" text-anchor="middle" x="1287.0" y="963.2">Through Examples or…</text>
+<text class="meta" text-anchor="middle" x="1287.0" y="989.2">ID: s002M01TK02 · count: 6</text></g>
+<g><title>Unrecognized or Unarticulated Personal Know-how | ID: s002M01TK04 | Evidence count: 8 | Evidence: c105M01N02 | Expert variations in task performance: The two experts used different task orders and performed some steps differently from the instructions. c105M01N04 | Task-continuity know-how: Companies A and C reported errors when employees returned to a process after disruption. c105M02N01 | Expert tacit knowledge: experts tend to underestimate their own expertise, which can lead them to overlook sharing crucial i</title>
+<rect x="1137.3" y="635.6" width="299.4" height="87.4" rx="14" fill="white" stroke="#D6842B" stroke-width="2.52" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1287.0" y="660.3">Unrecognized or</text>
+<text class="name" text-anchor="middle" x="1287.0" y="679.3">Unarticulated Personal…</text>
+<text class="meta" text-anchor="middle" x="1287.0" y="705.3">ID: s002M01TK04 · count: 8</text></g>
+<g><title>Novice and Early-Career Workforce Learners | ID: s002M01KL03 | Evidence count: 1 | Evidence: c105M01N17 | Newer employees: Newer employees may struggle to acquire the knowledge needed to handle unforeseen challenges.</title>
+<rect x="2165.0" y="921.3" width="295.9" height="83.9" rx="14" fill="white" stroke="#75A943" stroke-width="2.05" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2313.0" y="944.2">Novice and Early-Career</text>
+<text class="name" text-anchor="middle" x="2313.0" y="963.2">Workforce Learners</text>
+<text class="meta" text-anchor="middle" x="2313.0" y="989.2">ID: s002M01KL03 · count: 1</text></g>
+<g><title>Practised Motor and Tool-Operation Skill | ID: s002M01TK05 | Evidence count: 22 | Evidence: c102M01N02 | Robot operational skills: The LLM-based method enables a robot to acquire skills from a task description. c102M02N14 | Robot learning and adaptation skills: acquire new operational skills through human-robot interaction or curriculum learning c103M01N01 | body-conducted-sound-observable handwork skills: The test subject performed 12 active handwork types involving ballpoint-pen drawing and writing, keybo</title>
+<rect x="1135.5" y="444.5" width="302.9" height="90.9" rx="14" fill="white" stroke="#D6842B" stroke-width="2.99" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1287.0" y="471.0">Practised Motor and Tool-</text>
+<text class="name" text-anchor="middle" x="1287.0" y="490.0">Operation Skill</text>
+<text class="meta" text-anchor="middle" x="1287.0" y="516.0">ID: s002M01TK05 · count: 22</text></g>
+<g><title>Formal Higher-Education Learners | ID: s002M01KL01 | Evidence count: 6 | Evidence: c104M01N08 | participants: Forty participants completed all experimental phases and were assigned evenly to the MAR and paper groups. c110M01N09 | current students: Current students used the chatbot in English and Spanish and evaluated its learning support. c113M01N08 | students: All thirteen participants were students. c113M01N09 | users in the traditional AR group: Four participants were assigned to the traditional</title>
+<rect x="2163.7" y="730.6" width="298.7" height="86.7" rx="14" fill="white" stroke="#75A943" stroke-width="2.42" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2313.0" y="754.9">Formal Higher-Education</text>
+<text class="name" text-anchor="middle" x="2313.0" y="773.9">Learners</text>
+<text class="meta" text-anchor="middle" x="2313.0" y="799.9">ID: s002M01KL01 · count: 6</text></g>
+<g><title>Trained Sensory and Perceptual Recognition | ID: s002M01TK06 | Evidence count: 13 | Evidence: c103M02N26 | Hand-contact objects: body-conducted sounds can be used to recognize... hand-contact objects, such as textured material contacting a fingernail. c105M01N03 | Construction-drawing interpretation skill: Companies D, E, and F identified expertise and difficulty in interpreting a 3D object represented in a 2D drawing. c106M01N09 | recognition and correction of potential errors: The authors report that the AR</title>
+<rect x="1136.6" y="540.2" width="300.9" height="88.9" rx="14" fill="white" stroke="#D6842B" stroke-width="2.72" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1287.0" y="565.6">Trained Sensory and</text>
+<text class="name" text-anchor="middle" x="1287.0" y="584.6">Perceptual Recognition</text>
+<text class="meta" text-anchor="middle" x="1287.0" y="610.6">ID: s002M01TK06 · count: 13</text></g>
+<g><title>Embodied Posture, Balance, and Spatial Control | ID: s002M01TK07 | Evidence count: 4 | Evidence: c102M02N12 | Real-time spatial behaviors: perceive intricate environments c104M01N05 | accurate component positioning know-how: The task required precise component placement, while the MAR animation guided accurate placement of real elements on the breadboard. c104M02N09 | Cognitive mapping of component placement: AR aids in information integration by associating virtual objects with real-world objects, forming a bas</title>
+<rect x="1138.1" y="1014.9" width="297.8" height="85.8" rx="14" fill="white" stroke="#D6842B" stroke-width="2.31" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1287.0" y="1038.9">Embodied Posture,</text>
+<text class="name" text-anchor="middle" x="1287.0" y="1057.9">Balance, and Spatial…</text>
+<text class="meta" text-anchor="middle" x="1287.0" y="1083.9">ID: s002M01TK07 · count: 4</text></g>
+<g><title>Shared Professional Language and Contextual Meaning | ID: s002M01TK09 | Evidence count: 2 | Evidence: c117M02N06 | Collaborative expertise: We engage with innovators, tech suppliers, product designers, researchers, and industry analysts through our internal social media platforms c122M01N03 | technical insights: Respondents reported sharing technical insights through the Metaverse.</title>
+<rect x="1138.7" y="1204.8" width="296.7" height="84.7" rx="14" fill="white" stroke="#D6842B" stroke-width="2.16" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1287.0" y="1228.1">Shared Professional</text>
+<text class="name" text-anchor="middle" x="1287.0" y="1247.1">Language and Contextual…</text>
+<text class="meta" text-anchor="middle" x="1287.0" y="1273.1">ID: s002M01TK09 · count: 2</text></g>
+<g><title>Knowledge Review and Validation Learners | ID: s002M01KL10 | Evidence count: 6 | Evidence: c103M02N23 | Researchers: The authors propose a novel modeling method for handwork recognition using body-conducted sounds. c108M01N28 | research team analyzing complete anonymized interview restitutions: Complete interviews were transmitted only to the research team, which analyzed the expert-knowledge restitution. c108M02N07 | Knowledge elicitation analysts: The analyst is often unfamiliar with the expert&#x27;s domain.</title>
+<rect x="2163.7" y="825.2" width="298.7" height="86.7" rx="14" fill="white" stroke="#75A943" stroke-width="2.42" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2313.0" y="849.6">Knowledge Review and</text>
+<text class="name" text-anchor="middle" x="2313.0" y="868.6">Validation Learners</text>
+<text class="meta" text-anchor="middle" x="2313.0" y="894.6">ID: s002M01KL10 · count: 6</text></g>
+<g><title>Shared Professional Norms and Standards of Judgment | ID: s002M01TK10 | Evidence count: 4 | Evidence: c117M02N05 | Expert intuition: Internal platforms were consistently portrayed as curated environments that support deeper collaboration and systematic evaluation c119M01N44 | researcher judgment for robot-recognition semantic-domain grouping: Researchers manually selected 34 concepts and defined five semantic classes with differing semantic coherence. c124M02N30 | Data Interpretation Skills: The skill of interpreting</title>
+<rect x="1138.1" y="1109.6" width="297.8" height="85.8" rx="14" fill="white" stroke="#D6842B" stroke-width="2.31" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1287.0" y="1133.5">Shared Professional Norms</text>
+<text class="name" text-anchor="middle" x="1287.0" y="1152.5">and Standards of Judgment</text>
+<text class="meta" text-anchor="middle" x="1287.0" y="1178.5">ID: s002M01TK10 · count: 4</text></g>
+<g><title>Informal Coordination, Communication, and Escalation Know-how | ID: s002M01TK11 | Evidence count: 7 | Evidence: c102M02N13 | Collaborative coordination skills: bi-directional assistance and feedback between humans and robots c102M02N15 | Human-robot conversational feedback: human-LLM-robot and robot-LLM-human conversations c109M02N03 | Tacit knowledge sharing (TS): &quot;Tacit information sharing occurs in the place of knowledge making via the interactions of people, groups, and units, enhancing the knowledge of workers who hold im</title>
+<rect x="1137.5" y="730.4" width="299.0" height="87.0" rx="14" fill="white" stroke="#D6842B" stroke-width="2.47" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1287.0" y="754.9">Informal Coordination,</text>
+<text class="name" text-anchor="middle" x="1287.0" y="773.9">Communication, and…</text>
+<text class="meta" text-anchor="middle" x="1287.0" y="799.9">ID: s002M01TK11 · count: 7</text></g>
+<g><title>Organizational Culture and Unwritten Working Practices | ID: s002M01TK12 | Evidence count: 7 | Evidence: c101M01N01 | tacit operational knowledge of the informal maintenance process: The evaluation aimed to transform tacit knowledge of the informal maintenance process into a structured AS-IS model. c108M01N01 | luxury-packaging company&#x27;s business-process know-how: The manufacturing project sought to capitalize and formalize the luxury-packaging company&#x27;s know-how. c121M01N07 | actionable circular-supply-chain insights a</title>
+<rect x="1137.5" y="825.0" width="299.0" height="87.0" rx="14" fill="white" stroke="#D6842B" stroke-width="2.47" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1287.0" y="849.6">Organizational Culture</text>
+<text class="name" text-anchor="middle" x="1287.0" y="868.6">and Unwritten Working…</text>
+<text class="meta" text-anchor="middle" x="1287.0" y="894.6">ID: s002M01TK12 · count: 7</text></g>
+<g><title>Experienced Practitioner Upskilling Learners | ID: s002M01KL04 | Evidence count: 6 | Evidence: c108M02N08 | Corporate IT system implementers: The IT personnel will be responsible for connecting the solution to the digital information system, implementing the final model, and developing different services to exploit it, which facilitates the integration of the digital transition process. c111M01N01 | controllers: The study examines how controllers acquire knowledge on AI-related topics and which channels they u</title>
+<rect x="2163.7" y="635.9" width="298.7" height="86.7" rx="14" fill="white" stroke="#75A943" stroke-width="2.42" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2313.0" y="660.3">Experienced Practitioner</text>
+<text class="name" text-anchor="middle" x="2313.0" y="679.3">Upskilling Learners</text>
+<text class="meta" text-anchor="middle" x="2313.0" y="705.3">ID: s002M01KL04 · count: 6</text></g>
+<g><title>Knowledge Harvesting Workshops | ID: s002M01THR05 | Evidence count: 5 | Evidence: c108M01N32 | collective expert interviews for resolving know-how ambiguity: Collective interviews may follow individual-interview analysis to resolve ambiguity and standardize knowledge. c108M01N33 | observation of viticulture work for tacit-knowledge elicitation: The viticulture experiment associated explicit knowledge with implicit knowledge acquired through observation. c108M01N65 | semi-structured interviews with</title>
+<rect x="795.9" y="825.4" width="298.3" height="86.3" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.37" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="849.6">Knowledge Harvesting</text>
+<text class="name" text-anchor="middle" x="945.0" y="868.6">Workshops</text>
+<text class="meta" text-anchor="middle" x="945.0" y="894.6">ID: s002M01THR05 · count: 5</text></g>
+<g><title>Codified Procedural Knowledge | ID: s002M01EK03 | Evidence count: 47 | Evidence: c102M01N08 | Hierarchical plans resembling a task tree: The task description is recursively decomposed into subtasks represented as hierarchical plans resembling a task tree. c102M01N09 | Execution policies: The robot learns execution policies based on a task description. c102M02N03 | Robot execution policies: hierarchical plans resembling a task tree c103M02N07 | Mel filter bank features: Mel filter bank (MelFB) fea</title>
+<rect x="1475.5" y="537.1" width="307.1" height="95.1" rx="14" fill="white" stroke="#D0A11D" stroke-width="3.54" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1629.0" y="565.6">Codified Procedural</text>
+<text class="name" text-anchor="middle" x="1629.0" y="584.6">Knowledge</text>
+<text class="meta" text-anchor="middle" x="1629.0" y="610.6">ID: s002M01EK03 · count: 47</text></g>
+<g><title>Codified Explanatory Knowledge | ID: s002M01EK04 | Evidence count: 6 | Evidence: c102M01N05 | Task interpretations: Task interpretations explain human and robotic actions and their interactive operations in the surrounding environment. c121M02N02 | Generative capability: Generative capability can be viewed as a higher-order capability grounded in organizational routines... Such routines enable iterative reconfiguration of knowledge across product generations by rapidly integrating internal and ex</title>
+<rect x="1479.7" y="1014.5" width="298.7" height="86.7" rx="14" fill="white" stroke="#D0A11D" stroke-width="2.42" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1629.0" y="1038.9">Codified Explanatory</text>
+<text class="name" text-anchor="middle" x="1629.0" y="1057.9">Knowledge</text>
+<text class="meta" text-anchor="middle" x="1629.0" y="1083.9">ID: s002M01EK04 · count: 6</text></g>
+<g><title>Codified Predictive Knowledge | ID: s002M01EK05 | Evidence count: 10 | Evidence: c101M01N22 | revised, optimized “TO-BE” process diagram: The model generated a revised process diagram addressing the previously highlighted issues. c106M01N03 | potential assembly errors: Visual metrics and instructions supported prevention and recognition of potential errors or forgetfulness. c119M01N05 | robot object-classification synset predictions: The combination algorithm receives predicted-synset lists and p</title>
+<rect x="1479.0" y="919.2" width="300.0" height="88.0" rx="14" fill="white" stroke="#D0A11D" stroke-width="2.60" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1629.0" y="944.2">Codified Predictive</text>
+<text class="name" text-anchor="middle" x="1629.0" y="963.2">Knowledge</text>
+<text class="meta" text-anchor="middle" x="1629.0" y="989.2">ID: s002M01EK05 · count: 10</text></g>
+<g><title>Codified Evaluative Knowledge | ID: s002M01EK06 | Evidence count: 12 | Evidence: c103M02N10 | F1 score metric: We evaluated the recognition results obtained from the test dataset using macro-averaged F1 scores. c104M02N01 | Knowledge test scores: The knowledge test consists of 10 multiple-choice questions worth a total of 10 points. c104M02N02 | Task completion time: Task completion time (min:sec) refers to the time required for participants to complete a given task. c104M02N03 | Error rate: Erro</title>
+<rect x="1478.7" y="729.6" width="300.6" height="88.6" rx="14" fill="white" stroke="#D0A11D" stroke-width="2.68" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1629.0" y="754.9">Codified Evaluative</text>
+<text class="name" text-anchor="middle" x="1629.0" y="773.9">Knowledge</text>
+<text class="meta" text-anchor="middle" x="1629.0" y="799.9">ID: s002M01EK06 · count: 12</text></g>
+<g><title>Criteria-based Performance Evaluation and Ranking | ID: s002M01TP13 | Evidence count: 10 | Evidence: c107M02N23 | Knowledge tests: Quantitative research consists of two knowledge tests before and after AR app exercises to measure knowledge uptake c114M02N07 | Relational Embedding: relational embedding... relationships that actors within a network establish based on mutual willingness, such as cooperation, trust, and relational tightness c117M01N37 | structured product-idea submission and screening: Internal platform</title>
+<rect x="453.0" y="1013.8" width="300.0" height="88.0" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.60" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="1038.9">Criteria-based</text>
+<text class="name" text-anchor="middle" x="603.0" y="1057.9">Performance Evaluation…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="1083.9">ID: s002M01TP13 · count: 10</text></g>
+<g><title>Codified Outcome Knowledge | ID: s002M01EK07 | Evidence count: 13 | Evidence: c101M01N21 | AI-annotated “AS-IS” diagram: The LLM identified inefficiencies and annotated the AS-IS diagram with comments. c101M01N23 | JSON array of overlay objects: The second required output block contains a JSON array of overlay objects for diagram comments. c103M01N22 | macro-averaged handwork-recognition F1 scores: Test recognition results were evaluated with macro-averaged F1 scores. c103M01N23 | DRLDCC-ELM h</title>
+<rect x="1478.6" y="634.8" width="300.9" height="88.9" rx="14" fill="white" stroke="#D0A11D" stroke-width="2.72" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1629.0" y="660.3">Codified Outcome</text>
+<text class="name" text-anchor="middle" x="1629.0" y="679.3">Knowledge</text>
+<text class="meta" text-anchor="middle" x="1629.0" y="705.3">ID: s002M01EK07 · count: 13</text></g>
+<g><title>Job Shadowing | ID: s002M01THR01 | Evidence count: 2 | Evidence: c109M01N09 | workplace observation of manufacturing know-how: Observation is identified as a principal means through which tacit knowledge is acquired. c109M02N16 | Observational learning: &quot;Methods like job shadowing, mentor programs, and observational learning also aid in knowledge transfer&quot;</title>
+<rect x="796.7" y="1204.8" width="296.7" height="84.7" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.16" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="1237.1">Job Shadowing</text>
+<text class="meta" text-anchor="middle" x="945.0" y="1265.1">ID: s002M01THR01 · count: 2</text></g>
+<g><title>Skilled Trades and Craft Practitioners | ID: s002M01KH02 | Evidence count: 3 | Evidence: c108M01N24 | twenty interviewed vine growers: A panel of twenty vine growers was selected for the viticulture interviews. c108M01N25 | five interviewed wine professionals: Five wine professionals were selected for the viticulture interviews. c108M02N04 | Vine cultivators and growers: A panel of twenty vine growers and five wine professionals is selected to be interviewed. The application of our knowledge elicitation </title>
+<rect x="1822.3" y="1583.1" width="297.3" height="85.3" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="1606.7">Skilled Trades and Craft</text>
+<text class="name" text-anchor="middle" x="1971.0" y="1625.7">Practitioners</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="1651.7">ID: s002M01KH02 · count: 3</text></g>
+<g><title>Frontline and Operational Practitioners | ID: s002M01KH03 | Evidence count: 9 | Evidence: c101M01N02 | user: The user initiated the conversation by describing the entire reactive maintenance process in a detailed message. c101M02N06 | Assembly line operator: An assembly line operator hears a strange noise from a machine. He shuts it down and walks over to the maintenance workshop to report it c101M02N08 | Non-specialist maintenance technician: the nearest available technician, who may or may not be the ex</title>
+<rect x="1821.1" y="730.1" width="299.7" height="87.7" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.56" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="754.9">Frontline and Operational</text>
+<text class="name" text-anchor="middle" x="1971.0" y="773.9">Practitioners</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="799.9">ID: s002M01KH03 · count: 9</text></g>
+<g><title>Customers, Users, and Service Recipients | ID: s002M01KH04 | Evidence count: 3 | Evidence: c117M01N11 | technology-product consumers: Consumers provide preferences, reactions, reviews, comments, and product-use knowledge. c117M02N12 | Consumers: Live discussions, blogging, tweets, and comments...help us understand our customers c121M01N10 | used-product consumers: Consumer preferences, expectations for environmentally friendly products, and return behavior are external knowledge inputs.</title>
+<rect x="1822.3" y="1299.1" width="297.3" height="85.3" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="1322.8">Customers, Users, and</text>
+<text class="name" text-anchor="middle" x="1971.0" y="1341.8">Service Recipients</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="1367.8">ID: s002M01KH04 · count: 3</text></g>
+<g><title>Scientific, Engineering, and Technical Professionals | ID: s002M01KH05 | Evidence count: 3 | Evidence: c108M01N27 | company IT personnel integrating the formal knowledge model: IT personnel were responsible for connecting the solution to the information system, implementing the final model, and developing services. c117M01N15 | product designers: Product designers review ideas through internal social-media platforms. c124M02N11 | Mechanical Engineers: Professional role involved in maintenance processes and technologic</title>
+<rect x="1822.3" y="1488.4" width="297.3" height="85.3" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="1512.1">Scientific, Engineering,</text>
+<text class="name" text-anchor="middle" x="1971.0" y="1531.1">and Technical…</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="1557.1">ID: s002M01KH05 · count: 3</text></g>
+<g><title>Domain Experts and Expert Reviewers | ID: s002M01KH06 | Evidence count: 11 | Evidence: c104M01N07 | two subject matter experts: Two subject matter experts separately reviewed the test items and agreed that they appropriately examined the target content. c105M01N14 | Experienced employees: CTA respondents had substantial expertise in the selected process and were usually experienced employees. c105M01N15 | Company A experts: Two Company A pilot participants were experts and demonstrated differing task p</title>
+<rect x="1820.8" y="540.5" width="300.3" height="88.3" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.64" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="565.6">Domain Experts and Expert</text>
+<text class="name" text-anchor="middle" x="1971.0" y="584.6">Reviewers</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="610.6">ID: s002M01KH06 · count: 11</text></g>
+<g><title>Executive and Strategic Leadership | ID: s002M01KH08 | Evidence count: 4 | Evidence: c109M02N08 | Top management: &quot;focusing on top management of small and medium-sized firms in the manufacturing industry&quot; c115M02N09 | Digital transformational leaders: &quot;Leaders who embrace digital transformation are often referred to as &#x27;digital leaders&#x27;; they associate collaborative networks and maintain expertise in the digital domain&quot; c117M02N07 | Product Innovation Managers: Product Innovation Managers...senior ma</title>
+<rect x="1822.1" y="1204.2" width="297.8" height="85.8" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.31" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="1228.1">Executive and Strategic</text>
+<text class="name" text-anchor="middle" x="1971.0" y="1247.1">Leadership</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="1273.1">ID: s002M01KH08 · count: 4</text></g>
+<g><title>Researchers, Analysts, and Knowledge Developers | ID: s002M01KH10 | Evidence count: 11 | Evidence: c107M02N13 | Festo Didactic: The &quot;Festo Didactic AR&quot; app was developed to facilitate the commissioning of mechatronic learning systems c111M01N13 | institutes at universities: Table 4 identifies contacts with institutes at universities as a knowledge-acquisition channel. c114M02N06 | R&amp;D Personnel: number of R&amp;D personnel as a control variable affecting innovation performance c117M01N14 | R&amp;D specialists: R&amp;D special</title>
+<rect x="1820.8" y="635.1" width="300.3" height="88.3" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.64" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="660.3">Researchers, Analysts,</text>
+<text class="name" text-anchor="middle" x="1971.0" y="679.3">and Knowledge Developers</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="705.3">ID: s002M01KH10 · count: 11</text></g>
+<g><title>Experiential and On-the-Job Learning | ID: s002M01THR13 | Evidence count: 4 | Evidence: c107M01N12 | traditional learning method with 3D-printed components: The control group learned with a replica of the pneumatic system made from 3D-printed components and physically connected the components with hoses. c107M01N38 | training laboratories and learning systems: Training laboratories and learning systems are practical teaching options but are costly, space-intensive and dependent on compressed-air provisi</title>
+<rect x="796.1" y="1014.9" width="297.8" height="85.8" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.31" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="1038.9">Experiential and On-the-</text>
+<text class="name" text-anchor="middle" x="945.0" y="1057.9">Job Learning</text>
+<text class="meta" text-anchor="middle" x="945.0" y="1083.9">ID: s002M01THR13 · count: 4</text></g>
+<g><title>Educators, Trainers, and Mentors | ID: s002M01KH11 | Evidence count: 7 | Evidence: c104M01N06 | instructors: Instructors demonstrated how to assemble the IoT circuit and supplied information related to IoT. c104M02N10 | Researchers/Instructors: Instructors demonstrated how to assemble the IoT circuit and gave information. c106M01N10 | company veteran trainer: The trainer was a qualified company veteran who provided operative support to new workers. c106M02N04 | Trainer / Veteran: It is supposed tha</title>
+<rect x="1821.5" y="1014.3" width="299.0" height="87.0" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.47" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="1038.9">Educators, Trainers, and</text>
+<text class="name" text-anchor="middle" x="1971.0" y="1057.9">Mentors</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="1083.9">ID: s002M01KH11 · count: 7</text></g>
+<g><title>Peer Knowledge Contributors | ID: s002M01KH12 | Evidence count: 6 | Evidence: c109M02N11 | Team members: &quot;Sharing tacit information enables team members to acquire practical skills, unique experiences, and specialized techniques, enhancing performance through cognitive innovation&quot; c111M01N09 | colleagues: The personal-channel evidence includes conversations and exchanges of experience among colleagues. c117M01N52 | external product-idea submitters: After experts select potential ideas, subsequ</title>
+<rect x="1821.7" y="1109.2" width="298.7" height="86.7" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.42" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="1133.5">Peer Knowledge</text>
+<text class="name" text-anchor="middle" x="1971.0" y="1152.5">Contributors</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="1178.5">ID: s002M01KH12 · count: 6</text></g>
+<g><title>Commercial and Value-Chain Professionals | ID: s002M01KH13 | Evidence count: 7 | Evidence: c101M02N09 | Procurement manager: leaves it on the procurement manager&#x27;s desk c111M01N12 | external partners who offer AI solutions: Table 4 identifies external partners who offer AI solutions as a personal channel. c111M02N17 | Senior Controllers: controllers in managerial positions from eleven globally active manufacturing companies c111M02N18 | Employees in controlling departments: employees who perform analytical</title>
+<rect x="1821.5" y="919.7" width="299.0" height="87.0" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.47" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="944.2">Commercial and Value-</text>
+<text class="name" text-anchor="middle" x="1971.0" y="963.2">Chain Professionals</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="989.2">ID: s002M01KH13 · count: 7</text></g>
+<g><title>Communities of Practice | ID: s002M01THR10 | Evidence count: 3 | Evidence: c109M02N21 | Interpersonal networks: &quot;SMEs in the UAE can use interpersonal networks to promote informal knowledge sharing due to the focus on work groups as a result of the collectivist culture of the UAE&quot; c111M02N26 | Professional networks/special interest groups: interactions in professional networks or special interest groups c126M01N13 | blockchain professional association membership: Professional-association me</title>
+<rect x="796.3" y="1109.8" width="297.3" height="85.3" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="1142.5">Communities of Practice</text>
+<text class="meta" text-anchor="middle" x="945.0" y="1170.5">ID: s002M01THR10 · count: 3</text></g>
+<g><title>Organizational and Inter-organizational Collectives | ID: s002M01KH14 | Evidence count: 13 | Evidence: c108M01N23 | fifty-five luxury-packaging company employees: Fifty-five employees from different departments and locations were interviewed in the manufacturing project. c109M02N12 | External stakeholders: &quot;GRC reflects the value derived from external relationships with customers, suppliers, and institutions&quot; c111M01N10 | other innovative companies that use AI: Exchange with other innovative companies using AI was the</title>
+<rect x="1820.6" y="445.6" width="300.9" height="88.9" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.72" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="471.0">Organizational and Inter-</text>
+<text class="name" text-anchor="middle" x="1971.0" y="490.0">organizational…</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="516.0">ID: s002M01KH14 · count: 13</text></g>
+<g><title>Other (*) – Insufficient Evidence of a Knowledge-Holding Role | ID: s002M01KH15 | Evidence count: 8 | Evidence: c102M01N10 | Human: Temporal-video examples show a human touching the robot and reaching out a hand, from which intentions are predicted. c103M01N14 | body-conducted-sound handwork test subject: One test subject performed all handwork types over six iterations. c109M02N07 | Senior-level managers: &quot;Senior-level managers in manufacturing SMEs were initially briefed on the research goals and significance to gauge their </title>
+<rect x="1821.3" y="824.9" width="299.4" height="87.4" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.52" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="849.6">Other (*) – Insufficient</text>
+<text class="name" text-anchor="middle" x="1971.0" y="868.6">Evidence of a Knowledge-…</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="894.6">ID: s002M01KH15 · count: 8</text></g>
+<g><title>Structured Occupational Trainees | ID: s002M01KL02 | Evidence count: 8 | Evidence: c105M02N16 | Trainees: apprentice directly teaches an apprentice the skills needed c106M01N11 | Confirmation Group (G1): Seven company workers formed the group trained with the company comparison approach supported by VM. c106M01N12 | Test Group (G2): Seven company workers formed the group trained with the VMAR module. c106M02N03 | Company Workers / Operators: The experiment involved 14 workers, 7 for each group. The</title>
+<rect x="2163.3" y="540.9" width="299.4" height="87.4" rx="14" fill="white" stroke="#75A943" stroke-width="2.52" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2313.0" y="565.6">Structured Occupational</text>
+<text class="name" text-anchor="middle" x="2313.0" y="584.6">Trainees</text>
+<text class="meta" text-anchor="middle" x="2313.0" y="610.6">ID: s002M01KL02 · count: 8</text></g>
+<g><title>Financial, Technical &amp; Information Resources | ID: s002M01OD03 | Evidence count: 17 | Evidence: c102M02N09 | Domain-specific knowledge: training of these three modules heavily relies on domain-specific knowledge c102M02N38 | Pre-trained models: explorations rely on models pre-trained with domain knowledge in specific scenarios c103M02N19 | Collaborative robots: Technology that can digitalize handwork in detail in real time should be developed... to introduce collaborative robots... c105M01N33 | Existing work in</title>
+<rect x="2504.1" y="634.4" width="301.9" height="89.9" rx="14" fill="white" stroke="#B85B77" stroke-width="2.85" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2655.0" y="660.3">Financial, Technical &amp;</text>
+<text class="name" text-anchor="middle" x="2655.0" y="679.3">Information Resources</text>
+<text class="meta" text-anchor="middle" x="2655.0" y="705.3">ID: s002M01OD03 · count: 17</text></g>
+<g><title>Political, Regulatory &amp; Jurisdictional Environment | ID: s002M01ED01 | Evidence count: 8 | Evidence: c101M02N25 | Equipment maintenance industry compliance regulations: well-defined process models support... compliance c105M02N35 | Safety regulations: it is often stated that any technology should not get in the way of safety c108M01N60 | scientific and legislative conditions governing viticulture decisions: Scientific and legislative aspects were strongly present and had to be considered in viticulture decision-maki</title>
+<rect x="2847.3" y="540.9" width="299.4" height="87.4" rx="14" fill="white" stroke="#80664F" stroke-width="2.52" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2997.0" y="565.6">Political, Regulatory &amp;</text>
+<text class="name" text-anchor="middle" x="2997.0" y="584.6">Jurisdictional…</text>
+<text class="meta" text-anchor="middle" x="2997.0" y="610.6">ID: s002M01ED01 · count: 8</text></g>
+<g><title>Economic, Market &amp; Industry Environment | ID: s002M01ED02 | Evidence count: 7 | Evidence: c105M02N38 | Staff shortage: Due to an aging population, many manufacturing companies face the challenge of retaining essential knowledge c113M02N43 | Global manufacturing talent shortage: finding a skilled worker has become a difficult task. The reason is that there is a talent shortage nowadays. Indeed, in 2018, 45% of employers said that they could not find the necessary skills among candidates c113M02N44 | Indust</title>
+<rect x="2847.5" y="635.8" width="299.0" height="87.0" rx="14" fill="white" stroke="#80664F" stroke-width="2.47" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2997.0" y="660.3">Economic, Market &amp;</text>
+<text class="name" text-anchor="middle" x="2997.0" y="679.3">Industry Environment</text>
+<text class="meta" text-anchor="middle" x="2997.0" y="705.3">ID: s002M01ED02 · count: 7</text></g>
+<g><title>Storytelling | ID: s002M01THR08 | Evidence count: 1 | Evidence: c109M02N18 | Narrative storytelling: &quot;Canadian SMEs which are orientated more individualistically in their culture, may employ some of the more structured methods such as interviewing, focus groups or narrative storytelling in order to systematically capture tacit knowledge&quot;</title>
+<rect x="797.0" y="1394.5" width="295.9" height="83.9" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.05" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="1426.4">Storytelling</text>
+<text class="meta" text-anchor="middle" x="945.0" y="1454.4">ID: s002M01THR08 · count: 1</text></g>
+<g><title>Sociocultural &amp; Societal Environment | ID: s002M01ED03 | Evidence count: 4 | Evidence: c108M01N59 | four-country, four-language luxury-packaging operating context: The manufacturing project covered France, the United States, Brazil, and China, with four languages and practices. c109M01N18 | Canadian low-context, individualistic communication culture: Canadian SMEs&#x27; use of AI-powered collaboration tools is described as aligning with a low-context, individualistic communication culture. c109M01N19 | UAE </title>
+<rect x="2848.1" y="731.0" width="297.8" height="85.8" rx="14" fill="white" stroke="#80664F" stroke-width="2.31" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2997.0" y="754.9">Sociocultural &amp; Societal</text>
+<text class="name" text-anchor="middle" x="2997.0" y="773.9">Environment</text>
+<text class="meta" text-anchor="middle" x="2997.0" y="799.9">ID: s002M01ED03 · count: 4</text></g>
+<g><title>Geographic &amp; Physical Site Context | ID: s002M01ED08 | Evidence count: 11 | Evidence: c101M02N24 | Physical distance between workshop and production line: walks over to the maintenance workshop... walks to the machine... walk back to the workshop c104M01N22 | physical breadboard and IoT components: Both groups assembled a physical circuit containing a breadboard, NodeMCU, LEDs, rain sensor, fan, and servo motor. c104M02N20 | Physical breadboard: The IoT circuit assembly task involved a breadboard. c10</title>
+<rect x="2846.8" y="445.8" width="300.3" height="88.3" rx="14" fill="white" stroke="#80664F" stroke-width="2.64" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2997.0" y="471.0">Geographic &amp; Physical</text>
+<text class="name" text-anchor="middle" x="2997.0" y="490.0">Site Context</text>
+<text class="meta" text-anchor="middle" x="2997.0" y="516.0">ID: s002M01ED08 · count: 11</text></g>
+<g><title>Collaborative Group Learning | ID: s002M01THR14 | Evidence count: 4 | Evidence: c109M01N12 | informal task-group knowledge sharing: The paper states that tacit-knowledge sharing occurs informally through task groups. c109M02N17 | Focus groups: &quot;Canadian SMEs which are orientated more individualistically in their culture, may employ some of the more structured methods such as interviewing, focus groups or narrative storytelling in order to systematically capture tacit knowledge&quot; c117M01N20 | inte</title>
+<rect x="796.1" y="920.3" width="297.8" height="85.8" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.31" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="944.2">Collaborative Group</text>
+<text class="name" text-anchor="middle" x="945.0" y="963.2">Learning</text>
+<text class="meta" text-anchor="middle" x="945.0" y="989.2">ID: s002M01THR14 · count: 4</text></g>
+<g><title>Distributed-Ledger-enabled Transaction Assurance and Traceability | ID: s002M01TP15 | Evidence count: 9 | Evidence: c126M01N22 | BT exploitation for existing business processes: BT exploitation leverages blockchain to enhance existing processes, improve efficiency, and achieve incremental innovation; sampled firms reported the extent of such use. c126M01N23 | BT exploration for new applications and business models: BT exploration entails experimenting with blockchain to discover opportunities, create products or services, and tran</title>
+<rect x="453.1" y="1108.6" width="299.7" height="87.7" rx="14" fill="white" stroke="#12A6A6" stroke-width="2.56" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="603.0" y="1133.5">Distributed-Ledger-</text>
+<text class="name" text-anchor="middle" x="603.0" y="1152.5">enabled Transaction…</text>
+<text class="meta" text-anchor="middle" x="603.0" y="1178.5">ID: s002M01TP15 · count: 9</text></g>
+<g><title>Time, Staffing, Expertise, Scheduling and Workload Constraints | ID: s002M01LI08 | Evidence count: 16 | Evidence: c101M01N26 | specialised BPM modelling skills required: The paper states that BPM modelling tools require specialised skills. c102M01N31 | Domain-specific knowledge dependence: Training the three traditional task-interpretation modules relies heavily on domain-specific knowledge. c108M01N54 | time, cost, and complexity of industrial knowledge elicitation: Knowledge elicitation was described as time-consuming, expensi</title>
+<rect x="3188.2" y="729.1" width="301.6" height="89.6" rx="14" fill="white" stroke="#C55454" stroke-width="2.82" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="754.9">Time, Staffing,</text>
+<text class="name" text-anchor="middle" x="3339.0" y="773.9">Expertise, Scheduling an…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="799.9">ID: s002M01LI08 · count: 16</text></g>
+<g><title>Individual Knowledge and Memory Decay | ID: s002M01LI01 | Evidence count: 2 | Evidence: c105M02N41 | Forgetting curve: Not explicitly stated in paper but implied by knowledge retention challenge c106M02N11 | Forgetting Curve: The analysis demonstrates the inefficacy of traditional approaches in properly supporting the training of complex machinery setups. Considering G1, the total weighted errors increased by 60.0% between session 1 and session 2.</title>
+<rect x="3190.7" y="1678.0" width="296.7" height="84.7" rx="14" fill="white" stroke="#C55454" stroke-width="2.16" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="1701.4">Individual Knowledge and</text>
+<text class="name" text-anchor="middle" x="3339.0" y="1720.4">Memory Decay</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="1746.4">ID: s002M01LI01 · count: 2</text></g>
+<g><title>Human Physiological, Cognitive-Capacity and Demographic Constraints | ID: s002M01LI03 | Evidence count: 4 | Evidence: c105M02N40 | Cognitive overload: working memory has a limited capacity, and that for this reason instructions should be given in such a way that they make as little use of working memory as possible c111M01N35 | heterogeneity of the controller function: Investment controllers and production controllers may have different requirements for AI technology and applications. c113M02N34 | Limited working memory capacity: Si</title>
+<rect x="3190.1" y="1488.2" width="297.8" height="85.8" rx="14" fill="white" stroke="#C55454" stroke-width="2.31" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="1512.1">Human Physiological,</text>
+<text class="name" text-anchor="middle" x="3339.0" y="1531.1">Cognitive-Capacity and…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="1557.1">ID: s002M01LI03 · count: 4</text></g>
+<g><title>Individual Ergonomic, Usability and Immediate Safety Risks | ID: s002M01LI02 | Evidence count: 9 | Evidence: c104M01N31 | overlapping virtual numbers: Participants reported that numerous virtual numbers overlapped the real image near the end of assembly and caused confusion. c105M01N43 | Heavy Magic Leap 2 computer unit: The attached computer unit made the Magic Leap uncomfortable and heavy. c105M01N44 | Small and difficult-to-read AR text: Participants reported that the displayed text was small and difficult to read. c105M</title>
+<rect x="3189.1" y="1014.0" width="299.7" height="87.7" rx="14" fill="white" stroke="#C55454" stroke-width="2.56" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="1038.9">Individual Ergonomic,</text>
+<text class="name" text-anchor="middle" x="3339.0" y="1057.9">Usability and Immediate…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="1083.9">ID: s002M01LI02 · count: 9</text></g>
+<g><title>Human Expert Review and Validation | ID: s002M01THR16 | Evidence count: 6 | Evidence: c104M02N26 | Expert validation: The items were reviewed by two subject matter experts separately. c104M02N27 | Knowledge test administration: Participants were required to complete a knowledge test encompassing the topics IoT. c108M02N10 | Collective interviews for expert consensus building: Collective interviews may be then conducted in case of confusion or disagreement between experts. These will be performed after</title>
+<rect x="795.7" y="730.6" width="298.7" height="86.7" rx="14" fill="white" stroke="#7B6BB1" stroke-width="2.42" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="945.0" y="754.9">Human Expert Review and</text>
+<text class="name" text-anchor="middle" x="945.0" y="773.9">Validation</text>
+<text class="meta" text-anchor="middle" x="945.0" y="799.9">ID: s002M01THR16 · count: 6</text></g>
+<g><title>Physical-Environmental and Operational Variability | ID: s002M01LI11 | Evidence count: 12 | Evidence: c102M02N44 | Small/partially occluded human hands: challenges posed by small and partially occluded human hands in 3D body modeling c103M01N42 | camera-based handwork visual occlusion: Camera-based methods frequently suffer from visual occlusion. c103M01N43 | air-conducted handwork-sound noise interference: Air-conducted sounds easily suffer from surrounding noise. c103M02N13 | Visual occlusion: These methods are not</title>
+<rect x="3188.7" y="824.3" width="300.6" height="88.6" rx="14" fill="white" stroke="#C55454" stroke-width="2.68" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="849.6">Physical-Environmental</text>
+<text class="name" text-anchor="middle" x="3339.0" y="868.6">and Operational…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="894.6">ID: s002M01LI11 · count: 12</text></g>
+<g><title>Data, Information, and Knowledge Systems | ID: s002M01TE04 | Evidence count: 17 | Evidence: c108M01N42 | Unified Modeling Language for industrial know-how modeling: UML diagrams represented static concepts, use cases, and constraints associated with know-how. c108M01N43 | logic-based formal ontology technology: Ontologies were used as formal and explicit, machine-understandable specifications of domain conceptualizations. c108M01N44 | Linked Open Vocabularies repository: Existing domain ontologies available</title>
+<rect x="110.1" y="634.4" width="301.9" height="89.9" rx="14" fill="white" stroke="#3B78C8" stroke-width="2.85" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="261.0" y="660.3">Data, Information, and</text>
+<text class="name" text-anchor="middle" x="261.0" y="679.3">Knowledge Systems</text>
+<text class="meta" text-anchor="middle" x="261.0" y="705.3">ID: s002M01TE04 · count: 17</text></g>
+<g><title>Human–Computer Interaction and Immersive Technologies | ID: s002M01TE02 | Evidence count: 34 | Evidence: c101M01N17 | Gradio: The user interface is built with Gradio, an open-source Python framework for web-based machine-learning interfaces. c101M01N18 | bpmn-js: Process diagrams are rendered in the browser using bpmn-js. c104M01N15 | Mobile Augmented Reality technology: The study developed a Mobile Augmented Reality application to guide IoT circuit assembly. c104M01N16 | iPad Pro: An iPad Pro was selected for computati</title>
+<rect x="108.4" y="538.1" width="305.1" height="93.1" rx="14" fill="white" stroke="#3B78C8" stroke-width="3.28" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="261.0" y="565.6">Human–Computer</text>
+<text class="name" text-anchor="middle" x="261.0" y="584.6">Interaction and Immersiv…</text>
+<text class="meta" text-anchor="middle" x="261.0" y="610.6">ID: s002M01TE02 · count: 34</text></g>
+<g><title>Codified Experiential Knowledge | ID: s002M01EK08 | Evidence count: 3 | Evidence: c111M01N08 | documented blogs with current topics (field reports): Table 5 lists documented blogs containing current topics and field reports among the presented contents. c126M01N02 | blockchain implementation insights: Participation in BT-related workshops and conferences provides insights into blockchain implementation. c126M02N31 | Integrated Internal BT Knowledge: When a firm effectively integrates internal know</title>
+<rect x="1480.3" y="1109.8" width="297.3" height="85.3" rx="14" fill="white" stroke="#D0A11D" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1629.0" y="1133.5">Codified Experiential</text>
+<text class="name" text-anchor="middle" x="1629.0" y="1152.5">Knowledge</text>
+<text class="meta" text-anchor="middle" x="1629.0" y="1178.5">ID: s002M01EK08 · count: 3</text></g>
+<g><title>Operational, Project, and Middle Managers | ID: s002M01KH07 | Evidence count: 3 | Evidence: c101M02N07 | Maintenance supervisor: The supervisor grabs the nearest available technician, who may or may not be the expert on that specific machine c124M02N12 | Maintenance Managers: Professional role responsible for maintenance decision-making c124M02N13 | Technical Supervisors: Professional role overseeing maintenance operations</title>
+<rect x="1822.3" y="1393.8" width="297.3" height="85.3" rx="14" fill="white" stroke="#4C9B62" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="1971.0" y="1417.4">Operational, Project, and</text>
+<text class="name" text-anchor="middle" x="1971.0" y="1436.4">Middle Managers</text>
+<text class="meta" text-anchor="middle" x="1971.0" y="1462.4">ID: s002M01KH07 · count: 3</text></g>
+<g><title>Culture, Trust &amp; Relational Climate | ID: s002M01OD06 | Evidence count: 17 | Evidence: c105M02N34 | Company culture of digitalization: Company A seems to be the most digitalized, with a screen close to the workplace c108M01N46 | industrial experts&#x27; willingness to share their know-how: The success of elicitation depends on experts being willing to share their knowledge. c108M02N25 | Expert willingness to share proprietary production knowledge: the willingness of experts to share their knowledge and thei</title>
+<rect x="2504.1" y="539.7" width="301.9" height="89.9" rx="14" fill="white" stroke="#B85B77" stroke-width="2.85" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2655.0" y="565.6">Culture, Trust &amp;</text>
+<text class="name" text-anchor="middle" x="2655.0" y="584.6">Relational Climate</text>
+<text class="meta" text-anchor="middle" x="2655.0" y="610.6">ID: s002M01OD06 · count: 17</text></g>
+<g><title>Natural &amp; Climatic Environment | ID: s002M01ED04 | Evidence count: 2 | Evidence: c108M01N61 | climatic conditions and risks affecting the vine cycle: A dedicated climatic-risk interview grid was required because external parameters affect the vine cycle and wine production. c108M02N28 | Climate change-induced variability in wine organoleptic traits: The future will tell if this system will allow the domain experts to control, as they wished at the beginning of the project, the modification of the</title>
+<rect x="2848.7" y="826.2" width="296.7" height="84.7" rx="14" fill="white" stroke="#80664F" stroke-width="2.16" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2997.0" y="849.6">Natural &amp; Climatic</text>
+<text class="name" text-anchor="middle" x="2997.0" y="868.6">Environment</text>
+<text class="meta" text-anchor="middle" x="2997.0" y="894.6">ID: s002M01ED04 · count: 2</text></g>
+<g><title>Local Utility &amp; Connectivity Conditions | ID: s002M01ED09 | Evidence count: 1 | Evidence: c107M02N38 | Compressed air supply: location-dependent due to the compressed air supply</title>
+<rect x="2849.0" y="1110.5" width="295.9" height="83.9" rx="14" fill="white" stroke="#80664F" stroke-width="2.05" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2997.0" y="1133.5">Local Utility &amp;</text>
+<text class="name" text-anchor="middle" x="2997.0" y="1152.5">Connectivity Conditions</text>
+<text class="meta" text-anchor="middle" x="2997.0" y="1178.5">ID: s002M01ED09 · count: 1</text></g>
+<g><title>Governance, Standards &amp; Formal Control | ID: s002M01OD01 | Evidence count: 11 | Evidence: c105M01N34 | Safety visibility requirements: Companies required technology not to obstruct safety and preferred visibility of the real world. c106M01N24 | standardised trainer support: The research team predefined trainer support to avoid unequal suggestions and experimental bias. c107M02N35 | BiBB framework curricula: The framework curriculum for each training program, provided by the Federal Institute for Vocationa</title>
+<rect x="2504.8" y="729.8" width="300.3" height="88.3" rx="14" fill="white" stroke="#B85B77" stroke-width="2.64" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2655.0" y="754.9">Governance, Standards &amp;</text>
+<text class="name" text-anchor="middle" x="2655.0" y="773.9">Formal Control</text>
+<text class="meta" text-anchor="middle" x="2655.0" y="799.9">ID: s002M01OD01 · count: 11</text></g>
+<g><title>Strategic Leadership &amp; Sponsorship | ID: s002M01OD02 | Evidence count: 10 | Evidence: c101M02N22 | SME management approval for AI process modeling: well-defined process models support consistent execution, training and compliance c109M02N40 | Management support: &quot;the primary goal of management should be to cultivate and sustain a creative internal culture&quot; c111M02N46 | Organizational embedding of AI strategy: Lack of organizational embedding in an overall strategy for AI use (lack of commitment, lack </title>
+<rect x="2505.0" y="919.2" width="300.0" height="88.0" rx="14" fill="white" stroke="#B85B77" stroke-width="2.60" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2655.0" y="944.2">Strategic Leadership &amp;</text>
+<text class="name" text-anchor="middle" x="2655.0" y="963.2">Sponsorship</text>
+<text class="meta" text-anchor="middle" x="2655.0" y="989.2">ID: s002M01OD02 · count: 10</text></g>
+<g><title>External Technological &amp; Infrastructure Environment | ID: s002M01ED05 | Evidence count: 1 | Evidence: c111M02N50 | Cloud infrastructure availability: technical infrastructure (like network coverage and transmission speed), and appropriate cloud services</title>
+<rect x="2849.0" y="1015.9" width="295.9" height="83.9" rx="14" fill="white" stroke="#80664F" stroke-width="2.05" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2997.0" y="1038.9">External Technological &amp;</text>
+<text class="name" text-anchor="middle" x="2997.0" y="1057.9">Infrastructure…</text>
+<text class="meta" text-anchor="middle" x="2997.0" y="1083.9">ID: s002M01ED05 · count: 1</text></g>
+<g><title>Time, Workload &amp; Operational Scheduling | ID: s002M01OD04 | Evidence count: 3 | Evidence: c111M01N32 | time resources for dealing with AI: The interviews identify a lack of time resources for dealing with AI and exploring opportunities during ongoing operations. c120M02N21 | Real-time Requirements: ...the SPRM fulfills the real-time requirements for online dynamic scheduling. c125M02N25 | Dedicated training time: workshop was a two-day hands-on workshop</title>
+<rect x="2506.3" y="1015.2" width="297.3" height="85.3" rx="14" fill="white" stroke="#B85B77" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2655.0" y="1038.9">Time, Workload &amp;</text>
+<text class="name" text-anchor="middle" x="2655.0" y="1057.9">Operational Scheduling</text>
+<text class="meta" text-anchor="middle" x="2655.0" y="1083.9">ID: s002M01OD04 · count: 3</text></g>
+<g><title>Client, Procurement &amp; Institutional Environment | ID: s002M01ED06 | Evidence count: 1 | Evidence: c126M01N29 | access to external blockchain knowledge sources: Firms obtain BT-related knowledge from external sources such as industry experts, consultants, academic institutions, and professional networks.</title>
+<rect x="2849.0" y="921.3" width="295.9" height="83.9" rx="14" fill="white" stroke="#80664F" stroke-width="2.05" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2997.0" y="944.2">Client, Procurement &amp;</text>
+<text class="name" text-anchor="middle" x="2997.0" y="963.2">Institutional Environment</text>
+<text class="meta" text-anchor="middle" x="2997.0" y="989.2">ID: s002M01ED06 · count: 1</text></g>
+<g><title>Organizational Culture, Leadership and Adoption Barriers | ID: s002M01LI09 | Evidence count: 8 | Evidence: c108M01N49 | industrial experts&#x27; reticence during elicitation sessions: Experts may resist participation or behave differently because of the analyst&#x27;s presence. c108M01N56 | consensus difficulty among geographically decentralized ontology participants: Geographically decentralized participants with different expertise make progressive asynchronous consensus difficult. c108M02N30 | Expert psychological reluctance to </title>
+<rect x="3189.3" y="1108.8" width="299.4" height="87.4" rx="14" fill="white" stroke="#C55454" stroke-width="2.52" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="1133.5">Organizational Culture,</text>
+<text class="name" text-anchor="middle" x="3339.0" y="1152.5">Leadership and Adoption…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="1178.5">ID: s002M01LI09 · count: 8</text></g>
+<g><title>Hardware, Sensor and Technical Infrastructure Constraints | ID: s002M01LI06 | Evidence count: 11 | Evidence: c103M01N45 | absence of commercial body-conducted-sound sensors: No commercially available sensor had been developed. c104M01N30 | jittery visualization and 3D model misalignment: Participants reported jittery imagery and alignment problems that affected judgment of component positions. c106M01N32 | HMD overheating and diminishing hardware performance: Extended HMD use caused overheating and reduced hardware performa</title>
+<rect x="3188.8" y="919.1" width="300.3" height="88.3" rx="14" fill="white" stroke="#C55454" stroke-width="2.64" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="944.2">Hardware, Sensor and</text>
+<text class="name" text-anchor="middle" x="3339.0" y="963.2">Technical Infrastructure…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="989.2">ID: s002M01LI06 · count: 11</text></g>
+<g><title>Artificial Intelligence and Intelligent Computation | ID: s002M01TE01 | Evidence count: 38 | Evidence: c101M01N16 | Gemini 2.5 Pro API: The system&#x27;s core logic is entirely powered by Google&#x27;s Gemini 2.5 Pro API. c102M01N23 | GPT-4: GPT-4 is tested for task interpretation in open-domain, assembly, and HRC images. c102M01N24 | Pre-trained video-text LLM: The pre-trained video-text LLM is directly applied to downstream HRC validation without fine-tuning. c102M01N25 | Transformer video encoder: The stream of video images </title>
+<rect x="108.1" y="443.1" width="305.8" height="93.8" rx="14" fill="white" stroke="#3B78C8" stroke-width="3.37" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="261.0" y="471.0">Artificial Intelligence</text>
+<text class="name" text-anchor="middle" x="261.0" y="490.0">and Intelligent…</text>
+<text class="meta" text-anchor="middle" x="261.0" y="516.0">ID: s002M01TE01 · count: 38</text></g>
+<g><title>Rule-Based, Decision and Expert Systems | ID: s002M01TE08 | Evidence count: 3 | Evidence: c108M01N45 | artificial reasoning over luxury-packaging project knowledge: The manufacturing application performed artificial reasoning over project and resource knowledge. c119M01N26 | Ordered-Weighted Averaging operators for robot classification fusion: Ordered-Weighted Averaging operators combine probability outputs from the two approaches. c119M02N18 | Ordered-Weighted Averaging (OWA) aggregation operators: For t</title>
+<rect x="112.3" y="920.6" width="297.3" height="85.3" rx="14" fill="white" stroke="#3B78C8" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="261.0" y="944.2">Rule-Based, Decision and</text>
+<text class="name" text-anchor="middle" x="261.0" y="963.2">Expert Systems</text>
+<text class="meta" text-anchor="middle" x="261.0" y="989.2">ID: s002M01TE08 · count: 3</text></g>
+<g><title>Imaging, Sensing, and Perception Technologies | ID: s002M01TE05 | Evidence count: 17 | Evidence: c103M01N30 | wrist-mounted body-conducted-sound sensor prototype: The researchers created a prototype because none was commercially available. c103M01N31 | exposed-diaphragm electret condenser microphone: An exposed-diaphragm microphone was installed in the sensor housing. c103M01N32 | dominant-wrist sensor-securing wristband: A wristband secured the sensor to the dominant wrist. c103M01N33 | body-conducted-sound hig</title>
+<rect x="110.1" y="729.0" width="301.9" height="89.9" rx="14" fill="white" stroke="#3B78C8" stroke-width="2.85" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="261.0" y="754.9">Imaging, Sensing, and</text>
+<text class="name" text-anchor="middle" x="261.0" y="773.9">Perception Technologies</text>
+<text class="meta" text-anchor="middle" x="261.0" y="799.9">ID: s002M01TE05 · count: 17</text></g>
+<g><title>Human Capacity, Roles &amp; Participation | ID: s002M01OD05 | Evidence count: 18 | Evidence: c103M02N20 | Skilled manufacturing work: take over skilled manufacturing and maintenance work in factories. c105M02N33 | Specialist knowledge requirements: Due to the specialist knowledge required to operate the machines, the requirements at companies B and F are much higher c106M01N23 | pre-training related to the use of the HMD: G2 received HMD pre-training because participants had not previously used AR. c108M01N4</title>
+<rect x="2504.0" y="445.0" width="302.1" height="90.1" rx="14" fill="white" stroke="#B85B77" stroke-width="2.88" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2655.0" y="471.0">Human Capacity, Roles &amp;</text>
+<text class="name" text-anchor="middle" x="2655.0" y="490.0">Participation</text>
+<text class="meta" text-anchor="middle" x="2655.0" y="516.0">ID: s002M01OD05 · count: 18</text></g>
+<g><title>Financial and Capital Constraints | ID: s002M01LI07 | Evidence count: 5 | Evidence: c101M01N27 | expensive consultants: Consultants are described as expensive for resource-constrained SMEs. c107M01N34 | cost-intensive training laboratories and learning systems: Training laboratories and learning systems are cost-intensive and therefore unavailable in some training companies and vocational schools. c107M01N35 | time-consuming and expensive special workshops: Special pneumatics workshops are offered w</title>
+<rect x="3189.9" y="1393.3" width="298.3" height="86.3" rx="14" fill="white" stroke="#C55454" stroke-width="2.37" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="1417.4">Financial and Capital</text>
+<text class="name" text-anchor="middle" x="3339.0" y="1436.4">Constraints</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="1462.4">ID: s002M01LI07 · count: 5</text></g>
+<g><title>Research Design, Measurement and Validation Flaws | ID: s002M01LI13 | Evidence count: 6 | Evidence: c101M01N34 | lack of formal evaluation of “TO-BE” model quality: The study states that it lacks a formal evaluation of the quality of the generated TO-BE model. c103M01N49 | unknown optimal body-conducted-sound analysis-frame length: Seven frame lengths were tested because the optimal length was not established. c104M01N33 | limited validity of the repeated 10-question knowledge test: The authors acknowledge that reu</title>
+<rect x="3189.7" y="1298.4" width="298.7" height="86.7" rx="14" fill="white" stroke="#C55454" stroke-width="2.42" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="1322.8">Research Design,</text>
+<text class="name" text-anchor="middle" x="3339.0" y="1341.8">Measurement and…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="1367.8">ID: s002M01LI13 · count: 6</text></g>
+<g><title>Empirical Sample and Generalizability Limitations | ID: s002M01LI14 | Evidence count: 7 | Evidence: c103M01N46 | small application-specific handwork training dataset: Models were trained with a small amount of application-specific data. c103M02N15 | Small training dataset: the modeling method must have low computational complexity and be stable, even with only a small amount of training data. c104M01N34 | limited generalizability: The forty participants were primarily university students in computer-science-related</title>
+<rect x="3189.5" y="1203.6" width="299.0" height="87.0" rx="14" fill="white" stroke="#C55454" stroke-width="2.47" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="1228.1">Empirical Sample and</text>
+<text class="name" text-anchor="middle" x="3339.0" y="1247.1">Generalizability…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="1273.1">ID: s002M01LI14 · count: 7</text></g>
+<g><title>Cyber-Physical Systems, IoT, and Smart Environments | ID: s002M01TE03 | Evidence count: 5 | Evidence: c115M02N13 | IoT: &quot;Digital technologies like IoT (internet of things), AI (artificial intelligence), and blockchain can significantly contribute to sustainable practices in the manufacturing sector&quot; c121M02N10 | Digital twin environments: GenAI can build digital twin environments to test the feasibility of innovative solutions through virtual simulations. c124M01N22 | mechanical-asset digital twin technologies: The s</title>
+<rect x="111.9" y="825.4" width="298.3" height="86.3" rx="14" fill="white" stroke="#3B78C8" stroke-width="2.37" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="261.0" y="849.6">Cyber-Physical Systems,</text>
+<text class="name" text-anchor="middle" x="261.0" y="868.6">IoT, and Smart…</text>
+<text class="meta" text-anchor="middle" x="261.0" y="894.6">ID: s002M01TE03 · count: 5</text></g>
+<g><title>Mobile, Social and Communication Technologies | ID: s002M01TE07 | Evidence count: 1 | Evidence: c107M01N20 | iOS mobile device: The AR application was provided on a mobile device for iOS.</title>
+<rect x="113.0" y="1110.5" width="295.9" height="83.9" rx="14" fill="white" stroke="#3B78C8" stroke-width="2.05" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="261.0" y="1133.5">Mobile, Social and</text>
+<text class="name" text-anchor="middle" x="261.0" y="1152.5">Communication…</text>
+<text class="meta" text-anchor="middle" x="261.0" y="1178.5">ID: s002M01TE07 · count: 1</text></g>
+<g><title>Organizational Structure &amp; Process Design | ID: s002M01OD08 | Evidence count: 10 | Evidence: c101M01N33 | detailed upfront process description: The current workflow requires the user to describe the process in detail upfront. c105M02N32 | High mix-low volume production: companies A, D and E... work according to the principle of high mix, low volume c108M02N24 | Work psychology-informed semi-directive interview guides: an interview guide is previously prepared with directive questions to list the items to be </title>
+<rect x="2505.0" y="824.6" width="300.0" height="88.0" rx="14" fill="white" stroke="#B85B77" stroke-width="2.60" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="2655.0" y="849.6">Organizational Structure</text>
+<text class="name" text-anchor="middle" x="2655.0" y="868.6">&amp; Process Design</text>
+<text class="meta" text-anchor="middle" x="2655.0" y="894.6">ID: s002M01OD08 · count: 10</text></g>
+<g><title>Market, Commercialization, Regulatory and External Institutional Change | ID: s002M01LI12 | Evidence count: 3 | Evidence: c115M01N16 | lack of standardized production across Turkish manufacturing factories: The discussion states that Turkish companies grew rapidly without sufficient time to standardize production and that standards may vary between factories. c126M02N24 | Regulatory and Legal Uncertainties: Regulatory and legal uncertainties surrounding BT usage complicate adoption c126M02N27 | High Uncertainty in Innovation: Explorator</title>
+<rect x="3190.3" y="1583.1" width="297.3" height="85.3" rx="14" fill="white" stroke="#C55454" stroke-width="2.24" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="3339.0" y="1606.7">Market,</text>
+<text class="name" text-anchor="middle" x="3339.0" y="1625.7">Commercialization,…</text>
+<text class="meta" text-anchor="middle" x="3339.0" y="1651.7">ID: s002M01LI12 · count: 3</text></g>
+<g><title>Security, Privacy, and Trustworthy Technologies | ID: s002M01TE06 | Evidence count: 2 | Evidence: c115M02N15 | Blockchain: &quot;Digital technologies like IoT (internet of things), AI (artificial intelligence), and blockchain can significantly contribute to sustainable practices in the manufacturing sector&quot; c126M01N24 | blockchain technology (BT): Only firms affirmatively reporting BT use, investment, and dedicated internal or external BT support were included in the sample.</title>
+<rect x="112.7" y="1015.5" width="296.7" height="84.7" rx="14" fill="white" stroke="#3B78C8" stroke-width="2.16" filter="url(#shadow)"/>
+<text class="name" text-anchor="middle" x="261.0" y="1038.9">Security, Privacy, and</text>
+<text class="name" text-anchor="middle" x="261.0" y="1057.9">Trustworthy Technologies</text>
+<text class="meta" text-anchor="middle" x="261.0" y="1083.9">ID: s002M01TE06 · count: 2</text></g>
+<text x="3510" y="1870" text-anchor="end" font-size="13" fill="#7A8492">Direction follows Neo4j startNode → endNode · Hover for relationship types</text>
+</svg>

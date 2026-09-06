@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="3200" height="2440" viewBox="0 0 3200 2440" role="img"
+     aria-labelledby="figure-title figure-desc">
+  <title id="figure-title">Cross-sector TK convergence and divergence by technology-enabled retention practice</title>
+  <desc id="figure-desc">A radial matrix of thirteen technology-enabled retention practices. Three concentric rings show identification in Construction, Manufacturing, and Health Services. External callouts list tacit-knowledge relationships that converge across sectors or diverge by appearing in only one sector.</desc>
+
+  <defs>
+    <style><![CDATA[
+      .title { font: 700 60px Arial, Helvetica, sans-serif; fill: #183247; letter-spacing: .2px; }
+      .subtitle { font: 400 28px Arial, Helvetica, sans-serif; fill: #526575; }
+      .legend-label { font: 600 23px Arial, Helvetica, sans-serif; fill: #183247; }
+      .legend-detail { font: 400 21px Arial, Helvetica, sans-serif; fill: #5D6D79; }
+      .callout-box { fill: #FFFFFF; stroke: #D5DEE6; stroke-width: 2; }
+      .callout-header { font: 700 24px Arial, Helvetica, sans-serif; fill: #183247; }
+      .callout-mechanism { font: 600 20px Arial, Helvetica, sans-serif; }
+      .practice { font: 700 28px Arial, Helvetica, sans-serif; fill: #243B4D; }
+      .pattern-label { font: 700 24px Arial, Helvetica, sans-serif; fill: #70808D; letter-spacing: 1.8px; }
+      .pattern { font: 400 24px Arial, Helvetica, sans-serif; fill: #344B5C; }
+      .id-marker { stroke: #FFFFFF; stroke-width: 4; }
+      .id-text { font: 700 16px Arial, Helvetica, sans-serif; fill: #FFFFFF; text-anchor: middle; dominant-baseline: middle; }
+      .connector { fill: none; stroke: #9AAAB7; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+      .hub-main { font: 700 31px Arial, Helvetica, sans-serif; fill: #183247; text-anchor: middle; }
+      .hub-count { font: 700 62px Arial, Helvetica, sans-serif; fill: #183247; text-anchor: middle; }
+      .hub-note { font: 400 20px Arial, Helvetica, sans-serif; fill: #667784; text-anchor: middle; }
+      .footer { font: 400 20px Arial, Helvetica, sans-serif; fill: #61717D; }
+      .digital { fill: #254B70; }
+      .experiential { fill: #7B5AA6; }
+      .digital-text { fill: #254B70; }
+      .experiential-text { fill: #7B5AA6; }
+      .construction { stroke: #4C7FBE; }
+      .manufacturing { stroke: #E39A3B; }
+      .health { stroke: #43A087; }
+      .ring-base { fill: none; stroke: #E8EDF1; stroke-width: 64; }
+      .ring-segment { fill: none; stroke-width: 64; stroke-linecap: butt; }
+    ]]></style>
+
+    <filter id="soft-shadow" x="-10%" y="-15%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#163247" flood-opacity="0.10"/>
+    </filter>
+
+    <line id="separator" x1="1600" y1="876" x2="1600" y2="646"
+          stroke="#FFFFFF" stroke-width="6"/>
+  </defs>
+
+  <!-- Paper background -->
+  <rect width="3200" height="2440" fill="#F7F9FB"/>
+
+  <!-- Title -->
+  <g id="title-and-legend">
+    <text class="title" x="1600" y="82" text-anchor="middle">Cross-sector Distribution of Technology-enable
+      Practice</text>
+    <text class="subtitle" x="1600" y="130" text-anchor="middle">Sector combinations appear in the radial matrix; callouts distinguish recurring and sector-specific TK relationships.</text>
+
+    <g id="sector-legend" transform="translate(725 167)">
+      <text class="legend-label" x="0" y="25">LAYERS — INNER TO OUTER</text>
+      <rect x="390" y="3" width="28" height="28" rx="4" fill="#4C7FBE"/>
+      <text class="legend-detail" x="432" y="25">Construction</text>
+      <rect x="595" y="3" width="28" height="28" rx="4" fill="#E39A3B"/>
+      <text class="legend-detail" x="637" y="25">Manufacturing</text>
+      <rect x="820" y="3" width="28" height="28" rx="4" fill="#43A087"/>
+      <text class="legend-detail" x="862" y="25">Health Services</text>
+      <rect x="1065" y="3" width="28" height="28" rx="4" fill="#E8EDF1"/>
+      <text class="legend-detail" x="1107" y="25">Not identified</text>
+    </g>
+
+    <g id="mechanism-legend" transform="translate(1135 214)">
+      <text class="legend-label" x="0" y="22">RETENTION MECHANISM</text>
+      <circle cx="350" cy="14" r="11" fill="#254B70"/>
+      <text class="legend-detail" x="372" y="22">Digital Codification</text>
+      <circle cx="605" cy="14" r="11" fill="#7B5AA6"/>
+      <text class="legend-detail" x="627" y="22">Experiential Amplification</text>
+    </g>
+  </g>
+
+  <!-- Radial sector matrix -->
+  <g id="radial-matrix">
+    <!-- Three neutral sector layers: inner Construction, middle Manufacturing, outer Health Services -->
+    <circle id="construction-layer-base" class="ring-base" cx="1600" cy="1100" r="260"/>
+    <circle id="manufacturing-layer-base" class="ring-base" cx="1600" cy="1100" r="340"/>
+    <circle id="health-services-layer-base" class="ring-base" cx="1600" cy="1100" r="420"/>
+
+    <!-- Explicit annular paths keep every active cell editable and renderer-independent. -->
+    <!-- Wedge order follows the grouped layout: right Digital, bottom Digital, left Experiential. -->
+    <g id="construction-identifications">
+      <path id="construction-TP01" d="M 1600.00,808.00 A 292,292 0 0 1 1735.70,841.45 L 1705.96,898.12 A 228,228 0 0 0 1600.00,872.00 Z" fill="#4C7FBE"/>
+      <path id="construction-TP06" d="M 1735.70,841.45 A 292,292 0 0 1 1840.31,934.13 L 1787.64,970.48 A 228,228 0 0 0 1705.96,898.12 Z" fill="#4C7FBE"/>
+      <path id="construction-TP07" d="M 1840.31,934.13 A 292,292 0 0 1 1889.87,1064.80 L 1826.34,1072.52 A 228,228 0 0 0 1787.64,970.48 Z" fill="#4C7FBE"/>
+      <path id="construction-TP13" d="M 1889.87,1064.80 A 292,292 0 0 1 1873.02,1203.54 L 1813.18,1180.85 A 228,228 0 0 0 1826.34,1072.52 Z" fill="#4C7FBE"/>
+      <path id="construction-TP08" d="M 1793.63,1318.57 A 292,292 0 0 1 1669.88,1383.52 L 1654.56,1321.37 A 228,228 0 0 0 1751.19,1270.66 Z" fill="#4C7FBE"/>
+      <path id="construction-TP09" d="M 1669.88,1383.52 A 292,292 0 0 1 1530.12,1383.52 L 1545.44,1321.37 A 228,228 0 0 0 1654.56,1321.37 Z" fill="#4C7FBE"/>
+      <path id="construction-TP10" d="M 1530.12,1383.52 A 292,292 0 0 1 1406.37,1318.57 L 1448.81,1270.66 A 228,228 0 0 0 1545.44,1321.37 Z" fill="#4C7FBE"/>
+      <path id="construction-TP12" d="M 1326.98,1203.54 A 292,292 0 0 1 1310.13,1064.80 L 1373.66,1072.52 A 228,228 0 0 0 1386.82,1180.85 Z" fill="#4C7FBE"/>
+      <path id="construction-TP03" d="M 1464.30,841.45 A 292,292 0 0 1 1600.00,808.00 L 1600.00,872.00 A 228,228 0 0 0 1494.04,898.12 Z" fill="#4C7FBE"/>
+    </g>
+
+    <g id="manufacturing-identifications">
+      <path id="manufacturing-TP06" d="M 1772.88,770.61 A 372,372 0 0 1 1906.15,888.68 L 1853.48,925.04 A 308,308 0 0 0 1743.13,827.28 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP07" d="M 1906.15,888.68 A 372,372 0 0 1 1969.29,1055.16 L 1905.75,1062.87 A 308,308 0 0 0 1853.48,925.04 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP13" d="M 1969.29,1055.16 A 372,372 0 0 1 1947.83,1231.91 L 1887.99,1209.22 A 308,308 0 0 0 1905.75,1062.87 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP08" d="M 1846.68,1378.45 A 372,372 0 0 1 1689.03,1461.19 L 1673.71,1399.05 A 308,308 0 0 0 1804.24,1330.54 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP09" d="M 1689.03,1461.19 A 372,372 0 0 1 1510.97,1461.19 L 1526.29,1399.05 A 308,308 0 0 0 1673.71,1399.05 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP10" d="M 1510.97,1461.19 A 372,372 0 0 1 1353.32,1378.45 L 1395.76,1330.54 A 308,308 0 0 0 1526.29,1399.05 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP16" d="M 1353.32,1378.45 A 372,372 0 0 1 1252.17,1231.91 L 1312.01,1209.22 A 308,308 0 0 0 1395.76,1330.54 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP12" d="M 1252.17,1231.91 A 372,372 0 0 1 1230.71,1055.16 L 1294.25,1062.87 A 308,308 0 0 0 1312.01,1209.22 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP11" d="M 1230.71,1055.16 A 372,372 0 0 1 1293.85,888.68 L 1346.52,925.04 A 308,308 0 0 0 1294.25,1062.87 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP04" d="M 1293.85,888.68 A 372,372 0 0 1 1427.12,770.61 L 1456.87,827.28 A 308,308 0 0 0 1346.52,925.04 Z" fill="#E39A3B"/>
+      <path id="manufacturing-TP03" d="M 1427.12,770.61 A 372,372 0 0 1 1600.00,728.00 L 1600.00,792.00 A 308,308 0 0 0 1456.87,827.28 Z" fill="#E39A3B"/>
+    </g>
+
+    <g id="health-services-identifications">
+      <path id="health-TP01" d="M 1600.00,648.00 A 452,452 0 0 1 1810.05,699.77 L 1780.31,756.44 A 388,388 0 0 0 1600.00,712.00 Z" fill="#43A087"/>
+      <path id="health-TP07" d="M 1971.99,843.23 A 452,452 0 0 1 2048.70,1045.52 L 1985.17,1053.23 A 388,388 0 0 0 1919.32,879.59 Z" fill="#43A087"/>
+      <path id="health-TP13" d="M 2048.70,1045.52 A 452,452 0 0 1 2022.63,1260.28 L 1962.79,1237.59 A 388,388 0 0 0 1985.17,1053.23 Z" fill="#43A087"/>
+      <path id="health-TP15" d="M 2022.63,1260.28 A 452,452 0 0 1 1899.73,1438.33 L 1857.29,1390.42 A 388,388 0 0 0 1962.79,1237.59 Z" fill="#43A087"/>
+      <path id="health-TP09" d="M 1708.17,1538.87 A 452,452 0 0 1 1491.83,1538.87 L 1507.15,1476.73 A 388,388 0 0 0 1692.85,1476.73 Z" fill="#43A087"/>
+      <path id="health-TP10" d="M 1491.83,1538.87 A 452,452 0 0 1 1300.27,1438.33 L 1342.71,1390.42 A 388,388 0 0 0 1507.15,1476.73 Z" fill="#43A087"/>
+      <path id="health-TP12" d="M 1177.37,1260.28 A 452,452 0 0 1 1151.30,1045.52 L 1214.83,1053.23 A 388,388 0 0 0 1237.21,1237.59 Z" fill="#43A087"/>
+      <path id="health-TP11" d="M 1151.30,1045.52 A 452,452 0 0 1 1228.01,843.23 L 1280.68,879.59 A 388,388 0 0 0 1214.83,1053.23 Z" fill="#43A087"/>
+      <path id="health-TP04" d="M 1228.01,843.23 A 452,452 0 0 1 1389.95,699.77 L 1419.69,756.44 A 388,388 0 0 0 1280.68,879.59 Z" fill="#43A087"/>
+      <path id="health-TP03" d="M 1389.95,699.77 A 452,452 0 0 1 1600.00,648.00 L 1600.00,712.00 A 388,388 0 0 0 1419.69,756.44 Z" fill="#43A087"/>
+    </g>
+
+    <!-- Crisp separators retain the pie-slice structure -->
+    <g id="slice-separators">
+      <use xlink:href="#separator" transform="rotate(0 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(27.6923 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(55.3846 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(83.0769 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(110.7692 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(138.4615 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(166.1538 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(193.8462 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(221.5385 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(249.2308 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(276.9231 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(304.6154 1600 1100)"/>
+      <use xlink:href="#separator" transform="rotate(332.3077 1600 1100)"/>
+    </g>
+
+    <!-- Central hub -->
+    <circle cx="1600" cy="1100" r="190" fill="#FFFFFF" stroke="#D7E0E7" stroke-width="3" filter="url(#soft-shadow)"/>
+    <text class="hub-count" x="1600" y="1055">13</text>
+    <text class="hub-main" x="1600" y="1105">RETENTION</text>
+    <text class="hub-main" x="1600" y="1143">PRACTICES</text>
+    <text class="hub-note" x="1600" y="1183">sector coverage → TK convergence / divergence</text>
+  </g>
+
+  <!-- Connectors from wedges to external potential-pattern callouts -->
+  <g id="callout-connectors">
+    <!-- Right: five Digital Codification practices -->
+    <polyline class="connector" points="1708.9,658.2 1724.4,595.1 2185,350 2240,350"/>
+    <polyline class="connector" points="1901.7,759.4 1944.8,710.8 2185,630 2240,630"/>
+    <polyline class="connector" points="2025.4,938.7 2086.2,915.6 2185,910 2240,910"/>
+    <polyline class="connector" points="2051.7,1154.8 2116.2,1162.7 2185,1190 2240,1190"/>
+    <polyline class="connector" points="1974.5,1358.5 2028,1395.4 2185,1470 2240,1470"/>
+
+    <!-- Bottom: three Digital Codification practices -->
+    <polyline class="connector" points="1811.4,1502.9 1841.7,1560.4 2690,1900 2690,1960"/>
+    <polyline class="connector" points="1600,1555 1600,1620 1600,1960"/>
+    <polyline class="connector" points="1388.6,1502.9 1358.3,1560.4 510,1900 510,1960"/>
+
+    <!-- Left: five Experiential Amplification practices -->
+    <polyline class="connector" points="1225.5,1358.5 1172,1395.4 1015,1470 960,1470"/>
+    <polyline class="connector" points="1148.3,1154.8 1083.8,1162.7 1015,1190 960,1190"/>
+    <polyline class="connector" points="1174.6,938.7 1113.8,915.6 1015,910 960,910"/>
+    <polyline class="connector" points="1298.3,759.4 1255.2,710.8 1015,630 960,630"/>
+    <polyline class="connector" points="1491.1,658.2 1475.6,595.1 1015,350 960,350"/>
+  </g>
+
+  <!-- ID markers sit at the outside edge of each wedge -->
+  <g id="id-markers">
+    <g id="marker-TP01"><circle class="id-marker digital" cx="1708.9" cy="658.2" r="27"/><text class="id-text" x="1708.9" y="658.2">TP01</text></g>
+    <g id="marker-TP06"><circle class="id-marker digital" cx="1901.7" cy="759.4" r="27"/><text class="id-text" x="1901.7" y="759.4">TP06</text></g>
+    <g id="marker-TP07"><circle class="id-marker digital" cx="2025.4" cy="938.7" r="27"/><text class="id-text" x="2025.4" y="938.7">TP07</text></g>
+    <g id="marker-TP13"><circle class="id-marker digital" cx="2051.7" cy="1154.8" r="27"/><text class="id-text" x="2051.7" y="1154.8">TP13</text></g>
+    <g id="marker-TP15"><circle class="id-marker digital" cx="1974.5" cy="1358.5" r="27"/><text class="id-text" x="1974.5" y="1358.5">TP15</text></g>
+    <g id="marker-TP08"><circle class="id-marker digital" cx="1811.4" cy="1502.9" r="27"/><text class="id-text" x="1811.4" y="1502.9">TP08</text></g>
+    <g id="marker-TP09"><circle class="id-marker digital" cx="1600" cy="1555" r="27"/><text class="id-text" x="1600" y="1555">TP09</text></g>
+    <g id="marker-TP10"><circle class="id-marker digital" cx="1388.6" cy="1502.9" r="27"/><text class="id-text" x="1388.6" y="1502.9">TP10</text></g>
+    <g id="marker-TP16"><circle class="id-marker experiential" cx="1225.5" cy="1358.5" r="27"/><text class="id-text" x="1225.5" y="1358.5">TP16</text></g>
+    <g id="marker-TP12"><circle class="id-marker experiential" cx="1148.3" cy="1154.8" r="27"/><text class="id-text" x="1148.3" y="1154.8">TP12</text></g>
+    <g id="marker-TP11"><circle class="id-marker experiential" cx="1174.6" cy="938.7" r="27"/><text class="id-text" x="1174.6" y="938.7">TP11</text></g>
+    <g id="marker-TP04"><circle class="id-marker experiential" cx="1298.3" cy="759.4" r="27"/><text class="id-text" x="1298.3" y="759.4">TP04</text></g>
+    <g id="marker-TP03"><circle class="id-marker experiential" cx="1491.1" cy="658.2" r="27"/><text class="id-text" x="1491.1" y="658.2">TP03</text></g>
+  </g>
+
+  <!-- Editable callout groups; transforms place them in the requested mechanism layout. -->
+  <g id="callouts-set-one">
+    <g id="callout-TP01" transform="translate(2240 230)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="digital" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP01 · <tspan class="callout-mechanism digital-text">Digital Codification</tspan><tspan x="868" text-anchor="end">2/3</tspan></text>
+      <text class="practice" x="32" y="78">Model-based Knowledge Representation and</text>
+      <text class="practice" x="32" y="108">Simulation</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">TK06</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK05; TK10</text>
+    </g>
+
+    <g id="callout-TP03" transform="translate(60 230)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="experiential" x="890" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP03 · <tspan class="callout-mechanism experiential-text">Experiential Amplification</tspan><tspan x="868" text-anchor="end">3/3</tspan></text>
+      <text class="practice" x="32" y="78">Situated Experiential Learning through Extended</text>
+      <text class="practice" x="32" y="108">Reality</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">TK05; TK06; TK07; TK08; TK10</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK04; TK11</text>
+    </g>
+
+    <g id="callout-TP04" transform="translate(60 510)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="experiential" x="890" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP04 · <tspan class="callout-mechanism experiential-text">Experiential Amplification</tspan><tspan x="868" text-anchor="end">2/3</tspan></text>
+      <text class="practice" x="32" y="78">Interactive Consequence Learning and Digital</text>
+      <text class="practice" x="32" y="108">Feedback</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">None identified</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK05; TK10</text>
+    </g>
+
+    <g id="callout-TP06" transform="translate(2240 510)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="digital" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP06 · <tspan class="callout-mechanism digital-text">Digital Codification</tspan><tspan x="868" text-anchor="end">2/3</tspan></text>
+      <text class="practice" x="32" y="78">Worker Activity and State Capture through Wearable</text>
+      <text class="practice" x="32" y="108">Sensors and Cameras</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">TK06; TK07</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK04; TK05</text>
+    </g>
+
+    <g id="callout-TP07" transform="translate(2240 790)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="digital" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP07 · <tspan class="callout-mechanism digital-text">Digital Codification</tspan><tspan x="868" text-anchor="end">3/3</tspan></text>
+      <text class="practice" x="32" y="78">Algorithmic Pattern Discovery and Prediction</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">TK06; TK10</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK02; TK04; TK05</text>
+    </g>
+
+    <g id="callout-TP08" transform="translate(2240 1960)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="digital" width="900" height="10" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP08 · <tspan class="callout-mechanism digital-text">Digital Codification</tspan><tspan x="868" text-anchor="end">2/3</tspan></text>
+      <text class="practice" x="32" y="78">Generative Knowledge Synthesis and Content</text>
+      <text class="practice" x="32" y="108">Production</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">TK12</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK06; TK07</text>
+    </g>
+  </g>
+
+  <g id="callouts-set-two">
+    <g id="callout-TP16" transform="translate(60 1350)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="experiential" x="890" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP16 · <tspan class="callout-mechanism experiential-text">Experiential Amplification</tspan><tspan x="868" text-anchor="end">1/3</tspan></text>
+      <text class="practice" x="32" y="78">Gamified Procedural and Scenario-based Learning</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">None identified</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK05; TK06</text>
+    </g>
+
+    <g id="callout-TP15" transform="translate(2240 1350)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="digital" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP15 · <tspan class="callout-mechanism digital-text">Digital Codification</tspan><tspan x="868" text-anchor="end">1/3</tspan></text>
+      <text class="practice" x="32" y="78">Distributed-Ledger-enabled Transaction Assurance</text>
+      <text class="practice" x="32" y="108">and Traceability</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">None identified</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK04</text>
+    </g>
+
+    <g id="callout-TP13" transform="translate(2240 1070)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="digital" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP13 · <tspan class="callout-mechanism digital-text">Digital Codification</tspan><tspan x="868" text-anchor="end">3/3</tspan></text>
+      <text class="practice" x="32" y="78">Criteria-based Performance Evaluation and Ranking</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">TK10</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK05; TK12</text>
+    </g>
+
+    <g id="callout-TP12" transform="translate(60 1070)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="experiential" x="890" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP12 · <tspan class="callout-mechanism experiential-text">Experiential Amplification</tspan><tspan x="868" text-anchor="end">3/3</tspan></text>
+      <text class="practice" x="32" y="78">Multimedia and Blended Knowledge Internalization</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">TK05</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK10; TK11</text>
+    </g>
+
+    <g id="callout-TP11" transform="translate(60 790)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="experiential" x="890" width="10" height="240" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP11 · <tspan class="callout-mechanism experiential-text">Experiential Amplification</tspan><tspan x="868" text-anchor="end">2/3</tspan></text>
+      <text class="practice" x="32" y="78">Collaborative Knowledge Co-creation through Digital</text>
+      <text class="practice" x="32" y="108">Platforms</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">TK04</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK02; TK09; TK10; TK12</text>
+    </g>
+
+    <g id="callout-TP10" transform="translate(60 1960)">
+      <rect class="callout-box" width="900" height="240" rx="18" filter="url(#soft-shadow)"/>
+      <rect class="digital" width="900" height="10" rx="5"/>
+      <text class="callout-header" x="32" y="38">TP10 · <tspan class="callout-mechanism digital-text">Digital Codification</tspan><tspan x="868" text-anchor="end">3/3</tspan></text>
+      <text class="practice" x="32" y="78">Database-supported Project Knowledge Archiving</text>
+    <text class="pattern-label" x="32" y="160">TK CONVERGENCE</text><text class="pattern" x="300" y="160">TK04; TK05</text>
+    <text class="pattern-label" x="32" y="210">TK DIVERGENCE</text><text class="pattern" x="300" y="210">TK02; TK09; TK10; TK11; TK12</text>
+    </g>
+  </g>
+
+  <!-- Bottom callout -->
+  <g id="callout-TP09" transform="translate(1150 1960)">
+    <rect class="callout-box" width="900" height="220" rx="18" filter="url(#soft-shadow)"/>
+    <rect class="digital" width="900" height="10" rx="5"/>
+    <text class="callout-header" x="34" y="52">TP09 · <tspan class="callout-mechanism digital-text">Digital Codification</tspan><tspan x="868" text-anchor="end">3/3</tspan></text>
+    <text class="practice" x="34" y="94">Semantic Knowledge Structuring and Retrieval</text>
+    <text class="pattern-label" x="34" y="140">TK CONVERGENCE</text><text class="pattern" x="302" y="140">TK05</text>
+    <text class="pattern-label" x="34" y="188">TK DIVERGENCE</text><text class="pattern" x="302" y="188">TK02; TK09; TK10; TK12</text>
+  </g>
+
+  <!-- Interpretive note retained as editable text -->
+  <g id="figure-note">
+    <line x1="160" y1="2280" x2="3040" y2="2280" stroke="#D6DEE5" stroke-width="2"/>
+    <text class="footer" x="160" y="2324">
+      <tspan font-weight="700">Interpretive rule.</tspan>
+      <tspan> TK convergence means the same TP–TK relationship appears in at least two sectors; TK divergence means it appears in only one sector.</tspan>
+    </text>
+    <text class="footer" x="160" y="2356">“None identified” and uncolored sector cells refer only to the selected evidence and do not establish absence.</text>
+    <text class="footer" x="3040" y="2356" text-anchor="end">C = Construction · M = Manufacturing · H = Health Services</text>
+  </g>
+</svg>

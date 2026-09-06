@@ -1,0 +1,2 @@
+Read the attachment, conduct the tasks in column name 'task' one by one, and extend a new column named 'insight' to
+record the task result. Output the updated file in csv format.

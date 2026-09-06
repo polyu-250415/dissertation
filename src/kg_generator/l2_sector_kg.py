@@ -60,10 +60,12 @@ class SectorKG:
             output_file = self.sector_raw_path + (f'{sector_id}/{sector_id}'
                                                   f'_{self.category_file_flag[category]}_nodes.csv')
             group.to_csv(output_file, index=False, encoding="utf-8")
-            pd.DataFrame().to_csv(self.sector_raw_path + f'{sector_id}/{sector_id}'
-                                                f'_{self.category_file_flag[category]}_nodes_annotation.csv',
-                                  index=False,
-                                  encoding="utf-8")
+
+            annotation_file_path = self.sector_raw_path + f'{sector_id}/{sector_id}_{self.category_file_flag[category]}_nodes_annotation.csv'
+            if not os.path.exists(output_file):
+                pd.DataFrame().to_csv(annotation_file_path,
+                                      index=False,
+                                      encoding="utf-8")
 
         print("Split completed successfully!")
 
@@ -370,7 +372,7 @@ if __name__ == '__main__':
     obj = SectorKG()
     sector_ids = ['s001','s002','s003']
 
-    start = 2
+    start = 3
     end = 3
     for turn in range(start, end + 1):
         if turn == 1:

@@ -10,7 +10,7 @@ RETURN DISTINCT p",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,22
 DS01Q05,Digital Technology,Which digital technology elements have been described?,1,"MATCH (dt:DigitalTechnology)
 RETURN DISTINCT dt",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,22
 DS01Q06,Organizational Dependency,Which organizational dependencies are stated as necessary for technology-enable practices?,2,"MATCH (od:OrganizationalDependency)
-RETURN DISTINCT od",0,1,1,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,1,1,0,11
+RETURN DISTINCT od",0,1,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,1,1,0,10
 DS01Q07,Environment Dependency,Which external factors affect the implementation of technology-enable practices?,2,"MATCH (d:EnvironmentalDependency)
 RETURN DISTINCT d",1,0,0,0,1,0,1,1,1,0,1,1,0,1,0,0,1,1,1,1,1,1,14
 DS01Q08,Limitation,Which limitations are been described,1,"MATCH (l:Limitation)
@@ -20,19 +20,19 @@ WITH COLLECT({src_node:tk, rel: r, dst_node: kh}) AS obj
 RETURN DISTINCT obj",1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,19
 DS01Q10,be_absorbed_by,which tacit knowledge is absorbed by knowledge learners?,2,"MATCH (tk:TacitKnowledge)-[r:be_absorbed_by]-(kl:KnowledgeLearner)
 WITH COLLECT({src_node:tk, rel: r, dst_node: kl}) AS obj
-RETURN DISTINCT obj",0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,18
+RETURN DISTINCT obj",0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,17
 DS01Q11,be_captured_by,which tacit knowledge is captured by technology-enable practices?,2,"MATCH (tk:TacitKnowledge)-[r:be_captured_by]-(tep:TechnologyenablePractice)
 WITH COLLECT({src_node:tk, rel: r, dst_node: tep}) AS obj
-RETURN DISTINCT obj",1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,1,0,14
+RETURN DISTINCT obj",1,1,1,1,1,1,1,0,1,1,0,0,1,0,1,0,1,0,0,0,1,0,13
 DS01Q12,participate_in,Which knowledge holders or knowledge learners take part in knowledge retention practices?,2,"MATCH (k:KnowledgeHolder|KnowledgeLearner)-[r:participate_in]->(p:TechnologyenablePractice)
 WITH COLLECT({src_node:k, rel: r, dst_node: p}) AS obj
-RETURN DISTINCT obj",0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,8
+RETURN DISTINCT obj",0,0,0,0,1,0,1,1,1,1,0,1,0,0,0,1,1,1,0,0,0,0,9
 DS01Q13,depend_on,which organization or environment conditions technology-enable practices depend on?,2,"MATCH (p:TechnologyenablePractice)-[r:depend_on]->(d:OrganizationalDependency|EnvironmentalDependency)
 WITH COLLECT({src_node:p, rel: r, dst_node: d}) AS obj
 RETURN DISTINCT obj",1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,21
 DS01Q14,evaluate,which tacit knowledge is evaluated by technology-enable practices?,2,"MATCH (tk:TacitKnowledge)-[r:evaluate]-(t:TechnologyenablePractice)
 WITH COLLECT({src_node:tk, rel: r, dst_node: t}) AS obj
-RETURN DISTINCT obj",0,1,1,0,0,1,1,1,0,1,0,0,0,0,1,1,0,0,0,0,1,0,9
+RETURN DISTINCT obj",1,1,1,0,0,1,1,1,0,1,0,0,0,0,1,1,0,0,0,0,1,0,10
 DS01Q15,adopt,Which digital technologies technology‑enable practices adopt?,2,"MATCH (p:TechnologyenablePractice)-[r:adopt]-(d:DigitalTechnology)
 WITH COLLECT({src_node:p, rel: r, dst_node: d}) AS obj
 RETURN DISTINCT obj",1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,21
@@ -116,16 +116,16 @@ RETURN participates,
        mitigates",1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,0,0,0,1,16
 DS03Q01,"RQ2: What resources and capabilities are required, such as data input, expert participation, technical infrastructure, and organizational resources?",Which external environment condition is required by the technology-enable practices?,2,"MATCH (p:TechnologyenablePractice)-[r:depend_on]->(e:EnvironmentalDependency)
 WITH e, COLLECT({src_node:p, rel: r, dst_node: e}) AS depends
-RETURN DISTINCT depends",1,0,0,1,1,1,0,1,0,0,1,1,0,1,0,1,0,1,1,1,1,1,14
+RETURN DISTINCT depends",1,0,0,1,1,1,0,1,1,0,1,1,0,1,0,1,0,1,1,1,1,1,15
 DS03Q02,"RQ2: What resources and capabilities are required, such as data input, expert participation, technical infrastructure, and organizational resources?",Which environmental conditions are required by the traditional human practices?,2,"MATCH (p:TraditionalHumancentralPractice)-[r:depend_on]->(e:EnvironmentalDependency)
 WITH e, COLLECT({src_node:p, rel: r, dst_node: e}) AS depends
-RETURN DISTINCT depends",1,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6
+RETURN DISTINCT depends",1,0,0,1,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,7
 DS04Q01,"RQ3: How organizational culture influence effectiveness, such as culture, trust, leadership support, motivation, and expert participation?","which organizational resource (e.g., culture, trust, leadership support, motivation, and expert participation, etc) were needed in technology-enable Practices?",2,"MATCH (p:TechnologyenablePractice)-[r:depend_on]->(o:OrganizationalDependency)
 WITH o, COLLECT({src_node:p, rel: r, dst_node: o}) AS depends
-RETURN DISTINCT o,depends",1,0,0,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,17
+RETURN DISTINCT o,depends",1,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,18
 DS04Q02,"RQ3: How organizational culture influence effectiveness, such as culture, trust, leadership support, motivation, and expert participation?","which organizational resource (e.g., culture, trust, leadership support, motivation, and expert participation, etc) were needed in traditional Human Practices?",2,"MATCH (p:TraditionalHumancentralPractice)-[r:depend_on]->(o:OrganizationalDependency)
 WITH o, COLLECT({src_node:p, rel: r, dst_node: o}) AS depends
-RETURN DISTINCT o,depends",0,1,0,0,0,0,1,1,1,0,1,1,0,0,0,0,0,1,0,0,0,0,7
+RETURN DISTINCT o,depends",0,1,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,6
 DS05Q01,"What inherent vulnerability, shortcoming, or failure points the knowledge retention practices face?","What inherent vulnerability, shortcoming, or failure point of  the technology-enable practices?",2,"MATCH (p:TechnologyenablePractice)-[r:be_constrained_by]->(l:Limitation)
 WITH l, COLLECT({src_node:p, rel: r, dst_node: l}) AS constrainedBy
 RETURN DISTINCT l,constrainedBy",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,21

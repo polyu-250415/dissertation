@@ -61,38 +61,38 @@ s003M01EK02,s003M01TP03,be_transferred_by,4,"c214M01N06 - c214M01N16: The tradit
 c214M01N06 - c214M01N17: The AIVR group received the common hazard-analysis content.
 c216M02N02 - c216M01N35: Correctly identifying slow/shallow breathing as an overdose sign significantly increased from 80% to 100%.
 c216M02N03 - c216M01N35: Participants' understanding of the duration of naloxone's effect increased from 32% to 72%.",SIC 20-39 - Manufacturing,Aggregation
-s003M01EK02,s003M01TP07,be_transferred_by,6,"c215M01N03 - c215M01N11: Individual average pulse pressure supplies the constraint used by PPR.
+s003M01EK02,s003M01TP07,be_transferred_by,8,"c215M01N03 - c215M01N11: Individual average pulse pressure supplies the constraint used by PPR.
 c215M01N04 - c215M01N10: BpBLS uses handcrafted physiological features as model inputs.
 c215M01N05 - c215M01N12: The data-incremental update reuses prior weights that contain previously learned feature information.
 c215M01N07 - c215M01N12: Mapped features from additional signal modalities enter the signal-incremental update.
 c215M01N08 - c215M01N10: Reference BP measurements provide the target values used by BpBLS.
-c215M02N07 - c215M02N18: Given the training dataset {X,Y}",SIC 20-39 - Manufacturing,Aggregation
-s003M01EK02,s003M01TP08,be_transferred_by,2,"c221M01N03 - c221M01N12: The English-translated manuscript content provided the foundation for training the Llama2-13B knowledge base.
-c221M02N01 - c221M02N19: Ancient medical recipe books are translated into English and digitized into PDF formats to enrich the platform's knowledge base",SIC 20-39 - Manufacturing,Aggregation
+c215M02N07 - c215M02N18: Given the training dataset {X,Y}
+c221M01N03 - c221M01N12: The English-translated manuscript content provided the foundation for training the Llama2-13B knowledge base.
+c222M01N02 - c222M02N19: During the data preprocessing phase, a series of procedures was conducted on the 25,415 obtained articles",SIC 20-39 - Manufacturing,Aggregation
 s003M01EK02,s003M01TP09,be_transferred_by,4,"c219M02N01 - c219M01N20: The platform was constructed using an 'eight-step' methodology... (1) Summarizing the curriculum structure: We first defined the knowledge system based on standard textbooks and syllabi
 c222M01N03 - c222M01N18: The entity-and-relationship dictionary was constructed through manual annotation of selected papers.
 c222M01N10 - c222M01N21: KGQA retrieves OSKG entities and relationships and uses them to answer questions.
 c222M01N10 - c222M02N18: The integration of the OSKG and the LLM led to the development of an intelligent question-answering system, Knowledge Graph Question Answering (KGQA)",SIC 20-39 - Manufacturing,Aggregation
-s003M01EK02,s003M01TP10,be_transferred_by,7,"c221M01N03 - c221M01N11: Palm tree manuscript content was transferred through English translation and PDF digitization to create digital model-training material.
-c221M02N03 - c221M02N22: Medical recipe data, including treatment histories and physician details, are encapsulated in Model Cards and securely stored on the blockchain
-c221M02N04 - c221M02N22: Data provenance information of medical recipes and treatments is encoded into Model Card objects and stored on blockchain
-c221M02N05 - c221M02N22: Digital identity proofs (SSI proofs) for doctors... securely stored on the blockchain
-c221M02N06 - c221M02N22: Medical recipe data... encapsulated in Model Cards and securely stored on the blockchain
-c221M02N06 - c221M02N23: Model Cards serve as invaluable repositories, capturing essential details... The Model Card smart contract... handles functions related to model card generation, storage, and retrieval
+s003M01EK02,s003M01TP10,be_transferred_by,2,"c221M01N03 - c221M01N11: Palm tree manuscript content was transferred through English translation and PDF digitization to create digital model-training material.
 c227M01N01 - c227M01N18: Aggregated wait-time information was made available through national platforms.",SIC 20-39 - Manufacturing,Aggregation
 s003M01EK02,s003M01TP11,be_transferred_by,1,c218M02N03 - c218M02N38: Clinical case studies are transferred via case discussion sessions,SIC 20-39 - Manufacturing,Aggregation
 s003M01EK02,s003M01TP12,be_transferred_by,3,"c210M01N06 - c210M01N19: The WeChat continuing-education program was used to improve nurses’ PIVC knowledge.
 c218M01N03 - c218M01N19: CNS tumor diagnostics was identified as a topic delivered through the NOTS online course.
 c224M01N01 - c224M01N13: The Ecare-COPD MOOC was developed around COPD self-management and used to improve nurses’ knowledge.",SIC 20-39 - Manufacturing,Aggregation
-s003M01EK02,s003M01TP13,be_transferred_by,8,"c213M01N01 - c213M01N24: The partitioned Wisconsin breast cancer dataset is used in the cross-provider cancer experiment.
+s003M01EK02,s003M01TP13,be_transferred_by,6,"c213M01N01 - c213M01N24: The partitioned Wisconsin breast cancer dataset is used in the cross-provider cancer experiment.
 c213M01N03 - c213M01N25: The partitioned Parkinson’s disease dataset is used in the cross-provider classification experiment.
 c213M01N04 - c213M01N25: Biomedical voice measurements are used for provider-level Parkinson’s model training and evaluation.
 c213M01N05 - c213M01N26: The supplier selection dataset is distributed across healthcare-provider nodes for the supplier experiment.
-c213M01N12 - c213M01N23: Parkinson’s balanced-accuracy results support comparison across provider nodes.
 c227M01N01 - c227M01N16: The Registry displayed and distributed wait-time data to intended users.
-c227M01N01 - c227M01N17: Care units entered wait-time data together with additional variables into local digital systems.
 c227M02N01 - c227M01N16: The data in the Registry were, with few exceptions, updated daily and automatically extracted from the electronic medical records.",SIC 20-39 - Manufacturing,Aggregation
-s003M01EK02,s003M01TP14,be_transferred_by,1,"c222M01N02 - c222M02N19: During the data preprocessing phase, a series of procedures was conducted on the 25,415 obtained articles",SIC 20-39 - Manufacturing,Aggregation
+s003M01EK02,s003M01TP14,be_transferred_by,1,c227M01N01 - c227M01N17: Care units entered wait-time data together with additional variables into local digital systems.,SIC 20-39 - Manufacturing,Aggregation
+s003M01EK02,s003M01TP15,be_transferred_by,7,"c213M01N12 - c213M01N23: Parkinson’s balanced-accuracy results support comparison across provider nodes.
+c221M02N01 - c221M02N19: Ancient medical recipe books are translated into English and digitized into PDF formats to enrich the platform's knowledge base
+c221M02N03 - c221M02N22: Medical recipe data, including treatment histories and physician details, are encapsulated in Model Cards and securely stored on the blockchain
+c221M02N04 - c221M02N22: Data provenance information of medical recipes and treatments is encoded into Model Card objects and stored on blockchain
+c221M02N05 - c221M02N22: Digital identity proofs (SSI proofs) for doctors... securely stored on the blockchain
+c221M02N06 - c221M02N22: Medical recipe data... encapsulated in Model Cards and securely stored on the blockchain
+c221M02N06 - c221M02N23: Model Cards serve as invaluable repositories, capturing essential details... The Model Card smart contract... handles functions related to model card generation, storage, and retrieval",SIC 20-39 - Manufacturing,Aggregation
 s003M01EK03,s003M01EK01,be_derived_from,5,"c210M01N05 - c210M01N01: The intervention’s PIVC educational content was developed from clinical-guideline education, including the Standard Guide to Practice Standards for Intravenous Fluid Therapy.
 c210M01N05 - c210M01N02: The intervention’s PIVC educational content was developed from clinical-guideline education, including the Standard of Practice for Intravenous Therapy Nursing Techniques.
 c216M02N01 - c216M01N01: The training platform... using CPR training guidelines provided by the American Heart Association (AHA).
@@ -125,8 +125,7 @@ c216M01N04 - c216M01N35: Responder-safety instructions were incorporated into Re
 c216M02N01 - c216M01N35: ReviveXR participants learned the following skills: evaluation... administering intranasal naloxone spray.
 c216M02N04 - c216M01N35: Knowledge of the need for a second naloxone dose improved from 72% to 100%.
 c216M02N06 - c216M01N35: Perceived effectiveness of rescue breathing increased from a mean of 3.84 at baseline to 4.68 at round 1 post‑training.",SIC 20-39 - Manufacturing,Aggregation
-s003M01EK03,s003M01TP08,be_transferred_by,2,"c221M01N05 - c221M01N12: The custom-trained Llama2-13B model was enriched and trained using ancient medicine books and recipes.
-c221M01N05 - c221M02N19: These texts are used to fine-tune the Llama2 LLM",SIC 20-39 - Manufacturing,Aggregation
+s003M01EK03,s003M01TP07,be_transferred_by,1,c221M01N05 - c221M01N12: The custom-trained Llama2-13B model was enriched and trained using ancient medicine books and recipes.,SIC 20-39 - Manufacturing,Aggregation
 s003M01EK03,s003M01TP09,be_transferred_by,2,"c219M02N02 - c219M01N20: Problem system layer: Bridges theory and practice by challenging students with clinical problems
 c219M02N05 - c219M01N20: A user manual was developed to familiarize nursing students with platform operations",SIC 20-39 - Manufacturing,Aggregation
 s003M01EK03,s003M01TP11,be_transferred_by,3,"c218M02N05 - c218M01N22: Molecular diagnostics content is discussed in guided online discussions
@@ -136,16 +135,17 @@ s003M01EK03,s003M01TP12,be_transferred_by,4,"c210M01N05 - c210M01N19: Concise ed
 c218M02N02 - c218M02N40: Online module curriculum is transferred via the LMS
 c218M02N05 - c218M02N34: Molecular diagnostics content is transferred via pre‑recorded lectures
 c218M02N11 - c218M02N34: Neurosurgery content is transferred via pre‑recorded lectures",SIC 20-39 - Manufacturing,Aggregation
+s003M01EK03,s003M01TP15,be_transferred_by,1,c221M01N05 - c221M02N19: These texts are used to fine-tune the Llama2 LLM,SIC 20-39 - Manufacturing,Aggregation
 s003M01EK04,s003M01TP07,be_transferred_by,2,"c215M01N01 - c215M01N11: Physiological knowledge of pulse pressure is captured through PPR.
 c215M01N02 - c215M01N11: PPR encodes the dependence between systolic and diastolic BP.",SIC 20-39 - Manufacturing,Aggregation
 s003M01EK05,s003M01TK10,translate_into,1,c213M02N04 - c213M02N08: This model is used for predictions and decision-making during the next time interval,SIC 20-39 - Manufacturing,Aggregation
-s003M01EK05,s003M01TP10,be_transferred_by,1,"c213M02N04 - c213M02N15: Instead of sharing sensitive patient data, each node shares their trained models and parameters on the blockchain network",SIC 20-39 - Manufacturing,Aggregation
-s003M01EK05,s003M01TP13,be_transferred_by,6,"c213M01N07 - c213M01N24: Breast cancer prediction models trained by one provider are tested at other provider nodes.
+s003M01EK05,s003M01TP13,be_transferred_by,3,"c213M01N07 - c213M01N24: Breast cancer prediction models trained by one provider are tested at other provider nodes.
 c213M01N08 - c213M01N25: Parkinson’s disease classification models are evaluated across provider datasets.
-c213M01N09 - c213M01N26: Supplier selection models are shared and evaluated across healthcare-provider nodes.
-c213M01N10 - c213M01N23: Providers share model parameters and updates instead of sensitive local data.
+c213M01N09 - c213M01N26: Supplier selection models are shared and evaluated across healthcare-provider nodes.",SIC 20-39 - Manufacturing,Aggregation
+s003M01EK05,s003M01TP15,be_transferred_by,4,"c213M01N10 - c213M01N23: Providers share model parameters and updates instead of sensitive local data.
 c213M01N07 - c213M01N23: The best-performing cancer model identified through benchmarking is retained for subsequent use at the provider node.
-c213M01N08 - c213M01N23: The best-performing Parkinson’s model is identified through cross-provider benchmarking.",SIC 20-39 - Manufacturing,Aggregation
+c213M01N08 - c213M01N23: The best-performing Parkinson’s model is identified through cross-provider benchmarking.
+c213M02N04 - c213M02N15: Instead of sharing sensitive patient data, each node shares their trained models and parameters on the blockchain network",SIC 20-39 - Manufacturing,Aggregation
 s003M01EK06,s003M01EK02,be_derived_from,1,c219M01N10 - c219M01N05: The platform provided single-choice or multiple-choice questions based on the knowledge points.,SIC 20-39 - Manufacturing,Aggregation
 s003M01EK06,s003M01EK07,be_derived_from,3,"c209M02N12 - c209M02N10: The test consisted of three parts: fill-in-the-blank questions
 c209M02N13 - c209M02N10: The test consisted of three parts:... image recognition
@@ -158,8 +158,8 @@ c216M02N11 - c216M01N35: Baseline assessment... included... opioid‑related kno
 s003M01EK06,s003M01TP09,be_transferred_by,2,"c219M01N10 - c219M01N20: The platform provided 55 assessment questions based on knowledge points.
 c219M02N03 - c219M01N20: The KG-DTPNursing platform incorporated a total of... 55 assessment questions designed to evaluate knowledge point mastery",SIC 20-39 - Manufacturing,Aggregation
 s003M01EK07,s003M01EK05,be_derived_from,1,c213M02N06 - c213M02N04: Each node benchmarks the performance of received models...the accuracy of the model is evaluated against validation data,SIC 20-39 - Manufacturing,Aggregation
-s003M01EK07,s003M01TP13,be_transferred_by,4,"c209M02N10 - c209M02N66: Data analysis was performed using IBM SPSS Statistics
-c213M01N14 - c213M01N23: Cancer-model accuracy results support comparison and identification of high-performing models.
+s003M01EK07,s003M01TP07,be_transferred_by,1,c209M02N10 - c209M02N66: Data analysis was performed using IBM SPSS Statistics,SIC 20-39 - Manufacturing,Aggregation
+s003M01EK07,s003M01TP15,be_transferred_by,3,"c213M01N14 - c213M01N23: Cancer-model accuracy results support comparison and identification of high-performing models.
 c213M01N16 - c213M01N23: Supplier-model accuracy results support cross-provider benchmarking.
 c213M01N19 - c213M01N23: The best-performing supplier model is identified through cross-provider comparison.",SIC 20-39 - Manufacturing,Aggregation
 s003M01EK08,s003M01TK10,translate_into,1,c211M02N03 - c211M02N04: Physicians can enhance their judgment in ethical conflicts within these online communities by studying other physicians' cases,SIC 20-39 - Manufacturing,Aggregation
@@ -202,10 +202,10 @@ c218M01N06 - c218M01N19: Multidisciplinary team integration was identified as an
 c218M01N05 - c218M02N34: Supportive/palliative care protocols are transferred via pre‑recorded lectures",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH01,s003M01THR11,participate_in,1,"c221M02N09 - c221M02N16: This knowledge, usually transferred from generation to generation",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH01,s003M01THR17,participate_in,1,c221M02N09 - c221M02N17: Users can consult remotely with doctors who prescribe treatments through this wallet,SIC 20-39 - Manufacturing,Aggregation
-s003M01KH01,s003M01TP08,participate_in,3,"c221M02N09 - c221M02N19: Doctors provide traditional medical knowledge and prescriptions, derived from ancient texts
+s003M01KH01,s003M01TP15,participate_in,3,"c221M02N09 - c221M02N19: Doctors provide traditional medical knowledge and prescriptions, derived from ancient texts
 c221M02N11 - c221M02N19: Medicine providers contribute medicinal recipes
 c221M02N13 - c221M02N19: Therapists, all committed to preserving and advancing traditional healing practices",SIC 20-39 - Manufacturing,Aggregation
-s003M01KH02,s003M01TP08,participate_in,1,c221M02N12 - c221M02N19: Manufacturers produce specialized medicinal products,SIC 20-39 - Manufacturing,Aggregation
+s003M01KH02,s003M01TP15,participate_in,1,c221M02N12 - c221M02N19: Manufacturers produce specialized medicinal products,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH03,s003M01THR11,participate_in,1,c214M02N18 - c214M02N20: The departure of experienced workers creating gaps in knowledge transfer,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH03,s003M01THR12,participate_in,1,c214M02N18 - c214M02N21: The departure of experienced workers creating gaps in knowledge transfer,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH03,s003M01THR13,participate_in,1,c214M02N18 - c214M02N24: The departure of experienced workers creating gaps in knowledge transfer,SIC 20-39 - Manufacturing,Aggregation
@@ -232,8 +232,8 @@ c218M01N15 - c218M01N23: Participants took part in clinical case discussions and
 s003M01KH04,s003M01TP12,participate_in,1,c218M01N15 - c218M01N19: A total of 153 participants were enrolled in the 2022 and 2023 online modules.,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH04,s003M01TP13,participate_in,1,c218M01N15 - c218M01N26: Eighty-three participants completed the online post-course evaluation.,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH05,s003M01THR15,participate_in,1,"c221M01N08 - c221M02N18: A critical function is performed by translators, who convert ancient medical texts into English and digital formats",SIC 20-39 - Manufacturing,Aggregation
-s003M01KH05,s003M01TP08,participate_in,1,"c221M01N08 - c221M02N19: Translators, who convert ancient medical texts into English and digital formats, forming the basis for training the Llama2 LLM",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH05,s003M01TP09,participate_in,1,c219M02N16 - c219M01N20: Its development followed an iterative testing protocol: an alpha version was evaluated by information technology specialists,SIC 20-39 - Manufacturing,Aggregation
+s003M01KH05,s003M01TP15,participate_in,1,"c221M01N08 - c221M02N19: Translators, who convert ancient medical texts into English and digital formats, forming the basis for training the Llama2 LLM",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH06,s003M01THR16,participate_in,1,c210M01N12 - c210M01N18: Practical assessors were qualified specialist intravenous therapy nurses or had extensive infusion-nursing experience.,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH06,s003M01TP08,participate_in,1,c214M01N13 - c214M01N19: Human factor engineering experts with nuclear safety training experience reviewed and validated the compiled content before it was embedded into the RAG-based knowledge base for downstream LLM interaction.,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH06,s003M01TP09,participate_in,1,c219M02N15 - c219M01N20: The extracted knowledge was manually verified by two domain experts (internal medicine nursing educators) for relevance and accuracy,SIC 20-39 - Manufacturing,Aggregation
@@ -278,16 +278,16 @@ c218M01N14 - c218M01N22: Online discussions and live activities facilitated peer
 c218M01N14 - c218M01N24: Peers provided feedback during development of research proposals.",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH13,s003M01THR17,participate_in,1,c227M01N09 - c227M02N20: Contract administrators employed at the Region were to notice divergences and enforce compliance among care-providing organizations.,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH13,s003M01TP13,participate_in,1,c227M01N09 - c227M01N16: Contract administrators received Registry reports and were expected to notice divergences and enforce compliance.,SIC 20-39 - Manufacturing,Aggregation
-s003M01KH14,s003M01TP07,participate_in,2,"c213M01N20 - c213M01N22: Each participating healthcare provider acts as an independent node in the architecture.
-c213M02N01 - c213M02N14: each stakeholder (healthcare provider) acts as an independent node",SIC 20-39 - Manufacturing,Aggregation
+s003M01KH14,s003M01TP07,participate_in,1,c213M02N01 - c213M02N14: each stakeholder (healthcare provider) acts as an independent node,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH14,s003M01TP09,participate_in,1,c219M02N17 - c219M01N20: The user interface of the KG-DTPNursing platform was designed by a multidisciplinary team,SIC 20-39 - Manufacturing,Aggregation
-s003M01KH14,s003M01TP10,participate_in,1,c213M02N01 - c213M02N15: each node shares their trained models and parameters on the blockchain network,SIC 20-39 - Manufacturing,Aggregation
-s003M01KH14,s003M01TP13,participate_in,6,"c213M01N20 - c213M01N23: Healthcare providers train, share, receive, and benchmark predictive models.
-c213M01N20 - c213M01N24: Ten healthcare-provider nodes participate in the breast cancer experiment.
+s003M01KH14,s003M01TP13,participate_in,5,"c213M01N20 - c213M01N24: Ten healthcare-provider nodes participate in the breast cancer experiment.
 c213M01N20 - c213M01N25: Provider nodes participate in Parkinson’s model training and evaluation.
 c213M01N20 - c213M01N26: Ten healthcare providers participate in the supplier selection experiment.
 c213M02N01 - c213M02N16: Each node benchmarks the performance of received models on its own hold-out validation set
 c227M01N08 - c227M01N16: The Unit for development was responsible for Registry infrastructure and had full administrative access.",SIC 20-39 - Manufacturing,Aggregation
+s003M01KH14,s003M01TP15,participate_in,3,"c213M01N20 - c213M01N22: Each participating healthcare provider acts as an independent node in the architecture.
+c213M01N20 - c213M01N23: Healthcare providers train, share, receive, and benchmark predictive models.
+c213M02N01 - c213M02N15: each node shares their trained models and parameters on the blockchain network",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH15,s003M01THR11,participate_in,1,"c214M02N16 - c214M02N20: Traditional safety training methods, such as classroom lectures, have significant limitations",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH15,s003M01THR12,participate_in,1,"c214M02N16 - c214M02N23: Conventional safety training approaches, such as classroom lectures and video watching",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH15,s003M01THR13,participate_in,3,"c214M02N16 - c214M02N24: On-site training opportunities are restricted due to strict confidentiality requirements
@@ -296,7 +296,7 @@ c216M02N22 - c216M02N27: The U.S. Surgeon General issued a call to action for tr
 s003M01KH15,s003M01THR17,participate_in,1,"c214M02N16 - c214M02N59: Immediately after the training and assessment phases, participants were asked to complete questionnaires",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH15,s003M01TP03,participate_in,2,"c214M02N16 - c214M02N25: traditional VR training (Group 2, N = 30)
 c214M02N16 - c214M02N26: AIVR training (Group 1, N = 30)",SIC 20-39 - Manufacturing,Aggregation
-s003M01KH15,s003M01TP04,participate_in,1,c214M02N16 - c214M02N28: An adaptive learning system that continuously assesses learner performance and adjusts training content to address individual knowledge gaps,SIC 20-39 - Manufacturing,Aggregation
+s003M01KH15,s003M01TP07,participate_in,1,c214M02N16 - c214M02N28: An adaptive learning system that continuously assesses learner performance and adjusts training content to address individual knowledge gaps,SIC 20-39 - Manufacturing,Aggregation
 s003M01KH15,s003M01TP08,participate_in,1,"c214M02N16 - c214M02N29: An AI tutoring system, that leveraging LLMs for personalized content generation",SIC 20-39 - Manufacturing,Aggregation
 s003M01KH15,s003M01TP14,participate_in,1,c209M02N21 - c209M02N68: randomly assigned to one of two groups using a computer-generated random number table,SIC 20-39 - Manufacturing,Aggregation
 s003M01KL01,s003M01THR11,participate_in,1,c212M02N14 - c212M02N16: Nursing students (control group) attended traditional lectures and seminars.,SIC 20-39 - Manufacturing,Aggregation
@@ -334,8 +334,8 @@ c216M01N25 - c216M01N35: Ambulance workers participated in field testing.
 c216M01N27 - c216M01N35: IT and VR professionals participated in field testing.
 c216M02N25 - c216M01N35: Participants (N = 25) were recruited... and engaged in simulated overdose response activities.
 c216M02N26 - c216M01N35: Trainees practiced using a real naloxone spray on a virtual patient in their environment.",SIC 20-39 - Manufacturing,Aggregation
-s003M01KL02,s003M01TP04,participate_in,3,"c212M01N10 - c212M01N15: Experimental-group students selected or received scenarios and interacted with virtual entities and objects.
-c212M01N10 - c212M01N17: Students received materials tailored to their individual needs and proficiency.
+s003M01KL02,s003M01TP04,participate_in,1,c212M01N10 - c212M01N15: Experimental-group students selected or received scenarios and interacted with virtual entities and objects.,SIC 20-39 - Manufacturing,Aggregation
+s003M01KL02,s003M01TP07,participate_in,2,"c212M01N10 - c212M01N17: Students received materials tailored to their individual needs and proficiency.
 c214M01N14 - c214M01N20: Trainees entered repeated adaptive retraining and evaluation loops.",SIC 20-39 - Manufacturing,Aggregation
 s003M01KL02,s003M01TP08,participate_in,2,"c212M01N10 - c212M01N16: Students consulted the AI Assistant for explanations, advice, and additional information.
 c214M01N14 - c214M01N19: Trainees interacted with the AI tutor through speech and personalized question answering.",SIC 20-39 - Manufacturing,Aggregation
@@ -368,16 +368,16 @@ c227M01N14 - c227M01N16: Aggregated Registry data were published through digital
 s003M01KL09,s003M01THR17,participate_in,1,c217M02N08 - c217M02N10: Team members are involved in interviews about cultural cognition.,SIC 20-39 - Manufacturing,Aggregation
 s003M01KL09,s003M01TP12,participate_in,2,"c217M02N08 - c217M02N13: Team members use LMS for helping each other with resources.
 c218M02N29 - c218M02N40: Multidisciplinary team members access the online modules",SIC 20-39 - Manufacturing,Aggregation
-s003M01KL09,s003M01TP13,participate_in,4,"c213M01N21 - c213M01N23: Providers learn from peer models through model sharing and benchmarking.
-c213M01N21 - c213M01N24: Providers evaluate external cancer models and identify potential improvements or biases.
+s003M01KL09,s003M01TP13,participate_in,3,"c213M01N21 - c213M01N24: Providers evaluate external cancer models and identify potential improvements or biases.
 c213M01N21 - c213M01N25: Providers compare Parkinson’s models trained using different institutional data portions.
 c213M01N21 - c213M01N26: Providers learn which externally trained supplier models outperform their local models.",SIC 20-39 - Manufacturing,Aggregation
+s003M01KL09,s003M01TP15,participate_in,1,c213M01N21 - c213M01N23: Providers learn from peer models through model sharing and benchmarking.,SIC 20-39 - Manufacturing,Aggregation
 s003M01KL10,s003M01TP09,participate_in,2,"c222M01N15 - c222M01N21: KGQA facilitates knowledge acquisition and provides assistance and guidance for medical and nursing researchers.
 c222M01N15 - c222M02N18: To validate the accuracy of this method, 100 questions were formulated... These questions were then input into KGQA",SIC 20-39 - Manufacturing,Aggregation
 s003M01KL11,s003M01TP07,participate_in,2,"c215M02N46 - c215M02N18: BpBLS can be updated flexibly and quickly without retraining the entire model for incremental biosignals and/or training samples
 c215M02N47 - c215M02N18: BpBLS... enabling deployment on wearable devices while seamlessly adapting to new biosignal modalities",SIC 20-39 - Manufacturing,Aggregation
 s003M01KL11,s003M01TP08,participate_in,1,c221M02N15 - c221M02N20: Users can utilize the custom-trained Llama2 LLM for inquiries and medical advice,SIC 20-39 - Manufacturing,Aggregation
-s003M01KL11,s003M01TP14,participate_in,1,c221M02N15 - c221M02N21: Customers can purchase medical recipes as NFTs from the marketplace with flat currency,SIC 20-39 - Manufacturing,Aggregation
+s003M01KL11,s003M01TP15,participate_in,1,c221M02N15 - c221M02N21: Customers can purchase medical recipes as NFTs from the marketplace with flat currency,SIC 20-39 - Manufacturing,Aggregation
 s003M01THR11,s003M01ED02,depend_on,1,c214M02N20 - c214M02N43: The constant influx of new hires and departure of experienced workers creating gaps in knowledge transfer,SIC 20-39 - Manufacturing,Aggregation
 s003M01THR11,s003M01LI04,be_constrained_by,5,"c214M02N20 - c214M01N37: Traditional safety training methods, such as classroom lectures, have significant limitations, including limited interactivity
 c214M02N20 - c214M02N46: Traditional safety training methods, such as classroom lectures, have significant limitations, including limited interactivity, low engagement, and weak motivation among participants
@@ -509,8 +509,8 @@ s003M01TK04,s003M01LI10,be_difficult_to_capture_due_to,2,"c221M02N07 - c221M02N3
 c221M02N07 - c221M02N38: The lack of verification mechanisms for practitioners' credentials and the risk of fraud due to the absence of credential verification mechanisms",SIC 20-39 - Manufacturing,Aggregation
 s003M01TK04,s003M01LI12,be_difficult_to_capture_due_to,1,c221M02N07 - c221M02N40: This leaves them marginalized and threatens the survival of these traditions,SIC 20-39 - Manufacturing,Aggregation
 s003M01TK04,s003M01THR11,be_transferred_by,1,"c221M02N07 - c221M02N16: This knowledge, usually transferred from generation to generation, faces the danger of fading away",SIC 20-39 - Manufacturing,Aggregation
-s003M01TK04,s003M01TP08,be_transferred_by,1,c221M02N07 - c221M02N19: The platform is designed to share traditional medical knowledge (implicitly transferring tacit expertise through its tools),SIC 20-39 - Manufacturing,Aggregation
 s003M01TK04,s003M01TP11,be_captured_by,1,c218M02N16 - c218M02N35: Patient management intuition is captured during live meeting interactions,SIC 20-39 - Manufacturing,Aggregation
+s003M01TK04,s003M01TP15,be_transferred_by,1,c221M02N07 - c221M02N19: The platform is designed to share traditional medical knowledge (implicitly transferring tacit expertise through its tools),SIC 20-39 - Manufacturing,Aggregation
 s003M01TK05,s003M01KH03,be_shared_by,4,"c210M01N07 - c210M01N08: Eligible participants were clinically active nurses qualified to perform PIVC placement.
 c210M02N08 - c210M02N13: Practical manoeuvres for PIVC placement assessed through 13-item observation checklist
 c210M02N08 - c210M02N14: No significant difference was observed between the PIVC placement practice scores of the two nurse groups at preintervention (8.60 vs. 9.03, P > 0.05)
@@ -581,7 +581,7 @@ c216M02N18 - c216M01N35: The advantage of MR over VR is that it allows users to 
 s003M01TK06,s003M01TP03,be_transferred_by,3,"c214M02N08 - c214M02N26: The AIVR group outperformed both the traditional VR and traditional slide-based instruction group in knowledge acquisition and retention
 c214M02N08 - c214M02N25: VR provides realistic, risk-free simulations, enabling trainees to safely experience hazardous scenarios
 c216M01N10 - c216M01N35: Checking for breathing was included in ReviveXR.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TK06,s003M01TP04,be_transferred_by,1,c214M01N10 - c214M01N20: Targeted retraining reinforced identified weaknesses in risk identification.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TK06,s003M01TP07,be_transferred_by,1,c214M01N10 - c214M01N20: Targeted retraining reinforced identified weaknesses in risk identification.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TK08,s003M01KH03,be_shared_by,1,c214M02N11 - c214M02N18: The departure of experienced workers creating gaps in knowledge transfer,SIC 20-39 - Manufacturing,Aggregation
 s003M01TK08,s003M01KH09,be_shared_by,1,"c225M02N08 - c225M02N13: ""enhanced decision-making skills among participants""",SIC 20-39 - Manufacturing,Aggregation
 s003M01TK08,s003M01KH15,be_shared_by,2,"c214M02N11 - c214M02N16: VR enables participants to experience scenarios that would be too hazardous to replicate in traditional on-site training
@@ -647,8 +647,8 @@ s003M01TK10,s003M01TP03,be_transferred_by,3,"c212M01N06 - c212M02N22: Students e
 c214M02N07 - c214M02N26: AIVR consists three core components: an AI tutoring system, that leveraging LLMs for personalized content generation; an adaptive learning system that continuously assesses learner performance and adjusts training content to address individual knowledge gaps; a VR system that contributes adaptive navigation support
 c225M02N05 - c225M02N19: ""improved knowledge retention, real-time interaction, and enhanced decision-making skills among participants""",SIC 20-39 - Manufacturing,Aggregation
 s003M01TK10,s003M01TP04,be_captured_by,1,c212M01N06 - c212M01N15: The system collected action data while students made decisions and observed their consequences.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TK10,s003M01TP04,be_transferred_by,2,"c212M01N06 - c212M01N15: Students practiced decision-making in virtual medical situations requiring ethical choices.
-c214M01N11 - c214M01N20: Targeted retraining reinforced identified weaknesses in preventive and recovery responses.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TK10,s003M01TP04,be_transferred_by,1,c212M01N06 - c212M01N15: Students practiced decision-making in virtual medical situations requiring ethical choices.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TK10,s003M01TP07,be_transferred_by,1,c214M01N11 - c214M01N20: Targeted retraining reinforced identified weaknesses in preventive and recovery responses.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TK10,s003M01TP09,be_captured_by,1,c219M02N10 - c219M01N20: Problem system layer: Bridges theory and practice by challenging students with clinical problems,SIC 20-39 - Manufacturing,Aggregation
 s003M01TK10,s003M01TP11,be_captured_by,1,c211M02N04 - c211M01N15: Physicians' proactive creation and sharing of professional knowledge... such as publishing case analyses,SIC 20-39 - Manufacturing,Aggregation
 s003M01TK11,s003M01KH03,be_shared_by,1,c212M02N08 - c212M02N13: Nurses identified psychological difficulties in patient interactions as a significant factor affecting professional practice.,SIC 20-39 - Manufacturing,Aggregation
@@ -992,26 +992,19 @@ c216M01N35 - c216M02N16: Intent to use naloxone, rescue breathing, and respond s
 s003M01TP04,s003M01EK01,adopt,1,c212M01N15 - c212M01N01: Virtual scenarios were parameterized by ethical dilemmas and required decisions based on ethical principles.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP04,s003M01EK07,evaluate,1,c212M01N15 - c212M02N01: AI-based instruction used standardized exams to assess academic performance improvements.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP04,s003M01LI04,mitigate,1,"c212M01N15 - c212M01N26: Unlike traditional lectures and seminars, which were described as static, the AI system created dynamic learning environments that continuously adapted to student needs and progress.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP04,s003M01LI05,be_constrained_by,8,"c212M01N15 - c212M01N35: AI model use relies on high-quality training data.
+s003M01TP04,s003M01LI05,be_constrained_by,4,"c212M01N15 - c212M01N35: AI model use relies on high-quality training data.
 c212M01N15 - c212M01N36: Algorithmic bias is identified as a limitation of AI in medical education.
 c212M01N15 - c212M01N37: Technical problems can arise when integrating and developing AI applications for education.
-c212M01N17 - c212M01N35: The paper identifies reliance on high-quality data for training models as a limitation of AI in medical education.
-c212M01N17 - c212M01N36: The risk of algorithmic bias is identified as a limitation of artificial intelligence in medical education.
-c212M01N17 - c212M01N37: The paper identifies technical challenges in integrating AI into education and technical issues in developing AI applications.
-c212M01N15 - c212M02N32: Difficulties arise in assessing AI effectiveness and addressing technical issues.
-c214M01N20 - c214M01N49: The current adaptive system retained a lag in real-time responsiveness.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP04,s003M01LI06,be_constrained_by,2,"c212M01N15 - c212M01N38: AI education requires additional resources and equitable access to technologies.
-c212M01N17 - c212M01N38: The use of AI in medical education requires additional resources and equal student access to the technologies.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP04,s003M01LI10,be_constrained_by,2,"c212M01N15 - c212M01N34: AI-supported education raises risks concerning confidentiality, privacy, and data breaches.
-c212M01N17 - c212M01N34: The paper identifies confidentiality, privacy violations, and possible data breaches as concerns when AI is used in education.",SIC 20-39 - Manufacturing,Aggregation
+c212M01N15 - c212M02N32: Difficulties arise in assessing AI effectiveness and addressing technical issues.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP04,s003M01LI06,be_constrained_by,1,c212M01N15 - c212M01N38: AI education requires additional resources and equitable access to technologies.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP04,s003M01LI10,be_constrained_by,1,"c212M01N15 - c212M01N34: AI-supported education raises risks concerning confidentiality, privacy, and data breaches.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP04,s003M01LI13,be_constrained_by,2,"c212M01N15 - c212M01N32: Previous technology experience may have affected adaptation to AI-supported learning.
 c212M01N15 - c212M01N33: Differences in teaching quality may have produced inconsistencies between groups.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP04,s003M01OD03,depend_on,1,"c212M01N15 - c212M01N25: The simulation required AI applications and HoloLens interaction, while the discussion identifies access and resource requirements.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP04,s003M01OD05,depend_on,1,c212M01N15 - c212M01N24: Qualified instructors designed the program and conducted and evaluated the experimental training.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP04,s003M01TE01,adopt,4,"c212M01N15 - c212M01N19: Virtual practical scenarios were created with the assistance of artificial intelligence.
+s003M01TP04,s003M01TE01,adopt,3,"c212M01N15 - c212M01N19: Virtual practical scenarios were created with the assistance of artificial intelligence.
 c212M01N15 - c212M01N22: The learning environment used a Scenario Generator to create virtual scenarios.
-c212M01N15 - c212M01N23: The learning environment used an AI Entity Constructor to develop interactive artificial entities.
-c212M01N17 - c212M01N19: Artificial intelligence tailored educational materials to students' needs and proficiency levels.",SIC 20-39 - Manufacturing,Aggregation
+c212M01N15 - c212M01N23: The learning environment used an AI Entity Constructor to develop interactive artificial entities.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP04,s003M01TE02,adopt,2,"c212M01N15 - c212M01N20: The experimental learning process incorporated the HoloHuman augmented-reality application.
 c212M01N15 - c212M01N21: Interaction with the human model and interface occurred through the HoloLens headset.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP04,s003M01THR11,cannot_fully_replace,1,c212M01N15 - c212M02N16: AI role should not be perceived as replacement for human ethics or critical thinking but as tool that enhances these aspects.,SIC 20-39 - Manufacturing,Aggregation
@@ -1019,22 +1012,25 @@ s003M01TP04,s003M01THR13,complement,1,c212M01N15 - c212M01N12: The authors state
 s003M01TP04,s003M01TK10,evaluate,1,c212M01N15 - c212M01N06: The system recorded response choices and reaction time while students made and reviewed decisions.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP04,s003M01TK13,evaluate,2,"c212M01N15 - c212M01N07: Students analyzed consequences and the system collected their action data in scenarios designed to foster critical thinking.
 c212M01N15 - c212M01N08: Interactive scenarios collected learner actions in situations involving problem-solving capabilities.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01ED01,depend_on,2,"c213M01N22 - c213M01N38: The architecture must operate within healthcare privacy requirements.
-c213M02N14 - c213M01N38: maintain compliance with regulatory requirements to protect patient privacy",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01ED01,depend_on,1,c213M02N14 - c213M01N38: maintain compliance with regulatory requirements to protect patient privacy,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01ED05,depend_on,1,c222M01N19 - c222M01N41: The BioBERT models processed the document dataset obtained from the PubMed osteosarcoma search.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01ED06,depend_on,2,"c215M02N18 - c215M02N30: IEEE Standard for Wearable Cuffless Blood Pressure Measuring Devices, IEEE Standard 1708-2014
 c215M02N18 - c215M02N31: These metrics underline that the proposed model consistently delivers accurate BP measurements, meeting or closely aligning with AAMI standards.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01ED07,depend_on,1,c221M01N12 - c221M01N28: The available palm tree manuscripts and their translated content provided the foundation for training the traditional medicine Llama2-13B knowledge base.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01ED10,depend_on,1,"c215M02N18 - c215M02N33: For incremental data in the CAS-BP dataset, the initial training dataset comprised three samples collected on day D1... each day separated by seven days.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01EK01,adopt,1,c222M01N19 - c222M01N42: The expert-supported annotation specification informed the labeled samples used for entity and relationship model training.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01EK02,adopt,5,"c215M01N11 - c215M01N03: PPR uses each person's average pulse pressure in its constraint.
+s003M01TP07,s003M01EK02,adopt,6,"c215M01N11 - c215M01N03: PPR uses each person's average pulse pressure in its constraint.
+c221M01N12 - c221M01N03: The Llama2-13B knowledge base adopts the English-translated manuscript content as its training material.
 c222M01N19 - c222M01N02: The automatically trained model ultimately processed the entire cleaned document dataset.
 c222M01N19 - c222M01N03: A prepared entity dictionary was used for dictionary-based BIO annotation before BioBERT training.
 c222M01N19 - c222M01N04: The classification dictionary normalized disease-name variants in the annotated model inputs.
 c222M01N19 - c222M01N05: Labeled JSON entity and relationship data were converted into model inputs.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01EK02,evaluate,1,c215M01N10 - c215M01N08: Estimated BP is compared with reference values using accuracy and agreement measures.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01EK04,evaluate,1,c215M01N11 - c215M01N02: The PPR term measures deviations between predicted SBP-DBP differences and individual pulse pressure.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01LI05,be_constrained_by,11,"c213M01N22 - c213M01N39: The framework addresses an environment fragmented by institutional healthcare data silos.
-c213M01N22 - c213M01N45: The validated architecture mainly supports supervised-learning scenarios.
+s003M01TP07,s003M01LI05,be_constrained_by,14,"c212M01N17 - c212M01N35: The paper identifies reliance on high-quality data for training models as a limitation of AI in medical education.
+c212M01N17 - c212M01N36: The risk of algorithmic bias is identified as a limitation of artificial intelligence in medical education.
+c212M01N17 - c212M01N37: The paper identifies technical challenges in integrating AI into education and technical issues in developing AI applications.
+c214M01N20 - c214M01N49: The current adaptive system retained a lag in real-time responsiveness.
 c215M01N10 - c215M01N23: The current framework can receive redundant incremental information that introduces bias.
 c215M01N10 - c215M01N26: BpBLS remains less effective for elderly and hypertensive subpopulations.
 c215M01N12 - c215M01N23: Data-incremental training cost rises when incoming batches become large.
@@ -1043,10 +1039,9 @@ c215M02N18 - c215M01N26: its effectiveness in elderly and hypertensive subpopula
 c222M01N19 - c222M01N30: Synonymous and subcategorized disease names required classification before model training and extraction.
 c222M01N19 - c222M01N31: Text preprocessing was required to prevent incomplete entity identification.
 c222M01N19 - c222M01N35: Limited data and uneven entity frequencies reduced prediction accuracy.
-c222M01N19 - c222M01N38: The study uses separate entity and relationship model-training procedures, while complex model training is identified as a present challenge.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01LI05,mitigate,11,"c213M01N22 - c213M01N41: Federated collaboration allows institutions with limited local data to benefit from models trained in other data contexts.
-c213M01N22 - c213M01N42: Federated performance is more stable than isolated local-model performance.
-c213M02N14 - c213M02N22: By enabling institutions to collaborate without compromising patient confidentiality, federated learning can enhance diagnostic accuracy
+c222M01N19 - c222M01N38: The study uses separate entity and relationship model-training procedures, while complex model training is identified as a present challenge.
+c222M02N19 - c222M02N28: the distribution of entities with varying frequencies... resulted in a reduction in the accuracy of predictions for certain entities with low frequencies",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01LI05,mitigate,9,"c213M02N14 - c213M02N22: By enabling institutions to collaborate without compromising patient confidentiality, federated learning can enhance diagnostic accuracy
 c215M02N18 - c215M02N37: BpBLS can be updated flexibly and quickly without retraining the entire model for incremental biosignals and/or training samples
 c215M02N18 - c215M02N38: BpBLS eliminates the need for iterative gradient-based optimization, reducing incremental time
 c215M02N18 - c215M02N39: BpBLS has a total parameter count of 49.5K parameters... model size is only 0.19MB
@@ -1059,21 +1054,19 @@ c215M02N19 - c215M02N39: BpBLS eliminates the need for iterative gradient-based 
 c215M02N20 - c215M02N37: Signal Incremental: Next, let us see the cases where multichannel signals... continue to enter into the system.
 c215M02N20 - c215M02N38: BpBLS eliminates the need for iterative gradient-based optimization
 c215M02N20 - c215M02N39: BpBLS eliminates the need for iterative gradient-based optimization",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01LI06,be_constrained_by,1,c215M01N09 - c215M01N21: Full retraining imposes computation and storage requirements that wearable devices may not meet.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01LI06,be_constrained_by,2,"c212M01N17 - c212M01N38: The use of AI in medical education requires additional resources and equal student access to the technologies.
+c215M01N09 - c215M01N21: Full retraining imposes computation and storage requirements that wearable devices may not meet.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01LI06,mitigate,3,"c215M01N10 - c215M01N21: Its small model and reduced computation make BpBLS more suitable for constrained wearable devices.
 c215M02N18 - c215M01N21: BpBLS has a total parameter count of 49.5K parameters... model size is only 0.19MB
 c215M02N18 - c215M02N36: BpBLS eliminates the need for iterative gradient-based optimization",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01LI08,be_constrained_by,1,c215M01N09 - c215M01N20: Complete retraining for every expansion is time-consuming.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01LI08,mitigate,2,"c215M01N10 - c215M01N20: BpBLS updates samples and signals without complete retraining and substantially reduces training time.
 c215M01N12 - c215M01N20: Signal modalities are incorporated without repeatedly retraining distinct models.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01LI10,mitigate,1,"c213M02N14 - c213M02N23: A defining advantage of FL is its strong focus on data privacy by keeping data on local devices, it significantly minimizes the risk of exposing sensitive information",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01LI13,be_constrained_by,1,c213M01N22 - c213M01N44: The framework’s effect on actual patient outcomes has not been empirically established.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01OD01,depend_on,2,"c213M01N22 - c213M01N37: The architecture relies on ethical transparency at the participating-node level.
-c215M02N18 - c215M02N29: we follow the previous feature selection framework to ensure feature effectiveness",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01OD03,depend_on,1,c213M01N22 - c213M01N36: Implementation assumes sufficient computational infrastructure and technical capability at participating institutions.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01TE01,adopt,16,"c213M01N22 - c213M01N31: Logistic regression is tested within the integrated predictive-model architecture.
-c213M01N22 - c213M01N32: Decision trees are tested within the integrated predictive-model architecture.
-c213M01N22 - c213M01N34: Gradient boosting is tested within the integrated predictive-model architecture.
+s003M01TP07,s003M01LI10,be_constrained_by,1,"c212M01N17 - c212M01N34: The paper identifies confidentiality, privacy violations, and possible data breaches as concerns when AI is used in education.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01LI10,mitigate,2,"c213M02N14 - c213M02N23: A defining advantage of FL is its strong focus on data privacy by keeping data on local devices, it significantly minimizes the risk of exposing sensitive information
+c221M01N12 - c221M01N22: The trained Llama2-13B knowledge base makes information from translated ancient medical texts accessible through treatment-related queries.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01OD01,depend_on,1,c215M02N18 - c215M02N29: we follow the previous feature selection framework to ensure feature effectiveness,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01TE01,adopt,17,"c212M01N17 - c212M01N19: Artificial intelligence tailored educational materials to students' needs and proficiency levels.
 c215M01N10 - c215M01N14: BpBLS is constructed from the broad-learning-system framework.
 c215M01N10 - c215M01N15: BpBLS uses a flat architecture to avoid memory-intensive layer stacking.
 c215M01N10 - c215M01N16: BpBLS obtains analytical model weights through pseudoinverse calculations.
@@ -1087,19 +1080,19 @@ c215M02N19 - c215M01N16: Data Incremental: The knowledge-embedded incremental im
 c215M02N19 - c215M02N24: considering the dependence between SBP and DBP and the physiological knowledge of the pulse pressure difference
 c215M02N20 - c215M01N16: Signal Incremental: Next, let us see the cases where multichannel signals... continue to enter into the system.
 c215M02N20 - c215M02N24: considering the dependence between SBP and DBP and the physiological knowledge of the pulse pressure difference
+c221M01N12 - c221M01N14: The implemented traditional medicine knowledge base was constructed by custom-training Llama2-13B.
+c221M01N12 - c221M01N15: Model fine-tuning used QLoRA's 4-bit quantized pretrained model.
+c221M01N12 - c221M01N16: Model fine-tuning used Low Rank Adapters.
 c222M01N19 - c222M01N23: BioBERT-base-cased-v1.2 was trained for entity and relationship recognition.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01TE03,adopt,1,c213M01N22 - c213M01N30: Predictive digital twins provide the architecture’s predictive and dynamic representation capability.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01TE04,adopt,1,c209M02N66 - c209M02N40: Data analysis was performed using IBM SPSS Statistics,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01TE05,adopt,1,c215M01N10 - c215M01N19: BpBLS is designed for biosignals obtained through wearable devices and for wearable deployment.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP07,s003M01TE06,adopt,4,"c213M01N22 - c213M01N28: The integrated architecture uses blockchain as its decentralized exchange and integrity layer.
-c213M01N22 - c213M01N29: The architecture implements federated learning for privacy-preserving collaborative model development.
-c213M01N22 - c213M01N35: Smart contracts specify conditions for accessing and using shared healthcare models.
-c213M02N14 - c213M02N17: Federated Learning (FL) is a decentralized approach...utilizes blockchain technology to distribute model storage across network nodes",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01TE06,adopt,1,c213M02N14 - c213M02N17: Federated Learning (FL) is a decentralized approach...utilizes blockchain technology to distribute model storage across network nodes,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01THR15,complement,1,c217M02N36 - c217M02N12: SEM is used alongside thematic analysis in the parallel hybrid approach.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP07,s003M01THR17,cannot_fully_replace,1,"c215M02N18 - c215M02N17: when the amount of incremental data is too large, users should reconsider whether to opt for incremental updates or full retraining",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01ED07,depend_on,1,c221M01N12 - c221M01N28: The available palm tree manuscripts and their translated content provided the foundation for training the traditional medicine Llama2-13B knowledge base.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01TK13,evaluate,1,c217M02N36 - c217M02N01: SEM clarifies the impact path of organizational culture and technological environment on knowledge sharing behavior.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP07,s003M01TP04,be_composed_of,2,"c201M01N15 - c201M01N17: Structured diagnostic prompting was one of the framework's three implemented cognitive-support functions.
+c201M01N15 - c201M01N18: Workflow-contextualized feedback was one of the framework's three implemented cognitive-support functions.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01EK01,adopt,1,c212M01N16 - c212M01N01: AI Assistants supported decisions based on ethical principles.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01EK02,adopt,2,"c221M01N12 - c221M01N03: The Llama2-13B knowledge base adopts the English-translated manuscript content as its training material.
-c221M02N19 - c221M02N06: Medical recipe data, including treatment histories and physician details, are encapsulated in Model Cards and securely stored on the blockchain",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01EK03,adopt,1,c221M02N19 - c221M01N05: These texts are used to fine-tune the Llama2 LLM,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01EK09,adopt,1,c214M01N19 - c214M01N04: The AI tutor adopts the validated domain-specific knowledge base for contextual responses.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01LI04,mitigate,2,"c214M01N19 - c214M01N44: The AI tutoring system enabled personalized dialogue, self-directed inquiry, and immediate conceptual clarification beyond procedure-only VR guidance.
 c214M02N29 - c214M02N47: LLMs enable seamless natural communication and interaction between users and the system through virtual tutors",SIC 20-39 - Manufacturing,Aggregation
@@ -1108,17 +1101,10 @@ c212M01N16 - c212M01N36: The risk of algorithmic bias is identified as a limitat
 c212M01N16 - c212M01N37: The paper identifies technical challenges in integrating AI into education and technical issues in developing AI applications.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01LI05,mitigate,1,c214M01N19 - c214M01N47: RAG with a private controlled knowledge base was used to reduce hallucination risk.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01LI06,be_constrained_by,1,c212M01N16 - c212M01N38: The use of AI in medical education requires additional resources and equal student access to the technologies.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01LI09,mitigate,1,"c221M02N19 - c221M01N24: This system offers mechanisms to verify doctors and treatments in a privacy-preserving way, potentially reducing fraud and medication errors",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01LI10,be_constrained_by,1,"c212M01N16 - c212M01N34: The paper identifies confidentiality, privacy violations, and possible data breaches as concerns when AI is used in education.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01LI10,mitigate,2,"c221M01N12 - c221M01N22: The trained Llama2-13B knowledge base makes information from translated ancient medical texts accessible through treatment-related queries.
-c221M02N19 - c221M02N36: To share traditional medical knowledge and address these issues [risk of knowledge loss]",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01LI10,resolve,2,"c221M02N19 - c221M02N38: This system offers mechanisms to verify doctors and treatments in a privacy-preserving way
-c221M02N19 - c221M02N39: Transforming ancient medicinal recipes into NFT tokens for sale on NFT marketplaces [global access]",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01LI13,be_constrained_by,1,"c212M01N16 - c212M01N32: The authors state that participants' previous technology experience could affect how quickly they adapted to AI-assisted learning, which included use of AI Assistants.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01OD03,depend_on,1,c212M01N16 - c212M01N25: Use of AI programs and augmented-reality assistance requires access to the described software and hardware.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01OD05,depend_on,1,"c221M02N19 - c221M02N34: WedaGPT creates a collaborative ecosystem connecting doctors, medicine providers, therapists, patients, and technology experts",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01OD07,depend_on,1,"c221M02N19 - c221M02N35: Revenue from these sales is distributed among platform contributors, promoting equitable ownership and recognition",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01TE01,adopt,16,"c212M01N16 - c212M01N19: AI programs were employed as assistants for case analysis and decision support.
+s003M01TP08,s003M01TE01,adopt,9,"c212M01N16 - c212M01N19: AI programs were employed as assistants for case analysis and decision support.
 c212M01N16 - c212M01N23: AI Assistant programs utilized interactive AI modeling for personalization.
 c214M01N19 - c214M01N23: The AI tutoring system uses LLMs for personalized question answering.
 c214M01N19 - c214M01N24: The AI tutor uses RAG for localized retrieval and response generation.
@@ -1126,28 +1112,12 @@ c214M01N19 - c214M01N28: The RAG-based Langchain-Chatchat application was implem
 c214M01N19 - c214M01N29: ChatGLM was employed in the AI tutoring implementation.
 c214M01N19 - c214M01N34: Prompt engineering combines the retrieved content and user query for LLM generation.
 c214M02N29 - c214M02N31: An AI tutoring system, that leveraging LLMs for personalized content generation
-c221M01N12 - c221M01N14: The implemented traditional medicine knowledge base was constructed by custom-training Llama2-13B.
-c221M01N12 - c221M01N15: Model fine-tuning used QLoRA's 4-bit quantized pretrained model.
-c221M01N12 - c221M01N16: Model fine-tuning used Low Rank Adapters.
-c221M02N20 - c221M02N24: The interaction with Meta's Llama2 LLM is facilitated by Recipe smart contract through Ollam's LLM API, Llamaindex and LangChain
-c221M02N19 - c221M02N24: Utilizes a custom-trained Meta's Llama2 Large Language Model (LLM)
-c221M02N19 - c221M01N15: Qlora with 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)
-c221M02N19 - c221M02N26: The interaction with Meta's Llama2 LLM is facilitated by Recipe smart contract through Ollam's LLM API
-c221M02N19 - c221M02N28: Llamaindex and LangChain, a robust interface that enables streamlined and effective communication with the language model",SIC 20-39 - Manufacturing,Aggregation
+c221M02N20 - c221M02N24: The interaction with Meta's Llama2 LLM is facilitated by Recipe smart contract through Ollam's LLM API, Llamaindex and LangChain",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01TE02,adopt,2,"c212M01N16 - c212M01N20: HoloHuman was given as an example within the description of the AI Assistant tools.
 c212M01N16 - c212M01N21: The HoloLens headset supported interaction with the model and user interface.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01TE04,adopt,3,"c214M01N19 - c214M01N31: The AI tutor retrieves vectorized document segments from a semantic vector database.
-c214M01N19 - c214M01N32: MySQL mediates communication and records interactions between the virtual client and server.
-c221M02N19 - c221M02N27: Llamaindex and LangChain, a robust interface that enables streamlined and effective communication with the language model",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP08,s003M01TE04,adopt,2,"c214M01N19 - c214M01N31: The AI tutor retrieves vectorized document segments from a semantic vector database.
+c214M01N19 - c214M01N32: MySQL mediates communication and records interactions between the virtual client and server.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP08,s003M01TE05,adopt,1,c214M01N19 - c214M01N33: Windows Speech Recognition enables spoken interaction with the LLM.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01TE06,adopt,5,"c221M02N19 - c221M01N20: Securely stored on the blockchain
-c221M02N19 - c221M02N30: Four main smart contracts: Identity, Recipe, Model Card, and NFT contracts
-c221M02N19 - c221M02N31: Custom NFT schema known as 'w-528,' customized to represent recipe data as NFT objects
-c221M02N19 - c221M02N32: SSI-enabled mobile wallets for secure interactions
-c221M02N19 - c221M02N33: SSI-enabled mobile wallets, which safeguard their personal information",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01THR11,cannot_fully_replace,1,"c221M02N19 - c221M02N16: The platform complements traditional practices while preserving cultural heritage, but oral traditions remain foundational",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01THR15,complement,1,c221M02N19 - c221M02N18: Translators then convert these texts into English [manual translation combined with digital processing],SIC 20-39 - Manufacturing,Aggregation
-s003M01TP08,s003M01THR17,complement,1,c221M02N19 - c221M02N17: Users can consult remotely with doctors who prescribe treatments through this wallet [supplementing traditional consultation],SIC 20-39 - Manufacturing,Aggregation
 s003M01TP09,s003M01ED05,depend_on,2,"c222M01N18 - c222M01N41: The papers selected for Doccano annotation came from osteosarcoma literature collected through PubMed.
 c222M01N20 - c222M01N41: The OSKG was constructed from literature obtained through the PubMed osteosarcoma search.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP09,s003M01ED09,depend_on,2,"c219M01N20 - c219M02N44: Students were eligible for the study if they... had access to a computer with a stable internet connection capable of running the platform
@@ -1247,23 +1217,11 @@ c219M01N20 - c219M02N08: Problem system layer: Bridges theory and practice by ch
 s003M01TP09,s003M01TK10,evaluate,1,"c219M01N20 - c219M02N10: Problem system layer: Bridges theory and practice by challenging students with clinical problems, thereby developing their clinical reasoning and competency",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP09,s003M01TK13,evaluate,2,"c219M01N20 - c219M01N14: The platform's assessment questions were designed to evaluate knowledge-point mastery.
 c219M01N20 - c219M02N09: Curriculum objective layer: Defines overarching learning goals to guide students toward mastering knowledge, skill, and critical thinking",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP10,s003M01ED01,depend_on,1,c213M02N15 - c213M01N38: maintain compliance with regulatory requirements to protect patient privacy,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP10,s003M01ED07,depend_on,1,c221M01N11 - c221M01N28: Translation and digitization required the availability of the palm tree manuscripts used as source material.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP10,s003M01EK02,adopt,1,c221M01N11 - c221M01N03: The translation and digitization workflow uses ancient palm tree manuscripts as its source material.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP10,s003M01LI05,resolve,2,"c213M02N15 - c213M02N24: blockchain technology can transform health information exchange, overcoming the limitations of centralized systems prone to single point of failure and lack of transparency
-c213M02N15 - c213M02N25: blockchain technology...offers a robust solution for addressing challenges related to data security, privacy, and interoperability",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP10,s003M01LI10,mitigate,5,"c213M02N15 - c213M02N23: blockchain technology...ensures that the models are immutable and tamper-proof, preserving the integrity of the information shared
-c221M01N11 - c221M01N23: Ancient medical recipe books were translated and digitized into PDF formats, providing digital preservation for texts at risk of being lost.
-c221M01N13 - c221M01N21: The paper states that WedaGPT uses translated and digitized ancient medical texts to preserve and disseminate traditional medical knowledge.
-c221M01N13 - c221M01N22: Translated and digitized texts and the Llama2 interface enable access to treatment information previously confined to traditional source material.
-c221M01N13 - c221M01N23: WedaGPT uses ancient medical texts that were translated and digitized to preserve traditional medical knowledge.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP10,s003M01TE01,adopt,2,"c221M01N13 - c221M01N17: The implemented WedaGPT query workflow used Ollama APIs.
-c221M01N13 - c221M01N18: The implemented WedaGPT query workflow used LangChain.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP10,s003M01TE04,adopt,2,"c213M02N15 - c213M02N19: blockchain-based solutions can be integrated with off-chain storage such as InterPlanetary File System (IPFS)
-c227M02N25 - c227M01N19: The data in the Registry were... automatically extracted from the electronic medical records.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP10,s003M01TE06,adopt,3,"c213M02N15 - c213M02N17: blockchain technology...enables secure data storage and sharing across multiple stakeholders
-c213M02N15 - c213M02N18: Smart contracts, a key feature of blockchain, automate transactions, connect stakeholders, and enable secure, transparent data sharing
-c221M01N13 - c221M01N20: The WedaGPT implementation evaluated transaction and search performance using the Rahasak blockchain.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP10,s003M01LI10,mitigate,1,"c221M01N11 - c221M01N23: Ancient medical recipe books were translated and digitized into PDF formats, providing digital preservation for texts at risk of being lost.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP10,s003M01TE02,adopt,1,c227M02N24 - c227M01N20: Fig. 2 is an example of the report generator interface as seen by personnel at the central contractor unit or care managers that specifically asked for access.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP10,s003M01TE04,adopt,1,c227M02N25 - c227M01N19: The data in the Registry were... automatically extracted from the electronic medical records.,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP11,s003M01ED05,depend_on,9,"c218M01N21 - c218M01N31: Live online engagement is vulnerable to unreliable internet connectivity.
 c218M01N21 - c218M01N32: Participation in synchronous online sessions requires digital-device access and supporting infrastructure, which the paper identifies as barriers to online engagement.
 c218M01N22 - c218M01N31: Guided online discussions form part of online engagement, which can be hindered by unreliable internet connectivity.
@@ -1375,21 +1333,17 @@ s003M01TP12,s003M01TE04,adopt,4,"c217M02N13 - c217M02N16: The technological envi
 c218M01N19 - c218M01N28: Invited teams were enrolled into the prerequisite modules in Cure4Kids.
 c218M02N40 - c218M02N45: The LMS adopts downloadable offline files
 c218M02N42 - c218M01N28: Virtual learning adopts the Cure4Kids platform software",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP12,s003M01TE07,adopt,9,"c210M01N19 - c210M01N20: The intervention delivered educational messages through WeChat.
+s003M01TP12,s003M01TE07,adopt,8,"c210M01N19 - c210M01N20: The intervention delivered educational messages through WeChat.
 c210M01N19 - c210M01N21: The intervention incorporated text and video multimedia elements.
 c210M02N25 - c210M01N20: Targeted educational content on PIVC placement was developed and delivered through the WeChat platform
 c210M02N25 - c210M02N30: Proliferation of mobile electronic devices has catalysed the evolution of nursing education methodologies
-c210M02N26 - c210M02N30: Mobile-enabled learning systems
 c217M02N13 - c217M02N35: Digital collaboration platforms are part of the technological environment.
 c217M01N13 - c217M02N18: The technological environment includes online teaching platforms.
 c224M01N13 - c224M01N16: The Ecare-COPD MOOC was made available on the NAU e-learning platform.
 c224M01N13 - c224M01N19: The intervention is identified as m-learning, which the paper defines as access to educational content through mobile devices.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP12,s003M01THR07,complement,1,c218M02N41 - c218M02N32: Cure4Kids complements traditional mentorship by adding virtual feedback channels,SIC 20-39 - Manufacturing,Aggregation
 s003M01TP12,s003M01THR11,cannot_fully_replace,1,c210M02N25 - c210M02N22: The insufficiency of purely didactic interventions for consolidating complex clinical competencies,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP12,s003M01THR11,complement,5,"c210M02N26 - c210M02N22: Mobile-enabled learning systems provide more cost-effective solutions for content delivery compared with traditional didactic methods
-c210M02N27 - c210M02N22: Internet-based learning further facilitates ubiquitous access to multimodal educational resources, enabling self-directed learning experiences that transcend temporal and spatial constraints
-c210M02N28 - c210M02N22: Evidence indicates that technology-enhanced learning (TEL) approaches, particularly E-learning platforms, demonstrate effectiveness not only in optimizing training efficiency and knowledge retention
-c218M02N40 - c218M02N31: Online modules complement in‑person learning
+s003M01TP12,s003M01THR11,complement,2,"c218M02N40 - c218M02N31: Online modules complement in‑person learning
 c224M01N13 - c224M02N08: e-learning... often complement traditional teaching models.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP12,s003M01THR17,cannot_fully_replace,2,"c218M02N40 - c218M01N18: Online modules cannot fully replace the in‑person NOTS workshop
 c218M02N41 - c218M01N18: Cure4Kids cannot fully replace the in‑person workshop",SIC 20-39 - Manufacturing,Aggregation
@@ -1399,23 +1353,18 @@ c227M01N16 - c227M01N24: The Registry was implemented to monitor and improve com
 c227M01N16 - c227M02N36: The case concerned the (non)use of the digital wait time registry (hereafter 'the Registry') implemented in the Stockholm Region by the Stockholm Regional Council.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP13,s003M01ED05,depend_on,2,"c218M01N25 - c218M01N31: Completion of graded online tasks and activities depends on online engagement, which unreliable connectivity can impede.
 c218M01N25 - c218M01N32: Completion of graded online tasks and activities requires access to digital devices and supporting infrastructure.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01EK02,adopt,7,"c213M01N24 - c213M01N01: The cancer evaluation workflow uses the partitioned Wisconsin breast cancer dataset.
+s003M01TP13,s003M01EK02,adopt,5,"c213M01N24 - c213M01N01: The cancer evaluation workflow uses the partitioned Wisconsin breast cancer dataset.
 c213M01N24 - c213M01N11: Each provider tests cancer models using its local reserved data.
 c213M01N25 - c213M01N03: The Parkinson’s evaluation workflow uses the partitioned biomedical voice dataset.
 c213M01N25 - c213M01N12: Provider-specific Parkinson’s test sets are used to evaluate classification models.
-c213M01N26 - c213M01N05: The supplier evaluation workflow uses the healthcare supplier selection dataset.
-c213M01N23 - c213M01N01: The general update cycle applies to the cancer dataset when additional local observations become available.
-c213M01N23 - c213M01N03: The general update cycle applies to the Parkinson’s dataset when additional local observations become available.",SIC 20-39 - Manufacturing,Aggregation
+c213M01N26 - c213M01N05: The supplier evaluation workflow uses the healthcare supplier selection dataset.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP13,s003M01EK02,evaluate,3,"c213M01N25 - c213M01N12: Balanced accuracy is used to compare Parkinson’s model performance.
 c224M01N14 - c224M01N01: Initial and final module scores were used to assess COPD knowledge and calculate knowledge retention.
 c227M01N16 - c227M01N01: The Registry was implemented to measure accessibility, monitor wait times, identify divergences, and evaluate compliance with the wait time guarantee.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP13,s003M01EK05,adopt,1,c213M01N26 - c213M01N09: Each provider uses its supplier validation data to evaluate local and external models.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01EK05,evaluate,7,"c213M01N24 - c213M01N07: Cancer models trained by every provider are tested across provider validation datasets.
+s003M01TP13,s003M01EK05,evaluate,4,"c213M01N24 - c213M01N07: Cancer models trained by every provider are tested across provider validation datasets.
 c213M01N25 - c213M01N08: Parkinson’s classification models are tested across provider datasets.
 c213M01N26 - c213M01N09: Locally and externally trained supplier-selection models are tested at each provider.
-c213M01N23 - c213M01N07: Updated cancer models re-enter the repeated benchmarking cycle.
-c213M01N23 - c213M01N08: Updated Parkinson’s models re-enter the repeated benchmarking cycle.
-c213M01N23 - c213M01N09: Updated supplier-selection models re-enter the repeated benchmarking cycle.
 c213M02N16 - c213M02N04: Each node benchmarks the performance of received models on its own hold-out validation set",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP13,s003M01EK06,adopt,3,"c214M01N21 - c214M01N05: The assessment system uses expert-crafted reference answers for semantic scoring.
 c214M01N21 - c214M02N03: The system employed a LLM which compared each learner's input with expert-crafted reference answers using structured prompting
@@ -1424,18 +1373,14 @@ s003M01TP13,s003M01EK07,evaluate,3,"c213M01N24 - c213M01N14: The workflow calcul
 c213M01N26 - c213M01N16: The workflow compares supplier-model accuracy across provider nodes.
 c213M01N26 - c213M01N19: Cross-node comparison identifies supplier models outperforming locally trained alternatives.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP13,s003M01LI04,mitigate,1,"c214M01N21 - c214M01N45: By leveraging the LLMs, the system avoids subjective biases typical of manual assessments, ensuring a standardized and scientifically grounded evaluation",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01LI05,be_constrained_by,9,"c213M01N24 - c213M01N41: The cancer case demonstrates difficulty associated with models trained using limited local data.
+s003M01TP13,s003M01LI05,be_constrained_by,8,"c213M01N24 - c213M01N41: The cancer case demonstrates difficulty associated with models trained using limited local data.
 c213M01N25 - c213M01N41: Limited provider datasets contribute to unstable local performance in the Parkinson’s application.
 c213M01N24 - c213M01N42: Cancer-model accuracy varies substantially across provider nodes.
 c213M01N25 - c213M01N42: Parkinson’s model performance varies across provider nodes.
 c213M01N26 - c213M01N42: Supplier-model performance differs by training and evaluating node.
 c227M01N16 - c227M01N27: Uncertainty and flaws in the Registry data made its outcomes difficult to assess and reduced users' trust.
 c227M01N16 - c227M01N28: Care managers characterized available statistics as two months old.
-c227M01N17 - c227M01N36: The local systems supported local analysis but displaced efforts to investigate and correct Registry-wide problems.
 c227M01N16 - c227M02N37: [The Registry] is very... not very reliable, it's very bad, so healthcare providers don't report, they report wrongly.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01LI05,mitigate,3,"c213M01N23 - c213M01N39: Model sharing permits cross-institutional learning without pooling siloed raw data.
-c213M01N23 - c213M01N40: Exchanging models rather than aggregating raw datasets reduces dependence on fully compatible centralized data infrastructures.
-c213M01N23 - c213M01N42: Cross-provider benchmarking identifies external models that outperform unstable local alternatives.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP13,s003M01LI08,be_constrained_by,5,"c218M01N25 - c218M01N34: A respondent requested more time to fulfill the course activities because participants were already overwhelmed with work.
 c227M01N16 - c227M01N31: Claimed lack of expertise discouraged users from interpreting results and identifying applicable standards.
 c227M01N16 - c227M01N32: Claimed lack of time discouraged analysis and follow-up.
@@ -1471,37 +1416,94 @@ c213M01N26 - c213M01N33: Random forests are implemented in the supplier experime
 c214M01N21 - c214M01N23: The assessment system uses an LLM to evaluate learner responses.
 c214M01N21 - c214M01N29: The AI-based assessment system was built on ChatGLM.
 c214M01N21 - c214M01N34: Structured prompting was used to compare learner inputs with reference answers.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01TE02,adopt,3,"c227M01N16 - c227M01N20: Registry users viewed waiting-patient data through a report generator interface.
-c227M01N16 - c227M01N21: Published digital interfaces were searchable through web browsers.
-c227M02N24 - c227M01N20: Fig. 2 is an example of the report generator interface as seen by personnel at the central contractor unit or care managers that specifically asked for access.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01TE04,adopt,6,"c209M02N66 - c209M02N40: Data analysis was performed using IBM SPSS Statistics
-c209M02N67 - c209M02N39: sample size was estimated using G*Power software
-c218M01N25 - c218M01N28: Participants were enrolled in the prerequisite modules in Cure4Kids, and individual grades were assigned throughout those modules from completion of online course tasks and activities.
+s003M01TP13,s003M01TE02,adopt,2,"c227M01N16 - c227M01N20: Registry users viewed waiting-patient data through a report generator interface.
+c227M01N16 - c227M01N21: Published digital interfaces were searchable through web browsers.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP13,s003M01TE04,adopt,3,"c218M01N25 - c218M01N28: Participants were enrolled in the prerequisite modules in Cure4Kids, and individual grades were assigned throughout those modules from completion of online course tasks and activities.
 c227M01N16 - c227M01N19: Registry data were automatically extracted from electronic medical records.
-c227M01N17 - c227M01N22: The parallel systems used local data files containing wait-time data and additional variables.
 c227M01N16 - c227M02N27: The case concerned the (non)use of the digital wait time registry (hereafter 'the Registry') implemented in the Stockholm Region.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01TE06,adopt,9,"c213M01N23 - c213M01N28: Predictive models are exchanged and recorded through the blockchain network.
-c213M01N23 - c213M01N29: Federated learning enables model sharing without direct exchange of local data.
-c213M01N23 - c213M01N35: Smart contracts govern model-access and model-use conditions during sharing.
-c213M01N24 - c213M01N28: The federated cancer scenario is simulated through a blockchain network.
+s003M01TP13,s003M01TE06,adopt,6,"c213M01N24 - c213M01N28: The federated cancer scenario is simulated through a blockchain network.
 c213M01N24 - c213M01N29: The cancer application evaluates a federated-learning scenario.
 c213M01N25 - c213M01N28: The Parkinson’s models are evaluated in the blockchain-enabled framework.
 c213M01N25 - c213M01N29: The Parkinson’s application tests the federated-learning approach.
 c213M01N26 - c213M01N28: Supplier models are shared and compared through the blockchain network.
 c213M01N26 - c213M01N29: Providers retain supplier data locally while participating in collaborative model evaluation.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP13,s003M01THR11,complement,1,"c214M01N21 - c214M02N20: By leveraging the LLMs, the system avoids subjective biases typical of manual assessments",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01THR15,complement,1,c217M02N36 - c217M02N12: SEM is used alongside thematic analysis in the parallel hybrid approach.,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01THR17,complement,1,"c227M02N26 - c227M02N21: Some care units further developed parallel, local digital systems instead of voicing concerns about and suggesting ways of addressing flaws in the Registry.",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP13,s003M01TK06,evaluate,2,"c214M01N21 - c214M01N10: The assessment system evaluated risk identification.
 c214M01N21 - c214M02N08: The AI offers an overall assessment across three critical areas: operational understanding, risk identification, and preventive and recovery measures",SIC 20-39 - Manufacturing,Aggregation
 s003M01TP13,s003M01TK10,evaluate,4,"c212M01N18 - c212M01N04: The pre- and post-training process included a moral-behavior test with situational and open-ended items.
 c212M01N18 - c212M01N06: The moral-behavior test included situational tasks and questions evaluating ethical decision-making.
 c214M01N21 - c214M01N11: The assessment system evaluated preventive and recovery measures.
 c214M01N21 - c214M02N07: The AI offers an overall assessment across three critical areas: operational understanding, risk identification, and preventive and recovery measures",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP13,s003M01TK13,evaluate,5,"c212M01N18 - c212M01N05: Self-efficacy was assessed using self-reports and the College Academic Self-Efficacy Scale.
+s003M01TP13,s003M01TK13,evaluate,4,"c212M01N18 - c212M01N05: Self-efficacy was assessed using self-reports and the College Academic Self-Efficacy Scale.
 c214M01N21 - c214M01N09: The assessment system evaluated operational understanding.
 c214M01N21 - c214M02N12: To assess trainees' self-efficacy levels after completing training via AIVR, traditional VR, or slides-based methods
-c217M02N36 - c217M02N01: SEM clarifies the impact path of organizational culture and technological environment on knowledge sharing behavior.
 c218M01N25 - c218M01N09: Individual grades were assigned throughout the modules, and a passing score of 70 percent or higher was used to identify course completion.",SIC 20-39 - Manufacturing,Aggregation
-s003M01TP14,s003M01LI05,be_constrained_by,1,c222M02N19 - c222M02N28: the distribution of entities with varying frequencies... resulted in a reduction in the accuracy of predictions for certain entities with low frequencies,SIC 20-39 - Manufacturing,Aggregation
-s003M01TP14,s003M01TE06,adopt,1,"c221M02N21 - c221M02N31: Custom NFT schema known as 'w-528,' customized to represent recipe data as NFT objects",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP14,s003M01LI05,be_constrained_by,1,c227M01N17 - c227M01N36: The local systems supported local analysis but displaced efforts to investigate and correct Registry-wide problems.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP14,s003M01TE04,adopt,2,"c209M02N67 - c209M02N39: sample size was estimated using G*Power software
+c227M01N17 - c227M01N22: The parallel systems used local data files containing wait-time data and additional variables.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP14,s003M01TE07,adopt,1,c210M02N26 - c210M02N30: Mobile-enabled learning systems,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP14,s003M01THR11,complement,3,"c210M02N26 - c210M02N22: Mobile-enabled learning systems provide more cost-effective solutions for content delivery compared with traditional didactic methods
+c210M02N27 - c210M02N22: Internet-based learning further facilitates ubiquitous access to multimodal educational resources, enabling self-directed learning experiences that transcend temporal and spatial constraints
+c210M02N28 - c210M02N22: Evidence indicates that technology-enhanced learning (TEL) approaches, particularly E-learning platforms, demonstrate effectiveness not only in optimizing training efficiency and knowledge retention",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP14,s003M01THR17,complement,1,"c227M02N26 - c227M02N21: Some care units further developed parallel, local digital systems instead of voicing concerns about and suggesting ways of addressing flaws in the Registry.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01ED01,depend_on,2,"c213M01N22 - c213M01N38: The architecture must operate within healthcare privacy requirements.
+c213M02N15 - c213M01N38: maintain compliance with regulatory requirements to protect patient privacy",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01EK02,adopt,3,"c213M01N23 - c213M01N01: The general update cycle applies to the cancer dataset when additional local observations become available.
+c213M01N23 - c213M01N03: The general update cycle applies to the Parkinson’s dataset when additional local observations become available.
+c221M02N19 - c221M02N06: Medical recipe data, including treatment histories and physician details, are encapsulated in Model Cards and securely stored on the blockchain",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01EK03,adopt,1,c221M02N19 - c221M01N05: These texts are used to fine-tune the Llama2 LLM,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01EK05,evaluate,3,"c213M01N23 - c213M01N07: Updated cancer models re-enter the repeated benchmarking cycle.
+c213M01N23 - c213M01N08: Updated Parkinson’s models re-enter the repeated benchmarking cycle.
+c213M01N23 - c213M01N09: Updated supplier-selection models re-enter the repeated benchmarking cycle.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01LI05,be_constrained_by,2,"c213M01N22 - c213M01N39: The framework addresses an environment fragmented by institutional healthcare data silos.
+c213M01N22 - c213M01N45: The validated architecture mainly supports supervised-learning scenarios.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01LI05,mitigate,5,"c213M01N23 - c213M01N39: Model sharing permits cross-institutional learning without pooling siloed raw data.
+c213M01N23 - c213M01N40: Exchanging models rather than aggregating raw datasets reduces dependence on fully compatible centralized data infrastructures.
+c213M01N23 - c213M01N42: Cross-provider benchmarking identifies external models that outperform unstable local alternatives.
+c213M01N22 - c213M01N41: Federated collaboration allows institutions with limited local data to benefit from models trained in other data contexts.
+c213M01N22 - c213M01N42: Federated performance is more stable than isolated local-model performance.",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01LI05,resolve,2,"c213M02N15 - c213M02N24: blockchain technology can transform health information exchange, overcoming the limitations of centralized systems prone to single point of failure and lack of transparency
+c213M02N15 - c213M02N25: blockchain technology...offers a robust solution for addressing challenges related to data security, privacy, and interoperability",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01LI09,mitigate,1,"c221M02N19 - c221M01N24: This system offers mechanisms to verify doctors and treatments in a privacy-preserving way, potentially reducing fraud and medication errors",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01LI10,mitigate,5,"c213M02N15 - c213M02N23: blockchain technology...ensures that the models are immutable and tamper-proof, preserving the integrity of the information shared
+c221M01N13 - c221M01N21: The paper states that WedaGPT uses translated and digitized ancient medical texts to preserve and disseminate traditional medical knowledge.
+c221M01N13 - c221M01N22: Translated and digitized texts and the Llama2 interface enable access to treatment information previously confined to traditional source material.
+c221M01N13 - c221M01N23: WedaGPT uses ancient medical texts that were translated and digitized to preserve traditional medical knowledge.
+c221M02N19 - c221M02N36: To share traditional medical knowledge and address these issues [risk of knowledge loss]",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01LI10,resolve,2,"c221M02N19 - c221M02N38: This system offers mechanisms to verify doctors and treatments in a privacy-preserving way
+c221M02N19 - c221M02N39: Transforming ancient medicinal recipes into NFT tokens for sale on NFT marketplaces [global access]",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01LI13,be_constrained_by,1,c213M01N22 - c213M01N44: The framework’s effect on actual patient outcomes has not been empirically established.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01OD01,depend_on,1,c213M01N22 - c213M01N37: The architecture relies on ethical transparency at the participating-node level.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01OD03,depend_on,1,c213M01N22 - c213M01N36: Implementation assumes sufficient computational infrastructure and technical capability at participating institutions.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01OD05,depend_on,1,"c221M02N19 - c221M02N34: WedaGPT creates a collaborative ecosystem connecting doctors, medicine providers, therapists, patients, and technology experts",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01OD07,depend_on,1,"c221M02N19 - c221M02N35: Revenue from these sales is distributed among platform contributors, promoting equitable ownership and recognition",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01TE01,adopt,9,"c213M01N22 - c213M01N31: Logistic regression is tested within the integrated predictive-model architecture.
+c213M01N22 - c213M01N32: Decision trees are tested within the integrated predictive-model architecture.
+c213M01N22 - c213M01N34: Gradient boosting is tested within the integrated predictive-model architecture.
+c221M01N13 - c221M01N17: The implemented WedaGPT query workflow used Ollama APIs.
+c221M01N13 - c221M01N18: The implemented WedaGPT query workflow used LangChain.
+c221M02N19 - c221M02N24: Utilizes a custom-trained Meta's Llama2 Large Language Model (LLM)
+c221M02N19 - c221M01N15: Qlora with 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)
+c221M02N19 - c221M02N26: The interaction with Meta's Llama2 LLM is facilitated by Recipe smart contract through Ollam's LLM API
+c221M02N19 - c221M02N28: Llamaindex and LangChain, a robust interface that enables streamlined and effective communication with the language model",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01TE03,adopt,1,c213M01N22 - c213M01N30: Predictive digital twins provide the architecture’s predictive and dynamic representation capability.,SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01TE04,adopt,2,"c213M02N15 - c213M02N19: blockchain-based solutions can be integrated with off-chain storage such as InterPlanetary File System (IPFS)
+c221M02N19 - c221M02N27: Llamaindex and LangChain, a robust interface that enables streamlined and effective communication with the language model",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01TE06,adopt,14,"c213M01N22 - c213M01N28: The integrated architecture uses blockchain as its decentralized exchange and integrity layer.
+c213M01N22 - c213M01N29: The architecture implements federated learning for privacy-preserving collaborative model development.
+c213M01N22 - c213M01N35: Smart contracts specify conditions for accessing and using shared healthcare models.
+c213M01N23 - c213M01N28: Predictive models are exchanged and recorded through the blockchain network.
+c213M01N23 - c213M01N29: Federated learning enables model sharing without direct exchange of local data.
+c213M01N23 - c213M01N35: Smart contracts govern model-access and model-use conditions during sharing.
+c213M02N15 - c213M02N17: blockchain technology...enables secure data storage and sharing across multiple stakeholders
+c213M02N15 - c213M02N18: Smart contracts, a key feature of blockchain, automate transactions, connect stakeholders, and enable secure, transparent data sharing
+c221M01N13 - c221M01N20: The WedaGPT implementation evaluated transaction and search performance using the Rahasak blockchain.
+c221M02N21 - c221M02N31: Custom NFT schema known as 'w-528,' customized to represent recipe data as NFT objects
+c221M02N19 - c221M01N20: Securely stored on the blockchain
+c221M02N19 - c221M02N30: Four main smart contracts: Identity, Recipe, Model Card, and NFT contracts
+c221M02N19 - c221M02N31: Custom NFT schema known as 'w-528,' customized to represent recipe data as NFT objects
+c221M02N19 - c221M02N32: SSI-enabled mobile wallets for secure interactions
+c221M02N19 - c221M02N33: SSI-enabled mobile wallets, which safeguard their personal information",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01THR11,cannot_fully_replace,1,"c221M02N19 - c221M02N16: The platform complements traditional practices while preserving cultural heritage, but oral traditions remain foundational",SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01THR15,complement,1,c221M02N19 - c221M02N18: Translators then convert these texts into English [manual translation combined with digital processing],SIC 20-39 - Manufacturing,Aggregation
+s003M01TP15,s003M01THR17,complement,1,c221M02N19 - c221M02N17: Users can consult remotely with doctors who prescribe treatments through this wallet [supplementing traditional consultation],SIC 20-39 - Manufacturing,Aggregation

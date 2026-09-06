@@ -108,6 +108,7 @@ s002M01ED02,h001M01ED02,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01ED03,h001M01ED03,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01ED04,h001M01ED04,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01ED05,h001M01ED05,is_an_instance_of,G,HOO1:Hard Aggregation
+s002M01ED06,h001M01ED06,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01ED08,h001M01ED08,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01ED09,h001M01ED09,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01ED10,h001M01ED10,is_an_instance_of,G,HOO1:Hard Aggregation
@@ -173,7 +174,6 @@ s002M01TE07,h001M01TE07,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01TE08,h001M01TE08,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01TE09,h001M01TE09,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01THR01,h001M01THR01,is_an_instance_of,G,HOO1:Hard Aggregation
-s002M01THR04,h001M01THR04,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01THR05,h001M01THR05,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01THR07,h001M01THR07,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01THR08,h001M01THR08,is_an_instance_of,G,HOO1:Hard Aggregation
@@ -208,6 +208,8 @@ s002M01TP11,h001M01TP11,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01TP12,h001M01TP12,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01TP13,h001M01TP13,is_an_instance_of,G,HOO1:Hard Aggregation
 s002M01TP14,h001M01TP14,is_an_instance_of,G,HOO1:Hard Aggregation
+s002M01TP15,h001M01TP15,is_an_instance_of,G,HOO1:Hard Aggregation
+s002M01TP16,h001M01TP16,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01ED01,h001M01ED01,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01ED02,h001M01ED02,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01ED03,h001M01ED03,is_an_instance_of,G,HOO1:Hard Aggregation
@@ -302,6 +304,7 @@ s003M01TK13,h001M01TK13,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01TP01,h001M01TP01,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01TP03,h001M01TP03,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01TP04,h001M01TP04,is_an_instance_of,G,HOO1:Hard Aggregation
+s003M01TP06,h001M01TP06,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01TP07,h001M01TP07,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01TP08,h001M01TP08,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01TP09,h001M01TP09,is_an_instance_of,G,HOO1:Hard Aggregation
@@ -310,3 +313,5 @@ s003M01TP11,h001M01TP11,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01TP12,h001M01TP12,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01TP13,h001M01TP13,is_an_instance_of,G,HOO1:Hard Aggregation
 s003M01TP14,h001M01TP14,is_an_instance_of,G,HOO1:Hard Aggregation
+s003M01TP15,h001M01TP15,is_an_instance_of,G,HOO1:Hard Aggregation
+s003M01TP16,h001M01TP16,is_an_instance_of,G,HOO1:Hard Aggregation
