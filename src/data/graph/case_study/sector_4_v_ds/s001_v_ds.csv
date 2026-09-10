@@ -2251,8 +2251,8 @@ Mandatory analytical procedure
 1. Inspect the evidence_statement and definition of every retrieved node. Do not only classify an element from name or category alone.
 2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining why and how one practice depends on a resource or capability.
 3. Coding from two perspectives:
-    * Digital-Era Specific Dependencies.This perspective highlights the unique technological infrastructure, specific computational competencies, and dynamic user capabilities required to deploy advanced digital tools.
-    * Classic Industry & Institutional Dependencies. This perspective highlights the permanent, traditional organizational structures, physical assets, and regulatory architectures that remain indispensable for operational continuity.
+    * Digitally reconstructed dependencies. This perspective highlights the emergence of the necessary technical infrastructure, specific computing capabilities, organizational structure adaptation, and dynamic user capabilities required for the deployment of advanced digital tools.
+    * Persistently established dependencies. This perspective emphasizes the indispensability of permanent organizational frameworks, physical assets, and regulatory architectures for operational continuity.
 4. Treat “dependency” neutrally. Do not present dependencies as benefits. Explain how they condition, enable, constrain, or interrupt retention outcomes.
 5. Move beyond case description. Identify deeper cross-case mechanisms, including:
     * Necessary conditions and dependency chains
@@ -2270,10 +2270,11 @@ Write approximately 300 words as a concise conceptual analysis.
 Organize the answer around two perspectives, each perspective demonstrates three to five higher-order insights. For each insight:
 * Name the conceptual dependency.
 * Explain its mechanism.
-* Integrate evidence from multiple cases.
+* Integrate evidence from multiple cases to present domain characteristics. Do not interpret it in general.
+* Treat cases as a bounded sample, not as representative of the entire construction sector.
 * State its constraining or conditional implications.
-Use this citation format exactly: (node_id:sXXX)
-Conclude with an integrative theoretical statement explaining how digital-era and classic dependencies interact to convert—or prevent the conversion of—digital representations into retained, actionable organizational know-how."
+Use this citation format exactly: (sXXX)
+Conclude with an integrative statement explaining how digitally reconstructed and persistently established dependencies interact to convert."
 s001M01RRQ3,Organizational Culture Dependencies,"MATCH (depends:OrganizationalDependency)
 WHERE depends.node_id STARTS WITH 's001'
 WITH depends
@@ -2342,8 +2343,8 @@ Mandatory analytical procedure
 1. Inspect the evidence_statement and definition of every retrieved node. Do not only classify an element from name or category alone.
 2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining why and how one practice depends on a resource or capability.
 3. Coding from two perspectives:
-    * Digital-Era Specific Dependencies. This perspective evaluates how modern tech-driven practices rely on specialized cultural shifts surrounding digital familiarity, system confidence, and human-agent trust.
-    * Classic Industry & Institutional Dependencies. This perspective captures the foundational, long-standing organizational paradigms—such as formalized safety mindsets and turnover management—that have governed physical workspaces for generations.
+    * Digitally reconstructed dependencies.   This perspective examines the reconfiguration (including but not limited to emergence, adjustment, and reduction) of modern technology-driven knowledge retention practices relative to traditional methods in terms of corporate culture dependencies (e.g., digital familiarity, system trust, and human-machine trust).
+    * Persistently established dependencies. This perspective captures those long-standing organizational paradigms, such as formalized safety awareness and personnel mobility management, which have dominated the physical workspaces of several generations.
 4. Treat “dependency” neutrally. Do not present dependencies as benefits. Explain how they condition, enable, constrain, or interrupt retention outcomes.
 5. Move beyond case description. Identify deeper cross-case mechanisms, including:
     * Necessary conditions and dependency chains
@@ -2361,7 +2362,8 @@ Write approximately 300 words as a concise conceptual analysis.
 Organize the answer around two perspectives, each perspective demonstrates three to five higher-order insights. For each insight:
 * Name the conceptual dependency.
 * Explain its mechanism.
-* Integrate evidence from multiple cases.
+* Integrate evidence from multiple cases to present domain characteristics. Do not interpret it in general.
+* Treat cases as a bounded sample, not as representative of the entire construction sector.
 * State its constraining or conditional implications.
-Use this citation format exactly: (node_id:sXXX)
-Conclude with an integrative theoretical statement explaining how digital-era and classic dependencies interact to convert—or prevent the conversion of—digital representations into retained, actionable organizational know-how."
+Use this citation format exactly: (sXXX)
+Conclude with an integrative statement explaining how digitally reconstructed and persistently established dependencies interact to convert."

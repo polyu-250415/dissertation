@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1600" viewBox="0 0 2000 1600" role="img" aria-labelledby="title desc">
+  <title id="title">TK05 evidence pathways from aggregate tacit knowledge to industries and cases</title>
+  <desc id="desc">A three-level evidence hierarchy. Central TK05 branches to s001 Construction, s002 Manufacturing, and s003 Health Services, then to fourteen case nodes. Every industry and case node identifies tacit knowledge TK05 and its convergence or divergence technology-enabled practices.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title { font: 700 54px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 18px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+      .stage { font: 700 15px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.7px; fill: #64748b; }
+      .node-title { font: 700 22px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .node-subtitle { font: 600 16px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+      .body { font: 400 15px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+      .small { font: 400 14px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+      .case-id { font: 700 18px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .case-name { font: 500 18px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+      .tk-text { font: 700 18px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #92400e; }
+      .conv-text { font: 700 14px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1d4ed8; }
+      .div-text { font: 700 14px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #6d28d9; }
+      .edge { fill: none; stroke: #64748b; stroke-width: 3; marker-end: url(#arrow); }
+      .edge-soft { fill: none; stroke: #94a3b8; stroke-width: 2; }
+      .case-card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="2000" height="1600" fill="#f8fafc"/>
+
+  <text x="70" y="62" class="title">TK05 evidence pathways: recurrent core and contextual branching</text>
+  <text x="70" y="96" class="subtitle">Aggregate tacit-knowledge target → sector-coded instance → case-level technology-enabled practice evidence</text>
+
+  <!-- Legend -->
+  <g transform="translate(70,126)">
+    <rect x="0" y="0" width="1760" height="70" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="30" cy="24" r="9" fill="#f59e0b"/>
+    <text x="48" y="29" class="body"><tspan font-weight="700">TK</tspan> Tacit knowledge</text>
+    <circle cx="252" cy="24" r="9" fill="#2563eb"/>
+    <text x="270" y="29" class="body"><tspan font-weight="700">TP–C</tspan> Convergence pathway: recurrent across sectors</text>
+    <circle cx="690" cy="24" r="9" fill="#7c3aed"/>
+    <text x="708" y="29" class="body"><tspan font-weight="700">TP–D</tspan> Divergence pathway: sector-specific</text>
+    <text x="30" y="55" class="small">C: TP03 XR · TP09 semantic retrieval · TP10 archiving · TP12 multimedia/blended</text>
+    <text x="870" y="55" class="small">D: TP01 models · TP04 feedback · TP06 sensors · TP07 algorithms · TP13 evaluation · TP16 scenarios</text>
+  </g>
+
+  <text x="72" y="230" class="stage">CENTER / AGGREGATE</text>
+  <text x="430" y="230" class="stage">INDUSTRY-LEVEL TK INSTANCE</text>
+  <text x="870" y="230" class="stage">CASE-LEVEL EVIDENCE: TK + TECHNOLOGY-ENABLED PRACTICE</text>
+
+  <!-- Sector bands -->
+  <rect x="840" y="255" width="1090" height="220" rx="18" fill="#f1f5f9"/>
+  <rect x="840" y="495" width="1090" height="560" rx="18" fill="#eef2ff" fill-opacity="0.46"/>
+  <rect x="840" y="1075" width="1090" height="375" rx="18" fill="#f1f5f9"/>
+
+  <!-- Center TK05 -->
+  <g filter="url(#softShadow)">
+    <rect x="55" y="706" width="310" height="184" rx="24" fill="#fffbeb" stroke="#f59e0b" stroke-width="3"/>
+  </g>
+  <circle cx="98" cy="754" r="18" fill="#f59e0b"/>
+  <text x="98" y="760" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#ffffff">TK</text>
+  <text x="130" y="760" class="node-title">TK05</text>
+  <text x="82" y="801" class="node-subtitle">Practised motor and</text>
+  <text x="82" y="827" class="node-subtitle">tool-operation skill set</text>
+  <text x="82" y="862" class="small">Parent: h001M01TK05</text>
+
+  <!-- Center to industry branching -->
+  <path d="M365 798 H405" class="edge-soft"/>
+  <path d="M405 370 V1270" class="edge-soft"/>
+  <path d="M405 370 H438" class="edge"/>
+  <path d="M405 755 H438" class="edge"/>
+  <path d="M405 1270 H438" class="edge"/>
+
+  <!-- Industry s001 -->
+  <g filter="url(#softShadow)">
+    <rect x="445" y="292" width="350" height="156" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  </g>
+  <rect x="445" y="292" width="10" height="156" rx="5" fill="#0f766e"/>
+  <text x="478" y="330" class="node-title">s001 · Construction</text>
+  <text x="478" y="359" class="small">Industry-level instance</text>
+  <circle cx="487" cy="392" r="8" fill="#f59e0b"/>
+  <text x="505" y="397" class="tk-text">TK: TK05 · practised skill</text>
+  <text x="478" y="425" class="small">Cases: c001, c015 · 4 TP–C pathways</text>
+  <path d="M795 370 H840" class="edge"/>
+
+  <!-- Industry s002 -->
+  <g filter="url(#softShadow)">
+    <rect x="445" y="677" width="350" height="156" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  </g>
+  <rect x="445" y="677" width="10" height="156" rx="5" fill="#1d4ed8"/>
+  <text x="478" y="715" class="node-title">s002 · Manufacturing</text>
+  <text x="478" y="744" class="small">Industry-level instance</text>
+  <circle cx="487" cy="777" r="8" fill="#f59e0b"/>
+  <text x="505" y="782" class="tk-text">TK: TK05 · practised skill</text>
+  <text x="478" y="810" class="small">Cases: 8 · 3 TP–C + 5 TP–D pathways</text>
+  <path d="M795 755 H840" class="edge"/>
+
+  <!-- Industry s003 -->
+  <g filter="url(#softShadow)">
+    <rect x="445" y="1192" width="350" height="156" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  </g>
+  <rect x="445" y="1192" width="10" height="156" rx="5" fill="#7c3aed"/>
+  <text x="478" y="1230" class="node-title">s003 · Health Services</text>
+  <text x="478" y="1259" class="small">Industry-level instance</text>
+  <circle cx="487" cy="1292" r="8" fill="#f59e0b"/>
+  <text x="505" y="1297" class="tk-text">TK: TK05 · practised skill</text>
+  <text x="478" y="1325" class="small">Cases: c209, c210, c216, c219</text>
+  <path d="M795 1270 H840" class="edge"/>
+
+  <!-- s001 case cards -->
+  <g transform="translate(880,294)">
+    <rect width="480" height="142" rx="15" class="case-card"/>
+    <text x="22" y="30" class="case-id">c001</text>
+    <text x="82" y="30" class="case-name">Traditional craftsmanship recording</text>
+    <circle cx="29" cy="60" r="7" fill="#f59e0b"/><text x="44" y="65" class="tk-text">TK: TK05 · craft-process skill</text>
+    <circle cx="29" cy="91" r="7" fill="#2563eb"/><text x="44" y="96" class="conv-text">TP–C: TP03 · TP09 · TP10</text>
+    <circle cx="29" cy="120" r="7" fill="#7c3aed"/><text x="44" y="125" class="div-text">TP–D: —</text>
+  </g>
+  <g transform="translate(1390,294)">
+    <rect width="480" height="142" rx="15" class="case-card"/>
+    <text x="22" y="30" class="case-id">c015</text>
+    <text x="82" y="30" class="case-name">Active blended learning</text>
+    <circle cx="29" cy="60" r="7" fill="#f59e0b"/><text x="44" y="65" class="tk-text">TK: TK05 · practical application</text>
+    <circle cx="29" cy="91" r="7" fill="#2563eb"/><text x="44" y="96" class="conv-text">TP–C: TP12</text>
+    <circle cx="29" cy="120" r="7" fill="#7c3aed"/><text x="44" y="125" class="div-text">TP–D: —</text>
+  </g>
+
+  <!-- s002 case cards: row 1 -->
+  <g transform="translate(870,535)">
+    <rect width="330" height="142" rx="15" class="case-card"/>
+    <text x="18" y="29" class="case-id">c102</text><text x="78" y="29" class="case-name">Robot operational skill</text>
+    <circle cx="25" cy="59" r="7" fill="#f59e0b"/><text x="40" y="64" class="tk-text">TK: TK05 · motor planning</text>
+    <circle cx="25" cy="90" r="7" fill="#2563eb"/><text x="40" y="95" class="conv-text">TP–C: —</text>
+    <circle cx="25" cy="119" r="7" fill="#7c3aed"/><text x="40" y="124" class="div-text">TP–D: TP07</text>
+  </g>
+  <g transform="translate(1220,535)">
+    <rect width="330" height="142" rx="15" class="case-card"/>
+    <text x="18" y="29" class="case-id">c103</text><text x="78" y="29" class="case-name">Observable handwork</text>
+    <circle cx="25" cy="59" r="7" fill="#f59e0b"/><text x="40" y="64" class="tk-text">TK: TK05 · hand gestures</text>
+    <circle cx="25" cy="90" r="7" fill="#2563eb"/><text x="40" y="95" class="conv-text">TP–C: —</text>
+    <circle cx="25" cy="119" r="7" fill="#7c3aed"/><text x="40" y="124" class="div-text">TP–D: TP06 · TP07</text>
+  </g>
+  <g transform="translate(1570,535)">
+    <rect width="330" height="142" rx="15" class="case-card"/>
+    <text x="18" y="29" class="case-id">c104</text><text x="78" y="29" class="case-name">IoT circuit assembly</text>
+    <circle cx="25" cy="59" r="7" fill="#f59e0b"/><text x="40" y="64" class="tk-text">TK: TK05 · assembly skill</text>
+    <circle cx="25" cy="90" r="7" fill="#2563eb"/><text x="40" y="95" class="conv-text">TP–C: TP03</text>
+    <circle cx="25" cy="119" r="7" fill="#7c3aed"/><text x="40" y="124" class="div-text">TP–D: —</text>
+  </g>
+
+  <!-- s002 case cards: row 2 -->
+  <g transform="translate(870,695)">
+    <rect width="330" height="142" rx="15" class="case-card"/>
+    <text x="18" y="29" class="case-id">c106</text><text x="78" y="29" class="case-name">Machinery setup</text>
+    <circle cx="25" cy="59" r="7" fill="#f59e0b"/><text x="40" y="64" class="tk-text">TK: TK05 · setup procedure</text>
+    <circle cx="25" cy="90" r="7" fill="#2563eb"/><text x="40" y="95" class="conv-text">TP–C: TP03</text>
+    <circle cx="25" cy="119" r="7" fill="#7c3aed"/><text x="40" y="124" class="div-text">TP–D: —</text>
+  </g>
+  <g transform="translate(1220,695)">
+    <rect width="330" height="142" rx="15" class="case-card"/>
+    <text x="18" y="29" class="case-id">c107</text><text x="78" y="29" class="case-name">Pneumatic system</text>
+    <circle cx="25" cy="59" r="7" fill="#f59e0b"/><text x="40" y="64" class="tk-text">TK: TK05 · setup and test</text>
+    <circle cx="25" cy="90" r="7" fill="#2563eb"/><text x="40" y="95" class="conv-text">TP–C: TP03</text>
+    <circle cx="25" cy="119" r="7" fill="#7c3aed"/><text x="40" y="124" class="div-text">TP–D: TP04 · TP13 · TP16</text>
+  </g>
+  <g transform="translate(1570,695)">
+    <rect width="330" height="142" rx="15" class="case-card"/>
+    <text x="18" y="29" class="case-id">c109</text><text x="78" y="29" class="case-name">Energy-efficient routines</text>
+    <circle cx="25" cy="59" r="7" fill="#f59e0b"/><text x="40" y="64" class="tk-text">TK: TK05 · operational know-how</text>
+    <circle cx="25" cy="90" r="7" fill="#2563eb"/><text x="40" y="95" class="conv-text">TP–C: TP10</text>
+    <circle cx="25" cy="119" r="7" fill="#7c3aed"/><text x="40" y="124" class="div-text">TP–D: —</text>
+  </g>
+
+  <!-- s002 case cards: row 3 -->
+  <g transform="translate(1045,855)">
+    <rect width="330" height="142" rx="15" class="case-card"/>
+    <text x="18" y="29" class="case-id">c113</text><text x="78" y="29" class="case-name">System wiring</text>
+    <circle cx="25" cy="59" r="7" fill="#f59e0b"/><text x="40" y="64" class="tk-text">TK: TK05 · wiring procedure</text>
+    <circle cx="25" cy="90" r="7" fill="#2563eb"/><text x="40" y="95" class="conv-text">TP–C: —</text>
+    <circle cx="25" cy="119" r="7" fill="#7c3aed"/><text x="40" y="124" class="div-text">TP–D: TP04</text>
+  </g>
+  <g transform="translate(1395,855)">
+    <rect width="330" height="142" rx="15" class="case-card"/>
+    <text x="18" y="29" class="case-id">c125</text><text x="78" y="29" class="case-name">Learning factory</text>
+    <circle cx="25" cy="59" r="7" fill="#f59e0b"/><text x="40" y="64" class="tk-text">TK: TK05 · hands-on skill</text>
+    <circle cx="25" cy="90" r="7" fill="#2563eb"/><text x="40" y="95" class="conv-text">TP–C: TP12</text>
+    <circle cx="25" cy="119" r="7" fill="#7c3aed"/><text x="40" y="124" class="div-text">TP–D: —</text>
+  </g>
+
+  <!-- s003 case cards -->
+  <g transform="translate(880,1112)">
+    <rect width="480" height="142" rx="15" class="case-card"/>
+    <text x="22" y="30" class="case-id">c209</text>
+    <text x="82" y="30" class="case-name">Three-dimensional surgical models</text>
+    <circle cx="29" cy="60" r="7" fill="#f59e0b"/><text x="44" y="65" class="tk-text">TK: TK05 · surgical technique</text>
+    <circle cx="29" cy="91" r="7" fill="#2563eb"/><text x="44" y="96" class="conv-text">TP–C: —</text>
+    <circle cx="29" cy="120" r="7" fill="#7c3aed"/><text x="44" y="125" class="div-text">TP–D: TP01</text>
+  </g>
+  <g transform="translate(1390,1112)">
+    <rect width="480" height="142" rx="15" class="case-card"/>
+    <text x="22" y="30" class="case-id">c210</text>
+    <text x="82" y="30" class="case-name">PIVC clinical training</text>
+    <circle cx="29" cy="60" r="7" fill="#f59e0b"/><text x="44" y="65" class="tk-text">TK: TK05 · cannulation manoeuvres</text>
+    <circle cx="29" cy="91" r="7" fill="#2563eb"/><text x="44" y="96" class="conv-text">TP–C: TP12</text>
+    <circle cx="29" cy="120" r="7" fill="#7c3aed"/><text x="44" y="125" class="div-text">TP–D: —</text>
+  </g>
+  <g transform="translate(880,1272)">
+    <rect width="480" height="142" rx="15" class="case-card"/>
+    <text x="22" y="30" class="case-id">c216</text>
+    <text x="82" y="30" class="case-name">CPR and naloxone response</text>
+    <circle cx="29" cy="60" r="7" fill="#f59e0b"/><text x="44" y="65" class="tk-text">TK: TK05 · emergency-response skill</text>
+    <circle cx="29" cy="91" r="7" fill="#2563eb"/><text x="44" y="96" class="conv-text">TP–C: TP03</text>
+    <circle cx="29" cy="120" r="7" fill="#7c3aed"/><text x="44" y="125" class="div-text">TP–D: —</text>
+  </g>
+  <g transform="translate(1390,1272)">
+    <rect width="480" height="142" rx="15" class="case-card"/>
+    <text x="22" y="30" class="case-id">c219</text>
+    <text x="82" y="30" class="case-name">Nursing knowledge platform</text>
+    <circle cx="29" cy="60" r="7" fill="#f59e0b"/><text x="44" y="65" class="tk-text">TK: TK05 · nursing hands-on skill</text>
+    <circle cx="29" cy="91" r="7" fill="#2563eb"/><text x="44" y="96" class="conv-text">TP–C: TP09</text>
+    <circle cx="29" cy="120" r="7" fill="#7c3aed"/><text x="44" y="125" class="div-text">TP–D: —</text>
+  </g>
+
+  <!-- Footer notes -->
+  <line x1="70" y1="1490" x2="1930" y2="1490" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="70" y="1532" class="small">Reading rule: each case card identifies the comparable tacit-knowledge target (TK05) and the evidenced technology-enabled practice pathway(s).</text>
+  <text x="70" y="1566" class="small">TP13 is evaluative rather than a stand-alone retention pathway; TP07 includes robot-skill evidence. These are retained as qualified divergence evidence.</text>
+</svg>

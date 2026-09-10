@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="3400" height="3400" viewBox="0 0 3400 3400" role="img" aria-labelledby="title desc">
 <rect width="100%" height="100%" fill="#F7F9FC"/>
-<text x="1700" y="66" text-anchor="middle" class="heading" font-size="96">Final Analysis Template</text>
-<text x="1700" y="104" text-anchor="middle" class="subheading" font-size="48">Sunburst hierarchy: template → category → coded topic</text>
+<text x="1700" y="88" text-anchor="middle" class="heading" font-size="96">Optimized Analysis Template</text>
+<text x="1700" y="190" text-anchor="middle" class="subheading" font-size="64">Sunburst hierarchy: template → category →
+  coded topic</text>
 <g><title>Tacit Knowledge — 13 coded topics</title><path d="M1704.21,1010.01 A690,690 0 0 1 2113.26,1147.44 L1894.65,1439.74 A325,325 0 0 0 1701.99,1375.01 Z" fill="#4C6EF5" stroke="#F7F9FC" stroke-width="3"/></g><text x="1861.6" y="1224.9" text-anchor="middle" class="category" transform="rotate(18.57 1861.6 1218.9)">Tacit Knowledge</text><g><title>TK01 — Deliberately Withheld or Confidential Knowledge
 Articulable knowledge deliberately withheld because of secrecy, confidentiality, competition, hierarchy, or distrust.</title><path d="M1701.16,375.00 A1325,1325 0 0 1 1764.89,376.59 L1735.02,985.86 A715,715 0 0 0 1700.62,985.00 Z" fill="#B4C2FB" stroke="#FFFFFF" stroke-width="2"/></g><text x="1718.4" y="967.2" text-anchor="start" class="leaf" transform="rotate(-88.57 1718.4 963.2)">TK01 — Deliberately Withheld or Confidential Knowledge</text><g><title>TK02 — Knowledge Conveyed Through Examples or Demonstration
 Knowledge transferred through cases, stories, simulations, examples, pointing, or practical demonstration because a sufficient verbal account has not been provided.</title><path d="M1767.20,376.71 A1325,1325 0 0 1 1830.78,381.47 L1770.57,988.49 A715,715 0 0 0 1736.26,985.92 Z" fill="#B4C2FB" stroke="#FFFFFF" stroke-width="2"/></g><text x="1755.1" y="969.1" text-anchor="start" class="leaf" transform="rotate(-85.71 1755.1 965.1)">TK02 — Knowledge Conveyed Through Examples or Demonstration</text><g><title>TK03 — Uncommunicated Knowledge Due to Differing Relevance Judgments
@@ -129,11 +130,17 @@ Measures, compares, scores, or ranks learners, models, interventions, and altern
 Maps Technology-enable practices that cannot be assigned to TP01-TP13 because the evidence does not identify a sufficiently specific domain or analytical level.</title><path d="M1503.66,389.63 A1325,1325 0 0 1 1566.92,381.70 L1628.19,988.62 A715,715 0 0 0 1594.05,992.89 Z" fill="#69B7FF" stroke="#005EB8" stroke-width="6"/></g><text x="1608.4" y="972.7" text-anchor="start" class="leaf" transform="rotate(262.86 1608.4 968.7)">TP14 — Ambiguous Technology-enable Practice</text><g><title>TP15 — Distributed-Ledger-enabled Transaction Assurance and Traceability
 Uses blockchain or distributed-ledger technologies to create verifiable transaction records, strengthen provenance and supply-chain traceability, validate products, and automate trusted exchanges through smart contracts or related mechanisms.</title><path d="M1569.22,381.47 A1325,1325 0 0 1 1632.80,376.71 L1663.74,985.92 A715,715 0 0 0 1629.43,988.49 Z" fill="#FFE066" stroke="#C99700" stroke-width="6"/></g><text x="1644.9" y="969.1" text-anchor="start" class="leaf" transform="rotate(265.71 1644.9 965.1)">TP15 — Distributed-Ledger-enabled Transaction Assurance and Traceability</text><g><title>TP16 — Gamified Procedural and Scenario-based Learning
 Uses structured games, quizzes, cards, role-playing scenarios, and realistic problem cases to help learners reconstruct procedural sequences, apply operational criteria, recognize errors, and select appropriate responses.</title><path d="M1635.11,376.59 A1325,1325 0 0 1 1698.84,375.00 L1699.38,985.00 A715,715 0 0 0 1664.98,985.86 Z" fill="#FFE066" stroke="#C99700" stroke-width="6"/></g><text x="1681.6" y="967.2" text-anchor="start" class="leaf" transform="rotate(268.57 1681.6 963.2)">TP16 — Gamified Procedural and Scenario-based Learning</text><circle cx="1700" cy="1700" r="300" fill="#17223B" filter="url(#shadow)"/>
-<text x="1700" y="1680" text-anchor="middle" class="root"><tspan x="1700">FINAL ANALYSIS</tspan><tspan x="1700" dy="38">TEMPLATE</tspan></text>
+<text x="1700" y="1680" text-anchor="middle" class="root"><tspan x="1700">Optimized Analysis</tspan><tspan x="1700"
+                                                                                                        dy="38">Template
+</tspan></text>
 <text x="1700" y="1778" text-anchor="middle" class="subheading" fill="#D0D5DD" style="fill:#D0D5DD">10 categories · 126 topics</text>
 <g transform="translate(1185 3180)">
-  <rect x="0" y="-26" width="48" height="28" rx="7" fill="#69B7FF" stroke="#005EB8" stroke-width="3"/><text x="62" y="-6" class="key">TP14: Ambiguous Category</text>
-  <rect x="272" y="-26" width="48" height="28" rx="7" fill="#FFE066" stroke="#C99700" stroke-width="3"/><text x="332" y="-6" class="key">TP15 and TP16: Additional Categories</text>
+  <rect x="0" y="-26" width="48" height="28" rx="7" fill="#69B7FF" stroke="#005EB8" stroke-width="3"/><text x="62"
+                                                                                                            y="-6"
+                                                                                                            class="key" font-size="24">TP14: Ambiguous Category</text>
+  <rect x="364" y="-26" width="48" height="28" rx="7" fill="#FFE066" stroke="#C99700" stroke-width="3"/><text x="424"
+                                                                                                              y="-6"
+                                                                                                              class="key" font-size="24">TP15 and TP16: Additional Categories</text>
 </g>
 <text x="1700" y="3275" text-anchor="middle" class="subheading" font-size="48">Each outer label combines the sub-category ID and name; hover for the full definition.</text>
 </svg>
