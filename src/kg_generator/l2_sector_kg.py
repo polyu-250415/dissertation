@@ -372,7 +372,7 @@ if __name__ == '__main__':
     obj = SectorKG()
     sector_ids = ['s001','s002','s003']
 
-    start = 3
+    start = 2
     end = 3
     for turn in range(start, end + 1):
         if turn == 1:

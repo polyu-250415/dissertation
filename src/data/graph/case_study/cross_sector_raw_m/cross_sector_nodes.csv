@@ -38,6 +38,182 @@ c011M02N31 | Confined space physical constraints: A confined space is a space wi
 s001M01ED10,Ambiguous Environmental Dependency(*),h001M01ED10,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c004M02N33 | Post-Training Four-Week Retention Test Window: Participants were contacted four weeks after training and asked to complete a retention questionnaire
 c014M02N49 | Environmental risks: Environmental uncertainties influence the effective operations of the megaprojects
 c015M02N30 | Student absences: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences, diverse backgrounds and various prior level of education.",Maps externally originating dependencies that cannot be assigned to ED01–ED09 because the evidence does not identify a sufficiently specific domain or analytical level.
+s001M01EK01,Codified Normative Knowledge,h001M01EK01,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),17,"c001M01N06 | Technical Standards for Historical Building Digitization (2021): The graded-protection framework is based on Technical Standards for Historical Building Digitization (2021).
+c001M01N07 | Digital Preservation of Intangible Cultural Heritage: Digital Resource Collection and Cataloguing (WH/T 99.9-2023), Part 9: Traditional Craftsmanship: The paper invokes WH/T 99.9-2023 Part 9 when describing sequential recording of craftsmanship processes.
+c001M02N02 | UNESCO World Heritage site monitoring standards: Meets the requirements of heritage monitoring by UNESCO [4]
+c002M01N01 | Preventing Falls in Housing Construction—Code of Practice: Construction safety training delivery was prepared from this enforceable code of practice developed by Work Safe Australia.
+c004M01N02 | OSHA Trenching and Excavation Safety: The VR training objectives were developed from this guideline, and VR safety information was obtained from OSHA and WorkSafe excavation safety guidelines.
+c004M01N03 | WorkSafe Excavation Safety: The VR training objectives were developed from this guideline, and VR safety information was obtained from OSHA and WorkSafe excavation safety guidelines.
+c009M01N01 | Request for Proposals: RFPs were collected, analyzed, uploaded to the system, and used as the source of client requirements.
+c009M01N02 | RFP requirements: GPT-4o extracted predefined requirements from uploaded RFPs and displayed them for decision-making.
+c009M02N02 | RFPs (Request for Proposals): Historical bid documents and RFPs were collected and prepared for inclusion in the knowledge base
+c009M02N07 | Requirements summary: Content review and requirements summary preparation – Extracting and summarizing client requirements from RFP/ITB documents
+c011M01N01 | Confined Space Safety Working Guide: the required equipment is determined and constructed according to the relevant regulations in PRC's 'Confined Space Safety Working Guide'
+c011M01N02 | Equipment Selection Rules: Table 1 shows the gas properties and required protective equipment for four confined space scenarios
+c011M01N04 | Gas properties and required equipment data: Table 1. Confined space scenarios and required equipment. GasPropertiesRequired equipmentH2SExplosive, toxic and corrosiveSafety helmet, safety belt, protective clothing, Respirators, explosion-proof phones
+c014M01N05 | new rules: Training sessions and workshops keep participants informed about new rules.
+c016M01N11 | Peruvian Law N° 29783 indexes: Exposure, probability, and severity indexes granted by Peruvian Law N° 29783 were used to assign the initial risk factor.
+c017M01N08 | thermal thresholds: The analysis applies thresholds of 17, 19, and 21 degrees Celsius.
+c017M02N01 | Temperature Thresholds (17-21°C, 19°C): The paper states that RDL 486/1997 sets a minimum of 17°C, RDL 14/2022 sets a maximum of 21°C, and EN 16798-1:2019 recommends a comfort threshold of 19°C.
+c017M02N02 | Legislative Directives (RDL 486/1997, RDL 14/2022, EN 16798-1:2019): The study follows current legislation like RDL 486/1997, which mandates heating below 17°C, RDL 14/2022, which advises turning off heating above 21°C, and EN 16798-1:2019, which sets a comfort range around 19°C.","Articulated and persistently recorded statements specifying what is required, permitted, prohibited, or formally recommended, including laws, regulations, standards, codes, and mandatory thresholds."
+s001M01EK02,Codified Descriptive Knowledge,h001M01EK02,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),51,"c001M01N01 | Historical archives: Historical archives are combined with AR scene overlay technology to reconstruct living scenes.
+c001M01N02 | Architectural data: The study collected architectural data through 3D laser scanning, virtual reality, and big-data analysis.
+c001M01N03 | Spatial distribution maps: GIS aggregates scattered 3D models into spatial distribution maps displaying density and age distribution.
+c001M01N04 | Historical narrative: The dynamic digital archive connects historical narrative with interactive experience.
+c001M01N05 | Wartime timeline: Digital exhibitions passively show building exteriors and the wartime timeline.
+c001M02N01 | FARO S350 millimeter-resolution architectural point clouds: FARO Focus S350 realizes millimeter-level point cloud modeling with average error margin <0.5%
+c001M02N05 | 1938 Nationalist Government relocation to Chongqing timeline: The dynamic narrative technology triggered events by timelines (such as the relocation of the Nationalist Government to Chongqing in 1938)
+c001M02N06 | Thermal imaging wood decay and hollow wall structural maps: The thermal map of structural damage is generated... discover hidden danger points such as wood decay, hollow walls
+c002M01N02 | fall risks in housing construction: The training aimed to educate trainees about different fall risks in housing construction.
+c002M01N41 | interactive construction models and animations: Two construction models and animations demonstrated hazards, protective devices, and their expected operation.
+c003M01N03 | Real monitored data: The Building Energy Model was validated through comparison with real monitored data.
+c003M01N05 | 12 users’ interaction scenarios: Twelve scenarios combined air-conditioning status and set point, window position, and blind position.
+c004M01N04 | absence of a safety officer: The absence of a safety officer was selected as one of seven critical hazards and training objectives.
+c004M01N05 | absence of soil protection: The absence of soil protection was selected as one of seven critical hazards and training objectives.
+c004M01N06 | objects or loads near excavation edges: Objects or loads near excavation edges were selected as one of seven critical hazards and training objectives.
+c004M01N07 | absence of safe access and egress: The absence of safe access and egress was selected as one of seven critical hazards and training objectives.
+c004M01N08 | workers or mobile plants close to dangerous utilities and objects: Workers or mobile plants close to dangerous utilities and objects were selected as one of seven critical hazards and training objectives.
+c004M01N09 | absence of safety barriers and signage: The absence of safety barriers and signage was selected as one of seven critical hazards and training objectives.
+c004M01N10 | workers working in an unsafe excavation zone: Workers working in an unsafe excavation zone was selected as one of seven critical hazards and training objectives.
+c005M02N01 | OSHA major hazard categories: The comparison was based on a hazard identification index (HII) that was found to be significantly higher in students who attended the VR training as compared to the ones who attended the PARS training. Both training forms incorporated OSHA's major hazards such as falling from a height, electrocution, and being caught in between.
+c006M01N05 | health questionnaire results: Health questionnaires collected personal, work, exercise, LBP, fatigue and endurance information.
+c006M01N07 | workload data: The study used the device, video and worksite attendance to collect workload data and measured workload data for 64 workers.
+c006M01N08 | recorded video footage of the work situation: The researchers recorded video footage of the work situation using a wearable camera.
+c006M02N03 | Questionnaire data: The questionnaire collects personal information such as height, weight, age, physical gender, type of work, duration of work, working hours per week, main working posture (upright, downward, squatting, sitting), maximum weight to be handled, current LBP or LBP history, frequency of LBP in the last 6 months, how much exercise they do per week, and duration of exercise.
+c008M01N03 | accident type labels: The corpus contained five categories: fall, collapse, electric shock, object strike, and mechanical injury.
+c008M02N03 | Domain-specific dictionaries: Traditional Chinese text segmentation algorithms mainly rely on loading domain dictionaries
+c009M01N03 | Historical bid proposals: The implemented knowledge base contained 13 historical bid documents spanning multiple project types.
+c009M01N07 | Project sheets: Project sheets document relevant past projects, including descriptions, timelines, clients, and outcomes.
+c009M01N08 | Standard and reference documents: Bid preparation includes gathering certifications, licences, client references, and other compliance evidence.
+c010M01N11 | learning preferences survey responses: The learning-preferences survey contained 24 questions whose responses were scored as often, sometimes, or seldom.
+c010M01N13 | eye-tracking data: The study used HoloLens 2 eye-tracking data to predict students' learning preferences.
+c010M01N14 | fixations: Fixations were extracted to analyze where participants focused their attention while using HoloLens 2.
+c010M01N15 | head origin coordinates: Head origin X, Y, and Z coordinates were used to describe participants' positions at fixation.
+c010M02N21 | Sensing technologies knowledge: learning sensing technologies in construction education
+c014M01N03 | project news: Some projects have a portal where all project news is shared.
+c014M01N06 | project data: AI tools analyze large amounts of data, while Net Zero Cloud reads data to generate reports.
+c014M01N09 | carbon-footprint and emissions data: AI tools track carbon footprints and emissions through real-time monitoring.
+c014M02N01 | Real-time data analytics: AI-driven tools can significantly improve the data analysis in real time
+c014M02N06 | Stakeholder communication knowledge: Some of the projects have a portal where all the news is shared, hence the knowledge sharing is better
+c015M01N01 | course material: Seventy-nine percent of respondents agreed that ABL supported deeper learning and better retention of course material.
+c015M01N02 | theoretical concepts: Authentic exercises help students grasp theoretical concepts and apply them in professional contexts.
+c015M01N03 | real-world examples: Focus-group participants identified technology and real-world examples as ways to enhance learning.
+c015M01N04 | industry case studies: Students reported that industry visits, industry educators, and case studies helped them understand industry needs.
+c016M01N02 | information on incidents: Valuable information on incidents is described as being lost as staff changes in companies.
+c016M01N03 | information on accidents: Valuable information on accidents is described as being lost as staff changes in companies.
+c016M01N06 | activity-based hazards: Hazards were identified from the Phase 2 simulations and served as input data for the IPERC tool.
+c016M01N07 | hazard characteristics and properties: The IPERC tool was used to determine the characteristics and properties of each hazard.
+c017M01N04 | IoT data: IoT data comprise environmental variables and operating conditions of the SBE.
+c017M01N05 | experimental measurements: The sensor infrastructure acquires experimental measurements.
+c017M01N06 | context-aware information: Measurements are combined with external variables to obtain SBE context-aware information.
+c017M01N07 | academic calendar and timetable schedule: The study complements occupancy data with the academic calendar and timetable schedule.","Articulated and persistently recorded statements of what is or was the case, including facts, observations, measurements, records, classifications, attributes, and historical descriptions."
+s001M01EK03,Codified Procedural Knowledge,h001M01EK03,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),18,"c002M01N03 | fall protections that can be employed for managing those risks: The training demonstrated fall protections that could be employed to manage the presented fall risks.
+c002M02N06 | Housing fall risk and protection training module: The training was developed on three distinct visualization platforms—traditional safety training presentation, VR-based safety training, and AR-based safety training
+c003M01N08 | Resulting tips: Tips were generated from the energy simulations for presentation in the training environment.
+c003M02N01 | Energy-saving tips: Table I presents the results of energy simulations of the 12 scenarios useful to create the ""tips"" and the graphical indicators.
+c004M02N02 | Printed Excavation Health and Safety Manual: A control group received training via a traditional training method, in this case an excavation health and safety manual
+c006M01N10 | lumbar load estimation algorithm: Section 4 explains the algorithm used in the wearable-sensor workload measurement method.
+c008M02N05 | Manually encoded rules: Rule-based language models require researchers to manually write knowledge expressions and call rules to develop algorithms
+c009M01N04 | Historical methodology sections: Methodology sections from the three highest-ranking historical proposals were extracted as contextual samples.
+c009M01N05 | AI-generated methodology draft: GPT-4o generated a downloadable methodology draft from retrieved proposals and extracted requirements.
+c009M02N04 | Method statements: Method Statement Writing: Detailed explanation of project execution approach, timelines, resources, risk management, and quality control
+c012M01N21 | Pre-excavation checklist: The narrated Soil Saga heuristic was internalized through a pre-excavation checklist.
+c012M01N22 | Handover playbook: Captured handover norms informed a playbook embedded in the KMS.
+c012M01N23 | Micro-checklist and drill script: Safety cues and decision triggers were converted into a micro-checklist and drill script.
+c012M02N08 | Manuals and SOPs: ""Manuals, regulations, and standard operating procedures"" are traditional explicit knowledge tools
+c014M01N04 | best practices: Training sessions and workshops keep participants informed about best practices.
+c016M01N05 | best practices: The centralized database is stated to retain and share knowledge including best practices.
+c016M01N09 | mitigation controls: Controls were selected according to hazard type to reduce the risk factor.
+c016M02N25 | Requests for Information on Previously Taken Controls tool: Requests for Information on Previously Taken Controls (RFI)","Articulated and persistently recorded knowledge explaining how an activity should be performed, including instructions, methods, algorithms, checklists, operating procedures, and prescribed controls; uncodified expert know-how is excluded."
+s001M01EK04,Codified Explanatory Knowledge,h001M01EK04,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c008M02N25 | GloVe method description: GloVe uses logarithmic bilinear regression for training to reflect the overall co-occurrence relationship between words
+c017M02N05 | Sawtooth Pattern (Thermal Morphology): The analysis reveals a characteristic 'sawtooth' pattern in temperature evolution during heating months, defined by a rise-and-fall pattern each day and a progressive rise across a week.","Articulated and persistently recorded accounts of why or how a condition, event, or relationship occurs, including causal mechanisms, interpreted patterns, and reasoned explanations."
+s001M01EK05,Codified Predictive Knowledge,h001M01EK05,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c001M02N36 | 89% accurate 48-hour visitor flow prediction metric: AI technology predicted the site visitation 48 hours in advance with an accuracy of 89%
+c003M01N04 | Building Energy Model: A corresponding Building Energy Model was created in DesignBuilder and validated against monitored data.
+c005M01N02 | associated risks and consequences: The AR model exposed trainees to hazard types and their associated risks and consequences.
+c014M01N07 | predictive insights: AI-driven tools analyze data to predict trends and outcomes and support advance planning.
+c014M01N08 | potential-risk insights: Analysis of vast datasets enables organizations to identify potential risks before escalation.
+c014M02N03 | Supply chain risk knowledge: AI can change how we run supply chains... With predictive analytics, we can make backup plans ahead of time
+c017M01N10 | potential energy savings: The study quantifies potential savings when temperatures exceed the recommended threshold while heating is operating.
+c017M01N11 | energy and economic cost estimates: Hours above 21 degrees Celsius, monitored energy, prices, and estimated savings are calculated.
+c017M02N06 | Potential Savings Quantification: The study quantified potential savings as around EUR 2200 for the autumn-winter period: EUR 500 in November (29.9 h, 7.92 MWh), EUR 370 in December, EUR 330 in January, and EUR 1000 in February (92.8 h, 25.08 MWh).","Articulated and persistently recorded forecasts, simulations, estimates, or inferential statements about likely future states, consequences, risks, or performance."
+s001M01EK06,Codified Evaluative Knowledge,h001M01EK06,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),32,"c001M01N08 | LOD Level-Protection Intensity Mapping Table: The study established an LOD Level-Protection Intensity Mapping Table for Peng's Traditional Dwelling.
+c002M01N04 | IMMS questionnaire: The standard IMMS questionnaire contained 36 questions associated with the ARCS model and supplied the initial sub-criteria pool.
+c002M01N05 | Attention: Attention was one of four main evaluation criteria and received the greatest normalized priority weight.
+c002M01N06 | Relevance: Relevance was one of four main criteria and was nearly as important as Attention.
+c002M01N07 | Confidence: Confidence was one of the four main criteria used to analyze knowledge acquisition.
+c002M01N08 | Satisfaction: Satisfaction was one of the four main criteria used to analyze knowledge acquisition.
+c002M01N09 | Engagement: Engagement was retained as an Attention sub-criterion.
+c002M01N10 | User Interface: User Interface was retained as an Attention sub-criterion; VR received the highest weight for it.
+c002M01N11 | Stimulation of Curiosity: Stimulation of Curiosity was retained as an Attention sub-criterion.
+c002M01N12 | Variety of Content: Variety of Content was retained as an Attention sub-criterion.
+c002M01N13 | Clarity of Presentation: Clarity of Presentation was retained as an Attention sub-criterion.
+c002M01N14 | Knowledge: Knowledge was retained as a Relevance sub-criterion.
+c002M01N15 | Visual Content: Visual Content was retained as a Relevance sub-criterion and ranked second globally.
+c002M01N16 | Updated Content: Updated Content was retained as a Relevance sub-criterion; conventional presentation ranked highest for it.
+c002M01N17 | Practicality: Practicality was retained as a Relevance sub-criterion and ranked highest globally.
+c002M01N18 | Ease of Understanding: Ease of Understanding was retained and was the most critical Confidence sub-criterion.
+c002M01N20 | Conciseness: Conciseness was retained as a Confidence sub-criterion.
+c002M01N21 | Repetition: Repetition was retained as a Confidence sub-criterion but received a low global ranking.
+c002M01N22 | Completion of Activity: Completion of Activity was retained as a Satisfaction sub-criterion.
+c002M01N23 | Providing Feedback: Providing Feedback was retained as a Satisfaction sub-criterion.
+c002M01N24 | Enjoyment: Enjoyment was retained as a Satisfaction sub-criterion.
+c002M02N02 | ARCS-based motivational evaluation framework: The attention-relevance-confidence-satisfaction (ARCS) model is a robust evaluation technique employed for evaluating the motivational outcome of a training session
+c002M02N03 | Instructional Materials Motivation Survey (IMMS): The ARCS model has been used by several studies that evaluate the criteria under investigation using the Instructional Materials Motivation Survey (IMMS) technique
+c005M02N04 | Probability-impact analysis criteria: The prioritization was conducted using the Delphi technique with three experts who conducted a probability-impact analysis where the identified hazards were assessed based on their probability of happening and their impact on the safety of construction laborers and their impacts on the three constraints a project.
+c006M02N05 | OWAS method: Evaluation charts such as the OWAS method (Kivi, P.etal.1991), RULA (McAtamney, L., etal. 1993), REBA (Hignett, S. et al, 2000) and HOHSRAM (Mohandes, S. R.et. al,2021) have been utilized.
+c006M02N06 | RULA method: Evaluation charts such as the OWAS method (Kivi, P.etal.1991), RULA (McAtamney, L., etal. 1993), REBA (Hignett, S. et al, 2000) and HOHSRAM (Mohandes, S. R.et. al,2021) have been utilized.
+c006M02N07 | REBA method: Evaluation charts such as the OWAS method (Kivi, P.etal.1991), RULA (McAtamney, L., etal. 1993), REBA (Hignett, S. et al, 2000) and HOHSRAM (Mohandes, S. R.et. al,2021) have been utilized.
+c006M02N08 | HOHSRAM method: Evaluation charts such as the OWAS method (Kivi, P.etal.1991), RULA (McAtamney, L., etal. 1993), REBA (Hignett, S. et al, 2000) and HOHSRAM (Mohandes, S. R.et. al,2021) have been utilized.
+c006M02N43 | Seven physical strength test items: The physical strength measurements included seven events: two-step, seated stepping, functional reach, one-leg standing with eyes closed, grip strength, foot grip strength and plank (Fig. 3).
+c009M02N08 | Manual annotations (gold standard labels): Ground truth labels for the requirements extraction module were generated through manual annotation of the RFPs by the research team
+c011M01N03 | Declarative knowledge assessment questionnaire: A questionnaire was designed to collect the information at each stage of the experiment. The pre-test questionnaire... measured the trainees' knowledge of equipment choices before entering the confined space.
+c016M01N12 | Peruvian OHS standard G-050 key performance indicators: The PowerApps application was used while monitoring indicators including frequency, severity, and accidentability indexes.
+c016M02N01 | IPERC tool spreadsheet: From the simulations performed in Phase 2, activity-based hazards were identified and served as input data for the IPERC tool
+c016M02N02 | Residual Risk Management tool: Both risk factors (RF- CS & RF- FS) were compared using the RR tool in order to check the effectiveness of the controls taken
+c016M02N04 | G.050 indices: The key performance indicators (KPI) of the Peruvian OHS standard G-050 such as Monthly Frequency Index (IFm), Monthly Severity Index (IGm), Accumulated Frequency Index (IFa), Accumulated Severity Index (IGa), Accidentability Index (IA)","Articulated and persistently recorded criteria, instruments, frameworks, scales, protocols, and decision rules specifying how an entity, condition, intervention, or performance should be assessed."
+s001M01EK07,Codified Outcome Knowledge,h001M01EK07,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),20,"c001M02N34 | 58% visitor historical narrative comprehension gain: Historical knowledge retention rate has been increased by 58%
+c001M02N35 | 22-minute VR dwell time extension metric: VR exhibition hall extended average stay time for 22 minutes
+c002M02N04 | IT2F-Delphi expert significance thresholds: Weights of the sub-criteria are presented in Figure 4, along with the threshold value of 0.4847
+c002M02N05 | IT2F-AHP aggregated pairwise comparison matrix: The aggregate pairwise comparison matrix for criteria is presented in Table 5
+c003M01N06 | Energy simulation outputs: EnergyPlus simulations determined electrical consumption and indoor air temperature for each interaction combination.
+c003M01N07 | Cost values for each scenario: Post-processing converted required consumption into cost values using the electricity price set by ARERA.
+c003M02N26 | Graphical indicators: The graphic indicators used (""thermometer"" and ""piggy bank"") were a useful complement to the suggestions.
+c005M01N01 | identified and prioritized bridge-construction hazards: Hazards collected through interviews and site visits were organized, categorized, and prioritized for inclusion in the AR and VR models.
+c006M01N04 | physical strength measurements: Physical strength measurements were administered to construction workers, using seven test events.
+c006M01N06 | physical performance assessment index: An evaluation equation was developed from age and the seven physical-strength items to form a physical performance assessment index.
+c006M01N09 | estimated lumbar load: Lumbar load was estimated by combining wearable-sensor posture information with hand weight obtained from captured video.
+c008M01N04 | extracted key words and phrases: The study extracted feature factors and recurring combinations such as temporary support during construction, soil stability issues, and material fatigue.
+c009M02N05 | Bid pricing data: Bid pricing – Calculating project costs, ensuring competitiveness and alignment with client requirements
+c010M01N12 | learning preferences classification: Participants were categorized according to their respective learning preferences after survey analysis.
+c015M02N43 | Student knowledge retention: 79% of students agreed that ABL facilitated deeper learning and better retention of course material, particularly through practical application and experiential learning.
+c015M02N45 | Assessment results: Students' coursework, assessments, and overall academic performance were analyzed to measure the effectiveness of ABL and technology-enhanced learning.
+c016M01N08 | initial risk factor: An initial risk factor was assigned using exposure, probability, and severity indexes.
+c016M01N10 | residual risk factor: A lower post-control risk factor was obtained and compared with the initial factor using the RR tool.
+c017M01N09 | thermal performance: The paper analyzes thermal evolution, inertia, heating influence, and thermal morphology.
+c017M02N04 | Thermal Inertia Value (2-3°C): During holiday periods, a thermal inertia of approximately 3°C above outdoor temperatures was quantified.","Articulated and persistently recorded results produced through measurement, calculation, assessment, or evaluation, including scores, indicators, KPIs, observed effects, and quantified outcomes."
+s001M01EK08,Codified Experiential Knowledge,h001M01EK08,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),11,"c008M01N01 | construction accident text reports: The study obtained 1,483 text reports of construction safety production accidents and used them as the model corpus.
+c008M01N02 | accident process descriptions: The study focused on the accident-process-description module to identify precursory factors before accidents.
+c008M02N01 | Accident narrative reports: text accident reports in unstructured or semistructured form
+c009M01N09 | Post-bid feedback and lessons learned: The post-bid review gathers feedback, assesses lessons learned, and supports improvement of future submissions.
+c012M01N20 | Tagged narrative artefacts: Stories were transformed into tagged, queryable artefacts for integration and reuse.
+c012M02N09 | Structured databases: ""Structured databases"" and ""structured documents, project repositories"" used for explicit knowledge
+c012M02N10 | AAR notes: ""After-action reviews (AAR)"" produce ""notes/action items; lessons logs""
+c012M02N11 | CIT descriptions: ""Critical incident technique (CIT)"" produces ""incident descriptions; causal mapping""
+c014M01N02 | lessons from past practices: Collaborative platforms enable organizations to draw lessons from past practices.
+c014M02N07 | Operational knowledge from past practices: Collaborative platforms... enable organizations to draw lessons from past practices
+c016M01N04 | lessons learned: The database retains and shares lessons learned; the Phase 3 application also contains a Lessons Learned tool.","Lessons or insights from situated experience that have been articulated and persistently recorded, including lessons learned, after-action findings, critical-incident accounts, case reflections, and reusable project insights; experience retained only in a person's mind is excluded."
+s001M01EK09,Ambiguous Explicit Knowledge(*),h001M01EK09,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),12,"c004M01N01 | excavation safety knowledge: The comparative study measured participants’ safety knowledge of excavation hazards before, immediately after, and four weeks after training.
+c005M01N04 | theoretical and managerial safety aspects: The AR part of the implemented training was primarily concerned with theoretical and managerial aspects.
+c005M01N05 | hazard sheet: Each AR hazard was hosted on a separate image on a physical paper identified as the hazard sheet.
+c005M02N03 | Theoretical safety training content: This part of the training was primarily concerned with theoretical and managerial aspects. Not all safety information and topics need to be modeled in a fully immersive and interactive environment such as theoretical and managerial safety aspects.
+c007M01N05 | designs: Designs are identified as explicit knowledge managed by IT-based KM.
+c007M01N07 | project documents: Project documents are identified as explicit knowledge managed by IT-based KM.
+c007M02N02 | SMCC Explicit Knowledge Assets: The IT-based approach focuses on systems to manage explicit knowledge (e.g., designs, cost estimation and project documents)
+c009M01N06 | Final bid proposal: After expert review and multiple iterations, the final proposal was submitted and archived for future reference.
+c012M01N19 | Traditional project documentation: Bridge-project challenges were documented but inadequately captured for later transfer.
+c014M02N05 | Decision-making insights: AI-driven tools can improve decision-making by analyzing vast amounts of data
+c014M02N08 | AI-generated reports: The AI tool reads the data and generates the reports
+c015M02N44 | Transferrable skills: Which transferrable skills did you gain with ABL?",Maps explicit knowledge that cannot be assigned to EK01-EK08 because the evidence does not identify a sufficiently specific domain or analytical level.
 s001M01KH01,Community and Cultural Knowledge Custodians,h001M01KH01,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),1,"c001M01N12 | Indigenous people: The return rate of indigenous people is below 30%, immediately followed by the finding that ICH skills face inheritance interruption.","Community members who preserve and transmit local, cultural, historical, or intergenerational knowledge."
 s001M01KH02,Skilled Trades and Craft Practitioners,h001M01KH02,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c001M02N10 | ICH traditional building craftsmen: Tsyganov (2022) found that Bulgaria's digital authorization system... raised traditional artisans' income by 40%
 c012M02N16 | Skilled Tradesperson: ""Skilled tradespeople"" participated in the bridge project storytelling sessions","Practitioners holding embodied, experience-based, manual, or craft knowledge acquired through sustained practice."

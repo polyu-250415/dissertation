@@ -2342,7 +2342,33 @@ Analyze a case-based knowledge subgraph and develop an evidence-grounded concept
 
 Input data
 Use $analyze-neo4j-knowledge-graph to quey the target sub-graph. The query cypher is as follows:
-{graph}
+MATCH (depends:EnvironmentalDependency)
+WHERE depends.node_id STARTS WITH 's001'
+WITH depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:depend_on]-(depends)
+WITH depends,
+     COLLECT({src_node:thp, rel: r, dst_node: depends}) AS thp_depends
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:depend_on]-(depends)
+WHERE NOT coalesce(tep.node_name, '') STARTS WITH 'Ambiguous'
+WITH depends, thp_depends,
+     COLLECT({src_node:tep, rel: r, dst_node: depends}) AS tep_depends
+
+OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's001'
+WITH depends, thp_depends,tep_depends,
+     COLLECT({src_node:thp, rel: r, dst_node: lim}) AS thp_limits
+
+OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:be_constrained_by]-(lim:Limitation)
+WHERE lim.node_id STARTS WITH 's001'
+WITH depends, thp_depends,tep_depends,thp_limits,
+     COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
+
+RETURN thp_depends,
+       tep_depends,
+       thp_limits,
+       tep_limits
 
 Research question
 RQ2.  What organizational tangible resources and capabilities (e.g., data infrastructure, expert participation, and environmental factors ) are required to deploy these technologies?
@@ -2371,7 +2397,8 @@ Organize the answer around two perspectives, each perspective demonstrates three
 * Name the conceptual dependency.
 * Explain its mechanism.
 * Integrate evidence from multiple cases to present domain characteristics. Do not interpret it in general.
-* State its constraining or conditional implications.
+* State its constraining or conditional implications. 
+* Treat cases as a bounded sample, not as representative of the entire construction sector.
 Use this citation format exactly: (sXXX)
 Conclude with an integrative statement explaining how digitally reconstructed and persistently established dependencies interact to convert.","Digital-Era Specific Dependencies.
 
@@ -2478,6 +2505,7 @@ Organize the answer around two perspectives, each perspective demonstrates three
 * Name the conceptual dependency.
 * Explain its mechanism.
 * Integrate evidence from multiple cases to present domain characteristics. Do not interpret it in general.
+* Treat cases as a bounded sample, not as representative of the entire construction sector.
 * State its constraining or conditional implications.
 Use this citation format exactly: (sXXX)
 Conclude with an integrative statement explaining how digitally reconstructed and persistently established dependencies interact to convert.","Digital-Era Specific Dependencies.

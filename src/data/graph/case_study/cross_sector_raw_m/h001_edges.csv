@@ -1,4 +1,206 @@
 src_node_id,dst_node_id,relation_type,evidence_count,evidence_statement,case_title,evidence_label,child_src_id,child_dst_id
+h001M01EK01,h001M01EK03,be_derived_from,1,c002M01N01 - c002M02N06: Training content was based on an Australian industrial standard—Preventing Falls in Housing Construction—Code of Practice,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01EK03
+h001M01EK01,h001M01THR11,be_transferred_by,2,"c002M01N01 - c002M01N31: The conventional training content was prepared from the code of practice.
+c014M01N05 - c014M01N19: Regular training sessions communicate new rules.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01THR11
+h001M01EK01,h001M01THR14,be_transferred_by,1,c014M01N05 - c014M01N20: Workshops communicate new rules.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01THR14
+h001M01EK01,h001M01THR15,be_transferred_by,1,c009M01N01 - c009M01N20: Traditional proposal preparation begins by reviewing and responding to client tender requirements.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01THR15
+h001M01EK01,h001M01TK07,translate_into,1,c002M01N01 - c002M02N10: Training content was based on an Australian industrial standard—Preventing Falls in Housing Construction—Code of Practice,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01TK07
+h001M01EK01,h001M01TK10,translate_into,5,"c011M01N01 - c011M01N05: Trainees need to remember what equipment to carry in different scenarios to ensure their safety while entering confined spaces, internalizing the rules from the guide.
+c011M01N01 - c011M01N06: Trainees need to choose the right equipment to protect themselves before entering space, translating regulatory guidelines into safe behavioral responses.
+c011M01N02 - c011M01N05: Trainees are supposed to choose corresponding items for the gas detected in the confined space, using their prior knowledge gained from the equipment selection rules.
+c011M01N02 - c011M01N06: Correct equipment selection represents safe behavioral response, derived directly from the equipment selection rules.
+c011M01N04 - c011M01N05: The gas properties and required equipment data explicitly informs the trainees' internalized knowledge of which equipment to select.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01TK10
+h001M01EK01,h001M01TK13,translate_into,1,c002M01N01 - c002M02N11: Training content was based on an Australian industrial standard—Preventing Falls in Housing Construction—Code of Practice,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01TK13
+h001M01EK01,h001M01TP05,be_transferred_by,1,"c017M01N08 - c017M01N14: The methodology applies the 17, 19, and 21 degree Celsius thresholds in its analysis.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01TP05
+h001M01EK01,h001M01TP07,be_transferred_by,2,"c009M02N02 - c009M02N30: RFPs are input into the requirements extraction system
+c009M02N07 - c009M02N30: Requirements summary is used by the extraction system for processing",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01TP07
+h001M01EK01,h001M01TP10,be_transferred_by,2,"c016M01N11 - c016M01N18: The Phase 3 risk calculation uses exposure, probability, and severity indexes granted by Peruvian Law N° 29783.
+c016M01N11 - c016M01N21: The application visualizes preceding-phase risk-management information calculated using the Peruvian Law N° 29783 indexes.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK01,s001M01TP10
+h001M01EK02,h001M01EK01,be_derived_from,3,"c002M01N02 - c002M01N01: The modeled fall risks followed the code of practice.
+c002M01N41 - c002M01N01: Fall risks and protections represented in the models and animations were modeled according to the code.
+c004M01N04 - c004M01N02: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N04 - c004M01N03: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N05 - c004M01N02: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N05 - c004M01N03: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N06 - c004M01N02: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N06 - c004M01N03: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N07 - c004M01N02: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N07 - c004M01N03: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N08 - c004M01N02: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N08 - c004M01N03: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N09 - c004M01N02: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N09 - c004M01N03: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N10 - c004M01N02: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.
+c004M01N10 - c004M01N03: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01EK01
+h001M01EK02,h001M01THR11,be_transferred_by,1,c002M01N02 - c002M01N31: The conventional presentation demonstrated fall risks.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01THR11
+h001M01EK02,h001M01THR12,be_transferred_by,1,c001M01N05 - c001M01N19: Static pictures were used to present wartime sites and timelines.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01THR12
+h001M01EK02,h001M01THR13,be_transferred_by,2,"c015M01N03 - c015M01N19: Real-world examples and case-based activities were used to enhance learning.
+c015M01N04 - c015M01N19: Students learned about industry needs through case studies.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01THR13
+h001M01EK02,h001M01THR15,be_transferred_by,3,"c001M01N02 - c001M01N17: Total station and film photography retained elevations and partial depth data.
+c008M02N03 - c008M02N17: Traditional Chinese text segmentation algorithms mainly rely on loading domain dictionaries
+c009M01N07 - c009M01N20: Project sheets are prepared and incorporated during manual proposal preparation.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01THR15
+h001M01EK02,h001M01THR17,be_transferred_by,1,c017M01N07 - c017M01N12: Lecture schedules were reviewed to select a representative day and establish expected occupancy.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01THR17
+h001M01EK02,h001M01TK10,translate_into,1,c002M01N02 - c002M01N26: The authors connect acquired knowledge about task-relevant risks with application of safe work practices.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TK10
+h001M01EK02,h001M01TP01,be_transferred_by,1,c016M01N06 - c016M01N17: Activity-based hazards were identified from the simulations.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP01
+h001M01EK02,h001M01TP02,be_transferred_by,3,"c001M01N02 - c001M01N22: The workflow collects and models architectural data at graded LOD precision.
+c001M01N02 - c001M01N51: Aerial images are processed into textured models representing building appearance and material condition.
+c001M01N03 - c001M01N52: Spatial distribution maps display building density, age distribution, and other conservation data.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP02
+h001M01EK02,h001M01TP03,be_transferred_by,8,"c001M01N01 - c001M01N23: Historical archives are presented through reconstructed living scenes.
+c001M01N04 - c001M01N24: The platform interactively restores historical scenes and triggers historical events.
+c001M01N05 - c001M01N24: Timeline-triggered events are presented through the digital twin platform.
+c001M02N01 - c001M01N24: Based on 3D laser scanning, VR and big data, we collect architectural data
+c001M02N06 - c001M01N24: Thermal imaging scanning can discover hidden danger points of building structure (such as wood decay, hollow walls)
+c002M01N02 - c002M01N33: AR visualizations communicated common fall hazards.
+c002M01N02 - c002M01N34: VR visualizations communicated modeled fall hazards.
+c010M02N21 - c010M01N19: The mixed reality (MR) learning environment for learning sensing technologies",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP03
+h001M01EK02,h001M01TP04,be_transferred_by,6,"c001M01N04 - c001M01N25: The dynamic narrative system presents historical narrative through reconstructed events.
+c001M01N05 - c001M01N25: The dynamic narrative triggers events according to timelines.
+c001M02N01 - c001M01N56: Based on 3D laser scanning, VR and big data, we collect architectural data
+c001M02N05 - c001M02N16: The dynamic narrative technology triggered events by timelines (such as the relocation of the Nationalist Government to Chongqing in 1938)
+c004M01N04 - c004M01N18: Site A training included a question and feedback concerning the presence of a safety officer.
+c004M01N07 - c004M01N18: Participants learned about all seven selected critical hazards during Site A training.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP04
+h001M01EK02,h001M01TP05,be_transferred_by,10,"c014M01N09 - c014M01N26: Environmental monitoring tools track and make emissions data available.
+c017M01N04 - c017M01N14: The methodology collects and analyzes environmental and operational IoT data.
+c017M01N04 - c017M01N15: The IoT ecosystem collects environmental variables and operating conditions.
+c017M01N04 - c017M01N16: Real-time monitoring carries IoT data into thermal and occupancy analyses.
+c017M01N05 - c017M01N14: Acquisition and analysis of experimental measurements are methodology stages.
+c017M01N05 - c017M01N15: The IoT ecosystem acquires experimental measurements through its sensors.
+c017M01N05 - c017M01N16: Real-time monitoring transfers measurements into the analysis of building behaviour.
+c017M01N06 - c017M01N14: The methodology combines measurements with external variables to produce context-aware information.
+c017M01N06 - c017M01N15: The ecosystem combines monitored and external variables to obtain context-aware information.
+c017M01N07 - c017M01N14: The methodology uses lecture schedules as external contextual variables.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP05
+h001M01EK02,h001M01TP06,be_transferred_by,1,c006M01N08 - c006M01N15: Captured video supplied the hand-weight information combined with wearable-sensor posture information in the workload estimation process.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP06
+h001M01EK02,h001M01TP07,be_transferred_by,4,"c008M01N03 - c008M01N27: The CNN produces classification probabilities corresponding to five accident types.
+c010M01N13 - c010M01N24: Eye-tracking inputs were analyzed according to the different learning preferences.
+c010M01N14 - c010M01N24: Extracted fixations contributed inputs for model training.
+c010M01N15 - c010M01N24: Head origin X, Y, and Z coordinates were included among the model data inputs.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP07
+h001M01EK02,h001M01TP08,be_transferred_by,1,c009M01N03 - c009M01N24: Historical bid documents and RFPs were collected and prepared for inclusion in the knowledge base,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP08
+h001M01EK02,h001M01TP09,be_transferred_by,1,c009M01N03 - c009M01N26: Historical proposals are surfaced and distributed to the generation workflow through semantic retrieval.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP09
+h001M01EK02,h001M01TP10,be_transferred_by,7,"c016M01N02 - c016M01N20: The database retains OHS management information so it can be organized and used later; incident information is one identified class of OHS information at risk of loss.
+c016M01N06 - c016M01N18: Hazards identified through simulations served as input data for the IPERC tool in the Phase 3 application.
+c016M01N07 - c016M01N18: The IPERC tool determined hazard characteristics and properties.
+c016M01N06 - c016M01N20: Activity-based hazards entered the Phase 3 application, whose information subsequently feeds and is stored in the SQL server.
+c016M01N07 - c016M01N20: Hazard characteristics and properties were determined in Phase 3, and information from that phase was used to populate the SQL server.
+c016M01N06 - c016M01N21: The PowerApps application visualizes information from preceding phases, which includes the hazards identified through simulation and processed in Phase 3.
+c016M01N07 - c016M01N21: The PowerApps application visualizes information from preceding phases, including the hazard information determined through IPERC.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP10
+h001M01EK02,h001M01TP11,be_transferred_by,2,"c001M01N04 - c001M01N26: The module connects historical narrative with interactive experience.
+c014M01N03 - c014M01N23: Some projects use a portal through which project news is shared.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP11
+h001M01EK02,h001M01TP12,be_transferred_by,3,"c015M01N01 - c015M01N24: Students reported better retention of course material through ABL and practical application.
+c015M01N02 - c015M01N24: ABL was reported to improve understanding of complex concepts.
+c015M01N03 - c015M01N27: YouTube was used to show scaffolding as a concrete example.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP12
+h001M01EK02,h001M01TP13,be_transferred_by,3,"c006M01N05 - c006M01N18: The dedicated web application was developed to streamline questionnaires and was used to tabulate and analyse their data.
+c006M02N03 - c006M02N25: A dedicated web application has been developed separately for the purpose of streamlining questionnaires and is used to tabulate and analyse the data.
+c010M01N11 - c010M01N17: Survey responses were analyzed using descriptive statistics to categorize participants.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP13
+h001M01EK03,h001M01EK01,be_derived_from,2,"c002M01N03 - c002M01N01: The fall-protection content and visualizations were consistent with the code of practice.
+c009M01N05 - c009M01N02: The generated methodology draft is based on the requirements extracted from the new RFP.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01EK01
+h001M01EK03,h001M01EK02,be_derived_from,1,"c009M02N04 - c009M01N03: Method Statement Writing: Detailed explanation of project execution approach, timelines, resources, risk management, and quality control",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01EK02
+h001M01EK03,h001M01EK07,be_derived_from,1,c003M01N08 - c003M01N06: The tips presented in Table I were generated from the energy simulations.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01EK07
+h001M01EK03,h001M01EK08,be_derived_from,3,"c012M01N21 - c012M01N20: The pre-excavation checklist resulted from the narrated and tagged Soil Saga heuristic.
+c012M01N22 - c012M01N20: Captured and tagged handover norms informed the KMS-embedded playbook.
+c012M01N23 - c012M01N20: Tagged safety cues and decision triggers were converted into the checklist and drill script.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01EK08
+h001M01EK03,h001M01THR11,be_transferred_by,3,"c002M01N03 - c002M01N31: The conventional presentation explained fall protections and encouraged questions about their use.
+c012M01N21 - c012M01N49: The Soil Saga heuristic was internalized through toolbox talks and a pre-excavation checklist.
+c014M01N04 - c014M01N19: Regular training sessions communicate best practices.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01THR11
+h001M01EK03,h001M01THR14,be_transferred_by,1,c014M01N04 - c014M01N20: Workshops communicate best practices.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01THR14
+h001M01EK03,h001M01THR15,be_transferred_by,1,c008M02N05 - c008M02N16: Rule-based language models require researchers to manually write knowledge expressions and call rules to develop algorithms,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01THR15
+h001M01EK03,h001M01THR16,be_transferred_by,1,c009M01N05 - c009M01N22: The AI-generated proposal is passed to the expert team for review and refinement.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01THR16
+h001M01EK03,h001M01TK04,translate_into,1,"c012M02N08 - c012M01N01: ""Explicit knowledge becomes tacit through internalization"" as per SECI model; manuals can be internalized into practice",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01TK04
+h001M01EK03,h001M01TK06,translate_into,1,c012M01N21 - c012M01N02: The narrated excavation heuristic was subsequently internalized through toolbox talks and a pre-excavation checklist.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01TK06
+h001M01EK03,h001M01TK10,translate_into,1,c002M01N03 - c002M01N26: The authors connect acquired knowledge about protective measures with application of safe work practices.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01TK10
+h001M01EK03,h001M01TP03,be_transferred_by,3,"c002M01N03 - c002M01N33: AR visualizations communicated applicable fall-protection devices.
+c002M01N03 - c002M01N34: VR visualizations demonstrated fall-protection devices and their operation.
+c003M02N01 - c003M02N10: ...feedback or tips were developed and will be integrated in the virtual model... to allow participants to understand the consequences of their selected interactions.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01TP03
+h001M01EK03,h001M01TP04,be_transferred_by,1,c003M01N08 - c003M01N11: Simulation-derived tips were integrated as instructional feedback in the developed immersive tool.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01TP04
+h001M01EK03,h001M01TP08,be_transferred_by,1,c009M01N05 - c009M01N27: The proposal-generation stage produces and distributes the methodology draft for expert review.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01TP08
+h001M01EK03,h001M01TP09,be_transferred_by,1,c009M01N04 - c009M01N26: The system retrieves methodology sections from the top three similar proposals.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01TP09
+h001M01EK03,h001M01TP10,be_transferred_by,4,"c016M01N05 - c016M01N20: The centralized database is stated to retain and share best practices.
+c016M01N09 - c016M01N18: Mitigation controls were selected according to hazard type in the PtD risk-management process.
+c016M01N09 - c016M01N20: Selected mitigation controls formed part of Phase 3 risk-management information, which subsequently populated the SQL server.
+c016M01N09 - c016M01N21: The application visualizes information from preceding phases, including the controls selected during Phase 3 risk mitigation.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK03,s001M01TP10
+h001M01EK04,h001M01KH10,be_shared_by,1,c017M02N05 - c017M02N11: The identified sawtooth pattern is an explicit finding derived by the researchers.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK04,s001M01KH10
+h001M01EK05,h001M01EK01,be_derived_from,1,c017M01N10 - c017M01N08: Potential savings are calculated for periods exceeding the 21 degree Celsius threshold.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK05,s001M01EK01
+h001M01EK05,h001M01EK02,be_derived_from,3,"c014M01N07 - c014M01N06: AI analyzes extensive data to predict trends and outcomes.
+c014M01N08 - c014M01N06: Analysis of vast datasets enables potential-risk identification.
+c017M01N11 - c017M01N05: Cost estimates use monitored hours and energy above 21 degrees Celsius.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK05,s001M01EK02
+h001M01EK05,h001M01EK07,be_derived_from,1,c017M01N10 - c017M01N09: The potential-savings analysis follows findings about thermal performance.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK05,s001M01EK07
+h001M01EK05,h001M01EK09,be_derived_from,1,c014M01N07 - c014M02N05: Decision-making insights derived from predictive insights,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK05,s001M01EK09
+h001M01EK05,h001M01KH10,be_shared_by,1,c017M02N06 - c017M02N11: The quantified potential savings is an explicit finding derived by the researchers.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK05,s001M01KH10
+h001M01EK05,h001M01TK10,translate_into,1,c005M01N02 - c005M01N09: Trainees applied risk information to assess likelihood and potential impacts during VR training.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK05,s001M01TK10
+h001M01EK05,h001M01TP03,be_transferred_by,2,"c005M01N02 - c005M01N22: AR training exposed trainees to hazard types and associated risks and consequences.
+c005M01N02 - c005M01N23: VR training provided practical exposure supporting assessment of risk likelihood and impact.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK05,s001M01TP03
+h001M01EK05,h001M01TP07,be_transferred_by,2,"c014M01N07 - c014M01N25: Predictive tools provide insights about trends and outcomes.
+c014M01N08 - c014M01N25: Predictive analysis enables risk identification before escalation.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK05,s001M01TP07
+h001M01EK06,h001M01TK13,translate_into,1,c002M02N02 - c002M02N11: The ARCS model has been identified as an essential and effective motivational model frequently used for evaluating serious games in education and training,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK06,s001M01TK13
+h001M01EK06,h001M01TP07,be_transferred_by,1,c009M02N08 - c009M02N30: Ground truth labels for the requirements extraction module were generated through manual annotation of the RFPs by the research team,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK06,s001M01TP07
+h001M01EK06,h001M01TP10,be_transferred_by,3,"c016M01N12 - c016M01N20: The Knowledge Management phase stores OHS management information and supports monitoring of the G-050 key performance indicators through the connected application.
+c016M01N12 - c016M01N21: The PowerApps application was used during project execution to monitor and control OHS management, including the G-050 frequency, severity, and accidentability indicators.
+c016M02N01 - c016M02N10: an application was developed in Microsoft Excel oriented to OHS management based on the PtD initiative",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK06,s001M01TP10
+h001M01EK07,h001M01EK02,be_derived_from,6,"c003M01N06 - c003M01N05: EnergyPlus produced consumption and indoor-temperature results for each of the twelve interaction combinations.
+c006M01N06 - c006M01N05: Age was collected through the questionnaire and incorporated with the seven physical-strength items in the physical performance assessment index.
+c009M02N05 - c009M01N03: Bid pricing data is contained within historical bid documents
+c010M01N12 - c010M01N11: Participants' learning-preference classifications were produced by scoring and analyzing their learning-preferences survey responses.
+c017M01N09 - c017M01N05: Thermal performance is characterized from experimental temperature measurements.
+c017M01N09 - c017M01N06: Thermal performance combines measurements with weather, heating, occupancy, and schedule context.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01EK02
+h001M01EK07,h001M01EK03,be_derived_from,3,"c003M01N06 - c003M02N01: Table I presents the results of energy simulations of the 12 scenarios useful to create the ""tips"" and the graphical indicators.
+c003M02N26 - c003M02N01: The graphic indicators used (""thermometer"" and ""piggy bank"") were a useful complement to the suggestions.
+c006M01N09 - c006M01N10: The lumbar load is estimated using the algorithm described in Chapter 4.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01EK03
+h001M01EK07,h001M01EK05,be_derived_from,1,c003M01N06 - c003M01N04: The corresponding Building Energy Model was created using Design Builder software...,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01EK05
+h001M01EK07,h001M01EK06,be_derived_from,3,"c002M02N04 - c002M02N03: A standard survey, IMMS questionnaire, based on the ARCS model has been developed by Keller to measure the motivation of participants
+c002M02N05 - c002M02N03: The finalized sub-criteria were used to prepare a questionnaire for the construction safety training
+c006M01N06 - c006M02N43: The evaluation equation(1) for physical performance was developed from eight items adding age to the seven items of physical strength test.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01EK06
+h001M01EK07,h001M01EK08,be_derived_from,1,"c008M01N04 - c008M01N02: Key words, phrases, and precursor factors were extracted from the accident process descriptions in the reports.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01EK08
+h001M01EK07,h001M01KH10,be_shared_by,1,"c017M02N04 - c017M02N11: The calculated thermal inertia value is an explicit finding derived by the researchers, who hold this knowledge.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01KH10
+h001M01EK07,h001M01THR05,be_transferred_by,1,c005M01N01 - c005M01N16: Interviews were one of two primary techniques used to gather bridge-construction hazards.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01THR05
+h001M01EK07,h001M01THR17,be_transferred_by,1,c005M01N01 - c005M01N17: Site visits were one of two primary techniques used to gather hazards from bridge projects under construction.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01THR17
+h001M01EK07,h001M01TK06,translate_into,1,c005M01N01 - c005M01N08: Exposure to the modeled hazards was followed by significantly improved hazard recognition and identification.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01TK06
+h001M01EK07,h001M01TP01,be_transferred_by,1,c003M01N06 - c003M02N13: Those 12 scenarios were simulated in the EnergyPlus software to determine electrical consumption...,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01TP01
+h001M01EK07,h001M01TP03,be_transferred_by,1,c005M01N01 - c005M01N22: The AR model included twelve hazards across three scenes.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01TP03
+h001M01EK07,h001M01TP04,be_transferred_by,1,c003M01N06 - c003M01N10: Simulation results were represented through dynamic temperature and cost indicators.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01TP04
+h001M01EK07,h001M01TP07,be_transferred_by,4,"c008M01N04 - c008M01N25: Phrase extraction generates informative key words and phrases from accident descriptions.
+c008M01N04 - c008M01N26: Extracted textual precursor factors are transformed into word-vector representations.
+c008M01N04 - c008M01N27: The extracted text features were converted into word vectors and supplied to the CNN for accident-type classification.
+c010M01N12 - c010M01N24: Preference classifications supplied the classes used to train the machine-learning models.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01TP07
+h001M01EK07,h001M01TP10,be_transferred_by,6,"c016M01N08 - c016M01N18: The IPERC process assigned an initial risk factor.
+c016M01N10 - c016M01N18: The Phase 3 application calculated and compared post-control residual risk using the RR tool.
+c016M01N08 - c016M01N20: The initial risk factor was generated in Phase 3, and the information produced by the Phase 3 application was stored in the SQL server.
+c016M01N10 - c016M01N20: The residual risk factor was generated and compared in Phase 3, and information from this application was stored in the SQL server.
+c016M01N08 - c016M01N21: The application visualizes information from preceding phases, including the initial risk-management information generated in Phase 3.
+c016M01N10 - c016M01N21: The application visualizes information from preceding phases, including residual-risk management information produced by the Phase 3 application.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01TP10
+h001M01EK07,h001M01TP13,be_transferred_by,2,"c006M01N04 - c006M01N18: The dedicated application is presented as supporting the physical performance questionnaire and physical strength measurement, and is used to tabulate and analyse the data.
+c006M01N06 - c006M02N25: A physical performance assessment index was constructed by setting a coefficient with a perfect score of 200 points for each item experimentally.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK07,s001M01TP13
+h001M01EK08,h001M01THR06,be_transferred_by,1,"c012M02N11 - c012M02N30: ""Critical incident technique (CIT)"" produces ""incident descriptions; causal mapping""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK08,s001M01THR06
+h001M01EK08,h001M01THR09,be_transferred_by,2,"c009M01N09 - c009M01N23: Post-bid review gathers feedback and lessons for future submissions.
+c012M02N10 - c012M02N29: ""After-action reviews (AAR)"" produce ""notes/action items; lessons logs""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK08,s001M01THR09
+h001M01EK08,h001M01THR15,be_transferred_by,3,"c008M01N01 - c008M01N22: Accident reports were traditionally organized and classified manually for information retrieval.
+c009M01N09 - c009M01N20: The post-bid review gathers feedback and lessons learned to improve future bid submissions.
+c012M02N09 - c012M02N26: ""Structured databases"" are used to store explicit knowledge, which is often captured in written reports.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK08,s001M01THR15
+h001M01EK08,h001M01THR17,be_transferred_by,1,c008M01N01 - c008M01N21: Literature research is listed as a traditional method for obtaining codified domain knowledge.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK08,s001M01THR17
+h001M01EK08,h001M01TP07,be_transferred_by,5,"c008M01N01 - c008M01N23: The framework processes and classifies construction accident reports.
+c008M01N02 - c008M01N23: The framework uses accident-process descriptions to identify common precursors.
+c008M01N01 - c008M01N24: Collected construction accident text reports were checked, standardized, cleaned, and prepared for subsequent analysis.
+c008M01N02 - c008M01N25: Phrase extraction was applied to accident descriptions to obtain more complete and informative phrase strings.
+c008M02N01 - c008M01N27: CNN model was constructed using pretrained Word2Vec word embeddings for text self-classification tasks",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK08,s001M01TP07
+h001M01EK08,h001M01TP10,be_transferred_by,4,"c012M01N20 - c012M01N28: SToKMS made tagged narrative artefacts queryable for retrieval, training, and reuse.
+c016M01N04 - c016M01N18: Lessons Learned is expressly identified as a tool in the Phase 3 Excel application.
+c016M01N04 - c016M01N20: The centralized database retains and shares lessons learned, and Phase 3 information feeds the SQL server.
+c016M01N04 - c016M02N12: This server will be populated with data from an application created in Microsoft Excel during Phase 3",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK08,s001M01TP10
+h001M01EK08,h001M01TP11,be_transferred_by,1,c014M01N02 - c014M01N22: Collaborative platforms enable organizations to draw lessons from past practices.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK08,s001M01TP11
+h001M01EK09,h001M01EK03,be_derived_from,1,c009M01N06 - c009M01N05: The generated draft undergoes multiple expert-review iterations before becoming the final proposal.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK09,s001M01EK03
+h001M01EK09,h001M01KL02,be_absorbed_by,1,c004M01N01 - c004M02N10: Results based on scores obtained immediately after training indicate that VR training significantly enhanced...knowledge acquisition,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK09,s001M01KL02
+h001M01EK09,h001M01THR12,be_transferred_by,1,c004M01N01 - c004M01N15: The manual group significantly increased its excavation safety knowledge immediately after training.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK09,s001M01THR12
+h001M01EK09,h001M01THR15,be_transferred_by,3,"c007M01N07 - c007M01N22: Project documents are explicit knowledge and hard-copy storage is KS5.
+c012M01N19 - c012M01N47: Traditional project documentation was the formal knowledge asset used by the existing documentation process.
+c012M01N19 - c012M02N26: ""Written reports"" are a traditional method for documenting project knowledge; project documentation is a subset of that.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK09,s001M01THR15
+h001M01EK09,h001M01TK06,translate_into,3,"c004M01N01 - c004M02N06: Participants were instructed to...identify, evaluate and respond to each hazard in VR
+c005M01N04 - c005M01N07: AR-delivered theoretical content supported knowledge acquisition that the authors linked to increased hazard awareness.
+c005M02N03 - c005M01N08: The trainees promptly started witnessing the hazards that were discussed in the AR session while showing significant improvements in the assessment of the associated risks. During the VR-based training, the trainees readily implemented the theoretical knowledge gained from the AR training.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK09,s001M01TK06
+h001M01EK09,h001M01TK08,translate_into,1,"c004M01N01 - c004M02N05: The proposed VR training system significantly enhanced practical performance, knowledge acquisition and self-efficacy",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK09,s001M01TK08
+h001M01EK09,h001M01TK10,translate_into,2,"c004M01N01 - c004M01N11: VR training delivered safety knowledge and participants subsequently improved their applied identification, evaluation, and response performance.
+c004M01N01 - c004M02N09: 3 stands for being able to identify, evaluate and respond",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK09,s001M01TK10
+h001M01EK09,h001M01TP03,be_transferred_by,4,"c004M01N01 - c004M01N16: The VR group significantly increased its excavation safety knowledge after training.
+c004M01N01 - c004M02N17: The proposed VR training system was compared with a health and safety manual via a controlled experiment
+c005M01N04 - c005M01N22: The AR portion of training was primarily concerned with theoretical and managerial aspects.
+c005M02N03 - c005M02N25: This part of the training was primarily concerned with theoretical and managerial aspects. Not all safety information and topics need to be modeled in a fully immersive and interactive environment such as theoretical and managerial safety aspects.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK09,s001M01TP03
 h001M01KH02,h001M01THR07,participate_in,1,c001M02N10 - c001M02N33: Intangible cultural heritage skills are at risk of interruption in inheritance,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH02,s001M01THR07
 h001M01KH02,h001M01TP03,participate_in,1,c001M02N10 - c001M01N24: An interactive knowledge graph is constructed to digitalize the recording of craftsmanship process,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH02,s001M01TP03
 h001M01KH03,h001M01THR11,participate_in,1,"c002M02N13 - c002M02N20: Current safety training sessions are delivered using traditional classroom lectures, textbook learning, and on-site safety briefings
@@ -243,6 +445,7 @@ h001M01THR11,h001M01ED01,depend_on,2,"c002M02N20 - c002M02N35: Training content 
 c002M02N20 - c002M02N36: The construction industry is among the highest contributors to work-related injuries and on-the-job fatalities among all major industries",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01ED01
 h001M01THR11,h001M01ED03,depend_on,1,"c015M01N15 - c015M02N31: The students also collaborated on the solutions for challenges that arise in using ABL, like diverse backgrounds.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01ED03
 h001M01THR11,h001M01ED10,depend_on,1,"c015M01N15 - c015M02N30: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01ED10
+h001M01THR11,h001M01EK01,evaluate,1,c011M01N15 - c011M01N01: The post-training questionnaire measured declarative safety knowledge immediately after training.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01EK01
 h001M01THR11,h001M01LI01,be_constrained_by,3,"c002M01N31 - c002M01N44: The paper used two-week gaps because participants were expected to forget most previously presented content.
 c002M01N31 - c002M01N47: Traditional methods did not translate into long-term information retention.
 c002M02N20 - c002M02N39: Most students would have forgotten about 80% of the content in a week's time",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01LI01
@@ -267,6 +470,8 @@ h001M01THR11,h001M01OD01,depend_on,1,c002M02N20 - c002M02N33: It is necessary to
 h001M01THR11,h001M01OD02,depend_on,1,c014M01N19 - c014M01N31: Regular training sessions are supported by leadership.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01OD02
 h001M01THR11,h001M01OD05,depend_on,1,c002M02N20 - c002M02N34: A study exploring the reasons behind unsafe work behavior on construction sites describes the lack of safety orientation and training as one of the leading causes of unsafe behavior,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01OD05
 h001M01THR12,h001M01ED10,depend_on,1,c004M01N15 - c004M02N33: participants were contacted four weeks after training and asked to complete a retention questionnaire,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR12,s001M01ED10
+h001M01THR12,h001M01EK01,evaluate,2,"c011M01N14 - c011M01N01: The pre-test questionnaire measured declarative equipment-choice knowledge before training.
+c011M01N16 - c011M01N01: The retention test questionnaire assessed retained declarative safety knowledge after four to five weeks.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR12,s001M01EK01
 h001M01THR12,h001M01LI01,be_constrained_by,3,"c002M02N22 - c002M02N39: Most students would have forgotten about 80% of the content in a week's time
 c004M01N15 - c004M01N29: Manual-group acquired knowledge declined significantly between the post-training and retention tests.
 c004M01N15 - c004M02N36: poor safety training and poor safety knowledge retention are known to be contributing factors to the high incidence of injury",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR12,s001M01LI01
@@ -283,6 +488,7 @@ c011M01N18 - c011M01N33: the traditional training methods lack immersion
 c011M01N18 - c011M01N34: traditional training methods lack immersion and can cause ethical issues in some cases",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR12,s001M01LI04
 h001M01THR12,h001M01LI09,be_constrained_by,1,c004M01N15 - c004M02N37: This situation is due to the lack of proper implementation of safety practices in the industry,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR12,s001M01LI09
 h001M01THR12,h001M01LI12,be_constrained_by,1,c001M02N32 - c001M02N28: Excessive commercial operation would decrease the number of EEG positive signals by 40%,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR12,s001M01LI12
+h001M01THR13,h001M01EK02,evaluate,1,c015M01N22 - c015M01N02: Authentic assessment required students to apply and demonstrate academic concepts in realistic contexts.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01EK02
 h001M01THR13,h001M01LI04,be_constrained_by,1,c010M01N16 - c010M01N33: Practical construction education was hindered by limited access to construction sites.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01LI04
 h001M01THR13,h001M01LI07,be_constrained_by,1,c010M01N16 - c010M01N34: Hands-on instruction was hindered by the high costs of sensing technologies.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01LI07
 h001M01THR13,h001M01LI08,be_constrained_by,1,"c012M02N22 - c012M01N42: ""Traditional reliance on informal, on-the-job learning... is increasingly insufficient for industry-wide tacit knowledge preservation""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01LI08
@@ -340,6 +546,15 @@ h001M01THR15,h001M01LI13,be_constrained_by,1,"c012M02N26 - c012M01N45: ""Such ap
 h001M01THR15,h001M01OD01,depend_on,1,c009M01N20 - c009M02N53: Manual bid preparation depends on document standardization practices,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR15,s001M01OD01
 h001M01THR15,h001M01OD03,depend_on,1,c009M01N20 - c009M02N47: Overcoming this challenge will require the development of integrated data management systems,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR15,s001M01OD03
 h001M01THR15,h001M01OD05,depend_on,1,"c009M01N20 - c009M02N54: Knowledge loss, particularly in firms with high staff turnover",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR15,s001M01OD05
+h001M01THR16,h001M01EK03,evaluate,1,"c009M01N22 - c009M01N05: Experts assess generated methodology content for quality, relevance, feasibility, completeness, innovation, and consistency.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR16,s001M01EK03
+h001M01THR16,h001M01EK05,evaluate,1,"c005M01N18 - c005M01N02: The probability-impact analysis considered effects on laborers, time, cost, and productivity.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR16,s001M01EK05
+h001M01THR16,h001M01EK06,evaluate,6,"c002M01N32 - c002M01N10: The structured expert interviews evaluated User Interface as a candidate sub-criterion before its retention in the final hierarchy.
+c002M01N32 - c002M01N16: The structured expert interviews evaluated Updated Content as a candidate sub-criterion before its retention in the final hierarchy.
+c002M01N32 - c002M01N18: The structured expert interviews evaluated Ease of Understanding as a candidate sub-criterion before its retention in the final hierarchy.
+c002M01N32 - c002M01N21: The structured expert interviews evaluated Repetition as a candidate sub-criterion before its retention in the final hierarchy.
+c002M01N32 - c002M01N24: The structured expert interviews evaluated Enjoyment as a candidate sub-criterion before its retention in the final hierarchy.
+c009M02N27 - c009M02N08: The evaluation was conducted as a blind review: experts were not informed whether a given section had been produced manually or by the AI system",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR16,s001M01EK06
+h001M01THR16,h001M01EK07,evaluate,1,c005M01N18 - c005M01N01: Experts assessed identified hazards by probability and impact and prioritized them for the models.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR16,s001M01EK07
 h001M01THR16,h001M01LI08,be_constrained_by,1,c009M01N22 - c009M01N44: Review and refinement still require human interpretation of specifications and project context.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR16,s001M01LI08
 h001M01THR17,h001M01ED01,depend_on,1,"c006M02N22 - c006M02N36: Creating a safe environment is important, and evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR17,s001M01ED01
 h001M01THR17,h001M01ED02,depend_on,1,c007M02N66 - c007M02N49: high staff turnover,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR17,s001M01ED02
@@ -347,6 +562,8 @@ h001M01THR17,h001M01ED04,depend_on,2,"c005M01N17 - c005M02N48: The fourth bridge
 c017M01N13 - c017M01N24: Heating periods are scheduled weekly based on weather forecasts.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR17,s001M01ED04
 h001M01THR17,h001M01ED08,depend_on,2,"c005M01N17 - c005M02N46: The first site visited was an elevated railway constructed amid a busy and congested area...the second bridge...being built in a heavily populated region...the third bridge...across the River Nile...the fourth...open, remote, and deserted area...the fifth...one of the densest and most populated areas.
 c005M01N17 - c005M02N47: The uniqueness of this bridge emerges from the fact that it is not meant for automobiles or trucks but rather serves as a rail...The main hazards emerging from this site were primarily related to the construction over/near water.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR17,s001M01ED08
+h001M01THR17,h001M01EK02,evaluate,1,"c006M01N14 - c006M01N05: The questionnaire elicited and recorded personal, work, exercise, LBP, fatigue and endurance information.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR17,s001M01EK02
+h001M01THR17,h001M01EK07,evaluate,1,c006M01N13 - c006M01N04: The seven measurement events generated recorded physical-strength results used in subsequent assessment.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR17,s001M01EK07
 h001M01THR17,h001M01LI04,be_constrained_by,1,c003M02N09 - c003M02N23: Despite its potential benefits... the use of virtual reality as a training tool has not received much attention.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR17,s001M01LI04
 h001M01THR17,h001M01LI05,be_constrained_by,3,"c008M01N19 - c008M01N42: Questionnaire surveys are included among methods associated with incomplete data.
 c008M01N21 - c008M01N42: Literature research is included among methods associated with incomplete data.
@@ -668,6 +885,9 @@ h001M01TK13,h001M01TP14,be_transferred_by,4,"c007M01N01 - c007M01N37: Senior exp
 c007M01N02 - c007M01N37: Foremen hold accumulated expertise and KD4 supports internal dissemination.
 c007M01N03 - c007M01N37: Previous-project experience is an identified source and KD4 supports technology-based dissemination.
 c015M01N05 - c015M02N13: I learn from my groupmates.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01TP14
+h001M01TP01,h001M01EK02,evaluate,1,c016M01N17 - c016M01N06: The simulations were used to observe project execution and identify activity-based hazards during design.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP01,s001M01EK02
+h001M01TP01,h001M01EK05,adopt,2,"c003M01N09 - c003M01N04: The virtualized 3D model was developed together with its corresponding Building Energy Model.
+c003M02N13 - c003M01N04: The corresponding Building Energy Model was created using Design Builder software...",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP01,s001M01EK05
 h001M01TP01,h001M01LI07,be_constrained_by,1,"c007M02N29 - c007M02N55: greater the management requirements, the greater the BIM investment is required",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP01,s001M01LI07
 h001M01TP01,h001M01LI08,be_constrained_by,3,"c016M01N17 - c016M01N38: The paper attributes continued reliance on conventional design-stage methods to limited familiarity with BIM tools and newer technologies, directly affecting adoption of BIM-based 4D simulation.
 c016M01N16 - c016M01N38: USD depends on BIM and other digital tools, while limited familiarity with those tools and methodologies is identified as a reason that conventional methods continue to be used.
@@ -695,6 +915,8 @@ h001M01TP01,h001M01TP10,be_composed_of,4,"c016M01N16 - c016M01N18: The implement
 c016M01N16 - c016M01N19: The implemented USD methodology includes Phase 4 Knowledge Management.
 c016M02N22 - c016M02N10: an application was developed in Microsoft Excel oriented to OHS management based on the PtD initiative
 c016M02N22 - c016M02N26: The integration of Building Information Modelling (BIM), Prevention through Design (PtD) and a centralized database through an SQL server",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP01,s001M01TP10
+h001M01TP02,h001M01EK01,adopt,1,c001M01N22 - c001M01N06: The graded approach is based on the Technical Standards for Historical Building Digitization.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP02,s001M01EK01
+h001M01TP02,h001M01EK06,adopt,1,c001M01N22 - c001M01N08: The localized workflow uses the LOD Level-Protection Intensity Mapping Table.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP02,s001M01EK06
 h001M01TP02,h001M01LI05,be_constrained_by,2,"c001M01N22 - c001M01N46: Fragmented formats and interoperability issues inhibit multi-scenario reuse.
 c001M01N22 - c001M01N47: Detailed model precision must be balanced against real-time rendering performance.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP02,s001M01LI05
 h001M01TP02,h001M01LI06,be_constrained_by,2,"c001M01N22 - c001M01N44: Rural point-cloud transmission failure restricts digital-preservation implementation.
@@ -718,6 +940,18 @@ c004M02N17 - c004M02N32: The movement area in the real world was confined to a 3
 c011M01N19 - c011M02N31: A confined space is a space with limited entry and egress and is not suitable for human inhabitants.
 c011M01N20 - c011M02N31: A confined space is a space with limited entry and egress and is not suitable for human inhabitants.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01ED08
 h001M01TP03,h001M01ED10,depend_on,1,c004M02N17 - c004M02N33: participants were contacted four weeks after training and asked to complete a retention questionnaire,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01ED10
+h001M01TP03,h001M01EK01,adopt,2,"c004M01N16 - c004M01N02: The VR training objectives and presented safety information were based on the OSHA guideline.
+c004M01N16 - c004M01N03: The VR training objectives and presented safety information were based on the WorkSafe guideline.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01EK01
+h001M01TP03,h001M01EK02,adopt,3,"c001M01N23 - c001M01N01: Historical archives are combined with AR scene overlays in the implemented mode.
+c002M01N33 - c002M01N41: AR training presented the modeled construction environments and interactive animations.
+c002M01N34 - c002M01N41: VR training presented the modeled construction environments and interactive animations.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01EK02
+h001M01TP03,h001M01EK03,adopt,1,"c002M02N24 - c002M02N06: The training was developed on three distinct visualization platforms—traditional safety training presentation, VR-based safety training, and AR-based safety training
+c002M02N25 - c002M02N06: The training was developed on three distinct visualization platforms—traditional safety training presentation, VR-based safety training, and AR-based safety training",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01EK03
+h001M01TP03,h001M01EK05,evaluate,1,c001M01N24 - c001M02N36: AI technology predicted the site visitation 48 hours in advance with an accuracy of 89%,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01EK05
+h001M01TP03,h001M01EK06,adopt,1,"c011M01N19 - c011M01N03: A questionnaire was designed to collect the information at each stage of the experiment. The pre-test questionnaire... measured the trainees' knowledge of equipment choices.
+c011M01N20 - c011M01N03: A questionnaire was designed to collect the information at each stage of the experiment. The pre-test questionnaire... measured the trainees' knowledge of equipment choices.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01EK06
+h001M01TP03,h001M01EK07,adopt,1,c003M02N10 - c003M02N26: ...feedback or tips were developed and will be integrated in the virtual model...,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01EK07
+h001M01TP03,h001M01EK09,adopt,1,c005M01N22 - c005M01N05: The AR model used images on the hazard sheet as physical hosts for its scenes.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01EK09
 h001M01TP03,h001M01LI01,be_constrained_by,1,"c011M01N19 - c011M01N35: The knowledge level of both groups decreased significantly after 4-5 weeks
 c011M01N20 - c011M01N35: The knowledge level of both groups decreased significantly after 4-5 weeks",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01LI01
 h001M01TP03,h001M01LI02,be_constrained_by,3,"c003M02N10 - c003M02N22: ...the first was aimed at investigating... the cybersickness disorders related to the use of the virtual reality...
@@ -872,6 +1106,8 @@ c010M01N19 - c010M02N09: The classification models, when implemented in the MR e
 h001M01TP03,h001M01TP13,be_composed_of,3,"c004M01N16 - c004M01N19: The pilot implementation used Site A for the pre-training practical assessment.
 c004M02N17 - c004M02N20: To conduct a pre-training practical assessment, Site A offered an excavation site where participants were exposed to seven types of hazards
 c004M02N17 - c004M02N21: The Site B scenario was a different excavation site that included similar hazards found in Site A, which allowed for assessing post-training practical performance",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP03,s001M01TP13
+h001M01TP04,h001M01EK07,adopt,2,"c003M01N10 - c003M01N06: The graphical indicators represent simulated energy-cost and indoor-temperature results.
+c003M01N10 - c003M01N07: The piggy-bank indicator displays the outlay related to energy consumption.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP04,s001M01EK07
 h001M01TP04,h001M01LI04,mitigate,4,"c001M01N25 - c001M01N42: Dynamic scene replication improves historical understanding compared with passive display.
 c001M01N56 - c001M01N42: Haptic and sensory presentation supplies experiential dimensions absent from passive wartime-scene displays.
 c001M01N56 - c001M02N39: Compared with traditional exhibition, VR exhibition hall extended average stay time for 22 minutes and elevated repeat visitation rate by 18%, mitigating passive display passivity
@@ -897,6 +1133,13 @@ h001M01TP04,h001M01TP01,be_composed_of,1,c003M01N11 - c003M01N09: The developed 
 h001M01TP05,h001M01ED04,depend_on,3,"c017M01N14 - c017M01N24: Weather is a contextual variable that influences the thermal analysis.
 c017M02N14 - c017M01N24: The methodology's analysis depends on external weather conditions as a key variable for understanding building performance.
 c017M02N14 - c017M02N23: The methodology is applied during specific seasonal cycles like autumn-winter to analyze heating demand.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP05,s001M01ED04
+h001M01TP05,h001M01EK01,adopt,1,c017M01N14 - c017M01N08: The methodology adopts regulatory thermal thresholds.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP05,s001M01EK01
+h001M01TP05,h001M01EK02,adopt,3,"c014M01N26 - c014M01N09: Environmental monitoring AI tools capture carbon footprint tracking data
+c017M01N14 - c017M01N04: The methodology adopts IoT data as its empirical basis.
+c017M01N14 - c017M01N07: Lecture schedules are adopted as contextual variables.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP05,s001M01EK02
+h001M01TP05,h001M01EK05,evaluate,2,"c017M01N14 - c017M01N10: The methodology quantifies potential energy savings against recommended thresholds.
+c017M01N14 - c017M01N11: The methodology calculates monitored energy and estimated economic costs.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP05,s001M01EK05
+h001M01TP05,h001M01EK07,evaluate,1,"c017M01N16 - c017M01N09: Real-time measurements evaluate thermal evolution, inertia, heating influence, and morphology.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP05,s001M01EK07
 h001M01TP05,h001M01LI06,be_constrained_by,4,"c017M01N15 - c017M01N25: People-counting algorithms using occupancy sensors remain inaccurate.
 c017M01N16 - c017M01N25: Real-time occupancy monitoring is limited by inaccurate people-counting algorithms.
 c017M01N14 - c017M01N25: The methodology analyzes occupancy, but its people-counting component remains inaccurate.
@@ -924,6 +1167,15 @@ h001M01TP05,h001M01TP14,be_composed_of,1,c017M02N14 - c017M02N16: The methodolog
 h001M01TP06,h001M01ED01,depend_on,1,"c006M01N16 - c006M02N36: Creating a safe environment is important, and evaluation charts such as the OWAS method, RULA, REBA and HOHSRAM have been utilized.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01ED01
 h001M01TP06,h001M01ED08,depend_on,2,"c006M01N15 - c006M01N21: Researchers attended each worker's job site to collect work-volume and external-load information.
 c006M01N17 - c006M01N21: Work-status video was recorded at each worker's job site.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01ED08
+h001M01TP06,h001M01EK02,adopt,1,c006M01N15 - c006M01N08: The workload estimation process used captured video to obtain the manual load or hand weight.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01EK02
+h001M01TP06,h001M01EK03,adopt,1,c006M01N15 - c006M01N10: The wearable-sensor workload method used the lumbar-load estimation algorithm described in Section 4.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01EK03
+h001M01TP06,h001M01EK06,adopt,4,"c006M01N16 - c006M02N05: Evaluation charts such as the OWAS method... have been utilized.
+c006M01N16 - c006M02N06: Evaluation charts such as the RULA method... have been utilized.
+c006M01N16 - c006M02N07: Evaluation charts such as the REBA method... have been utilized.
+c006M01N16 - c006M02N08: Evaluation charts such as the HOHSRAM method... have been utilized.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01EK06
+h001M01TP06,h001M01EK07,evaluate,3,"c006M01N15 - c006M01N09: The wearable-sensor method estimated lumbar load from posture and manual-load information.
+c006M01N16 - c006M01N09: Lumbar load measurement devices... were used to measure the workload. The lumbar load is estimated using the algorithm.
+c006M02N27 - c006M01N09: Based on these processes, the workload is estimated by combining the posture information obtained from the wearable sensor and the hand weight obtained from the captured video.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01EK07
 h001M01TP06,h001M01LI03,be_constrained_by,1,"c010M01N23 - c010M02N20: ensemble classifiers face challenges with predicting mixed learners such as V + A + K, and V + Auditory. This may be due to insufficient representation of mixed learners' data",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01LI03
 h001M01TP06,h001M01LI13,be_constrained_by,2,"c006M01N15 - c006M01N25: Estimated load did not differ significantly between workers with and without an LBP history.
 c006M01N16 - c006M02N38: There is no correlation between the workload and the assistive technologies, it is unclear who the target audience is.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01LI13
@@ -937,6 +1189,11 @@ h001M01TP06,h001M01THR17,complement,1,"c006M01N16 - c006M01N13: By comparing phy
 h001M01TP06,h001M01TK07,evaluate,1,c006M01N16 - c006M01N02: Posture information obtained from the wearable sensor was used to calculate postural lumbar load.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01TK07
 h001M01TP06,h001M01TK13,evaluate,1,c006M01N17 - c006M01N03: Researchers examined recorded work status to determine work volume and the presence of external loads such as hand weight.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP06,s001M01TK13
 h001M01TP07,h001M01ED04,depend_on,1,c017M01N17 - c017M01N24: The threshold algorithm compares weather in previous days.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP07,s001M01ED04
+h001M01TP07,h001M01EK01,adopt,2,"c009M01N25 - c009M01N01: The extraction module accepts an uploaded RFP as its source document.
+c017M01N17 - c017M01N08: The threshold algorithm operates within criteria fulfilling the stated directives.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP07,s001M01EK01
+h001M01TP07,h001M01EK02,adopt,1,c010M01N24 - c010M01N13: Eye-tracking data were used as inputs for developing the learning-preference models.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP07,s001M01EK02
+h001M01TP07,h001M01EK04,evaluate,1,c008M01N27 - c008M02N25: this study adopted the more mature Word2Vec model... GloVe method... performs poorly in word analogy tasks,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP07,s001M01EK04
+h001M01TP07,h001M01EK07,adopt,1,c010M01N24 - c010M01N12: Participants were categorized by learning preference before model training.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP07,s001M01EK07
 h001M01TP07,h001M01LI05,be_constrained_by,14,"c008M01N23 - c008M01N47: The source reports are unstructured or semistructured and require preprocessing before automated analysis.
 c008M01N27 - c008M01N51: Overlapping high-altitude and machinery vocabulary caused misclassification among accident types.
 c008M01N23 - c008M01N52: The framework focuses on Chinese text and cannot be directly generalized to structurally different languages without adjustment.
@@ -1016,6 +1273,11 @@ c010M02N09 - c010M01N23: employing machine learning techniques on eye-tracking d
 h001M01TP08,h001M01ED06,depend_on,3,"c009M01N24 - c009M02N56: Every bid must be tailored to the client's specific requirements
 c009M01N24 - c009M02N57: Submission deadline, submission requirements, required documents
 c009M01N24 - c009M02N58: Weighting is 80% for Technical and 20% for Financial score in Quality and Cost Based Selection (QCBS)",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP08,s001M01ED06
+h001M01TP08,h001M01EK01,adopt,1,c009M01N27 - c009M01N02: Extracted requirements provide the client and project context for methodology generation.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP08,s001M01EK01
+h001M01TP08,h001M01EK02,adopt,2,"c009M01N24 - c009M01N03: The system's domain-specific knowledge base contains historical bid proposals.
+c014M01N27 - c014M01N06: Net Zero Cloud reads project data as input.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP08,s001M01EK02
+h001M01TP08,h001M01EK03,adopt,1,c009M01N27 - c009M01N04: Retrieved historical methodology sections are used as contextual generation samples.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP08,s001M01EK03
+h001M01TP08,h001M01EK09,adopt,1,c014M02N32 - c014M02N08: Generative AI tools capture AI-generated reports,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP08,s001M01EK09
 h001M01TP08,h001M01LI05,be_constrained_by,4,"c009M01N24 - c009M01N45: The current system accepts and processes bid documents in PDF format.
 c009M01N24 - c009M01N47: Development and testing used 13 historical bids from two consulting firms.
 c009M01N24 - c009M02N67: Accuracy decreases for scanned or image-based documents, as no Optical Character Recognition (OCR) is integrated
@@ -1063,6 +1325,7 @@ h001M01TP08,h001M01TP09,be_composed_of,3,"c009M01N24 - c009M01N26: Closest Bid M
 c009M01N24 - c009M02N33: Embeddings were stored in a Pinecone vector database
 c009M01N24 - c009M02N34: Semantic similarity searches using cosine similarity",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP08,s001M01TP09
 h001M01TP08,h001M01TP14,be_composed_of,1,c009M01N24 - c009M02N36: The GenAI system includes a lightweight graphical interface built with Streamlit,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP08,s001M01TP14
+h001M01TP09,h001M01EK02,adopt,1,c009M01N26 - c009M01N03: Closest Bid Matching searches the stored historical bid proposals.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP09,s001M01EK02
 h001M01TP09,h001M01LI05,be_constrained_by,2,"c001M01N21 - c001M01N46: Fragmented formats and system-interoperability problems affect digital-preservation projects.
 c009M01N26 - c009M01N47: The retrieval knowledge base contains only 13 historical bid documents obtained from the two case-study firms.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP09,s001M01LI05
 h001M01TP09,h001M01TE01,adopt,3,"c009M01N26 - c009M01N29: The matching process uses text-embedding-ada-002 to encode stored chunks and new requirements.
@@ -1074,6 +1337,19 @@ c016M01N18 - c016M01N35: PtD effectiveness was judged using the residual-risk th
 c016M01N21 - c016M01N34: The indicators monitored through the application are defined by the Peruvian OHS standard G-050.
 c016M02N10 - c016M02N20: assigned an initial risk factor (RF - CS) based on exposure, probability and severity indexes granted by the Peruvian Law N° 29783",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01ED01
 h001M01TP10,h001M01ED02,depend_on,1,"c012M01N28 - c012M02N53: ""The industry faces a significant demographic shift, with seasoned construction professionals rapidly approaching retirement. This demographic change threatens organizational knowledge continuity, creating an urgency for effective strategies to systematically capture and transfer tacit knowledge""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01ED02
+h001M01TP10,h001M01EK01,adopt,1,c001M01N20 - c001M01N07: Sequential recording is described under WH/T 99.9-2023 Part 9 on traditional craftsmanship.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01EK01
+h001M01TP10,h001M01EK02,evaluate,2,"c016M01N18 - c016M01N07: The IPERC tool determined the characteristics and properties of identified hazards.
+c016M01N18 - c016M01N06: The Phase 3 application supports hazard identification, and hazards derived from the simulations were entered into its IPERC tool for assessment.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01EK02
+h001M01TP10,h001M01EK03,adopt,1,c016M02N10 - c016M02N25: Requests for Information on Previously Taken Controls (RFI),SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01EK03
+h001M01TP10,h001M01EK06,adopt,2,"c016M02N10 - c016M02N01: the IPERC tool... through this, the characteristics and properties of the hazard were determined
+c016M02N10 - c016M02N02: Both risk factors (RF- CS & RF- FS) were compared using the RR tool",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01EK06
+h001M01TP10,h001M01EK07,evaluate,2,"c016M01N18 - c016M01N08: The application assigned an initial risk factor using specified indexes.
+c016M01N18 - c016M01N10: The RR tool compared initial and residual risk factors to check control effectiveness.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01EK07
+h001M01TP10,h001M01EK08,adopt,3,"c012M01N28 - c012M01N20: SToKMS transformed stories into tagged, queryable artefacts.
+c012M01N29 - c012M01N20: The digital platform housed and provided access to structured narratives.
+c016M02N10 - c016M01N04: This spreadsheet has tools such as ... Lessons Learned (LA)",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01EK08
+h001M01TP10,h001M01EK09,adopt,2,"c007M01N35 - c007M01N05: Designs are explicit IT-managed knowledge and KS1 stores company knowledge.
+c007M01N35 - c007M01N07: Project documents are explicit IT-managed knowledge and KS1 stores company knowledge.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01EK09
 h001M01TP10,h001M01LI07,be_constrained_by,6,"c007M01N35 - c007M01N26: Storage receives limited attention because of limited resources.
 c007M01N35 - c007M01N33: KM-system storage demands substantial investment costs and time.
 c007M01N35 - c007M01N34: A KM system can be costly to maintain and slow to yield benefits.
@@ -1132,6 +1408,10 @@ h001M01TP10,h001M01TK10,evaluate,1,"c012M01N28 - c012M01N06: ""Monitor reuse met
 h001M01TP10,h001M01TP09,be_composed_of,2,"c012M01N28 - c012M02N39: ""Categorization and metadata tagging"" is part of the knowledge integration phase
 c012M01N28 - c012M02N40: ""Implementation of advanced search functionalities"" is part of the knowledge integration phase",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01TP09
 h001M01TP10,h001M01TP13,be_composed_of,1,"c016M02N26 - c016M02N13: In PowerApps, an application was created to visualize the information of the previous phases",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP10,s001M01TP13
+h001M01TP11,h001M01EK02,adopt,2,"c001M01N26 - c001M01N04: The module uses historical narrative as content for its interactive archive.
+c014M02N33 - c014M02N06: Stakeholder communication portal captures stakeholder communication knowledge",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP11,s001M01EK02
+h001M01TP11,h001M01EK08,adopt,1,c014M02N30 - c014M02N07: Collaborative platforms adopt operational knowledge from past practices,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP11,s001M01EK08
+h001M01TP11,h001M01EK09,adopt,1,c014M02N30 - c014M02N08: Collaborative platforms capture AI-generated reports,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP11,s001M01EK09
 h001M01TP11,h001M01LI05,be_constrained_by,1,c001M01N26 - c001M01N46: Cross-platform digital projects face fragmented formats and system-interoperability problems.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP11,s001M01LI05
 h001M01TP11,h001M01LI07,mitigate,1,"c007M02N30 - c007M02N55: Available and free communication tools (e.g., Zalo, Line and Viber) are also being developed rapidly and have become popular and easily accessible to SMCCs",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP11,s001M01LI07
 h001M01TP11,h001M01LI09,be_constrained_by,4,"c014M01N22 - c014M01N38: Authoritarian leadership reduces sharing and involvement.
@@ -1152,6 +1432,8 @@ c007M02N30 - c007M02N40: Available and free communication tools (e.g., Zalo, Lin
 c014M02N30 - c014M02N39: Collaborative platforms adopt collaborative platforms technology",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP11,s001M01TE07
 h001M01TP12,h001M01ED03,depend_on,1,"c015M01N24 - c015M02N31: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences, diverse backgrounds and various prior level of education.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01ED03
 h001M01TP12,h001M01ED10,depend_on,1,"c015M01N24 - c015M02N30: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences, diverse backgrounds and various prior level of education.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01ED10
+h001M01TP12,h001M01EK07,evaluate,2,"c015M01N24 - c015M02N43: 79% of students agreed that ABL facilitated deeper learning and better retention of course material, particularly through practical application and experiential learning.
+c015M01N24 - c015M02N45: Students' coursework, assessments, and overall academic performance were analyzed to measure the effectiveness of ABL and technology-enhanced learning.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01EK07
 h001M01TP12,h001M01LI03,be_constrained_by,1,c015M01N24 - c015M01N38: Diverse student backgrounds were identified as a challenge arising in ABL.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01LI03
 h001M01TP12,h001M01LI04,mitigate,5,"c015M01N24 - c015M01N43: Students preferred interactive ABL to passive listening, and 82% reported greater involvement in discussions, group activities, and problem-solving.
 c015M01N24 - c015M02N33: bridges the gap between theory and practice, offering a robust framework for curriculum innovation
@@ -1183,6 +1465,25 @@ c015M01N24 - c015M02N12: Using real-world applications, interactive role-plays, 
 c015M01N24 - c015M02N13: These studies support adopting structured ABL models such as flipped classrooms, peer-assisted learning, and interactive discussions to enhance student engagement.
 c015M01N24 - c015M02N14: These studies support adopting structured ABL models such as flipped classrooms, peer-assisted learning, and interactive discussions to enhance student engagement.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01TP14
 h001M01TP13,h001M01ED01,depend_on,1,c016M02N13 - c016M02N21: The key performance indicators (KPI) of the Peruvian OHS standard G-050... were affected,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP13,s001M01ED01
+h001M01TP13,h001M01EK02,adopt,2,"c006M01N18 - c006M01N05: The web application used questionnaire data for tabulation and analysis.
+c010M01N17 - c010M01N11: Recorded responses were analyzed to categorize participants by learning preference.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP13,s001M01EK02
+h001M01TP13,h001M01EK06,evaluate,14,"c002M01N35 - c002M01N05: IT2F–AHP evaluated Attention and its weight in knowledge retention.
+c002M01N35 - c002M01N06: IT2F–AHP evaluated Relevance and its weight in knowledge retention.
+c002M01N35 - c002M01N09: The analysis compared training modes on Engagement.
+c002M01N35 - c002M01N10: The analysis compared training modes on User Interface.
+c002M01N35 - c002M01N11: The analysis evaluated Stimulation of Curiosity as a retained sub-criterion.
+c002M01N35 - c002M01N12: The analysis evaluated Variety of Content as a retained sub-criterion.
+c002M01N35 - c002M01N15: The analysis evaluated Visual Content and ranked it second globally.
+c002M01N35 - c002M01N17: The analysis evaluated Practicality and ranked it highest globally.
+c002M01N35 - c002M01N18: The analysis evaluated Ease of Understanding as the leading Confidence sub-criterion.
+c002M01N35 - c002M01N21: The analysis evaluated Repetition and reported its low global rank.
+c002M01N35 - c002M01N22: The analysis evaluated Completion of Activity as a Satisfaction sub-criterion.
+c002M01N35 - c002M01N23: The analysis evaluated Providing Feedback as a Satisfaction sub-criterion.
+c002M01N35 - c002M01N24: The analysis evaluated Enjoyment as a Satisfaction sub-criterion.
+c016M02N13 - c016M02N04: The key performance indicators (KPI) of the Peruvian OHS standard G-050... were affected",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP13,s001M01EK06
+h001M01TP13,h001M01EK07,adopt,2,"c002M02N43 - c002M02N04: Weights of the sub-criteria are presented in Figure 4, along with the threshold value of 0.4847
+c002M02N43 - c002M02N05: The aggregate pairwise comparison matrix for criteria is presented in Table 5",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP13,s001M01EK07
+h001M01TP13,h001M01EK09,evaluate,1,"c004M01N21 - c004M01N01: The ten-question test measured safety knowledge before, immediately after, and four weeks after training.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP13,s001M01EK09
 h001M01TP13,h001M01LI03,be_constrained_by,1,c010M01N17 - c010M01N37: Survey analysis found multiple preferences and concluded that learning preferences are not fixed.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP13,s001M01LI03
 h001M01TP13,h001M01LI13,be_constrained_by,2,"c006M02N25 - c006M01N24: No significant difference was found in the evaluation of physical performance according to the presence or absence of LBP.
 c010M01N17 - c010M01N40: The validity controversy limits findings based on a learning-style questionnaire.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP13,s001M01LI13
@@ -1202,6 +1503,11 @@ h001M01TP14,h001M01ED02,depend_on,3,"c007M02N60 - c007M02N51: Responding to mark
 c007M02N61 - c007M02N50: Acquiring knowledge from competitor strategies (KA5)
 c007M02N61 - c007M02N51: Acquiring knowledge from market research (KA1)",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01ED02
 h001M01TP14,h001M01ED06,depend_on,1,c007M02N60 - c007M02N53: Responding to changes in client needs (KR1),SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01ED06
+h001M01TP14,h001M01EK01,evaluate,1,c017M02N16 - c017M02N01: The analysis process uses the thresholds to classify and quantify the monitored data.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01EK01
+h001M01TP14,h001M01EK02,adopt,2,"c014M01N21 - c014M02N01: AI-driven KM initiatives adopt real-time data analytics
+c017M02N16 - c017M01N04: The data-to-knowledge analysis process adopts the measured IoT data as a structural data file for its analytical operations.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01EK02
+h001M01TP14,h001M01EK04,adopt,1,c017M02N16 - c017M02N05: The analysis process adopts the identified sawtooth pattern as a structural outcome to characterize thermal morphology.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01EK04
+h001M01TP14,h001M01EK05,adopt,1,c017M02N16 - c017M02N06: The analysis process adopts the quantified potential savings as a structural outcome to demonstrate economic impact.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01EK05
 h001M01TP14,h001M01LI03,be_constrained_by,1,c006M02N24 - c006M02N37: It doesn't have a uniform effect on everyone / It has to be a lower-priced product to be recognized in the construction industry.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01LI03
 h001M01TP14,h001M01LI04,mitigate,5,"c015M02N11 - c015M02N33: We have industry visits... we know more about the industry, and what exactly is needed.
 c015M02N12 - c015M02N33: Using real-world applications, interactive role-plays... bridges the gap between theory and practice
@@ -1248,11 +1554,8 @@ h001M01TP14,h001M01TP07,be_composed_of,1,c014M01N21 - c014M01N25: AI-driven know
 h001M01TP14,h001M01TP10,be_composed_of,1,c007M02N61 - c007M02N28: Storing lesson learned into the database (KS6),SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01TP10
 h001M01EK01,h001M01EK02,be_derived_from,2,"c108M01N15 - c108M01N14: Conditional know-how rules were extracted from interview corpus statements.
 c124M01N05 - c124M01N01: Digital-twin schemes provide equipment-condition, simulation, and predictive diagnostic data, and the paper states that this data is used to redesign maintenance policies.",SIC 80 - Services (Health Services),Aggregation,s002M01EK01,s002M01EK02
-h001M01EK01,h001M01EK03,be_derived_from,1,c108M01N15 - c108M01N62: The same thematic-analysis procedure identifies conditional know-how rules in the restituted viticulture interviews.,SIC 80 - Services (Health Services),Aggregation,s002M01EK01,s002M01EK03
 h001M01EK01,h001M01EK05,be_derived_from,1,"c124M01N05 - c124M01N03: Digital-twin schemes provide equipment-condition, simulation, and predictive diagnostic data, and the paper states that this data is used to redesign maintenance policies.
 c124M01N05 - c124M01N04: Digital-twin schemes provide equipment-condition, simulation, and predictive diagnostic data, and the paper states that this data is used to redesign maintenance policies.",SIC 80 - Services (Health Services),Aggregation,s002M01EK01,s002M01EK05
-h001M01EK01,h001M01THR15,be_transferred_by,2,"c108M01N10 - c108M01N30: The viticulture review prepared elicitation in a domain where legislative aspects had to be considered.
-c108M01N11 - c108M01N29: Professional-activity analysis collected relevant industrial standards.",SIC 80 - Services (Health Services),Aggregation,s002M01EK01,s002M01THR15
 h001M01EK01,h001M01THR17,be_transferred_by,1,"c126M01N04 - c126M01N16: External engagement supplies firms with blockchain best practices, security measures, and compliance strategies.",SIC 80 - Services (Health Services),Aggregation,s002M01EK01,s002M01THR17
 h001M01EK01,h001M01TK05,translate_into,1,"c107M01N02 - c107M01N07: trainees must be able to plan, install and commission pneumatic systems using circuit diagrams",SIC 80 - Services (Health Services),Aggregation,s002M01EK01,s002M01TK05
 h001M01EK01,h001M01TP03,be_transferred_by,2,"c107M01N02 - c107M02N21: the user must set up a pneumatic control system using a circuit diagram
@@ -1274,85 +1577,13 @@ h001M01EK02,h001M01EK04,be_derived_from,1,c121M02N03 - c121M02N04: Iterative inn
 h001M01EK02,h001M01KL09,be_absorbed_by,1,c114M02N02 - c114M02N04: enterprises must have sufficient knowledge accumulation... knowledge acquisition can drive its innovation performance by applying it to the firm's innovation after absorption and transformation,SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01KL09
 h001M01EK02,h001M01THR05,be_transferred_by,1,"c108M02N58 - c108M02N09: build, from heterogeneous sources of information... the data dictionary, the technical glossary, and the list of processes and domain experts",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01THR05
 h001M01EK02,h001M01THR07,be_transferred_by,1,c105M01N07 - c105M01N18: physical or printed version of the drawing is often used... in the traditional process,SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01THR07
-h001M01EK02,h001M01THR12,be_transferred_by,8,"c104M01N03 - c104M01N10: The paper-based guidelines transferred component information through images of the IoT components.
-c105M01N07 - c105M01N19: Companies C, D, E, and F used printed drawings during work.
-c107M01N04 - c107M01N36: The pneumatics fundamentals used in the study's knowledge test were taken from the textbook Steuerungstechnik Metall.
-c107M01N04 - c107M02N17: Current practice-oriented teaching methods in the field are based on textbooks
-c107M01N05 - c107M02N17: trainees must learn to identify pneumatic components and functional sequences
-c113M01N01 - c113M01N12: The paper-based document contains all information about the electronic system and its components.
-c113M02N01 - c113M02N18: The paper-based document... contains all information about the electronic system
-c113M02N06 - c113M02N18: The paper-based document... contains all information about the electronic system and its components",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01THR12
 h001M01EK02,h001M01THR14,be_transferred_by,2,"c117M01N07 - c117M01N20: Selected product ideas are developed further through internal round-table discussions.
 c117M01N07 - c117M01N21: Selected product ideas are developed further through knowledge-sharing workshops.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01THR14
-h001M01EK02,h001M01THR15,be_transferred_by,2,"c108M01N58 - c108M01N30: The literature review gathered wine-industry vocabulary and risk knowledge.
-c119M01N49 - c119M01N47: Semantic-domain labels are conveyed through manual concept grouping.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01THR15
-h001M01EK02,h001M01THR17,be_transferred_by,3,"c107M01N04 - c107M02N18: Current practice-oriented teaching methods in the field are based on... simulation software
-c126M01N01 - c126M01N16: External blockchain knowledge acquisition includes keeping updated on blockchain applications and trends.
-c126M01N03 - c126M01N16: External blockchain knowledge acquisition includes subscribing to literature about blockchain applications.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01THR17
 h001M01EK02,h001M01TK06,translate_into,1,c107M01N05 - c107M01N06: trainees must learn to identify pneumatic components and functional sequences,SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TK06
 h001M01EK02,h001M01TK12,translate_into,2,"c124M01N01 - c124M01N09: Organizations recognize asset-behaviour information, internalize it into current routines, and convert it into better maintenance practices and routines.
 c124M01N02 - c124M01N09: Organizations with absorptive capacity convert sensor data and analytical information into actionable maintenance fixes and improved operating processes.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TK12
 h001M01EK02,h001M01TK13,translate_into,2,"c113M01N01 - c113M01N06: Participants received information about the electronic system and its components; successful transfer required them to develop the right understanding of the electronic system and identify a new power-source connection.
 c113M02N01 - c113M02N09: Declarative knowledge refers to facts and information which cannot be executed directly but can be applied for a specific goal that goes through interpretative process",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TK13
-h001M01EK02,h001M01TP01,be_transferred_by,6,"c121M02N33 - c121M02N11: GenAI can generate modular design prototypes using product disassembly logs and material compatibility data.
-c121M02N34 - c121M02N11: GenAI can generate modular design prototypes using product disassembly logs and material compatibility data.
-c121M02N35 - c121M02N11: GenAI can encode historical product data using pre-trained models.
-c121M02N36 - c121M02N11: GenAI can generate dynamic routing schemes using data such as consumer return patterns.
-c124M01N01 - c124M01N15: Virtual representations are continuously informed by real-time operational and status information to support maintenance decisions.
-c124M01N02 - c124M01N15: Digital-twin-assisted maintenance integrates sensor data into coherent decision-making environments.
-c124M02N26 - c124M01N15: Section 2.1, Page 40
-c124M02N22 - c124M01N15: Section 2.1, Page 40",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP01
-h001M01EK02,h001M01TP03,be_transferred_by,2,"c105M01N08 - c105M01N24: The AR prototype visualized Company A's CAD model with arrows and animations.
-c107M01N05 - c107M02N21: The app... user must set up a pneumatic control system using a circuit diagram and a functional description with the help of 3D models",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP03
-h001M01EK02,h001M01TP04,be_transferred_by,2,"c107M01N05 - c107M01N16: The additional visualization aids were designed to help users learn the functions and structure of pneumatic components.
-c113M01N01 - c113M01N13: The traditional AR system presents an overview of the electronic system and all its components.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP04
-h001M01EK02,h001M01TP05,be_transferred_by,1,c108M01N20 - c108M01N40: The Wine Cloud traceability platform used sensor feedback data.,SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP05
-h001M01EK02,h001M01TP06,be_transferred_by,1,c105M01N10 - c105M02N23: The result of converting video instructions to written instructions,SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP06
-h001M01EK02,h001M01TP07,be_transferred_by,18,"c102M01N06 - c102M01N17: The narration approach produces textual human-intention descriptions that support robot adjustment.
-c102M02N08 - c102M01N17: cross-attention module to obtain global visual embeddings
-c103M01N15 - c103M01N26: Recordings were processed through the feature-extraction practice.
-c103M01N16 - c103M01N27: Feature vectors were supplied to DRLDCC-ELM training.
-c103M01N16 - c103M01N28: Feature-vector sequences were supplied to transformer training.
-c103M01N17 - c103M01N27: Handwork labels supplied target information for DRLDCC-ELM training.
-c103M01N18 - c103M01N27: Training observations were supplied through DRLDCC-ELM training.
-c103M01N18 - c103M01N28: Training observations were supplied through transformer training.
-c108M01N19 - c108M01N41: Viticulture ontological formalization enabled the prediction and recommendation solutions.
-c117M01N08 - c117M01N39: Shortlisted product ideas are co-developed and validated through expert collaboration.
-c120M01N01 - c120M01N17: Offline scheduling learning processes accumulated historical data to extract samples and mine the SPRM.
-c120M01N02 - c120M01N17: Production orders form part of the historical data processed during offline scheduling learning.
-c120M01N03 - c120M01N17: Process information forms part of the historical data processed during offline scheduling learning.
-c120M01N04 - c120M01N18: Optimal scheduling schemes are restored and processed by the SPRM training-sample acquisition mechanism.
-c120M01N05 - c120M01N19: Acquired SPRM training samples are used in GA- and ELM-based wrapper feature selection.
-c120M01N05 - c120M01N17: The acquired training samples and selected input features are used to train the SPRM with ELM.
-c120M01N06 - c120M01N21: Dynamic production-system-state features are supplied as inputs to the SPRM.
-c120M01N07 - c120M01N21: Operation priority-value difference features are supplied as inputs to the SPRM.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP07
-h001M01EK02,h001M01TP08,be_transferred_by,3,"c102M01N04 - c102M01N16: Common-sense scene depictions undergo inference leading to task interpretation.
-c121M01N01 - c121M01N14: GenAI-enabled inheritance encodes historical product data and extracts transferable knowledge from earlier product generations.
-c121M01N05 - c121M01N13: Supplier material-recovery data are acquired and recombined with other fragmented circular-supply-chain knowledge.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP08
-h001M01EK02,h001M01TP09,be_transferred_by,4,"c102M01N03 - c102M01N15: Scene-graph triples are used to generate task interpretations.
-c108M01N16 - c108M01N37: The viticulture semi-formal models were followed by ontological formalization.
-c108M01N18 - c108M01N39: The reasoning application operated on the ontology-backed manufacturing environment.
-c108M01N64 - c108M01N37: The viticulture UML diagrams were followed by ontological formalization.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP09
-h001M01EK02,h001M01TP10,be_transferred_by,1,"c109M02N05 - c109M02N22: ""AI-based knowledge management solutions such as SAP's sustainability management solutions support the institutionalization of sustainable practices. These platforms store, retrieve best practices""",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP10
-h001M01EK02,h001M01TP11,be_transferred_by,9,"c108M01N18 - c108M01N38: The formal manufacturing ontology supported the collaborative digital environment.
-c117M01N05 - c117M01N22: External social media surfaces early product-user signals for later internal development.
-c117M01N07 - c117M01N38: Submitted product concepts enter voting, expert review, and peer-feedback processes.
-c117M01N08 - c117M01N38: Product design suggestions are among submitted ideas subject to evaluation and prioritisation.
-c117M01N09 - c117M01N38: Product packaging suggestions are among submitted ideas subject to evaluation and prioritisation.
-c117M02N02 - c117M01N24: Platforms enable the creation and exchange of user-generated content
-c117M01N07 - c117M01N29: External ideas submitted through platforms like Idea-Point and technical collaboration tools are evaluated by our R&D experts
-c122M01N06 - c122M01N22: Process data are exchanged as digital resources through the Metaverse.
-c122M02N12 - c122M01N22: I can access a variety of digital resources in the Metaverse that support my task-related knowledge needs",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP11
-h001M01EK02,h001M01TP12,be_transferred_by,4,"c111M01N04 - c111M01N24: Table 5 specifies webinars as a medium for basic knowledge and areas of application.
-c111M01N04 - c111M01N29: Visual tutorials are the preferred presentation format for content concerning AI knowledge and areas of application.
-c111M01N06 - c111M01N24: Webinars and podcasts provide engaging media for content that includes overviews of tools for using AI technologies.
-c111M01N06 - c111M01N29: The paper couples a rundown of compatible systems and instruments with practical demonstrations and identifies visual tutorials as the format of choice.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP12
-h001M01EK02,h001M01TP13,be_transferred_by,6,"c114M02N02 - c114M02N07: firms with the advantage of centrality can quickly and efficiently reach extensive and rich knowledge and technologies
-c117M01N07 - c117M01N37: Product concepts are collected, screened, and refined through internal platforms.
-c117M01N08 - c117M01N37: Product design suggestions are processed by structured internal submission and screening.
-c117M01N09 - c117M01N37: Product packaging suggestions are processed by structured internal submission and screening.
-c117M01N05 - c117M01N37: Early product-user signals may inform structured internal development after filtering.
-c117M02N01 - c117M02N15: We rely on social listening to understand emerging user needs",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP13
 h001M01EK02,h001M01TP14,be_transferred_by,7,"c113M02N01 - c113M02N21: assembly instructions were presented step by step on top of the workspace in the form of texts as well as videos
 c113M02N05 - c113M02N21: providing such information can increase user awareness of the system
 c113M02N06 - c113M02N21: Users were initially presented with an overview of the electronic system and its all components using tooltips and graphical arrows
@@ -1361,20 +1592,12 @@ c114M01N02 - c114M01N10: Strong relationships lower the cost and uncertainty of 
 c115M01N02 - c115M01N11: Environmental protection business knowledge is measured under green knowledge acquisition, which is positively affected by digital transformation.
 c115M01N03 - c115M01N11: Knowledge about the environmental effects of products, materials and services is measured under green knowledge acquisition, which is positively affected by digital transformation.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP14
 h001M01EK02,h001M01TP16,be_transferred_by,1,"c107M01N04 - c107M01N14: The implemented exercises addressed pneumatics content, while knowledge uptake was measured with tests based on pneumatics fundamentals.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP16
-h001M01EK03,h001M01EK01,be_derived_from,2,"c102M01N08 - c102M01N07: The task description is recursively decomposed into subtasks represented as hierarchical plans resembling a task tree.
-c102M01N09 - c102M01N07: The robot learns execution policies based solely on a task description.",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01EK01
-h001M01EK03,h001M01EK02,be_derived_from,5,"c105M01N11 - c105M01N10: The timestamped transcription and step indications were used to create written instructions.
-c108M01N62 - c108M01N58: The wine-industry literature review was conducted to understand vocabulary and build the viticulture interview guide.
-c121M01N02 - c121M01N01: GenAI encodes historical product data to identify transferable design principles.
-c124M01N06 - c124M01N01: Digital-twin schemes provide equipment-condition, simulation, and predictive diagnostic data, and the paper states that this data is used to redesign spare parts planning.
-c124M01N07 - c124M01N01: Digital-twin schemes provide equipment-condition, simulation, and predictive diagnostic data, and the paper states that this data is used to redesign response strategies.",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01EK02
 h001M01EK03,h001M01EK05,be_derived_from,2,"c124M01N06 - c124M01N03: Digital-twin schemes provide equipment-condition, simulation, and predictive diagnostic data, and the paper states that this data is used to redesign spare parts planning.
 c124M01N06 - c124M01N04: Digital-twin schemes provide equipment-condition, simulation, and predictive diagnostic data, and the paper states that this data is used to redesign spare parts planning.
 c124M01N07 - c124M01N03: Digital-twin schemes provide equipment-condition, simulation, and predictive diagnostic data, and the paper states that this data is used to redesign response strategies.
 c124M01N07 - c124M01N04: Digital-twin schemes provide equipment-condition, simulation, and predictive diagnostic data, and the paper states that this data is used to redesign response strategies.",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01EK05
 h001M01EK03,h001M01EK09,be_derived_from,1,c108M01N13 - c108M01N09: The manufacturing interview guide was prepared from domain analysis that included company internal documents.,SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01EK09
 h001M01EK03,h001M01THR05,be_transferred_by,1,c108M01N62 - c108M01N65: Six topic-specific grids structured the viticulture interviews.,SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01THR05
-h001M01EK03,h001M01THR11,be_transferred_by,1,"c106M01N01 - c106M02N05: The confirmation group (G1) has been selected to simulate the training of the machinery setup using the traditional approaches already employed in the company, supported by additional VM tools. The worker follows the sequential instructions represented via the guidance device using a 'step' approach.",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01THR11
 h001M01EK03,h001M01THR12,be_transferred_by,7,"c104M01N02 - c104M01N10: Participants used the paper manual's written instructions while assembling the components step by step.
 c104M02N06 - c104M02N13: Paper manual instructions are transferred via paper-based self-study.
 c105M01N06 - c105M01N19: Paper and digital instructions served as conventional task guidance.
@@ -1382,31 +1605,15 @@ c105M02N06 - c105M02N21: current instructions for the processes mentioned are av
 c113M01N02 - c113M01N12: The paper-based document provides step-by-step textual instructions and pictures for completing the wiring task.
 c113M02N02 - c113M02N18: The paper-based document... consists of a step-by-step information
 c113M02N03 - c113M02N18: The paper-based document... consists of a step-by-step information in the form of textual instruction and pictures",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01THR12
-h001M01EK03,h001M01THR15,be_transferred_by,1,c108M01N62 - c108M01N35: The restituted viticulture interviews were analyzed before modeling.,SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01THR15
 h001M01EK03,h001M01THR17,be_transferred_by,1,c120M02N01 - c120M02N14: ...the DSSC can select the most appropriate SDR...,SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01THR17
 h001M01EK03,h001M01TK05,translate_into,2,"c106M01N01 - c106M01N06: Workers received sequential setup information and were later tested on autonomous recall of the whole procedure.
 c113M01N02 - c113M01N05: Step-by-step assembly instructions were presented so that users could acquire skills in wiring the system.",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TK05
 h001M01EK03,h001M01TK12,translate_into,1,c121M01N02 - c121M01N07: Knowledge inherited from earlier product generations supplies structured knowledge that is subsequently translated into actionable insights and routines.,SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TK12
 h001M01EK03,h001M01TK13,translate_into,1,c113M02N02 - c113M02N10: Procedural knowledge is acquired through practice and refers to information about how to perform a task,SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TK13
-h001M01EK03,h001M01TP03,be_transferred_by,10,"c104M01N02 - c104M01N13: The MAR application displayed instructions with visual signals and virtual component models for each assembly step.
-c104M02N07 - c104M02N14: MAR assembly steps are transferred via the MAR application.
-c105M01N06 - c105M01N24: The Magic Leap setup presented instructions normally viewed through the external screen.
-c105M01N11 - c105M01N24: The AR prototype presented step-by-step descriptions of the required work.
-c105M01N12 - c105M01N24: The Magic Leap prototype presented descriptions, arrows, animations, and component-position visualizations.
-c105M01N13 - c105M01N24: Existing suitable digital work instructions supplied content presented by the experimental AR setup.
-c106M01N01 - c106M01N15: The test group (G2) has been selected to test the VMAR-based training module for the same application. The operator is supported by visualised digital models and additional instructions about the assembly.
-c111M02N06 - c111M02N37: Descriptive analytics knowledge is transferred via practical examples
-c111M02N08 - c111M02N37: Process automation knowledge is transferred via practical examples
-c111M02N09 - c111M02N37: ERP order workflow knowledge is transferred via practical examples",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TP03
-h001M01EK03,h001M01TP04,be_transferred_by,1,c113M01N02 - c113M01N13: The traditional AR system presents assembly instructions step by step as text and video over the workspace.,SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TP04
 h001M01EK03,h001M01TP07,be_transferred_by,4,"c102M01N08 - c102M01N18: The approach represents recursively generated subtasks as hierarchical plans resembling a task tree.
 c102M01N09 - c102M01N18: The language-guided approach learns robot execution policies.
 c102M01N08 - c102M01N19: After task decomposition into hierarchical plans, the workflow employs the 6-DOF exploration primitive.
 c102M02N03 - c102M02N26: hierarchical plans resembling a task tree",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TP07
-h001M01EK03,h001M01TP08,be_transferred_by,2,"c110M01N02 - c110M01N16: The chatbot generated direct links giving students access to relevant manual sections.
-c121M01N02 - c121M01N14: GenAI-enabled inheritance identifies and carries forward transferable design principles extracted from historical product data.",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TP08
-h001M01EK03,h001M01TP09,be_transferred_by,1,c108M02N47 - c108M02N15: The analysis phase also allows the identification of logical rules related to know-how that can be integrated into the formal model.,SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TP09
-h001M01EK03,h001M01TP10,be_transferred_by,1,c109M01N23 - c109M01N15: AI-based sustainability knowledge-management solutions used by UAE SMEs store and retrieve sustainability best practices.,SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TP10
 h001M01EK03,h001M01TP11,be_transferred_by,2,"c111M01N05 - c111M01N30: Field reports in documented blogs provide a codified medium for presenting practical examples from current contexts.
 c115M02N05 - c115M02N10: ""Digital tactics as the means by which firms strategically employ digital resources"" and ""Digital projects have a high priority within our business""",SIC 80 - Services (Health Services),Aggregation,s002M01EK03,s002M01TP11
 h001M01EK03,h001M01TP12,be_transferred_by,7,"c105M01N06 - c105M01N21: Company A displayed its existing instructions on a workplace screen.
@@ -1428,8 +1635,6 @@ c102M01N05 - c102M02N04: based on the object-predict-subject triples derived fro
 c121M02N02 - c121M02N03: Generative capability provides foundational support for iterative innovation by enabling knowledge acquisition, inheritance, and updating.",SIC 80 - Services (Health Services),Aggregation,s002M01EK04,s002M01EK02
 h001M01EK04,h001M01TP08,be_transferred_by,1,c102M01N05 - c102M01N16: GPT-4 generates task explanations for elements and relations in supplied images.,SIC 80 - Services (Health Services),Aggregation,s002M01EK04,s002M01TP08
 h001M01EK04,h001M01TP09,be_transferred_by,1,c102M01N05 - c102M01N15: The traditional scene-graph pipeline generates task interpretations for HRC scenarios.,SIC 80 - Services (Health Services),Aggregation,s002M01EK04,s002M01TP09
-h001M01EK05,h001M01EK02,be_derived_from,1,c120M02N05 - c120M01N04: ...the SPRM is trained by ELM...,SIC 80 - Services (Health Services),Aggregation,s002M01EK05,s002M01EK02
-h001M01EK05,h001M01EK07,be_derived_from,1,"c101M01N22 - c101M01N21: After the issues were identified and annotated, the user requested a model solving those issues and the system generated the revised TO-BE diagram.",SIC 80 - Services (Health Services),Aggregation,s002M01EK05,s002M01EK07
 h001M01EK05,h001M01TK04,translate_into,1,c120M02N05 - c120M02N10: The SPRM is constructed to... determine the appropriate priority relation...,SIC 80 - Services (Health Services),Aggregation,s002M01EK05,s002M01TK04
 h001M01EK05,h001M01TK06,translate_into,2,"c106M01N03 - c106M01N09: Training information concerning errors supported practical recognition and correction during setup.
 c124M01N04 - c124M01N10: Organizations with greater absorptive capacity translate digital knowledge into more accurate fault interpretation.",SIC 80 - Services (Health Services),Aggregation,s002M01EK05,s002M01TK06
@@ -1438,34 +1643,16 @@ c124M01N04 - c124M01N09: Predictive and diagnostic data are translated into enha
 h001M01EK05,h001M01TP01,be_transferred_by,3,"c124M01N03 - c124M01N15: Digital-twin schemes expose organizations to continuing flows of simulation data.
 c124M01N04 - c124M01N15: Digital-twin schemes expose organizations to continuing flows of predictive diagnostic data.
 c124M02N25 - c124M01N15: Section 2.1, Page 40",SIC 80 - Services (Health Services),Aggregation,s002M01EK05,s002M01TP01
-h001M01EK05,h001M01TP03,be_transferred_by,1,c106M01N03 - c106M01N15: Visual metrics and instructions were used to prevent and recognize potential mistakes.,SIC 80 - Services (Health Services),Aggregation,s002M01EK05,s002M01TP03
-h001M01EK05,h001M01TP07,be_transferred_by,2,"c119M02N27 - c119M02N12: The combination merges the two lists together and computes the final score for all the considered synsets
-c120M02N05 - c120M01N22: The online dynamic scheduling part refers to the process of applying the SPRM...",SIC 80 - Services (Health Services),Aggregation,s002M01EK05,s002M01TP07
 h001M01EK05,h001M01TP12,be_transferred_by,3,"c125M01N11 - c125M01N25: Experiential-learning modules are created for the knowledge and technology transfer of developed solutions.
 c125M01N11 - c125M01N24: Lean Manufacturing Methods and Tools was one of the five workshop activities.
 c125M01N11 - c125M01N45: Lean Manufacturing Methods and Tools were delivered through the correspondingly named workshop activity.",SIC 80 - Services (Health Services),Aggregation,s002M01EK05,s002M01TP12
 h001M01EK06,h001M01TP13,be_transferred_by,2,"c125M02N01 - c125M01N27: The PiTech Academy online platform hosts the Industry 4.0 maturity scan tool described in step 1 of the proposed methodology
 c125M02N01 - c125M02N17: This maturity scan is used to determine the maturity level (readiness) of small manufacturing businesses",SIC 80 - Services (Health Services),Aggregation,s002M01EK06,s002M01TP13
-h001M01EK07,h001M01EK02,be_derived_from,3,"c101M01N21 - c101M01N20: The model analysed the newly created AS-IS process and annotated that diagram with comments.
-c110M01N04 - c110M01N03: The principal topics and keywords were identified from students' chatbot conversation history.
-c120M01N08 - c120M01N04: The operation sequences in optimal scheduling schemes provide the appropriate pairwise priority-relation labels.",SIC 80 - Services (Health Services),Aggregation,s002M01EK07,s002M01EK02
-h001M01EK07,h001M01TP07,be_transferred_by,1,c120M01N08 - c120M01N17: The appropriate pairwise priority relation supplies the output label used in ELM-based SPRM training.,SIC 80 - Services (Health Services),Aggregation,s002M01EK07,s002M01TP07
 h001M01EK07,h001M01TP11,be_transferred_by,2,"c117M01N03 - c117M01N38: External expert feedback is transferred through platform-supported evaluation and prioritisation.
 c117M01N03 - c117M01N22: User-generated product improvement inputs are acquired through external social-media engagement.",SIC 80 - Services (Health Services),Aggregation,s002M01EK07,s002M01TP11
 h001M01EK07,h001M01TP12,be_transferred_by,1,c125M02N02 - c125M01N24: five technology workshop activities were arranged over two days,SIC 80 - Services (Health Services),Aggregation,s002M01EK07,s002M01TP12
-h001M01EK07,h001M01TP13,be_transferred_by,3,"c117M01N03 - c117M01N37: User-generated product improvement inputs are selectively filtered into internal pathways.
-c125M01N06 - c125M01N26: The maturity scan identifies the pain points of a small manufacturing business.
-c125M01N07 - c125M01N26: The maturity scan supplies users with category maturity levels and an overall maturity index.",SIC 80 - Services (Health Services),Aggregation,s002M01EK07,s002M01TP13
-h001M01EK08,h001M01THR17,be_transferred_by,2,"c126M01N02 - c126M01N16: External blockchain knowledge acquisition includes obtaining implementation insights through workshops and conferences.
-c126M01N02 - c126M01N17: Internal integration creates ongoing learning, while documented and stored BT knowledge and experience becomes organizational memory.",SIC 80 - Services (Health Services),Aggregation,s002M01EK08,s002M01THR17
-h001M01EK08,h001M01TP11,be_transferred_by,1,c111M01N08 - c111M01N30: Documented blogs are the digital presentation practice through which current-topic field reports are provided.,SIC 80 - Services (Health Services),Aggregation,s002M01EK08,s002M01TP11
 h001M01EK08,h001M01TP15,be_transferred_by,2,"c126M02N31 - c126M02N03: Internal knowledge integration is positively associated with BT exploitation (H2a supported: β = 0.395, p < 0.001)
 c126M02N31 - c126M02N04: Internal knowledge integration is positively associated with BT exploration (H2b supported: β = 0.250, p < 0.01)",SIC 80 - Services (Health Services),Aggregation,s002M01EK08,s002M01TP15
-h001M01EK09,h001M01THR12,be_transferred_by,2,"c110M01N01 - c110M01N11: Alumni searched technical information independently in manuals.
-c110M02N01 - c110M02N04: Alumni often had to search for information independently in manuals.",SIC 80 - Services (Health Services),Aggregation,s002M01EK09,s002M01THR12
-h001M01EK09,h001M01THR15,be_transferred_by,3,"c108M01N09 - c108M01N29: Professional-activity analysis studied the company's internal documents.
-c108M02N50 - c108M02N12: studying the company's internal documents
-c108M02N51 - c108M02N12: conducting a state-of-the-art on the field",SIC 80 - Services (Health Services),Aggregation,s002M01EK09,s002M01THR15
 h001M01EK09,h001M01TP08,be_transferred_by,2,"c110M01N01 - c110M01N16: AlFrEDo provided rapid access to information held in its technical-document and manual database.
 c110M02N01 - c110M02N06: The chatbot generates direct links to the specific section of the manuals",SIC 80 - Services (Health Services),Aggregation,s002M01EK09,s002M01TP08
 h001M01EK09,h001M01TP11,be_transferred_by,6,"c111M01N03 - c111M01N26: The in-house online tool is used for exchange and further training.
@@ -1744,11 +1931,8 @@ h001M01THR15,h001M01EK03,evaluate,2,"c108M01N35 - c108M01N62: The viticulture in
 c108M02N45 - c108M02N47: The analysis phase also allows the identification of logical rules related to know-how that can be integrated into the formal model. These rules are directly extracted from the interview corpus.",SIC 80 - Services (Health Services),Aggregation,s002M01THR15,s002M01EK03
 h001M01THR15,h001M01LI15,be_constrained_by,1,"c101M01N08 - c101M02N32: The existing workflow is almost entirely reactive and relies on informal, manual communication",SIC 80 - Services (Health Services),Aggregation,s002M01THR15,s002M01LI15
 h001M01THR15,h001M01OD06,depend_on,1,c108M01N29 - c108M01N46: Knowledge elicitation depends on experts being willing to share knowledge.,SIC 80 - Services (Health Services),Aggregation,s002M01THR15,s002M01OD06
-h001M01THR16,h001M01EK06,evaluate,2,"c104M02N26 - c104M02N01: Expert validation evaluated the quality of the knowledge test items.
-c104M02N27 - c104M02N01: The knowledge test administration evaluates participants' scores.",SIC 80 - Services (Health Services),Aggregation,s002M01THR16,s002M01EK06
 h001M01THR16,h001M01TK13,evaluate,1,c110M01N15 - c110M01N06: The surveys evaluated the chatbot's impact on problem-solving and knowledge retention.,SIC 80 - Services (Health Services),Aggregation,s002M01THR16,s002M01TK13
 h001M01THR17,h001M01ED03,depend_on,1,"c109M02N14 - c109M02N41: ""Cultural variation among UAE and Canadian SMEs influences the approaches, and the willingness to transfer knowledge""",SIC 80 - Services (Health Services),Aggregation,s002M01THR17,s002M01ED03
-h001M01THR17,h001M01EK02,evaluate,1,"c104M01N11 - c104M01N01: The three tests measured IoT knowledge before training, immediately afterward, and one week later.",SIC 80 - Services (Health Services),Aggregation,s002M01THR17,s002M01EK02
 h001M01THR17,h001M01LI03,be_constrained_by,1,"c111M01N14 - c111M01N35: Different controller functions have different AI-application requirements, limiting direct transfer of another organization’s practical examples without adaptation.",SIC 80 - Services (Health Services),Aggregation,s002M01THR17,s002M01LI03
 h001M01THR17,h001M01LI12,mitigate,1,c126M02N01 - c126M02N24: External knowledge equips firms to address regulatory risks by benchmarking their processes against industry standards and remaining informed about regulatory developments,SIC 80 - Services (Health Services),Aggregation,s002M01THR17,s002M01LI12
 h001M01THR17,h001M01LI15,be_constrained_by,2,"c101M01N05 - c101M02N32: The existing workflow is almost entirely reactive and relies on informal, manual communication
@@ -1920,12 +2104,6 @@ h001M01TP01,h001M01ED01,depend_on,1,c121M02N11 - c121M02N28: Enterprises use ite
 h001M01TP01,h001M01ED02,depend_on,3,"c121M02N11 - c121M02N29: Enterprises use iterative innovation to adjust and improve their operating models and strategies. This approach enables them to respond effectively to changes in market demand.
 c121M02N11 - c121M02N30: Enterprises use iterative innovation to adjust and improve their operating models and strategies. This approach enables them to respond effectively to changes in... technological advancements.
 c124M01N15 - c124M01N24: Technological turbulence significantly moderates the relationship between digital twin in mechanical maintenance management and operational resilience, strengthening the relationship under rapid technological change.",SIC 80 - Services (Health Services),Aggregation,s002M01TP01,s002M01ED02
-h001M01TP01,h001M01EK02,adopt,2,"c124M01N15 - c124M01N01: The digital-twin practice uses real-time operational and status information to inform virtual representations.
-c124M01N15 - c124M01N02: Digital-twin maintenance integrates sensor data into its decision environment.",SIC 80 - Services (Health Services),Aggregation,s002M01TP01,s002M01EK02
-h001M01TP01,h001M01EK05,adopt,4,"c121M02N11 - c121M02N37: When conflicts arise between circular goals and commercial interests, GenAI can simulate multi-stakeholder interactions and provide Pareto improvement solutions.
-c124M01N15 - c124M01N03: Simulation data are among the continuing information flows generated in digital-twin schemes.
-c124M01N15 - c124M01N04: Predictive diagnostic data are among the continuing information flows generated in digital-twin schemes.
-c124M02N20 - c124M02N24: Section 1, Page 38",SIC 80 - Services (Health Services),Aggregation,s002M01TP01,s002M01EK05
 h001M01TP01,h001M01LI04,be_constrained_by,1,c107M01N37 - c107M01N29: Predominantly two-dimensional simulation software does not represent reality because components are usually shown only through circuit symbols.,SIC 80 - Services (Health Services),Aggregation,s002M01TP01,s002M01LI04
 h001M01TP01,h001M01LI11,mitigate,2,"c124M01N15 - c124M01N27: The empirically significant effect of digital-twin-enabled mechanical maintenance is interpreted as enhancing responsiveness and reducing mechanical-system vulnerability under unstable conditions.
 c124M01N17 - c124M01N27: In technologically turbulent environments, digital twin allows organizations to test maintenance plans virtually before introducing them into physical operations.",SIC 80 - Services (Health Services),Aggregation,s002M01TP01,s002M01LI11
@@ -1947,15 +2125,6 @@ h001M01TP01,h001M01TP07,be_composed_of,4,"c124M01N15 - c124M01N18: Digital-twin-
 c124M01N15 - c124M01N19: The digital-twin maintenance construct is defined as supporting diagnostics of mechanical-system behaviour.
 c124M01N15 - c124M01N20: The digital-twin maintenance construct is defined as supporting prognostics of mechanical-system behaviour.
 c124M01N15 - c124M02N19: Section 1, Page 37-38",SIC 80 - Services (Health Services),Aggregation,s002M01TP01,s002M01TP07
-h001M01TP03,h001M01EK01,adopt,1,c106M01N15 - c106M01N05: The VMAR experimental workflow used the previously agreed correction protocol to govern trainer intervention during unsupported scenarios when serious errors or fatal forgetfulness occurred.,SIC 80 - Services (Health Services),Aggregation,s002M01TP03,s002M01EK01
-h001M01TP03,h001M01EK02,adopt,2,"c105M01N24 - c105M01N08: The AR prototype integrated and used Company A's CAD model.
-c105M02N22 - c105M01N08: A CAD model of the plastic product was integrated into Unity",SIC 80 - Services (Health Services),Aggregation,s002M01TP03,s002M01EK02
-h001M01TP03,h001M01EK03,adopt,2,"c104M01N12 - c104M01N02: The MAR interface displayed assembly instructions alongside virtual 3D models.
-c104M01N13 - c104M01N02: The guidance module displayed instructions together with virtual component representations.",SIC 80 - Services (Health Services),Aggregation,s002M01TP03,s002M01EK03
-h001M01TP03,h001M01EK06,evaluate,4,"c104M02N14 - c104M02N04: The MAR practice was evaluated via the PUEU questionnaire.
-c104M02N14 - c104M02N05: The MAR practice was evaluated via the NASA-TLX questionnaire.
-c104M02N14 - c104M02N02: The MAR practice measures task completion time.
-c104M02N14 - c104M02N03: The MAR practice measures error rate.",SIC 80 - Services (Health Services),Aggregation,s002M01TP03,s002M01EK06
 h001M01TP03,h001M01LI14,be_constrained_by,2,"c105M02N22 - c105M02N49: only one for the pilot
 c107M02N21 - c107M02N47: The high standard deviation of the knowledge test results can be attributed to the different prior knowledge of the participants",SIC 80 - Services (Health Services),Aggregation,s002M01TP03,s002M01LI14
 h001M01TP03,h001M01LI15,be_constrained_by,2,"c104M01N12 - c104M01N24: The MAR application addressed an assembly task involving small components, many steps, and precise locations.
@@ -1970,7 +2139,6 @@ h001M01TP03,h001M01TP16,be_composed_of,1,c107M02N21 - c107M02N22: AR elements an
 h001M01TP04,h001M01ED08,depend_on,1,c113M01N13 - c113M01N30: The enhanced AR application used the same Vuforia image-target architecture and therefore required a camera-visible target for augmented-content registration.,SIC 80 - Services (Health Services),Aggregation,s002M01TP04,s002M01ED08
 h001M01TP04,h001M01EK02,adopt,2,"c101M01N13 - c101M01N19: The bpmn-js frontend parses and renders the generated BPMN XML.
 c113M01N13 - c113M01N21: Vuforia identifies and tracks an image by comparing camera-image characteristics with a predefined target resource database.",SIC 80 - Services (Health Services),Aggregation,s002M01TP04,s002M01EK02
-h001M01TP04,h001M01EK07,adopt,1,c101M01N13 - c101M01N23: The frontend parses the JSON overlays and renders the comments as visual annotations.,SIC 80 - Services (Health Services),Aggregation,s002M01TP04,s002M01EK07
 h001M01TP04,h001M01LI05,be_constrained_by,1,c113M01N13 - c113M01N26: Targeting different components was difficult without their associated 3D models.,SIC 80 - Services (Health Services),Aggregation,s002M01TP04,s002M01LI05
 h001M01TP04,h001M01LI08,be_constrained_by,1,c113M01N13 - c113M01N28: The authors state that added contextual information may increase learning time because users need to attend to more information.,SIC 80 - Services (Health Services),Aggregation,s002M01TP04,s002M01LI08
 h001M01TP04,h001M01OD03,depend_on,1,c113M01N13 - c113M01N29: The traditional AR instructions were presented over the workspace while participants performed the electronic-wiring task.,SIC 80 - Services (Health Services),Aggregation,s002M01TP04,s002M01OD03
@@ -1978,14 +2146,10 @@ h001M01TP04,h001M01TE05,adopt,2,"c107M01N16 - c107M01N21: Concept 2 used QR-code
 c113M01N13 - c113M01N19: Vuforia Engine was used for vision-based tracking in the AR application.",SIC 80 - Services (Health Services),Aggregation,s002M01TP04,s002M01TE05
 h001M01TP04,h001M01TE07,adopt,1,c107M01N16 - c107M01N20: Concept 2 was used through the application provided on an iOS mobile device.,SIC 80 - Services (Health Services),Aggregation,s002M01TP04,s002M01TE07
 h001M01TP04,h001M01TP03,be_composed_of,1,c113M01N13 - c113M01N16: The implemented enhanced AR system includes a common mistakes and consequences panel after each step.,SIC 80 - Services (Health Services),Aggregation,s002M01TP04,s002M01TP03
-h001M01TP05,h001M01EK02,adopt,2,"c108M01N40 - c108M01N20: The Wine Cloud platform adopted sensor feedback data for vine life-cycle traceability.
-c124M02N18 - c124M02N22: Section 2.1, Page 40",SIC 80 - Services (Health Services),Aggregation,s002M01TP05,s002M01EK02
 h001M01TP05,h001M01LI10,be_constrained_by,1,"c124M01N16 - c124M01N25: Real-time monitoring produces continuous asset information, but the study finds that digital information must be recognized, internalized, and translated through organizational knowledge-processing capability to improve resilience.",SIC 80 - Services (Health Services),Aggregation,s002M01TP05,s002M01LI10
 h001M01TP05,h001M01TP09,be_composed_of,1,c108M01N40 - c108M02N15: provide a complete traceability platform for the vine life cycle based on domain expert knowledge and sensor feedback data.,SIC 80 - Services (Health Services),Aggregation,s002M01TP05,s002M01TP09
 h001M01TP06,h001M01EK01,adopt,2,"c103M02N21 - c103M02N06: we focus on body-conducted sounds because they are robust to visual occlusions and surrounding noise interference, can be acquired using wrist sensors, and may help recognize hand gestures as well as hand-contact objects.
 c103M02N28 - c103M02N06: Air-conducted sounds can also be utilized as a modality for handwork recognition because such sounds can propagate via diffraction.",SIC 80 - Services (Health Services),Aggregation,s002M01TP06,s002M01EK01
-h001M01TP06,h001M01EK02,adopt,2,"c103M02N28 - c103M02N24: Air-conducted sounds can also be utilized as a modality for handwork recognition because such sounds can propagate via diffraction.
-c105M02N23 - c105M01N10: The result of converting video instructions to written instructions",SIC 80 - Services (Health Services),Aggregation,s002M01TP06,s002M01EK02
 h001M01TP06,h001M01LI05,be_constrained_by,2,"c103M01N25 - c103M01N44: Dataset absence required acquisition of application-specific samples.
 c103M02N21 - c103M02N18: Identification of the grasped object is difficult. To some extent, body-conducted sounds may be able to convey clues about the types of objects grasped through the same hand gesture, but further improvements are necessary.",SIC 80 - Services (Health Services),Aggregation,s002M01TP06,s002M01LI05
 h001M01TP06,h001M01LI06,be_constrained_by,1,"c103M01N25 - c103M01N45: No commercial sensor existed, so a prototype was constructed.",SIC 80 - Services (Health Services),Aggregation,s002M01TP06,s002M01LI06
@@ -1997,37 +2161,12 @@ c105M02N23 - c105M01N29: This library uses the Whisper models from OpenAI",SIC 8
 h001M01TP06,h001M01TE09,adopt,1,"c105M02N23 - c105M01N27: Using the Python programming language, a transcription can be obtained",SIC 80 - Services (Health Services),Aggregation,s002M01TP06,s002M01TE09
 h001M01TP07,h001M01ED08,depend_on,2,"c119M01N10 - c119M01N31: Perception-driven acquisition requires observable environmental elements.
 c119M01N16 - c119M01N31: Pepper validation requires physical objects in its environment.",SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01ED08
-h001M01TP07,h001M01EK01,adopt,1,c102M01N18 - c102M01N07: The language-guided robot skill acquisition approach takes a task description as its input resource.,SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01EK01
-h001M01TP07,h001M01EK02,adopt,22,"c103M01N27 - c103M01N18: DRLDCC-ELM training uses the training dataset.
-c103M01N28 - c103M01N18: Transformer training uses the training dataset.
-c103M01N24 - c103M01N18: Recognition evaluation uses the test dataset.
-c108M01N41 - c108M01N19: The vine-state prediction and recommendation solutions were enabled by viticulture ontological formalization.
-c110M01N19 - c110M01N03: The analysis examined the retained chatbot conversation history.
-c119M01N07 - c119M01N01: Semantic knowledge is represented in the General Knowledge Base.
-c119M01N07 - c119M01N02: Knowledge acquired from observations is retained locally rather than altering the General Knowledge Base.
-c119M01N10 - c119M01N02: Bottom-up acquisition uses sensor-derived perceptual knowledge.
-c119M01N10 - c119M01N03: Bottom-up acquisition uses object-image visual features.
-c119M01N11 - c119M01N01: Top-down acquisition uses semantic knowledge.
-c119M01N12 - c119M01N01: The combined classifier incorporates semantic knowledge.
-c119M01N12 - c119M01N02: The combined classifier incorporates perceptual knowledge.
-c119M01N12 - c119M01N03: The combined classifier was tested on a test set extracted from the 34-synset dataset.
-c119M01N13 - c119M01N02: SOM clustering operates on visual observations.
-c119M01N13 - c119M01N03: SOM experiments use extracted visual features.
-c119M01N13 - c119M01N49: SOM experiments use semantic-domain labels to assess cluster coherence.
-c119M01N15 - c119M01N01: GHSOM optimization uses semantic labels and Wu-Palmer similarity among concepts.
-c119M01N15 - c119M01N03: GHSOM parameter optimization operates on the experimental dataset.
-c119M02N12 - c119M02N03: The knowledge base is called general since it has been implemented starting from a high-level ontological model acting as overarching ontology
-c119M02N12 - c119M02N04: The robot updates his own Local Knowledge Base and then searches for the item or most similar ones
-c120M01N18 - c120M01N04: The training-sample acquisition mechanism uses optimal job-shop scheduling schemes to restore scheduling processes and obtain samples.
-c120M02N16 - c120M02N07: ...feature set F is used as the input features... and SPRM is trained by ELM...",SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01EK02
 h001M01TP07,h001M01EK03,adopt,3,"c102M01N19 - c102M01N08: The exploration primitive operates after the LLM has produced the hierarchical exploration plan.
 c103M02N27 - c103M02N07: Mel filter bank (MelFB) features were extracted... The DRLDCC-ELM outputs one prediction each time a new feature vector is fed to the model.
 c105M01N23 - c105M01N09: The conversion workflow used the recorded video as its input.",SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01EK03
 h001M01TP07,h001M01EK05,adopt,2,"c119M01N12 - c119M01N05: The combined classifier takes predicted synset lists as inputs.
 c119M01N16 - c119M01N05: Pepper validation uses classification predictions to select a semantically similar object.",SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01EK05
 h001M01TP07,h001M01EK06,adopt,1,"c119M02N11 - c119M02N05: The first parameter, τ₁, is used in the stopping criterion for the growth of a single map in the architecture",SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01EK06
-h001M01TP07,h001M01EK07,evaluate,2,"c103M01N24 - c103M01N22: Recognition performance is evaluated with macro-averaged F1.
-c103M01N24 - c103M01N23: Class-level recognition is evaluated with a confusion matrix.",SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01EK07
 h001M01TP07,h001M01OD01,depend_on,2,"c117M01N39 - c117M01N41: Expert collaboration on sensitive concepts occurs inside controlled environments with restricted access.
 c117M01N39 - c117M01N43: Expert-driven product-concept development occurs in governed internal environments.",SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01OD01
 h001M01TP07,h001M01OD04,depend_on,1,c120M01N22 - c120M02N21: ...the SPRM fulfills the real-time requirements...,SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01OD04
@@ -2058,15 +2197,9 @@ c108M02N20 - c108M02N15: ontological formalization that allows the development o
 h001M01TP07,h001M01TP12,be_composed_of,2,"c109M02N25 - c109M02N26: ""Canadian SMEs make use of platforms like Coursera for Business""
 c109M02N25 - c109M02N32: ""AI-based platforms, like Talent LMS, facilitate this process""",SIC 80 - Services (Health Services),Aggregation,s002M01TP07,s002M01TP12
 h001M01TP08,h001M01ED01,depend_on,1,c101M02N16 - c101M02N25: well-defined process models support... compliance,SIC 80 - Services (Health Services),Aggregation,s002M01TP08,s002M01ED01
-h001M01TP08,h001M01EK02,adopt,5,"c101M01N15 - c101M01N19: The final prompt requires a complete standards-compliant BPMN 2.0 XML block.
-c101M01N10 - c101M01N19: The chatbot generates standards-compliant BPMN 2.0 XML from natural-language process descriptions.
-c101M01N10 - c101M01N20: The chatbot generated the initial AS-IS BPMN diagram from the user's narrative.
-c102M01N16 - c102M01N04: The task-interpretation process uses the common-sense depiction generated from the image.
-c121M01N13 - c121M01N04: GenAI-enabled acquisition codifies relevant multi-source knowledge into structured knowledge repositories.",SIC 80 - Services (Health Services),Aggregation,s002M01TP08,s002M01EK02
 h001M01TP08,h001M01EK04,evaluate,1,c102M01N16 - c102M01N05: The reported task descriptions across diverse scenes serve as evaluations of GPT-4's zero-shot learning ability.,SIC 80 - Services (Health Services),Aggregation,s002M01TP08,s002M01EK04
 h001M01TP08,h001M01EK07,adopt,2,"c101M01N15 - c101M01N23: The final prompt requires a JSON block containing overlay objects for diagram comments.
 c101M01N10 - c101M01N23: The LLM populates JSON overlay objects with observations tied to BPMN element identifiers.",SIC 80 - Services (Health Services),Aggregation,s002M01TP08,s002M01EK07
-h001M01TP08,h001M01EK09,adopt,1,c110M01N16 - c110M01N01: The 25 technical documents and manuals formed the chatbot's foundational database.,SIC 80 - Services (Health Services),Aggregation,s002M01TP08,s002M01EK09
 h001M01TP08,h001M01LI04,be_constrained_by,2,"c110M01N16 - c110M01N30: The conclusion acknowledges concerns about overreliance on AI.
 c110M01N16 - c110M01N31: Students noted that the chatbot moderately contributed to their learning by simplifying access to critical information.",SIC 80 - Services (Health Services),Aggregation,s002M01TP08,s002M01LI04
 h001M01TP08,h001M01LI13,be_constrained_by,1,c101M01N11 - c101M01N34: The study does not formally evaluate the quality of the generated TO-BE model.,SIC 80 - Services (Health Services),Aggregation,s002M01TP08,s002M01LI13
@@ -2081,14 +2214,6 @@ h001M01TP08,h001M01TK06,evaluate,1,c110M02N06 - c110M02N09: The chatbot's conver
 h001M01TP08,h001M01TK13,evaluate,1,"c101M02N16 - c101M02N01: In response, the LLM identified inefficiencies and bottlenecks in the workflow, annotating the diagram with comments",SIC 80 - Services (Health Services),Aggregation,s002M01TP08,s002M01TK13
 h001M01TP08,h001M01TP04,be_composed_of,2,"c101M01N10 - c101M01N13: Client-side process visualization is one of the prototype's three key implemented components.
 c101M01N11 - c101M01N13: Process diagrams are rendered in the browser using bpmn-js",SIC 80 - Services (Health Services),Aggregation,s002M01TP08,s002M01TP04
-h001M01TP09,h001M01EK02,adopt,8,"c102M01N15 - c102M01N03: Scene-graph-based task interpretation uses object-predicate-subject triples derived from the scene graph.
-c108M01N36 - c108M01N16: The viticulture semi-formal modeling practice used mind maps.
-c108M01N36 - c108M01N64: The viticulture semi-formal modeling practice used UML diagrams.
-c108M01N37 - c108M01N18: The manufacturing formalization produced and used the formal ontology of company know-how.
-c108M01N37 - c108M01N19: The viticulture formalization produced the formal ontology of vine and wine knowledge.
-c108M01N39 - c108M01N18: The reasoning application operated on the ontology-backed collaborative environment.
-c119M01N06 - c119M01N01: The acquisition phase uses robot semantic knowledge.
-c119M01N06 - c119M01N02: The acquisition phase uses robot perceptual knowledge.",SIC 80 - Services (Health Services),Aggregation,s002M01TP09,s002M01EK02
 h001M01TP09,h001M01LI08,mitigate,1,c108M02N15 - c108M02N35: UML modeling is mainly used to ensure a good understanding of the know-how. It reduces considerably the gap between the informal description of knowledge provided by domain experts and their digital formalization.,SIC 80 - Services (Health Services),Aggregation,s002M01TP09,s002M01LI08
 h001M01TP09,h001M01LI09,be_constrained_by,2,"c108M01N37 - c108M01N56: Collaborative ontology construction among geographically distributed experts faces consensus difficulties.
 c108M02N15 - c108M01N56: Existing methodologies are often specific to particular projects, and are difficult to generalize. Other limitations of collaborative ontology engineering are discussed in [7].",SIC 80 - Services (Health Services),Aggregation,s002M01TP09,s002M01LI09
@@ -2120,13 +2245,11 @@ c109M01N14 - c109M01N19: UAE SMEs' use of AI-based informal knowledge-sharing sy
 h001M01TP11,h001M01ED10,depend_on,3,"c115M02N10 - c115M02N23: Institutional pressures drive organizations to adopt digital transformation
 c115M02N25 - c115M02N23: Institutional pressures also influence innovation performance through normative and coercive forces
 c122M01N22 - c122M02N09: MGA reveals the differential impact of industrial context, providing a theoretical basis for tailored implementation strategies",SIC 80 - Services (Health Services),Aggregation,s002M01TP11,s002M01ED10
-h001M01TP11,h001M01EK02,adopt,1,c108M01N38 - c108M01N18: The collaborative digital environment was based on the manufacturing ontology.,SIC 80 - Services (Health Services),Aggregation,s002M01TP11,s002M01EK02
 h001M01TP11,h001M01EK03,adopt,1,"c115M02N10 - c115M02N05: ""We measure the two aspects of digital transformation (digital strategy and digital capability) as a unified construct"" – digital transformation adopts digital strategy as a structural component",SIC 80 - Services (Health Services),Aggregation,s002M01TP11,s002M01EK03
 h001M01TP11,h001M01EK06,adopt,2,"c115M02N10 - c115M02N12: H1: Digital transformation has a positive impact on sustainable corporate performance; thus digital transformation adopts sustainable performance metrics as outcome data
 c115M02N25 - c115M02N12: H5: Innovation performance has a positive impact on sustainable corporate performance; thus innovation performance adopts sustainable performance metrics as outcome data",SIC 80 - Services (Health Services),Aggregation,s002M01TP11,s002M01EK06
 h001M01TP11,h001M01EK07,evaluate,2,"c117M01N38 - c117M01N03: The evaluation workflow assesses external expert feedback when prioritising submitted ideas.
 c117M02N18 - c117M02N04: Secondary data includes engagement metrics (reviews, voting, comments, likes, queries) used for evaluation",SIC 80 - Services (Health Services),Aggregation,s002M01TP11,s002M01EK07
-h001M01TP11,h001M01EK08,adopt,1,c111M01N30 - c111M01N08: Table 5 identifies documented blogs as the presentation practice containing current topics and field reports.,SIC 80 - Services (Health Services),Aggregation,s002M01TP11,s002M01EK08
 h001M01TP11,h001M01LI08,mitigate,1,"c122M01N22 - c122M02N16: DL shows significant moderating effects on the interactions between MKC and the three types of KBs... higher levels of DL enhance the effectiveness of MKC in facilitating knowledge processes, thereby lowering operational challenges and reduced synergy for low-DL individuals",SIC 80 - Services (Health Services),Aggregation,s002M01TP11,s002M01LI08
 h001M01TP11,h001M01OD01,depend_on,16,"c117M01N23 - c117M01N41: Protected internal ideation relies on internal social-media access controls.
 c117M01N23 - c117M01N42: Promising contributions progress within internal systems under NDAs.
@@ -2172,7 +2295,6 @@ c106M01N14 - c106M01N04: The screen-based practice displayed digital instruction
 c111M01N29 - c111M01N05: The abstract states that application examples are preferred and made available through video tutorials; Section 4.3 likewise identifies practical examples and instructions as the preferred content and visual tutorials as the format of choice.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01EK03
 h001M01TP12,h001M01EK05,adopt,2,"c125M01N24 - c125M01N11: The workshop incorporated Lean Manufacturing Methods and Tools as an activity.
 c125M01N45 - c125M01N11: The Lean workshop activity incorporates Lean Manufacturing Methods and Tools.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01EK05
-h001M01TP12,h001M01EK07,evaluate,1,c125M01N24 - c125M02N02: the attendees were surveyed to learn about the impact of this hands-on experiential learning event on their willingness to explore the possibilities to digitally enhance and/or smartify their production operations,SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01EK07
 h001M01TP12,h001M01LI10,be_constrained_by,1,c111M01N24 - c111M01N36: Webinars and podcasts form one part of a widely dispersed set of knowledge channels and preparation approaches identified as a theoretical limitation.,SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01LI10
 h001M01TP12,h001M01OD03,depend_on,2,"c106M01N14 - c106M01N25: G1 screen instructions used the same storage-area color code as the physical component labels.
 c125M01N24 - c125M02N26: PiTech Academy curriculum has been meticulously designed to accommodate small manufacturing businesses' unique technological needs and financial and human resources constraints",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01OD03
@@ -2187,9 +2309,6 @@ h001M01TP12,h001M01TK05,evaluate,1,"c125M01N24 - c125M02N06: Participants report
 h001M01TP12,h001M01TK10,evaluate,1,"c125M01N24 - c125M02N07: Participants reported increased knowledge acquisition, improved decision-making, and enhanced organisational collaboration",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01TK10
 h001M01TP12,h001M01TP13,be_composed_of,2,"c125M01N22 - c125M01N27: The implemented PiTech Academy includes an online platform hosting its maturity scan and curriculum information.
 c125M01N24 - c125M01N26: The two-day workshop included the Industry 4.0 Maturity Scan as one of its five activities.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01TP13
-h001M01TP13,h001M01EK02,evaluate,1,c117M01N37 - c117M01N07: R&D experts evaluate submitted product concepts for further development.,SIC 80 - Services (Health Services),Aggregation,s002M01TP13,s002M01EK02
-h001M01TP13,h001M01EK06,evaluate,1,c125M02N17 - c125M02N01: This maturity scan is used to determine the maturity level (readiness) of small manufacturing businesses,SIC 80 - Services (Health Services),Aggregation,s002M01TP13,s002M01EK06
-h001M01TP13,h001M01EK07,evaluate,1,c125M01N26 - c125M01N07: The maturity scan determines readiness and assigns maturity levels and an overall maturity index.,SIC 80 - Services (Health Services),Aggregation,s002M01TP13,s002M01EK07
 h001M01TP13,h001M01LI04,be_constrained_by,1,c125M01N26 - c125M01N40: Participants requested simpler maturity-scan questions and more detailed examples.,SIC 80 - Services (Health Services),Aggregation,s002M01TP13,s002M01LI04
 h001M01TP13,h001M01LI05,mitigate,1,"c117M01N37 - c117M01N50: Systematic collection, screening, and refinement make unstructured external data more evaluable.",SIC 80 - Services (Health Services),Aggregation,s002M01TP13,s002M01LI05
 h001M01TP13,h001M01LI09,be_constrained_by,1,"c114M02N07 - c114M02N16: too much digital technology innovation network embedding may lead firms to face problems, such as knowledge reuse and innovation inertia",SIC 80 - Services (Health Services),Aggregation,s002M01TP13,s002M01LI09
@@ -2218,7 +2337,6 @@ c117M02N15 - c117M01N25: Social listening involves monitoring platforms like You
 c117M02N15 - c117M01N26: Social listening involves monitoring platforms like LinkedIn
 c117M02N17 - c117M01N29: Internal social media as firm-governed environments designed for more structured and confidentiality-sensitive ideation",SIC 80 - Services (Health Services),Aggregation,s002M01TP13,s002M01TP11
 h001M01TP14,h001M01ED10,depend_on,1,"c115M01N11 - c115M02N23: ""External factors that affect organizational cultures are the norms and standards, government regulations, competitor behavior, market demands"" – these institutional pressures affect green knowledge acquisition",SIC 80 - Services (Health Services),Aggregation,s002M01TP14,s002M01ED10
-h001M01TP14,h001M01EK02,evaluate,1,c114M02N09 - c114M02N02: the number of patents cited in the annual patent application was used to represent enterprises' technological knowledge acquisition capability,SIC 80 - Services (Health Services),Aggregation,s002M01TP14,s002M01EK02
 h001M01TP14,h001M01EK06,adopt,1,c115M01N11 - c115M02N12: H3: Green knowledge acquisition has a positive impact on sustainable corporate performance; thus green knowledge acquisition adopts sustainable performance metrics as outcome data,SIC 80 - Services (Health Services),Aggregation,s002M01TP14,s002M01EK06
 h001M01TP14,h001M01LI05,mitigate,1,c114M01N12 - c114M01N19: Digitization helps enterprises remove redundant and irrelevant information before screening and integrating needed knowledge resources.,SIC 80 - Services (Health Services),Aggregation,s002M01TP14,s002M01LI05
 h001M01TP14,h001M01TE05,adopt,2,"c113M02N21 - c113M01N19: For AR library, Vuforia engine was used for vision-based tracking
@@ -2269,10 +2387,6 @@ h001M01TP16,h001M01TP03,be_composed_of,1,"c107M01N14 - c107M01N15: The implement
 h001M01TP16,h001M01TP04,be_composed_of,1,"c107M01N14 - c107M01N16: The implemented A.R.P.S. application included Concept 2, the realistic simulation with additional AR elements.",SIC 80 - Services (Health Services),Aggregation,s002M01TP16,s002M01TP04
 h001M01EK01,h001M01EK06,be_derived_from,2,"c210M01N03 - c210M02N01: The Chinese version of the Standard Guide to Practice Standards for Intravenous Infusion Therapy (2021 edition), the Standard of Practice for Intravenous Therapy Nursing Techniques (WS/T 433-2023), and the Clinical Nursing Practice Guidelines for Common Complications of Intravenous Catheters were referenced. On this basis, we synthesised the relevant domestic literature and reformulated the survey questions
 c210M01N03 - c210M02N02: The Chinese version of the Standard Guide to Practice Standards for Intravenous Infusion Therapy (2021 edition), the Standard of Practice for Intravenous Therapy Nursing Techniques (WS/T 433-2023), and the Clinical Nursing Practice Guidelines for Common Complications of Intravenous Catheters were referenced",SIC 20-39 - Manufacturing,Aggregation,s003M01EK01,s003M01EK06
-h001M01EK01,h001M01THR11,be_transferred_by,1,"c212M02N02 - c212M02N16: Traditional lectures and seminars covered fundamental principles of bioethics, based on established ethical codes.",SIC 20-39 - Manufacturing,Aggregation,s003M01EK01,s003M01THR11
-h001M01EK01,h001M01TK10,translate_into,3,"c210M01N03 - c210M02N09: Clinical Nursing Practice Guidelines for Common Complications of Intravenous Catheters were used to inform protocols
-c212M02N02 - c212M01N06: Moral behavior test developed based on existing scales and tests in medical ethics. Moral behavior encompasses actions based on moral norms and values regulating human relationships.
-c212M02N03 - c212M01N06: Medical deontology refers to set of ethical norms governing professional behavior. Deontology reflects ethical concepts and possesses pragmatic nature associated with specific medical professions.",SIC 20-39 - Manufacturing,Aggregation,s003M01EK01,s003M01TK10
 h001M01EK01,h001M01TP01,be_transferred_by,2,"c209M01N04 - c209M01N17: A hollow spherical safety margin was displayed around the tumor in the 3DP model.
 c209M01N04 - c209M02N29: Course covered knowledge of safe margins using 3DV model",SIC 20-39 - Manufacturing,Aggregation,s003M01EK01,s003M01TP01
 h001M01EK01,h001M01TP04,be_transferred_by,2,"c212M01N01 - c212M01N15: Students applied ethical principles while interacting with virtual ethical scenarios.
@@ -2280,20 +2394,11 @@ c212M02N02 - c212M01N15: Interactive AI simulations incorporated bioethical prin
 h001M01EK01,h001M01TP08,be_transferred_by,1,c212M02N02 - c212M01N16: AI Assistant programs employed ethical principles to assist in case analysis and decision-making.,SIC 20-39 - Manufacturing,Aggregation,s003M01EK01,s003M01TP08
 h001M01EK01,h001M01TP13,be_transferred_by,2,"c227M01N03 - c227M01N16: Registry results were intended to be interpreted against applicable wait-time goals and contractual standards.
 c227M02N02 - c227M01N16: According to formal agreements, economic sanctions would be applied to large care providers if fewer than 80% of the patients received care within the wait time guarantee.",SIC 20-39 - Manufacturing,Aggregation,s003M01EK01,s003M01TP13
-h001M01EK02,h001M01EK01,be_derived_from,6,"c210M01N06 - c210M01N01: The knowledge questionnaire was revised with reference to the Standard Guide to Practice Standards for Intravenous Fluid Therapy.
-c210M01N06 - c210M01N02: The knowledge questionnaire was revised with reference to WS/T 433-2023.
-c210M01N06 - c210M01N03: The knowledge questionnaire was revised with reference to the clinical nursing practice guidelines.
-c219M01N05 - c219M01N02: The curriculum knowledge system and its knowledge points were aligned with the curriculum syllabi.
-c219M01N07 - c219M01N02: The ontological schema was designed in accordance with the curriculum objectives specified by the curriculum framework and syllabus.
-c219M01N08 - c219M01N09: The predicates in the structured triples were drawn from the formally defined semantic relationships, including has etiology, has treatment, and has nursing intervention.",SIC 20-39 - Manufacturing,Aggregation,s003M01EK02,s003M01EK01
 h001M01EK02,h001M01EK05,be_derived_from,1,c213M02N12 - c213M02N04: Each node trains a local predictive model using its historical and real-time data,SIC 20-39 - Manufacturing,Aggregation,s003M01EK02,s003M01EK05
 h001M01EK02,h001M01EK09,be_derived_from,1,c210M01N06 - c210M01N04: Relevant domestic literature was synthesized when the researchers reformulated the survey questions.,SIC 20-39 - Manufacturing,Aggregation,s003M01EK02,s003M01EK09
 h001M01EK02,h001M01KH03,be_shared_by,3,"c224M01N01 - c224M02N04: The participants' average score increased from 59.97% in the initial assessment to 84.05% in the final assessment.
 c224M01N01 - c224M02N05: Nurses with a master's degree had a mean initial assessment score of 69.15.
 c224M01N01 - c224M02N06: Those with a bachelor's degree had a mean score of 62.52.",SIC 20-39 - Manufacturing,Aggregation,s003M01EK02,s003M01KH03
-h001M01EK02,h001M01THR11,be_transferred_by,1,c210M01N06 - c210M01N15: Telephonic communication is identified as a conventional educational delivery method.,SIC 20-39 - Manufacturing,Aggregation,s003M01EK02,s003M01THR11
-h001M01EK02,h001M01THR13,be_transferred_by,2,"c209M01N03 - c209M01N13: Traditional clinical teaching relied on cadaver dissection, and the paper identifies anatomy as the relevant teaching domain.
-c209M02N16 - c209M01N13: Traditional clinical teaching has typically relied on cadaver dissection",SIC 20-39 - Manufacturing,Aggregation,s003M01EK02,s003M01THR13
 h001M01EK02,h001M01THR16,be_transferred_by,1,"c222M01N06 - c222M01N17: existing ontologies and knowledge bases (e.g., Gene Ontology, GeneCards, KEGG, DrugBank, etc.) were employed to identify pivotal entity types and criteria
 c222M01N07 - c222M01N17: existing ontologies and knowledge bases (e.g., Gene Ontology, GeneCards, KEGG, DrugBank, etc.) were employed to identify pivotal entity types and criteria
 c222M02N08 - c222M01N17: existing ontologies and knowledge bases (e.g., Gene Ontology, GeneCards, KEGG, DrugBank, etc.) were employed to identify pivotal entity types and criteria
@@ -2306,12 +2411,7 @@ c221M02N04 - c221M02N22: Data provenance information of medical recipes and trea
 c221M02N05 - c221M02N22: Digital identity proofs (SSI proofs) for doctors... securely stored on the blockchain
 c221M02N06 - c221M02N22: Medical recipe data... encapsulated in Model Cards and securely stored on the blockchain
 c221M02N06 - c221M02N23: Model Cards serve as invaluable repositories, capturing essential details... The Model Card smart contract... handles functions related to model card generation, storage, and retrieval",SIC 20-39 - Manufacturing,Aggregation,s003M01EK02,s003M01TP15
-h001M01EK03,h001M01TK06,translate_into,2,"c209M02N15 - c209M02N04: understand how to avoid intraoperative vascular injuries
-c210M02N06 - c210M02N11: Post-intubation care assessment and complication prevention programme",SIC 20-39 - Manufacturing,Aggregation,s003M01EK03,s003M01TK06
 h001M01EK03,h001M01TK08,translate_into,1,c214M02N05 - c214M02N11: Comprehensive training not only improves safety knowledge and operational skills but also deepens understanding of failure mechanisms and equips individuals with effective prevention strategies,SIC 20-39 - Manufacturing,Aggregation,s003M01EK03,s003M01TK08
-h001M01EK03,h001M01TK10,translate_into,3,"c210M02N06 - c210M02N09: Catheter selection strategies; PIVC placement protocols
-c210M02N06 - c210M02N10: Principles of asepsis and patient safety during tube insertion
-c214M02N01 - c214M02N07: It delivers essential knowledge and skills to trainers, including standard operational procedures, human error preventions, risk assessment skills, and occupational health protocols",SIC 20-39 - Manufacturing,Aggregation,s003M01EK03,s003M01TK10
 h001M01EK03,h001M01TP01,be_transferred_by,4,"c209M01N06 - c209M01N17: The model displayed surgical elements and supported learning and simulation of the procedure.
 c209M02N15 - c209M01N17: Course covered surgical procedure and navigation using 3DP model
 c209M02N18 - c209M01N17: Course covered resection range using 3DP model
@@ -2319,7 +2419,6 @@ c209M01N06 - c209M02N29: Course covered surgical treatment strategies using 3DV 
 h001M01EK03,h001M01TP15,be_transferred_by,1,c221M01N05 - c221M02N19: These texts are used to fine-tune the Llama2 LLM,SIC 20-39 - Manufacturing,Aggregation,s003M01EK03,s003M01TP15
 h001M01EK04,h001M01TP07,be_transferred_by,2,"c215M01N01 - c215M01N11: Physiological knowledge of pulse pressure is captured through PPR.
 c215M01N02 - c215M01N11: PPR encodes the dependence between systolic and diastolic BP.",SIC 20-39 - Manufacturing,Aggregation,s003M01EK04,s003M01TP07
-h001M01EK05,h001M01TK10,translate_into,1,c213M02N04 - c213M02N08: This model is used for predictions and decision-making during the next time interval,SIC 20-39 - Manufacturing,Aggregation,s003M01EK05,s003M01TK10
 h001M01EK05,h001M01TP13,be_transferred_by,3,"c213M01N07 - c213M01N24: Breast cancer prediction models trained by one provider are tested at other provider nodes.
 c213M01N08 - c213M01N25: Parkinson’s disease classification models are evaluated across provider datasets.
 c213M01N09 - c213M01N26: Supplier selection models are shared and evaluated across healthcare-provider nodes.",SIC 20-39 - Manufacturing,Aggregation,s003M01EK05,s003M01TP13
@@ -2338,7 +2437,6 @@ c216M02N10 - c216M01N35: These surveys evaluated participants' learning self‑e
 c216M02N11 - c216M01N35: Baseline assessment... included... opioid‑related knowledge [measured by OOKS].",SIC 20-39 - Manufacturing,Aggregation,s003M01EK06,s003M01TP03
 h001M01EK06,h001M01TP09,be_transferred_by,2,"c219M01N10 - c219M01N20: The platform provided 55 assessment questions based on knowledge points.
 c219M02N03 - c219M01N20: The KG-DTPNursing platform incorporated a total of... 55 assessment questions designed to evaluate knowledge point mastery",SIC 20-39 - Manufacturing,Aggregation,s003M01EK06,s003M01TP09
-h001M01EK07,h001M01EK05,be_derived_from,1,c213M02N06 - c213M02N04: Each node benchmarks the performance of received models...the accuracy of the model is evaluated against validation data,SIC 20-39 - Manufacturing,Aggregation,s003M01EK07,s003M01EK05
 h001M01EK07,h001M01TP15,be_transferred_by,3,"c213M01N14 - c213M01N23: Cancer-model accuracy results support comparison and identification of high-performing models.
 c213M01N16 - c213M01N23: Supplier-model accuracy results support cross-provider benchmarking.
 c213M01N19 - c213M01N23: The best-performing supplier model is identified through cross-provider comparison.",SIC 20-39 - Manufacturing,Aggregation,s003M01EK07,s003M01TP15
@@ -2572,9 +2670,6 @@ h001M01TP01,h001M01THR13,complement,1,c209M01N17 - c209M01N13: The tangible pati
 h001M01TP01,h001M01TK05,evaluate,1,c209M01N17 - c209M01N07: Post-teaching tests evaluated complex reasoning and surgical application following 3DP teaching.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP01,s003M01TK05
 h001M01TP01,h001M01TK06,evaluate,1,c209M01N17 - c209M01N09: The questionnaire explicitly assessed understanding of vascular spatial relationships.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP01,s003M01TK06
 h001M01TP03,h001M01ED11,depend_on,1,c214M01N16 - c214M01N36: VR participation requires physical and visual suitability.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP03,s003M01ED11
-h001M01TP03,h001M01EK09,adopt,3,"c214M01N17 - c214M01N04: AIVR uses a localized knowledge repository to support accurate safety guidance.
-c214M02N26 - c214M01N04: The domain-specific knowledge base was developed using official operation manuals and safety training handbooks
-c214M02N26 - c214M02N06: Detailed professional safety documents were crafted to describe the training scenarios and subsequently uploaded to the knowledge base",SIC 20-39 - Manufacturing,Aggregation,s003M01TP03,s003M01EK09
 h001M01TP03,h001M01LI10,be_constrained_by,1,c212M02N22 - c212M01N34: HoloLens/AR applications involve data breach and privacy risks.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP03,s003M01LI10
 h001M01TP03,h001M01THR14,cannot_fully_replace,1,"c225M02N19 - c225M02N18: ""SUS score of 58.4...indicating that it faces significant usability issues when used in a tabletop exercise""",SIC 20-39 - Manufacturing,Aggregation,s003M01TP03,s003M01THR14
 h001M01TP04,h001M01EK01,adopt,1,c212M01N15 - c212M01N01: Virtual scenarios were parameterized by ethical dilemmas and required decisions based on ethical principles.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP04,s003M01EK01
@@ -2594,11 +2689,9 @@ h001M01TP07,h001M01ED06,depend_on,2,"c215M02N18 - c215M02N30: IEEE Standard for 
 c215M02N18 - c215M02N31: These metrics underline that the proposed model consistently delivers accurate BP measurements, meeting or closely aligning with AAMI standards.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP07,s003M01ED06
 h001M01TP07,h001M01ED07,depend_on,1,c221M01N12 - c221M01N28: The available palm tree manuscripts and their translated content provided the foundation for training the traditional medicine Llama2-13B knowledge base.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP07,s003M01ED07
 h001M01TP07,h001M01ED10,depend_on,1,"c215M02N18 - c215M02N33: For incremental data in the CAS-BP dataset, the initial training dataset comprised three samples collected on day D1... each day separated by seven days.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP07,s003M01ED10
-h001M01TP07,h001M01EK04,evaluate,1,c215M01N11 - c215M01N02: The PPR term measures deviations between predicted SBP-DBP differences and individual pulse pressure.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP07,s003M01EK04
 h001M01TP07,h001M01TE06,adopt,1,c213M02N14 - c213M02N17: Federated Learning (FL) is a decentralized approach...utilizes blockchain technology to distribute model storage across network nodes,SIC 20-39 - Manufacturing,Aggregation,s003M01TP07,s003M01TE06
 h001M01TP07,h001M01TP04,be_composed_of,2,"c201M01N15 - c201M01N17: Structured diagnostic prompting was one of the framework's three implemented cognitive-support functions.
 c201M01N15 - c201M01N18: Workflow-contextualized feedback was one of the framework's three implemented cognitive-support functions.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP07,s003M01TP04
-h001M01TP08,h001M01EK01,adopt,1,c212M01N16 - c212M01N01: AI Assistants supported decisions based on ethical principles.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP08,s003M01EK01
 h001M01TP08,h001M01LI06,be_constrained_by,1,c212M01N16 - c212M01N38: The use of AI in medical education requires additional resources and equal student access to the technologies.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP08,s003M01LI06
 h001M01TP08,h001M01TE05,adopt,1,c214M01N19 - c214M01N33: Windows Speech Recognition enables spoken interaction with the LLM.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP08,s003M01TE05
 h001M01TP09,h001M01ED05,depend_on,2,"c222M01N18 - c222M01N41: The papers selected for Doccano annotation came from osteosarcoma literature collected through PubMed.
@@ -2633,7 +2726,6 @@ h001M01TP09,h001M01TK02,evaluate,2,"c219M01N20 - c219M01N13: Knowledge points we
 c219M01N20 - c219M02N08: Problem system layer: Bridges theory and practice by challenging students with clinical problems, thereby developing their clinical reasoning and competency",SIC 20-39 - Manufacturing,Aggregation,s003M01TP09,s003M01TK02
 h001M01TP09,h001M01TK10,evaluate,1,"c219M01N20 - c219M02N10: Problem system layer: Bridges theory and practice by challenging students with clinical problems, thereby developing their clinical reasoning and competency",SIC 20-39 - Manufacturing,Aggregation,s003M01TP09,s003M01TK10
 h001M01TP10,h001M01ED07,depend_on,1,c221M01N11 - c221M01N28: Translation and digitization required the availability of the palm tree manuscripts used as source material.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP10,s003M01ED07
-h001M01TP10,h001M01EK02,adopt,1,c221M01N11 - c221M01N03: The translation and digitization workflow uses ancient palm tree manuscripts as its source material.,SIC 20-39 - Manufacturing,Aggregation,s003M01TP10,s003M01EK02
 h001M01TP11,h001M01ED05,depend_on,9,"c218M01N21 - c218M01N31: Live online engagement is vulnerable to unreliable internet connectivity.
 c218M01N21 - c218M01N32: Participation in synchronous online sessions requires digital-device access and supporting infrastructure, which the paper identifies as barriers to online engagement.
 c218M01N22 - c218M01N31: Guided online discussions form part of online engagement, which can be hindered by unreliable internet connectivity.
@@ -2643,7 +2735,6 @@ c218M01N23 - c218M01N32: Virtual case discussions require access to digital devi
 c218M01N24 - c218M01N31: Online development and presentation of institutional research projects depended on online engagement, which unreliable connectivity can impede.
 c218M01N24 - c218M01N32: Online research-project development and presentation require access to digital devices and supporting infrastructure.
 c218M02N35 - c218M02N51: Live meetings depend on stable internet connectivity",SIC 20-39 - Manufacturing,Aggregation,s003M01TP11,s003M01ED05
-h001M01TP11,h001M01EK09,evaluate,1,c218M02N35 - c218M02N01: Live meetings were rated by 90.4% as very high quality,SIC 20-39 - Manufacturing,Aggregation,s003M01TP11,s003M01EK09
 h001M01TP11,h001M01LI02,be_constrained_by,1,c211M01N15 - c211M02N17: Conflict stressors significantly reduce physicians' knowledge-contribution behaviors,SIC 20-39 - Manufacturing,Aggregation,s003M01TP11,s003M01LI02
 h001M01TP11,h001M01LI03,be_constrained_by,2,"c211M01N13 - c211M01N22: Stress-related cognitive depletion impairs physicians' ability to organize professional experiences and reduces the frequency or quality of contributions.
 c211M01N15 - c211M02N16: Persistent anxiety and fear deplete limited cognitive resources, leading physicians into a state of physical and mental exhaustion",SIC 20-39 - Manufacturing,Aggregation,s003M01TP11,s003M01LI03
