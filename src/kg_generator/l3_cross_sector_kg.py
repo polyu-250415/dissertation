@@ -7,7 +7,7 @@ class CrossSectorKg:
 
     def __init__(self):
         self.sector_norm_path = "../data/graph/case_study/sector_3_norm_nodes/"
-        self.cross_sector_raw_path = "../data/graph/case_study/cross_sector_raw_m/"
+        self.cross_sector_raw_path = "../data/graph/case_study/cross_sectors/"
 
         if not os.path.exists(self.cross_sector_raw_path):
             os.makedirs(self.cross_sector_raw_path, exist_ok=True)

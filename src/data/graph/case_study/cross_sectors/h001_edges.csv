@@ -34,8 +34,6 @@ c004M01N10 - c004M01N02: The seven critical hazards were training objectives, an
 c004M01N10 - c004M01N03: The seven critical hazards were training objectives, and the VR training objectives were developed based on the OSHA and WorkSafe guidelines.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01EK01
 h001M01EK02,h001M01THR11,be_transferred_by,1,c002M01N02 - c002M01N31: The conventional presentation demonstrated fall risks.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01THR11
 h001M01EK02,h001M01THR12,be_transferred_by,1,c001M01N05 - c001M01N19: Static pictures were used to present wartime sites and timelines.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01THR12
-h001M01EK02,h001M01THR13,be_transferred_by,2,"c015M01N03 - c015M01N19: Real-world examples and case-based activities were used to enhance learning.
-c015M01N04 - c015M01N19: Students learned about industry needs through case studies.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01THR13
 h001M01EK02,h001M01THR15,be_transferred_by,3,"c001M01N02 - c001M01N17: Total station and film photography retained elevations and partial depth data.
 c008M02N03 - c008M02N17: Traditional Chinese text segmentation algorithms mainly rely on loading domain dictionaries
 c009M01N07 - c009M01N20: Project sheets are prepared and incorporated during manual proposal preparation.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01THR15
@@ -85,9 +83,6 @@ c016M01N06 - c016M01N21: The PowerApps application visualizes information from p
 c016M01N07 - c016M01N21: The PowerApps application visualizes information from preceding phases, including the hazard information determined through IPERC.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP10
 h001M01EK02,h001M01TP11,be_transferred_by,2,"c001M01N04 - c001M01N26: The module connects historical narrative with interactive experience.
 c014M01N03 - c014M01N23: Some projects use a portal through which project news is shared.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP11
-h001M01EK02,h001M01TP12,be_transferred_by,3,"c015M01N01 - c015M01N24: Students reported better retention of course material through ABL and practical application.
-c015M01N02 - c015M01N24: ABL was reported to improve understanding of complex concepts.
-c015M01N03 - c015M01N27: YouTube was used to show scaffolding as a concrete example.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP12
 h001M01EK02,h001M01TP13,be_transferred_by,3,"c006M01N05 - c006M01N18: The dedicated web application was developed to streamline questionnaires and was used to tabulate and analyse their data.
 c006M02N03 - c006M02N25: A dedicated web application has been developed separately for the purpose of streamlining questionnaires and is used to tabulate and analyse the data.
 c010M01N11 - c010M01N17: Survey responses were analyzed using descriptive statistics to categorize participants.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01EK02,s001M01TP13
@@ -238,9 +233,6 @@ h001M01KH06,h001M01THR16,participate_in,3,"c002M01N28 - c002M01N32: The same eig
 c005M01N12 - c005M01N18: Three experts conducted the Delphi probability-impact analysis.
 c009M02N19 - c009M02N27: Five experts were selected based on their extensive professional experience in construction procurement and bid preparation",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH06,s001M01THR16
 h001M01KH06,h001M01THR17,participate_in,1,"c005M02N14 - c005M02N23: Additionally, the exam was confirmed by experts in the field of construction safety, as five experts solved it with experience ranging from five to twenty-five years.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH06,s001M01THR17
-h001M01KH06,h001M01TP12,participate_in,1,c015M02N03 - c015M01N24: Future potential employers and industry professionals were consulted to assess whether students demonstrated improved industry readiness,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH06,s001M01TP12
-h001M01KH06,h001M01TP14,participate_in,2,"c015M02N03 - c015M02N11: We have industry visits, the industry educators come, and we do case studies.
-c015M02N03 - c015M02N10: Future potential employers and industry professionals were consulted to assess whether students demonstrated improved industry readiness",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH06,s001M01TP14
 h001M01KH07,h001M01THR05,participate_in,5,"c005M01N11 - c005M01N16: Five safety managers currently supervising bridge constructions participated in the interviews.
 c005M01N11 - c005M02N20: Interviews with safety managers who are currently working in bridge construction projects were conducted in Egypt. In total, five interviews were conducted with safety managers.
 c008M01N15 - c008M01N20: Management personnel are a source of experiential safety knowledge, while interviews are identified as a traditional domain-knowledge acquisition method.
@@ -271,16 +263,9 @@ h001M01KH08,h001M01TP07,participate_in,1,c009M01N19 - c009M01N25: The decision a
 h001M01KH10,h001M01TP05,participate_in,1,"c017M02N11 - c017M02N14: The authors (researchers) conceptualized and designed the IoT‑driven methodology, thus they participate in its development.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH10,s001M01TP05
 h001M01KH10,h001M01TP06,participate_in,2,"c006M02N18 - c006M01N16: The researchers attended each worker's job site and recorded their work status on video.
 c006M02N18 - c006M02N27: The workload is estimated by combining the posture information obtained from the wearable sensor and the hand weight obtained from the captured video.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH10,s001M01TP06
-h001M01KH11,h001M01THR11,participate_in,1,c015M02N01 - c015M01N15: Six CPM students along with two tutors participated in a focus group discussion.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH11,s001M01THR11
-h001M01KH11,h001M01THR13,participate_in,1,c015M01N12 - c015M01N18: Industry educators participated in the course's industry-oriented activities.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH11,s001M01THR13
-h001M01KH11,h001M01THR14,participate_in,1,c015M02N01 - c015M02N07: Six CPM students along with two tutors participated in a focus group discussion.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH11,s001M01THR14
 h001M01KH11,h001M01THR17,participate_in,1,c010M02N03 - c010M02N04: The study employs a learning style questionnaire... to assess individual learning preferences.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH11,s001M01THR17
 h001M01KH11,h001M01TP03,participate_in,1,"c010M02N03 - c010M01N19: educators are turning to virtual learning environments, such as mixed reality (MR), to provide engaging learning experiences",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH11,s001M01TP03
-h001M01KH11,h001M01TP12,participate_in,1,"c015M02N01 - c015M01N24: Six CPM students along with two tutors participated in a focus group discussion.
-c015M02N01 - c015M02N15: Six CPM students along with two tutors participated in a focus group discussion.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH11,s001M01TP12
-h001M01KH11,h001M01TP14,participate_in,1,c015M02N01 - c015M02N13: Six CPM students along with two tutors participated in a focus group discussion.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH11,s001M01TP14
-h001M01KH12,h001M01THR14,participate_in,2,"c007M02N14 - c007M01N14: knowledge dissemination through workforce meetings
-c015M01N13 - c015M01N17: Groupmates participated in group activities through which students learned from one another.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH12,s001M01THR14
+h001M01KH12,h001M01THR14,participate_in,1,c007M02N14 - c007M01N14: knowledge dissemination through workforce meetings,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH12,s001M01THR14
 h001M01KH13,h001M01THR09,participate_in,1,"c009M01N16 - c009M01N23: Post-bid review is conducted to gather feedback, assess lessons learned, and improve future submissions
 c009M01N13 - c009M01N23: Post-bid review is conducted to gather feedback, assess lessons learned, and improve future submissions
 c009M01N17 - c009M01N23: Post-bid review is conducted to gather feedback, assess lessons learned, and improve future submissions",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH13,s001M01THR09
@@ -297,17 +282,14 @@ c001M02N09 - c001M02N16: A dynamic narrative system is proposed under the standa
 h001M01KH14,h001M01TP11,participate_in,2,"c014M01N17 - c014M01N22: Collaborative platforms facilitate stakeholder knowledge transfer.
 c014M01N17 - c014M01N23: The portal supports stakeholder communication.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH14,s001M01TP11
 h001M01KH14,h001M01TP14,participate_in,1,c014M01N17 - c014M01N21: AI-based KM initiatives foster stakeholder collaboration.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH14,s001M01TP14
-h001M01KH15,h001M01THR14,participate_in,1,"c015M02N04 - c015M02N07: A person stated, 'Being in a group make some people do nothing and put much pressure on others. We decide member one must do something and member two must do something else. It is great for every person to be involved.'",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH15,s001M01THR14
 h001M01KH15,h001M01TP03,participate_in,5,"c003M02N07 - c003M02N10: The training experience was designed to involve about 50 participants using the CAVE system...
 c010M01N10 - c010M01N19: Participants were immersed in the MR learning environment through the AR head-mounted display.
 c010M01N10 - c010M01N20: Participants interacted with the Explore Jobsite Scene.
 c010M01N10 - c010M01N21: Participants interacted with the Sensor Tutorial Scene.
 c010M01N10 - c010M01N22: Participants interacted with the Sensor Implementation Scene.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH15,s001M01TP03
 h001M01KH15,h001M01TP06,participate_in,1,c010M01N10 - c010M01N23: Gaze and head measurements were recorded while participants used HoloLens 2.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH15,s001M01TP06
-h001M01KH15,h001M01TP12,participate_in,1,"c015M02N04 - c015M01N24: A person stated, 'Being in a group make some people do nothing and put much pressure on others. We decide member one must do something and member two must do something else. It is great for every person to be involved.'",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH15,s001M01TP12
 h001M01KH15,h001M01TP13,participate_in,2,"c003M02N07 - c003M02N11: A pre-experimental survey... to be completed before the beginning of training session...
 c010M01N10 - c010M01N17: The participating students completed learning-preference surveys.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH15,s001M01TP13
-h001M01KH15,h001M01TP14,participate_in,1,c015M02N04 - c015M02N13: I learn from my groupmates.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH15,s001M01TP14
 h001M01KH16,h001M01THR07,participate_in,1,c007M01N10 - c007M01N17: Employees participate in people-based KMP and staff mentoring.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH16,s001M01THR07
 h001M01KH16,h001M01THR14,participate_in,1,c007M01N10 - c007M01N14: Employees participate in people-based KMP and workforce meetings.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH16,s001M01THR14
 h001M01KH16,h001M01THR17,participate_in,3,"c007M01N10 - c007M01N16: Employees participate in knowledge dissemination through discussions.
@@ -315,18 +297,9 @@ c007M01N10 - c007M01N18: Training programmes and KM training are directed to the
 c007M01N10 - c007M01N20: Two-way communication involves employees and managers.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH16,s001M01THR17
 h001M01KH16,h001M01TP10,participate_in,1,c007M01N10 - c007M01N36: Employees supply organizational knowledge and KS6 stores lessons learned.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH16,s001M01TP10
 h001M01KH16,h001M01TP14,participate_in,1,c007M01N10 - c007M01N37: KD4 emphasizes dissemination involving management teams and employees.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KH16,s001M01TP14
-h001M01KL01,h001M01THR11,participate_in,4,"c002M01N30 - c002M01N31: The trainee cohort received the conventional classroom presentation.
-c002M02N18 - c002M02N20: The cohort was randomly divided into 3 groups of 20 trainees each and were subjected to different modes of training
-c015M01N14 - c015M01N15: All surveyed students had previous exposure to conventional lecture-based education.
-c015M02N02 - c015M01N15: A significant majority of students (95%) expressed a preference for ABL over traditional lecture-based learning",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01THR11
-h001M01KL01,h001M01THR13,participate_in,3,"c015M01N14 - c015M01N19: Students reported undertaking case studies as industry-oriented activities.
-c015M01N14 - c015M01N20: Project-based learning was part of the ABL methodologies experienced by students.
-c015M01N14 - c015M01N22: The campus implemented authentic and experiential learning for CPM students.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01THR13
-h001M01KL01,h001M01THR14,participate_in,3,"c015M01N14 - c015M01N17: Students actively participated in discussions and group activities.
-c015M01N14 - c015M01N21: Learners actively contributed to course content and activities.
-c015M02N02 - c015M02N07: The first two cohorts of MSc. Construction Project Management students at the London campus were participants in the study",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01THR14
-h001M01KL01,h001M01THR17,participate_in,2,"c010M01N41 - c010M02N04: Participants were required to provide their consent, after which they were immersed in the learning environment.
-c015M01N14 - c015M01N16: Students studied one module at a time under the block-teaching structure.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01THR17
+h001M01KL01,h001M01THR11,participate_in,2,"c002M01N30 - c002M01N31: The trainee cohort received the conventional classroom presentation.
+c002M02N18 - c002M02N20: The cohort was randomly divided into 3 groups of 20 trainees each and were subjected to different modes of training",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01THR11
+h001M01KL01,h001M01THR17,participate_in,1,"c010M01N41 - c010M02N04: Participants were required to provide their consent, after which they were immersed in the learning environment.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01THR17
 h001M01KL01,h001M01TP03,participate_in,6,"c002M01N30 - c002M01N33: The trainee cohort received the AR training condition.
 c002M02N18 - c002M02N24: A cohort of 60 trainees enrolled in construction safety and risk management at Monash University were employed for the construction safety training
 c002M02N18 - c002M02N25: A cohort of 60 trainees enrolled in construction safety and risk management at Monash University were employed for the construction safety training
@@ -335,16 +308,8 @@ c010M01N41 - c010M01N20: In the Explore Jobsite Scene, students observed constru
 c010M01N41 - c010M01N21: Students interacted with the Sensor Tutorial Scene, which provided step-by-step guidance for implementing five sensing technologies.
 c010M01N41 - c010M01N22: In the Sensor Implementation Scene, students implemented a selected sensor on a selected activity to address an identified risk.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01TP03
 h001M01KL01,h001M01TP06,participate_in,1,c010M01N41 - c010M01N23: Students performed the MR learning activities while their fixations and head-origin measurements were recorded by HoloLens 2.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01TP06
-h001M01KL01,h001M01TP12,participate_in,3,"c015M01N14 - c015M01N24: The first two CPM cohorts participated after substantial exposure to ABL.
-c015M02N02 - c015M01N24: The first two cohorts of MSc. Construction Project Management students at the London campus were participants in the study after completing three or four modules
-c015M02N02 - c015M02N15: 82% of respondents reported feeling more actively involved in discussions, group activities, and problem-solving exercises compared to their previous educational experiences.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01TP12
 h001M01KL01,h001M01TP13,participate_in,2,"c002M01N30 - c002M01N35: Trainees provided online questionnaire responses during the demonstrations.
 c010M01N41 - c010M01N17: Students completed the learning-preference survey before their learning-preference classifications were determined.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01TP13
-h001M01KL01,h001M01TP14,participate_in,4,"c015M02N02 - c015M02N13: I learn from my groupmates.
-c015M02N02 - c015M02N10: Using real-world applications, interactive role-plays, industry cases, and technology-driven simulations
-c015M02N02 - c015M02N11: We have industry visits, the industry educators come, and we do case studies.
-c015M02N02 - c015M02N12: Using real-world applications, interactive role-plays, industry cases, and technology-driven simulations
-c015M02N02 - c015M02N14: 82% of respondents reported feeling more actively involved in discussions, group activities, and problem-solving exercises compared to their previous educational experiences.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01KL01,s001M01TP14
 h001M01KL02,h001M01THR11,participate_in,4,"c002M02N19 - c002M02N20: The training aimed to educate the trainees on the different fall risks in housing construction
 c002M02N19 - c002M02N21: Current safety training sessions are delivered using traditional classroom lectures, textbook learning, and on-site safety briefings
 c005M02N16 - c005M01N15: Traditional training is lecture-based training that is heavily reliant on slides, lecture notes, and multimedia, with the instructor mostly beginning to demonstrate the slide; consequently, trainees are considered passive learners.
@@ -443,13 +408,11 @@ h001M01THR10,h001M01OD02,depend_on,1,"c012M02N28 - c012M02N48: ""The effectivene
 h001M01THR10,h001M01OD06,depend_on,1,"c012M02N28 - c012M02N49: ""The effectiveness of CoPs varies significantly, heavily depending on organizational culture, leadership support, and individual commitment""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR10,s001M01OD06
 h001M01THR11,h001M01ED01,depend_on,2,"c002M02N20 - c002M02N35: Training content was based on an Australian industrial standard—Preventing Falls in Housing Construction—Code of Practice
 c002M02N20 - c002M02N36: The construction industry is among the highest contributors to work-related injuries and on-the-job fatalities among all major industries",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01ED01
-h001M01THR11,h001M01ED03,depend_on,1,"c015M01N15 - c015M02N31: The students also collaborated on the solutions for challenges that arise in using ABL, like diverse backgrounds.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01ED03
-h001M01THR11,h001M01ED10,depend_on,1,"c015M01N15 - c015M02N30: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01ED10
 h001M01THR11,h001M01EK01,evaluate,1,c011M01N15 - c011M01N01: The post-training questionnaire measured declarative safety knowledge immediately after training.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01EK01
 h001M01THR11,h001M01LI01,be_constrained_by,3,"c002M01N31 - c002M01N44: The paper used two-week gaps because participants were expected to forget most previously presented content.
 c002M01N31 - c002M01N47: Traditional methods did not translate into long-term information retention.
 c002M02N20 - c002M02N39: Most students would have forgotten about 80% of the content in a week's time",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01LI01
-h001M01THR11,h001M01LI04,be_constrained_by,17,"c002M01N31 - c002M01N46: Traditional methods were associated with insufficient absorption of information.
+h001M01THR11,h001M01LI04,be_constrained_by,15,"c002M01N31 - c002M01N46: Traditional methods were associated with insufficient absorption of information.
 c002M02N20 - c002M01N46: These training methods are very broad in their approach and lack engagement, which results in the insufficient absorption of information by construction workers
 c002M02N20 - c002M02N38: Motivation is an essential factor in translating the concepts taught in training to the workplace
 c002M02N20 - c002M02N40: Motivation was found to be the more effective factor for safety performance practice on the job
@@ -463,9 +426,7 @@ c005M01N15 - c005M02N51: Traditional training methods...criticized for the lack 
 c005M01N15 - c005M02N52: Not only does this risk the lack of knowledge due to the trainees' emerging sense of exclusion but also risks counterproductive learning.
 c005M01N15 - c005M02N55: Construction workers were incapable of identifying more than 50% of the hazards
 c011M01N15 - c011M01N33: the traditional training methods lack immersion
-c011M01N15 - c011M01N34: traditional training methods lack immersion and can cause ethical issues in some cases
-c015M01N15 - c015M01N43: Students contrasted interactive methods with tiring, low-focus passive listening.
-c015M01N15 - c015M02N33: Graduates often encounter gaps between theoretical knowledge and practical industry competencies, which hinders their immediate employability.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01LI04
+c011M01N15 - c011M01N34: traditional training methods lack immersion and can cause ethical issues in some cases",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01LI04
 h001M01THR11,h001M01OD01,depend_on,1,c002M02N20 - c002M02N33: It is necessary to increase their safety awareness through systematic safety training,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01OD01
 h001M01THR11,h001M01OD02,depend_on,1,c014M01N19 - c014M01N31: Regular training sessions are supported by leadership.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01OD02
 h001M01THR11,h001M01OD05,depend_on,1,c002M02N20 - c002M02N34: A study exploring the reasons behind unsafe work behavior on construction sites describes the lack of safety orientation and training as one of the leading causes of unsafe behavior,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR11,s001M01OD05
@@ -488,27 +449,19 @@ c011M01N18 - c011M01N33: the traditional training methods lack immersion
 c011M01N18 - c011M01N34: traditional training methods lack immersion and can cause ethical issues in some cases",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR12,s001M01LI04
 h001M01THR12,h001M01LI09,be_constrained_by,1,c004M01N15 - c004M02N37: This situation is due to the lack of proper implementation of safety practices in the industry,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR12,s001M01LI09
 h001M01THR12,h001M01LI12,be_constrained_by,1,c001M02N32 - c001M02N28: Excessive commercial operation would decrease the number of EEG positive signals by 40%,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR12,s001M01LI12
-h001M01THR13,h001M01EK02,evaluate,1,c015M01N22 - c015M01N02: Authentic assessment required students to apply and demonstrate academic concepts in realistic contexts.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01EK02
 h001M01THR13,h001M01LI04,be_constrained_by,1,c010M01N16 - c010M01N33: Practical construction education was hindered by limited access to construction sites.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01LI04
 h001M01THR13,h001M01LI07,be_constrained_by,1,c010M01N16 - c010M01N34: Hands-on instruction was hindered by the high costs of sensing technologies.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01LI07
 h001M01THR13,h001M01LI08,be_constrained_by,1,"c012M02N22 - c012M01N42: ""Traditional reliance on informal, on-the-job learning... is increasingly insufficient for industry-wide tacit knowledge preservation""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01LI08
 h001M01THR13,h001M01LI10,be_constrained_by,2,"c007M02N23 - c007M01N29: when foremen resign, the company risks losing the expertise they have accumulated and applied to company projects
 c012M02N22 - c012M02N60: ""Traditional reliance on informal, on-the-job learning... is increasingly insufficient for industry-wide tacit knowledge preservation""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01LI10
 h001M01THR13,h001M01LI15,be_constrained_by,1,c006M01N12 - c006M01N23: Uniform introduction was difficult because the target audience and suitable introduction approaches were unclear.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01LI15
-h001M01THR13,h001M01TK13,evaluate,1,"c015M01N22 - c015M01N07: Industry-relevant assessment was used to examine practical, professionally relevant learning.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR13,s001M01TK13
-h001M01THR14,h001M01ED03,depend_on,1,"c015M02N07 - c015M02N31: The students also collaborated on the solutions for challenges that arise in using ABL, like diverse backgrounds.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01ED03
-h001M01THR14,h001M01ED10,depend_on,1,"c015M02N07 - c015M02N30: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01ED10
 h001M01THR14,h001M01LI05,be_constrained_by,2,"c008M01N18 - c008M01N42: Traditional knowledge-acquisition methods can produce incomplete data.
 c008M01N18 - c008M01N45: there is also a problem of strong subjectivity and classification errors",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01LI05
 h001M01THR14,h001M01LI08,be_constrained_by,2,"c008M01N18 - c008M01N41: Traditional domain-knowledge acquisition methods consume substantial time and cost.
 c008M01N18 - c008M02N39: manual text classification tasks require a lot of time and personnel",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01LI08
-h001M01THR14,h001M01LI09,be_constrained_by,3,"c015M01N17 - c015M01N40: Group work was difficult when some members did not contribute equally.
-c015M01N17 - c015M01N41: Group dynamics were identified as a participation and engagement challenge.
-c015M02N07 - c015M01N41: Group work is challenging when some individuals do not contribute equally.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01LI09
 h001M01THR14,h001M01LI10,be_constrained_by,1,c007M01N14 - c007M01N28: People-based dissemination depends on employees while SMCCs face high turnover.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01LI10
 h001M01THR14,h001M01LI13,be_constrained_by,1,c008M01N18 - c008M01N43: Traditional knowledge-acquisition methods are affected by subjective interference.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01LI13
 h001M01THR14,h001M01OD02,depend_on,1,c014M01N20 - c014M01N31: Workshops are supported by leadership.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01OD02
-h001M01THR14,h001M01OD04,depend_on,1,c015M01N17 - c015M01N36: A participant connected small classes with more interaction and one-to-one communication.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01OD04
 h001M01THR14,h001M01OD06,depend_on,1,c007M01N14 - c007M01N23: People-based meeting dissemination requires a knowledge-sharing culture.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR14,s001M01OD06
 h001M01THR15,h001M01ED01,depend_on,1,"c008M02N11 - c008M02N34: the State Administration of Work Safety, the websites of various administrative departments, the safety management network, and the municipal government website",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01THR15,s001M01ED01
 h001M01THR15,h001M01ED06,depend_on,2,"c009M01N20 - c009M02N56: Every bid must be tailored to the client's specific requirements
@@ -616,10 +569,7 @@ c010M02N04 - c010M02N01: Questionnaires on learning preferences were used to ass
 h001M01TK02,h001M01KH05,be_shared_by,3,"c012M01N08 - c012M01N14: The senior structural engineer shared innovative and adaptive responses to structural failures.
 c012M01N09 - c012M01N15: The retiring project engineer narrated critical decisions made under uncertain conditions.
 c012M02N05 - c012M01N16: ""A retiring project engineer shared candid stories about challenging projects""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01KH05
-h001M01TK02,h001M01KH06,be_shared_by,1,"c015M01N10 - c015M02N03: Everything is unique for me, compared to back in my country.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01KH06
 h001M01TK02,h001M01KH07,be_documented_partially_by,1,c007M02N03 - c007M02N06: lessons learned created and reused by construction companies,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01KH07
-h001M01TK02,h001M01KH11,be_shared_by,1,c015M01N10 - c015M01N12: Industry educators participated in activities through which students learned about industry requirements.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01KH11
-h001M01TK02,h001M01KL01,be_absorbed_by,1,c015M01N10 - c015M01N14: A student reported gaining knowledge of the industry and its requirements.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01KL01
 h001M01TK02,h001M01KL04,be_absorbed_by,1,"c012M01N08 - c012M01N17: ""A mentorship scheme was also established, pairing retiring engineers with mid-career colleagues to facilitate direct knowledge transfer through personalized storytelling sessions and narrative-based mentorship meetings""
 c012M02N05 - c012M01N17: ""A mentorship scheme was also established, pairing retiring engineers with mid-career colleagues to facilitate direct knowledge transfer through personalized storytelling sessions and narrative-based mentorship meetings""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01KL04
 h001M01TK02,h001M01KL09,be_absorbed_by,2,"c014M02N09 - c014M01N18: Lessons learned absorbed by team members during training
@@ -632,11 +582,9 @@ h001M01TK02,h001M01LI10,be_difficult_to_capture_due_to,1,c014M02N09 - c014M01N41
 h001M01TK02,h001M01THR06,be_transferred_by,1,"c012M01N08 - c012M02N30: ""Critical incident technique (CIT)"" captures knowledge from specific events",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01THR06
 h001M01TK02,h001M01THR07,be_transferred_by,2,"c012M01N08 - c012M01N27: Narrative mentorship transferred retiring engineers' career experience to mid-career colleagues.
 c012M01N09 - c012M01N27: Narrative mentorship supported transfer of failure lessons and risk-management experience.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01THR07
-h001M01TK02,h001M01THR13,be_transferred_by,1,c015M01N10 - c015M01N18: Industry visits helped students understand the industry and its requirements.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01THR13
 h001M01TK02,h001M01TP10,be_captured_by,2,"c007M02N03 - c007M02N28: Storing lesson learned into the database (KS6)
 c012M01N08 - c012M01N28: ""The proposed framework for a Storytelling-based Knowledge Management System (SToKMS) provides a structured methodology specifically designed to effectively capture, store, share, and utilize tacit knowledge""
 c012M02N05 - c012M01N28: ""The proposed framework for a Storytelling-based Knowledge Management System (SToKMS) provides a structured methodology specifically designed to effectively capture, store, share, and utilize tacit knowledge""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01TP10
-h001M01TK02,h001M01TP14,be_transferred_by,1,"c015M01N10 - c015M02N11: We have industry visits, the industry educators come, and we do case studies. While doing all these industry-oriented activities, we know more about the industry.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK02,s001M01TP14
 h001M01TK04,h001M01KH04,be_shared_by,1,"c017M02N08 - c017M02N10: The tacit judgment on when to open windows/doors is held by building occupants, as they are the ones who perform these actions.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK04,s001M01KH04
 h001M01TK04,h001M01KH05,be_shared_by,1,c012M01N01 - c012M01N11: The experienced geotechnical engineer shared his intuitive problem-solving approach.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK04,s001M01KH05
 h001M01TK04,h001M01KH13,be_shared_by,1,c009M01N12 - c009M01N16: Beta's bid practice was reported to rely on the Bid Manager's intuition.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK04,s001M01KH13
@@ -651,8 +599,6 @@ h001M01TK04,h001M01TP10,be_captured_by,1,"c012M01N01 - c012M01N28: ""The propose
 h001M01TK05,h001M01KH01,be_shared_by,1,c001M01N11 - c001M01N12: The low return rate of indigenous people is directly associated with the interruption risk for ICH skills.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK05,s001M01KH01
 h001M01TK05,h001M01KH02,be_documented_partially_by,1,c001M01N10 - c001M02N10: The craftsmanship process such as wooden construction and rammed earth technology are recorded in sequence,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK05,s001M01KH02
 h001M01TK05,h001M01KH04,be_shared_by,1,c003M01N01 - c003M01N02: The paper locates energy-related choices and building-system use in occupants and users.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK05,s001M01KH04
-h001M01TK05,h001M01KL01,be_absorbed_by,2,"c015M01N09 - c015M01N14: The implemented approach was reported to foster students' digital fluency.
-c015M01N09 - c015M02N02: By fostering critical thinking, practical application of knowledge, and digital fluency, this approach not only improves academic performance but also enhances students' employability prospects.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK05,s001M01KL01
 h001M01TK05,h001M01LI05,be_difficult_to_capture_due_to,1,c001M01N10 - c001M02N29: More than 70% projects are trapped in fragmented data format and system interoperability issues,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK05,s001M01LI05
 h001M01TK05,h001M01LI10,be_difficult_to_capture_due_to,1,c001M01N11 - c001M01N43: ICH skills are explicitly described as facing interruption in inheritance.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK05,s001M01LI10
 h001M01TK05,h001M01TP03,be_captured_by,1,c001M01N10 - c001M01N24: An interactive knowledge graph is constructed to digitalize the recording of craftsmanship process,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK05,s001M01TP03
@@ -662,7 +608,6 @@ c001M01N11 - c001M01N21: The interactive knowledge graph digitizes recorded trad
 h001M01TK05,h001M01TP10,be_captured_by,3,"c001M01N09 - c001M01N20: The wooden-construction craftsmanship process is digitally recorded in sequence.
 c001M01N10 - c001M01N20: The rammed-earth craftsmanship process is digitally recorded in sequence.
 c001M01N11 - c001M01N20: The ICH digital-resource standard is applied to sequentially record wooden-construction and rammed-earth craftsmanship processes, which are instances of the paper's ICH skills.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK05,s001M01TP10
-h001M01TK05,h001M01TP12,be_transferred_by,1,"c015M01N09 - c015M01N24: Using technology in classroom is good... Without it is back to the basics, books and articles.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK05,s001M01TP12
 h001M01TK06,h001M01KH03,be_shared_by,4,"c002M02N07 - c002M02N13: The enhanced ability of construction workers to understand and recognize hazards is fundamental for a high safety performance
 c002M02N07 - c002M02N16: The hazard recognition ability of experienced and novice construction workers was studied by Dzeng et al.
 c002M02N09 - c002M02N14: A VR-based serious game was also used by Choi et al. to evaluate operators' situational awareness during forklift operations
@@ -770,14 +715,12 @@ h001M01TK11,h001M01KH07,be_shared_by,3,"c012M01N04 - c012M01N12: The project man
 c012M01N05 - c012M01N12: The Coordination Conundrum exposed informal handover and escalation routines.
 c012M02N02 - c012M01N12: ""A project manager narrated challenges arising from subcontractor miscommunication""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK11,s001M01KH07
 h001M01TK11,h001M01KH08,be_shared_by,1,c014M02N13 - c014M02N21: Participative decision-making skills held by Top management,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK11,s001M01KH08
-h001M01TK11,h001M01KL01,be_absorbed_by,1,c015M02N42 - c015M02N02: I learn from my groupmates.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK11,s001M01KL01
 h001M01TK11,h001M01KL04,be_absorbed_by,1,"c012M02N02 - c012M01N17: ""A mentorship scheme was also established, pairing retiring engineers with mid-career colleagues to facilitate direct knowledge transfer through personalized storytelling sessions and narrative-based mentorship meetings""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK11,s001M01KL04
 h001M01TK11,h001M01KL09,be_absorbed_by,1,c014M02N13 - c014M01N18: Participative decision-making skills absorbed by team members,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK11,s001M01KL09
 h001M01TK11,h001M01LI10,be_difficult_to_capture_due_to,2,"c012M01N04 - c012M01N38: Formal project documents overlooked subtle interpersonal dynamics.
 c012M02N02 - c012M02N60: ""These methods frequently fail to capture the context-dependent, nuanced, and intuitive nature of tacit knowledge, leaving substantial knowledge assets uncaptured""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK11,s001M01LI10
 h001M01TK11,h001M01THR10,be_transferred_by,1,"c012M02N02 - c012M02N28: ""Communities of practice (CoPs), offer informal settings for peer-to-peer knowledge exchange, encouraging tacit knowledge sharing""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK11,s001M01THR10
 h001M01TK11,h001M01TP10,be_captured_by,1,"c012M02N02 - c012M01N28: ""The proposed framework for a Storytelling-based Knowledge Management System (SToKMS) provides a structured methodology specifically designed to effectively capture, store, share, and utilize tacit knowledge""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK11,s001M01TP10
-h001M01TK11,h001M01TP12,be_transferred_by,1,c015M02N42 - c015M01N24: I learn from my groupmates.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK11,s001M01TP12
 h001M01TK12,h001M01KH05,be_documented_partially_by,1,"c012M01N10 - c012M01N16: ""Several engineers shared stories reflecting the company's culture, teamwork importance, values, traditions, and critical interpersonal dynamics""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK12,s001M01KH05
 h001M01TK12,h001M01KH16,be_shared_by,1,"c016M01N01 - c016M01N13: OHS knowledge and related valuable information are lost when company staff change, locating at least part of that knowledge in personnel.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK12,s001M01KH16
 h001M01TK12,h001M01KL04,be_absorbed_by,1,"c012M01N10 - c012M01N17: ""A mentorship scheme was also established, pairing retiring engineers with mid-career colleagues to facilitate direct knowledge transfer through personalized storytelling sessions and narrative-based mentorship meetings""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK12,s001M01KL04
@@ -796,14 +739,9 @@ c017M01N01 - c017M01N03: Students' presence and situated actions affect the moni
 h001M01TK13,h001M01KH05,be_shared_by,3,"c007M01N01 - c007M01N08: SMCCs draw upon senior-staff expertise.
 c007M01N03 - c007M01N08: Previous-project experience is a knowledge source and senior staff supply specialist expertise.
 c007M02N64 - c007M02N05: drawing upon the expertise of senior staff in construction specialties",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KH05
-h001M01TK13,h001M01KH06,be_shared_by,2,"c015M01N05 - c015M02N03: Industry practitioners bring real-world critical thinking through case studies and guest lectures.
-c015M01N06 - c015M02N03: Industry professionals provide practical problem-solving scenarios.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KH06
 h001M01TK13,h001M01KH07,be_shared_by,3,"c007M01N02 - c007M01N09: Foremen possess accumulated expertise applied to company projects.
 c007M01N03 - c007M01N09: Foremen hold expertise accumulated through company projects.
 c007M02N65 - c007M02N06: the expertise they have accumulated and applied to company projects",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KH07
-h001M01TK13,h001M01KH11,be_shared_by,2,"c015M01N05 - c015M02N01: Tutors authentically engage students through genuine dialogue, critical reflection, and real-world relevance.
-c015M02N39 - c015M02N01: Educators foster leadership through interactive learning.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KH11
-h001M01TK13,h001M01KH12,be_shared_by,1,c015M01N06 - c015M01N13: Students learned from groupmates while conducting collaborative problem-solving work.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KH12
 h001M01TK13,h001M01KH15,be_shared_by,7,"c010M01N01 - c010M01N10: Five participating students were classified with the Visual preference.
 c010M01N02 - c010M01N10: Three participating students were classified with the Auditory preference.
 c010M01N03 - c010M01N10: Three participating students were classified with the Kinesthetic preference.
@@ -812,18 +750,11 @@ c010M01N05 - c010M01N10: Two participating students were classified with the Vis
 c010M01N08 - c010M01N10: Students allocated visual attention while performing learning tasks.
 c010M01N09 - c010M01N10: The recorded data described participants' interaction patterns within the AR environment.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KH15
 h001M01TK13,h001M01KH16,be_shared_by,1,c007M01N03 - c007M01N10: The company acquires previous-project experience and relies on employee expertise.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KH16
-h001M01TK13,h001M01KL01,be_absorbed_by,12,"c002M02N11 - c002M02N18: A cohort of 60 trainees enrolled in construction safety and risk management at Monash University were employed for the construction safety training
+h001M01TK13,h001M01KL01,be_absorbed_by,5,"c002M02N11 - c002M02N18: A cohort of 60 trainees enrolled in construction safety and risk management at Monash University were employed for the construction safety training
 c010M02N01 - c010M01N41: Students' learning preferences were assessed through questionnaires and eye-tracking data.
 c010M02N22 - c010M01N41: Visual Learners learn things using real-time visual tools
 c010M02N23 - c010M01N41: Auditory Learners prefer to understand through listening
-c010M02N24 - c010M01N41: Read/write learners prefer information displayed in written form
-c015M01N05 - c015M01N14: Participants reported that ABL promoted their critical thinking.
-c015M01N06 - c015M01N14: Participants reported improved problem-solving through researching and solving class problems.
-c015M01N07 - c015M01N14: Students associated authentic, project-based activities with improved preparation for professional roles.
-c015M01N08 - c015M01N14: Students cited improved understanding of complex concepts as a benefit of ABL.
-c015M01N05 - c015M02N02: ABL approach promotes critical thinking more than traditional teaching.
-c015M01N06 - c015M02N02: It improves problem solving skills and we're doing the research, trying to solve the problems which the tutor shows in the class.
-c015M02N39 - c015M02N02: These foster critical thinking and problem-solving skills, ensuring that students not only grasp theoretical concepts but also gain the necessary competencies for future employability and professional success.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KL01
+c010M02N24 - c010M01N41: Read/write learners prefer information displayed in written form",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KL01
 h001M01TK13,h001M01KL02,be_absorbed_by,1,c004M01N12 - c004M02N10: Both groups significantly increased their self-efficacy scores (VR: p<0.001; Manual: p=0.003) immediately after training,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01KL02
 h001M01TK13,h001M01KL03,be_absorbed_by,3,"c007M01N02 - c007M01N12: Foremen use accumulated expertise while training and guiding new workers.
 c007M01N01 - c007M01N12: Senior-staff expertise is disseminated through mentoring and workforce training.
@@ -836,9 +767,7 @@ c010M01N04 - c010M01N37: The study found that students can possess multiple lear
 c010M01N05 - c010M01N37: The non-fixed nature of learning preferences permits combined classifications such as Visual + Kinesthetic rather than a single stable category.
 c010M01N02 - c010M01N37: The non-fixed nature of learning preferences permits combined classifications such as Visual + Auditory rather than a single stable category.
 c010M02N01 - c010M02N20: learners can possess a combination of two or more learning preferences",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01LI03
-h001M01TK13,h001M01LI04,be_difficult_to_capture_due_to,3,"c010M02N01 - c010M01N35: students with certain learning preferences must incur a higher cognitive load to achieve the same learning outcomes
-c015M01N05 - c015M02N33: Graduates often encounter gaps between theoretical knowledge and practical industry competencies, which hinders their immediate employability.
-c015M01N06 - c015M02N33: It improves problem solving skills and we're doing the research, trying to solve the problems which the tutor shows in the class.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01LI04
+h001M01TK13,h001M01LI04,be_difficult_to_capture_due_to,1,c010M02N01 - c010M01N35: students with certain learning preferences must incur a higher cognitive load to achieve the same learning outcomes,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01LI04
 h001M01TK13,h001M01LI06,be_difficult_to_capture_due_to,1,c017M01N01 - c017M01N25: Occupancy behaviour cannot be captured precisely because sensor-based people-counting algorithms remain inaccurate.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01LI06
 h001M01TK13,h001M01LI09,be_difficult_to_capture_due_to,2,"c014M02N11 - c014M02N56: Problem-solving skills difficult to capture due to authoritarian leadership hindering adoption
 c014M02N11 - c014M02N55: Problem-solving skills difficult to capture due to lack of leadership support",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01LI09
@@ -876,15 +805,9 @@ c010M01N09 - c010M01N23: Fixation and head-position inputs revealed interaction 
 h001M01TK13,h001M01TP07,be_captured_by,2,"c008M01N08 - c008M01N23: Deep learning discovers latent correlations between accident types in construction safety texts.
 c008M01N08 - c008M01N27: The deep-learning model discovers latent knowledge that includes correlations between accident types.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01TP07
 h001M01TK13,h001M01TP10,be_transferred_by,1,"c007M01N03 - c007M01N36: Previous project’s experiences are an identified knowledge source, while KS6 retains their codified lessons learned in a database.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01TP10
-h001M01TK13,h001M01TP12,be_transferred_by,3,"c015M01N06 - c015M02N15: It improves problem solving skills and we're doing the research, trying to solve the problems which the tutor shows in the class.
-c015M01N05 - c015M02N15: ABL approach promotes critical thinking more than traditional teaching.
-c015M01N05 - c015M01N24: ABL approach promotes critical thinking more than traditional teaching.
-c015M01N06 - c015M01N24: It improves problem solving skills and we're doing the research, trying to solve the problems which the tutor shows in the class.
-c015M02N39 - c015M01N24: These foster critical thinking and problem-solving skills, ensuring that students not only grasp theoretical concepts but also gain the necessary competencies for future employability and professional success.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01TP12
-h001M01TK13,h001M01TP14,be_transferred_by,4,"c007M01N01 - c007M01N37: Senior expertise is disseminated while KD4 supports internal technology-based dissemination.
+h001M01TK13,h001M01TP14,be_transferred_by,3,"c007M01N01 - c007M01N37: Senior expertise is disseminated while KD4 supports internal technology-based dissemination.
 c007M01N02 - c007M01N37: Foremen hold accumulated expertise and KD4 supports internal dissemination.
-c007M01N03 - c007M01N37: Previous-project experience is an identified source and KD4 supports technology-based dissemination.
-c015M01N05 - c015M02N13: I learn from my groupmates.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01TP14
+c007M01N03 - c007M01N37: Previous-project experience is an identified source and KD4 supports technology-based dissemination.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TK13,s001M01TP14
 h001M01TP01,h001M01EK02,evaluate,1,c016M01N17 - c016M01N06: The simulations were used to observe project execution and identify activity-based hazards during design.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP01,s001M01EK02
 h001M01TP01,h001M01EK05,adopt,2,"c003M01N09 - c003M01N04: The virtualized 3D model was developed together with its corresponding Building Energy Model.
 c003M02N13 - c003M01N04: The corresponding Building Energy Model was created using Design Builder software...",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP01,s001M01EK05
@@ -1430,40 +1353,6 @@ h001M01TP11,h001M01TE07,adopt,2,"c007M02N30 - c007M02N38: Available and free com
 c007M02N30 - c007M02N39: Available and free communication tools (e.g., Zalo, Line and Viber)
 c007M02N30 - c007M02N40: Available and free communication tools (e.g., Zalo, Line and Viber)
 c014M02N30 - c014M02N39: Collaborative platforms adopt collaborative platforms technology",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP11,s001M01TE07
-h001M01TP12,h001M01ED03,depend_on,1,"c015M01N24 - c015M02N31: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences, diverse backgrounds and various prior level of education.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01ED03
-h001M01TP12,h001M01ED10,depend_on,1,"c015M01N24 - c015M02N30: The students also collaborated on the solutions for challenges that arise in using ABL, like student absences, diverse backgrounds and various prior level of education.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01ED10
-h001M01TP12,h001M01EK07,evaluate,2,"c015M01N24 - c015M02N43: 79% of students agreed that ABL facilitated deeper learning and better retention of course material, particularly through practical application and experiential learning.
-c015M01N24 - c015M02N45: Students' coursework, assessments, and overall academic performance were analyzed to measure the effectiveness of ABL and technology-enhanced learning.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01EK07
-h001M01TP12,h001M01LI03,be_constrained_by,1,c015M01N24 - c015M01N38: Diverse student backgrounds were identified as a challenge arising in ABL.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01LI03
-h001M01TP12,h001M01LI04,mitigate,5,"c015M01N24 - c015M01N43: Students preferred interactive ABL to passive listening, and 82% reported greater involvement in discussions, group activities, and problem-solving.
-c015M01N24 - c015M02N33: bridges the gap between theory and practice, offering a robust framework for curriculum innovation
-c015M01N24 - c015M02N34: The dedicated approach minimises cognitive overload, allowing learners to develop a deeper understanding of core concepts while effectively managing summative assessments.
-c015M01N24 - c015M02N36: 82% of respondents reported feeling more actively involved in discussions, group activities, and problem-solving exercises compared to their previous educational experiences.
-c015M02N15 - c015M02N34: Flipped classrooms significantly enhance higher-order cognitive outcomes, reducing cognitive load by moving content delivery outside class.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01LI04
-h001M01TP12,h001M01LI08,be_constrained_by,1,c015M01N24 - c015M01N37: Student absences were identified as a challenge arising in ABL.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01LI08
-h001M01TP12,h001M01LI09,be_constrained_by,1,c015M01N24 - c015M01N41: The focus group noted a need to address group dynamics in ABL.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01LI09
-h001M01TP12,h001M01OD02,depend_on,1,"c015M01N24 - c015M02N25: Armellini and Padilla Rodriguez (2021) and Margolis et al. (2017) underline the necessity of scalable digital platforms, robust institutional backing, and faculty development to sustain blended learning innovations.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01OD02
-h001M01TP12,h001M01OD04,depend_on,2,"c015M01N24 - c015M02N24: The student learning is compressed in 4 weeks of classes with 2 weeks of catch-up and assessment, when students study one module at a time.
-c015M01N24 - c015M01N36: The class sizes are small, and interaction is more, with one-to-one interaction.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01OD04
-h001M01TP12,h001M01OD05,depend_on,2,"c015M01N24 - c015M02N27: 82% of respondents reported feeling more actively involved in discussions, group activities, and problem-solving exercises compared to their previous educational experiences.
-c015M01N24 - c015M02N29: The student co-creation, where learners actively contribute to shaping course content and activities, fosters a sense of ownership, creativity, and alignment with both academic goals and industry expectations.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01OD05
-h001M01TP12,h001M01OD08,depend_on,1,"c015M01N24 - c015M02N28: bridges the gap between theory and practice, offering a robust framework for curriculum innovation",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01OD08
-h001M01TP12,h001M01TE02,adopt,2,"c015M01N24 - c015M01N30: The focus group reviewed Montimeter among the classroom technologies blended into ABL.
-c015M01N24 - c015M01N28: blending classroom technologies such as Vevox, Padlet, Montimeter, Moodle, Teams, HSP
-c015M01N24 - c015M02N18: blending classroom technologies such as Vevox, Padlet, Montimeter, Moodle, Teams, HSP
-c015M01N24 - c015M02N21: blending classroom technologies such as Vevox, Padlet, Montimeter, Moodle, Teams, HSP",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01TE02
-h001M01TP12,h001M01TE04,adopt,1,c015M01N24 - c015M01N31: The focus group reviewed Moodle among the classroom technologies blended into ABL.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01TE04
-h001M01TP12,h001M01TE07,adopt,3,"c015M01N24 - c015M01N29: The focus group reviewed Padlet among the classroom technologies blended into ABL.
-c015M01N24 - c015M01N34: Students identified YouTube as useful learning technology within the blended environment.
-c015M01N27 - c015M01N34: The scaffolding demonstration was delivered using YouTube.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01TE07
-h001M01TP12,h001M01TE09,adopt,1,c015M01N24 - c015M01N35: Students identified eBooks as useful learning technology within the blended environment.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01TE09
-h001M01TP12,h001M01THR11,cannot_fully_replace,1,c015M01N24 - c015M01N15: ABL combines face-to-face instruction with digital learning methods (implying traditional is not fully replaced).,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01THR11
-h001M01TP12,h001M01TP11,be_composed_of,1,c015M01N24 - c015M01N25: The implemented ABL environment included online collaboration platforms.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01TP11
-h001M01TP12,h001M01TP14,be_composed_of,3,"c015M01N24 - c015M02N10: Using real-world applications, interactive role-plays, industry cases, and technology-driven simulations
-c015M01N24 - c015M02N11: We have industry visits, the industry educators come, and we do case studies.
-c015M01N24 - c015M02N12: Using real-world applications, interactive role-plays, industry cases, and technology-driven simulations
-c015M01N24 - c015M02N13: These studies support adopting structured ABL models such as flipped classrooms, peer-assisted learning, and interactive discussions to enhance student engagement.
-c015M01N24 - c015M02N14: These studies support adopting structured ABL models such as flipped classrooms, peer-assisted learning, and interactive discussions to enhance student engagement.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP12,s001M01TP14
 h001M01TP13,h001M01ED01,depend_on,1,c016M02N13 - c016M02N21: The key performance indicators (KPI) of the Peruvian OHS standard G-050... were affected,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP13,s001M01ED01
 h001M01TP13,h001M01EK02,adopt,2,"c006M01N18 - c006M01N05: The web application used questionnaire data for tabulation and analysis.
 c010M01N17 - c010M01N11: Recorded responses were analyzed to categorize participants by learning preference.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP13,s001M01EK02
@@ -1509,11 +1398,6 @@ c017M02N16 - c017M01N04: The data-to-knowledge analysis process adopts the measu
 h001M01TP14,h001M01EK04,adopt,1,c017M02N16 - c017M02N05: The analysis process adopts the identified sawtooth pattern as a structural outcome to characterize thermal morphology.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01EK04
 h001M01TP14,h001M01EK05,adopt,1,c017M02N16 - c017M02N06: The analysis process adopts the quantified potential savings as a structural outcome to demonstrate economic impact.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01EK05
 h001M01TP14,h001M01LI03,be_constrained_by,1,c006M02N24 - c006M02N37: It doesn't have a uniform effect on everyone / It has to be a lower-priced product to be recognized in the construction industry.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01LI03
-h001M01TP14,h001M01LI04,mitigate,5,"c015M02N11 - c015M02N33: We have industry visits... we know more about the industry, and what exactly is needed.
-c015M02N12 - c015M02N33: Using real-world applications, interactive role-plays... bridges the gap between theory and practice
-c015M02N12 - c015M02N36: In this kind of teaching I'm involved, and my mind is focused more on the things that happens in the classroom.
-c015M02N13 - c015M02N36: I learn from my groupmates.
-c015M02N14 - c015M02N36: 82% of respondents reported feeling more actively involved in discussions... compared to their previous educational experiences.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01LI04
 h001M01TP14,h001M01LI06,be_constrained_by,2,"c014M01N21 - c014M01N36: Organizations lack infrastructure required for AI integration.
 c017M02N16 - c017M02N28: The data analysis relies on the same occupancy data, so it is also constrained by the inaccuracy of the sensors.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation,s001M01TP14,s001M01LI06
 h001M01TP14,h001M01LI07,be_constrained_by,3,"c006M02N24 - c006M02N39: Rubber-type assistive suits are cheaper, more versatile... than electric and air-type assistive suits.
@@ -1584,6 +1468,10 @@ h001M01EK02,h001M01TK12,translate_into,2,"c124M01N01 - c124M01N09: Organizations
 c124M01N02 - c124M01N09: Organizations with absorptive capacity convert sensor data and analytical information into actionable maintenance fixes and improved operating processes.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TK12
 h001M01EK02,h001M01TK13,translate_into,2,"c113M01N01 - c113M01N06: Participants received information about the electronic system and its components; successful transfer required them to develop the right understanding of the electronic system and identify a new power-source connection.
 c113M02N01 - c113M02N09: Declarative knowledge refers to facts and information which cannot be executed directly but can be applied for a specific goal that goes through interpretative process",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TK13
+h001M01EK02,h001M01TP12,be_transferred_by,4,"c111M01N04 - c111M01N24: Table 5 specifies webinars as a medium for basic knowledge and areas of application.
+c111M01N04 - c111M01N29: Visual tutorials are the preferred presentation format for content concerning AI knowledge and areas of application.
+c111M01N06 - c111M01N24: Webinars and podcasts provide engaging media for content that includes overviews of tools for using AI technologies.
+c111M01N06 - c111M01N29: The paper couples a rundown of compatible systems and instruments with practical demonstrations and identifies visual tutorials as the format of choice.",SIC 80 - Services (Health Services),Aggregation,s002M01EK02,s002M01TP12
 h001M01EK02,h001M01TP14,be_transferred_by,7,"c113M02N01 - c113M02N21: assembly instructions were presented step by step on top of the workspace in the form of texts as well as videos
 c113M02N05 - c113M02N21: providing such information can increase user awareness of the system
 c113M02N06 - c113M02N21: Users were initially presented with an overview of the electronic system and its all components using tooltips and graphical arrows
@@ -1719,7 +1607,11 @@ c125M01N14 - c125M01N25: Engineering students develop experiential-learning modu
 c125M01N14 - c125M01N24: engineering students, from a learning factory, first identify target small manufacturing businesses",SIC 80 - Services (Health Services),Aggregation,s002M01KH10,s002M01TP12
 h001M01KH10,h001M01TP13,participate_in,2,"c117M01N14 - c117M02N16: Structured, expert-led review process involves R&D experts
 c125M01N14 - c125M02N17: engineering students, from a learning factory, first identify target small manufacturing businesses for conducting an applied research and training project",SIC 80 - Services (Health Services),Aggregation,s002M01KH10,s002M01TP13
+h001M01KH11,h001M01THR11,participate_in,3,"c104M01N06 - c104M01N09: Instructors conducted the assembly demonstration and supplied IoT information.
+c106M01N10 - c106M01N13: The qualified company veteran provided operative explanations during training.
+c106M02N04 - c106M02N05: It is supposed that each group is supported by a trainer during some parts of the test. The trainer is a company veteran who has been qualified to provide operative support to new workers during training.",SIC 80 - Services (Health Services),Aggregation,s002M01KH11,s002M01THR11
 h001M01KH11,h001M01THR12,participate_in,1,c107M02N11 - c107M02N17: Current practice-oriented teaching methods in the field are based on textbooks,SIC 80 - Services (Health Services),Aggregation,s002M01KH11,s002M01THR12
+h001M01KH11,h001M01THR13,participate_in,1,c107M02N11 - c107M01N38: teaching support is usually provided by the instructor,SIC 80 - Services (Health Services),Aggregation,s002M01KH11,s002M01THR13
 h001M01KH11,h001M01TP13,participate_in,1,c107M02N12 - c107M02N23: developed with the help of a teacher of pneumatics at a vocational college,SIC 80 - Services (Health Services),Aggregation,s002M01KH11,s002M01TP13
 h001M01KH12,h001M01THR11,participate_in,1,"c109M02N11 - c109M02N15: ""Tacit knowledge sharing occurs formally through training or conferences"" (team members attend)",SIC 80 - Services (Health Services),Aggregation,s002M01KH12,s002M01THR11
 h001M01KH12,h001M01THR17,participate_in,2,"c109M02N11 - c109M02N14: ""Sharing tacit information enables team members to acquire practical skills"" (team members participate in mentoring)
@@ -1752,6 +1644,7 @@ c126M02N11 - c126M02N02: In IT firms, both knowledge sources are equally crucial
 h001M01KH15,h001M01TP07,participate_in,1,c102M01N10 - c102M01N17: Temporal videos of human actions provide the input used by the narration approach.,SIC 80 - Services (Health Services),Aggregation,s002M01KH15,s002M01TP07
 h001M01KH15,h001M01TP08,participate_in,2,"c102M01N10 - c102M01N16: Task interpretation explains human actions, and humans appear as actors in the tested HRC and assembly scenes.
 c110M02N03 - c110M02N06: surveys were conducted with current students and alumni",SIC 80 - Services (Health Services),Aggregation,s002M01KH15,s002M01TP08
+h001M01KH15,h001M01TP14,participate_in,1,c113M02N14 - c113M02N21: four people were assigned in traditional AR group,SIC 80 - Services (Health Services),Aggregation,s002M01KH15,s002M01TP14
 h001M01KH15,h001M01TP15,participate_in,3,"c126M02N10 - c126M02N03: Manufacturing firms primarily benefit from BT exploitation
 c126M02N10 - c126M02N04: Manufacturing firms encounter challenges in BT exploration
 c126M02N11 - c126M02N03: IT firms are more adept at leveraging BT for exploratory initiatives
@@ -1775,6 +1668,7 @@ h001M01KL01,h001M01THR12,participate_in,4,"c104M01N08 - c104M01N10: Twenty parti
 c104M01N08 - c104M02N13: Participants in the paper group used the paper manual.
 c113M01N08 - c113M01N12: All participants were students, and four were assigned to the paper-based document condition.
 c113M01N11 - c113M01N12: Four participants were assigned to the paper-based document learning method.",SIC 80 - Services (Health Services),Aggregation,s002M01KL01,s002M01THR12
+h001M01KL01,h001M01THR13,participate_in,1,c110M01N09 - c110M01N14: Students received hands-on experience operating and troubleshooting manufacturing equipment in the Smart Factory.,SIC 80 - Services (Health Services),Aggregation,s002M01KL01,s002M01THR13
 h001M01KL01,h001M01THR16,participate_in,2,"c104M01N08 - c104M02N27: Participants were required to complete a knowledge test.
 c110M01N09 - c110M01N15: Current students participated in surveys validating the chatbot.",SIC 80 - Services (Health Services),Aggregation,s002M01KL01,s002M01THR16
 h001M01KL01,h001M01TP04,participate_in,2,"c113M01N08 - c113M01N13: All participants were students, and four were assigned to the traditional AR condition.
@@ -1783,6 +1677,10 @@ h001M01KL01,h001M01TP07,participate_in,2,"c110M01N09 - c110M01N19: The analyzed 
 c110M01N09 - c110M02N14: history of conversations was examined using a word cloud tool.",SIC 80 - Services (Health Services),Aggregation,s002M01KL01,s002M01TP07
 h001M01KL01,h001M01TP08,participate_in,2,"c110M01N09 - c110M01N16: Current students used AlFrEDo in both English and Spanish.
 c110M01N09 - c110M02N06: Surveys were conducted with current students to evaluate...",SIC 80 - Services (Health Services),Aggregation,s002M01KL01,s002M01TP08
+h001M01KL01,h001M01TP12,participate_in,1,"c125M01N19 - c125M01N42: Engineering students were workshop attendees, and attendees provided feedback on each activity.
+c125M01N19 - c125M01N43: Engineering students were workshop attendees, and attendees provided feedback on each activity.
+c125M01N19 - c125M01N44: Engineering students were workshop attendees, and attendees provided feedback on each activity.
+c125M01N19 - c125M01N45: Engineering students were workshop attendees, and attendees provided feedback on each activity.",SIC 80 - Services (Health Services),Aggregation,s002M01KL01,s002M01TP12
 h001M01KL02,h001M01THR13,participate_in,2,"c107M01N11 - c107M01N12: Five apprentices in the control group performed the exercises using a replica made from 3D-printed components.
 c107M01N11 - c107M01N38: Training laboratories and learning systems are practical options for teaching
 c107M02N15 - c107M01N38: Training laboratories and learning systems are practical options for teaching",SIC 80 - Services (Health Services),Aggregation,s002M01KL02,s002M01THR13
@@ -1884,6 +1782,8 @@ h001M01THR11,h001M01ED02,depend_on,3,"c113M02N19 - c113M02N43: finding a skilled
 c113M02N19 - c113M02N44: In the current era of Industry 4.0...
 c113M02N20 - c113M02N43: finding a skilled worker has become a difficult task... talent shortage
 c113M02N20 - c113M02N45: the introduction of Industry 5.0 has been viewed as a forward thinking",SIC 80 - Services (Health Services),Aggregation,s002M01THR11,s002M01ED02
+h001M01THR11,h001M01ED03,depend_on,2,"c109M02N15 - c109M02N41: ""Cultural variation among UAE and Canadian SMEs influences the approaches, and the willingness to transfer knowledge""
+c109M02N15 - c109M01N18: ""Canadian SMEs which are orientated more individualistically in their culture, may employ some of the more structured methods""",SIC 80 - Services (Health Services),Aggregation,s002M01THR11,s002M01ED03
 h001M01THR11,h001M01ED08,depend_on,1,c104M01N09 - c104M01N22: The demonstration concerned assembly of the physical IoT circuit and its components.,SIC 80 - Services (Health Services),Aggregation,s002M01THR11,s002M01ED08
 h001M01THR11,h001M01LI03,be_constrained_by,2,"c111M01N19 - c111M01N35: Provider-led training must address heterogeneous requirements because investment and production controllers may need different AI technologies and applications.
 c113M02N19 - c113M02N34: Since humans have a limited working memory...
@@ -1923,6 +1823,7 @@ h001M01THR13,h001M01LI13,be_constrained_by,1,"c107M01N38 - c107M02N48: The contr
 h001M01THR13,h001M01OD03,depend_on,2,"c107M01N38 - c107M02N36: not all training companies or vocational schools are equipped with such systems
 c107M01N38 - c107M02N37: not all training companies or vocational schools are equipped with such systems
 c110M01N14 - c110M01N25: The Smart Factory's manufacturing equipment provided students with hands-on operating and troubleshooting experience.",SIC 80 - Services (Health Services),Aggregation,s002M01THR13,s002M01OD03
+h001M01THR14,h001M01ED03,depend_on,1,"c109M02N17 - c109M01N18: ""Canadian SMEs which are orientated more individualistically ... may employ focus groups""",SIC 80 - Services (Health Services),Aggregation,s002M01THR14,s002M01ED03
 h001M01THR14,h001M01OD03,depend_on,1,"c109M02N17 - c109M02N52: ""RC refers to the allocation of resources""",SIC 80 - Services (Health Services),Aggregation,s002M01THR14,s002M01OD03
 h001M01THR15,h001M01ED03,depend_on,1,"c108M01N29 - c108M01N59: The manufacturing analysis had to cover business processes across four countries, languages, and practices.",SIC 80 - Services (Health Services),Aggregation,s002M01THR15,s002M01ED03
 h001M01THR15,h001M01EK02,evaluate,2,"c108M01N35 - c108M01N14: Categorical thematic analysis identifies and interprets patterns in the manufacturing interview text.
@@ -1940,6 +1841,7 @@ c101M01N07 - c101M02N32: The existing workflow is almost entirely reactive and r
 c109M02N14 - c109M02N49: ""SMEs operating in the industry experience peculiar challenges common to their line of business, including limited resources""",SIC 80 - Services (Health Services),Aggregation,s002M01THR17,s002M01LI15
 h001M01TK02,h001M01KH03,be_shared_by,2,"c102M01N01 - c102M02N16: humans have their own autonomy...each agent can assume a specific operation goal
 c109M01N02 - c109M01N05: Personal work experience is identified as experience-based knowledge held and shared by employees.",SIC 80 - Services (Health Services),Aggregation,s002M01TK02,s002M01KH03
+h001M01TK02,h001M01KH06,be_shared_by,1,c122M02N13 - c122M02N03: I can flexibly share work experiences and technical insights via the Metaverse anytime and anywhere,SIC 80 - Services (Health Services),Aggregation,s002M01TK02,s002M01KH06
 h001M01TK02,h001M01KH15,be_shared_by,1,c102M01N01 - c102M01N10: The human's observed actions are the source from which the model predicts action intentions.,SIC 80 - Services (Health Services),Aggregation,s002M01TK02,s002M01KH15
 h001M01TK02,h001M01KL11,be_absorbed_by,1,c102M01N01 - c102M01N11: learning human intention representation,SIC 80 - Services (Health Services),Aggregation,s002M01TK02,s002M01KL11
 h001M01TK02,h001M01LI05,be_difficult_to_capture_due_to,1,c102M01N01 - c102M01N32: lacking generalization and transferability to new HRC settings,SIC 80 - Services (Health Services),Aggregation,s002M01TK02,s002M01LI05
@@ -1982,6 +1884,7 @@ h001M01TK05,h001M01KH10,be_documented_partially_by,1,c107M01N07 - c107M02N13: Fe
 h001M01TK05,h001M01KH15,be_shared_by,2,"c103M01N01 - c103M01N14: The test subject performed all 12 active handwork types represented by the consolidated handwork-skills node.
 c103M02N01 - c103M01N14: One test subject performed all the handwork types in the above order.",SIC 80 - Services (Health Services),Aggregation,s002M01TK05,s002M01KH15
 h001M01TK05,h001M01KH16,be_shared_by,1,c102M02N14 - c102M02N17: LLMs enable robots to transfer common-sense domain knowledge to various scenarios and platforms,SIC 80 - Services (Health Services),Aggregation,s002M01TK05,s002M01KH16
+h001M01TK05,h001M01KL01,be_absorbed_by,1,c104M01N04 - c104M01N08: Participants in both groups completed the second assembly more quickly and were described as retaining and becoming proficient in assembling the components.,SIC 80 - Services (Health Services),Aggregation,s002M01TK05,s002M01KL01
 h001M01TK05,h001M01KL02,be_absorbed_by,4,"c106M01N08 - c106M01N12: G2 workers performed autonomous setup with lower immediate and six-day error counts than G1.
 c107M01N07 - c107M01N11: the participants then carry out two practical exercises... a pneumatic system has to be set up and tested
 c107M02N07 - c107M01N11: trainees must be able to plan, install and commission pneumatic systems using circuit diagrams
@@ -2012,6 +1915,7 @@ h001M01TK05,h001M01TP06,be_captured_by,3,"c103M01N01 - c103M01N25: Body-conducte
 c103M02N01 - c103M02N21: Body-conducted sounds can be considered a mixture of the vibration of the muscle activities involved in hand gestures and the vibration of the hand as it contacts objects. A wristband was used to secure a body-conducted sound sensor in the middle of the dorsal wrist of the dominant hand.
 c103M02N25 - c103M02N21: Body-conducted sounds can be used to recognize hand gestures, such as the dragging of a fingernail. A wristband was used to secure a body-conducted sound sensor in the middle of the dorsal wrist of the dominant hand.",SIC 80 - Services (Health Services),Aggregation,s002M01TK05,s002M01TP06
 h001M01TK05,h001M01TP07,be_captured_by,1,c102M02N14 - c102M02N26: language-guided robot skill acquisition approach,SIC 80 - Services (Health Services),Aggregation,s002M01TK05,s002M01TP07
+h001M01TK05,h001M01TP12,be_captured_by,1,c125M02N06 - c125M01N24: Researchers at the learning factory developed a two-day hands-on workshop for small manufacturing businesses,SIC 80 - Services (Health Services),Aggregation,s002M01TK05,s002M01TP12
 h001M01TK05,h001M01TP16,be_transferred_by,1,c107M01N07 - c107M01N14: The application incorporated the framework objectives and required users to assemble a pneumatic control system from a circuit diagram and functional description.,SIC 80 - Services (Health Services),Aggregation,s002M01TK05,s002M01TP16
 h001M01TK06,h001M01KH02,be_shared_by,3,"c108M01N04 - c108M01N24: Disease-control know-how was collected from viticulture participants including vine growers.
 c108M01N08 - c108M01N24: Wine growers rely on observation of nature and its phenomena.
@@ -2065,8 +1969,11 @@ c108M01N02 - c108M01N25: The interviewed wine professionals supplied vine and wi
 c108M01N06 - c108M01N24: The project sought the reasoning and practices used by vine growers.
 c108M01N06 - c108M01N25: The project sought the reasoning and practices used by winemakers.
 c108M01N07 - c108M01N24: Wine growers rely on the experience of their peers.",SIC 80 - Services (Health Services),Aggregation,s002M01TK13,s002M01KH02
+h001M01TK13,h001M01KH06,be_documented_partially_by,1,c105M02N02 - c105M02N12: assessing which specialist expertise is particularly required and which cognitive complexities are involved,SIC 80 - Services (Health Services),Aggregation,s002M01TK13,s002M01KH06
 h001M01TK13,h001M01KH10,be_shared_by,2,"c117M01N04 - c117M01N14: R&D specialists contribute internal NPD expertise during protected concept development.
 c117M01N04 - c117M01N16: NPD researchers contribute specialist knowledge during internal concept development.",SIC 80 - Services (Health Services),Aggregation,s002M01TK13,s002M01KH10
+h001M01TK13,h001M01KH11,be_documented_partially_by,1,c107M02N09 - c107M02N12: developed with the help of a teacher of pneumatics at a vocational college,SIC 80 - Services (Health Services),Aggregation,s002M01TK13,s002M01KH11
+h001M01TK13,h001M01KH12,be_shared_by,1,c111M01N02 - c111M01N09: The paper identifies conversations and exchanges of experience among colleagues as part of the core interpersonal acquisition process.,SIC 80 - Services (Health Services),Aggregation,s002M01TK13,s002M01KH12
 h001M01TK13,h001M01KH13,be_shared_by,5,"c111M02N01 - c111M02N18: Lack of know-how is also present among employees in controlling departments
 c111M02N02 - c111M02N18: Lack of imagination for AI uses is a trait held by employees
 c111M02N03 - c111M02N18: Lack of awareness of the need to engage with AI is held by employees
@@ -2295,18 +2202,38 @@ c106M01N14 - c106M01N04: The screen-based practice displayed digital instruction
 c111M01N29 - c111M01N05: The abstract states that application examples are preferred and made available through video tutorials; Section 4.3 likewise identifies practical examples and instructions as the preferred content and visual tutorials as the format of choice.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01EK03
 h001M01TP12,h001M01EK05,adopt,2,"c125M01N24 - c125M01N11: The workshop incorporated Lean Manufacturing Methods and Tools as an activity.
 c125M01N45 - c125M01N11: The Lean workshop activity incorporates Lean Manufacturing Methods and Tools.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01EK05
+h001M01TP12,h001M01EK07,evaluate,1,c125M01N24 - c125M02N02: the attendees were surveyed to learn about the impact of this hands-on experiential learning event on their willingness to explore the possibilities to digitally enhance and/or smartify their production operations,SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01EK07
+h001M01TP12,h001M01LI03,be_constrained_by,2,"c125M01N24 - c125M01N38: The workshop’s IoT activity was difficult for people without an advanced electronics level.
+c125M01N43 - c125M01N38: The IoT activity was difficult for people without advanced electronics knowledge.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01LI03
+h001M01TP12,h001M01LI04,be_constrained_by,5,"c106M01N14 - c106M01N27: The paper identifies high textual content as a problem with conventional instruction approaches.
+c125M01N22 - c125M01N37: The learning platform faces difficulty tailoring training plans to varied company-specific requirements.
+c125M01N45 - c125M01N39: Participants thought that the theoretical presentation should be shortened and hands-on time increased.
+c125M01N24 - c125M01N46: Participants requested more hands-on activities in the Additive Manufacturing component of the implemented two-day workshop.
+c125M01N24 - c125M02N30: participants think that the time for the theoretical presentation could be shortened, and the time for the hands-on activity could be increased",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01LI04
+h001M01TP12,h001M01LI08,mitigate,2,"c111M01N24 - c111M01N39: Webinars and podcasts reduce fixed-time and location constraints by allowing flexible, location-independent, and freely schedulable consumption.
+c111M01N24 - c111M02N53: Webinars allow flexible consumption, mitigating lack of time",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01LI08
 h001M01TP12,h001M01LI10,be_constrained_by,1,c111M01N24 - c111M01N36: Webinars and podcasts form one part of a widely dispersed set of knowledge channels and preparation approaches identified as a theoretical limitation.,SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01LI10
+h001M01TP12,h001M01OD02,depend_on,1,c125M01N24 - c125M02N23: small manufacturing businesses must equip themselves with the latest smart manufacturing technologies as well as digital skills in their workforce,SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01OD02
 h001M01TP12,h001M01OD03,depend_on,2,"c106M01N14 - c106M01N25: G1 screen instructions used the same storage-area color code as the physical component labels.
 c125M01N24 - c125M02N26: PiTech Academy curriculum has been meticulously designed to accommodate small manufacturing businesses' unique technological needs and financial and human resources constraints",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01OD03
+h001M01TP12,h001M01OD04,depend_on,2,"c111M01N24 - c111M01N32: Time is an identified resource requirement, while webinars and podcasts are valued because they permit freely schedulable consumption.
+c125M01N24 - c125M02N25: workshop was a two-day hands-on workshop",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01OD04
+h001M01TP12,h001M01OD05,depend_on,2,"c125M01N22 - c125M01N32: The platform was developed through collaboration between the University of Alberta and the Tecnológico de Monterrey.
+c125M01N43 - c125M01N33: Participants indicated that the hands-on IoT activity was difficult without an advanced level of electronics.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01OD05
 h001M01TP12,h001M01OD06,depend_on,1,"c125M01N24 - c125M02N24: the maturity scan assesses a manufacturing business in five categories: (i) strategy, structure, and organisational culture",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01OD06
 h001M01TP12,h001M01TE03,adopt,4,"c125M01N24 - c125M01N30: The two-day workshop included an IoT devices and systems activity.
 c125M01N24 - c125M01N31: The two-day workshop included a Collaborative Robotics activity.
 c125M01N43 - c125M01N30: The Insights into IoT devices/systems activity uses Internet of Things devices and systems.
 c125M01N44 - c125M01N31: The Insights into Collaborative Robotics activity uses Collaborative Robotics.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01TE03
+h001M01TP12,h001M01TE09,adopt,2,"c125M01N24 - c125M01N29: The two-day workshop included an Additive Manufacturing activity.
+c125M01N42 - c125M01N29: The Insights into Additive Manufacturing activity uses Additive Manufacturing as its subject technology.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01TE09
+h001M01TP12,h001M01THR11,cannot_fully_replace,1,"c125M01N24 - c125M01N21: Traditional teaching methods have shown limited effectiveness in developing individual skills in (smart) manufacturing environments. Moreover, some learning platforms based on e-learning and digital learning factories can be considered effective tools. However, the lack of face-to-face training and physical interaction within teams presents a clear deficiency",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01THR11
 h001M01TP12,h001M01THR17,complement,2,"c111M01N24 - c111M01N14: The findings state that both digital and interpersonal channels are centrally important: webinars and podcasts provide flexible digital access alongside the core personal exchange with innovative companies.
 c125M01N24 - c125M01N20: The implemented hands-on workshop adds action-oriented and experiential activities to presentation-based teaching, which the paper identifies as insufficient for individual skill development.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01THR17
 h001M01TP12,h001M01TK05,evaluate,1,"c125M01N24 - c125M02N06: Participants reported increased knowledge acquisition, improved decision-making, and enhanced organisational collaboration",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01TK05
 h001M01TP12,h001M01TK10,evaluate,1,"c125M01N24 - c125M02N07: Participants reported increased knowledge acquisition, improved decision-making, and enhanced organisational collaboration",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01TK10
+h001M01TP12,h001M01TP11,be_composed_of,2,"c111M02N29 - c111M02N31: Web-based channels include newsletter subscriptions
+c111M02N29 - c111M01N26: Web-based channels include in-house online training tools",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01TP11
 h001M01TP12,h001M01TP13,be_composed_of,2,"c125M01N22 - c125M01N27: The implemented PiTech Academy includes an online platform hosting its maturity scan and curriculum information.
 c125M01N24 - c125M01N26: The two-day workshop included the Industry 4.0 Maturity Scan as one of its five activities.",SIC 80 - Services (Health Services),Aggregation,s002M01TP12,s002M01TP13
 h001M01TP13,h001M01LI04,be_constrained_by,1,c125M01N26 - c125M01N40: Participants requested simpler maturity-scan questions and more detailed examples.,SIC 80 - Services (Health Services),Aggregation,s002M01TP13,s002M01LI04
@@ -2338,6 +2265,10 @@ c117M02N15 - c117M01N26: Social listening involves monitoring platforms like Lin
 c117M02N17 - c117M01N29: Internal social media as firm-governed environments designed for more structured and confidentiality-sensitive ideation",SIC 80 - Services (Health Services),Aggregation,s002M01TP13,s002M01TP11
 h001M01TP14,h001M01ED10,depend_on,1,"c115M01N11 - c115M02N23: ""External factors that affect organizational cultures are the norms and standards, government regulations, competitor behavior, market demands"" – these institutional pressures affect green knowledge acquisition",SIC 80 - Services (Health Services),Aggregation,s002M01TP14,s002M01ED10
 h001M01TP14,h001M01EK06,adopt,1,c115M01N11 - c115M02N12: H3: Green knowledge acquisition has a positive impact on sustainable corporate performance; thus green knowledge acquisition adopts sustainable performance metrics as outcome data,SIC 80 - Services (Health Services),Aggregation,s002M01TP14,s002M01EK06
+h001M01TP14,h001M01LI04,be_constrained_by,4,"c113M02N21 - c113M01N24: this kind of approach puts the user as a rather passive information receiver
+c113M02N21 - c113M02N38: traditional AR that presents unimodal and decontextualized information
+c113M02N21 - c113M01N25: the information is often isolated to a specific sub-task or a process
+c113M02N21 - c113M02N31: The information is often isolated to a specific sub-task or a process which may not be suitable for a complex system",SIC 80 - Services (Health Services),Aggregation,s002M01TP14,s002M01LI04
 h001M01TP14,h001M01LI05,mitigate,1,c114M01N12 - c114M01N19: Digitization helps enterprises remove redundant and irrelevant information before screening and integrating needed knowledge resources.,SIC 80 - Services (Health Services),Aggregation,s002M01TP14,s002M01LI05
 h001M01TP14,h001M01TE05,adopt,2,"c113M02N21 - c113M01N19: For AR library, Vuforia engine was used for vision-based tracking
 c113M02N21 - c113M02N27: an image that the Vuforia Engine can identify, and track is used",SIC 80 - Services (Health Services),Aggregation,s002M01TP14,s002M01TE05
@@ -2399,6 +2330,8 @@ h001M01EK02,h001M01EK09,be_derived_from,1,c210M01N06 - c210M01N04: Relevant dome
 h001M01EK02,h001M01KH03,be_shared_by,3,"c224M01N01 - c224M02N04: The participants' average score increased from 59.97% in the initial assessment to 84.05% in the final assessment.
 c224M01N01 - c224M02N05: Nurses with a master's degree had a mean initial assessment score of 69.15.
 c224M01N01 - c224M02N06: Those with a bachelor's degree had a mean score of 62.52.",SIC 20-39 - Manufacturing,Aggregation,s003M01EK02,s003M01KH03
+h001M01EK02,h001M01THR13,be_transferred_by,2,"c209M01N03 - c209M01N13: Traditional clinical teaching relied on cadaver dissection, and the paper identifies anatomy as the relevant teaching domain.
+c209M02N16 - c209M01N13: Traditional clinical teaching has typically relied on cadaver dissection",SIC 20-39 - Manufacturing,Aggregation,s003M01EK02,s003M01THR13
 h001M01EK02,h001M01THR16,be_transferred_by,1,"c222M01N06 - c222M01N17: existing ontologies and knowledge bases (e.g., Gene Ontology, GeneCards, KEGG, DrugBank, etc.) were employed to identify pivotal entity types and criteria
 c222M01N07 - c222M01N17: existing ontologies and knowledge bases (e.g., Gene Ontology, GeneCards, KEGG, DrugBank, etc.) were employed to identify pivotal entity types and criteria
 c222M02N08 - c222M01N17: existing ontologies and knowledge bases (e.g., Gene Ontology, GeneCards, KEGG, DrugBank, etc.) were employed to identify pivotal entity types and criteria
@@ -2484,9 +2417,15 @@ c225M02N12 - c225M02N19: ""five leading agencies, including the ... KKM...are in
 c225M02N13 - c225M02N19: ""five leading agencies, including the ... NADMA...are included as players or characters in this AR application""",SIC 20-39 - Manufacturing,Aggregation,s003M01KH09,s003M01TP03
 h001M01KH09,h001M01TP13,participate_in,1,c227M02N14 - c227M01N16: Compliance managers were to judge on a case-by-case basis... compliance officers struggled to assess whether 80% was a reasonable cutoff for intervention.,SIC 20-39 - Manufacturing,Aggregation,s003M01KH09,s003M01TP13
 h001M01KH10,h001M01TP03,participate_in,1,c216M01N64 - c216M01N35: The doctoral student contributed to prototype development.,SIC 20-39 - Manufacturing,Aggregation,s003M01KH10,s003M01TP03
+h001M01KH11,h001M01THR14,participate_in,3,"c212M01N09 - c212M01N13: Group discussions formed part of the instructor-conducted traditional program.
+c217M01N06 - c217M01N08: The survey measured how many teaching exchanges nursing educators had participated in.
+c217M01N06 - c217M01N10: More than 70 percent of educators actively participated in instructional design.",SIC 20-39 - Manufacturing,Aggregation,s003M01KH11,s003M01THR14
 h001M01KH11,h001M01THR16,participate_in,1,c217M01N06 - c217M02N11: Representative nursing educators were selected for cross-cultural validation.,SIC 20-39 - Manufacturing,Aggregation,s003M01KH11,s003M01THR16
 h001M01KH11,h001M01TP11,participate_in,2,"c217M01N06 - c217M01N12: Nursing educators used video conferencing for remote teaching and meetings.
 c218M01N13 - c218M01N21: Professors provided comments and support during online course interaction.",SIC 20-39 - Manufacturing,Aggregation,s003M01KH11,s003M01TP11
+h001M01KH11,h001M01TP12,participate_in,3,"c217M01N06 - c217M01N11: LMS use was measured among nursing educators and was widespread in daily teaching.
+c217M01N06 - c217M01N13: Online teaching platforms were widely used in the nursing education context.
+c224M01N09 - c224M01N13: Experts developed the contents of the training program.",SIC 20-39 - Manufacturing,Aggregation,s003M01KH11,s003M01TP12
 h001M01KH13,h001M01THR17,participate_in,1,c227M01N09 - c227M02N20: Contract administrators employed at the Region were to notice divergences and enforce compliance among care-providing organizations.,SIC 20-39 - Manufacturing,Aggregation,s003M01KH13,s003M01THR17
 h001M01KH13,h001M01TP13,participate_in,1,c227M01N09 - c227M01N16: Contract administrators received Registry reports and were expected to notice divergences and enforce compliance.,SIC 20-39 - Manufacturing,Aggregation,s003M01KH13,s003M01TP13
 h001M01KH14,h001M01TP07,participate_in,1,c213M02N01 - c213M02N14: each stakeholder (healthcare provider) acts as an independent node,SIC 20-39 - Manufacturing,Aggregation,s003M01KH14,s003M01TP07
@@ -2565,6 +2504,8 @@ h001M01THR17,h001M01EK03,evaluate,1,c216M01N33 - c216M01N03: Surveys measured ov
 h001M01THR17,h001M01LI02,mitigate,1,c211M02N14 - c211M02N17: Emotional support... functions to mitigate individual stress and its adverse effects,SIC 20-39 - Manufacturing,Aggregation,s003M01THR17,s003M01LI02
 h001M01THR17,h001M01LI14,be_constrained_by,1,c217M02N09 - c217M02N32: Sample primarily drawn from specific regions limits questionnaires.,SIC 20-39 - Manufacturing,Aggregation,s003M01THR17,s003M01LI14
 h001M01THR17,h001M01TK05,evaluate,1,c216M01N33 - c216M01N06: Post-training surveys assessed overdose-response skills.,SIC 20-39 - Manufacturing,Aggregation,s003M01THR17,s003M01TK05
+h001M01TK02,h001M01KL01,be_absorbed_by,2,"c209M01N10 - c209M01N12: The demonstration enabled students to grasp localization and resection techniques.
+c219M02N08 - c219M01N17: Problem system layer: Bridges theory and practice by challenging students with clinical problems, thereby developing their clinical reasoning and competency",SIC 20-39 - Manufacturing,Aggregation,s003M01TK02,s003M01KL01
 h001M01TK02,h001M01KL02,be_absorbed_by,1,c224M01N07 - c224M01N11: The nurses practiced clinical decision-making and mobilized previously acquired knowledge in the virtual scenarios.,SIC 20-39 - Manufacturing,Aggregation,s003M01TK02,s003M01KL02
 h001M01TK02,h001M01LI02,be_difficult_to_capture_due_to,1,c211M02N05 - c211M02N17: Conflict stressors caused by ethical conflicts lead physicians to question their values and moral beliefs,SIC 20-39 - Manufacturing,Aggregation,s003M01TK02,s003M01LI02
 h001M01TK02,h001M01LI04,be_difficult_to_capture_due_to,2,"c219M02N08 - c219M01N32: A major limitation of online education platforms is the tendency toward knowledge fragmentation... hinder students' ability to form a coherent understanding
@@ -2625,6 +2566,7 @@ c225M02N04 - c225M02N12: ""Participants have the opportunity to practise disaste
 c225M02N04 - c225M02N13: ""Participants have the opportunity to practise disaster management skills such as communication, prioritisation, teamwork, and delegation""
 c225M02N06 - c225M02N10: ""Participants have the opportunity to practise disaster management skills such as communication, prioritisation, teamwork, and delegation""
 c225M02N07 - c225M02N11: ""Participants have the opportunity to practise disaster management skills such as communication, prioritisation, teamwork, and delegation""",SIC 20-39 - Manufacturing,Aggregation,s003M01TK11,s003M01KH09
+h001M01TK11,h001M01KL01,be_absorbed_by,1,c212M02N08 - c212M02N14: Strong inclination to acquire additional skills related to positive communication with colleagues in professional context. Training programs aim to develop communication skills.,SIC 20-39 - Manufacturing,Aggregation,s003M01TK11,s003M01KL01
 h001M01TK11,h001M01LI04,be_difficult_to_capture_due_to,1,c216M01N09 - c216M01N51: Chest-compression capability may require further practice.,SIC 20-39 - Manufacturing,Aggregation,s003M01TK11,s003M01LI04
 h001M01TK11,h001M01LI06,be_difficult_to_capture_due_to,1,c216M01N09 - c216M01N56: Participants stated that absent tactile feedback made ReviveXR less suitable for techniques requiring precise hands-on skills such as CPR.,SIC 20-39 - Manufacturing,Aggregation,s003M01TK11,s003M01LI06
 h001M01TK11,h001M01THR13,be_transferred_by,1,c212M02N08 - c212M02N18: Practical clinical exercises provide hands-on opportunities for developing patient communication skills.,SIC 20-39 - Manufacturing,Aggregation,s003M01TK11,s003M01THR13
@@ -2647,6 +2589,9 @@ c218M01N11 - c218M01N37: Participant perceptions were measured through self-repo
 h001M01TK13,h001M01THR16,be_transferred_by,1,c216M01N19 - c216M01N34: Participants shared experiences through semi-structured interviews.,SIC 20-39 - Manufacturing,Aggregation,s003M01TK13,s003M01THR16
 h001M01TK13,h001M01TP01,be_captured_by,2,"c209M02N06 - c209M02N29: 3DV group learning with digital model
 c209M02N06 - c209M01N17: 3DP group demonstrated superiority in the ease of knowledge acquisition",SIC 20-39 - Manufacturing,Aggregation,s003M01TK13,s003M01TP01
+h001M01TK13,h001M01TP12,be_transferred_by,3,"c217M01N05 - c217M01N13: Online platforms are used to transfer personal teaching insights.
+c218M01N09 - c218M01N19: Self-directed online activities supported attainment of knowledge and skills.
+c218M01N09 - c218M01N20: Pre-recorded lectures and videos were self-directed activities supporting knowledge and skill attainment.",SIC 20-39 - Manufacturing,Aggregation,s003M01TK13,s003M01TP12
 h001M01TK13,h001M01TP13,be_captured_by,1,c218M01N11 - c218M01N26: Enrollees were prompted to anonymously evaluate their online learning experience.,SIC 20-39 - Manufacturing,Aggregation,s003M01TK13,s003M01TP13
 h001M01TP01,h001M01EK07,evaluate,2,"c209M02N29 - c209M02N10: Pre- and post-teaching test scores were compared to assess effectiveness
 c209M02N29 - c209M02N11: after the final test, all interns completed a questionnaire
@@ -2750,10 +2695,32 @@ c210M02N25 - c210M02N44: Statistically significant decline in knowledge scores w
 h001M01TP12,h001M01LI06,be_constrained_by,1,c218M02N34 - c218M02N56: Video delivery is constrained by internet connectivity and device limitations,SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01LI06
 h001M01TP12,h001M01LI07,mitigate,2,"c218M01N19 - c218M01N33: Online learning offered flexibility, accessibility, and scalability for healthcare professionals facing geographic and financial barriers to in-person learning.
 c224M01N13 - c224M01N24: The paper presents m-learning as an accessible alternative that reduces the financial burden associated with continuing professional education.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01LI07
+h001M01TP12,h001M01LI09,be_constrained_by,3,"c217M01N11 - c217M01N21: Interview analysis identifies cultural differences as a main obstacle to technology application.
+c217M01N13 - c217M01N21: Interview analysis identifies cultural differences as a main obstacle to technology application.
+c218M01N19 - c218M01N36: Only 106 of 153 participants completed the online course with a passing score.
+c224M01N13 - c224M01N27: Eleven enrolled participants did not complete the training program.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01LI09
 h001M01TP12,h001M01LI13,be_constrained_by,1,"c210M02N25 - c210M02N41: Knowledge spillover between groups, as both cohorts operated within the same clinical environment",SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01LI13
 h001M01TP12,h001M01LI14,be_constrained_by,3,"c210M02N25 - c210M02N43: The intervention and control groups were selected from a single tertiary hospital
 c224M01N13 - c224M01N29: The sample was restricted to one medicine department in one hospital, hindering generalizability.
 c224M01N13 - c224M01N30: The study examined only one intervention related to COPD self-management.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01LI14
+h001M01TP12,h001M01OD08,depend_on,2,"c218M02N40 - c218M02N49: The online course depends on training program design
+c224M01N13 - c224M01N20: The MOOC addressed a need expressed by professionals, and alignment with their roles likely contributed to completion.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01OD08
+h001M01TP12,h001M01TE02,adopt,4,"c218M02N34 - c218M02N46: The video delivery system adopts neuro‑oncology video lectures
+c224M01N13 - c224M01N18: The training program incorporated multimedia resources including videos.
+c224M01N13 - c224M02N14: Integrating virtual simulation and gamification boosted motivation.
+c224M01N13 - c224M02N15: Each lesson includes a theoretical overview... supporting videos... and bibliographical references.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01TE02
+h001M01TP12,h001M01TE04,adopt,4,"c217M02N13 - c217M02N16: The technological environment includes Learning Management Systems (LMS).
+c218M01N19 - c218M01N28: Invited teams were enrolled into the prerequisite modules in Cure4Kids.
+c218M02N40 - c218M02N45: The LMS adopts downloadable offline files
+c218M02N42 - c218M01N28: Virtual learning adopts the Cure4Kids platform software",SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01TE04
+h001M01TP12,h001M01TE07,adopt,8,"c210M01N19 - c210M01N20: The intervention delivered educational messages through WeChat.
+c210M01N19 - c210M01N21: The intervention incorporated text and video multimedia elements.
+c210M02N25 - c210M01N20: Targeted educational content on PIVC placement was developed and delivered through the WeChat platform
+c210M02N25 - c210M02N30: Proliferation of mobile electronic devices has catalysed the evolution of nursing education methodologies
+c217M02N13 - c217M02N35: Digital collaboration platforms are part of the technological environment.
+c217M01N13 - c217M02N18: The technological environment includes online teaching platforms.
+c224M01N13 - c224M01N16: The Ecare-COPD MOOC was made available on the NAU e-learning platform.
+c224M01N13 - c224M01N19: The intervention is identified as m-learning, which the paper defines as access to educational content through mobile devices.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01TE07
 h001M01TP12,h001M01THR07,complement,1,c218M02N41 - c218M02N32: Cure4Kids complements traditional mentorship by adding virtual feedback channels,SIC 20-39 - Manufacturing,Aggregation,s003M01TP12,s003M01THR07
 h001M01TP13,h001M01ED05,depend_on,2,"c218M01N25 - c218M01N31: Completion of graded online tasks and activities depends on online engagement, which unreliable connectivity can impede.
 c218M01N25 - c218M01N32: Completion of graded online tasks and activities requires access to digital devices and supporting infrastructure.",SIC 20-39 - Manufacturing,Aggregation,s003M01TP13,s003M01ED05

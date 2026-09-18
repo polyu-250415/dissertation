@@ -1,7 +1,6 @@
 src_node_id,dst_node_id,relation_type,evidence_label,case_title
 s001M01ED01,h001M01ED01,is_an_instance_of,G,HOO1:Hard Aggregation
 s001M01ED02,h001M01ED02,is_an_instance_of,G,HOO1:Hard Aggregation
-s001M01ED03,h001M01ED03,is_an_instance_of,G,HOO1:Hard Aggregation
 s001M01ED04,h001M01ED04,is_an_instance_of,G,HOO1:Hard Aggregation
 s001M01ED05,h001M01ED05,is_an_instance_of,G,HOO1:Hard Aggregation
 s001M01ED06,h001M01ED06,is_an_instance_of,G,HOO1:Hard Aggregation

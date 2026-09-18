@@ -83,7 +83,7 @@
   <text x="478" y="359" class="small">Industry-level instance</text>
   <circle cx="487" cy="392" r="8" fill="#f59e0b"/>
   <text x="505" y="397" class="tk-text">TK: TK05 · practised skill</text>
-  <text x="478" y="425" class="small">Cases: c001, c015 · 4 TP–C pathways</text>
+  <text x="478" y="425" class="small">Cases: c001 · 4 TP–C pathways</text>
   <path d="M795 370 H840" class="edge"/>
 
   <!-- Industry s002 -->
@@ -117,14 +117,6 @@
     <text x="82" y="30" class="case-name">Traditional craftsmanship recording</text>
     <circle cx="29" cy="60" r="7" fill="#f59e0b"/><text x="44" y="65" class="tk-text">TK: TK05 · craft-process skill</text>
     <circle cx="29" cy="91" r="7" fill="#2563eb"/><text x="44" y="96" class="conv-text">TP–C: TP03 · TP09 · TP10</text>
-    <circle cx="29" cy="120" r="7" fill="#7c3aed"/><text x="44" y="125" class="div-text">TP–D: —</text>
-  </g>
-  <g transform="translate(1390,294)">
-    <rect width="480" height="142" rx="15" class="case-card"/>
-    <text x="22" y="30" class="case-id">c015</text>
-    <text x="82" y="30" class="case-name">Active blended learning</text>
-    <circle cx="29" cy="60" r="7" fill="#f59e0b"/><text x="44" y="65" class="tk-text">TK: TK05 · practical application</text>
-    <circle cx="29" cy="91" r="7" fill="#2563eb"/><text x="44" y="96" class="conv-text">TP–C: TP12</text>
     <circle cx="29" cy="120" r="7" fill="#7c3aed"/><text x="44" y="125" class="div-text">TP–D: —</text>
   </g>
 

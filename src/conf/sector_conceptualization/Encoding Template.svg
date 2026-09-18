@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="3400" height="3400" viewBox="0 0 3400 3400" role="img" aria-labelledby="title desc">
 <rect width="100%" height="100%" fill="#F7F9FC"/>
-<text x="1700" y="88" text-anchor="middle" class="heading" font-size="96">Optimized Analysis Template</text>
-<text x="1700" y="190" text-anchor="middle" class="subheading" font-size="64">Sunburst hierarchy: template → category →
+<text x="1700" y="188" text-anchor="middle" class="heading" font-size="96">Encoding Template</text>
+<text x="1700" y="290" text-anchor="middle" class="subheading" font-size="64">Sunburst hierarchy: template → category →
   coded topic</text>
 <g><title>Tacit Knowledge — 13 coded topics</title><path d="M1704.21,1010.01 A690,690 0 0 1 2113.26,1147.44 L1894.65,1439.74 A325,325 0 0 0 1701.99,1375.01 Z" fill="#4C6EF5" stroke="#F7F9FC" stroke-width="3"/></g><text x="1861.6" y="1224.9" text-anchor="middle" class="category" transform="rotate(18.57 1861.6 1218.9)">Tacit Knowledge</text><g><title>TK01 — Deliberately Withheld or Confidential Knowledge
 Articulable knowledge deliberately withheld because of secrecy, confidentiality, competition, hierarchy, or distrust.</title><path d="M1701.16,375.00 A1325,1325 0 0 1 1764.89,376.59 L1735.02,985.86 A715,715 0 0 0 1700.62,985.00 Z" fill="#B4C2FB" stroke="#FFFFFF" stroke-width="2"/></g><text x="1718.4" y="967.2" text-anchor="start" class="leaf" transform="rotate(-88.57 1718.4 963.2)">TK01 — Deliberately Withheld or Confidential Knowledge</text><g><title>TK02 — Knowledge Conveyed Through Examples or Demonstration

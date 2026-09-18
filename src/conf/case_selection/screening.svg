@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1440" height="900" viewBox="0 0 1440 900"
+     role="img" aria-labelledby="title description">
+  <title id="title">Study selection and filtering process</title>
+  <desc id="description">A monochrome flow diagram showing 2,927 records retrieved and screened, three sequential exclusion stages, and a final candidate data set of 360 records.</desc>
+
+  <defs>
+    <style>
+      .canvas { fill: #ffffff; }
+      .panel { fill: #ffffff; stroke: #b8b8b8; stroke-width: 1.5; }
+      .card { fill: #ffffff; stroke: #4a4a4a; stroke-width: 1.6; }
+      .card-soft { fill: #f4f4f4; stroke: #9a9a9a; stroke-width: 1.3; }
+      .card-dark { fill: #202020; stroke: #202020; stroke-width: 1.6; }
+      .rule { stroke: #d0d0d0; stroke-width: 1; }
+      .title { font: 700 30px Arial, Helvetica, sans-serif; fill: #111111; letter-spacing: -0.3px; }
+      .subtitle { font: 400 16px Arial, Helvetica, sans-serif; fill: #666666; }
+      .column-label { font: 700 13px Arial, Helvetica, sans-serif; fill: #666666; letter-spacing: 1.8px; }
+      .eyebrow { font: 700 12px Arial, Helvetica, sans-serif; fill: #6b6b6b; letter-spacing: 1.4px; }
+      .eyebrow-light { font: 700 12px Arial, Helvetica, sans-serif; fill: #d8d8d8; letter-spacing: 1.4px; }
+      .heading { font: 700 19px Arial, Helvetica, sans-serif; fill: #171717; }
+      .heading-small { font: 700 18px Arial, Helvetica, sans-serif; fill: #171717; }
+      .body { font: 400 17px Arial, Helvetica, sans-serif; fill: #2b2b2b; }
+      .body-small { font: 400 16px Arial, Helvetica, sans-serif; fill: #2b2b2b; }
+      .count { font: 700 23px Arial, Helvetica, sans-serif; fill: #111111; }
+      .final-heading { font: 700 20px Arial, Helvetica, sans-serif; fill: #ffffff; }
+      .final-count { font: 700 29px Arial, Helvetica, sans-serif; fill: #ffffff; }
+      .connector-main { fill: none; stroke: #202020; stroke-width: 2; }
+      .connector-branch { fill: none; stroke: #777777; stroke-width: 1.6; stroke-dasharray: 7 6; }
+      .connector-detail { fill: none; stroke: #555555; stroke-width: 1.5; }
+      .legend { font: 400 13px Arial, Helvetica, sans-serif; fill: #666666; }
+    </style>
+
+    <marker id="arrow-dark" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202020"/>
+    </marker>
+    <marker id="arrow-grey" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666666"/>
+    </marker>
+  </defs>
+
+  <rect class="canvas" x="0" y="0" width="1440" height="900"/>
+
+  <text class="title" x="54" y="56">Search and Screening process</text>
+  <text class="subtitle" x="54" y="84">Record identification, screening, and exclusion pathway</text>
+
+  <rect class="panel" x="48" y="112" width="1344" height="730" rx="16"/>
+
+  <!-- Column headings -->
+  <text class="column-label" x="96" y="151">PRIMARY FLOW</text>
+  <text class="column-label" x="568" y="151">EXCLUSION PATHWAY</text>
+  <text class="column-label" x="956" y="151">RATIONALE</text>
+  <line class="rule" x1="96" y1="164" x2="488" y2="164"/>
+  <line class="rule" x1="568" y1="164" x2="898" y2="164"/>
+  <line class="rule" x1="956" y1="164" x2="1344" y2="164"/>
+
+  <!-- Primary flow: retrieved records -->
+  <rect class="card" x="96" y="190" width="392" height="148" rx="10"/>
+  <text class="eyebrow" x="122" y="219">IDENTIFICATION</text>
+  <text class="heading" x="122" y="251">Records retrieved from</text>
+  <text class="body" x="122" y="282">WoS <tspan fill="#777777">(n = 889)</tspan></text>
+  <text class="body" x="258" y="282">Scopus <tspan fill="#777777">(n = 1,755)</tspan></text>
+  <text class="body" x="122" y="313">PubMed <tspan fill="#777777">(n = 283)</tspan></text>
+  <rect x="350" y="295" width="112" height="28" rx="14" fill="#ededed"/>
+  <text x="406" y="314" text-anchor="middle" style="font:700 13px Arial,Helvetica,sans-serif;fill:#333333">TOTAL 2,927</text>
+
+  <!-- Primary flow: screened records -->
+  <path class="connector-main" d="M 292 338 L 292 373" marker-end="url(#arrow-dark)"/>
+  <rect class="card" x="96" y="384" width="392" height="92" rx="10"/>
+  <text class="eyebrow" x="122" y="415">SCREENING</text>
+  <text class="heading" x="122" y="449">Records screened</text>
+  <text class="count" x="457" y="449" text-anchor="end">n = 2,927</text>
+
+  <!-- Direct primary-flow connection to final data set -->
+  <path class="connector-main" d="M 292 476 L 292 721" marker-end="url(#arrow-dark)"/>
+  <rect x="278" y="565" width="28" height="62" rx="14" fill="#ffffff"/>
+  <text transform="translate(297 617) rotate(-90)" text-anchor="middle" class="legend">retained records</text>
+
+  <!-- Final data set -->
+  <rect class="card-dark" x="96" y="732" width="392" height="78" rx="10"/>
+  <text class="eyebrow-light" x="122" y="758">Candidate Dataset</text>
+  <text class="final-heading" x="122" y="789">Records</text>
+  <text class="final-count" x="458" y="791" text-anchor="end">n = 360</text>
+
+  <!-- Branch from screening to rule filtering -->
+  <path class="connector-branch" d="M 488 430 C 520 430, 532 342, 568 342" marker-end="url(#arrow-grey)"/>
+
+  <!-- Exclusion stage 1 -->
+  <rect class="card-soft" x="568" y="294" width="330" height="96" rx="10"/>
+  <text class="eyebrow" x="592" y="323">RULE FILTERING</text>
+  <text class="heading-small" x="592" y="351">Records removed by rules</text>
+  <text class="count" x="874" y="375" text-anchor="end">n = 980</text>
+
+  <path class="connector-detail" d="M 898 342 L 942 342" marker-end="url(#arrow-dark)"/>
+  <rect class="card-soft" x="956" y="246" width="388" height="170" rx="10"/>
+  <text class="heading-small" x="980" y="277">Rules excluded</text>
+  <line class="rule" x1="980" y1="289" x2="1320" y2="289"/>
+  <text class="body-small" x="980" y="315">Language other than English <tspan fill="#777777">(n = 774)</tspan></text>
+  <text class="body-small" x="980" y="342">Source type not conference paper/journal</text>
+  <text class="body-small" x="980" y="365">article <tspan fill="#777777">(n = 102)</tspan></text>
+  <text class="body-small" x="980" y="392">Duplicate titles <tspan fill="#777777">(n = 104)</tspan></text>
+
+  <!-- Exclusion stage 2 -->
+  <path class="connector-branch" d="M 733 390 L 733 459" marker-end="url(#arrow-grey)"/>
+  <rect class="card-soft" x="568" y="470" width="330" height="96" rx="10"/>
+  <text class="eyebrow" x="592" y="499">MODEL REVIEW</text>
+  <text class="heading-small" x="592" y="527">Records removed by relevance</text>
+  <text class="count" x="874" y="551" text-anchor="end">n = 1,538</text>
+
+  <path class="connector-detail" d="M 898 518 L 942 518" marker-end="url(#arrow-dark)"/>
+  <rect class="card-soft" x="956" y="436" width="388" height="178" rx="10"/>
+  <text class="heading-small" x="980" y="467">Multiple models excluded</text>
+  <line class="rule" x1="980" y1="479" x2="1320" y2="479"/>
+  <text class="body-small" x="980" y="505">“Tacit Knowledge” relevance</text>
+  <text class="body-small" x="980" y="531">“Digital Tech” relevance</text>
+  <text class="body-small" x="980" y="557">Article type relevance <tspan fill="#777777">(not empirical)</tspan></text>
+  <text class="body-small" x="980" y="583">All models unanimously voted irrelevant.</text>
+
+  <!-- Exclusion stage 3 -->
+  <path class="connector-branch" d="M 733 566 L 733 635" marker-end="url(#arrow-grey)"/>
+  <rect class="card-soft" x="568" y="646" width="330" height="96" rx="10"/>
+  <text class="eyebrow" x="592" y="675">ANNOTATION REVIEW</text>
+  <text class="heading-small" x="592" y="703">Less relevant records removed</text>
+  <text class="count" x="874" y="727" text-anchor="end">n = 41</text>
+
+  <path class="connector-detail" d="M 898 694 L 942 694" marker-end="url(#arrow-dark)"/>
+  <rect class="card-soft" x="956" y="630" width="388" height="178" rx="10"/>
+  <text class="heading-small" x="980" y="661">Annotation excluded</text>
+  <line class="rule" x1="980" y1="673" x2="1320" y2="673"/>
+  <text class="body-small" x="980" y="699">Cases in a sector ≤ 3 <tspan fill="#777777">(n = 24)</tspan></text>
+  <text class="body-small" x="980" y="725">“Tacit Taxonomy”: low confidence <tspan fill="#777777">(n = 5)</tspan></text>
+  <text class="body-small" x="980" y="751">“Digital Tech”: low confidence <tspan fill="#777777">(n = 4)</tspan></text>
+  <text class="body-small" x="980" y="777">Duplicated work <tspan fill="#777777">(n = 8)</tspan></text>
+
+  <!-- Exclusion pathway rejoins the final selection -->
+  <path class="connector-branch" d="M 568 694 C 535 694, 525 771, 498 771" marker-end="url(#arrow-grey)"/>
+
+  <!-- Compact legend -->
+  <line class="connector-main" x1="572" y1="822" x2="610" y2="822" marker-end="url(#arrow-dark)"/>
+  <text class="legend" x="622" y="827">primary flow</text>
+  <line class="connector-branch" x1="732" y1="822" x2="770" y2="822" marker-end="url(#arrow-grey)"/>
+  <text class="legend" x="782" y="827">exclusion pathway</text>
+</svg>

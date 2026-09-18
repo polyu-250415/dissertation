@@ -8,8 +8,11 @@
  <style>.title{font:700 42px Georgia,serif;fill:#172535}.sub{font:400 22px Arial,sans-serif;fill:#566473}.name{font:700 20px Arial,sans-serif;fill:#172535}.pname{font:700 22px Arial,sans-serif;fill:#172535}.meta{font:400 16px Arial,sans-serif;fill:#586675}.rel{font:italic 16px Arial,sans-serif;fill:#465563;paint-order:stroke;stroke:#FBFCFD;stroke-width:7px}.count{font:700 18px Arial,sans-serif;fill:#fff}.ring{font:700 17px Arial,sans-serif;letter-spacing:2px}</style>
 </defs>
 <rect width="100%" height="100%" fill="#FBFCFD"/>
-<text x="90" y="72" class="title" font-size="48">Concentric evidence map: model-based knowledge representation and simulation</text>
-<text x="90" y="114" class="sub">Case nodes are grouped by conceptual parent and publication case to improve legibility</text>
+<text x="90" y="72" class="title" font-size="48">Evidence Chain for TP01: model-based knowledge representation and
+ simulation</text>
+<text x="90" y="114" class="sub" font-size="36">Case nodes are grouped by conceptual parent and publication case to
+ improve
+ legibility</text>
 <line x1="90" y1="148" x2="3210" y2="148" stroke="#D5DDE5"/>
 <circle cx="1650" cy="1710" r="890" fill="#F7F9FB" stroke="#CBD5DE" stroke-width="2.5" stroke-dasharray="12 12"/>
 <circle cx="1650" cy="1710" r="1510" fill="none" stroke="#D8E0E7" stroke-width="2.5" stroke-dasharray="12 12"/>
@@ -137,5 +140,6 @@
                                                                                    text-anchor="middle"
                                                                                    class="count">9</text><text
         x="1650" y="1709.0" text-anchor="middle" class="pname" font-size="24">Model-based Knowledge
- Representation</text><text x="1650" y="1733.0" text-anchor="middle" class="pname">and Simulation</text><text x="1650" y="1771.0" text-anchor="middle" class="sub">ID s001M01TP01 · count 9</text></g>
+ Representation</text><text x="1650" y="1733.0" text-anchor="middle" class="pname" font-size="24">and Simulation</text><text
+        x="1650" y="1771.0" text-anchor="middle" class="sub">ID s001M01TP01 · count 9</text></g>
 </svg>

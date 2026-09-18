@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2400" height="1630"
+     viewBox="0 0 2400 1800" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">Knowledge Retention Map</title>
+  <desc id="svg-desc">A directed knowledge map linking explicit and tacit knowledge, knowledge holders and learners, human-centred and technology-enabled practices, digital technology, organizational and environmental dependencies, and limitations.</desc>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1C274C" flood-opacity="0.10"/>
+    </filter>
+
+    <marker id="arrow-flow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#6252B7"/>
+    </marker>
+    <marker id="arrow-participate" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#0F7B78"/>
+    </marker>
+    <marker id="arrow-evaluate" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#C26721"/>
+    </marker>
+    <marker id="arrow-depend" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#5C687A"/>
+    </marker>
+    <marker id="arrow-adopt" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#2469A5"/>
+    </marker>
+    <marker id="arrow-constrain" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#B33A4A"/>
+    </marker>
+    <marker id="arrow-mitigate" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#2F7D52"/>
+    </marker>
+    <marker id="arrow-synergy" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#31394A"/>
+    </marker>
+
+    <style>
+      .bg { fill: #F7F8FC; }
+      .frame { fill: #FFFFFF; stroke: #DCE1EA; stroke-width: 2; }
+      .title { font: 700 43px Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill:
+      #19213A; letter-spacing: -0.5px; }
+      .subtitle { font: 400 39px Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      fill: #667087; }
+      .layer-label { font: 700 15px Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #788297; letter-spacing: 2.5px; }
+      .node { stroke-width: 2.5; filter: url(#shadow); }
+      .node-title { font: 700 25px Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #172038; }
+      .node-copy { font: 400 17px Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #536077; }
+      .node-kicker { font: 700 13px Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.7px; }
+      .knowledge { fill: #F0EDFF; stroke: #8A7BD5; }
+      .actor { fill: #FFF6DF; stroke: #D99B34; }
+      .practice { fill: #EAF4FF; stroke: #4B83B8; }
+      .enabler { fill: #E8F7F3; stroke: #45A184; }
+      .dependency { fill: #F0F3F7; stroke: #8792A4; }
+      .limitation { fill: #FFF0F2; stroke: #D16A78; }
+      .edge { fill: none; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.93; }
+      .flow { stroke: #6252B7; marker-end: url(#arrow-flow); }
+      .participate { stroke: #0F7B78; marker-end: url(#arrow-participate); }
+      .evaluate { stroke: #C26721; marker-end: url(#arrow-evaluate); stroke-dasharray: 10 8; }
+      .depend { stroke: #5C687A; marker-end: url(#arrow-depend); stroke-dasharray: 4 8; }
+      .adopt { stroke: #2469A5; marker-end: url(#arrow-adopt); }
+      .constrain { stroke: #B33A4A; marker-end: url(#arrow-constrain); }
+      .mitigate { stroke: #2F7D52; marker-end: url(#arrow-mitigate); stroke-dasharray: 13 8; }
+      .synergy { stroke: #31394A; marker-end: url(#arrow-synergy); }
+      .edge-label rect { fill: #FFFFFF; stroke-width: 1.5; rx: 14; }
+      .edge-label text { font: 600 15px "SFMono-Regular", Consolas, "Liberation Mono", monospace; text-anchor: middle; dominant-baseline: middle; }
+      .label-flow rect { stroke: #BEB6EA; } .label-flow text { fill: #5142A5; }
+      .label-participate rect { stroke: #8BC8C4; } .label-participate text { fill: #0B6E6B; }
+      .label-evaluate rect { stroke: #E7B88F; } .label-evaluate text { fill: #A95417; }
+      .label-depend rect { stroke: #B7BFCA; } .label-depend text { fill: #4E596A; }
+      .label-adopt rect { stroke: #9EC3E0; } .label-adopt text { fill: #1C5D94; }
+      .label-constrain rect { stroke: #E4A6AF; } .label-constrain text { fill: #9F2F40; }
+      .label-mitigate rect { stroke: #9AC8AC; } .label-mitigate text { fill: #286B47; }
+      .label-synergy rect { stroke: #A8AFBC; } .label-synergy text { fill: #31394A; }
+      .legend-text { font: 600 15px Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4E596F; }
+      .note { font: 400 15px Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #707A8F; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="2400" height="1600"/>
+  <rect class="frame" x="38" y="38" width="2324" height="1530" rx="30"/>
+
+  <text class="title" x="110" y="112">Conceptual Framework for Knowledge Retention</text>
+  <text class="subtitle" x="110" y="169">10 entity categories and corresponding relations</text>
+
+  <!-- Relation legend -->
+  <g transform="translate(1110 92)">
+    <path class="edge flow" d="M0 0 H40"/><text class="legend-text" x="56" y="5">knowledge flow</text>
+    <path class="edge participate" d="M200 0 H240"/><text class="legend-text" x="256" y="5">participation</text>
+    <path class="edge evaluate" d="M390 0 H430"/><text class="legend-text" x="446" y="5">evaluation</text>
+    <path class="edge adopt" d="M560 0 H600"/><text class="legend-text" x="616" y="5">adoption</text>
+    <path class="edge depend" d="M720 0 H760"/><text class="legend-text" x="776" y="5">dependency</text>
+    <path class="edge constrain" d="M905 0 H945"/><text class="legend-text" x="961" y="5">constraint</text>
+    <path class="edge mitigate" d="M1090 0 H1130"/><text class="legend-text" x="1146" y="5">mitigation</text>
+  </g>
+
+  <!-- Layer guides -->
+  <text class="layer-label" x="110" y="232">KNOWLEDGE</text>
+  <line x1="110" y1="247" x2="2290" y2="247" stroke="#E5E8EF" stroke-width="2"/>
+  <text class="layer-label" x="110" y="685">ACTORS &amp; PRACTICES</text>
+  <line x1="110" y1="700" x2="2290" y2="700" stroke="#E5E8EF" stroke-width="2"/>
+  <text class="layer-label" x="110" y="1285">ENABLERS, DEPENDENCIES &amp; CONSTRAINTS</text>
+  <line x1="110" y1="1300" x2="2290" y2="1300" stroke="#E5E8EF" stroke-width="2"/>
+
+  <!-- EDGES: knowledge and actors -->
+  <g id="edges">
+    <!-- Explicit Knowledge to practices -->
+    <path class="edge flow" d="M650 430 C650 520, 690 610, 730 760"/>
+    <path class="edge flow" d="M840 405 C1110 470, 1420 590, 1570 760"/>
+
+    <!-- Practices evaluate Explicit Knowledge; deliberately offset from forward flow -->
+    <path class="edge evaluate" d="M570 760 C535 615, 520 515, 560 430"/>
+    <path class="edge evaluate" d="M1460 760 C1285 575, 1010 475, 785 430"/>
+
+    <!-- Tacit Knowledge to holder and learner -->
+    <path class="edge flow" d="M1750 430 C1690 505, 1510 535, 410 565 C300 568, 225 600, 225 720"/>
+    <path class="edge flow" d="M2010 430 C2130 500, 2180 585, 2180 720"/>
+
+    <!-- Tacit Knowledge to practices -->
+    <path class="edge flow" d="M1690 430 C1650 530, 1645 625, 1645 760"/>
+    <path class="edge flow" d="M1510 405 C1260 475, 1000 585, 855 760"/>
+
+    <!-- Practices evaluate Tacit Knowledge -->
+    <path class="edge evaluate" d="M1740 760 C1770 625, 1800 520, 1840 430"/>
+    <path class="edge evaluate" d="M950 760 C1110 585, 1365 485, 1585 430"/>
+
+    <!-- Holder participates -->
+    <path class="edge participate" d="M360 790 C420 795, 465 805, 500 830"/>
+    <path class="edge participate" d="M225 860 C270 1080, 1140 1100, 1430 970"/>
+
+    <!-- Learner participates -->
+    <path class="edge participate" d="M2035 790 C1975 795, 1930 805, 1900 830"/>
+    <path class="edge participate" d="M2180 860 C2150 1110, 1290 1120, 970 980"/>
+
+    <!-- Practice-to-practice relations -->
+    <path class="edge synergy" d="M1000 845 C1130 790, 1270 790, 1400 845"/>
+    <path class="edge synergy" d="M1400 955 C1270 1010, 1130 1010, 1000 955"/>
+
+    <!-- Adoption -->
+    <path class="edge adopt" d="M1515 1040 C1370 1180, 790 1190, 475 1360"/>
+    <!-- The path above from Technology-Enabled Practice to Explicit Knowledge
+         carries both evaluate and adopt; the stacked label records both relations. -->
+
+    <!-- Dependencies and constraints -->
+    <path class="edge depend" d="M1600 1040 C1470 1200, 1190 1230, 965 1360"/>
+    <path class="edge depend" d="M810 1040 C930 1180, 1220 1225, 1370 1360"/>
+    <path class="edge constrain" d="M1780 1040 C1850 1150, 1940 1230, 2045 1360"/>
+    <path class="edge constrain" d="M900 1040 C1170 1165, 1690 1200, 1960 1360"/>
+
+    <!-- Remaining mitigation relations target limitations only. -->
+    <path class="edge mitigate" d="M940 1040 C1240 1135, 1700 1200, 1970 1360"/>
+    <!-- Technology-Enabled Practice → Limitation uses the existing constraint
+         path with a stacked multi-relation label. -->
+
+    <!-- Tacit knowledge is difficult to capture due to limitation -->
+    <path class="edge constrain" d="M2110 405 C2280 500, 2280 1160, 2180 1360" stroke-dasharray="3 9"/>
+  </g>
+
+  <!-- EDGE LABELS -->
+  <g id="edge-labels">
+    <g class="edge-label label-flow" transform="translate(645 580)"><rect x="-95" y="-17" width="190" height="34"/><text y="1">be_transferred_by</text></g>
+    <g class="edge-label label-flow" transform="translate(1080 450)"><rect x="-95" y="-17" width="190" height="34"/><text y="1">be_transferred_by</text></g>
+    <g class="edge-label label-evaluate" transform="translate(520 637)"><rect x="-52" y="-17" width="104" height="34"/><text y="1">evaluate</text></g>
+    <g class="edge-label label-evaluate" transform="translate(1110 650)"><rect x="-63" y="-28" width="126" height="56"/><text y="-8">evaluate</text><text y="13" fill="#1C5D94">adopt</text></g>
+
+    <g class="edge-label label-flow" transform="translate(830 535)"><rect x="-199" y="-28" width="398" height="56"/><text y="-8">be_documented_partially_by</text><text y="13">be_shared_by</text></g>
+    <g class="edge-label label-flow" transform="translate(2140 555)"><rect x="-83" y="-17" width="166" height="34"/><text y="1">be_absorbed_by</text></g>
+    <g class="edge-label label-flow" transform="translate(1640 610)"><rect x="-107" y="-28" width="214" height="56"/><text y="-8">be_captured_by</text><text y="13">be_transferred_by</text></g>
+    <g class="edge-label label-flow" transform="translate(1280 565)"><rect x="-107" y="-28" width="214" height="56"/><text y="-8">be_captured_by</text><text y="13">be_transferred_by</text></g>
+    <g class="edge-label label-evaluate" transform="translate(1810 585)"><rect x="-52" y="-17" width="104" height="34"/><text y="1">evaluate</text></g>
+    <g class="edge-label label-evaluate" transform="translate(1410 485)"><rect x="-52" y="-17" width="104" height="34"/><text y="1">evaluate</text></g>
+
+    <g class="edge-label label-participate" transform="translate(430 776)"><rect x="-63" y="-17" width="126" height="34"/><text y="1">participate_in</text></g>
+    <g class="edge-label label-participate" transform="translate(880 1081)"><rect x="-63" y="-17" width="126" height="34"/><text y="1">participate_in</text></g>
+    <g class="edge-label label-participate" transform="translate(1945 783)"><rect x="-63" y="-17" width="126" height="34"/><text y="1">participate_in</text></g>
+    <g class="edge-label label-participate" transform="translate(1555 1094)"><rect x="-63" y="-17" width="126" height="34"/><text y="1">participate_in</text></g>
+
+    <g class="edge-label label-synergy" transform="translate(1200 800)"><rect x="-58" y="-17" width="116" height="34"/><text y="1">complement</text></g>
+    <g class="edge-label label-synergy" transform="translate(1200 1000)"><rect x="-94" y="-17" width="188" height="34"/><text y="1">cannot_fully_replace</text></g>
+
+    <g class="edge-label label-adopt" transform="translate(1090 1135)"><rect x="-34" y="-17" width="68" height="34"/><text y="1">adopt</text></g>
+    <g class="edge-label label-depend" transform="translate(1290 1175)"><rect x="-48" y="-17" width="96" height="34"/><text y="1">depend_on</text></g>
+    <g class="edge-label label-depend" transform="translate(1130 1240)"><rect x="-48" y="-17" width="96" height="34"/><text y="1">depend_on</text></g>
+    <g class="edge-label label-constrain" transform="translate(1990 1180)"><rect x="-94" y="-28" width="188" height="56"/><text y="-8">be_constrained_by</text><text y="13" fill="#286B47">mitigate</text></g>
+    <g class="edge-label label-constrain" transform="translate(1480 1165)"><rect x="-94" y="-28" width="188" height="56"/><text y="-8">be_constrained_by</text><text y="13" fill="#286B47">mitigate</text></g>
+
+    <g class="edge-label label-constrain" transform="translate(2188 900)"><rect x="-154" y="-28" width="308" height="56"/><text y="-8">be_difficult_to_capture_due_to</text><text y="13">(Tacit Knowledge → Limitation)</text></g>
+  </g>
+
+  <!-- NODES -->
+  <g id="nodes">
+    <!-- Knowledge -->
+    <g transform="translate(300 270)">
+      <title>Explicit Knowledge: Codified, documented, or materialised forms of knowledge that can be stored, accessed, or reused. These artifacts may serve as carriers or outputs of knowledge retention.</title>
+      <rect class="node knowledge" width="620" height="160" rx="24"/>
+      <text class="node-kicker" x="32" y="38" fill="#6252B7">KNOWLEDGE FORM</text>
+      <text class="node-title" x="32" y="76">Explicit Knowledge</text>
+      <text class="node-copy" x="32" y="108">Codified, documented, or materialised knowledge</text>
+      <text class="node-copy" x="32" y="132">that can be stored, accessed, and reused.</text>
+    </g>
+
+    <g transform="translate(1480 270)">
+      <title>Tacit Knowledge: Experience-based, practice-based, embodied, contextual, or difficult-to-codify knowledge involved in the case. These elements are often held by individuals or groups and may be only partially represented through technology.</title>
+      <rect class="node knowledge" width="660" height="160" rx="24"/>
+      <text class="node-kicker" x="32" y="38" fill="#6252B7">KNOWLEDGE FORM</text>
+      <text class="node-title" x="32" y="76">Tacit Knowledge</text>
+      <text class="node-copy" x="32" y="108">Experience-based, embodied, contextual knowledge</text>
+      <text class="node-copy" x="32" y="132">that is difficult to codify or fully represent.</text>
+    </g>
+
+    <!-- Actors -->
+    <g transform="translate(90 720)">
+      <title>Knowledge Holder: Individuals, groups, communities, or organizational actors who possess or perform the relevant tacit knowledge.</title>
+      <rect class="node actor" width="270" height="140" rx="22"/>
+      <text class="node-kicker" x="26" y="34" fill="#A96F12">ACTOR</text>
+      <text class="node-title" x="26" y="70">Knowledge Holder</text>
+      <text class="node-copy" x="26" y="101">Possesses or performs</text>
+      <text class="node-copy" x="26" y="124">relevant tacit knowledge.</text>
+    </g>
+
+    <g transform="translate(2035 720)">
+      <title>Knowledge Learner: Specific role, team, or system which master tacit knowledge in knowledge retention practices. Node names remain consistent with the terms used in the paper.</title>
+      <rect class="node actor" width="270" height="140" rx="22"/>
+      <text class="node-kicker" x="26" y="34" fill="#A96F12">ACTOR / SYSTEM</text>
+      <text class="node-title" x="26" y="70">Knowledge Learner</text>
+      <text class="node-copy" x="26" y="101">Masters tacit knowledge</text>
+      <text class="node-copy" x="26" y="124">through retention practice.</text>
+    </g>
+
+    <!-- Practices -->
+    <g transform="translate(500 760)">
+      <title>Traditional Human-Centred Practice: Conventional knowledge retention or transfer practices that rely primarily on human interaction, social learning, participation, or manual documentation.</title>
+      <rect class="node practice" width="500" height="280" rx="26"/>
+      <text class="node-kicker" x="34" y="42" fill="#2469A5">KNOWLEDGE RETENTION PRACTICE</text>
+      <text class="node-title" x="34" y="83">Traditional Human-Centred</text>
+      <text class="node-title" x="34" y="114">Practice</text>
+      <line x1="34" y1="139" x2="466" y2="139" stroke="#BED8EF" stroke-width="2"/>
+      <text class="node-copy" x="34" y="174">Relies primarily on human interaction,</text>
+      <text class="node-copy" x="34" y="199">social learning, participation, or</text>
+      <text class="node-copy" x="34" y="224">manual documentation.</text>
+      <text x="34" y="256" font-family="Inter, ui-sans-serif, sans-serif" font-size="15" font-weight="600" fill="#2469A5">HUMAN-LED</text>
+    </g>
+
+    <g transform="translate(1400 760)">
+      <title>Technology-Enabled Practice: Knowledge retention practices supported, extended, or reshaped by emerging technologies. These practices involve the use of digital tools to capture or retain knowledge.</title>
+      <rect class="node practice" width="500" height="280" rx="26"/>
+      <text class="node-kicker" x="34" y="42" fill="#2469A5">KNOWLEDGE RETENTION PRACTICE</text>
+      <text class="node-title" x="34" y="83">Technology-Enabled Practice</text>
+      <line x1="34" y1="108" x2="466" y2="108" stroke="#BED8EF" stroke-width="2"/>
+      <text class="node-copy" x="34" y="143">Uses emerging digital tools to support,</text>
+      <text class="node-copy" x="34" y="168">extend, or reshape the capture and</text>
+      <text class="node-copy" x="34" y="193">retention of knowledge.</text>
+      <text x="34" y="256" font-family="Inter, ui-sans-serif, sans-serif" font-size="15" font-weight="600" fill="#2469A5">TECHNOLOGY-ASSISTED</text>
+    </g>
+
+    <!-- Enablers, dependencies, and constraint -->
+    <g transform="translate(120 1360)">
+      <title>Digital Technology: Specific emerging digital technologies adopted by Technology-Enabled Practice.</title>
+      <rect class="node enabler" width="410" height="170" rx="22"/>
+      <text class="node-kicker" x="28" y="38" fill="#2F7D66">ENABLER</text>
+      <text class="node-title" x="28" y="76">Digital Technology</text>
+      <text class="node-copy" x="28" y="110">Emerging technologies adopted by</text>
+      <text class="node-copy" x="28" y="134">technology-enabled practice.</text>
+    </g>
+
+    <g transform="translate(620 1360)">
+      <title>Organization Dependency: Organizational, social, or cultural conditions that influence whether technology-enabled knowledge retention can work effectively.</title>
+      <rect class="node dependency" width="440" height="170" rx="22"/>
+      <text class="node-kicker" x="28" y="38" fill="#5C687A">INTERNAL CONDITION</text>
+      <text class="node-title" x="28" y="76">Organization Dependency</text>
+      <text class="node-copy" x="28" y="110">Organizational, social, or cultural</text>
+      <text class="node-copy" x="28" y="134">conditions influencing effectiveness.</text>
+    </g>
+
+    <g transform="translate(1160 1360)">
+      <title>Environment Dependency: Specific external factor outside the organization's direct control required for the practice.</title>
+      <rect class="node dependency" width="440" height="170" rx="22"/>
+      <text class="node-kicker" x="28" y="38" fill="#5C687A">EXTERNAL CONDITION</text>
+      <text class="node-title" x="28" y="76">Environment Dependency</text>
+      <text class="node-copy" x="28" y="110">External factors beyond the organization’s</text>
+      <text class="node-copy" x="28" y="134">direct control required for practice.</text>
+    </g>
+
+    <g transform="translate(1690 1360)">
+      <title>Limitation: Technical, organizational, data-related, or knowledge-related constraints that restrict the effectiveness of technology-enabled tacit knowledge retention.</title>
+      <rect class="node limitation" width="500" height="170" rx="22"/>
+      <text class="node-kicker" x="28" y="38" fill="#B33A4A">CONSTRAINT</text>
+      <text class="node-title" x="28" y="76">Limitation</text>
+      <text class="node-copy" x="28" y="110">Technical, organizational, data, or knowledge</text>
+      <text class="node-copy" x="28" y="134">constraints that restrict effectiveness.</text>
+    </g>
+  </g>
+
+</svg>

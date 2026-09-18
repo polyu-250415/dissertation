@@ -11,50 +11,54 @@
 <rect width="3600" height="1900" fill="#F7F8FA"/>
 <text class="title" x="90" y="82">Industry-level KG for Construction</text>
 <text class="summary" x="90" y="125">Evidence-grounded subgraph for s001M01: 103 concepts and 551 unique directed relationships. Columns progress from technological inputs and practices through knowledge forms and actors to dependencies and limitations.</text>
-<text class="freq" x="90" y="164">Relationship frequencies — be_constrained_by: 81  ·  be_transferred_by: 76  ·  participate_in: 76  ·  adopt: 64  ·  depend_on: 60  ·  evaluate: 29  ·  be_shared_by: 27  ·  mitigate: 26  ·</text>
-<text class="freq" x="90" y="188">be_difficult_to_capture_due_to: 21  ·  be_absorbed_by: 20  ·  be_captured_by: 14  ·  be_derived_from: 14  ·  be_composed_of: 12  ·  complement: 10  ·  translate_into: 8  ·  cannot_fully_replace: 7  ·</text>
+<text class="freq" x="90" y="164" font-size="24">Relationship frequencies — be_constrained_by: 81  ·
+    be_transferred_by: 76  ·
+    participate_in: 76  ·  adopt: 64  ·  depend_on: 60  ·  evaluate: 29  ·  be_shared_by: 27  ·  mitigate: 26  ·</text>
+<text class="freq" x="90" y="188" font-size="24">be_difficult_to_capture_due_to: 21  ·  be_absorbed_by: 20  ·
+    be_captured_by: 14
+    ·  be_derived_from: 14  ·  be_composed_of: 12  ·  complement: 10  ·  translate_into: 8  ·  cannot_fully_replace: 7  ·</text>
 <line x1="261.0" y1="270" x2="261.0" y2="1840" stroke="#3B78C8" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="103" y="260" width="316" height="104" rx="18" fill="#3B78C8"/>
-<text class="head" text-anchor="middle" x="261" y="308">Digital Technology</text>
-<text x="261" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 7</text>
+<text class="head" font-size="24" text-anchor="middle" x="261" y="308">Digital Technology</text>
+<text x="261" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 7</text>
 <line x1="603.0" y1="270" x2="603.0" y2="1840" stroke="#12A6A6" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="445" y="260" width="316" height="104" rx="18" fill="#12A6A6"/>
-<text class="head" text-anchor="middle" x="603" y="295">Technology-enabled</text>
-<text class="head" text-anchor="middle" x="603" y="319">Practice</text>
-<text x="603" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 13</text>
+<text class="head" font-size="24" text-anchor="middle" x="603" y="295">Technology-enabled</text>
+<text class="head" font-size="24" text-anchor="middle" x="603" y="319">Practice</text>
+<text x="603" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 13</text>
 <line x1="945.0" y1="270" x2="945.0" y2="1840" stroke="#7B6BB1" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="787" y="260" width="316" height="104" rx="18" fill="#7B6BB1"/>
-<text class="head" text-anchor="middle" x="945" y="295">Traditional Human-</text>
-<text class="head" text-anchor="middle" x="945" y="319">centered Practice</text>
-<text x="945" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 12</text>
+<text class="head" font-size="24" text-anchor="middle" x="945" y="295">Traditional Human-</text>
+<text class="head" font-size="24" text-anchor="middle" x="945" y="319">centered Practice</text>
+<text x="945" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 12</text>
 <line x1="1287.0" y1="270" x2="1287.0" y2="1840" stroke="#D6842B" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="1129" y="260" width="316" height="104" rx="18" fill="#D6842B"/>
-<text class="head" text-anchor="middle" x="1287" y="308">Tacit Knowledge</text>
-<text x="1287" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 10</text>
+<text class="head" font-size="24" text-anchor="middle" x="1287" y="308">Tacit Knowledge</text>
+<text x="1287" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 10</text>
 <line x1="1629.0" y1="270" x2="1629.0" y2="1840" stroke="#D0A11D" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="1471" y="260" width="316" height="104" rx="18" fill="#D0A11D"/>
-<text class="head" text-anchor="middle" x="1629" y="308">Explicit Knowledge</text>
-<text x="1629" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 8</text>
+<text class="head" font-size="24" text-anchor="middle" x="1629" y="308">Explicit Knowledge</text>
+<text x="1629" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 8</text>
 <line x1="1971.0" y1="270" x2="1971.0" y2="1840" stroke="#4C9B62" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="1813" y="260" width="316" height="104" rx="18" fill="#4C9B62"/>
-<text class="head" text-anchor="middle" x="1971" y="308">Knowledge Holder</text>
-<text x="1971" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 14</text>
+<text class="head" font-size="24" text-anchor="middle" x="1971" y="308">Knowledge Holder</text>
+<text x="1971" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 14</text>
 <line x1="2313.0" y1="270" x2="2313.0" y2="1840" stroke="#75A943" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="2155" y="260" width="316" height="104" rx="18" fill="#75A943"/>
-<text class="head" text-anchor="middle" x="2313" y="308">Knowledge Learner</text>
-<text x="2313" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 10</text>
+<text class="head" font-size="24" text-anchor="middle" x="2313" y="308">Knowledge Learner</text>
+<text x="2313" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 10</text>
 <line x1="2655.0" y1="270" x2="2655.0" y2="1840" stroke="#B85B77" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="2497" y="260" width="316" height="104" rx="18" fill="#B85B77"/>
-<text class="head" text-anchor="middle" x="2655" y="308">Organizational Dependency</text>
-<text x="2655" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 8</text>
+<text class="head" font-size="24" text-anchor="middle" x="2655" y="308">Organizational Dependency</text>
+<text x="2655" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 8</text>
 <line x1="2997.0" y1="270" x2="2997.0" y2="1840" stroke="#80664F" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="2839" y="260" width="316" height="104" rx="18" fill="#80664F"/>
-<text class="head" text-anchor="middle" x="2997" y="308">Environmental Dependency</text>
-<text x="2997" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 7</text>
+<text class="head" font-size="24" text-anchor="middle" x="2997" y="308">Environmental Dependency</text>
+<text x="2997" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 7</text>
 <line x1="3339.0" y1="270" x2="3339.0" y2="1840" stroke="#C55454" stroke-opacity=".26" stroke-width="2" stroke-dasharray="8 12"/>
 <rect x="3181" y="260" width="316" height="104" rx="18" fill="#C55454"/>
-<text class="head" text-anchor="middle" x="3339" y="308">Limitation</text>
-<text x="3339" y="348" text-anchor="middle" font-size="13" fill="white" opacity=".85">n = 14</text>
+<text class="head" font-size="24" text-anchor="middle" x="3339" y="308">Limitation</text>
+<text x="3339" y="348" text-anchor="middle" font-size="24" fill="white" opacity=".85">n = 14</text>
 <path class="edge" stroke-width="1.15" d="M 756.8,490.0 C 811.8,490.0 739.2,584.6 794.2,584.6"><title>s001M01TP03 → s001M01THR11 · complement</title></path>
 <path class="edge" stroke-width="1.15" d="M 753.8,868.6 C 808.8,868.6 739.7,868.6 794.7,868.6"><title>s001M01TP04 → s001M01THR12 · complement</title></path>
 <path class="edge" stroke-width="1.15" d="M 755.0,584.6 C 810.0,584.6 738.3,490.0 793.3,490.0"><title>s001M01TP07 → s001M01THR15 · complement</title></path>
@@ -1117,5 +1121,5 @@
 <text class="name" text-anchor="middle" x="2997.0" y="849.6">Natural &amp; Climatic</text>
 <text class="name" text-anchor="middle" x="2997.0" y="868.6">Environment</text>
 <text class="meta" text-anchor="middle" x="2997.0" y="894.6">ID: s001M01ED04 · count: 3</text></g>
-<text x="3510" y="1870" text-anchor="end" font-size="13" fill="#7A8492">Direction follows Neo4j startNode → endNode · Hover for relationship types</text>
+<text x="3510" y="1870" text-anchor="end" font-size="24" fill="#7A8492">Direction follows Neo4j startNode → endNode · Source: src/data/graph/case_study/sector_4_v_ds/s001M01_knowledge_map.svg</text>
 </svg>
