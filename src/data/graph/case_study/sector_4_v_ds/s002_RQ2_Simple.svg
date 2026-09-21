@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1260" viewBox="0 0 2000 1260" role="img" aria-labelledby="title desc">
+  <title id="title">Resources and capabilities required for emerging-technology-enabled tacit knowledge retention</title>
+  <desc id="desc">Conceptual map for the bounded s002 manufacturing cases. Five digitally reconfigured dependencies and five dependencies rooted in established manufacturing operations jointly condition digital codification and experiential amplification. The middle panels identify technology-enabled practice indexes and contributing cases. Culture, leadership-adoption and sociocultural dependencies are excluded.</desc>
+
+  <defs>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff; --ink: #111111; --muted: #5f6368;
+        --band-stroke: #b8b8b8;
+        --node: #ffffff; --node-stroke: #707070;
+        --tech-fill: #f7f7f7; --exp-fill: #fbfbfb;
+        --codify: #292929; --experience: #595959;
+        --d1: #1f1f1f; --d2: #383838; --d3: #515151; --d4: #6a6a6a; --d5: #838383;
+        --p1: #2b2b2b; --p2: #444444; --p3: #5d5d5d; --p4: #767676; --p5: #8f8f8f;
+      }
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: var(--ink); }
+      .figure-title { font-size: 31px; font-weight: 500; letter-spacing: -0.25px; }
+      .subtitle { font-size: 16px; fill: var(--muted); }
+      .section-title { font-size: 22px; font-weight: 500; }
+      .section-note { font-size: 14px; fill: var(--muted); }
+      .dep-code { font-size: 15px; font-weight: 600; }
+      .dep-title { font-size: 16px; font-weight: 500; }
+      .dep-note { font-size: 12.5px; fill: var(--muted); }
+      .dep-ids { font-size: 13px; fill: var(--muted); }
+      .score { font-size: 14px; fill: var(--muted); }
+      .mechanism-title { font-size: 20px; font-weight: 600; }
+      .mechanism-note { font-size: 15px; fill: var(--muted); }
+      .mechanism-item { font-size: 15px; }
+      .evidence-line { font-size: 12.5px; fill: var(--muted); letter-spacing: 0.05px; }
+      .legend { font-size: 13px; fill: var(--muted); }
+      .card { fill: var(--node); stroke-width: 2; }
+      .mechanism-frame { stroke-width: 1.7; }
+      .codification-frame { fill: var(--tech-fill); stroke: var(--codify); }
+      .experience-frame { fill: var(--exp-fill); stroke: var(--experience); }
+      .link { fill: none; stroke-width: 2; opacity: 0.28; }
+      .link-digital { stroke-dasharray: 9 5; }
+      .link-persistent { stroke-dasharray: none; }
+      .d1 { stroke: var(--d1); } .d2 { stroke: var(--d2); } .d3 { stroke: var(--d3); }
+      .d4 { stroke: var(--d4); } .d5 { stroke: var(--d5); }
+      .p1 { stroke: var(--p1); } .p2 { stroke: var(--p2); } .p3 { stroke: var(--p3); }
+      .p4 { stroke: var(--p4); } .p5 { stroke: var(--p5); }
+      .relation-set:hover .link { opacity: 0.9; stroke-width: 3; }
+      .relation-set:hover .card { stroke-width: 3; }
+    </style>
+
+    <marker id="arrow-d1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--d1)"/></marker>
+    <marker id="arrow-d2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--d2)"/></marker>
+    <marker id="arrow-d3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--d3)"/></marker>
+    <marker id="arrow-d4" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--d4)"/></marker>
+    <marker id="arrow-d5" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--d5)"/></marker>
+    <marker id="arrow-p1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--p1)"/></marker>
+    <marker id="arrow-p2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--p2)"/></marker>
+    <marker id="arrow-p3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--p3)"/></marker>
+    <marker id="arrow-p4" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--p4)"/></marker>
+    <marker id="arrow-p5" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="var(--p5)"/></marker>
+  </defs>
+
+  <rect width="2000" height="1260" fill="var(--bg)"/>
+  <text x="55" y="47" class="figure-title">Resource and Capability Dependencies for Manufacturing</text>
+  <text x="55" y="76" class="subtitle">Emerging-technology-enabled tacit knowledge retention · bounded s002 case sample</text>
+
+  <!-- Three analytical bands with equal 30 px gaps -->
+  <rect x="35" y="105" width="1930" height="300" rx="18" fill="none" stroke="var(--band-stroke)" stroke-width="1.2"/>
+  <text x="65" y="141" class="section-title">DEPENDENCIES CREATED OR RESHAPED BY INDUSTRIAL DIGITALIZATION</text>
+  <text x="1935" y="141" text-anchor="end" class="section-note">ranked by evidence count · dashed links</text>
+
+  <rect x="35" y="435" width="1930" height="370" rx="18" fill="none" stroke="var(--band-stroke)" stroke-width="1.2"/>
+  <text x="65" y="472" class="section-title">TECHNOLOGY-ENABLED RETENTION PATHWAY</text>
+  <text x="1935" y="472" text-anchor="end" class="section-note">practice indexes with bounded case evidence</text>
+
+  <rect x="35" y="835" width="1930" height="340" rx="18" fill="none" stroke="var(--band-stroke)" stroke-width="1.2"/>
+  <text x="65" y="872" class="section-title">DEPENDENCIES ROOTED IN ESTABLISHED MANUFACTURING OPERATIONS</text>
+  <text x="1935" y="872" text-anchor="end" class="section-note">shared foundations · solid links</text>
+
+  <!-- Digital dependency links -->
+  <g class="relation-set" aria-label="D1 verifiable interoperable controllable AI pipelines">
+    <path class="link link-digital d1" marker-end="url(#arrow-d1)" d="M235 368 C235 445 390 455 460 515"/>
+  </g>
+  <g class="relation-set" aria-label="D2 AR assembly and pneumatic training design">
+    <path class="link link-digital d2" marker-end="url(#arrow-d2)" d="M613 368 C613 455 1360 445 1435 515"/>
+  </g>
+  <g class="relation-set" aria-label="D3 BPM ontology AI and blockchain specialist support">
+    <path class="link link-digital d3" marker-end="url(#arrow-d3)" d="M991 368 C991 445 790 455 750 515"/>
+    <path class="link link-digital d3" marker-end="url(#arrow-d3)" d="M991 368 C991 445 1570 455 1600 515"/>
+  </g>
+  <g class="relation-set" aria-label="D4 shop-floor sensing resilience">
+    <path class="link link-digital d4" marker-end="url(#arrow-d4)" d="M1369 368 C1369 445 900 455 850 515"/>
+    <path class="link link-digital d4" marker-end="url(#arrow-d4)" d="M1369 368 C1369 450 1700 455 1710 515"/>
+  </g>
+  <g class="relation-set" aria-label="D5 safety and intellectual-property protocols">
+    <path class="link link-digital d5" marker-end="url(#arrow-d5)" d="M1747 368 C1747 445 1030 455 950 515"/>
+    <path class="link link-digital d5" marker-end="url(#arrow-d5)" d="M1747 368 C1747 455 1810 475 1790 515"/>
+  </g>
+
+  <!-- Persistent dependency links -->
+  <g class="relation-set" aria-label="P1 maintenance handover and expert elicitation routines">
+    <path class="link link-persistent p1" marker-end="url(#arrow-p1)" d="M235 925 C235 845 360 805 400 750"/>
+    <path class="link link-persistent p1" marker-end="url(#arrow-p1)" d="M235 925 C235 830 1180 800 1260 750"/>
+  </g>
+  <g class="relation-set" aria-label="P2 skilled participation in learning and validation">
+    <path class="link link-persistent p2" marker-end="url(#arrow-p2)" d="M613 925 C613 835 510 800 510 750"/>
+    <path class="link link-persistent p2" marker-end="url(#arrow-p2)" d="M613 925 C613 835 1320 800 1380 750"/>
+  </g>
+  <g class="relation-set" aria-label="P3 machinery data and learning-factory resources">
+    <path class="link link-persistent p3" marker-end="url(#arrow-p3)" d="M991 925 C991 835 650 800 620 750"/>
+    <path class="link link-persistent p3" marker-end="url(#arrow-p3)" d="M991 925 C991 835 1450 800 1500 750"/>
+  </g>
+  <g class="relation-set" aria-label="P4 factory-floor and training-space conditions">
+    <path class="link link-persistent p4" marker-end="url(#arrow-p4)" d="M1369 925 C1369 835 780 800 730 750"/>
+    <path class="link link-persistent p4" marker-end="url(#arrow-p4)" d="M1369 925 C1369 835 1580 800 1620 750"/>
+  </g>
+  <g class="relation-set" aria-label="P5 machinery safety data protection and compliance">
+    <path class="link link-persistent p5" marker-end="url(#arrow-p5)" d="M1747 925 C1747 835 900 800 840 750"/>
+    <path class="link link-persistent p5" marker-end="url(#arrow-p5)" d="M1747 925 C1747 835 1740 800 1740 750"/>
+  </g>
+
+  <!-- Digitally reconfigured dependency cards -->
+  <g aria-label="Digital dependency cards">
+    <rect x="60" y="163" width="350" height="205" rx="13" class="card" stroke="var(--d1)"/>
+    <text x="82" y="193" class="dep-code" fill="var(--d1)">D1 · #1</text><text x="388" y="193" text-anchor="end" class="score">47</text>
+    <text x="82" y="225" class="dep-title">Verifiable, interoperable and</text>
+    <text x="82" y="248" class="dep-title">operationally controllable AI</text>
+    <text x="82" y="271" class="dep-title">pipelines for manufacturing models</text>
+    <text x="82" y="305" class="dep-note">data quality · model verification · integration</text>
+    <text x="82" y="340" class="dep-ids">Primary ID: LI05</text>
+
+    <rect x="438" y="163" width="350" height="205" rx="13" class="card" stroke="var(--d2)"/>
+    <text x="460" y="193" class="dep-code" fill="var(--d2)">D2 · #2</text><text x="766" y="193" text-anchor="end" class="score">44</text>
+    <text x="460" y="225" class="dep-title">AR assembly and pneumatic-training</text>
+    <text x="460" y="248" class="dep-title">design with spatial cues, feedback</text>
+    <text x="460" y="271" class="dep-title">and hands-on assessment</text>
+    <text x="460" y="305" class="dep-note">task sequencing · feedback · performance transfer</text>
+    <text x="460" y="340" class="dep-ids">Primary ID: LI04</text>
+
+    <rect x="816" y="163" width="350" height="205" rx="13" class="card" stroke="var(--d3)"/>
+    <text x="838" y="193" class="dep-code" fill="var(--d3)">D3 · #3</text><text x="1144" y="193" text-anchor="end" class="score">16</text>
+    <text x="838" y="225" class="dep-title">BPM, ontology, AI and blockchain</text>
+    <text x="838" y="248" class="dep-title">specialist support within</text>
+    <text x="838" y="271" class="dep-title">manufacturing firms</text>
+    <text x="838" y="305" class="dep-note">domain translation · technical expertise · review</text>
+    <text x="838" y="340" class="dep-ids">Primary ID: LI08</text>
+
+    <rect x="1194" y="163" width="350" height="205" rx="13" class="card" stroke="var(--d4)"/>
+    <text x="1216" y="193" class="dep-code" fill="var(--d4)">D4 · #4</text><text x="1522" y="193" text-anchor="end" class="score">12</text>
+    <text x="1216" y="225" class="dep-title">Shop-floor sensing resilient to</text>
+    <text x="1216" y="248" class="dep-title">occlusion, noise and changing</text>
+    <text x="1216" y="271" class="dep-title">machine sequences</text>
+    <text x="1216" y="305" class="dep-note">capture fidelity · operational variability</text>
+    <text x="1216" y="340" class="dep-ids">Primary ID: LI11</text>
+
+    <rect x="1572" y="163" width="350" height="205" rx="13" class="card" stroke="var(--d5)"/>
+    <text x="1594" y="193" class="dep-code" fill="var(--d5)">D5 · #5</text><text x="1900" y="193" text-anchor="end" class="score">11</text>
+    <text x="1594" y="225" class="dep-title">Safety-visible AR and IP-controlled</text>
+    <text x="1594" y="248" class="dep-title">digital product-ideation</text>
+    <text x="1594" y="271" class="dep-title">protocols</text>
+    <text x="1594" y="305" class="dep-note">worker visibility · access control · confidentiality</text>
+    <text x="1594" y="340" class="dep-ids">Primary ID: OD01</text>
+  </g>
+
+  <!-- Retention mechanisms -->
+  <g aria-label="Digital Codification mechanism">
+    <rect x="100" y="515" width="830" height="235" rx="16" class="mechanism-frame codification-frame"/>
+    <text x="130" y="555" class="mechanism-title" fill="var(--codify)">DIGITAL CODIFICATION</text>
+    <text x="130" y="583" class="mechanism-note">manufacturing experience converted into durable, searchable representations</text>
+    <circle cx="140" cy="614" r="5" fill="var(--codify)"/>
+    <text x="157" y="620" class="mechanism-item">Equipment, process and worker-state capture</text>
+    <text x="157" y="640" class="evidence-line">s002M01TP05/06 · c103;c105;c108;c124</text>
+    <circle cx="140" cy="660" r="5" fill="var(--codify)"/>
+    <text x="157" y="666" class="mechanism-item">Model-based, algorithmic and generative representation</text>
+    <text x="157" y="686" class="evidence-line">s002M01TP01/07/08 · c101;c102;c103;c108;c110;c119;c120;c121;c124</text>
+    <circle cx="140" cy="706" r="5" fill="var(--codify)"/>
+    <text x="157" y="712" class="mechanism-item">Semantic structuring, archiving, co-creation and verification</text>
+    <text x="157" y="732" class="evidence-line">s002M01TP09/10/11/13/15 · c102;c108;c109;c117;c119;c122;c125;c126</text>
+  </g>
+
+  <g aria-label="Experiential Amplification mechanism">
+    <rect x="1070" y="515" width="830" height="235" rx="16" class="mechanism-frame experience-frame"/>
+    <text x="1100" y="555" class="mechanism-title" fill="var(--experience)">EXPERIENTIAL AMPLIFICATION</text>
+    <text x="1100" y="583" class="mechanism-note">situated rehearsal, physical interaction and feedback</text>
+    <circle cx="1110" cy="614" r="5" fill="var(--experience)"/>
+    <text x="1127" y="620" class="mechanism-item">Situated AR assembly and pneumatic rehearsal</text>
+    <text x="1127" y="640" class="evidence-line">s002M01TP03 · c104;c105;c106;c107;c111;c113</text>
+    <circle cx="1110" cy="660" r="5" fill="var(--experience)"/>
+    <text x="1127" y="666" class="mechanism-item">Interactive consequence learning and digital feedback</text>
+    <text x="1127" y="686" class="evidence-line">s002M01TP04 · c101;c104;c106;c107;c113</text>
+    <circle cx="1110" cy="706" r="5" fill="var(--experience)"/>
+    <text x="1127" y="712" class="mechanism-item">Multimedia, blended and gamified knowledge internalization</text>
+    <text x="1127" y="732" class="evidence-line">s002M01TP12/16 · c105;c106;c107;c109;c111;c125</text>
+  </g>
+
+  <!-- Established manufacturing dependency cards -->
+  <g aria-label="Established dependency cards">
+    <rect x="60" y="925" width="350" height="205" rx="13" class="card" stroke="var(--p1)"/>
+    <text x="82" y="955" class="dep-code" fill="var(--p1)">P1 · #1</text><text x="388" y="955" text-anchor="end" class="score">52</text>
+    <text x="82" y="987" class="dep-title">Formal maintenance-knowledge</text>
+    <text x="82" y="1010" class="dep-title">handover and expert-elicitation</text>
+    <text x="82" y="1033" class="dep-title">routines</text>
+    <text x="82" y="1067" class="dep-note">handover · elicitation · verification</text>
+    <text x="82" y="1102" class="dep-ids">Primary ID: LI10</text>
+
+    <rect x="438" y="925" width="350" height="205" rx="13" class="card" stroke="var(--p2)"/>
+    <text x="460" y="955" class="dep-code" fill="var(--p2)">P2 · #2</text><text x="766" y="955" text-anchor="end" class="score">18</text>
+    <text x="460" y="987" class="dep-title">Skilled operator, trainer and</text>
+    <text x="460" y="1010" class="dep-title">cross-functional participation in</text>
+    <text x="460" y="1033" class="dep-title">factory learning and validation</text>
+    <text x="460" y="1067" class="dep-note">expert input · feedback · coordination</text>
+    <text x="460" y="1102" class="dep-ids">Primary ID: OD05</text>
+
+    <rect x="816" y="925" width="350" height="205" rx="13" class="card" stroke="var(--p3)"/>
+    <text x="838" y="955" class="dep-code" fill="var(--p3)">P3 · #3</text><text x="1144" y="955" text-anchor="end" class="score">17</text>
+    <text x="838" y="987" class="dep-title">Maintained machinery, CAD models,</text>
+    <text x="838" y="1010" class="dep-title">historical production records and</text>
+    <text x="838" y="1033" class="dep-title">learning-factory facilities</text>
+    <text x="838" y="1067" class="dep-note">equipment · models · data · facilities</text>
+    <text x="838" y="1102" class="dep-ids">Primary ID: OD03</text>
+
+    <rect x="1194" y="925" width="350" height="205" rx="13" class="card" stroke="var(--p4)"/>
+    <text x="1216" y="955" class="dep-code" fill="var(--p4)">P4 · #4</text><text x="1522" y="955" text-anchor="end" class="score">11</text>
+    <text x="1216" y="987" class="dep-title">Factory-floor and training-space</text>
+    <text x="1216" y="1010" class="dep-title">conditions for situated</text>
+    <text x="1216" y="1033" class="dep-title">industrial learning</text>
+    <text x="1216" y="1067" class="dep-note">layout · heat · dust · noise · utilities</text>
+    <text x="1216" y="1102" class="dep-ids">Primary ID: ED08</text>
+
+    <rect x="1572" y="925" width="350" height="205" rx="13" class="card" stroke="var(--p5)"/>
+    <text x="1594" y="955" class="dep-code" fill="var(--p5)">P5 · #5</text><text x="1900" y="955" text-anchor="end" class="score">8</text>
+    <text x="1594" y="987" class="dep-title">Machinery-safety, data-protection</text>
+    <text x="1594" y="1010" class="dep-title">and emerging-technology</text>
+    <text x="1594" y="1033" class="dep-title">compliance across jurisdictions</text>
+    <text x="1594" y="1067" class="dep-note">safety · privacy · regulatory guidance</text>
+    <text x="1594" y="1102" class="dep-ids">Primary ID: ED01</text>
+  </g>
+
+  <!-- Legend and scope note -->
+  <g aria-label="Legend and scope note">
+    <line x1="65" y1="1218" x2="125" y2="1218" class="link link-digital d1" opacity="0.8"/>
+    <text x="138" y="1223" class="legend">digitally reconfigured condition</text>
+    <line x1="395" y1="1218" x2="455" y2="1218" class="link link-persistent p1" opacity="0.8"/>
+    <text x="468" y="1223" class="legend">established manufacturing foundation</text>
+    <text x="1935" y="1223" text-anchor="end" class="legend">Counts are evidence counts, not sector prevalence.</text>
+  </g>
+</svg>

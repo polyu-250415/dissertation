@@ -34,7 +34,7 @@
   </defs>
 
   <rect width="1776" height="888" fill="#ffffff"/>
-  <text x="888" y="60" text-anchor="middle" class="title">Framework-Guided Knowledge Digital Shadow Architecture</text>
+  <text x="888" y="60" text-anchor="middle" class="title">Template-Guided Knowledge Digital Shadow Architecture</text>
 
   <!-- Panel 1 -->
   <rect x="22" y="90" width="614" height="652" rx="18" class="panel" filter="url(#softShadow)"/>
@@ -70,8 +70,9 @@
   <path d="M420 268 H456" class="arrow"/>
 
   <rect x="62" y="400" width="530" height="78" rx="8" class="blue-box"/>
-  <text x="299" y="432" text-anchor="middle" class="box-title">Three-stage verification and alignment</text>
-  <text x="299" y="460" text-anchor="middle" class="box-copy">Schema • Source grounding • Entity alignment</text>
+  <text x="299" y="432" text-anchor="middle" class="box-title">Multiple-stage verification and alignment</text>
+  <text x="299" y="460" text-anchor="middle" class="box-copy">Schema • Source grounding • Entity alignment•
+    Downstream task</text>
   <path d="M128 400 V350" class="arrow"/>
   <path d="M335 400 V350" class="arrow"/>
   <path d="M537 400 V350" class="arrow"/>
@@ -98,29 +99,24 @@
   <text x="918" y="383" text-anchor="middle" class="teal-title">Theory-informed Interpretive Strategy</text>
   <text x="918" y="412" text-anchor="middle" class="teal-copy">Organizes cues and identifies digital-era shifts</text>
 
-  <path d="M918 436 V468 H772 V508" class="arrow"/>
-  <path d="M918 436 V508" class="arrow"/>
-  <path d="M918 468 H1061 V508" class="arrow"/>
+  <path d="M918 436 V468 H802 V508" class="arrow"/>
+  <path d="M918 468 H1031 V508" class="arrow"/>
 
-  <rect x="712" y="513" width="123" height="124" rx="9" class="teal-box"/>
-  <text x="773.5" y="551" text-anchor="middle" class="teal-title">RQ1</text>
-  <text x="773.5" y="583" text-anchor="middle" class="teal-copy">
-    <tspan x="773.5">Retention</tspan><tspan x="773.5" dy="20">mechanisms</tspan>
+  <rect x="712" y="513" width="180" height="124" rx="9" class="teal-box"/>
+  <text x="793.5" y="551" text-anchor="middle" class="teal-title">RQ1</text>
+  <text x="793.5" y="583" text-anchor="middle" class="teal-copy">
+    <tspan x="793.5">Retention</tspan><tspan x="793.5" dy="20">mechanisms</tspan>
   </text>
 
-  <rect x="856" y="513" width="123" height="124" rx="9" class="teal-box"/>
-  <text x="917.5" y="551" text-anchor="middle" class="teal-title">RQ2</text>
-  <text x="917.5" y="583" text-anchor="middle" class="teal-copy">
-    <tspan x="917.5">Resources &amp;</tspan><tspan x="917.5" dy="20">capabilities</tspan>
+
+  <rect x="940" y="513" width="180" height="124" rx="9" class="teal-box"/>
+  <text x="1032" y="551" text-anchor="middle" class="teal-title">RQ2</text>
+  <text x="1032" y="583" text-anchor="middle" class="teal-copy">
+    <tspan x="1032">Resources &amp; capabilities</tspan><tspan x="1032"
+                                                                                               dy="20">Organizational culture</tspan>
   </text>
 
-  <rect x="1000" y="513" width="124" height="124" rx="9" class="teal-box"/>
-  <text x="1062" y="551" text-anchor="middle" class="teal-title">RQ3</text>
-  <text x="1062" y="583" text-anchor="middle" class="teal-copy">
-    <tspan x="1062">Organizational</tspan><tspan x="1062" dy="20">culture</tspan>
-  </text>
-
-  <text x="918" y="686" text-anchor="middle" class="small">Digitally reconfigured • Persistent established</text>
+  <text x="918" y="686" text-anchor="middle" class="small">Digitally reconfigured • Persistently established</text>
 
   <!-- Synthesis hand-off -->
   <path d="M1152 299 H1196" class="arrow"/>
@@ -131,18 +127,19 @@
   <text x="1475" y="131" text-anchor="middle" class="panel-heading">3. SYNTHESIS AND PROSPECTIVE USE</text>
 
   <rect x="1218" y="196" width="514" height="185" rx="12" class="teal-box"/>
-  <text x="1475" y="230" text-anchor="middle" class="teal-title">Sociotechnical Dual-Loop Framework</text>
+  <text x="1475" y="230" text-anchor="middle" class="teal-title">Socio-Technical Co-adaptation Framework</text>
 
   <rect x="1233" y="253" width="220" height="109" rx="9" class="teal-box"/>
-  <text x="1343" y="284" text-anchor="middle" class="teal-copy">Retention–Enactment Loop</text>
+  <text x="1343" y="284" text-anchor="middle" class="teal-copy">Retention Mechanism</text>
   <text x="1343" y="314" text-anchor="middle" class="box-copy">
     <tspan x="1343">Experiential Amplification ↔</tspan><tspan x="1343" dy="22">Digital Codification</tspan>
   </text>
 
   <rect x="1488" y="253" width="228" height="109" rx="9" class="teal-box"/>
-  <text x="1602" y="284" text-anchor="middle" class="teal-copy">Enablement–Maintenance Loop</text>
+  <text x="1602" y="284" text-anchor="middle" class="teal-copy">Organizational &amp; Environmental
+    Context</text>
   <text x="1602" y="314" text-anchor="middle" class="box-copy">
-    <tspan x="1602">Resources, capabilities, and</tspan><tspan x="1602" dy="22">organizational culture</tspan>
+    <tspan x="1602">Digitally reconfigured ↔ </tspan><tspan x="1602" dy="22">Persistently established</tspan>
   </text>
   <path d="M1454 307 H1486" class="line"/>
   <path d="M1456 307 l10 -6 v12 z" fill="#0a2e6b"/>
@@ -161,13 +158,13 @@
     <tspan x="1611">Mechanism-based</tspan><tspan x="1611" dy="24">cross-industry transfer</tspan><tspan x="1611" dy="24">propositions</tspan>
   </text>
   <text x="1611" y="602" text-anchor="middle" class="box-copy">
-    <tspan x="1611">Prospective innovation</tspan><tspan x="1611" dy="23">opportunities requiring</tspan><tspan x="1611" dy="23">target-context validation</tspan>
+    <tspan x="1611">Prospective innovation</tspan><tspan x="1611" dy="23">target-context validation</tspan>
   </text>
 
   <!-- Framework-guided query from panel 1 to the interpretive template -->
-  <path d="M636 392 H704" class="arrow"/>
+  <path d="M683 392 H636" class="arrow"/>
   <text x="660" y="418" text-anchor="middle" class="small">
-    <tspan x="660">Framework-guided</tspan><tspan x="660" dy="23">querying</tspan>
+    <tspan x="660">Template-guided</tspan><tspan x="660" dy="23">querying</tspan>
   </text>
 
   <!-- Iterative evidence-update loop -->

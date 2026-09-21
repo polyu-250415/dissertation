@@ -362,7 +362,7 @@ c010M01N35 | cognitive overload: Students can encounter cognitive overload when 
 c011M01N33 | Lack of immersion: the traditional training methods lack immersion
 c011M01N34 | Ethical issues: traditional training methods lack immersion and can cause ethical issues in some cases
 c011M02N38 | Limited to declarative knowledge only: the training objective of this paper is restricted to the declarative knowledge of personal protection before entering a confined space. Therefore, the rationale behind the selection of protective equipment, referred to as explanatory knowledge, was not included.","Weaknesses in training or educational architecture, including passive delivery, inadequate engagement, restricted content, limited instructional methods, poor assessment coverage, insufficient practical access, cognitive overload caused by presentation design, and failure to transfer learning into practice."
-s001M01LI05,"Software, Algorithmic, Data Quality and Interoperability Barriers",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),30,"c001M01N40 | Unidirectional recording: Paper-based surveying is characterized as unidirectional recording.
+s001M01LI05,"Software, Algorithmic, Data Quality and Interoperability Barriers",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),32,"c001M01N40 | Unidirectional recording: Paper-based surveying is characterized as unidirectional recording.
 c001M01N41 | Limited retrieval: Total station and film photography provide limited retrieval.
 c001M01N46 | Data format fragmentation and system interoperability problems: More than 70% of projects encounter fragmented formats and system-interoperability issues.
 c001M01N47 | Model precision-real-time rendering trade-off: High-definition scanning improves restoration efficiency, but precision must be balanced with real-time rendering performance.
@@ -386,6 +386,8 @@ c008M02N37 | Manual feature design requirement: shallow learning algorithms... u
 c008M02N40 | Computational complexity: shallow learning algorithms have high computational complexity when processing large-scale, high-dimensional data
 c008M02N41 | Overfitting/underfitting: may suffer from overfitting and underfitting, which limits the classification performance
 c008M02N44 | Shallow learning performance limitations: traditional methods rely on manually defined features and rules for text classification and analysis, but it is difficult for the manually defined features and rules to encompass all the information
+c009M01N39 | Fragmented bid-related data: Bid information was scattered across departments or databases because a centralized data system was lacking.
+c009M01N41 | Inconsistent documentation and formatting: Manual fragmented practices produced inconsistent documentation and formatting.
 c009M01N45 | PDF-only document support: The current extraction process supports only PDF documents.
 c009M01N47 | Limited two-firm historical dataset: The study used historical documents from two case-study firms and a 13-document knowledge base.
 c009M02N62 | Time pressure: Firms often deliver the 'best possible' bid within time constraints rather than the most optimal one
@@ -452,16 +454,13 @@ c014M02N57 | Abusive leadership causing zero adoption: Abusive leadership - Negl
 c014M02N59 | Lack of adaptive capability: Some projects face delays and shutdowns as those projects lack the adaptive capability
 c014M02N62 | Delays and disruptions: Authoritarian leadership - Delays and disruptions
 c014M02N63 | Operational inefficiencies: Abusive leadership - Operational inefficiencies","Resistance to change, weak leadership support, authoritarian or abusive leadership, lack of trust or incentives, knowledge hoarding, low motivation, poor participation, group-dynamic problems, reluctance to share, and underuse or rejection of available technologies or practices."
-s001M01LI10,"Knowledge Continuity, Documentation, Governance, Privacy and Security",Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),19,"c001M01N43 | Intangible cultural heritage skills inheritance interruption: ICH skills are at risk of interruption in inheritance while indigenous people's return rate is below 30%.
+s001M01LI10,Organizational Governance Constraints,Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),16,"c001M01N43 | Intangible cultural heritage skills inheritance interruption: ICH skills are at risk of interruption in inheritance while indigenous people's return rate is below 30%.
 c007M01N28 | high staff turnover: High staff turnover is an inherent SMCC challenge.
 c007M01N29 | risk of knowledge loss when employees depart: Reliance on critical human members creates knowledge-loss risk when employees depart.
-c009M01N39 | Fragmented bid-related data: Bid information was scattered across departments or databases because a centralized data system was lacking.
-c009M01N41 | Inconsistent documentation and formatting: Manual fragmented practices produced inconsistent documentation and formatting.
 c009M01N42 | Staff-turnover knowledge loss: The paper links knowledge loss risk to firms experiencing staff turnover.
 c009M01N48 | Textual methodology-only generation scope: The implemented generation component was limited to textual methodology sections for consulting proposals.
 c009M01N49 | Third-party API confidentiality risk: The paper notes potential privacy and confidentiality risks from transmitting bid documents through third-party APIs.
 c009M02N59 | Manual labor intensity: Construction bid preparation remains predominantly manual, labour-intensive
-c009M02N68 | Hallucinations: To improve domain relevance and reduce hallucinations
 c012M01N37 | Context-dependent and difficult-to-articulate knowledge: Tacit knowledge was described as intuitive, context-dependent, and difficult to articulate or transfer.
 c012M01N38 | Inadequate capture of contextual and interpersonal dynamics: Formal project documents inadequately captured context and interpersonal dynamics.
 c012M01N39 | Temporary and dispersing project teams: Temporary teams disbanded after projects and dispersed experiential knowledge.
@@ -496,8 +495,9 @@ c008M01N50 | limited and imbalanced accident-report samples: Performance varied 
 c008M02N43 | Insufficient training samples: the quantity of text cases for different accident types... the small number of cases... was one reason for the low classification accuracy
 c009M01N46 | No integrated Optical Character Recognition: Accuracy decreases for scanned or image-based documents because OCR was not integrated.
 c010M01N38 | insufficient representation of mixed learners' data: The difficulty predicting combined preferences may be due to insufficient mixed-learner data during training.","Small, narrow, imbalanced, localized, or unrepresentative research samples, including insufficient evaluation or model-training observations when the deficiency arises from the study design. These records are methodological exclusions rather than substantive sector limitations."
-s001M01LI15,Ambiguous Limitation(*),Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),2,"c006M01N23 | unclear target audience and approaches for introducing assistive technologies: The paper states that the target audience and approaches for introducing assistive technologies were unclear.
-c006M02N42 | Lumbar load independent of age: We do not see a low trend in lumbar load by age, we can conclude that there is little need to limit work by age.",Maps limitation that cannot be assigned to LI01–LI14 because the evidence does not identify a sufficiently specific domain or analytical level.
+s001M01LI15,Ambiguous Limitation(*),Limitation,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),3,"c006M01N23 | unclear target audience and approaches for introducing assistive technologies: The paper states that the target audience and approaches for introducing assistive technologies were unclear.
+c006M02N42 | Lumbar load independent of age: We do not see a low trend in lumbar load by age, we can conclude that there is little need to limit work by age.
+c009M02N68 | Hallucinations: To improve domain relevance and reduce hallucinations",Maps limitation that cannot be assigned to LI01–LI14 because the evidence does not identify a sufficiently specific domain or analytical level.
 s001M01OD01,"Governance, Standards & Formal Control",Organizational Dependency,G,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),9,"c001M02N24 | Government-led plus community crowdfunding preservation model: The 'government-led + community crowdfunding' model used by Eastern European countries such as Bulgaria and Hungary for historical buildings preservation can provide institutional design references for Chongqing
 c001M02N25 | LOD400/LOD200 graded modeling precision mandate: Core buildings are required to model at millimeter level based on Technical Standards for Historical Building Digitization (2021) [2]; county-level projects restricted to LOD200
 c002M02N33 | Organizational systematic safety training policies: It is necessary to increase their safety awareness through systematic safety training

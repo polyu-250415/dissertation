@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1300" viewBox="0 0 2000 1300" role="img"
+     aria-labelledby="title desc">
+  <title id="title">Dependency-to-practice index relationships for emerging-technology-enabled tacit knowledge retention</title>
+  <desc id="desc">A three-layer relationship map for the bounded s001 construction sample. Four digitally reconfigured dependency blocks connect to technology-enabled practices grouped by digital codification or experiential amplification and to traditional human-centred practice indexes. Four persistently established dependency blocks condition the same practices. Each dependency block lists its constituent graph IDs.</desc>
+
+  <defs>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f8fafc; --ink: #172033; --muted: #596579;
+        --top-band: #eaf2ff; --middle-band: #edf8f4; --bottom-band: #fff3e8;
+        --node: #ffffff; --node-stroke: #718096;
+        --tech-fill: #eef6ff; --exp-fill: #f5efff; --trad-fill: #fff7e8;
+        --codify: #2d6fb7; --experience: #7657b5;
+        --d1: #225ea8; --d2: #15927f; --d3: #7154b3; --d4: #9a5c13;
+        --p1: #bc5b18; --p2: #b53d5a; --p3: #8b6b00; --p4: #8a4d2f;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #111827; --ink: #f3f4f6; --muted: #c6ceda;
+          --top-band: #172b49; --middle-band: #17362d; --bottom-band: #422a1b;
+          --node: #1f2937; --node-stroke: #94a3b8;
+          --tech-fill: #1d3554; --exp-fill: #352b52; --trad-fill: #49351f;
+          --codify: #80bfff; --experience: #c4afff;
+          --d1: #80bfff; --d2: #71dcc7; --d3: #bea6ff; --d4: #efc675;
+          --p1: #ffb26f; --p2: #ff94aa; --p3: #e9c95c; --p4: #e8a27f;
+        }
+      }
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: var(--ink); }
+      .figure-title { font-size: 31px; font-weight: 500; letter-spacing: -0.25px; }
+      .subtitle { font-size: 16px; fill: var(--muted); }
+      .section-title { font-size: 22px; font-weight: 500; }
+      .section-note { font-size: 14px; fill: var(--muted); }
+      .dep-code { font-size: 15px; font-weight: 500; }
+      .dep-title { font-size: 17px; font-weight: 500; }
+      .dep-ids { font-size: 13px; fill: var(--muted); }
+      .score { font-size: 14px; fill: var(--muted); }
+      .row-label { font-size: 14px; font-weight: 500; letter-spacing: 0.5px; }
+      .mechanism-title { font-size: 16px; font-weight: 500; }
+      .mechanism-note { font-size: 13px; fill: var(--muted); }
+      .practice-id { font-size: 14px; font-weight: 500; text-anchor: middle; }
+      .legend { font-size: 13px; fill: var(--muted); }
+      .top-card, .bottom-card { fill: var(--node); stroke-width: 2; }
+      .mechanism-frame { fill: var(--node); fill-opacity: 0.55; stroke-width: 1.5; }
+      .codification-frame { stroke: var(--codify); }
+      .experience-frame { stroke: var(--experience); }
+      .practice-code { fill: var(--tech-fill); stroke: var(--codify); stroke-width: 1.2; }
+      .practice-exp { fill: var(--exp-fill); stroke: var(--experience); stroke-width: 1.2; }
+      .practice-trad { fill: var(--trad-fill); stroke: var(--node-stroke); stroke-width: 1.2; }
+      .link { fill: none; stroke-width: 1.7; opacity: 0.22; }
+      .relation-set:hover .link { opacity: 0.9; stroke-width: 2.6; }
+      .relation-set:hover .top-card, .relation-set:hover .bottom-card { stroke-width: 3; }
+      .solid { stroke-dasharray: none; }
+      .both { stroke-dasharray: 9 4 2 4; }
+      .mitigate { stroke-dasharray: 7 6; }
+      .d1 { stroke: var(--d1); } .d2 { stroke: var(--d2); }
+      .d3 { stroke: var(--d3); } .d4 { stroke: var(--d4); }
+      .p1 { stroke: var(--p1); } .p2 { stroke: var(--p2); }
+      .p3 { stroke: var(--p3); } .p4 { stroke: var(--p4); }
+    </style>
+  </defs>
+
+  <rect width="2000" height="1350" fill="var(--bg)"/>
+  <text x="55" y="47" class="figure-title">Resource and Capability Dependencies for Construction</text>
+
+  <rect x="35" y="100" width="1930" height="190" rx="18" fill="var(--top-band)"/>
+  <text x="65" y="132" class="section-title">DIGITALLY RECONFIGURED DEPENDENCIES</text>
+  <text x="1935" y="132" text-anchor="end" class="section-note">dependency IDs omit the shared prefix s001M01</text>
+
+  <rect x="35" y="320" width="1930" height="680" rx="18" fill="var(--middle-band)"/>
+  <text x="65" y="355" class="section-title">TECHNOLOGY-ENABLED PRACTICE INDEXES</text>
+  <text x="1935" y="355" text-anchor="end" class="section-note">TP = technology-enabled · THR = traditional human-centred</text>
+
+  <rect x="35" y="1030" width="1930" height="230" rx="18" fill="var(--bottom-band)"/>
+  <text x="65" y="1065" class="section-title">PERSISTENTLY ESTABLISHED DEPENDENCIES</text>
+  <text x="1935" y="1065" text-anchor="end" class="section-note">dependency IDs omit the shared prefix s001M01</text>
+
+  <!-- D1 relationships -->
+  <g class="relation-set" aria-label="D1 interoperable construction data-and-compute backbone relationships">
+    <path class="link d1 solid" d="M285 255 C285 420 390 585 390 670"/>
+    <path class="link d1 solid" d="M285 255 C285 420 850 585 850 670"/>
+    <path class="link d1 solid" d="M285 255 C285 440 1080 665 1080 750"/>
+    <path class="link d1 solid" d="M285 255 C285 440 1310 665 1310 750"/>
+    <path class="link d1 solid" d="M285 255 C285 315 615 345 615 405"/>
+    <path class="link d1 solid" d="M285 255 C285 345 790 435 790 525"/>
+    <path class="link d1 solid" d="M285 255 C285 345 1000 435 1000 525"/>
+    <path class="link d1 both" d="M285 255 C285 315 780 345 780 405"/>
+    <path class="link d1 solid" d="M285 255 C285 315 945 345 945 405"/>
+    <path class="link d1 both" d="M285 255 C285 315 1110 345 1110 405"/>
+    <path class="link d1 both" d="M285 255 C285 315 1275 345 1275 405"/>
+    <path class="link d1 solid" d="M285 255 C285 315 1440 345 1440 405"/>
+    <path class="link d1 solid" d="M285 255 C285 345 1210 435 1210 525"/>
+    <rect x="60" y="145" width="450" height="110" rx="13" class="top-card" stroke="var(--d1)"/>
+    <text x="82" y="173" class="dep-code" fill="var(--d1)">D1 · #1</text>
+    <text x="82" y="199" class="dep-title">Interoperable construction</text>
+    <text x="82" y="222" class="dep-title">data-and-compute backbone</text>
+    <text x="82" y="244" class="dep-ids">IDs: ED05 · LI05 · LI06 · LI14</text>
+    <text x="485" y="173" text-anchor="end" class="score">44</text>
+  </g>
+
+  <!-- D2 relationships -->
+  <g class="relation-set" aria-label="D2 experiential safety-training design and validation capability relationships">
+    <path class="link d2 solid" d="M770 255 C770 420 390 585 390 670"/>
+    <path class="link d2 solid" d="M770 255 C770 420 1310 585 1310 670"/>
+    <path class="link d2 solid" d="M770 255 C770 440 390 665 390 750"/>
+    <path class="link d2 solid" d="M770 255 C770 440 620 665 620 750"/>
+    <path class="link d2 solid" d="M770 255 C770 440 850 665 850 750"/>
+    <path class="link d2 solid" d="M770 255 C770 440 1080 665 1080 750"/>
+    <path class="link d2 solid" d="M770 255 C770 440 1310 665 1310 750"/>
+    <path class="link d2 both" d="M770 255 C770 345 790 435 790 525"/>
+    <path class="link d2 mitigate" d="M770 255 C770 345 1000 435 1000 525"/>
+    <path class="link d2 both" d="M770 255 C770 315 945 345 945 405"/>
+    <path class="link d2 solid" d="M770 255 C770 315 1110 345 1110 405"/>
+    <path class="link d2 mitigate" d="M770 255 C770 315 1605 345 1605 405"/>
+    <path class="link d2 solid" d="M770 255 C770 315 1770 345 1770 405"/>
+    <rect x="545" y="145" width="450" height="110" rx="13" class="top-card" stroke="var(--d2)"/>
+    <text x="567" y="173" class="dep-code" fill="var(--d2)">D2 · #2</text>
+    <text x="567" y="199" class="dep-title">Experiential safety-training design</text>
+    <text x="567" y="222" class="dep-title">&amp; validation capability</text>
+    <text x="567" y="244" class="dep-ids">IDs: LI01 · LI04 · LI13</text>
+    <text x="970" y="173" text-anchor="end" class="score">41</text>
+  </g>
+
+  <!-- D3 relationships -->
+  <g class="relation-set" aria-label="D3 site-calibrated sensing and simulation infrastructure relationships">
+    <path class="link d3 both" d="M1255 255 C1255 345 790 435 790 525"/>
+    <path class="link d3 both" d="M1255 255 C1255 315 780 345 780 405"/>
+    <path class="link d3 solid" d="M1255 255 C1255 315 945 345 945 405"/>
+    <path class="link d3 solid" d="M1255 255 C1255 315 1110 345 1110 405"/>
+    <rect x="1030" y="145" width="450" height="110" rx="13" class="top-card" stroke="var(--d3)"/>
+    <text x="1052" y="173" class="dep-code" fill="var(--d3)">D3 · #3</text>
+    <text x="1052" y="199" class="dep-title">Site-calibrated sensing</text>
+    <text x="1052" y="222" class="dep-title">&amp; simulation infrastructure</text>
+    <text x="1052" y="244" class="dep-ids">IDs: ED04 · ED08 · LI11</text>
+    <text x="1455" y="173" text-anchor="end" class="score">17</text>
+  </g>
+
+  <!-- D4 relationships -->
+  <g class="relation-set" aria-label="D4 ergonomic and cognitively adaptive digital interfaces relationships">
+    <path class="link d4 both" d="M1740 255 C1740 345 790 435 790 525"/>
+    <path class="link d4 solid" d="M1740 255 C1740 315 945 345 945 405"/>
+    <path class="link d4 solid" d="M1740 255 C1740 315 1770 345 1770 405"/>
+    <rect x="1515" y="145" width="420" height="110" rx="13" class="top-card" stroke="var(--d4)"/>
+    <text x="1537" y="173" class="dep-code" fill="var(--d4)">D4 · #4</text>
+    <text x="1537" y="199" class="dep-title">Ergonomic and cognitively adaptive</text>
+    <text x="1537" y="222" class="dep-title">digital interfaces</text>
+    <text x="1537" y="244" class="dep-ids">IDs: LI02 · LI03</text>
+    <text x="1910" y="173" text-anchor="end" class="score">10</text>
+  </g>
+
+  <!-- P1 relationships -->
+  <g class="relation-set" aria-label="P1 construction regulatory, procurement and market alignment relationships">
+    <path class="link p1 solid" d="M285 1080 C285 970 850 885 850 720"/>
+    <path class="link p1 solid" d="M285 1080 C285 950 390 870 390 800"/>
+    <path class="link p1 solid" d="M285 1080 C285 950 620 870 620 800"/>
+    <path class="link p1 solid" d="M285 1080 C285 950 1310 870 1310 800"/>
+    <path class="link p1 solid" d="M285 1080 C285 900 790 700 790 575"/>
+    <path class="link p1 solid" d="M285 1080 C285 900 1000 700 1000 575"/>
+    <path class="link p1 solid" d="M285 1080 C285 880 945 620 945 455"/>
+    <path class="link p1 solid" d="M285 1080 C285 880 1275 620 1275 455"/>
+    <path class="link p1 solid" d="M285 1080 C285 880 1605 620 1605 455"/>
+    <path class="link p1 solid" d="M285 1080 C285 880 1770 620 1770 455"/>
+    <rect x="60" y="1080" width="450" height="145" rx="13" class="bottom-card" stroke="var(--p1)"/>
+    <text x="82" y="1109" class="dep-code" fill="var(--p1)">P1 · #1</text>
+    <text x="82" y="1137" class="dep-title">Construction regulatory, procurement</text>
+    <text x="82" y="1161" class="dep-title">&amp; market alignment</text>
+    <text x="82" y="1190" class="dep-ids">IDs: ED01 · ED02 · ED06 · ED07 · LI12</text>
+    <text x="485" y="1109" text-anchor="end" class="score">27</text>
+  </g>
+
+  <!-- P2 relationships -->
+  <g class="relation-set" aria-label="P2 protected construction-domain expertise and staffing capacity relationships">
+    <path class="link p2 solid" d="M770 1080 C770 970 390 885 390 720"/>
+    <path class="link p2 solid" d="M770 1080 C770 970 850 885 850 720"/>
+    <path class="link p2 solid" d="M770 1080 C770 970 1080 885 1080 720"/>
+    <path class="link p2 solid" d="M770 1080 C770 950 850 870 850 800"/>
+    <path class="link p2 solid" d="M770 1080 C770 950 1080 870 1080 800"/>
+    <path class="link p2 solid" d="M770 1080 C770 950 1310 870 1310 800"/>
+    <path class="link p2 solid" d="M770 1080 C770 950 1540 870 1540 800"/>
+    <path class="link p2 both" d="M770 1080 C770 880 450 620 450 455"/>
+    <path class="link p2 both" d="M770 1080 C770 900 790 700 790 575"/>
+    <path class="link p2 mitigate" d="M770 1080 C770 880 1110 620 1110 455"/>
+    <path class="link p2 both" d="M770 1080 C770 880 1275 620 1275 455"/>
+    <path class="link p2 solid" d="M770 1080 C770 880 1605 620 1605 455"/>
+    <rect x="545" y="1080" width="450" height="145" rx="13" class="bottom-card" stroke="var(--p2)"/>
+    <text x="567" y="1109" class="dep-code" fill="var(--p2)">P2 · #2</text>
+    <text x="567" y="1137" class="dep-title">Protected construction-domain</text>
+    <text x="567" y="1161" class="dep-title">expertise &amp; staffing capacity</text>
+    <text x="567" y="1190" class="dep-ids">ID: LI08</text>
+    <text x="970" y="1109" text-anchor="end" class="score">20</text>
+  </g>
+
+  <!-- P3 relationships -->
+  <g class="relation-set" aria-label="P3 project knowledge-continuity and information-governance architecture relationships">
+    <path class="link p3 solid" d="M1255 1080 C1255 970 390 885 390 720"/>
+    <path class="link p3 solid" d="M1255 1080 C1255 970 620 885 620 720"/>
+    <path class="link p3 solid" d="M1255 1080 C1255 970 850 885 850 720"/>
+    <path class="link p3 solid" d="M1255 1080 C1255 970 1080 885 1080 720"/>
+    <path class="link p3 solid" d="M1255 1080 C1255 970 1310 885 1310 720"/>
+    <path class="link p3 solid" d="M1255 1080 C1255 970 1540 885 1540 720"/>
+    <path class="link p3 solid" d="M1255 1080 C1255 950 850 870 850 800"/>
+    <path class="link p3 solid" d="M1255 1080 C1255 950 1080 870 1080 800"/>
+    <path class="link p3 solid" d="M1255 1080 C1255 950 1310 870 1310 800"/>
+    <path class="link p3 mitigate" d="M1255 1080 C1255 880 450 620 450 455"/>
+    <path class="link p3 both" d="M1255 1080 C1255 880 1110 620 1110 455"/>
+    <path class="link p3 both" d="M1255 1080 C1255 880 1275 620 1275 455"/>
+    <path class="link p3 mitigate" d="M1255 1080 C1255 880 1605 620 1605 455"/>
+    <path class="link p3 both" d="M1255 1080 C1255 900 1210 700 1210 575"/>
+    <rect x="1030" y="1080" width="450" height="145" rx="13" class="bottom-card" stroke="var(--p3)"/>
+    <text x="1052" y="1109" class="dep-code" fill="var(--p3)">P3 · #3</text>
+    <text x="1052" y="1137" class="dep-title">Project knowledge continuity</text>
+    <text x="1052" y="1161" class="dep-title">&amp; information-governance architecture</text>
+    <text x="1052" y="1190" class="dep-ids">ID: LI10</text>
+    <text x="1455" y="1109" text-anchor="end" class="score">19</text>
+  </g>
+
+  <!-- P4 relationships -->
+  <g class="relation-set" aria-label="P4 lifecycle capital and physical equipment provision relationships">
+    <path class="link p4 solid" d="M1740 1080 C1740 950 850 870 850 800"/>
+    <path class="link p4 solid" d="M1740 1080 C1740 950 1310 870 1310 800"/>
+    <path class="link p4 solid" d="M1740 1080 C1740 880 450 620 450 455"/>
+    <path class="link p4 solid" d="M1740 1080 C1740 880 615 620 615 455"/>
+    <path class="link p4 mitigate" d="M1740 1080 C1740 900 790 700 790 575"/>
+    <path class="link p4 solid" d="M1740 1080 C1740 880 1605 620 1605 455"/>
+    <path class="link p4 mitigate" d="M1740 1080 C1740 900 1210 700 1210 575"/>
+    <rect x="1515" y="1080" width="420" height="145" rx="13" class="bottom-card" stroke="var(--p4)"/>
+    <text x="1537" y="1109" class="dep-code" fill="var(--p4)">P4 · #4</text>
+    <text x="1537" y="1137" class="dep-title">Lifecycle capital &amp; physical</text>
+    <text x="1537" y="1161" class="dep-title">equipment provision</text>
+    <text x="1537" y="1190" class="dep-ids">ID: LI07</text>
+    <text x="1910" y="1109" text-anchor="end" class="score">8</text>
+  </g>
+
+  <!-- Practice-index framework -->
+  <g aria-label="Digital Codification framework">
+    <rect x="70" y="375" width="1860" height="105" rx="14" class="mechanism-frame codification-frame"/>
+    <text x="92" y="410" class="mechanism-title" fill="var(--codify)">DIGITAL CODIFICATION</text>
+    <text x="92" y="433" class="mechanism-note">durable construction representations</text>
+    <rect x="380" y="405" width="140" height="50" rx="9" class="practice-code"/><text x="450" y="436" class="practice-id">s001M01TP01</text>
+    <rect x="545" y="405" width="140" height="50" rx="9" class="practice-code"/><text x="615" y="436" class="practice-id">s001M01TP02</text>
+    <rect x="710" y="405" width="140" height="50" rx="9" class="practice-code"/><text x="780" y="436" class="practice-id">s001M01TP05</text>
+    <rect x="875" y="405" width="140" height="50" rx="9" class="practice-code"/><text x="945" y="436" class="practice-id">s001M01TP06</text>
+    <rect x="1040" y="405" width="140" height="50" rx="9" class="practice-code"/><text x="1110" y="436" class="practice-id">s001M01TP07</text>
+    <rect x="1205" y="405" width="140" height="50" rx="9" class="practice-code"/><text x="1275" y="436" class="practice-id">s001M01TP08</text>
+    <rect x="1370" y="405" width="140" height="50" rx="9" class="practice-code"/><text x="1440" y="436" class="practice-id">s001M01TP09</text>
+    <rect x="1535" y="405" width="140" height="50" rx="9" class="practice-code"/><text x="1605" y="436" class="practice-id">s001M01TP10</text>
+    <rect x="1700" y="405" width="140" height="50" rx="9" class="practice-code"/><text x="1770" y="436" class="practice-id">s001M01TP13</text>
+  </g>
+
+  <g aria-label="Experiential Amplification framework">
+    <rect x="70" y="495" width="1860" height="105" rx="14" class="mechanism-frame experience-frame"/>
+    <text x="92" y="532" class="mechanism-title" fill="var(--experience)">EXPERIENTIAL AMPLIFICATION</text>
+    <text x="92" y="555" class="mechanism-note">situated rehearsal and feedback</text>
+    <rect x="700" y="525" width="180" height="50" rx="9" class="practice-exp"/><text x="790" y="556" class="practice-id">s001M01TP03</text>
+    <rect x="910" y="525" width="180" height="50" rx="9" class="practice-exp"/><text x="1000" y="556" class="practice-id">s001M01TP04</text>
+    <rect x="1120" y="525" width="180" height="50" rx="9" class="practice-exp"/><text x="1210" y="556" class="practice-id">s001M01TP11</text>
+  </g>
+
+  <text x="65" y="650" class="section-title">TRADITIONAL HUMAN-CENTRED PRACTICE INDEXES</text>
+  <g aria-label="Traditional human-centred practice IDs">
+    <rect x="70" y="660" width="1860" height="160" rx="14" class="mechanism-frame codification-frame"/>
+    <rect x="300" y="670" width="180" height="50" rx="10" class="practice-trad"/><text x="390" y="701" class="practice-id">s001M01THR05</text>
+    <rect x="530" y="670" width="180" height="50" rx="10" class="practice-trad"/><text x="620" y="701" class="practice-id">s001M01THR06</text>
+    <rect x="760" y="670" width="180" height="50" rx="10" class="practice-trad"/><text x="850" y="701" class="practice-id">s001M01THR07</text>
+    <rect x="990" y="670" width="180" height="50" rx="10" class="practice-trad"/><text x="1080" y="701" class="practice-id">s001M01THR08</text>
+    <rect x="1220" y="670" width="180" height="50" rx="10" class="practice-trad"/><text x="1310" y="701" class="practice-id">s001M01THR09</text>
+    <rect x="1450" y="670" width="180" height="50" rx="10" class="practice-trad"/><text x="1540" y="701" class="practice-id">s001M01THR10</text>
+    <rect x="300" y="750" width="180" height="50" rx="10" class="practice-trad"/><text x="390" y="781" class="practice-id">s001M01THR11</text>
+    <rect x="530" y="750" width="180" height="50" rx="10" class="practice-trad"/><text x="620" y="781" class="practice-id">s001M01THR12</text>
+    <rect x="760" y="750" width="180" height="50" rx="10" class="practice-trad"/><text x="850" y="781" class="practice-id">s001M01THR13</text>
+    <rect x="990" y="750" width="180" height="50" rx="10" class="practice-trad"/><text x="1080" y="781" class="practice-id">s001M01THR14</text>
+    <rect x="1220" y="750" width="180" height="50" rx="10" class="practice-trad"/><text x="1310" y="781" class="practice-id">s001M01THR15</text>
+    <rect x="1450" y="750" width="180" height="50" rx="10" class="practice-trad"/><text x="1540" y="781" class="practice-id">s001M01THR16</text>
+  </g>
+
+  <!-- Relationship legend -->
+  <g aria-label="Relationship legend">
+    <rect x="510" y="855" width="980" height="58" rx="12" fill="var(--node)" fill-opacity="0.9"/>
+    <line x1="545" y1="884" x2="615" y2="884" class="link solid" stroke="var(--node-stroke)" opacity="1"/>
+    <text x="627" y="889" class="legend">depends on / constrained by</text>
+    <line x1="865" y1="884" x2="935" y2="884" class="link both" stroke="var(--node-stroke)" opacity="1"/>
+    <text x="947" y="889" class="legend">dependency or constraint + mitigation</text>
+    <line x1="1260" y1="884" x2="1330" y2="884" class="link mitigate" stroke="var(--node-stroke)" opacity="1"/>
+    <text x="1342" y="889" class="legend">mitigation only</text>
+  </g>
+</svg>

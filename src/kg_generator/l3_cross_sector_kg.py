@@ -114,7 +114,7 @@ class CrossSectorKg:
 
 if __name__ == '__main__':
     obj = CrossSectorKg()
-    sector_ids = ['s001','s002','s003']
+    sector_ids = ['s001']
     obj.concat_cases_by_sector(sector_ids)
 
     obj.build_h001_kg()

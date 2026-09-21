@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150" role="img" aria-labelledby="title desc">
+  <title id="title">Dependency-to-practice index relationships for emerging-technology-enabled tacit knowledge retention</title>
+  <desc id="desc">A three-layer relationship map for the bounded s003 healthcare sample. Three digitally reconfigured dependency blocks connect to technology-enabled practices grouped by digital codification or experiential amplification and to traditional human-centred practice indexes. Four persistently established dependency blocks condition the same practices. Each dependency block lists its constituent graph IDs.</desc>
+
+  <defs>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f8fafc;
+        --ink: #172033;
+        --muted: #596579;
+        --line: #aab5c4;
+        --top-band: #eaf2ff;
+        --middle-band: #edf8f4;
+        --bottom-band: #fff3e8;
+        --node: #ffffff;
+        --node-stroke: #718096;
+        --tech-fill: #eef6ff;
+        --exp-fill: #f5efff;
+        --trad-fill: #fff7e8;
+        --codify: #2d6fb7;
+        --experience: #7657b5;
+        --d1: #225ea8;
+        --d2: #15927f;
+        --d3: #7154b3;
+        --p1: #bc5b18;
+        --p2: #b53d5a;
+        --p3: #8b6b00;
+        --p4: #8a4d2f;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #111827;
+          --ink: #f3f4f6;
+          --muted: #c6ceda;
+          --line: #667085;
+          --top-band: #172b49;
+          --middle-band: #17362d;
+          --bottom-band: #422a1b;
+          --node: #1f2937;
+          --node-stroke: #94a3b8;
+          --tech-fill: #1d3554;
+          --exp-fill: #352b52;
+          --trad-fill: #49351f;
+          --codify: #80bfff;
+          --experience: #c4afff;
+          --d1: #80bfff;
+          --d2: #71dcc7;
+          --d3: #bea6ff;
+          --p1: #ffb26f;
+          --p2: #ff94aa;
+          --p3: #e9c95c;
+          --p4: #e8a27f;
+        }
+      }
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: var(--ink); }
+      .figure-title { font-size: 31px; font-weight: 500; letter-spacing: -0.25px; }
+      .subtitle { font-size: 16px; fill: var(--muted); }
+      .section-title { font-size: 22px; font-weight: 500; }
+      .section-note { font-size: 14px; fill: var(--muted); }
+      .dep-code { font-size: 15px; font-weight: 500; }
+      .dep-title { font-size: 18px; font-weight: 500; }
+      .dep-ids { font-size: 13px; fill: var(--muted); }
+      .score { font-size: 14px; fill: var(--muted); }
+      .row-label { font-size: 14px; font-weight: 500; letter-spacing: 0.5px; }
+      .mechanism-title { font-size: 16px; font-weight: 500; }
+      .mechanism-note { font-size: 13px; fill: var(--muted); }
+      .practice-id { font-size: 14px; font-weight: 500; text-anchor: middle; }
+      .legend { font-size: 13px; fill: var(--muted); }
+      .top-card, .bottom-card { fill: var(--node); stroke-width: 2; }
+      .mechanism-frame { fill: var(--node); fill-opacity: 0.55; stroke-width: 1.5; }
+      .codification-frame { stroke: var(--codify); }
+      .experience-frame { stroke: var(--experience); }
+      .practice-code { fill: var(--tech-fill); stroke: var(--codify); stroke-width: 1.2; }
+      .practice-exp { fill: var(--exp-fill); stroke: var(--experience); stroke-width: 1.2; }
+      .practice-trad { fill: var(--trad-fill); stroke: var(--node-stroke); stroke-width: 1.2; }
+      .link { fill: none; stroke-width: 1.7; opacity: 0.25; }
+      .relation-set:hover .link { opacity: 0.88; stroke-width: 2.5; }
+      .relation-set:hover .top-card, .relation-set:hover .bottom-card { stroke-width: 3; }
+      .solid { stroke-dasharray: none; }
+      .both { stroke-dasharray: 9 4 2 4; }
+      .mitigate { stroke-dasharray: 7 6; }
+      .d1 { stroke: var(--d1); }
+      .d2 { stroke: var(--d2); }
+      .d3 { stroke: var(--d3); }
+      .p1 { stroke: var(--p1); }
+      .p2 { stroke: var(--p2); }
+      .p3 { stroke: var(--p3); }
+      .p4 { stroke: var(--p4); }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1150" fill="var(--bg)"/>
+  <text x="55" y="50" class="figure-title">Resource and Capability Dependencies for Health Services</text>
+
+  <rect x="35" y="100" width="1730" height="175" rx="18" fill="var(--top-band)"/>
+  <text x="65" y="132" class="section-title">Digitally reconfigured dependencies</text>
+  <text x="1735" y="132" text-anchor="end" class="section-note">dependency IDs omit the shared prefix s003M01</text>
+
+  <rect x="35" y="310" width="1730" height="490" rx="18" fill="var(--middle-band)"/>
+  <text x="65" y="355" class="section-title">TECHNOLOGY-ENABLED PRACTICE INDEXES</text>
+  <text x="1735" y="345" text-anchor="end" class="section-note">TP = technology-enabled · THR = traditional human-centred</text>
+
+  <rect x="35" y="835" width="1730" height="245" rx="18" fill="var(--bottom-band)"/>
+  <text x="65" y="870" class="section-title">Persistently established dependencies</text>
+  <text x="1735" y="870" text-anchor="end" class="section-note">dependency IDs omit the shared prefix s003M01</text>
+
+  <!-- D1 relationships -->
+  <g class="relation-set" aria-label="D1 clinical data, algorithm and validation assurance relationships">
+    <path class="link d1 solid" d="M320 240 C320 350 480 535 480 635"/>
+    <path class="link d1 solid" d="M320 240 C320 350 900 535 900 635"/>
+    <path class="link d1 solid" d="M320 240 C320 350 1110 535 1110 635"/>
+    <path class="link d1 solid" d="M320 240 C320 350 1320 535 1320 635"/>
+    <path class="link d1 both" d="M320 240 C320 295 480 325 480 390"/>
+    <path class="link d1 solid" d="M320 240 C320 320 735 405 735 495"/>
+    <path class="link d1 solid" d="M320 240 C320 320 945 405 945 495"/>
+    <path class="link d1 both" d="M320 240 C320 295 660 325 660 390"/>
+    <path class="link d1 both" d="M320 240 C320 295 840 325 840 390"/>
+    <path class="link d1 both" d="M320 240 C320 295 1020 325 1020 390"/>
+    <path class="link d1 solid" d="M320 240 C320 320 1155 405 1155 495"/>
+    <path class="link d1 solid" d="M320 240 C320 320 1365 405 1365 495"/>
+    <path class="link d1 solid" d="M320 240 C320 295 1380 325 1380 390"/>
+    <path class="link d1 both" d="M320 240 C320 295 1560 325 1560 390"/>
+    <rect x="80" y="150" width="480" height="90" rx="13" class="top-card" stroke="var(--d1)"/>
+    <text x="102" y="178" class="dep-code" fill="var(--d1)">D1 · #1</text>
+    <text x="102" y="203" class="dep-title">Clinical data, algorithm &amp; validation assurance</text>
+    <text x="102" y="226" class="dep-ids">IDs: LI05 · LI13 · LI14</text>
+    <text x="535" y="178" text-anchor="end" class="score">66</text>
+  </g>
+
+  <!-- D2 relationships -->
+  <g class="relation-set" aria-label="D2 adaptive clinical learning and user-safety design relationships">
+    <path class="link d2 solid" d="M900 240 C900 350 480 535 480 635"/>
+    <path class="link d2 solid" d="M900 240 C900 350 690 535 690 635"/>
+    <path class="link d2 solid" d="M900 240 C900 350 900 535 900 635"/>
+    <path class="link d2 both" d="M900 240 C900 295 480 325 480 390"/>
+    <path class="link d2 both" d="M900 240 C900 320 735 405 735 495"/>
+    <path class="link d2 mitigate" d="M900 240 C900 320 945 405 945 495"/>
+    <path class="link d2 mitigate" d="M900 240 C900 295 840 325 840 390"/>
+    <path class="link d2 both" d="M900 240 C900 295 1020 325 1020 390"/>
+    <path class="link d2 solid" d="M900 240 C900 320 1155 405 1155 495"/>
+    <path class="link d2 both" d="M900 240 C900 320 1365 405 1365 495"/>
+    <path class="link d2 mitigate" d="M900 240 C900 295 1380 325 1380 390"/>
+    <rect x="660" y="150" width="480" height="90" rx="13" class="top-card" stroke="var(--d2)"/>
+    <text x="682" y="178" class="dep-code" fill="var(--d2)">D2 · #2</text>
+    <text x="682" y="203" class="dep-title">Adaptive clinical learning &amp; user-safety design</text>
+    <text x="682" y="226" class="dep-ids">IDs: LI01 · LI02 · LI03 · LI04</text>
+    <text x="1115" y="178" text-anchor="end" class="score">65</text>
+  </g>
+
+  <!-- D3 relationships -->
+  <g class="relation-set" aria-label="D3 connected device, site and source infrastructure relationships">
+    <path class="link d3 solid" d="M1480 240 C1480 350 900 535 900 635"/>
+    <path class="link d3 both" d="M1480 240 C1480 295 480 325 480 390"/>
+    <path class="link d3 solid" d="M1480 240 C1480 320 735 405 735 495"/>
+    <path class="link d3 solid" d="M1480 240 C1480 320 945 405 945 495"/>
+    <path class="link d3 both" d="M1480 240 C1480 295 660 325 660 390"/>
+    <path class="link d3 solid" d="M1480 240 C1480 295 840 325 840 390"/>
+    <path class="link d3 solid" d="M1480 240 C1480 295 1020 325 1020 390"/>
+    <path class="link d3 solid" d="M1480 240 C1480 295 1200 325 1200 390"/>
+    <path class="link d3 solid" d="M1480 240 C1480 320 1155 405 1155 495"/>
+    <path class="link d3 both" d="M1480 240 C1480 320 1365 405 1365 495"/>
+    <path class="link d3 solid" d="M1480 240 C1480 295 1380 325 1380 390"/>
+    <rect x="1240" y="150" width="480" height="90" rx="13" class="top-card" stroke="var(--d3)"/>
+    <text x="1262" y="178" class="dep-code" fill="var(--d3)">D3 · #3</text>
+    <text x="1262" y="203" class="dep-title">Connected device, site &amp; source infrastructure</text>
+    <text x="1262" y="226" class="dep-ids">IDs: ED05 · ED07 · ED08 · ED09 · ED11 · LI06</text>
+    <text x="1695" y="178" text-anchor="end" class="score">31</text>
+  </g>
+
+  <!-- P1 relationships -->
+  <g class="relation-set" aria-label="P1 protected clinical expertise, technical support and staff time relationships">
+    <path class="link p1 solid" d="M250 895 C250 805 480 750 480 685"/>
+    <path class="link p1 solid" d="M250 895 C250 805 690 750 690 685"/>
+    <path class="link p1 solid" d="M250 895 C250 805 900 750 900 685"/>
+    <path class="link p1 solid" d="M250 895 C250 760 480 555 480 435"/>
+    <path class="link p1 solid" d="M250 895 C250 775 735 645 735 545"/>
+    <path class="link p1 both" d="M250 895 C250 760 660 555 660 435"/>
+    <path class="link p1 solid" d="M250 895 C250 760 1020 555 1020 435"/>
+    <path class="link p1 solid" d="M250 895 C250 775 1155 645 1155 545"/>
+    <path class="link p1 both" d="M250 895 C250 775 1365 645 1365 545"/>
+    <path class="link p1 solid" d="M250 895 C250 760 1380 555 1380 435"/>
+    <rect x="60" y="895" width="380" height="130" rx="13" class="bottom-card" stroke="var(--p1)"/>
+    <text x="82" y="924" class="dep-code" fill="var(--p1)">P1 · #1</text>
+    <text x="82" y="952" class="dep-title">Protected clinical expertise,</text>
+    <text x="82" y="976" class="dep-title">technical support &amp; staff time</text>
+    <text x="82" y="1002" class="dep-ids">IDs: ED02 · LI08</text>
+    <text x="415" y="924" text-anchor="end" class="score">21</text>
+  </g>
+
+  <!-- P2 relationships -->
+  <g class="relation-set" aria-label="P2 healthcare knowledge continuity and information governance relationships">
+    <path class="link p2 solid" d="M690 895 C690 805 480 750 480 685"/>
+    <path class="link p2 solid" d="M690 895 C690 805 690 750 690 685"/>
+    <path class="link p2 solid" d="M690 895 C690 805 900 750 900 685"/>
+    <path class="link p2 solid" d="M690 895 C690 805 1110 750 1110 685"/>
+    <path class="link p2 both" d="M690 895 C690 775 735 645 735 545"/>
+    <path class="link p2 solid" d="M690 895 C690 775 945 645 945 545"/>
+    <path class="link p2 both" d="M690 895 C690 760 660 555 660 435"/>
+    <path class="link p2 solid" d="M690 895 C690 760 840 555 840 435"/>
+    <path class="link p2 mitigate" d="M690 895 C690 760 1200 555 1200 435"/>
+    <path class="link p2 both" d="M690 895 C690 775 1155 645 1155 545"/>
+    <path class="link p2 solid" d="M690 895 C690 760 1380 555 1380 435"/>
+    <path class="link p2 mitigate" d="M690 895 C690 760 1560 555 1560 435"/>
+    <rect x="500" y="895" width="380" height="130" rx="13" class="bottom-card" stroke="var(--p2)"/>
+    <text x="522" y="924" class="dep-code" fill="var(--p2)">P2 · #2</text>
+    <text x="522" y="952" class="dep-title">Knowledge continuity &amp;</text>
+    <text x="522" y="976" class="dep-title">information governance</text>
+    <text x="522" y="1002" class="dep-ids">ID: LI10</text>
+    <text x="855" y="924" text-anchor="end" class="score">14</text>
+  </g>
+
+  <!-- P3 relationships -->
+  <g class="relation-set" aria-label="P3 clinical regulatory, ethical and institutional assurance relationships">
+    <path class="link p3 solid" d="M1130 895 C1130 805 900 750 900 685"/>
+    <path class="link p3 solid" d="M1130 895 C1130 805 1320 750 1320 685"/>
+    <path class="link p3 solid" d="M1130 895 C1130 760 660 555 660 435"/>
+    <path class="link p3 solid" d="M1130 895 C1130 775 1365 645 1365 545"/>
+    <path class="link p3 solid" d="M1130 895 C1130 760 1380 555 1380 435"/>
+    <path class="link p3 solid" d="M1130 895 C1130 760 1560 555 1560 435"/>
+    <rect x="940" y="895" width="380" height="130" rx="13" class="bottom-card" stroke="var(--p3)"/>
+    <text x="962" y="924" class="dep-code" fill="var(--p3)">P3 · #3</text>
+    <text x="962" y="952" class="dep-title">Clinical regulatory, ethical &amp;</text>
+    <text x="962" y="976" class="dep-title">institutional assurance</text>
+    <text x="962" y="1002" class="dep-ids">IDs: ED01 · ED06 · LI12</text>
+    <text x="1295" y="924" text-anchor="end" class="score">11</text>
+  </g>
+
+  <!-- P4 relationships -->
+  <g class="relation-set" aria-label="P4 lifecycle funding relationships">
+    <path class="link p4 solid" d="M1560 895 C1560 805 480 750 480 685"/>
+    <path class="link p4 solid" d="M1560 895 C1560 760 480 555 480 435"/>
+    <path class="link p4 solid" d="M1560 895 C1560 775 735 645 735 545"/>
+    <path class="link p4 mitigate" d="M1560 895 C1560 775 1365 645 1365 545"/>
+    <rect x="1380" y="895" width="360" height="130" rx="13" class="bottom-card" stroke="var(--p4)"/>
+    <text x="1402" y="924" class="dep-code" fill="var(--p4)">P4 · #4</text>
+    <text x="1402" y="952" class="dep-title">Lifecycle funding for models,</text>
+    <text x="1402" y="976" class="dep-title">devices &amp; continuing education</text>
+    <text x="1402" y="1002" class="dep-ids">ID: LI07</text>
+    <text x="1715" y="924" text-anchor="end" class="score">5</text>
+  </g>
+
+  <!-- Practice nodes -->
+  <g aria-label="Digital Codification framework">
+    <rect x="70" y="365" width="1660" height="95" rx="14" class="mechanism-frame codification-frame"/>
+    <text x="92" y="396" class="mechanism-title" fill="var(--codify)">DIGITAL CODIFICATION</text>
+    <text x="92" y="419" class="mechanism-note">durable clinical representations</text>
+    <rect x="420" y="390" width="120" height="45" rx="9" class="practice-code"/><text x="480" y="418" class="practice-id">s003M01TP01</text>
+    <rect x="600" y="390" width="120" height="45" rx="9" class="practice-code"/><text x="660" y="418" class="practice-id">s003M01TP07</text>
+    <rect x="780" y="390" width="120" height="45" rx="9" class="practice-code"/><text x="840" y="418" class="practice-id">s003M01TP08</text>
+    <rect x="960" y="390" width="120" height="45" rx="9" class="practice-code"/><text x="1020" y="418" class="practice-id">s003M01TP09</text>
+    <rect x="1140" y="390" width="120" height="45" rx="9" class="practice-code"/><text x="1200" y="418" class="practice-id">s003M01TP10</text>
+    <rect x="1320" y="390" width="120" height="45" rx="9" class="practice-code"/><text x="1380" y="418" class="practice-id">s003M01TP13</text>
+    <rect x="1500" y="390" width="120" height="45" rx="9" class="practice-code"/><text x="1560" y="418" class="practice-id">s003M01TP15</text>
+  </g>
+
+  <g aria-label="Experiential Amplification framework">
+    <rect x="70" y="470" width="1660" height="100" rx="14" class="mechanism-frame experience-frame"/>
+    <text x="92" y="503" class="mechanism-title" fill="var(--experience)">EXPERIENTIAL AMPLIFICATION</text>
+    <text x="92" y="526" class="mechanism-note">situated rehearsal and feedback</text>
+    <rect x="650" y="495" width="170" height="50" rx="9" class="practice-exp"/><text x="735" y="526" class="practice-id">s003M01TP03</text>
+    <rect x="860" y="495" width="170" height="50" rx="9" class="practice-exp"/><text x="945" y="526" class="practice-id">s003M01TP04</text>
+    <rect x="1070" y="495" width="170" height="50" rx="9" class="practice-exp"/><text x="1155" y="526" class="practice-id">s003M01TP11</text>
+    <rect x="1280" y="495" width="170" height="50" rx="9" class="practice-exp"/><text x="1365" y="526" class="practice-id">s003M01TP12</text>
+  </g>
+
+  <text x="65" y="615" class="section-title">TRADITIONAL HUMAN-CENTRED PRACTICE INDEXES</text>
+  <g aria-label="Traditional human-centred practice IDs">
+    <rect x="70" y="625" width="1660" height="70" rx="14" class="mechanism-frame codification-frame"/>
+    <rect x="395" y="635" width="170" height="50" rx="10" class="practice-trad"/><text x="480" y="666" class="practice-id">s003M01THR11</text>
+    <rect x="605" y="635" width="170" height="50" rx="10" class="practice-trad"/><text x="690" y="666" class="practice-id">s003M01THR12</text>
+    <rect x="815" y="635" width="170" height="50" rx="10" class="practice-trad"/><text x="900" y="666" class="practice-id">s003M01THR13</text>
+    <rect x="1025" y="635" width="170" height="50" rx="10" class="practice-trad"/><text x="1110" y="666" class="practice-id">s003M01THR14</text>
+    <rect x="1235" y="635" width="170" height="50" rx="10" class="practice-trad"/><text x="1320" y="666" class="practice-id">s003M01THR16</text>
+  </g>
+
+  <!-- Relationship legend -->
+  <g aria-label="Relationship legend">
+    <rect x="410" y="720" width="980" height="55" rx="12" fill="var(--node)" fill-opacity="0.9"/>
+    <line x1="445" y1="748" x2="515" y2="748" class="link solid" stroke="var(--node-stroke)" opacity="1"/>
+    <text x="527" y="753" class="legend">depends on / constrained by</text>
+    <line x1="765" y1="748" x2="835" y2="748" class="link both" stroke="var(--node-stroke)" opacity="1"/>
+    <text x="847" y="753" class="legend">dependency or constraint + mitigation</text>
+    <line x1="1160" y1="748" x2="1230" y2="748" class="link mitigate" stroke="var(--node-stroke)" opacity="1"/>
+    <text x="1242" y="753" class="legend">mitigation only</text>
+  </g>
+</svg>

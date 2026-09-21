@@ -466,7 +466,7 @@ s001M01THR14,s001M01OD06,depend_on,1,c007M01N14 - c007M01N23: People-based meeti
 s001M01THR15,s001M01ED01,depend_on,1,"c008M02N11 - c008M02N34: the State Administration of Work Safety, the websites of various administrative departments, the safety management network, and the municipal government website",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
 s001M01THR15,s001M01ED06,depend_on,2,"c009M01N20 - c009M02N56: Every bid must be tailored to the client's specific requirements
 c009M01N20 - c009M02N57: Submission deadline, submission requirements, required documents",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
-s001M01THR15,s001M01LI05,be_constrained_by,13,"c001M01N16 - c001M01N40: Paper-based surveying is characterized by unidirectional recording.
+s001M01THR15,s001M01LI05,be_constrained_by,16,"c001M01N16 - c001M01N40: Paper-based surveying is characterized by unidirectional recording.
 c001M01N17 - c001M01N41: Total station and film photography is characterized by limited retrieval.
 c001M02N31 - c001M02N30: County-level projects restricted to LOD200 models, data interoperability rate below 30%
 c008M01N22 - c008M01N45: Manual classification is affected by subjectivity and classification errors.
@@ -476,6 +476,9 @@ c008M02N11 - c008M02N35: manual text classification tasks require a lot of time 
 c008M02N11 - c008M01N45: there is also a problem of strong subjectivity and classification errors
 c008M02N17 - c008M02N35: quality of text segmentation is directly influenced by the completeness and continuous updating of domain-specific dictionaries
 c008M02N16 - c008M02N36: statistical language models have a data sparsity defect, meaning they have poor handling capabilities for certain special cases or rare vocabulary
+c009M01N20 - c009M01N39: Manual preparation is hindered by bid information scattered across departments and databases.
+c009M01N20 - c009M01N41: Manual fragmented workflows produce inconsistent documentation and formatting.
+c009M01N21 - c009M01N39: Scattered information makes prior bid content harder to locate and reuse consistently.
 c009M01N20 - c009M02N62: Firms often deliver the 'best possible' bid within time constraints rather than the most optimal one
 c009M01N20 - c009M02N66: Limited adoption of digital tools
 c012M02N12 - c012M02N59: ""Significant barriers to efficient retrieval and reuse""",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
@@ -487,10 +490,7 @@ c009M01N20 - c009M01N40: The traditional workflow is described as highly manual,
 c009M01N20 - c009M01N43: Every proposal must be tailored to the client's specific requirements.
 c009M01N20 - c009M01N50: The paper identifies limited knowledge transfer as a constraint of current preparation practices.
 c009M01N20 - c009M02N61: Data fragmentation, as highlighted in the Alpha case",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
-s001M01THR15,s001M01LI10,be_constrained_by,8,"c009M01N20 - c009M01N39: Manual preparation is hindered by bid information scattered across departments and databases.
-c009M01N20 - c009M01N41: Manual fragmented workflows produce inconsistent documentation and formatting.
-c009M01N20 - c009M01N42: Traditional bid preparation is vulnerable to knowledge loss when staff turnover is high.
-c009M01N21 - c009M01N39: Scattered information makes prior bid content harder to locate and reuse consistently.
+s001M01THR15,s001M01LI10,be_constrained_by,5,"c009M01N20 - c009M01N42: Traditional bid preparation is vulnerable to knowledge loss when staff turnover is high.
 c009M01N20 - c009M02N59: Construction bid preparation remains predominantly manual, labour-intensive
 c012M01N47 - c012M01N38: Traditional project documentation inadequately captured contextual knowledge and critical interpersonal dynamics.
 c012M02N26 - c012M02N60: ""Such approaches inadequately address tacit knowledge's inherent complexities and subtleties""
@@ -1299,11 +1299,14 @@ s001M01TP08,s001M01EK02,adopt,2,"c009M01N24 - c009M01N03: The system's domain-sp
 c014M01N27 - c014M01N06: Net Zero Cloud reads project data as input.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
 s001M01TP08,s001M01EK03,adopt,1,c009M01N27 - c009M01N04: Retrieved historical methodology sections are used as contextual generation samples.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
 s001M01TP08,s001M01EK09,adopt,1,c014M02N32 - c014M02N08: Generative AI tools capture AI-generated reports,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
-s001M01TP08,s001M01LI05,be_constrained_by,4,"c009M01N24 - c009M01N45: The current system accepts and processes bid documents in PDF format.
+s001M01TP08,s001M01LI05,be_constrained_by,5,"c009M01N24 - c009M01N45: The current system accepts and processes bid documents in PDF format.
 c009M01N24 - c009M01N47: Development and testing used 13 historical bids from two consulting firms.
+c009M01N24 - c009M01N39: Fragmented bid-related data is identified as a key challenge to implementing and scaling the automation system.
 c009M01N24 - c009M02N67: Accuracy decreases for scanned or image-based documents, as no Optical Character Recognition (OCR) is integrated
 c009M01N24 - c009M02N66: Limited adoption of digital tools remains a barrier to scaling automation",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
-s001M01TP08,s001M01LI05,mitigate,1,c009M01N24 - c009M02N62: Enhance turnaround times,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
+s001M01TP08,s001M01LI05,mitigate,3,"c009M01N24 - c009M01N39: Semantic retrieval integrates dispersed historical bid information and surfaces relevant prior content.
+c009M01N24 - c009M01N41: The system improves consistency by grounding generated content in retained proposal examples.
+c009M01N24 - c009M02N62: Enhance turnaround times",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
 s001M01TP08,s001M01LI08,be_constrained_by,5,"c009M01N24 - c009M01N44: Full automation remains impractical where project interpretation and nuanced contextual judgment are required.
 c009M01N24 - c009M01N43: Every bid requires client-specific customization, limiting the extent to which the overall workflow can be automated.
 c009M01N27 - c009M01N43: Methodology drafting must be customized to the client's requirements and project context.
@@ -1315,15 +1318,12 @@ c009M01N24 - c009M02N61: Mitigates knowledge loss by surfacing prior bids most r
 s001M01TP08,s001M01LI09,be_constrained_by,2,"c014M01N27 - c014M01N40: Net Zero Cloud is used by only some projects amid wider underutilization.
 c014M01N27 - c014M01N42: Lack of training weakens implementation of generative AI tools.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
 s001M01TP08,s001M01LI09,mitigate,1,c009M01N24 - c009M02N65: Converts unstructured documents into structured embeddings,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
-s001M01TP08,s001M01LI10,be_constrained_by,4,"c009M01N24 - c009M01N49: Use of third-party APIs creates potential privacy and confidentiality risks for bid documents.
-c009M01N24 - c009M01N39: Fragmented bid-related data is identified as a key challenge to implementing and scaling the automation system.
-c009M01N27 - c009M01N48: The implemented proposal-generation component is restricted to the textual methodology section.
-c009M01N24 - c009M02N68: To improve domain relevance and reduce hallucinations",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
-s001M01TP08,s001M01LI10,mitigate,4,"c009M01N24 - c009M01N39: Semantic retrieval integrates dispersed historical bid information and surfaces relevant prior content.
-c009M01N24 - c009M01N41: The system improves consistency by grounding generated content in retained proposal examples.
-c009M01N24 - c009M01N42: The system mitigates knowledge loss by surfacing prior bids relevant to new requirements.
+s001M01TP08,s001M01LI10,be_constrained_by,2,"c009M01N24 - c009M01N49: Use of third-party APIs creates potential privacy and confidentiality risks for bid documents.
+c009M01N27 - c009M01N48: The implemented proposal-generation component is restricted to the textual methodology section.",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
+s001M01TP08,s001M01LI10,mitigate,2,"c009M01N24 - c009M01N42: The system mitigates knowledge loss by surfacing prior bids relevant to new requirements.
 c009M01N24 - c009M02N59: Significantly reduce manual effort",SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
 s001M01TP08,s001M01LI14,be_constrained_by,1,c009M01N24 - c009M01N46: The absence of OCR reduces performance on scanned or image-based documents.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
+s001M01TP08,s001M01LI15,be_constrained_by,1,c009M01N24 - c009M02N68: To improve domain relevance and reduce hallucinations,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
 s001M01TP08,s001M01OD01,depend_on,1,c009M01N24 - c009M02N53: The GenAI system depends on document standardization practices to function effectively,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
 s001M01TP08,s001M01OD02,depend_on,1,c014M01N27 - c014M01N31: Leadership supports implementation of AI-based tools.,SIC 15 - Construction (Building Construction—General Contractors And Operative Builders),Aggregation
 s001M01TP08,s001M01OD03,depend_on,4,"c009M01N24 - c009M01N37: The paper states that successful automation depends on the availability and quality of relevant data.

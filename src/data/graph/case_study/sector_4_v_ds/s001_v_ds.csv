@@ -2184,10 +2184,11 @@ Explain how the focal practice illustrates the adoption of emerging technology f
 Use multiple cases to support each major claim where the graph permits.
 Do not manufacture three-to-five practices or insights when the query retrieves only one technology-enabled practice. The number of claims must remain proportional to the available relational evidence."
 s001M01RRQ2,Environmental Dependencies,"MATCH (depends:EnvironmentalDependency)
-WHERE depends.node_id STARTS WITH 's001'
+WHERE depends.node_id STARTS WITH 's001' AND NOT coalesce(depends.node_name, '') STARTS WITH 'Ambiguous'
 WITH depends
 
 OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:depend_on]-(depends)
+WHERE NOT coalesce(thp.node_name, '') STARTS WITH 'Ambiguous'
 WITH depends, 
      COLLECT({src_node:thp, rel: r, dst_node: depends}) AS thp_depends
 
@@ -2197,12 +2198,12 @@ WITH depends, thp_depends,
      COLLECT({src_node:tep, rel: r, dst_node: depends}) AS tep_depends
 
 OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:be_constrained_by]-(lim:Limitation)
-WHERE lim.node_id STARTS WITH 's001'
+WHERE lim.node_id STARTS WITH 's001' AND  NOT coalesce(lim.node_name, '') STARTS WITH 'Ambiguous'
 WITH depends, thp_depends,tep_depends,
      COLLECT({src_node:thp, rel: r, dst_node: lim}) AS thp_limits
 
 OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:be_constrained_by]-(lim:Limitation)
-WHERE lim.node_id STARTS WITH 's001'
+WHERE lim.node_id STARTS WITH 's001' AND  NOT coalesce(lim.node_name, '') STARTS WITH 'Ambiguous'
 WITH depends, thp_depends,tep_depends,thp_limits,
      COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
 
@@ -2217,10 +2218,11 @@ Analyze a case-based knowledge subgraph and develop an evidence-grounded concept
 Input data
 Use $analyze-neo4j-knowledge-graph to quey the target sub-graph. The query cypher is as follows:
 MATCH (depends:EnvironmentalDependency)
-WHERE depends.node_id STARTS WITH 's001'
+WHERE depends.node_id STARTS WITH 's001' AND NOT coalesce(depends.node_name, '') STARTS WITH 'Ambiguous'
 WITH depends
 
 OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:depend_on]-(depends)
+WHERE NOT coalesce(thp.node_name, '') STARTS WITH 'Ambiguous'
 WITH depends, 
      COLLECT({src_node:thp, rel: r, dst_node: depends}) AS thp_depends
 
@@ -2230,12 +2232,12 @@ WITH depends, thp_depends,
      COLLECT({src_node:tep, rel: r, dst_node: depends}) AS tep_depends
 
 OPTIONAL MATCH (thp:TraditionalHumancentralPractice)-[r:be_constrained_by]-(lim:Limitation)
-WHERE lim.node_id STARTS WITH 's001'
+WHERE lim.node_id STARTS WITH 's001' AND  NOT coalesce(lim.node_name, '') STARTS WITH 'Ambiguous'
 WITH depends, thp_depends,tep_depends,
      COLLECT({src_node:thp, rel: r, dst_node: lim}) AS thp_limits
 
 OPTIONAL MATCH (tep:TechnologyenablePractice)-[r:be_constrained_by]-(lim:Limitation)
-WHERE lim.node_id STARTS WITH 's001'
+WHERE lim.node_id STARTS WITH 's001' AND  NOT coalesce(lim.node_name, '') STARTS WITH 'Ambiguous'
 WITH depends, thp_depends,tep_depends,thp_limits,
      COLLECT({src_node:tep, rel: r, dst_node: lim}) AS tep_limits
 
@@ -2251,7 +2253,7 @@ Mandatory analytical procedure
 1. Inspect the evidence_statement and definition of every retrieved node. Do not only classify an element from name or category alone.
 2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining why and how one practice depends on a resource or capability.
 3. Coding from two perspectives:
-    * Digitally reconstructed dependencies. This perspective highlights the emergence of the necessary technical infrastructure, specific computing capabilities, organizational structure adaptation, and dynamic user capabilities required for the deployment of advanced digital tools.
+    * digitally reconfigured dependencies. This perspective highlights the emergence of the necessary technical infrastructure, specific computing capabilities, organizational structure adaptation, and dynamic user capabilities required for the deployment of advanced digital tools.
     * Persistently established dependencies. This perspective emphasizes the indispensability of permanent organizational frameworks, physical assets, and regulatory architectures for operational continuity.
 4. Treat “dependency” neutrally. Do not present dependencies as benefits. Explain how they condition, enable, constrain, or interrupt retention outcomes.
 5. Move beyond case description. Identify deeper cross-case mechanisms, including:
@@ -2274,7 +2276,7 @@ Organize the answer around two perspectives, each perspective demonstrates three
 * Treat cases as a bounded sample, not as representative of the entire construction sector.
 * State its constraining or conditional implications.
 Use this citation format exactly: (sXXX)
-Conclude with an integrative statement explaining how digitally reconstructed and persistently established dependencies interact to convert."
+Conclude with an integrative statement explaining how digitally reconfigured and persistently established dependencies interact to convert."
 s001M01RRQ3,Organizational Culture Dependencies,"MATCH (depends:OrganizationalDependency)
 WHERE depends.node_id STARTS WITH 's001'
 WITH depends
@@ -2343,8 +2345,8 @@ Mandatory analytical procedure
 1. Inspect the evidence_statement and definition of every retrieved node. Do not only classify an element from name or category alone.
 2. Inspect the evidence_statement of every relevant relationship. Treat relational evidence as the primary basis for explaining why and how one practice depends on a resource or capability.
 3. Coding from two perspectives:
-    * Digitally reconstructed dependencies.   This perspective examines the reconfiguration (including but not limited to emergence, adjustment, and reduction) of modern technology-driven knowledge retention practices relative to traditional methods in terms of corporate culture dependencies (e.g., digital familiarity, system trust, and human-machine trust).
-    * Persistently established dependencies. This perspective captures those long-standing organizational paradigms, such as formalized safety awareness and personnel mobility management, which have dominated the physical workspaces of several generations.
+    * digitally reconfigured dependencies.   This perspective examines the reconfiguration (including but not limited to emergence, adjustment, and reduction) of modern technology-driven knowledge retention practices relative to traditional methods in terms of corporate culture dependencies (e.g., digital familiarity, system trust, and human-machine trust).
+    * Persistently established dependencies. This perspective covers those long-lasting organizational paradigms, usually manifested as the organizational culture which both technology-driven practices and human-centered practices depend on, such as formal safety awareness and personnel mobility management. 
 4. Treat “dependency” neutrally. Do not present dependencies as benefits. Explain how they condition, enable, constrain, or interrupt retention outcomes.
 5. Move beyond case description. Identify deeper cross-case mechanisms, including:
     * Necessary conditions and dependency chains
@@ -2365,5 +2367,4 @@ Organize the answer around two perspectives, each perspective demonstrates three
 * Integrate evidence from multiple cases to present domain characteristics. Do not interpret it in general.
 * Treat cases as a bounded sample, not as representative of the entire construction sector.
 * State its constraining or conditional implications.
-Use this citation format exactly: (sXXX)
-Conclude with an integrative statement explaining how digitally reconstructed and persistently established dependencies interact to convert."
+Use this citation format exactly: (cXXX-sXXX)"
