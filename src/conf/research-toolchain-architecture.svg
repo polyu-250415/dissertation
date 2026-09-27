@@ -28,7 +28,7 @@
       .oversight-text { font: 400 18px Arial, Helvetica, sans-serif; fill: #222222; }
       .research-output { font: 700 20px Arial, Helvetica, sans-serif; fill: #111111; }
       .research-output-small { font: 400 16px Arial, Helvetica, sans-serif; fill: #444444; }
-      .note { font: 400 17px Arial, Helvetica, sans-serif; fill: #555555; }
+      .note { font: 400 26px Arial, Helvetica, sans-serif; fill: #555555; }
     </style>
   </defs>
 
@@ -99,7 +99,7 @@
     <text x="20" y="188" class="body">align recurring and distinctive concepts</text>
     <rect x="0" y="225" width="380" height="85" fill="#EFEFEF"/>
     <text x="20" y="252" class="output-label">OUTPUT</text>
-    <text x="20" y="282" class="output-text">Multidisciplinary knowledge map</text>
+    <text x="20" y="282" class="output-text">Cross-industry knowledge map</text>
   </g>
 
   <!-- Validation gates between stages -->
@@ -135,17 +135,17 @@
 
   <g transform="translate(2200,245)">
     <path d="M0,0 H320 V145 C266,112 213,178 160,145 C107,112 54,178 0,145 Z" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
-    <text x="24" y="47" class="research-output">Multidisciplinary</text>
+    <text x="24" y="47" class="research-output">Cross-industry</text>
     <text x="24" y="76" class="research-output">Knowledge Map</text>
-    <text x="24" y="109" class="research-output-small">Traceable entities, relations,</text>
-    <text x="24" y="131" class="research-output-small">cases, and source passages</text>
+    <text x="24" y="109" class="research-output-small">Retention Mechanisms, Dependencies</text>
+    <text x="24" y="131" class="research-output-small">Traceable evidence chains</text>
   </g>
 
   <g transform="translate(2200,435)">
     <path d="M0,0 H320 V145 C266,112 213,178 160,145 C107,112 54,178 0,145 Z" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
     <text x="24" y="47" class="research-output">Researcher-Led</text>
     <text x="24" y="76" class="research-output">Interpretation</text>
-    <text x="24" y="109" class="research-output-small">Contextualized patterns, limits,</text>
+    <text x="24" y="109" class="research-output-small">Contextualized patterns, transfer positions,</text>
     <text x="24" y="131" class="research-output-small">and qualified research claims</text>
   </g>
 
@@ -180,34 +180,35 @@
     <text x="1020" y="94" class="check-title">Coding consistency</text>
     <text x="1020" y="126" class="check-text">Template refinement and coding audit</text>
     <text x="1020" y="153" class="check-text">Retrospective correction</text>
-    <text x="1020" y="180" class="check-text">Framework-relative analytical coverage</text>
+    <text x="1020" y="180" class="check-text">Dependencies, boundaries, and counterevidence</text>
 
     <text x="1530" y="94" class="check-title">Cross-industry integration</text>
-    <text x="1530" y="126" class="check-text">Inter-industry entity and relation alignment</text>
+    <text x="1530" y="126" class="check-text">Cross-industry entity and relation alignment</text>
     <text x="1530" y="153" class="check-text">Recurrence, variation, and evidence-chain review</text>
-    <text x="1530" y="180" class="check-text">Dependencies, boundaries, and counterevidence</text>
 
     <text x="2040" y="94" class="check-title">Claim authorization</text>
     <text x="2040" y="126" class="check-text">Traceability to supporting sources</text>
     <text x="2040" y="153" class="check-text">Researcher review of interpretations</text>
-    <text x="2040" y="180" class="check-text">Qualified—not universally causal—claims</text>
+    <text x="2040" y="180" class="check-text">Qualified claims</text>
   </g>
 
   <!-- Continuous researcher oversight lane -->
   <g transform="translate(80,990)">
     <rect x="0" y="0" width="2440" height="130" fill="#F0F0F0" stroke="#555555" stroke-width="1.5"/>
-    <rect x="0" y="0" width="390" height="130" fill="#444444"/>
-    <text x="28" y="53" class="oversight-title">CONTINUOUS RESEARCHER</text>
-    <text x="28" y="83" class="oversight-title">OVERSIGHT AND AUTHORITY</text>
+    <rect x="0" y="0" width="230" height="130" fill="#444444"/>
+    <text x="28" y="53" class="oversight-title">RESEARCHER</text>
+    <text x="28" y="83" class="oversight-title">OVERSIGHT</text>
 
     <text x="430" y="51" class="oversight-text">Defines coding framework</text>
     <text x="430" y="84" class="oversight-text">• audits screening and evidence</text>
-    <text x="915" y="51" class="oversight-text">Resolves extraction conflicts</text>
-    <text x="915" y="84" class="oversight-text">• refines categories and terminology</text>
-    <text x="1510" y="51" class="oversight-text">Interprets patterns and counterevidence</text>
-    <text x="1510" y="84" class="oversight-text">• authorizes final claims and limitations</text>
+    <text x="1130" y="51" class="oversight-text">Resolves extraction conflicts</text>
+    <text x="1130" y="84" class="oversight-text">• refines categories and terminology</text>
+    <text x="1830" y="51" class="oversight-text">Interprets patterns and counterevidence</text>
+    <text x="1830" y="84" class="oversight-text">• authorizes final claims and limitations</text>
   </g>
 
-  <text x="1300" y="1188" text-anchor="middle" class="note">LLM-assisted agents support extraction and comparison; substantive interpretation remains the researcher’s responsibility.</text>
+  <text x="1300" y="1188" text-anchor="middle" class="note">LLM-assisted agents support extraction and
+    comparison;
+  substantive interpretation remains the researcher’s responsibility.</text>
   <line x1="80" y1="1225" x2="2520" y2="1225" stroke="#B8B8B8" stroke-width="1.5"/>
 </svg>

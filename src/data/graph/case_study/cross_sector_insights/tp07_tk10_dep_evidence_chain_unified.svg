@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1850" viewBox="0 0 2400 1850" role="img" aria-labelledby="title desc">
+  <title id="title">Organizational, environmental, and limitation evidence trace for TP07–TK10</title>
+  <desc id="desc">Three evidence lanes trace case-level c identifiers to sector-level s relationships and layer-zero dependency or limitation categories for Algorithmic Pattern Discovery and Prediction and Shared Professional Norms and Standards of Judgment.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FAFAFA"/>
+      <stop offset="1" stop-color="#E8E8E8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#000000" flood-opacity="0.11"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#626262"/>
+    </marker>
+    <style>
+      .title { font: 700 34px Inter, ui-sans-serif, system-ui, sans-serif; fill: #111111; }
+      .subtitle { font: 500 17px Inter, ui-sans-serif, system-ui, sans-serif; fill: #4B4B4B; }
+      .panel-title { font: 700 22px Inter, ui-sans-serif, system-ui, sans-serif; fill: #111111; }
+      .panel-sub { font: 500 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #555555; }
+      .node-title { font: 700 17px Inter, ui-sans-serif, system-ui, sans-serif; fill: #111111; }
+      .card-title { font: 700 15px Inter, ui-sans-serif, system-ui, sans-serif; fill: #111111; }
+      .small { font: 500 12px Inter, ui-sans-serif, system-ui, sans-serif; fill: #4F4F4F; }
+      .tiny { font: 500 11px Inter, ui-sans-serif, system-ui, sans-serif; fill: #606060; }
+      .mono { font: 600 12px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #292929; }
+      .mono-small { font: 600 11px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #383838; }
+      .badge { font: 800 12px Inter, ui-sans-serif, system-ui, sans-serif; fill: #FFFFFF; }
+      .tier { font: 800 12px Inter, ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.55px; fill: #333333; }
+      .status { font: 700 11px Inter, ui-sans-serif, system-ui, sans-serif; fill: #444444; }
+      .root-tp { fill: #F4F4F4; stroke: #202020; stroke-width: 2; }
+      .root-tk { fill: #E8E8E8; stroke: #646464; stroke-width: 2; }
+      .panel { fill: rgba(247,247,247,0.82); stroke: #777777; stroke-width: 1.5; }
+      .card { fill: #F9F9F9; stroke: #858585; stroke-width: 1.5; }
+      .card-direct { fill: #F5F5F5; stroke: #202020; stroke-width: 2.2; }
+      .card-context { fill: #F8F8F8; stroke: #747474; stroke-width: 1.5; }
+      .case-strip { fill: #FFFFFF; stroke: #B8B8B8; stroke-width: 1; }
+      .sector-strip { fill: #EAEAEA; stroke: #898989; stroke-width: 1; }
+      .root-link { fill: none; stroke: #5E5E5E; stroke-width: 2; marker-end: url(#arrow); }
+      .branch-link { fill: none; stroke: #858585; stroke-width: 2; stroke-dasharray: 7 6; marker-end: url(#arrow); }
+      .chain-link { fill: none; stroke: #626262; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="2400" height="1850" fill="url(#bg)"/>
+  <text x="60" y="58" class="title">Context Conditions for Algorithmic Codification of Shared Professional Judgment</text>
+  <text x="60" y="88" class="subtitle">Evidence architecture for &lt;TP07, TK10&gt; · case evidence cXXX → sector relation sXXX → layer-0 category h001</text>
+
+  <g filter="url(#shadow)">
+    <rect x="180" y="125" width="900" height="112" rx="17" class="root-tp"/>
+    <rect x="205" y="146" width="48" height="25" rx="12" fill="#202020"/>
+    <text x="229" y="163" text-anchor="middle" class="badge">TP</text>
+    <text x="270" y="164" class="mono">h001M01TP07</text>
+    <text x="205" y="199" class="node-title">Algorithmic Pattern Discovery and Prediction Collection</text>
+    <text x="205" y="222" class="small">Practice whose deployment conditions and constraints are traced below</text>
+
+    <rect x="1320" y="125" width="900" height="112" rx="17" class="root-tk"/>
+    <rect x="1345" y="146" width="48" height="25" rx="12" fill="#646464"/>
+    <text x="1369" y="163" text-anchor="middle" class="badge">TK</text>
+    <text x="1410" y="164" class="mono">h001M01TK10</text>
+    <text x="1345" y="199" class="node-title">Shared Professional Norms and Standards of Judgment Collection</text>
+    <text x="1345" y="222" class="small">Tacit knowledge whose capture and retention limitations are traced below</text>
+  </g>
+
+  <path d="M1320 179 H1080" class="root-link"/>
+  <rect x="1089" y="148" width="222" height="27" rx="13" fill="#ECECEC"/>
+  <text x="1200" y="166" text-anchor="middle" class="mono-small">be_captured_by · dominant pattern</text>
+
+  <path d="M630 237 V300 H410 V346" class="branch-link"/>
+  <path d="M630 237 V300 H1200 V346" class="branch-link"/>
+  <path d="M1770 237 V300 H1990 V346" class="branch-link"/>
+  <text x="1200" y="287" text-anchor="middle" class="small">Conditions and constraints are evidenced at sector level and aggregated across cases</text>
+  <text x="1200" y="319" text-anchor="middle" class="tiny">Organizational evidence is graded: solid = same-case convergence · thin = same-sector context · dashed = TP07 transfer candidate</text>
+
+  <!-- Environmental dependencies -->
+  <rect x="35" y="350" width="750" height="1460" rx="22" class="panel"/>
+  <text x="65" y="391" class="panel-title">ENVIRONMENTAL DEPENDENCIES</text>
+  <text x="65" y="416" class="panel-sub">External resources, institutions, infrastructure and operating context</text>
+
+  <g transform="translate(60,445)">
+    <rect width="700" height="188" rx="15" class="card"/>
+    <text x="18" y="27" class="card-title">ED01 · Political, Regulatory &amp; Jurisdictional Environment</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c213M02N14 → c213M01N38</text>
+    <text x="32" y="86" class="small">Federated learning must comply with patient-privacy regulation.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s003M01TP07 —depend_on→ s003M01ED01</text>
+    <text x="18" y="178" class="tiny">Sector evidence instantiates h001M01ED01.</text>
+  </g>
+
+  <g transform="translate(60,647)">
+    <rect width="700" height="188" rx="15" class="card"/>
+    <text x="18" y="27" class="card-title">ED04 · Natural &amp; Climatic Environment</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c017M01N17 → c017M01N24</text>
+    <text x="32" y="86" class="small">The threshold algorithm requires weather from preceding days.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s001M01TP07 —depend_on→ s001M01ED04</text>
+    <text x="18" y="178" class="tiny">Sector evidence instantiates h001M01ED04.</text>
+  </g>
+
+  <g transform="translate(60,849)">
+    <rect width="700" height="188" rx="15" class="card"/>
+    <text x="18" y="27" class="card-title">ED05 · External Technological &amp; Infrastructure Environment</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c222M01N19 → c222M01N41</text>
+    <text x="32" y="86" class="small">BioBERT processing depends on an accessible PubMed document corpus.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s003M01TP07 —depend_on→ s003M01ED05</text>
+    <text x="18" y="178" class="tiny">Sector evidence instantiates h001M01ED05.</text>
+  </g>
+
+  <g transform="translate(60,1051)">
+    <rect width="700" height="188" rx="15" class="card"/>
+    <text x="18" y="27" class="card-title">ED06 · Client, Procurement &amp; Institutional Environment</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c215M02N18 → c215M02N30</text>
+    <text x="32" y="86" class="small">Cuffless blood-pressure modelling is assessed against IEEE 1708-2014.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s003M01TP07 —depend_on→ s003M01ED06</text>
+    <text x="18" y="178" class="tiny">Sector evidence instantiates h001M01ED06.</text>
+  </g>
+
+  <g transform="translate(60,1253)">
+    <rect width="700" height="188" rx="15" class="card"/>
+    <text x="18" y="27" class="card-title">ED07 · Supply-Chain &amp; Logistical Environment</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c221M01N12 → c221M01N28</text>
+    <text x="32" y="86" class="small">Available translated palm-leaf manuscripts form the training base.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s003M01TP07 —depend_on→ s003M01ED07</text>
+    <text x="18" y="178" class="tiny">Sector evidence instantiates h001M01ED07.</text>
+  </g>
+
+  <!-- Organizational dependencies -->
+  <rect x="825" y="350" width="750" height="1460" rx="22" class="panel"/>
+  <text x="855" y="391" class="panel-title">ORGANIZATIONAL DEPENDENCIES</text>
+  <text x="855" y="416" class="panel-sub">Internal resources, capabilities, governance, participation and culture · graded by evidential proximity</text>
+  <text x="855" y="454" class="tier">A · DIRECT, CASE-MATCHED EVIDENCE — c008 also establishes the s001 TP07–TK10 relation</text>
+
+  <g transform="translate(850,470)">
+    <rect width="700" height="188" rx="15" class="card-direct"/>
+    <text x="18" y="27" class="card-title">OD02 · Strategic Leadership &amp; Sponsorship</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c008M01N27 → c008M02N33</text>
+    <text x="32" y="86" class="small">Safety-management strengthening supports prevention and response.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s001M01TP07 —depend_on→ s001M01OD02 → h001M01OD02</text>
+    <text x="18" y="178" class="status">DIRECT · same case c008 as the TP07–TK10 capture evidence</text>
+  </g>
+
+  <g transform="translate(850,672)">
+    <rect width="700" height="188" rx="15" class="card-direct"/>
+    <text x="18" y="27" class="card-title">OD03 · Financial, Technical &amp; Information Resources</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c008M01N23 → c008M01N40</text>
+    <text x="32" y="86" class="small">Deep learning requires a sufficiently large, representative report corpus.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s001M01TP07 —depend_on→ s001M01OD03 → h001M01OD03</text>
+    <text x="18" y="178" class="status">DIRECT · same case c008 as the TP07–TK10 capture evidence</text>
+  </g>
+
+  <g transform="translate(850,874)">
+    <rect width="700" height="188" rx="15" class="card-direct"/>
+    <text x="18" y="27" class="card-title">OD06 · Culture, Trust &amp; Relational Climate</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c008M01N27 → c008M02N32</text>
+    <text x="32" y="86" class="small">Strengthening safety-management practices supplies relational support.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s001M01TP07 —depend_on→ s001M01OD06 → h001M01OD06</text>
+    <text x="18" y="178" class="status">DIRECT · same case c008 as the TP07–TK10 capture evidence</text>
+  </g>
+
+  <text x="855" y="1094" class="tier">B · SECTOR-CONTEXT EVIDENCE — s003 convergence is c214; dependency evidence is c215</text>
+  <g transform="translate(850,1110)">
+    <rect width="700" height="188" rx="15" class="card-context"/>
+    <text x="18" y="27" class="card-title">OD01 · Governance, Standards &amp; Formal Control</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c215M02N18 → c215M02N29</text>
+    <text x="32" y="86" class="small">A prior feature-selection framework is used to ensure effectiveness.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s003M01TP07 —depend_on→ s003M01OD01 → h001M01OD01</text>
+    <text x="18" y="178" class="status">CONTEXT · same sector as TP07–TK10, but not the same case</text>
+  </g>
+
+  <!-- Limitations -->
+  <rect x="1615" y="350" width="750" height="1460" rx="22" class="panel"/>
+  <text x="1645" y="391" class="panel-title">LIMITATIONS</text>
+  <text x="1645" y="416" class="panel-sub">Constraints on deployment, capture, interpretation, retention and transfer</text>
+  <text x="1645" y="454" class="tier">A · DIRECT, CASE-MATCHED EVIDENCE — Both c008 and c214 established the TP07–TK10 relation</text>
+
+  <g transform="translate(1640,470)">
+    <rect width="700" height="188" rx="15" class="card-direct"/>
+    <text x="18" y="27" class="card-title">LI05 · Software, algorithms, data quality &amp; interoperability</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c008M01N23 → c008M01N47</text>
+    <text x="32" y="86" class="small">Unstructured reports require preprocessing before automation.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s001M01TP07 —be_constrained_by→ s001M01LI05 → h001M01LI05</text>
+    <text x="18" y="178" class="status">DIRECT · same case c008 as the TP07–TK10 capture evidence.</text>
+  </g>
+
+  <g transform="translate(1640,672)">
+    <rect width="700" height="188" rx="15" class="card-direct"/>
+    <text x="18" y="27" class="card-title">LI01 / LI03 / LI04 · Retention, cognition &amp; transfer</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c214M02N14 → c214M01N45</text>
+    <text x="32" y="86" class="small">Information volume and task complexity produced cognitive overload.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s003M01TK10 —difficult_to_capture_due_to→ s003M01LI04 → h001M01LI01</text>
+    <text x="18" y="178" class="status">DIRECT · same case c008 as the TP07–TK10 capture evidence.</text>
+  </g>
+
+  <text x="1645" y="894" class="tier">B · SECTOR-CONTEXT EVIDENCE — Dependency evidence is c009;c014;c017;c215;c227</text>
+
+  <g transform="translate(1640,910)">
+    <rect width="700" height="188" rx="15" class="card-context"/>
+    <text x="18" y="27" class="card-title">LI10 · Governance, privacy &amp; knowledge-to-action</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c009M01N25 → c009M01N49</text>
+    <text x="32" y="86" class="small">External model access introduces privacy and confidentiality risk.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s001M01TP07 —be_constrained_by→ s001M01LI10</text>
+    <text x="18" y="178" class="tiny">Instantiates h001M01LI10.</text>
+  </g>
+
+  <g transform="translate(1640,1112)">
+    <rect width="700" height="188" rx="15" class="card-context"/>
+    <text x="18" y="27" class="card-title">LI11 · Physical-Environmental &amp; Operational Variability</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c017M01N17 → c017M01N31</text>
+    <text x="32" y="86" class="small">Temperatures still diverged from thresholds despite algorithmic control.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s001M01TP07 —be_constrained_by→ s001M01LI11</text>
+    <text x="18" y="178" class="tiny">Sector evidence instantiates h001M01LI11.</text>
+  </g>
+
+  <g transform="translate(1640,1314)">
+    <rect width="700" height="262" rx="15" class="card-context"/>
+    <text x="18" y="27" class="card-title">LI08 · Time, staffing, expertise, scheduling &amp; workload</text>
+    <rect x="18" y="43" width="664" height="48" rx="9" class="case-strip"/>
+    <text x="32" y="62" class="mono">c215M01N09 → c215M01N20</text>
+    <text x="32" y="81" class="small">Complete retraining for every expansion is time-consuming.</text>
+    <path d="M350 92 V106" class="chain-link"/>
+    <rect x="18" y="108" width="664" height="32" rx="9" class="sector-strip"/>
+    <text x="32" y="129" class="mono-small">s003M01TP07 —be_constrained_by→ s003M01LI08</text>
+    <rect x="18" y="149" width="664" height="48" rx="9" class="case-strip"/>
+    <text x="32" y="168" class="mono">c227M01N05 → c227M01N31</text>
+    <text x="32" y="187" class="small">Insufficient expertise prevented interpretation of wait-time results.</text>
+    <path d="M350 198 V212" class="chain-link"/>
+    <rect x="18" y="214" width="664" height="32" rx="9" class="sector-strip"/>
+    <text x="32" y="235" class="mono-small">s003M01TK10 —difficult_to_capture_due_to→ s003M01LI08</text>
+    <text x="18" y="256" class="tiny">Instantiates h001M01LI08 for both TP07 and TK10.</text>
+  </g>
+
+  <g transform="translate(1640,1590)">
+    <rect width="700" height="188" rx="15" class="card-context"/>
+    <text x="18" y="27" class="card-title">LI09 · Organizational Culture, Leadership &amp; Adoption</text>
+    <rect x="18" y="43" width="664" height="54" rx="9" class="case-strip"/>
+    <text x="32" y="65" class="mono">c014M01N24 → c014M01N38</text>
+    <text x="32" y="86" class="small">Authoritarian leadership hinders AI use and timely response.</text>
+    <path d="M350 98 V116" class="chain-link"/>
+    <rect x="18" y="118" width="664" height="38" rx="9" class="sector-strip"/>
+    <text x="32" y="142" class="mono-small">s001M01TP07 —be_constrained_by→ s001M01LI09</text>
+    <text x="18" y="178" class="tiny">Sector evidence instantiates h001M01LI09.</text>
+  </g>
+</svg>

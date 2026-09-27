@@ -67,7 +67,7 @@ class CrossSectorKg:
         df_nodes['child_id'] = df['node_id']
         df_nodes['node_id'] = df['node_id'].apply(lambda x: 'h001' + x[4:] if len(x) >= 4 else x)
 
-        df_nodes['node_name'] = df['node_name'].astype(str) + ' Set'
+        df_nodes['node_name'] = df['node_name'].astype(str) + ' Collection'
 
         node_map = dict(zip(df_nodes['child_id'], df_nodes['node_id']))
 
@@ -114,7 +114,7 @@ class CrossSectorKg:
 
 if __name__ == '__main__':
     obj = CrossSectorKg()
-    sector_ids = ['s001']
+    sector_ids = ['s001','s002','s003']
     obj.concat_cases_by_sector(sector_ids)
 
     obj.build_h001_kg()
